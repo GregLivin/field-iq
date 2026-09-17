@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "FieldIQ",
+    "slug": "field-iq",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.greglivin.fieldiq"
+    },
+    "android": {
+      "package": "com.greglivin.fieldiq"
+    },
+    "web": {
+      "bundler": "metro"
+    }
+  }
+}
