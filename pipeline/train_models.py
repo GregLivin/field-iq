@@ -232,7 +232,7 @@ def train_and_predict() -> dict[str, Any]:
         "models": metrics,
     }
     (PROCESSED_DIR / "model_metrics.json").write_text(json.dumps(metrics_payload, indent=2) + "\n")
-    write_schedule_payloads(games, season, PROCESSED_DIR, generated_at)
+    write_schedule_payloads(games, season, PROCESSED_DIR, generated_at, team_stats)
     training.to_parquet(PROCESSED_DIR / "game_features.parquet", index=False)
     return {"predictionCount": len(predictions), **metrics_payload}
 

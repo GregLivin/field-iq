@@ -52,3 +52,4 @@ def test_matchup_history_returns_recent_meetings() -> None:
     payload = response.json()
     assert payload["count"] <= 3
     assert payload["teams"] == ["BUF", "DET"]
+    assert set(payload["recentForm"]) == {"BUF", "DET"}

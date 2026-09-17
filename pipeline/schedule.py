@@ -82,10 +82,78 @@ def _compact_meeting(meeting: dict[str, Any]) -> list[Any]:
     ]
 
 
+def _number(value: Any) -> float | None:
+    if value is None or pd.isna(value):
+        return None
+    return round(float(value), 2)
+
+
+def _recent_team_game(
+    row: pd.Series,
+    team: str,
+    stats: dict[tuple[str, str], dict[str, Any]],
+) -> dict[str, Any]:
+    is_home = str(row["home_team"]) == team
+    opponent = str(row["away_team"] if is_home else row["home_team"])
+    team_score = _score(row["home_score"] if is_home else row["away_score"])
+    opponent_score = _score(row["away_score"] if is_home else row["home_score"])
+    team_stats = stats.get((str(row["game_id"]), team), {})
+    passing_yards = _number(team_stats.get("passing_yards"))
+    rushing_yards = _number(team_stats.get("rushing_yards"))
+    passing_epa = _number(team_stats.get("passing_epa"))
+    rushing_epa = _number(team_stats.get("rushing_epa"))
+    interceptions = _number(team_stats.get("passing_interceptions")) or 0
+    fumbles_lost = _number(team_stats.get("fumbles_lost_total")) or 0
+
+    result = "T"
+    if team_score is not None and opponent_score is not None:
+        result = "W" if team_score > opponent_score else "L" if team_score < opponent_score else "T"
+
+    return {
+        "id": str(row["game_id"]),
+        "date": pd.Timestamp(row["gameday"]).date().isoformat(),
+        "season": int(row["season"]),
+        "week": int(row["week"]),
+        "gameType": str(row.get("game_type") or "REG"),
+        "teamAbbreviation": team,
+        "opponent": team_name(opponent),
+        "opponentAbbreviation": opponent,
+        "homeAway": "Home" if is_home else "Away",
+        "teamScore": team_score,
+        "opponentScore": opponent_score,
+        "result": result,
+        "passingYards": passing_yards,
+        "rushingYards": rushing_yards,
+        "totalYards": (
+            round(passing_yards + rushing_yards, 2)
+            if passing_yards is not None and rushing_yards is not None
+            else None
+        ),
+        "totalEpa": (
+            round(passing_epa + rushing_epa, 2)
+            if passing_epa is not None and rushing_epa is not None
+            else None
+        ),
+        "turnovers": round(interceptions + fumbles_lost, 2),
+        "defensiveSacks": _number(team_stats.get("def_sacks")),
+    }
+
+
+def _compact_recent_game(game: dict[str, Any]) -> list[Any]:
+    return [
+        game["id"], game["date"], game["season"], game["week"], game["gameType"],
+        game["teamAbbreviation"], game["opponentAbbreviation"], game["homeAway"],
+        game["teamScore"], game["opponentScore"], game["result"], game["passingYards"],
+        game["rushingYards"], game["totalYards"], game["totalEpa"], game["turnovers"],
+        game["defensiveSacks"],
+    ]
+
+
 def build_schedule_payloads(
     games: pd.DataFrame,
     season: int,
     generated_at: str | None = None,
+    team_stats: pd.DataFrame | None = None,
 ) -> tuple[dict[str, Any], dict[str, Any]]:
     """Build a complete season schedule and reusable head-to-head history."""
     frame = games.copy()
@@ -105,11 +173,27 @@ def build_schedule_payloads(
         & frame.get("game_type", pd.Series("REG", index=frame.index)).isin(["REG", "POST"])
     ].copy()
 
+    stats: dict[tuple[str, str], dict[str, Any]] = {}
+    if team_stats is not None and not team_stats.empty:
+        stats = {
+            (str(row.get("game_id")), str(row.get("team"))): row
+            for row in team_stats.to_dict(orient="records")
+        }
+
     histories: dict[str, list[dict[str, Any]]] = {}
     for _, row in completed.sort_values("gameday", ascending=False).iterrows():
         key = matchup_key(str(row["away_team"]), str(row["home_team"]))
         if key in current_matchups and len(histories.get(key, [])) < 5:
             histories.setdefault(key, []).append(_meeting(row))
+
+    recent_form: dict[str, list[dict[str, Any]]] = {}
+    recent_seasons = {season - 1, season}
+    for _, row in completed[completed["season"].isin(recent_seasons)].sort_values(
+        "gameday", ascending=False
+    ).iterrows():
+        for team in (str(row["away_team"]), str(row["home_team"])):
+            if len(recent_form.get(team, [])) < 5:
+                recent_form.setdefault(team, []).append(_recent_team_game(row, team, stats))
 
     season_games: list[dict[str, Any]] = []
     for _, row in current.iterrows():
@@ -157,6 +241,15 @@ def build_schedule_payloads(
             key: [_compact_meeting(meeting) for meeting in meetings]
             for key, meetings in histories.items()
         },
+        "recentFields": [
+            "id", "date", "season", "week", "gameType", "team", "opponent",
+            "homeAway", "teamScore", "opponentScore", "result", "passingYards",
+            "rushingYards", "totalYards", "totalEpa", "turnovers", "defensiveSacks",
+        ],
+        "recentForm": {
+            team: [_compact_recent_game(game) for game in team_games]
+            for team, team_games in recent_form.items()
+        },
     }
     return schedule_payload, history_payload
 
@@ -166,8 +259,9 @@ def write_schedule_payloads(
     season: int,
     output_dir: Path,
     generated_at: str,
+    team_stats: pd.DataFrame | None = None,
 ) -> tuple[Path, Path]:
-    schedule, histories = build_schedule_payloads(games, season, generated_at)
+    schedule, histories = build_schedule_payloads(games, season, generated_at, team_stats)
     schedule_path = output_dir / "schedule.json"
     history_path = output_dir / "matchup_history.json"
     schedule_path.write_text(json.dumps(schedule, indent=2) + "\n")
