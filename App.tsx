@@ -18,7 +18,7 @@ import {
   getPredictions,
   getSchedule,
 } from "./src/services/fieldIqApi";
-import { MatchupMeeting, Prediction, ScheduleGame } from "./src/types";
+import { MatchupMeeting, Prediction, RecentTeamGame, ScheduleGame } from "./src/types";
 
 const colors = {
   background: "#06100c",
@@ -34,6 +34,7 @@ const colors = {
 
 type Tab = "picks" | "schedule" | "matchups";
 type ConfidenceFilter = "ALL" | Prediction["confidence"];
+type HistoryView = "recent" | "headToHead";
 
 function formatDate(date: string, includeYear = false) {
   return new Intl.DateTimeFormat("en-US", {
@@ -184,6 +185,62 @@ function MeetingLine({ meeting }: { meeting: MatchupMeeting }) {
   );
 }
 
+function RecentGameLine({ game }: { game: RecentTeamGame }) {
+  const location = game.homeAway === "Home" ? "vs" : "at";
+  const availableStats = [
+    game.totalYards !== null ? `${Math.round(game.totalYards)} YDS` : null,
+    game.totalEpa !== null ? `${game.totalEpa > 0 ? "+" : ""}${game.totalEpa.toFixed(1)} EPA` : null,
+    game.turnovers !== null ? `${Math.round(game.turnovers)} TO` : null,
+    game.defensiveSacks !== null ? `${game.defensiveSacks.toFixed(1)} SACKS` : null,
+  ].filter(Boolean);
+
+  return (
+    <View style={styles.recentGameLine}>
+      <View style={styles.recentGameTop}>
+        <View style={styles.recentGameCopy}>
+          <Text style={styles.meetingDate}>
+            {formatDate(game.date, true)} • {game.gameType}
+          </Text>
+          <Text style={styles.recentOpponent}>
+            {location} {game.opponentAbbreviation}
+          </Text>
+        </View>
+        <View style={[styles.resultPill, game.result === "W" ? styles.winPill : styles.lossPill]}>
+          <Text style={[styles.resultLetter, game.result === "W" ? styles.winText : styles.lossText]}>
+            {game.result}
+          </Text>
+          <Text style={styles.recentScore}>{game.teamScore}–{game.opponentScore}</Text>
+        </View>
+      </View>
+      {availableStats.length > 0 && (
+        <Text style={styles.recentStats}>{availableStats.join("  •  ")}</Text>
+      )}
+    </View>
+  );
+}
+
+function RecentTeamSection({
+  team,
+  games,
+}: {
+  team: string;
+  games: RecentTeamGame[];
+}) {
+  return (
+    <View style={styles.recentTeamSection}>
+      <View style={styles.recentTeamHeader}>
+        <TeamBadge abbreviation={team} />
+        <View style={styles.recentTeamHeading}>
+          <Text style={styles.recentTeamName}>{team} RECENT FORM</Text>
+          <Text style={styles.recentTeamSubhead}>Last {games.length} completed games</Text>
+        </View>
+      </View>
+      {games.map((game) => <RecentGameLine key={`${team}-${game.id}`} game={game} />)}
+      {games.length === 0 && <Text style={styles.emptyCompact}>No recent games found.</Text>}
+    </View>
+  );
+}
+
 function ScheduleCard({
   game,
   showHistory,
@@ -298,6 +355,8 @@ export default function App() {
   const [selectedGame, setSelectedGame] = useState<ScheduleGame | null>(null);
   const [confidenceFilter, setConfidenceFilter] = useState<ConfidenceFilter>("ALL");
   const [history, setHistory] = useState<MatchupMeeting[]>([]);
+  const [recentForm, setRecentForm] = useState<Record<string, RecentTeamGame[]>>({});
+  const [historyView, setHistoryView] = useState<HistoryView>("recent");
   const [historyLoading, setHistoryLoading] = useState(false);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
@@ -387,9 +446,12 @@ export default function App() {
   async function openHistory(game: ScheduleGame) {
     setSelectedGame(game);
     setHistory([]);
+    setRecentForm({});
+    setHistoryView("recent");
     setHistoryLoading(true);
     const result = await getMatchupHistory(game.awayAbbreviation, game.homeAbbreviation);
     setHistory(result?.meetings ?? []);
+    setRecentForm(result?.recentForm ?? {});
     setHistoryLoading(false);
   }
 
@@ -551,7 +613,9 @@ export default function App() {
             <View style={styles.modalHandle} />
             <View style={styles.modalHeader}>
               <View>
-                <Text style={styles.eyebrow}>LAST FIVE MEETINGS</Text>
+                <Text style={styles.eyebrow}>
+                  {selectedGame ? `${selectedGame.season - 1}–${selectedGame.season} GAME DATA` : "RECENT GAME DATA"}
+                </Text>
                 <Text style={styles.modalTitle}>
                   {selectedGame?.awayAbbreviation} vs {selectedGame?.homeAbbreviation}
                 </Text>
@@ -560,12 +624,56 @@ export default function App() {
                 <Text style={styles.closeText}>×</Text>
               </Pressable>
             </View>
+            <View style={styles.historyTabs}>
+              <Pressable
+                accessibilityRole="button"
+                onPress={() => setHistoryView("recent")}
+                style={[styles.historyTab, historyView === "recent" && styles.historyTabActive]}
+              >
+                <Text style={[styles.historyTabText, historyView === "recent" && styles.historyTabTextActive]}>
+                  Recent form
+                </Text>
+              </Pressable>
+              <Pressable
+                accessibilityRole="button"
+                onPress={() => setHistoryView("headToHead")}
+                style={[styles.historyTab, historyView === "headToHead" && styles.historyTabActive]}
+              >
+                <Text style={[styles.historyTabText, historyView === "headToHead" && styles.historyTabTextActive]}>
+                  Head to head
+                </Text>
+              </Pressable>
+            </View>
             <ScrollView style={styles.modalList}>
-              {historyLoading ? <ActivityIndicator color={colors.green} size="large" style={styles.loader} /> :
-                history.map((meeting) => <MeetingLine key={meeting.id} meeting={meeting} />)}
-              {!historyLoading && history.length === 0 && <Text style={styles.empty}>No completed meetings found.</Text>}
+              {historyLoading ? (
+                <ActivityIndicator color={colors.green} size="large" style={styles.loader} />
+              ) : historyView === "recent" ? (
+                <>
+                  {selectedGame && (
+                    <RecentTeamSection
+                      team={selectedGame.awayAbbreviation}
+                      games={recentForm[selectedGame.awayAbbreviation] ?? []}
+                    />
+                  )}
+                  {selectedGame && (
+                    <RecentTeamSection
+                      team={selectedGame.homeAbbreviation}
+                      games={recentForm[selectedGame.homeAbbreviation] ?? []}
+                    />
+                  )}
+                </>
+              ) : (
+                <>
+                  {history.map((meeting) => <MeetingLine key={meeting.id} meeting={meeting} />)}
+                  {history.length === 0 && <Text style={styles.empty}>No completed meetings found.</Text>}
+                </>
+              )}
             </ScrollView>
-            <Text style={styles.modalNote}>Regular season and playoff meetings in the Field IQ dataset.</Text>
+            <Text style={styles.modalNote}>
+              {historyView === "recent"
+                ? "Completed games and weekly team statistics from the Field IQ dataset."
+                : "Previous regular season and playoff meetings between these teams."}
+            </Text>
           </Pressable>
         </Pressable>
       </Modal>
@@ -684,11 +792,34 @@ const styles = StyleSheet.create({
   closeButton: { alignItems: "center", backgroundColor: colors.panelRaised, borderRadius: 20, height: 40, justifyContent: "center", width: 40 },
   closeText: { color: colors.text, fontSize: 27, lineHeight: 29 },
   modalList: { maxHeight: 430 },
+  historyTabs: { backgroundColor: "#0a1511", borderRadius: 14, flexDirection: "row", marginBottom: 8, padding: 4 },
+  historyTab: { alignItems: "center", borderRadius: 11, flex: 1, paddingVertical: 10 },
+  historyTabActive: { backgroundColor: colors.greenDark },
+  historyTabText: { color: colors.muted, fontSize: 11, fontWeight: "800" },
+  historyTabTextActive: { color: colors.green },
   meetingLine: { alignItems: "center", borderBottomColor: colors.border, borderBottomWidth: 1, flexDirection: "row", justifyContent: "space-between", paddingVertical: 14 },
   meetingDate: { color: colors.muted, fontSize: 10, fontWeight: "700" },
   meetingTeams: { color: colors.text, fontSize: 15, fontWeight: "800", marginTop: 5 },
   winnerBlock: { alignItems: "flex-end" },
   winnerLabel: { color: colors.muted, fontSize: 8, fontWeight: "900", letterSpacing: 1 },
   winnerName: { color: colors.green, fontSize: 15, fontWeight: "900", marginTop: 3 },
+  recentTeamSection: { borderBottomColor: colors.border, borderBottomWidth: 1, paddingBottom: 8, paddingTop: 12 },
+  recentTeamHeader: { alignItems: "center", flexDirection: "row", marginBottom: 8 },
+  recentTeamHeading: { marginLeft: 11 },
+  recentTeamName: { color: colors.text, fontSize: 14, fontWeight: "900" },
+  recentTeamSubhead: { color: colors.muted, fontSize: 10, marginTop: 2 },
+  recentGameLine: { borderTopColor: colors.border, borderTopWidth: 1, paddingVertical: 12 },
+  recentGameTop: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" },
+  recentGameCopy: { flex: 1 },
+  recentOpponent: { color: colors.text, fontSize: 14, fontWeight: "800", marginTop: 4 },
+  resultPill: { alignItems: "center", borderRadius: 11, flexDirection: "row", gap: 7, paddingHorizontal: 10, paddingVertical: 7 },
+  winPill: { backgroundColor: colors.greenDark },
+  lossPill: { backgroundColor: "#30211f" },
+  resultLetter: { fontSize: 12, fontWeight: "900" },
+  winText: { color: colors.green },
+  lossText: { color: "#f29b88" },
+  recentScore: { color: colors.text, fontSize: 12, fontWeight: "900" },
+  recentStats: { color: colors.muted, fontSize: 10, fontWeight: "700", marginTop: 7 },
+  emptyCompact: { color: colors.muted, fontSize: 12, paddingVertical: 16, textAlign: "center" },
   modalNote: { color: colors.muted, fontSize: 9, marginTop: 14, textAlign: "center" },
 });
