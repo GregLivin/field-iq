@@ -2,5 +2,10 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "npm run build:web",
   "outputDirectory": "dist",
-  "framework": null
+  "framework": null,
+  "functions": {
+    "api/*.py": {
+      "includeFiles": "data/**"
+    }
+  }
 }

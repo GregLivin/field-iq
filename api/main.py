@@ -33,6 +33,7 @@ def _load_json(path: Path) -> dict[str, Any]:
 
 
 @app.get("/health")
+@app.get("/api/health")
 async def health() -> dict[str, str]:
     return {
         "status": "ok",
@@ -60,6 +61,7 @@ async def model_metrics() -> dict[str, Any]:
 
 
 @app.get("/api/data-status")
+@app.get("/api/data_status")
 async def data_status() -> dict[str, Any]:
     return {
         "nflverse": _load_json(MANIFEST_PATH),
