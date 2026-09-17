@@ -1,0 +1,43 @@
+import { Prediction } from "../types";
+
+export const demoPredictions: Prediction[] = [
+  {
+    id: "demo-buf-mia",
+    awayTeam: "Buffalo",
+    awayAbbreviation: "BUF",
+    homeTeam: "Miami",
+    homeAbbreviation: "MIA",
+    kickoff: "Sun • 1:00 PM",
+    predictedWinner: "Buffalo",
+    homeWinProbability: 43,
+    awayWinProbability: 57,
+    confidence: "Medium",
+    factors: ["Recent efficiency", "Quarterback form", "Turnover margin"],
+  },
+  {
+    id: "demo-kc-den",
+    awayTeam: "Kansas City",
+    awayAbbreviation: "KC",
+    homeTeam: "Denver",
+    homeAbbreviation: "DEN",
+    kickoff: "Sun • 4:25 PM",
+    predictedWinner: "Kansas City",
+    homeWinProbability: 38,
+    awayWinProbability: 62,
+    confidence: "Medium",
+    factors: ["Passing EPA", "Red-zone rate", "Opponent strength"],
+  },
+  {
+    id: "demo-dal-phi",
+    awayTeam: "Dallas",
+    awayAbbreviation: "DAL",
+    homeTeam: "Philadelphia",
+    homeAbbreviation: "PHI",
+    kickoff: "Sun • 8:20 PM",
+    predictedWinner: "Philadelphia",
+    homeWinProbability: 58,
+    awayWinProbability: 42,
+    confidence: "Medium",
+    factors: ["Home field", "Defensive pressure", "Injury availability"],
+  },
+];
