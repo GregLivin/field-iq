@@ -14,7 +14,7 @@ WEATHER_STATUS_PATH = ROOT / "data" / "raw" / "weather_status.json"
 SCHEDULE_PATH = ROOT / "data" / "processed" / "schedule.json"
 MATCHUP_HISTORY_PATH = ROOT / "data" / "processed" / "matchup_history.json"
 
-app = FastAPI(title="FieldIQ NFL API", version="0.2.0")
+app = FastAPI(title="Field IQ NFL API", version="0.3.0")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -41,6 +41,18 @@ def _expand_meeting(values: list[Any]) -> dict[str, Any]:
         "awayScore": values[6], "homeTeam": values[7], "homeAbbreviation": values[7],
         "homeScore": values[8], "winner": values[9] or "Tie",
         "winnerAbbreviation": values[9],
+    }
+
+
+def _expand_recent_game(values: list[Any]) -> dict[str, Any]:
+    return {
+        "id": values[0], "date": values[1], "season": values[2], "week": values[3],
+        "gameType": values[4], "teamAbbreviation": values[5],
+        "opponent": values[6], "opponentAbbreviation": values[6],
+        "homeAway": values[7], "teamScore": values[8], "opponentScore": values[9],
+        "result": values[10], "passingYards": values[11], "rushingYards": values[12],
+        "totalYards": values[13], "totalEpa": values[14], "turnovers": values[15],
+        "defensiveSacks": values[16],
     }
 
 
@@ -105,11 +117,19 @@ async def matchup_history(
         _expand_meeting(meeting)
         for meeting in payload.get("matchups", {}).get(key, [])[:limit]
     ]
+    recent_form = {
+        team: [
+            _expand_recent_game(game)
+            for game in payload.get("recentForm", {}).get(team, [])[:limit]
+        ]
+        for team in teams
+    }
     return {
         "asOf": payload.get("asOf"),
         "provider": payload.get("provider"),
         "teams": teams,
         "meetings": meetings,
+        "recentForm": recent_form,
         "count": len(meetings),
     }
 
