@@ -33,6 +33,7 @@ const colors = {
 };
 
 type Tab = "picks" | "schedule" | "matchups";
+type ConfidenceFilter = "ALL" | Prediction["confidence"];
 
 function formatDate(date: string, includeYear = false) {
   return new Intl.DateTimeFormat("en-US", {
@@ -50,12 +51,33 @@ function TeamBadge({ abbreviation }: { abbreviation: string }) {
   );
 }
 
-function PredictionCard({ prediction }: { prediction: Prediction }) {
+function PredictionCard({
+  prediction,
+  lastMeeting,
+  game,
+  onHistory,
+}: {
+  prediction: Prediction;
+  lastMeeting?: MatchupMeeting | null;
+  game?: ScheduleGame;
+  onHistory: (game: ScheduleGame) => void;
+}) {
   const homeIsWinner = prediction.homeWinProbability >= prediction.awayWinProbability;
+  const winnerProbability = Math.max(
+    prediction.homeWinProbability,
+    prediction.awayWinProbability,
+  );
   return (
     <View style={styles.card}>
       <View style={styles.cardTop}>
-        <Text style={styles.kickoff}>{prediction.kickoff}</Text>
+        <View>
+          <Text style={styles.nextGameLabel}>NEXT SCHEDULED GAME</Text>
+          <Text style={styles.kickoff}>
+            {game
+              ? `${formatDate(game.date, true)}${game.time ? ` • ${game.time}` : ""}`
+              : prediction.kickoff}
+          </Text>
+        </View>
         <View style={styles.confidencePill}>
           <Text style={styles.confidenceText}>{prediction.confidence} confidence</Text>
         </View>
@@ -77,9 +99,32 @@ function PredictionCard({ prediction }: { prediction: Prediction }) {
           </Text>
         </View>
       </View>
+      <View
+        accessibilityLabel={`${prediction.awayTeam} ${prediction.awayWinProbability} percent, ${prediction.homeTeam} ${prediction.homeWinProbability} percent`}
+        style={styles.probabilityTrack}
+      >
+        <View
+          style={[
+            styles.awayProbabilityFill,
+            { width: `${prediction.awayWinProbability}%` },
+          ]}
+        />
+        <View
+          style={[
+            styles.homeProbabilityFill,
+            { width: `${prediction.homeWinProbability}%` },
+          ]}
+        />
+      </View>
       <View style={styles.pick}>
-        <Text style={styles.pickLabel}>FIELDIQ PICK</Text>
-        <Text style={styles.pickWinner}>{prediction.predictedWinner}</Text>
+        <View>
+          <Text style={styles.pickLabel}>FIELDIQ PICK</Text>
+          <Text style={styles.pickWinner}>{prediction.predictedWinner}</Text>
+        </View>
+        <View style={styles.edgeBlock}>
+          <Text style={styles.pickLabel}>WIN CHANCE</Text>
+          <Text style={styles.edgeValue}>{winnerProbability}%</Text>
+        </View>
       </View>
       <View style={styles.factorRow}>
         {prediction.factors.slice(0, 3).map((factor) => (
@@ -88,6 +133,34 @@ function PredictionCard({ prediction }: { prediction: Prediction }) {
           </View>
         ))}
       </View>
+      <View style={styles.methodBlock}>
+        <Text style={styles.methodLabel}>HOW THIS PICK WAS BUILT</Text>
+        <Text style={styles.methodText}>
+          FieldIQ compared {prediction.factors.slice(0, 3).join(", ").toLowerCase()} across both teams. The model combined those signals with current team data to estimate a {prediction.homeWinProbability}% chance for {prediction.homeTeam} and {prediction.awayWinProbability}% for {prediction.awayTeam}.
+        </Text>
+      </View>
+      {lastMeeting && (
+        <View style={styles.predictionHistory}>
+          <Text style={styles.predictionHistoryLabel}>LAST MEETING</Text>
+          <Text style={styles.predictionHistoryValue}>
+            {formatDate(lastMeeting.date, true)} • {lastMeeting.winnerAbbreviation ? `${lastMeeting.winnerAbbreviation} won` : "Tie game"}
+          </Text>
+          <Text style={styles.predictionHistoryScore}>
+            {lastMeeting.awayAbbreviation} {lastMeeting.awayScore} — {lastMeeting.homeScore} {lastMeeting.homeAbbreviation}
+          </Text>
+        </View>
+      )}
+      {game && (
+        <Pressable
+          accessibilityLabel={`View previous ${prediction.awayTeam} and ${prediction.homeTeam} game statistics and outcomes`}
+          accessibilityRole="button"
+          onPress={() => onHistory(game)}
+          style={({ pressed }) => [styles.previousGamesButton, pressed && styles.pressed]}
+        >
+          <Text style={styles.previousGamesButtonText}>Previous games, stats & outcomes</Text>
+          <Text style={styles.previousGamesArrow}>→</Text>
+        </Pressable>
+      )}
     </View>
   );
 }
@@ -223,6 +296,7 @@ export default function App() {
   const [selectedWeek, setSelectedWeek] = useState<string | number>(2);
   const [selectedTeam, setSelectedTeam] = useState<string | number>("ALL");
   const [selectedGame, setSelectedGame] = useState<ScheduleGame | null>(null);
+  const [confidenceFilter, setConfidenceFilter] = useState<ConfidenceFilter>("ALL");
   const [history, setHistory] = useState<MatchupMeeting[]>([]);
   const [historyLoading, setHistoryLoading] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -268,6 +342,48 @@ export default function App() {
     [schedule, week],
   );
 
+  const predictionGames = useMemo(() => {
+    const games = new Map<string, ScheduleGame>();
+    [...schedule]
+      .filter((game) => game.status === "upcoming")
+      .sort((a, b) => `${a.date} ${a.time ?? ""}`.localeCompare(`${b.date} ${b.time ?? ""}`))
+      .forEach((game) => {
+        const key = [game.awayAbbreviation, game.homeAbbreviation].sort().join("-");
+        if (!games.has(key)) games.set(key, game);
+      });
+    return games;
+  }, [schedule]);
+
+  const filteredPredictions = useMemo(
+    () => predictions
+      .filter((prediction) =>
+        confidenceFilter === "ALL" || prediction.confidence === confidenceFilter)
+      .sort((a, b) => {
+        const aKey = [a.awayAbbreviation, a.homeAbbreviation].sort().join("-");
+        const bKey = [b.awayAbbreviation, b.homeAbbreviation].sort().join("-");
+        const aGame = predictionGames.get(aKey);
+        const bGame = predictionGames.get(bKey);
+        const aDate = aGame ? `${aGame.date} ${aGame.time ?? ""}` : "9999";
+        const bDate = bGame ? `${bGame.date} ${bGame.time ?? ""}` : "9999";
+        return aDate.localeCompare(bDate);
+      }),
+    [confidenceFilter, predictionGames, predictions],
+  );
+
+  const matchupHistory = useMemo(() => {
+    const meetings = new Map<string, MatchupMeeting | null>();
+    schedule.forEach((game) => {
+      const key = [game.awayAbbreviation, game.homeAbbreviation].sort().join("-");
+      if (!meetings.has(key) && game.lastMeeting) meetings.set(key, game.lastMeeting);
+    });
+    return meetings;
+  }, [schedule]);
+
+  const highConfidenceCount = useMemo(
+    () => predictions.filter((prediction) => prediction.confidence === "High").length,
+    [predictions],
+  );
+
   async function openHistory(game: ScheduleGame) {
     setSelectedGame(game);
     setHistory([]);
@@ -286,7 +402,7 @@ export default function App() {
         <View style={styles.header}>
           <View>
             <Text style={styles.brand}>FIELDIQ</Text>
-            {!compact && <Text style={styles.subtitle}>Smarter predictions. Better picks.</Text>}
+            <Text style={styles.subtitle}>Let intelligence guide the chance.</Text>
           </View>
           <View style={styles.weekPill}>
             <Text style={styles.weekText}>NFL {season} • W{week}</Text>
@@ -303,19 +419,66 @@ export default function App() {
           {activeTab === "picks" && (
             <>
               <View style={[styles.hero, compact && styles.heroCompact]}>
-                <Text style={styles.eyebrow}>GAME WINNER MODEL</Text>
-                <Text style={[styles.heroTitle, compact && styles.heroTitleCompact]}>This week’s smartest picks</Text>
+                <View style={styles.heroHeadingRow}>
+                  <View style={styles.heroCopy}>
+                    <Text style={styles.eyebrow}>FIELDIQ MODEL CENTER</Text>
+                    <Text style={[styles.heroTitle, compact && styles.heroTitleCompact]}>Let intelligence guide the chance.</Text>
+                  </View>
+                  {!compact && (
+                    <View style={styles.modelMark}>
+                      <Text style={styles.modelMarkText}>IQ</Text>
+                    </View>
+                  )}
+                </View>
                 <Text style={styles.heroBody}>
-                  Probabilities built from team form, player availability, weather, efficiency, and history.
+                  Multiple prediction models analyze daily NFL data—including team form, player availability, injuries, weather, efficiency, and matchup history—to produce clear win probabilities.
                 </Text>
-                <View style={styles.sourceRow}>
-                  <View style={source === "live" ? styles.liveDot : styles.demoDot} />
-                  <Text style={styles.sourceText}>{source === "live" ? `Daily data • ${model}` : "Demo data"}</Text>
+                <View style={styles.modelSummary}>
+                  <View style={styles.summaryItem}>
+                    <Text style={styles.summaryValue}>{predictions.length}</Text>
+                    <Text style={styles.summaryLabel}>GAME PICKS</Text>
+                  </View>
+                  <View style={styles.summaryDivider} />
+                  <View style={styles.summaryItem}>
+                    <Text style={styles.summaryValue}>{highConfidenceCount}</Text>
+                    <Text style={styles.summaryLabel}>HIGH CONFIDENCE</Text>
+                  </View>
+                  <View style={styles.summaryDivider} />
+                  <View style={styles.summaryItem}>
+                    <View style={styles.sourceInline}>
+                      <View style={source === "live" ? styles.liveDot : styles.demoDot} />
+                      <Text style={styles.summaryValueSmall}>{source === "live" ? "LIVE" : "DEMO"}</Text>
+                    </View>
+                    <Text style={styles.summaryLabel}>{source === "live" ? model : "MODEL DATA"}</Text>
+                  </View>
                 </View>
               </View>
-              <Text style={styles.sectionTitle}>{title}</Text>
+              <View style={styles.resultsRow}>
+                <Text style={styles.sectionTitle}>{title}</Text>
+                <Text style={styles.resultCount}>{filteredPredictions.length} games</Text>
+              </View>
+              <FilterChips
+                values={["ALL", "High", "Medium", "Low"]}
+                selected={confidenceFilter}
+                onSelect={(value) => setConfidenceFilter(value as ConfidenceFilter)}
+              />
               {loading ? <ActivityIndicator color={colors.green} size="large" style={styles.loader} /> :
-                predictions.map((prediction) => <PredictionCard key={prediction.id} prediction={prediction} />)}
+                filteredPredictions.map((prediction) => {
+                  const key = [prediction.awayAbbreviation, prediction.homeAbbreviation].sort().join("-");
+                  const game = predictionGames.get(key);
+                  return (
+                    <PredictionCard
+                      key={prediction.id}
+                      prediction={prediction}
+                      lastMeeting={matchupHistory.get(key)}
+                      game={game}
+                      onHistory={openHistory}
+                    />
+                  );
+                })}
+              {!loading && filteredPredictions.length === 0 && (
+                <Text style={styles.empty}>No predictions match this confidence level.</Text>
+              )}
             </>
           )}
 
@@ -414,22 +577,31 @@ const styles = StyleSheet.create({
   safeArea: { flex: 1, backgroundColor: colors.background },
   shell: { flex: 1, width: "100%", maxWidth: 1080, alignSelf: "center" },
   scroller: { flex: 1 },
-  container: { paddingHorizontal: 16, paddingTop: 10, paddingBottom: 32 },
-  header: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", paddingHorizontal: 18, paddingVertical: 12 },
+  container: { paddingHorizontal: 16, paddingTop: 8, paddingBottom: 32 },
+  header: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", paddingHorizontal: 18, paddingVertical: 14 },
   brand: { color: colors.green, fontSize: 23, fontWeight: "900", letterSpacing: 1.5 },
-  subtitle: { color: colors.muted, fontSize: 12, marginTop: 2 },
+  subtitle: { color: colors.muted, fontSize: 11, fontWeight: "600", marginTop: 2 },
   weekPill: { backgroundColor: colors.greenDark, borderColor: "#286945", borderRadius: 18, borderWidth: 1, paddingHorizontal: 11, paddingVertical: 7 },
   weekText: { color: colors.green, fontSize: 11, fontWeight: "800" },
-  hero: { backgroundColor: colors.panelRaised, borderColor: colors.border, borderRadius: 24, borderWidth: 1, marginBottom: 26, padding: 24 },
+  hero: { backgroundColor: colors.panelRaised, borderColor: "#27523d", borderRadius: 24, borderWidth: 1, marginBottom: 21, padding: 24 },
   heroCompact: { borderRadius: 20, padding: 18 },
+  heroHeadingRow: { alignItems: "flex-start", flexDirection: "row", justifyContent: "space-between" },
+  heroCopy: { flex: 1 },
+  modelMark: { alignItems: "center", backgroundColor: colors.greenDark, borderColor: "#347957", borderRadius: 24, borderWidth: 1, height: 48, justifyContent: "center", marginLeft: 24, width: 48 },
+  modelMarkText: { color: colors.green, fontSize: 14, fontWeight: "900", letterSpacing: 1 },
   eyebrow: { color: colors.green, fontSize: 11, fontWeight: "900", letterSpacing: 1.4, marginBottom: 8 },
-  heroTitle: { color: colors.text, fontSize: 32, fontWeight: "900", lineHeight: 36, marginBottom: 10 },
-  heroTitleCompact: { fontSize: 27, lineHeight: 31 },
-  heroBody: { color: colors.muted, fontSize: 14, lineHeight: 21 },
-  sourceRow: { alignItems: "center", flexDirection: "row", marginTop: 17 },
+  heroTitle: { color: colors.text, fontSize: 30, fontWeight: "900", lineHeight: 35, marginBottom: 10, maxWidth: 620 },
+  heroTitleCompact: { fontSize: 25, lineHeight: 30 },
+  heroBody: { color: "#acc2b6", fontSize: 14, lineHeight: 21, maxWidth: 760 },
+  modelSummary: { alignItems: "stretch", backgroundColor: "#0b1712", borderColor: colors.border, borderRadius: 16, borderWidth: 1, flexDirection: "row", marginTop: 18, paddingHorizontal: 8, paddingVertical: 12 },
+  summaryItem: { alignItems: "center", flex: 1, justifyContent: "center", minWidth: 0 },
+  summaryDivider: { alignSelf: "stretch", backgroundColor: colors.border, width: 1 },
+  summaryValue: { color: colors.text, fontSize: 18, fontWeight: "900" },
+  summaryValueSmall: { color: colors.text, fontSize: 12, fontWeight: "900" },
+  summaryLabel: { color: colors.muted, fontSize: 8, fontWeight: "900", letterSpacing: 0.7, marginTop: 4, textAlign: "center" },
+  sourceInline: { alignItems: "center", flexDirection: "row" },
   liveDot: { backgroundColor: colors.green, borderRadius: 5, height: 9, marginRight: 8, width: 9 },
   demoDot: { backgroundColor: colors.gold, borderRadius: 5, height: 9, marginRight: 8, width: 9 },
-  sourceText: { color: colors.muted, fontSize: 12, fontWeight: "700" },
   screenIntro: { marginBottom: 22, paddingTop: 8 },
   screenTitle: { color: colors.text, fontSize: 28, fontWeight: "900", marginBottom: 7 },
   sectionTitle: { color: colors.text, fontSize: 21, fontWeight: "800", marginBottom: 12 },
@@ -438,7 +610,8 @@ const styles = StyleSheet.create({
   loader: { marginVertical: 42 },
   card: { backgroundColor: colors.panel, borderColor: colors.border, borderRadius: 22, borderWidth: 1, marginBottom: 16, padding: 17 },
   cardTop: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", marginBottom: 17 },
-  kickoff: { color: colors.muted, fontSize: 12, fontWeight: "700" },
+  nextGameLabel: { color: colors.green, fontSize: 8, fontWeight: "900", letterSpacing: 1 },
+  kickoff: { color: colors.text, fontSize: 12, fontWeight: "800", marginTop: 4 },
   confidencePill: { backgroundColor: colors.greenDark, borderRadius: 15, paddingHorizontal: 10, paddingVertical: 6 },
   confidenceText: { color: colors.green, fontSize: 10, fontWeight: "800" },
   matchup: { alignItems: "center", flexDirection: "row", justifyContent: "space-between" },
@@ -449,12 +622,27 @@ const styles = StyleSheet.create({
   probability: { color: colors.muted, fontSize: 25, fontWeight: "900", marginTop: 6 },
   winnerProbability: { color: colors.green, fontSize: 25, fontWeight: "900", marginTop: 6 },
   at: { color: colors.muted, fontSize: 14, fontWeight: "900", marginHorizontal: 8 },
-  pick: { alignItems: "center", borderTopColor: colors.border, borderTopWidth: 1, marginTop: 18, paddingTop: 15 },
+  probabilityTrack: { backgroundColor: "#26372f", borderRadius: 4, flexDirection: "row", height: 7, marginTop: 16, overflow: "hidden", width: "100%" },
+  awayProbabilityFill: { backgroundColor: "#71877b", height: "100%" },
+  homeProbabilityFill: { backgroundColor: colors.green, height: "100%" },
+  pick: { alignItems: "flex-end", borderTopColor: colors.border, borderTopWidth: 1, flexDirection: "row", justifyContent: "space-between", marginTop: 18, paddingTop: 15 },
   pickLabel: { color: colors.muted, fontSize: 9, fontWeight: "900", letterSpacing: 1.2 },
   pickWinner: { color: colors.green, fontSize: 16, fontWeight: "900", marginTop: 4 },
+  edgeBlock: { alignItems: "flex-end" },
+  edgeValue: { color: colors.text, fontSize: 16, fontWeight: "900", marginTop: 4 },
   factorRow: { flexDirection: "row", flexWrap: "wrap", gap: 6, justifyContent: "center", marginTop: 13 },
   factor: { backgroundColor: "#17251f", borderRadius: 12, paddingHorizontal: 9, paddingVertical: 6 },
   factorText: { color: colors.muted, fontSize: 9, fontWeight: "700" },
+  predictionHistory: { backgroundColor: "#0a1511", borderRadius: 13, marginTop: 13, padding: 12 },
+  predictionHistoryLabel: { color: colors.muted, fontSize: 8, fontWeight: "900", letterSpacing: 1 },
+  predictionHistoryValue: { color: colors.text, fontSize: 12, fontWeight: "800", marginTop: 5 },
+  predictionHistoryScore: { color: colors.muted, fontSize: 11, marginTop: 2 },
+  methodBlock: { borderTopColor: colors.border, borderTopWidth: 1, marginTop: 15, paddingTop: 14 },
+  methodLabel: { color: colors.green, fontSize: 9, fontWeight: "900", letterSpacing: 1 },
+  methodText: { color: "#acc2b6", fontSize: 12, lineHeight: 18, marginTop: 6 },
+  previousGamesButton: { alignItems: "center", backgroundColor: colors.greenDark, borderColor: "#2f6f4c", borderRadius: 13, borderWidth: 1, flexDirection: "row", justifyContent: "space-between", marginTop: 13, paddingHorizontal: 14, paddingVertical: 12 },
+  previousGamesButtonText: { color: colors.green, fontSize: 11, fontWeight: "900" },
+  previousGamesArrow: { color: colors.green, fontSize: 17, fontWeight: "900" },
   filterLabel: { color: colors.muted, fontSize: 10, fontWeight: "900", letterSpacing: 1.2, marginBottom: 8 },
   chips: { gap: 8, paddingBottom: 18 },
   chip: { backgroundColor: colors.panel, borderColor: colors.border, borderRadius: 18, borderWidth: 1, paddingHorizontal: 13, paddingVertical: 8 },
