@@ -22,9 +22,9 @@ def collect_nflverse(
 ) -> dict[str, object]:
     """Download independent nflverse sources used by FieldIQ.
 
-    Historical schedules and team stats train the model. Current player stats,
-    rosters, and injuries are retained as separate daily inputs for auditing and
-    future player-availability features.
+    Play-by-play is retained alongside schedules and weekly statistics so FieldIQ
+    can derive richer team-game features and audit whether completed games have
+    the underlying plays required by the prediction pipeline.
     """
     ensure_directories()
     season = season or current_nfl_season()
@@ -33,6 +33,7 @@ def collect_nflverse(
     datasets: dict[str, pl.DataFrame] = {
         "games": nfl.load_schedules(seasons),
         "team_weekly": nfl.load_team_stats(seasons, summary_level="week"),
+        "pbp": nfl.load_pbp(seasons),
         "player_weekly": nfl.load_player_stats(season, summary_level="week"),
         "rosters": nfl.load_rosters(season),
         "injuries": nfl.load_injuries(season),
@@ -65,4 +66,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
