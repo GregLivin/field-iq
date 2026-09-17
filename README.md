@@ -4,7 +4,7 @@
 
 ## Live app
 
-[Open the FieldIQ app](https://field-iq-yepyup-s-projects25.vercel.app)
+[Open the FieldIQ app](https://api-liard-five-70.vercel.app)
 
 FieldIQ is an NFL-only mobile prediction app that displays game-winner probabilities and the factors behind each pick. The first MVP includes an Expo/React Native app, an NFL API proxy, and a transparent baseline prediction method ready to be replaced by a trained machine-learning model.
 
