@@ -73,6 +73,15 @@ def _meeting(row: pd.Series) -> dict[str, Any]:
     }
 
 
+def _compact_meeting(meeting: dict[str, Any]) -> list[Any]:
+    """Keep the production history artifact small enough for fast cold starts."""
+    return [
+        meeting["id"], meeting["date"], meeting["season"], meeting["week"],
+        meeting["gameType"], meeting["awayAbbreviation"], meeting["awayScore"],
+        meeting["homeAbbreviation"], meeting["homeScore"], meeting["winnerAbbreviation"],
+    ]
+
+
 def build_schedule_payloads(
     games: pd.DataFrame,
     season: int,
@@ -85,6 +94,11 @@ def build_schedule_payloads(
     frame = frame.sort_values(["gameday", "gametime", "game_id"])
     generated_at = generated_at or datetime.now(UTC).isoformat()
 
+    current = frame[frame["season"] == season]
+    current_matchups = {
+        matchup_key(str(row["away_team"]), str(row["home_team"]))
+        for _, row in current.iterrows()
+    }
     completed = frame[
         frame["away_score"].notna()
         & frame["home_score"].notna()
@@ -94,10 +108,10 @@ def build_schedule_payloads(
     histories: dict[str, list[dict[str, Any]]] = {}
     for _, row in completed.sort_values("gameday", ascending=False).iterrows():
         key = matchup_key(str(row["away_team"]), str(row["home_team"]))
-        histories.setdefault(key, []).append(_meeting(row))
+        if key in current_matchups and len(histories.get(key, [])) < 5:
+            histories.setdefault(key, []).append(_meeting(row))
 
     season_games: list[dict[str, Any]] = []
-    current = frame[frame["season"] == season]
     for _, row in current.iterrows():
         away = str(row["away_team"])
         home = str(row["home_team"])
@@ -138,7 +152,11 @@ def build_schedule_payloads(
     history_payload = {
         "asOf": generated_at,
         "provider": "nflverse",
-        "matchups": histories,
+        "fields": ["id", "date", "season", "week", "gameType", "away", "awayScore", "home", "homeScore", "winner"],
+        "matchups": {
+            key: [_compact_meeting(meeting) for meeting in meetings]
+            for key, meetings in histories.items()
+        },
     }
     return schedule_payload, history_payload
 

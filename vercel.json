@@ -5,7 +5,8 @@
   "framework": null,
   "functions": {
     "api/*.py": {
-      "includeFiles": "data/**"
+      "includeFiles": "data/**",
+      "maxDuration": 15
     }
   }
 }

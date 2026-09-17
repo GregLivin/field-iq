@@ -25,4 +25,4 @@ def test_schedule_includes_last_meeting_before_each_game() -> None:
 
     assert schedule["games"][0]["lastMeeting"]["winnerAbbreviation"] == "BUF"
     assert schedule["games"][0]["lastMeeting"]["date"] == "2025-09-01"
-    assert histories["matchups"]["BUF__DET"][0]["awayScore"] == 27
+    assert histories["matchups"]["BUF__DET"][0][6] == 27

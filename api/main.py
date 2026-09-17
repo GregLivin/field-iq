@@ -34,6 +34,16 @@ def _load_json(path: Path) -> dict[str, Any]:
         ) from exc
 
 
+def _expand_meeting(values: list[Any]) -> dict[str, Any]:
+    return {
+        "id": values[0], "date": values[1], "season": values[2], "week": values[3],
+        "gameType": values[4], "awayTeam": values[5], "awayAbbreviation": values[5],
+        "awayScore": values[6], "homeTeam": values[7], "homeAbbreviation": values[7],
+        "homeScore": values[8], "winner": values[9] or "Tie",
+        "winnerAbbreviation": values[9],
+    }
+
+
 @app.get("/health")
 @app.get("/api/health")
 async def health() -> dict[str, str]:
@@ -91,7 +101,10 @@ async def matchup_history(
     payload = _load_json(MATCHUP_HISTORY_PATH)
     teams = sorted((team1.upper(), team2.upper()))
     key = "__".join(teams)
-    meetings = payload.get("matchups", {}).get(key, [])[:limit]
+    meetings = [
+        _expand_meeting(meeting)
+        for meeting in payload.get("matchups", {}).get(key, [])[:limit]
+    ]
     return {
         "asOf": payload.get("asOf"),
         "provider": payload.get("provider"),
