@@ -6,6 +6,7 @@ from datetime import UTC, datetime
 
 from pipeline.collect_nflverse import collect_nflverse
 from pipeline.collect_weather import collect_weather
+from pipeline.data_health import build_data_health
 from pipeline.train_models import train_and_predict
 
 
@@ -14,6 +15,7 @@ def run_daily(skip_weather: bool = False) -> dict[str, object]:
         "startedAt": datetime.now(UTC).isoformat(),
         "nflverse": collect_nflverse(),
     }
+    report["dataHealth"] = build_data_health()
     if not skip_weather:
         report["weather"] = collect_weather()
     report["model"] = train_and_predict()
@@ -26,4 +28,3 @@ if __name__ == "__main__":
     parser.add_argument("--skip-weather", action="store_true")
     args = parser.parse_args()
     print(json.dumps(run_daily(args.skip_weather), indent=2))
-
