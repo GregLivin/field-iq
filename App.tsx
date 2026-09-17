@@ -118,7 +118,7 @@ function PredictionCard({
       </View>
       <View style={styles.pick}>
         <View>
-          <Text style={styles.pickLabel}>FIELDIQ PICK</Text>
+          <Text style={styles.pickLabel}>FIELD IQ PICK</Text>
           <Text style={styles.pickWinner}>{prediction.predictedWinner}</Text>
         </View>
         <View style={styles.edgeBlock}>
@@ -136,7 +136,7 @@ function PredictionCard({
       <View style={styles.methodBlock}>
         <Text style={styles.methodLabel}>HOW THIS PICK WAS BUILT</Text>
         <Text style={styles.methodText}>
-          FieldIQ compared {prediction.factors.slice(0, 3).join(", ").toLowerCase()} across both teams. The model combined those signals with current team data to estimate a {prediction.homeWinProbability}% chance for {prediction.homeTeam} and {prediction.awayWinProbability}% for {prediction.awayTeam}.
+          Field IQ compared {prediction.factors.slice(0, 3).join(", ").toLowerCase()} across both teams. The model combined those signals with current team data to estimate a {prediction.homeWinProbability}% chance for {prediction.homeTeam} and {prediction.awayWinProbability}% for {prediction.awayTeam}.
         </Text>
       </View>
       {lastMeeting && (
@@ -401,7 +401,7 @@ export default function App() {
       <View style={styles.shell}>
         <View style={styles.header}>
           <View>
-            <Text style={styles.brand}>FIELDIQ</Text>
+            <Text style={styles.brand}>Field IQ</Text>
             <Text style={styles.subtitle}>Let intelligence guide the chance.</Text>
           </View>
           <View style={styles.weekPill}>
@@ -421,7 +421,7 @@ export default function App() {
               <View style={[styles.hero, compact && styles.heroCompact]}>
                 <View style={styles.heroHeadingRow}>
                   <View style={styles.heroCopy}>
-                    <Text style={styles.eyebrow}>FIELDIQ MODEL CENTER</Text>
+                    <Text style={styles.eyebrow}>FIELD IQ MODEL CENTER</Text>
                     <Text style={[styles.heroTitle, compact && styles.heroTitleCompact]}>Let intelligence guide the chance.</Text>
                   </View>
                   {!compact && (
@@ -431,7 +431,7 @@ export default function App() {
                   )}
                 </View>
                 <Text style={styles.heroBody}>
-                  Multiple prediction models analyze daily NFL data—including team form, player availability, injuries, weather, efficiency, and matchup history—to produce clear win probabilities.
+                  Multiple prediction models analyze daily NFL data such as team form, player availability, injuries, weather, efficiency, and matchup history. These models turn the data into clear win probabilities.
                 </Text>
                 <View style={styles.modelSummary}>
                   <View style={styles.summaryItem}>
@@ -524,7 +524,7 @@ export default function App() {
           )}
 
           <Text style={styles.disclaimer}>
-            Predictions are estimates, not guarantees. FieldIQ is not affiliated with or endorsed by the NFL.
+            Predictions are estimates, not guarantees. Field IQ is not affiliated with or endorsed by the NFL.
           </Text>
         </ScrollView>
 
@@ -565,7 +565,7 @@ export default function App() {
                 history.map((meeting) => <MeetingLine key={meeting.id} meeting={meeting} />)}
               {!historyLoading && history.length === 0 && <Text style={styles.empty}>No completed meetings found.</Text>}
             </ScrollView>
-            <Text style={styles.modalNote}>Regular season and playoff meetings in the FieldIQ dataset.</Text>
+            <Text style={styles.modalNote}>Regular season and playoff meetings in the Field IQ dataset.</Text>
           </Pressable>
         </Pressable>
       </Modal>
