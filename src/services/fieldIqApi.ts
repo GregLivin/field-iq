@@ -1,5 +1,10 @@
 import { demoPredictions } from "../data/demoPredictions";
-import { Prediction, PredictionPayload } from "../types";
+import {
+  MatchupPayload,
+  Prediction,
+  PredictionPayload,
+  SchedulePayload,
+} from "../types";
 import { Platform } from "react-native";
 
 const configuredApiUrl = process.env.EXPO_PUBLIC_FIELD_IQ_API_URL?.replace(/\/$/, "");
@@ -51,5 +56,39 @@ export async function getPredictions(): Promise<PredictionResult> {
       week: 2,
       model: "demo",
     };
+  }
+}
+
+export async function getSchedule(): Promise<SchedulePayload | null> {
+  if (API_URL === undefined) {
+    return null;
+  }
+  try {
+    const response = await fetch(`${API_URL}/api/schedule`);
+    if (!response.ok) {
+      throw new Error(`FieldIQ API returned ${response.status}`);
+    }
+    return (await response.json()) as SchedulePayload;
+  } catch {
+    return null;
+  }
+}
+
+export async function getMatchupHistory(
+  teamOne: string,
+  teamTwo: string,
+): Promise<MatchupPayload | null> {
+  if (API_URL === undefined) {
+    return null;
+  }
+  try {
+    const query = new URLSearchParams({ team1: teamOne, team2: teamTwo, limit: "5" });
+    const response = await fetch(`${API_URL}/api/matchups?${query}`);
+    if (!response.ok) {
+      throw new Error(`FieldIQ API returned ${response.status}`);
+    }
+    return (await response.json()) as MatchupPayload;
+  } catch {
+    return null;
   }
 }

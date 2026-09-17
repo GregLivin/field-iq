@@ -11,6 +11,8 @@ PREDICTIONS_PATH = ROOT / "data" / "processed" / "predictions.json"
 METRICS_PATH = ROOT / "data" / "processed" / "model_metrics.json"
 MANIFEST_PATH = ROOT / "data" / "raw" / "manifest.json"
 WEATHER_STATUS_PATH = ROOT / "data" / "raw" / "weather_status.json"
+SCHEDULE_PATH = ROOT / "data" / "processed" / "schedule.json"
+MATCHUP_HISTORY_PATH = ROOT / "data" / "processed" / "matchup_history.json"
 
 app = FastAPI(title="FieldIQ NFL API", version="0.2.0")
 app.add_middleware(
@@ -53,6 +55,50 @@ async def predictions(
     if week is not None and week != payload.get("week"):
         return {**payload, "predictions": []}
     return payload
+
+
+@app.get("/api/schedule")
+async def schedule(
+    season: int | None = Query(None, ge=2000, le=2100),
+    week: int | None = Query(None, ge=1, le=22),
+    team: str | None = Query(None, min_length=2, max_length=3),
+    status: str | None = Query(None, pattern="^(upcoming|final)$"),
+) -> dict[str, Any]:
+    payload = _load_json(SCHEDULE_PATH)
+    games = payload.get("games", [])
+    if season is not None and season != payload.get("season"):
+        games = []
+    if week is not None:
+        games = [game for game in games if game.get("week") == week]
+    if team is not None:
+        abbreviation = team.upper()
+        games = [
+            game
+            for game in games
+            if abbreviation in (game.get("awayAbbreviation"), game.get("homeAbbreviation"))
+        ]
+    if status is not None:
+        games = [game for game in games if game.get("status") == status]
+    return {**payload, "games": games, "count": len(games)}
+
+
+@app.get("/api/matchups")
+async def matchup_history(
+    team1: str = Query(..., min_length=2, max_length=3),
+    team2: str = Query(..., min_length=2, max_length=3),
+    limit: int = Query(5, ge=1, le=25),
+) -> dict[str, Any]:
+    payload = _load_json(MATCHUP_HISTORY_PATH)
+    teams = sorted((team1.upper(), team2.upper()))
+    key = "__".join(teams)
+    meetings = payload.get("matchups", {}).get(key, [])[:limit]
+    return {
+        "asOf": payload.get("asOf"),
+        "provider": payload.get("provider"),
+        "teams": teams,
+        "meetings": meetings,
+        "count": len(meetings),
+    }
 
 
 @app.get("/api/model")

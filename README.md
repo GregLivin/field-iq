@@ -11,6 +11,9 @@ FieldIQ is an NFL-only mobile prediction app that displays game-winner probabili
 ## MVP features
 
 - Weekly NFL matchup cards
+- Mobile-first Picks, Schedule, and Matchups navigation
+- Complete 18-week schedule for all 32 teams with week and team filters
+- Last-meeting winner, date, score, and five-game head-to-head history
 - Predicted winner and win probability
 - Confidence level and key prediction factors
 - Daily nflverse schedules, team stats, player stats, rosters, and injury snapshots
@@ -31,6 +34,7 @@ FieldIQ is an NFL-only mobile prediction app that displays game-winner probabili
 - `pipeline/collect_weather.py` — official NWS forecast collection
 - `pipeline/features.py` — chronological rolling-feature construction
 - `pipeline/train_models.py` — model training, evaluation, and prediction
+- `pipeline/schedule.py` — season schedule and head-to-head history generation
 - `.github/workflows/daily-data.yml` — automatic daily refresh
 
 ## Run the mobile app
@@ -72,7 +76,7 @@ Set `FIELDIQ_CONTACT_EMAIL` for the User-Agent required by the NWS API. No paid 
 
 ## Daily automation
 
-The GitHub Actions workflow runs every morning and can also be started manually from **Actions → Daily FieldIQ data and predictions → Run workflow**. Large raw datasets and model files are uploaded as a 30-day workflow artifact; the small predictions and metrics files are committed for Vercel to deploy.
+The GitHub Actions workflow runs every morning and can also be started manually from **Actions → Daily FieldIQ data and predictions → Run workflow**. Large raw datasets and model files are uploaded as a 30-day workflow artifact; the small prediction, schedule, matchup-history, and metrics files are committed for Vercel to deploy.
 
 ## Prediction roadmap
 

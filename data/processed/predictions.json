@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 2,
-  "asOf": "2026-09-17T02:11:57.609341+00:00",
+  "asOf": "2026-09-17T02:39:04.559831+00:00",
   "provider": "nflverse + NOAA/NWS",
   "model": "fieldiq-ensemble-v1",
   "predictions": [

@@ -19,6 +19,7 @@ from sklearn.preprocessing import StandardScaler
 
 from pipeline.config import MODEL_DIR, PROCESSED_DIR, RANDOM_STATE, RAW_DIR, ensure_directories
 from pipeline.features import FEATURE_COLUMNS, build_features
+from pipeline.schedule import team_name, write_schedule_payloads
 
 
 def _apply_kickoff_weather(games: pd.DataFrame, weather: pd.DataFrame) -> pd.DataFrame:
@@ -115,20 +116,7 @@ def _confidence(probability: float) -> str:
 
 
 def _team_name(abbreviation: str) -> str:
-    names = {
-        "ARI": "Arizona Cardinals", "ATL": "Atlanta Falcons", "BAL": "Baltimore Ravens",
-        "BUF": "Buffalo Bills", "CAR": "Carolina Panthers", "CHI": "Chicago Bears",
-        "CIN": "Cincinnati Bengals", "CLE": "Cleveland Browns", "DAL": "Dallas Cowboys",
-        "DEN": "Denver Broncos", "DET": "Detroit Lions", "GB": "Green Bay Packers",
-        "HOU": "Houston Texans", "IND": "Indianapolis Colts", "JAX": "Jacksonville Jaguars",
-        "KC": "Kansas City Chiefs", "LA": "Los Angeles Rams", "LAC": "Los Angeles Chargers",
-        "LV": "Las Vegas Raiders", "MIA": "Miami Dolphins", "MIN": "Minnesota Vikings",
-        "NE": "New England Patriots", "NO": "New Orleans Saints", "NYG": "New York Giants",
-        "NYJ": "New York Jets", "PHI": "Philadelphia Eagles", "PIT": "Pittsburgh Steelers",
-        "SEA": "Seattle Seahawks", "SF": "San Francisco 49ers", "TB": "Tampa Bay Buccaneers",
-        "TEN": "Tennessee Titans", "WAS": "Washington Commanders",
-    }
-    return names.get(abbreviation, abbreviation)
+    return team_name(abbreviation)
 
 
 def _top_factors(row: pd.Series) -> list[str]:
@@ -244,6 +232,7 @@ def train_and_predict() -> dict[str, Any]:
         "models": metrics,
     }
     (PROCESSED_DIR / "model_metrics.json").write_text(json.dumps(metrics_payload, indent=2) + "\n")
+    write_schedule_payloads(games, season, PROCESSED_DIR, generated_at)
     training.to_parquet(PROCESSED_DIR / "game_features.parquet", index=False)
     return {"predictionCount": len(predictions), **metrics_payload}
 
