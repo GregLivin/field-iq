@@ -1,7 +1,7 @@
 {
   "season": 2026,
   "week": 2,
-  "asOf": "2026-09-17T02:39:04.559831+00:00",
+  "asOf": "2026-09-17T15:02:06.337558+00:00",
   "provider": "nflverse + NOAA/NWS",
   "model": "fieldiq-ensemble-v1",
   "predictions": [
@@ -13,8 +13,8 @@
       "homeAbbreviation": "BUF",
       "kickoff": "2026-09-17 20:15",
       "predictedWinner": "Buffalo Bills",
-      "homeWinProbability": 71,
-      "awayWinProbability": 29,
+      "homeWinProbability": 73,
+      "awayWinProbability": 27,
       "confidence": "High",
       "factors": [
         "Defensive pressure",
@@ -64,8 +64,8 @@
       "homeAbbreviation": "TB",
       "kickoff": "2026-09-20 13:00",
       "predictedWinner": "Tampa Bay Buccaneers",
-      "homeWinProbability": 64,
-      "awayWinProbability": 36,
+      "homeWinProbability": 63,
+      "awayWinProbability": 37,
       "confidence": "Medium",
       "factors": [
         "Offensive EPA trend",
@@ -104,7 +104,7 @@
       "factors": [
         "Offensive EPA trend",
         "Defensive pressure",
-        "Recent scoring margin"
+        "Weather conditions"
       ]
     },
     {
@@ -200,8 +200,8 @@
       "homeAbbreviation": "SF",
       "kickoff": "2026-09-20 16:25",
       "predictedWinner": "San Francisco 49ers",
-      "homeWinProbability": 82,
-      "awayWinProbability": 18,
+      "homeWinProbability": 81,
+      "awayWinProbability": 19,
       "confidence": "High",
       "factors": [
         "Recent scoring margin",

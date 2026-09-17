@@ -1,7 +1,7 @@
 {
   "provider": "nflverse",
   "license": "CC BY 4.0; verify each upstream dataset before commercial use",
-  "collectedAt": "2026-09-17T02:09:01.426794+00:00",
+  "collectedAt": "2026-09-17T15:01:59.138397+00:00",
   "season": 2026,
   "trainingSeasons": [
     2019,
@@ -17,7 +17,7 @@
     "games": 2232,
     "team_weekly": 3952,
     "player_weekly": 1118,
-    "rosters": 2968,
-    "injuries": 193
+    "rosters": 2978,
+    "injuries": 376
   }
 }
