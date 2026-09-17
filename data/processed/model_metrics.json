@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-09-17T02:11:57.609341+00:00",
+  "trainingGames": 1580,
+  "validationGames": 396,
+  "validationMethod": "chronological-20-percent",
+  "features": [
+    "elo_diff",
+    "rest_diff",
+    "win_rate_5_diff",
+    "point_margin_5_diff",
+    "total_epa_5_diff",
+    "yards_5_diff",
+    "turnovers_5_diff",
+    "def_sacks_5_diff",
+    "temperature_f",
+    "wind_mph",
+    "outdoors"
+  ],
+  "models": {
+    "logistic": {
+      "accuracy": 0.6414,
+      "logLoss": 0.6221,
+      "brierScore": 0.2166
+    },
+    "random_forest": {
+      "accuracy": 0.6288,
+      "logLoss": 0.6297,
+      "brierScore": 0.2207
+    },
+    "gradient_boosting": {
+      "accuracy": 0.6263,
+      "logLoss": 0.6463,
+      "brierScore": 0.2273
+    }
+  }
+}

@@ -86,6 +86,9 @@ function PredictionCard({ prediction }: { prediction: Prediction }) {
 export default function App() {
   const [predictions, setPredictions] = useState<Prediction[]>([]);
   const [source, setSource] = useState<"live" | "demo">("demo");
+  const [season, setSeason] = useState(2026);
+  const [week, setWeek] = useState(2);
+  const [model, setModel] = useState("demo");
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
 
@@ -94,6 +97,9 @@ export default function App() {
     const result = await getPredictions();
     setPredictions(result.predictions);
     setSource(result.source);
+    setSeason(result.season);
+    setWeek(result.week);
+    setModel(result.model);
     setLoading(false);
     setRefreshing(false);
   }
@@ -121,7 +127,7 @@ export default function App() {
             <Text style={styles.subtitle}>Smarter predictions. Better picks.</Text>
           </View>
           <View style={styles.weekPill}>
-            <Text style={styles.weekText}>NFL • WEEK 2</Text>
+            <Text style={styles.weekText}>NFL {season} • WEEK {week}</Text>
           </View>
         </View>
 
@@ -135,7 +141,9 @@ export default function App() {
           <View style={styles.sourceRow}>
             <View style={source === "live" ? styles.liveDot : styles.demoDot} />
             <Text style={styles.sourceText}>
-              {source === "live" ? "Live NFL data" : "Demo data • API ready"}
+              {source === "live"
+                ? `Daily data • ${model}`
+                : "Demo data • pipeline pending"}
             </Text>
           </View>
         </View>

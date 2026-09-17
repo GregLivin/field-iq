@@ -11,3 +11,12 @@ export type Prediction = {
   confidence: "Low" | "Medium" | "High";
   factors: string[];
 };
+
+export type PredictionPayload = {
+  season: number;
+  week: number;
+  asOf: string;
+  provider: string;
+  model: string;
+  predictions: Prediction[];
+};

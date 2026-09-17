@@ -1,0 +1,281 @@
+{
+  "season": 2026,
+  "week": 2,
+  "asOf": "2026-09-17T02:11:57.609341+00:00",
+  "provider": "nflverse + NOAA/NWS",
+  "model": "fieldiq-ensemble-v1",
+  "predictions": [
+    {
+      "id": "2026_02_DET_BUF",
+      "awayTeam": "Detroit Lions",
+      "awayAbbreviation": "DET",
+      "homeTeam": "Buffalo Bills",
+      "homeAbbreviation": "BUF",
+      "kickoff": "2026-09-17 20:15",
+      "predictedWinner": "Buffalo Bills",
+      "homeWinProbability": 71,
+      "awayWinProbability": 29,
+      "confidence": "High",
+      "factors": [
+        "Defensive pressure",
+        "Offensive EPA trend",
+        "Recent scoring margin"
+      ]
+    },
+    {
+      "id": "2026_02_CAR_ATL",
+      "awayTeam": "Carolina Panthers",
+      "awayAbbreviation": "CAR",
+      "homeTeam": "Atlanta Falcons",
+      "homeAbbreviation": "ATL",
+      "kickoff": "2026-09-20 13:00",
+      "predictedWinner": "Atlanta Falcons",
+      "homeWinProbability": 61,
+      "awayWinProbability": 39,
+      "confidence": "Medium",
+      "factors": [
+        "Recent scoring margin",
+        "Defensive pressure",
+        "Turnover trend"
+      ]
+    },
+    {
+      "id": "2026_02_CIN_HOU",
+      "awayTeam": "Cincinnati Bengals",
+      "awayAbbreviation": "CIN",
+      "homeTeam": "Houston Texans",
+      "homeAbbreviation": "HOU",
+      "kickoff": "2026-09-20 13:00",
+      "predictedWinner": "Cincinnati Bengals",
+      "homeWinProbability": 45,
+      "awayWinProbability": 55,
+      "confidence": "Low",
+      "factors": [
+        "Offensive EPA trend",
+        "Turnover trend",
+        "Elo team strength"
+      ]
+    },
+    {
+      "id": "2026_02_CLE_TB",
+      "awayTeam": "Cleveland Browns",
+      "awayAbbreviation": "CLE",
+      "homeTeam": "Tampa Bay Buccaneers",
+      "homeAbbreviation": "TB",
+      "kickoff": "2026-09-20 13:00",
+      "predictedWinner": "Tampa Bay Buccaneers",
+      "homeWinProbability": 64,
+      "awayWinProbability": 36,
+      "confidence": "Medium",
+      "factors": [
+        "Offensive EPA trend",
+        "Recent scoring margin",
+        "Elo team strength"
+      ]
+    },
+    {
+      "id": "2026_02_GB_NYJ",
+      "awayTeam": "Green Bay Packers",
+      "awayAbbreviation": "GB",
+      "homeTeam": "New York Jets",
+      "homeAbbreviation": "NYJ",
+      "kickoff": "2026-09-20 13:00",
+      "predictedWinner": "Green Bay Packers",
+      "homeWinProbability": 25,
+      "awayWinProbability": 75,
+      "confidence": "High",
+      "factors": [
+        "Elo team strength",
+        "Offensive EPA trend",
+        "Recent scoring margin"
+      ]
+    },
+    {
+      "id": "2026_02_MIN_CHI",
+      "awayTeam": "Minnesota Vikings",
+      "awayAbbreviation": "MIN",
+      "homeTeam": "Chicago Bears",
+      "homeAbbreviation": "CHI",
+      "kickoff": "2026-09-20 13:00",
+      "predictedWinner": "Minnesota Vikings",
+      "homeWinProbability": 46,
+      "awayWinProbability": 54,
+      "confidence": "Low",
+      "factors": [
+        "Offensive EPA trend",
+        "Defensive pressure",
+        "Recent scoring margin"
+      ]
+    },
+    {
+      "id": "2026_02_NO_BAL",
+      "awayTeam": "New Orleans Saints",
+      "awayAbbreviation": "NO",
+      "homeTeam": "Baltimore Ravens",
+      "homeAbbreviation": "BAL",
+      "kickoff": "2026-09-20 13:00",
+      "predictedWinner": "Baltimore Ravens",
+      "homeWinProbability": 67,
+      "awayWinProbability": 33,
+      "confidence": "Medium",
+      "factors": [
+        "Elo team strength",
+        "Offensive EPA trend",
+        "Defensive pressure"
+      ]
+    },
+    {
+      "id": "2026_02_PHI_TEN",
+      "awayTeam": "Philadelphia Eagles",
+      "awayAbbreviation": "PHI",
+      "homeTeam": "Tennessee Titans",
+      "homeAbbreviation": "TEN",
+      "kickoff": "2026-09-20 13:00",
+      "predictedWinner": "Philadelphia Eagles",
+      "homeWinProbability": 25,
+      "awayWinProbability": 75,
+      "confidence": "High",
+      "factors": [
+        "Elo team strength",
+        "Recent scoring margin",
+        "Offensive EPA trend"
+      ]
+    },
+    {
+      "id": "2026_02_PIT_NE",
+      "awayTeam": "Pittsburgh Steelers",
+      "awayAbbreviation": "PIT",
+      "homeTeam": "New England Patriots",
+      "homeAbbreviation": "NE",
+      "kickoff": "2026-09-20 13:00",
+      "predictedWinner": "Pittsburgh Steelers",
+      "homeWinProbability": 45,
+      "awayWinProbability": 55,
+      "confidence": "Low",
+      "factors": [
+        "Turnover trend",
+        "Rest advantage",
+        "Offensive EPA trend"
+      ]
+    },
+    {
+      "id": "2026_02_JAX_DEN",
+      "awayTeam": "Jacksonville Jaguars",
+      "awayAbbreviation": "JAX",
+      "homeTeam": "Denver Broncos",
+      "homeAbbreviation": "DEN",
+      "kickoff": "2026-09-20 16:05",
+      "predictedWinner": "Jacksonville Jaguars",
+      "homeWinProbability": 39,
+      "awayWinProbability": 61,
+      "confidence": "Medium",
+      "factors": [
+        "Offensive EPA trend",
+        "Recent scoring margin",
+        "Defensive pressure"
+      ]
+    },
+    {
+      "id": "2026_02_LV_LAC",
+      "awayTeam": "Las Vegas Raiders",
+      "awayAbbreviation": "LV",
+      "homeTeam": "Los Angeles Chargers",
+      "homeAbbreviation": "LAC",
+      "kickoff": "2026-09-20 16:05",
+      "predictedWinner": "Los Angeles Chargers",
+      "homeWinProbability": 64,
+      "awayWinProbability": 36,
+      "confidence": "Medium",
+      "factors": [
+        "Elo team strength",
+        "Defensive pressure",
+        "Offensive EPA trend"
+      ]
+    },
+    {
+      "id": "2026_02_MIA_SF",
+      "awayTeam": "Miami Dolphins",
+      "awayAbbreviation": "MIA",
+      "homeTeam": "San Francisco 49ers",
+      "homeAbbreviation": "SF",
+      "kickoff": "2026-09-20 16:25",
+      "predictedWinner": "San Francisco 49ers",
+      "homeWinProbability": 82,
+      "awayWinProbability": 18,
+      "confidence": "High",
+      "factors": [
+        "Recent scoring margin",
+        "Elo team strength",
+        "Rest advantage"
+      ]
+    },
+    {
+      "id": "2026_02_SEA_ARI",
+      "awayTeam": "Seattle Seahawks",
+      "awayAbbreviation": "SEA",
+      "homeTeam": "Arizona Cardinals",
+      "homeAbbreviation": "ARI",
+      "kickoff": "2026-09-20 16:25",
+      "predictedWinner": "Seattle Seahawks",
+      "homeWinProbability": 21,
+      "awayWinProbability": 79,
+      "confidence": "High",
+      "factors": [
+        "Recent scoring margin",
+        "Elo team strength",
+        "Rest advantage"
+      ]
+    },
+    {
+      "id": "2026_02_WAS_DAL",
+      "awayTeam": "Washington Commanders",
+      "awayAbbreviation": "WAS",
+      "homeTeam": "Dallas Cowboys",
+      "homeAbbreviation": "DAL",
+      "kickoff": "2026-09-20 16:25",
+      "predictedWinner": "Dallas Cowboys",
+      "homeWinProbability": 50,
+      "awayWinProbability": 50,
+      "confidence": "Low",
+      "factors": [
+        "Defensive pressure",
+        "Offensive EPA trend",
+        "Recent scoring margin"
+      ]
+    },
+    {
+      "id": "2026_02_IND_KC",
+      "awayTeam": "Indianapolis Colts",
+      "awayAbbreviation": "IND",
+      "homeTeam": "Kansas City Chiefs",
+      "homeAbbreviation": "KC",
+      "kickoff": "2026-09-20 20:20",
+      "predictedWinner": "Kansas City Chiefs",
+      "homeWinProbability": 66,
+      "awayWinProbability": 34,
+      "confidence": "Medium",
+      "factors": [
+        "Elo team strength",
+        "Defensive pressure",
+        "Recent scoring margin"
+      ]
+    },
+    {
+      "id": "2026_02_NYG_LA",
+      "awayTeam": "New York Giants",
+      "awayAbbreviation": "NYG",
+      "homeTeam": "Los Angeles Rams",
+      "homeAbbreviation": "LA",
+      "kickoff": "2026-09-21 20:15",
+      "predictedWinner": "Los Angeles Rams",
+      "homeWinProbability": 56,
+      "awayWinProbability": 44,
+      "confidence": "Low",
+      "factors": [
+        "Elo team strength",
+        "Recent scoring margin",
+        "Rest advantage"
+      ]
+    }
+  ]
+}

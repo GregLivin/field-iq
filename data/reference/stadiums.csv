@@ -1,0 +1,33 @@
+stadium,team,latitude,longitude,roof,timezone
+State Farm Stadium,ARI,33.5276,-112.2626,closed,America/Phoenix
+Mercedes-Benz Stadium,ATL,33.7554,-84.4008,dome,America/New_York
+M&T Bank Stadium,BAL,39.2780,-76.6227,outdoors,America/New_York
+Highmark Stadium,BUF,42.7738,-78.7870,outdoors,America/New_York
+Bank of America Stadium,CAR,35.2258,-80.8528,outdoors,America/New_York
+Soldier Field,CHI,41.8623,-87.6167,outdoors,America/Chicago
+Paycor Stadium,CIN,39.0954,-84.5160,outdoors,America/New_York
+Huntington Bank Field,CLE,41.5061,-81.6995,outdoors,America/New_York
+AT&T Stadium,DAL,32.7473,-97.0945,dome,America/Chicago
+Empower Field at Mile High,DEN,39.7439,-105.0201,outdoors,America/Denver
+Ford Field,DET,42.3400,-83.0456,dome,America/New_York
+Lambeau Field,GB,44.5013,-88.0622,outdoors,America/Chicago
+NRG Stadium,HOU,29.6847,-95.4107,closed,America/Chicago
+Lucas Oil Stadium,IND,39.7601,-86.1639,dome,America/New_York
+EverBank Stadium,JAX,30.3239,-81.6373,outdoors,America/New_York
+GEHA Field at Arrowhead Stadium,KC,39.0489,-94.4839,outdoors,America/Chicago
+SoFi Stadium,LA,33.9535,-118.3392,dome,America/Los_Angeles
+SoFi Stadium,LAC,33.9535,-118.3392,dome,America/Los_Angeles
+Allegiant Stadium,LV,36.0908,-115.1830,dome,America/Los_Angeles
+Hard Rock Stadium,MIA,25.9580,-80.2389,outdoors,America/New_York
+U.S. Bank Stadium,MIN,44.9736,-93.2575,dome,America/Chicago
+Gillette Stadium,NE,42.0909,-71.2643,outdoors,America/New_York
+Caesars Superdome,NO,29.9511,-90.0812,dome,America/Chicago
+MetLife Stadium,NYG,40.8135,-74.0745,outdoors,America/New_York
+MetLife Stadium,NYJ,40.8135,-74.0745,outdoors,America/New_York
+Lincoln Financial Field,PHI,39.9008,-75.1675,outdoors,America/New_York
+Acrisure Stadium,PIT,40.4468,-80.0158,outdoors,America/New_York
+Lumen Field,SEA,47.5952,-122.3316,outdoors,America/Los_Angeles
+Levi's Stadium,SF,37.4030,-121.9700,outdoors,America/Los_Angeles
+Raymond James Stadium,TB,27.9759,-82.5033,outdoors,America/New_York
+Nissan Stadium,TEN,36.1665,-86.7713,outdoors,America/Chicago
+Northwest Stadium,WAS,38.9076,-76.8645,outdoors,America/New_York

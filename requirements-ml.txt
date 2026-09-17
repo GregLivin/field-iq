@@ -1,0 +1,8 @@
+nflreadpy==0.1.5
+polars-lts-cpu==1.33.1
+pandas==2.3.2
+pyarrow==21.0.0
+scikit-learn==1.7.2
+joblib==1.5.2
+httpx[socks]==0.28.1
+pytest==8.4.2
