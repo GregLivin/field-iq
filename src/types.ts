@@ -62,4 +62,26 @@ export type MatchupPayload = {
   teams: string[];
   count: number;
   meetings: MatchupMeeting[];
+  recentForm: Record<string, RecentTeamGame[]>;
+};
+
+export type RecentTeamGame = {
+  id: string;
+  date: string;
+  season: number;
+  week: number;
+  gameType: string;
+  teamAbbreviation: string;
+  opponent: string;
+  opponentAbbreviation: string;
+  homeAway: "Home" | "Away";
+  teamScore: number;
+  opponentScore: number;
+  result: "W" | "L" | "T";
+  passingYards: number | null;
+  rushingYards: number | null;
+  totalYards: number | null;
+  totalEpa: number | null;
+  turnovers: number | null;
+  defensiveSacks: number | null;
 };
