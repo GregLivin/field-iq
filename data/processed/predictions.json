@@ -1,27 +1,10 @@
 {
   "season": 2026,
   "week": 2,
-  "asOf": "2026-09-17T15:02:06.337558+00:00",
+  "asOf": "2026-09-18T14:32:48.709402+00:00",
   "provider": "nflverse + NOAA/NWS",
-  "model": "fieldiq-ensemble-v1",
+  "model": "fieldiq-ensemble-v2-pbp",
   "predictions": [
-    {
-      "id": "2026_02_DET_BUF",
-      "awayTeam": "Detroit Lions",
-      "awayAbbreviation": "DET",
-      "homeTeam": "Buffalo Bills",
-      "homeAbbreviation": "BUF",
-      "kickoff": "2026-09-17 20:15",
-      "predictedWinner": "Buffalo Bills",
-      "homeWinProbability": 73,
-      "awayWinProbability": 27,
-      "confidence": "High",
-      "factors": [
-        "Defensive pressure",
-        "Offensive EPA trend",
-        "Recent scoring margin"
-      ]
-    },
     {
       "id": "2026_02_CAR_ATL",
       "awayTeam": "Carolina Panthers",
@@ -30,13 +13,13 @@
       "homeAbbreviation": "ATL",
       "kickoff": "2026-09-20 13:00",
       "predictedWinner": "Atlanta Falcons",
-      "homeWinProbability": 61,
-      "awayWinProbability": 39,
+      "homeWinProbability": 63,
+      "awayWinProbability": 37,
       "confidence": "Medium",
       "factors": [
         "Recent scoring margin",
-        "Defensive pressure",
-        "Turnover trend"
+        "Turnover trend",
+        "Elo team strength"
       ]
     },
     {
@@ -47,13 +30,13 @@
       "homeAbbreviation": "HOU",
       "kickoff": "2026-09-20 13:00",
       "predictedWinner": "Cincinnati Bengals",
-      "homeWinProbability": 45,
-      "awayWinProbability": 55,
+      "homeWinProbability": 49,
+      "awayWinProbability": 51,
       "confidence": "Low",
       "factors": [
-        "Offensive EPA trend",
         "Turnover trend",
-        "Elo team strength"
+        "Quarterback efficiency",
+        "Success rate"
       ]
     },
     {
@@ -64,13 +47,13 @@
       "homeAbbreviation": "TB",
       "kickoff": "2026-09-20 13:00",
       "predictedWinner": "Tampa Bay Buccaneers",
-      "homeWinProbability": 63,
-      "awayWinProbability": 37,
-      "confidence": "Medium",
+      "homeWinProbability": 72,
+      "awayWinProbability": 28,
+      "confidence": "High",
       "factors": [
-        "Offensive EPA trend",
-        "Recent scoring margin",
-        "Elo team strength"
+        "Quarterback efficiency",
+        "EPA per play",
+        "Success rate"
       ]
     },
     {
@@ -81,12 +64,12 @@
       "homeAbbreviation": "NYJ",
       "kickoff": "2026-09-20 13:00",
       "predictedWinner": "Green Bay Packers",
-      "homeWinProbability": 25,
-      "awayWinProbability": 75,
+      "homeWinProbability": 22,
+      "awayWinProbability": 78,
       "confidence": "High",
       "factors": [
         "Elo team strength",
-        "Offensive EPA trend",
+        "Quarterback efficiency",
         "Recent scoring margin"
       ]
     },
@@ -98,13 +81,13 @@
       "homeAbbreviation": "CHI",
       "kickoff": "2026-09-20 13:00",
       "predictedWinner": "Minnesota Vikings",
-      "homeWinProbability": 46,
-      "awayWinProbability": 54,
-      "confidence": "Low",
+      "homeWinProbability": 37,
+      "awayWinProbability": 63,
+      "confidence": "Medium",
       "factors": [
-        "Offensive EPA trend",
-        "Defensive pressure",
-        "Weather conditions"
+        "Quarterback efficiency",
+        "Recent scoring margin",
+        "Elo team strength"
       ]
     },
     {
@@ -115,13 +98,13 @@
       "homeAbbreviation": "BAL",
       "kickoff": "2026-09-20 13:00",
       "predictedWinner": "Baltimore Ravens",
-      "homeWinProbability": 67,
-      "awayWinProbability": 33,
-      "confidence": "Medium",
+      "homeWinProbability": 73,
+      "awayWinProbability": 27,
+      "confidence": "High",
       "factors": [
         "Elo team strength",
-        "Offensive EPA trend",
-        "Defensive pressure"
+        "Quarterback efficiency",
+        "EPA per play"
       ]
     },
     {
@@ -132,13 +115,13 @@
       "homeAbbreviation": "TEN",
       "kickoff": "2026-09-20 13:00",
       "predictedWinner": "Philadelphia Eagles",
-      "homeWinProbability": 25,
-      "awayWinProbability": 75,
+      "homeWinProbability": 20,
+      "awayWinProbability": 80,
       "confidence": "High",
       "factors": [
         "Elo team strength",
         "Recent scoring margin",
-        "Offensive EPA trend"
+        "Quarterback efficiency"
       ]
     },
     {
@@ -149,13 +132,13 @@
       "homeAbbreviation": "NE",
       "kickoff": "2026-09-20 13:00",
       "predictedWinner": "Pittsburgh Steelers",
-      "homeWinProbability": 45,
-      "awayWinProbability": 55,
-      "confidence": "Low",
+      "homeWinProbability": 43,
+      "awayWinProbability": 57,
+      "confidence": "Medium",
       "factors": [
         "Turnover trend",
-        "Rest advantage",
-        "Offensive EPA trend"
+        "Recent scoring margin",
+        "Quarterback efficiency"
       ]
     },
     {
@@ -170,9 +153,9 @@
       "awayWinProbability": 61,
       "confidence": "Medium",
       "factors": [
-        "Offensive EPA trend",
+        "Quarterback efficiency",
         "Recent scoring margin",
-        "Defensive pressure"
+        "EPA per play"
       ]
     },
     {
@@ -183,13 +166,13 @@
       "homeAbbreviation": "LAC",
       "kickoff": "2026-09-20 16:05",
       "predictedWinner": "Los Angeles Chargers",
-      "homeWinProbability": 64,
-      "awayWinProbability": 36,
+      "homeWinProbability": 62,
+      "awayWinProbability": 38,
       "confidence": "Medium",
       "factors": [
         "Elo team strength",
-        "Defensive pressure",
-        "Offensive EPA trend"
+        "Quarterback efficiency",
+        "Success rate"
       ]
     },
     {
@@ -200,13 +183,13 @@
       "homeAbbreviation": "SF",
       "kickoff": "2026-09-20 16:25",
       "predictedWinner": "San Francisco 49ers",
-      "homeWinProbability": 81,
-      "awayWinProbability": 19,
+      "homeWinProbability": 75,
+      "awayWinProbability": 25,
       "confidence": "High",
       "factors": [
         "Recent scoring margin",
         "Elo team strength",
-        "Rest advantage"
+        "Success rate"
       ]
     },
     {
@@ -217,13 +200,13 @@
       "homeAbbreviation": "ARI",
       "kickoff": "2026-09-20 16:25",
       "predictedWinner": "Seattle Seahawks",
-      "homeWinProbability": 21,
-      "awayWinProbability": 79,
+      "homeWinProbability": 14,
+      "awayWinProbability": 86,
       "confidence": "High",
       "factors": [
         "Recent scoring margin",
         "Elo team strength",
-        "Rest advantage"
+        "Quarterback efficiency"
       ]
     },
     {
@@ -233,14 +216,14 @@
       "homeTeam": "Dallas Cowboys",
       "homeAbbreviation": "DAL",
       "kickoff": "2026-09-20 16:25",
-      "predictedWinner": "Dallas Cowboys",
-      "homeWinProbability": 50,
-      "awayWinProbability": 50,
+      "predictedWinner": "Washington Commanders",
+      "homeWinProbability": 49,
+      "awayWinProbability": 51,
       "confidence": "Low",
       "factors": [
-        "Defensive pressure",
-        "Offensive EPA trend",
-        "Recent scoring margin"
+        "Recent scoring margin",
+        "Elo team strength",
+        "Quarterback efficiency"
       ]
     },
     {
@@ -251,13 +234,13 @@
       "homeAbbreviation": "KC",
       "kickoff": "2026-09-20 20:20",
       "predictedWinner": "Kansas City Chiefs",
-      "homeWinProbability": 66,
-      "awayWinProbability": 34,
-      "confidence": "Medium",
+      "homeWinProbability": 69,
+      "awayWinProbability": 31,
+      "confidence": "High",
       "factors": [
         "Elo team strength",
-        "Defensive pressure",
-        "Recent scoring margin"
+        "Recent scoring margin",
+        "Turnover trend"
       ]
     },
     {
@@ -268,13 +251,13 @@
       "homeAbbreviation": "LA",
       "kickoff": "2026-09-21 20:15",
       "predictedWinner": "Los Angeles Rams",
-      "homeWinProbability": 56,
-      "awayWinProbability": 44,
+      "homeWinProbability": 57,
+      "awayWinProbability": 43,
       "confidence": "Low",
       "factors": [
         "Elo team strength",
         "Recent scoring margin",
-        "Rest advantage"
+        "Quarterback efficiency"
       ]
     }
   ]
