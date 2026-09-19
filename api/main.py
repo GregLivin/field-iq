@@ -256,7 +256,7 @@ def _parse_manual_stats(raw: str) -> dict[str, Any]:
     for label,key in [
         ("TOTAL FIRST DOWNS","firstDowns"),("TOTAL OFFENSIVE YARDS","totalYards"),
         ("TOTAL RUSHING YARDS","rushingYards"),("TOTAL PASSING YARDS","passingYards"),
-        ("SACKS","sacks"),("TOUCHDOWNS","touchdowns"),("TURNOVER RATIO","turnoverRatio")
+        ("SACKS","sacks"),("TOUCHDOWNS","touchdowns"),("TURNOVER RATIO","turnoverRatio"),("FINAL SCORE","score")
     ]: paired(label,key)
 
     for label,key in [("THIRD DOWN CONVERSIONS","thirdDown"),("FOURTH DOWN CONVERSIONS","fourthDown"),("FIELD GOALS","fieldGoals")]:
