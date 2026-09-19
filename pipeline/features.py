@@ -107,7 +107,7 @@ def build_features(games: pd.DataFrame, team_stats: pd.DataFrame):
         completed = not pd.isna(hs) and not pd.isna(aws)
         if completed:
             hs, aws = float(hs), float(aws)
-            training_rows.append({**identity, **features, "home_win":int(hs>aws)})
+            training_rows.append({**identity, **features, "home_win":int(hs>aws), "home_score":hs, "away_score":aws, "home_margin":hs-aws, "game_total":hs+aws})
             hstats=_team_game(stats_lookup,str(game.game_id),home_team); astats=_team_game(stats_lookup,str(game.game_id),away_team)
             home_state.games.append(_observed_game(hstats,hs,aws)); away_state.games.append(_observed_game(astats,aws,hs))
             if hs != aws: _update_elo(home_state,away_state,float(hs>aws))
