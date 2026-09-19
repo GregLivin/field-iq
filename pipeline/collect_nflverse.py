@@ -34,7 +34,9 @@ def collect_nflverse(
         "games": nfl.load_schedules(seasons),
         "team_weekly": nfl.load_team_stats(seasons, summary_level="week"),
         "pbp": nfl.load_pbp(seasons),
-        "player_weekly": nfl.load_player_stats(season, summary_level="week"),
+        "player_weekly": nfl.load_player_stats(seasons, summary_level="week"),
+        "player_season": nfl.load_player_stats(seasons, summary_level="reg"),
+        "players": nfl.load_players(),
         "rosters": nfl.load_rosters(season),
         "injuries": nfl.load_injuries(season),
     }
@@ -46,11 +48,13 @@ def collect_nflverse(
 
     manifest = {
         "provider": "nflverse",
-        "license": "CC BY 4.0; verify each upstream dataset before commercial use",
+        "license": "nflverse code/data licenses vary; NFL data belong to their respective owners and are governed by their terms of use",
         "collectedAt": datetime.now(UTC).isoformat(),
         "season": season,
         "trainingSeasons": seasons,
         "rows": row_counts,
+        "playerStatsScope": {"player_weekly": seasons, "player_season": seasons},
+        "officialReferenceLayer": "data/manual (user-provided NFL official exports/screenshots; retained separately)",
     }
     (RAW_DIR / "manifest.json").write_text(json.dumps(manifest, indent=2) + "\n")
     return manifest
