@@ -15,7 +15,8 @@ METRICS_PATH = ROOT / "data" / "processed" / "model_metrics.json"
 MANIFEST_PATH = ROOT / "data" / "raw" / "manifest.json"
 WEATHER_STATUS_PATH = ROOT / "data" / "raw" / "weather_status.json"
 SCHEDULE_PATH = ROOT / "data" / "processed" / "schedule.json"
-MATCHUP_HISTORY_PATH = ROOT / "data" / "processed" / "matchup_history.json"\nMANUAL_GAMES_PATH = Path(os.getenv("FIELDIQ_MANUAL_GAMES_PATH", str(ROOT / "data" / "manual" / "games.jsonl")) )
+MATCHUP_HISTORY_PATH = ROOT / "data" / "processed" / "matchup_history.json"
+MANUAL_GAMES_PATH = Path(os.getenv("FIELDIQ_MANUAL_GAMES_PATH", str(ROOT / "data" / "manual" / "games.jsonl")))
 
 app = FastAPI(title="Field IQ NFL API", version="0.3.0")
 app.add_middleware(
