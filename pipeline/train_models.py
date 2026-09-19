@@ -121,7 +121,8 @@ def _merge_approved_manual_games(games: pd.DataFrame, team_stats: pd.DataFrame):
 
 def train_and_predict()->dict[str,Any]:
     ensure_directories(); games=pl.read_parquet(RAW_DIR/"games.parquet").to_pandas(); team_stats=pl.read_parquet(RAW_DIR/"team_weekly.parquet").to_pandas()
-    games,team_stats,manual_summary=_merge_approved_manual_games(games,team_stats)\n    pbp_path=RAW_DIR/"pbp.parquet"
+    games, team_stats, manual_summary = _merge_approved_manual_games(games, team_stats)
+    pbp_path = RAW_DIR / "pbp.parquet"
     if pbp_path.exists():
         pbp=pl.read_parquet(pbp_path).to_pandas(); pbp_team=aggregate_team_game_pbp(pbp)
         if not pbp_team.empty:
