@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Any
 
 import httpx
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, File, HTTPException, Query, UploadFile
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -108,6 +108,36 @@ async def send_test_alert(request: TextAlertRequest) -> dict[str, Any]:
         raise HTTPException(status_code=502, detail="The SMS provider could not send the test alert.")
     return {"ok": True, "message": "Field IQ test alert sent."}
 
+
+
+@app.post("/api/market-screenshot")
+async def analyze_market_screenshot(file: UploadFile = File(...)) -> dict[str, Any]:
+    """Extract sportsbook-style NFL matchup lines from a screenshot using a configured vision endpoint."""
+    image = await file.read()
+    if not image or len(image) > 8_000_000:
+        raise HTTPException(status_code=400, detail="Upload a screenshot smaller than 8 MB.")
+    vision_url = os.getenv("FIELDIQ_VISION_URL")
+    vision_key = os.getenv("FIELDIQ_VISION_KEY")
+    if not vision_url:
+        raise HTTPException(status_code=503, detail="Screenshot vision is not configured on the server yet.")
+    headers = {"Authorization": f"Bearer {vision_key}"} if vision_key else {}
+    async with httpx.AsyncClient(timeout=30) as client:
+        response = await client.post(
+            vision_url,
+            headers=headers,
+            files={"file": (file.filename or "screenshot.jpg", image, file.content_type or "image/jpeg")},
+            data={"task": "Extract NFL games only. Return JSON games with awayTeam, homeTeam, awaySpread, homeSpread, total, awayMoneyline, homeMoneyline. Use null when unreadable."},
+        )
+    if response.status_code >= 400:
+        raise HTTPException(status_code=502, detail="The vision service could not analyze this screenshot.")
+    try:
+        payload=response.json()
+    except ValueError as exc:
+        raise HTTPException(status_code=502, detail="The vision service returned invalid data.") from exc
+    games=payload.get("games", []) if isinstance(payload, dict) else []
+    if not isinstance(games, list):
+        raise HTTPException(status_code=502, detail="The vision service returned an invalid games list.")
+    return {"games": games, "message": f"Found {len(games)} matchup(s). Review every extracted line before analysis."}
 
 @app.get("/health")
 @app.get("/api/health")
