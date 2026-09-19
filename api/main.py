@@ -1,9 +1,12 @@
 import json
+import os
 from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
+import httpx
 from fastapi import FastAPI, HTTPException, Query
+from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,7 +22,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
     allow_credentials=False,
-    allow_methods=["GET"],
+    allow_methods=["GET", "POST"],
     allow_headers=["*"],
 )
 
@@ -54,6 +57,56 @@ def _expand_recent_game(values: list[Any]) -> dict[str, Any]:
         "totalYards": values[13], "totalEpa": values[14], "turnovers": values[15],
         "defensiveSacks": values[16],
     }
+
+
+class AlertPreferences(BaseModel):
+    gameReminders: bool = True
+    predictionUpdates: bool = True
+    highConfidence: bool = True
+    finalResults: bool = True
+
+
+class TextAlertRequest(BaseModel):
+    phone: str
+    preferences: AlertPreferences
+
+
+@app.post("/api/alerts/test")
+async def send_test_alert(request: TextAlertRequest) -> dict[str, Any]:
+    """Send an opt-in Field IQ test SMS through Twilio."""
+    phone = request.phone.strip()
+    if not phone.startswith("+") or not phone[1:].isdigit() or len(phone) < 11:
+        raise HTTPException(status_code=400, detail="Enter a phone number in E.164 format, for example +17135551234.")
+
+    account_sid = os.getenv("TWILIO_ACCOUNT_SID")
+    auth_token = os.getenv("TWILIO_AUTH_TOKEN")
+    from_number = os.getenv("TWILIO_FROM_NUMBER")
+    if not all((account_sid, auth_token, from_number)):
+        raise HTTPException(status_code=503, detail="Text alerts are not configured on the server yet.")
+
+    enabled = []
+    labels = {
+        "gameReminders": "game reminders",
+        "predictionUpdates": "prediction updates",
+        "highConfidence": "high-confidence alerts",
+        "finalResults": "final results",
+    }
+    prefs = request.preferences.model_dump()
+    for key, label in labels.items():
+        if prefs.get(key):
+            enabled.append(label)
+
+    body = "Field IQ alerts are on. " + (", ".join(enabled) if enabled else "No alert categories selected.") + " Reply STOP to opt out."
+    url = f"https://api.twilio.com/2010-04-01/Accounts/{account_sid}/Messages.json"
+    async with httpx.AsyncClient(timeout=10) as client:
+        response = await client.post(
+            url,
+            data={"To": phone, "From": from_number, "Body": body},
+            auth=(account_sid, auth_token),
+        )
+    if response.status_code >= 400:
+        raise HTTPException(status_code=502, detail="The SMS provider could not send the test alert.")
+    return {"ok": True, "message": "Field IQ test alert sent."}
 
 
 @app.get("/health")
