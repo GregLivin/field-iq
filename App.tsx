@@ -23,6 +23,7 @@ import {
   sendTextAlertTest,
   analyzeMarketScreenshot,
   ExtractedMarket,
+  saveManualGame,
 } from "./src/services/fieldIqApi";
 import { MatchupMeeting, Prediction, RecentTeamGame, ScheduleGame } from "./src/types";
 
@@ -38,7 +39,7 @@ const colors = {
   gold: "#f5c15d",
 };
 
-type Tab = "picks" | "analyze" | "schedule" | "matchups";
+type Tab = "picks" | "analyze" | "schedule" | "matchups" | "data";
 type ConfidenceFilter = "ALL" | Prediction["confidence"];
 type HistoryView = "recent" | "headToHead";
 
@@ -372,6 +373,29 @@ export default function App() {
   const [marketTotal, setMarketTotal] = useState("45.5");
   const [screenshotUri, setScreenshotUri] = useState<string | null>(null);
   const [screenshotStatus, setScreenshotStatus] = useState("");
+  const [manualStats, setManualStats] = useState("");
+  const [manualSeason, setManualSeason] = useState("2026");
+  const [manualWeek, setManualWeek] = useState("");
+  const [manualTeam, setManualTeam] = useState("");
+  const [manualOpponent, setManualOpponent] = useState("");
+  const [manualTraining, setManualTraining] = useState(false);
+  const [manualStatus, setManualStatus] = useState("");
+  const [manualSaving, setManualSaving] = useState(false);
+
+  async function submitManualStats() {
+    setManualSaving(true); setManualStatus("Validating pasted data…");
+    try {
+      const result = await saveManualGame({
+        rawText: manualStats, season: Number(manualSeason), seasonType: "Regular season",
+        week: manualWeek ? Number(manualWeek) : undefined, team: manualTeam || undefined,
+        opponent: manualOpponent || undefined, includeInTraining: manualTraining,
+      });
+      setManualStatus(`Saved as manual record ${result.id}. ${result.warnings.join(" ")}`);
+      setManualStats("");
+    } catch (error) {
+      setManualStatus(error instanceof Error ? error.message : "Unable to save manual data.");
+    } finally { setManualSaving(false); }
+  }
   const [extractedMarkets, setExtractedMarkets] = useState<ExtractedMarket[]>([]);
   const [screenshotAnalyzing, setScreenshotAnalyzing] = useState(false);
 
@@ -969,6 +993,7 @@ const styles = StyleSheet.create({
   secondaryMarketButton: { alignItems: "center", borderColor: colors.green, borderRadius: 13, borderWidth: 1, marginTop: 10, paddingVertical: 12 },
   secondaryMarketButtonText: { color: colors.green, fontSize: 12, fontWeight: "900" },
   extractedGame: { backgroundColor: "#0a1511", borderColor: colors.border, borderRadius: 12, borderWidth: 1, marginTop: 10, padding: 12 },
+  manualPasteBox: { backgroundColor: "#07110d", borderColor: colors.border, borderRadius: 13, borderWidth: 1, color: colors.text, fontSize: 14, minHeight: 260, marginTop: 12, padding: 14 },
   screenshotButton: { alignItems: "center", backgroundColor: colors.green, borderRadius: 13, marginTop: 14, paddingVertical: 13 },
   screenshotButtonText: { color: colors.background, fontSize: 12, fontWeight: "900" },
   marketCard: { backgroundColor: colors.panel, borderColor: colors.border, borderRadius: 20, borderWidth: 1, marginBottom: 16, padding: 16 },
