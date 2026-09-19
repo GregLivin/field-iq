@@ -84,9 +84,44 @@ def _top_factors(row):
     return [label for _,label in sorted(candidates,reverse=True)[:3]]
 
 
+
+def _merge_approved_manual_games(games: pd.DataFrame, team_stats: pd.DataFrame):
+    """Merge only approved manual records into provider frames without overwriting provider games."""
+    manual_path=PROCESSED_DIR.parent/"manual"/"games.jsonl"
+    if not manual_path.exists(): return games,team_stats,{"approved":0,"merged":0,"duplicates":0,"skipped":0}
+    game_rows=[]; stat_rows=[]; seen=set(games["game_id"].astype(str)); summary={"approved":0,"merged":0,"duplicates":0,"skipped":0}
+    for line in manual_path.read_text(encoding="utf-8").splitlines():
+        try: r=json.loads(line)
+        except json.JSONDecodeError: summary["skipped"]+=1; continue
+        if not (r.get("validated") and r.get("approvedForTraining")): continue
+        summary["approved"]+=1
+        p=r.get("parsed") or {}; ts=p.get("teamStats") or {}
+        team=str(r.get("team") or "").upper(); opp=str(r.get("opponent") or "").upper()
+        date=r.get("gameDate"); week=r.get("week"); season=r.get("season")
+        # ML requires matchup identity, date/week, and final scores. Never infer them.
+        score=ts.get("score") or {}
+        if not (team and opp and date and week and season and "team" in score and "opponent" in score):
+            summary["skipped"]+=1; continue
+        gid=f"manual_{season}_{week}_{date}_{team}_{opp}"
+        # Provider data wins. Also reject same season/week/team pairing even if IDs differ.
+        duplicate=((games.get("season")==season)&(games.get("week")==week)&
+          (((games.get("home_team")==team)&(games.get("away_team")==opp))|((games.get("home_team")==opp)&(games.get("away_team")==team)))).any()
+        if gid in seen or duplicate: summary["duplicates"]+=1; continue
+        home=team if r.get("homeAway","home")=="home" else opp; away=opp if home==team else team
+        hs=score["team"] if home==team else score["opponent"]; aws=score["opponent"] if home==team else score["team"]
+        game_rows.append({"game_id":gid,"season":season,"week":week,"gameday":date,"gametime":"00:00","home_team":home,"away_team":away,"home_score":hs,"away_score":aws})
+        def add_stats(t, side):
+            vals={k:(v.get(side) if isinstance(v,dict) else None) for k,v in ts.items()}
+            stat_rows.append({"game_id":gid,"team":t,"passing_yards":vals.get("passingYards"),"rushing_yards":vals.get("rushingYards"),"def_sacks":vals.get("sacks")})
+        add_stats(team,"team"); add_stats(opp,"opponent"); seen.add(gid); summary["merged"]+=1
+    if game_rows: games=pd.concat([games,pd.DataFrame(game_rows)],ignore_index=True,sort=False)
+    if stat_rows: team_stats=pd.concat([team_stats,pd.DataFrame(stat_rows)],ignore_index=True,sort=False)
+    return games,team_stats,summary
+
+
 def train_and_predict()->dict[str,Any]:
     ensure_directories(); games=pl.read_parquet(RAW_DIR/"games.parquet").to_pandas(); team_stats=pl.read_parquet(RAW_DIR/"team_weekly.parquet").to_pandas()
-    pbp_path=RAW_DIR/"pbp.parquet"
+    games,team_stats,manual_summary=_merge_approved_manual_games(games,team_stats)\n    pbp_path=RAW_DIR/"pbp.parquet"
     if pbp_path.exists():
         pbp=pl.read_parquet(pbp_path).to_pandas(); pbp_team=aggregate_team_game_pbp(pbp)
         if not pbp_team.empty:
@@ -134,7 +169,7 @@ def train_and_predict()->dict[str,Any]:
             predictions.append({"id":row["game_id"],"awayTeam":an,"awayAbbreviation":row["away_team"],"homeTeam":hn,"homeAbbreviation":row["home_team"],"kickoff":f"{row['gameday'].date().isoformat()} {row['gametime']}","predictedWinner":hn if hp>=.5 else an,"homeWinProbability":round(hp*100),"awayWinProbability":round((1-hp)*100),"projectedHomeScore":projected_home,"projectedAwayScore":projected_away,"projectedMargin":projected_margin,"projectedTotal":projected_total,"confidence":_confidence(hp),"factors":_top_factors(row)})
     season=int(next_games.iloc[0]["season"]) if not next_games.empty else latest; week=int(next_games.iloc[0]["week"]) if not next_games.empty else int(training.iloc[-1]["week"]); now=datetime.now(UTC).isoformat()
     payload={"season":season,"week":week,"asOf":now,"provider":"nflverse + NOAA/NWS","model":"fieldiq-ensemble-v3-score-margin","predictions":predictions}; (PROCESSED_DIR/"predictions.json").write_text(json.dumps(payload,indent=2)+"\n")
-    mp={"generatedAt":now,"trainingGames":int(len(Xtr)),"validationGames":int(len(Xte)),"validationMethod":validation,"features":FEATURE_COLUMNS,"models":metrics,"scoreModels":score_metrics,"marketCalibration":{"marginResidualSd":round(margin_sd,3),"totalResidualSd":round(total_sd,3),"method":"validation residual normal approximation"}}; (PROCESSED_DIR/"model_metrics.json").write_text(json.dumps(mp,indent=2)+"\n")
+    mp={"generatedAt":now,"trainingGames":int(len(Xtr)),"validationGames":int(len(Xte)),"validationMethod":validation,"features":FEATURE_COLUMNS,"models":metrics,"manualData":manual_summary,"scoreModels":score_metrics,"marketCalibration":{"marginResidualSd":round(margin_sd,3),"totalResidualSd":round(total_sd,3),"method":"validation residual normal approximation"}}; (PROCESSED_DIR/"model_metrics.json").write_text(json.dumps(mp,indent=2)+"\n")
     write_schedule_payloads(games,season,PROCESSED_DIR,now,team_stats); training.to_parquet(PROCESSED_DIR/"game_features.parquet",index=False); return {"predictionCount":len(predictions),**mp}
 
 if __name__=="__main__": print(json.dumps(train_and_predict(),indent=2))
