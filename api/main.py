@@ -15,7 +15,7 @@ METRICS_PATH = ROOT / "data" / "processed" / "model_metrics.json"
 MANIFEST_PATH = ROOT / "data" / "raw" / "manifest.json"
 WEATHER_STATUS_PATH = ROOT / "data" / "raw" / "weather_status.json"
 SCHEDULE_PATH = ROOT / "data" / "processed" / "schedule.json"
-MATCHUP_HISTORY_PATH = ROOT / "data" / "processed" / "matchup_history.json"
+MATCHUP_HISTORY_PATH = ROOT / "data" / "processed" / "matchup_history.json"\nMANUAL_GAMES_PATH = Path(os.getenv("FIELDIQ_MANUAL_GAMES_PATH", str(ROOT / "data" / "manual" / "games.jsonl")) )
 
 app = FastAPI(title="Field IQ NFL API", version="0.3.0")
 app.add_middleware(
@@ -238,6 +238,44 @@ async def matchup_history(
         "count": len(meetings),
     }
 
+
+
+class ManualGameRequest(BaseModel):
+    rawText: str
+    season: int
+    seasonType: str = "Regular season"
+    week: int | None = None
+    gameDate: str | None = None
+    team: str | None = None
+    opponent: str | None = None
+    includeInTraining: bool = False
+
+
+@app.post("/api/manual-games")
+async def save_manual_game(request: ManualGameRequest) -> dict[str, Any]:
+    """Save pasted game stats separately from imported provider data."""
+    raw=request.rawText.strip()
+    if len(raw) < 40:
+        raise HTTPException(status_code=400, detail="Paste the team/game statistics before saving.")
+    import hashlib
+    normalized=" ".join(raw.lower().split())
+    record_id=hashlib.sha256(normalized.encode()).hexdigest()[:16]
+    warnings=[]
+    MANUAL_GAMES_PATH.parent.mkdir(parents=True, exist_ok=True)
+    if MANUAL_GAMES_PATH.exists():
+        for line in MANUAL_GAMES_PATH.read_text().splitlines():
+            try:
+                if json.loads(line).get("id")==record_id:
+                    raise HTTPException(status_code=409, detail="This pasted stat record already exists.")
+            except json.JSONDecodeError:
+                continue
+    record=request.model_dump()
+    record.update({"id":record_id,"source":"manual","createdAt":datetime.now(UTC).isoformat(),"validated":False})
+    with MANUAL_GAMES_PATH.open("a", encoding="utf-8") as handle:
+        handle.write(json.dumps(record)+"\\n")
+    if request.includeInTraining:
+        warnings.append("Saved for training, but it must be validated/parsed before the ML pipeline consumes it.")
+    return {"ok":True,"id":record_id,"warnings":warnings}
 
 @app.get("/api/model")
 async def model_metrics() -> dict[str, Any]:
