@@ -345,7 +345,9 @@ def _parse_manual_stats(raw: str) -> dict[str, Any]:
     # Flag initials that collide inside a section (e.g. two B. ROBINSON rows).
     for kind,rows in parsed["players"].items():
         counts={}
-        for row in rows:\n            original=row.get("sourcePlayer",row["player"])\n            counts[original]=counts.get(original,0)+1
+        for row in rows:
+            original=row.get("sourcePlayer",row["player"])
+            counts[original]=counts.get(original,0)+1
         for name,count in counts.items():
             if count>1 and re.match(r"^[A-Z]\.\s",name):
                 parsed["warnings"].append(f"Ambiguous abbreviated player in {kind}: {name}. Review identity before ML approval.")
