@@ -8,10 +8,10 @@ import joblib
 import numpy as np
 import pandas as pd
 import polars as pl
-from sklearn.ensemble import HistGradientBoostingClassifier, RandomForestClassifier
+from sklearn.ensemble import HistGradientBoostingClassifier, HistGradientBoostingRegressor, RandomForestClassifier, RandomForestRegressor
 from sklearn.impute import SimpleImputer
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, brier_score_loss, log_loss
+from sklearn.metrics import accuracy_score, brier_score_loss, log_loss, mean_absolute_error, mean_squared_error
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 from pipeline.config import MODEL_DIR, PROCESSED_DIR, RANDOM_STATE, RAW_DIR, ensure_directories
@@ -38,6 +38,13 @@ def _models():
       "logistic":Pipeline([("imputer",SimpleImputer(strategy="median")),("scale",StandardScaler()),("model",LogisticRegression(max_iter=1000,random_state=RANDOM_STATE))]),
       "random_forest":Pipeline([("imputer",SimpleImputer(strategy="median")),("model",RandomForestClassifier(n_estimators=350,min_samples_leaf=8,max_features="sqrt",random_state=RANDOM_STATE,n_jobs=-1))]),
       "gradient_boosting":Pipeline([("imputer",SimpleImputer(strategy="median")),("model",HistGradientBoostingClassifier(max_iter=180,learning_rate=.05,max_leaf_nodes=15,l2_regularization=1.0,random_state=RANDOM_STATE))])}
+
+
+def _regressors():
+    return {
+      "random_forest": Pipeline([("imputer", SimpleImputer(strategy="median")), ("model", RandomForestRegressor(n_estimators=350, min_samples_leaf=8, max_features="sqrt", random_state=RANDOM_STATE, n_jobs=-1))]),
+      "gradient_boosting": Pipeline([("imputer", SimpleImputer(strategy="median")), ("model", HistGradientBoostingRegressor(max_iter=180, learning_rate=.05, max_leaf_nodes=15, l2_regularization=1.0, random_state=RANDOM_STATE))]),
+    }
 
 
 def _injury_penalties(injuries):
@@ -77,6 +84,18 @@ def train_and_predict()->dict[str,Any]:
         split=int(len(training)*.8); test_mask=pd.Series(False,index=training.index); test_mask.iloc[split:]=True; validation="chronological-20-percent"
     Xtr=training.loc[~test_mask,FEATURE_COLUMNS]; ytr=training.loc[~test_mask,"home_win"]; Xte=training.loc[test_mask,FEATURE_COLUMNS]; yte=training.loc[test_mask,"home_win"]
     fitted={}; metrics={}
+    score_models={}; score_metrics={}
+    score_targets={"home_score":"homeScore","away_score":"awayScore","home_margin":"homeMargin","game_total":"gameTotal"}
+    for target, label in score_targets.items():
+        target_models={}; target_metrics={}
+        for name, model in _regressors().items():
+            model.fit(Xtr, training.loc[~test_mask, target])
+            pred=model.predict(Xte)
+            target_metrics[name]={"mae":round(float(mean_absolute_error(training.loc[test_mask,target],pred)),3),"rmse":round(float(mean_squared_error(training.loc[test_mask,target],pred)**.5),3)}
+            joblib.dump(model, MODEL_DIR/f"{target}_{name}.joblib", compress=3)
+            target_models[name]=model
+        score_models[target]=target_models
+        score_metrics[label]=target_metrics
     for name,model in _models().items():
         model.fit(Xtr,ytr); p=model.predict_proba(Xte)[:,1]; metrics[name]={"accuracy":round(float(accuracy_score(yte,p>=.5)),4),"logLoss":round(float(log_loss(yte,p,labels=[0,1])),4),"brierScore":round(float(brier_score_loss(yte,p)),4)}; joblib.dump(model,MODEL_DIR/f"{name}.joblib",compress=3); fitted[name]=model
     if upcoming.empty: next_games=upcoming
@@ -85,12 +104,15 @@ def train_and_predict()->dict[str,Any]:
     penalties=_injury_penalties(injuries); predictions=[]
     if not next_games.empty:
         probs=np.column_stack([m.predict_proba(next_games[FEATURE_COLUMNS])[:,1] for m in fitted.values()]).mean(axis=1)
+        score_preds={target:np.column_stack([m.predict(next_games[FEATURE_COLUMNS]) for m in models.values()]).mean(axis=1) for target,models in score_models.items()}
         for offset,(_,row) in enumerate(next_games.iterrows()):
             hp=float(np.clip(probs[offset]+(penalties.get(row["away_team"],0)-penalties.get(row["home_team"],0))/100,.08,.92)); hn=team_name(row["home_team"]); an=team_name(row["away_team"])
-            predictions.append({"id":row["game_id"],"awayTeam":an,"awayAbbreviation":row["away_team"],"homeTeam":hn,"homeAbbreviation":row["home_team"],"kickoff":f"{row['gameday'].date().isoformat()} {row['gametime']}","predictedWinner":hn if hp>=.5 else an,"homeWinProbability":round(hp*100),"awayWinProbability":round((1-hp)*100),"confidence":_confidence(hp),"factors":_top_factors(row)})
+            projected_home=max(0,round(float(score_preds["home_score"][offset]),1)); projected_away=max(0,round(float(score_preds["away_score"][offset]),1))
+            projected_margin=round(float(score_preds["home_margin"][offset]),1); projected_total=round(float(score_preds["game_total"][offset]),1)
+            predictions.append({"id":row["game_id"],"awayTeam":an,"awayAbbreviation":row["away_team"],"homeTeam":hn,"homeAbbreviation":row["home_team"],"kickoff":f"{row['gameday'].date().isoformat()} {row['gametime']}","predictedWinner":hn if hp>=.5 else an,"homeWinProbability":round(hp*100),"awayWinProbability":round((1-hp)*100),"projectedHomeScore":projected_home,"projectedAwayScore":projected_away,"projectedMargin":projected_margin,"projectedTotal":projected_total,"confidence":_confidence(hp),"factors":_top_factors(row)})
     season=int(next_games.iloc[0]["season"]) if not next_games.empty else latest; week=int(next_games.iloc[0]["week"]) if not next_games.empty else int(training.iloc[-1]["week"]); now=datetime.now(UTC).isoformat()
-    payload={"season":season,"week":week,"asOf":now,"provider":"nflverse + NOAA/NWS","model":"fieldiq-ensemble-v2-pbp","predictions":predictions}; (PROCESSED_DIR/"predictions.json").write_text(json.dumps(payload,indent=2)+"\n")
-    mp={"generatedAt":now,"trainingGames":int(len(Xtr)),"validationGames":int(len(Xte)),"validationMethod":validation,"features":FEATURE_COLUMNS,"models":metrics}; (PROCESSED_DIR/"model_metrics.json").write_text(json.dumps(mp,indent=2)+"\n")
+    payload={"season":season,"week":week,"asOf":now,"provider":"nflverse + NOAA/NWS","model":"fieldiq-ensemble-v3-score-margin","predictions":predictions}; (PROCESSED_DIR/"predictions.json").write_text(json.dumps(payload,indent=2)+"\n")
+    mp={"generatedAt":now,"trainingGames":int(len(Xtr)),"validationGames":int(len(Xte)),"validationMethod":validation,"features":FEATURE_COLUMNS,"models":metrics,"scoreModels":score_metrics}; (PROCESSED_DIR/"model_metrics.json").write_text(json.dumps(mp,indent=2)+"\n")
     write_schedule_payloads(games,season,PROCESSED_DIR,now,team_stats); training.to_parquet(PROCESSED_DIR/"game_features.parquet",index=False); return {"predictionCount":len(predictions),**mp}
 
 if __name__=="__main__": print(json.dumps(train_and_predict(),indent=2))
