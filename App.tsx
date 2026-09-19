@@ -395,7 +395,8 @@ export default function App() {
       const result = await saveManualGame({
         rawText: manualStats, season: Number(manualSeason), seasonType: "Regular season",
         week: manualWeek ? Number(manualWeek) : undefined, gameDate: manualDate || undefined,
-        homeAway: manualHomeAway, team: manualTeam || undefined,
+        homeAway: manualHomeAway, teamScore: manualTeamScore ? Number(manualTeamScore) : undefined,
+        opponentScore: manualOpponentScore ? Number(manualOpponentScore) : undefined, team: manualTeam || undefined,
         opponent: manualOpponent || undefined, includeInTraining: manualTraining,
       });
       setManualParsed(result.parsed ?? null);
