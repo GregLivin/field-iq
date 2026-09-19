@@ -9,6 +9,8 @@ import {
   ScrollView,
   StyleSheet,
   Text,
+  TextInput,
+  Switch,
   useWindowDimensions,
   View,
 } from "react-native";
@@ -17,6 +19,7 @@ import {
   getMatchupHistory,
   getPredictions,
   getSchedule,
+  sendTextAlertTest,
 } from "./src/services/fieldIqApi";
 import { MatchupMeeting, Prediction, RecentTeamGame, ScheduleGame } from "./src/types";
 
@@ -360,6 +363,24 @@ export default function App() {
   const [historyLoading, setHistoryLoading] = useState(false);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
+  const [alertsOpen, setAlertsOpen] = useState(false);
+  const [phone, setPhone] = useState("");
+  const [alertSending, setAlertSending] = useState(false);
+  const [alertMessage, setAlertMessage] = useState("");
+  const [alertPrefs, setAlertPrefs] = useState({
+    gameReminders: true,
+    predictionUpdates: true,
+    highConfidence: true,
+    finalResults: true,
+  });
+
+  async function enableTextAlerts() {
+    setAlertSending(true);
+    setAlertMessage("");
+    const result = await sendTextAlertTest(phone, alertPrefs);
+    setAlertMessage(result.message);
+    setAlertSending(false);
+  }
 
   async function loadData(isRefresh = false) {
     isRefresh ? setRefreshing(true) : setLoading(true);
@@ -466,8 +487,18 @@ export default function App() {
             <Text style={styles.brand}>Field IQ</Text>
             <Text style={styles.subtitle}>Let intelligence guide the chance.</Text>
           </View>
-          <View style={styles.weekPill}>
-            <Text style={styles.weekText}>NFL {season} • W{week}</Text>
+          <View style={styles.headerActions}>
+            <Pressable
+              accessibilityRole="button"
+              accessibilityLabel="Set up Field IQ text alerts"
+              onPress={() => setAlertsOpen(true)}
+              style={({ pressed }) => [styles.alertButton, pressed && styles.pressed]}
+            >
+              <Text style={styles.alertButtonText}>🔔 Alerts</Text>
+            </Pressable>
+            <View style={styles.weekPill}>
+              <Text style={styles.weekText}>NFL {season} • W{week}</Text>
+            </View>
           </View>
         </View>
 
@@ -607,6 +638,61 @@ export default function App() {
         </View>
       </View>
 
+      <Modal visible={alertsOpen} transparent animationType="slide" onRequestClose={() => setAlertsOpen(false)}>
+        <Pressable style={styles.modalBackdrop} onPress={() => setAlertsOpen(false)}>
+          <Pressable style={styles.alertSheet} onPress={(event) => event.stopPropagation()}>
+            <View style={styles.modalHandle} />
+            <View style={styles.modalHeader}>
+              <View style={styles.alertTitleWrap}>
+                <Text style={styles.eyebrow}>FIELD IQ TEXT ALERTS</Text>
+                <Text style={styles.modalTitle}>Stay ahead of kickoff</Text>
+              </View>
+              <Pressable onPress={() => setAlertsOpen(false)} style={styles.closeButton}>
+                <Text style={styles.closeText}>×</Text>
+              </Pressable>
+            </View>
+            <Text style={styles.alertIntro}>
+              Choose the NFL updates you want Field IQ to send. Message and data rates may apply.
+            </Text>
+            <TextInput
+              accessibilityLabel="Mobile phone number"
+              keyboardType="phone-pad"
+              onChangeText={setPhone}
+              placeholder="+17135551234"
+              placeholderTextColor={colors.muted}
+              style={styles.phoneInput}
+              value={phone}
+            />
+            {([
+              ["gameReminders", "Game reminders"],
+              ["predictionUpdates", "Prediction updates"],
+              ["highConfidence", "High-confidence alerts"],
+              ["finalResults", "Final results"],
+            ] as const).map(([key, label]) => (
+              <View key={key} style={styles.alertOption}>
+                <Text style={styles.alertOptionText}>{label}</Text>
+                <Switch
+                  value={alertPrefs[key]}
+                  onValueChange={(value) => setAlertPrefs((current) => ({ ...current, [key]: value }))}
+                />
+              </View>
+            ))}
+            <Text style={styles.consentText}>
+              By enabling alerts, you agree to receive automated Field IQ texts at this number. Consent is not a condition of purchase. Reply STOP to opt out.
+            </Text>
+            {alertMessage ? <Text style={styles.alertStatus}>{alertMessage}</Text> : null}
+            <Pressable
+              accessibilityRole="button"
+              disabled={alertSending || !phone.trim()}
+              onPress={() => void enableTextAlerts()}
+              style={({ pressed }) => [styles.enableAlertsButton, (pressed || alertSending || !phone.trim()) && styles.pressed]}
+            >
+              <Text style={styles.enableAlertsButtonText}>{alertSending ? "Sending…" : "Enable & send test text"}</Text>
+            </Pressable>
+          </Pressable>
+        </Pressable>
+      </Modal>
+
       <Modal visible={selectedGame !== null} transparent animationType="slide" onRequestClose={() => setSelectedGame(null)}>
         <Pressable style={styles.modalBackdrop} onPress={() => setSelectedGame(null)}>
           <Pressable style={styles.modalSheet} onPress={(event) => event.stopPropagation()}>
@@ -689,6 +775,9 @@ const styles = StyleSheet.create({
   header: { alignItems: "center", flexDirection: "row", justifyContent: "space-between", paddingHorizontal: 18, paddingVertical: 14 },
   brand: { color: colors.green, fontSize: 23, fontWeight: "900", letterSpacing: 1.5 },
   subtitle: { color: colors.muted, fontSize: 11, fontWeight: "600", marginTop: 2 },
+  headerActions: { alignItems: "center", flexDirection: "row", gap: 8 },
+  alertButton: { backgroundColor: colors.panelRaised, borderColor: "#2f6f4c", borderRadius: 18, borderWidth: 1, paddingHorizontal: 11, paddingVertical: 7 },
+  alertButtonText: { color: colors.green, fontSize: 11, fontWeight: "900" },
   weekPill: { backgroundColor: colors.greenDark, borderColor: "#286945", borderRadius: 18, borderWidth: 1, paddingHorizontal: 11, paddingVertical: 7 },
   weekText: { color: colors.green, fontSize: 11, fontWeight: "800" },
   hero: { backgroundColor: colors.panelRaised, borderColor: "#27523d", borderRadius: 24, borderWidth: 1, marginBottom: 21, padding: 24 },
@@ -784,6 +873,16 @@ const styles = StyleSheet.create({
   navTextActive: { color: colors.green },
   disclaimer: { color: "#5f756a", fontSize: 10, lineHeight: 15, marginTop: 15, textAlign: "center" },
   empty: { color: colors.muted, fontSize: 13, paddingVertical: 32, textAlign: "center" },
+  alertSheet: { backgroundColor: colors.panel, borderColor: colors.border, borderTopLeftRadius: 26, borderTopRightRadius: 26, borderWidth: 1, padding: 18 },
+  alertTitleWrap: { flex: 1, paddingRight: 12 },
+  alertIntro: { color: "#acc2b6", fontSize: 12, lineHeight: 18, marginBottom: 14 },
+  phoneInput: { backgroundColor: "#0a1511", borderColor: colors.border, borderRadius: 13, borderWidth: 1, color: colors.text, fontSize: 16, marginBottom: 10, paddingHorizontal: 14, paddingVertical: 13 },
+  alertOption: { alignItems: "center", borderBottomColor: colors.border, borderBottomWidth: 1, flexDirection: "row", justifyContent: "space-between", paddingVertical: 11 },
+  alertOptionText: { color: colors.text, fontSize: 13, fontWeight: "700" },
+  consentText: { color: colors.muted, fontSize: 9, lineHeight: 14, marginTop: 13 },
+  alertStatus: { color: colors.green, fontSize: 11, fontWeight: "700", marginTop: 10 },
+  enableAlertsButton: { alignItems: "center", backgroundColor: colors.green, borderRadius: 13, marginTop: 14, paddingVertical: 13 },
+  enableAlertsButtonText: { color: colors.background, fontSize: 12, fontWeight: "900" },
   modalBackdrop: { backgroundColor: "rgba(0,0,0,0.68)", flex: 1, justifyContent: "flex-end" },
   modalSheet: { backgroundColor: colors.panel, borderColor: colors.border, borderTopLeftRadius: 26, borderTopRightRadius: 26, borderWidth: 1, maxHeight: "78%", padding: 18 },
   modalHandle: { alignSelf: "center", backgroundColor: "#455b50", borderRadius: 2, height: 4, marginBottom: 18, width: 42 },
