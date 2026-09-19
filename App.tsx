@@ -23,7 +23,7 @@ import {
   sendTextAlertTest,
   analyzeMarketScreenshot,
   ExtractedMarket,
-  saveManualGame,
+  saveManualGame,\n  approveManualGame,
 } from "./src/services/fieldIqApi";
 import { MatchupMeeting, Prediction, RecentTeamGame, ScheduleGame } from "./src/types";
 
@@ -380,7 +380,7 @@ export default function App() {
   const [manualOpponent, setManualOpponent] = useState("");
   const [manualTraining, setManualTraining] = useState(false);
   const [manualStatus, setManualStatus] = useState("");
-  const [manualSaving, setManualSaving] = useState(false);\n  const [manualParsed, setManualParsed] = useState<any>(null);
+  const [manualSaving, setManualSaving] = useState(false);\n  const [manualParsed, setManualParsed] = useState<any>(null);\n  const [manualRecordId, setManualRecordId] = useState<string | null>(null);
 
   async function submitManualStats() {
     setManualSaving(true); setManualStatus("Validating pasted data…");
@@ -390,7 +390,7 @@ export default function App() {
         week: manualWeek ? Number(manualWeek) : undefined, team: manualTeam || undefined,
         opponent: manualOpponent || undefined, includeInTraining: manualTraining,
       });
-      setManualParsed(result.parsed ?? null);\n      setManualStatus(`Saved as manual record ${result.id}. ${result.warnings.join(" ")}`);
+      setManualParsed(result.parsed ?? null);\n      setManualRecordId(result.id);\n      setManualStatus(`Saved as manual record ${result.id}. ${result.warnings.join(" ")}`);
       setManualStats("");
     } catch (error) {
       setManualStatus(error instanceof Error ? error.message : "Unable to save manual data.");
