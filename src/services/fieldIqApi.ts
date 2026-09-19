@@ -159,6 +159,7 @@ export type ManualGameDraft = {
   seasonType: string;
   week?: number;
   gameDate?: string;
+  homeAway?: "home" | "away";
   team?: string;
   opponent?: string;
   includeInTraining: boolean;
