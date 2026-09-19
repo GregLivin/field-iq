@@ -35,7 +35,7 @@ const colors = {
   gold: "#f5c15d",
 };
 
-type Tab = "picks" | "schedule" | "matchups";
+type Tab = "picks" | "analyze" | "schedule" | "matchups";
 type ConfidenceFilter = "ALL" | Prediction["confidence"];
 type HistoryView = "recent" | "headToHead";
 
@@ -363,6 +363,10 @@ export default function App() {
   const [historyLoading, setHistoryLoading] = useState(false);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
+  const [marketHome, setMarketHome] = useState("HOU");
+  const [marketAway, setMarketAway] = useState("CIN");
+  const [marketSpread, setMarketSpread] = useState("-2.5");
+  const [marketTotal, setMarketTotal] = useState("45.5");
   const [alertsOpen, setAlertsOpen] = useState(false);
   const [phone, setPhone] = useState("");
   const [alertSending, setAlertSending] = useState(false);
@@ -509,6 +513,54 @@ export default function App() {
             <RefreshControl refreshing={refreshing} onRefresh={() => void loadData(true)} tintColor={colors.green} />
           }
         >
+          {activeTab === "analyze" && (
+            <>
+              <View style={styles.screenIntro}>
+                <Text style={styles.eyebrow}>FIELD IQ MARKET ANALYZER</Text>
+                <Text style={styles.screenTitle}>Compare the setup</Text>
+                <Text style={styles.heroBody}>
+                  Enter the matchup, spread, and total. Field IQ compares those numbers with its model probabilities. This is model analysis, not a guarantee of an outcome.
+                </Text>
+              </View>
+              <View style={styles.marketCard}>
+                <Text style={styles.filterLabel}>MATCHUP</Text>
+                <View style={styles.marketRow}>
+                  <TextInput value={marketAway} onChangeText={setMarketAway} autoCapitalize="characters" placeholder="AWAY" placeholderTextColor={colors.muted} style={styles.marketInput} />
+                  <Text style={styles.at}>@</Text>
+                  <TextInput value={marketHome} onChangeText={setMarketHome} autoCapitalize="characters" placeholder="HOME" placeholderTextColor={colors.muted} style={styles.marketInput} />
+                </View>
+                <View style={styles.marketRow}>
+                  <View style={styles.marketField}><Text style={styles.filterLabel}>HOME SPREAD</Text><TextInput value={marketSpread} onChangeText={setMarketSpread} keyboardType="numbers-and-punctuation" style={styles.marketInputWide} /></View>
+                  <View style={styles.marketField}><Text style={styles.filterLabel}>TOTAL</Text><TextInput value={marketTotal} onChangeText={setMarketTotal} keyboardType="decimal-pad" style={styles.marketInputWide} /></View>
+                </View>
+                {(() => {
+                  const prediction = predictions.find((item) =>
+                    item.homeAbbreviation === marketHome.trim().toUpperCase() &&
+                    item.awayAbbreviation === marketAway.trim().toUpperCase());
+                  if (!prediction) return <Text style={styles.marketHint}>Choose a matchup available in the current Field IQ prediction set.</Text>;
+                  const homeProbability = prediction.homeWinProbability;
+                  const impliedMargin = Math.round(((homeProbability - 50) / 5) * 10) / 10;
+                  const enteredSpread = Number(marketSpread);
+                  return (
+                    <View style={styles.analysisPanel}>
+                      <Text style={styles.pickLabel}>FIELD IQ MODEL VIEW</Text>
+                      <Text style={styles.analysisWinner}>{prediction.predictedWinner}</Text>
+                      <Text style={styles.analysisLine}>{prediction.homeAbbreviation} win probability: {homeProbability}%</Text>
+                      <Text style={styles.analysisLine}>{prediction.awayAbbreviation} win probability: {prediction.awayWinProbability}%</Text>
+                      <Text style={styles.analysisLine}>Market setup: {prediction.homeAbbreviation} {Number.isFinite(enteredSpread) ? (enteredSpread > 0 ? "+" : "") + enteredSpread : "—"} • Total {marketTotal || "—"}</Text>
+                      <Text style={styles.marketHint}>Margin/score modeling is the next ML layer; Field IQ will not fabricate a projected score until that model is trained and validated.</Text>
+                    </View>
+                  );
+                })()}
+              </View>
+              <View style={styles.marketCard}>
+                <Text style={styles.eyebrow}>SCREENSHOT ANALYZER</Text>
+                <Text style={styles.sectionTitle}>Coming next</Text>
+                <Text style={styles.heroBody}>Upload a sportsbook-style screenshot, extract matchup lines, then match them to Field IQ games for model comparison.</Text>
+              </View>
+            </>
+          )}
+
           {activeTab === "picks" && (
             <>
               <View style={[styles.hero, compact && styles.heroCompact]}>
@@ -622,7 +674,7 @@ export default function App() {
         </ScrollView>
 
         <View style={styles.bottomNav}>
-          {(["picks", "schedule", "matchups"] as Tab[]).map((tab) => (
+          {(["picks", "analyze", "schedule", "matchups"] as Tab[]).map((tab) => (
             <Pressable
               accessibilityRole="button"
               key={tab}
@@ -630,7 +682,7 @@ export default function App() {
               style={[styles.navItem, activeTab === tab && styles.navItemActive]}
             >
               <Text style={[styles.navIcon, activeTab === tab && styles.navTextActive]}>
-                {tab === "picks" ? "◎" : tab === "schedule" ? "▦" : "↔"}
+                {tab === "picks" ? "◎" : tab === "analyze" ? "⌁" : tab === "schedule" ? "▦" : "↔"}
               </Text>
               <Text style={[styles.navText, activeTab === tab && styles.navTextActive]}>{tab}</Text>
             </Pressable>
@@ -840,6 +892,15 @@ const styles = StyleSheet.create({
   previousGamesButton: { alignItems: "center", backgroundColor: colors.greenDark, borderColor: "#2f6f4c", borderRadius: 13, borderWidth: 1, flexDirection: "row", justifyContent: "space-between", marginTop: 13, paddingHorizontal: 14, paddingVertical: 12 },
   previousGamesButtonText: { color: colors.green, fontSize: 11, fontWeight: "900" },
   previousGamesArrow: { color: colors.green, fontSize: 17, fontWeight: "900" },
+  marketCard: { backgroundColor: colors.panel, borderColor: colors.border, borderRadius: 20, borderWidth: 1, marginBottom: 16, padding: 16 },
+  marketRow: { alignItems: "center", flexDirection: "row", gap: 10, marginBottom: 14 },
+  marketField: { flex: 1 },
+  marketInput: { backgroundColor: "#0a1511", borderColor: colors.border, borderRadius: 13, borderWidth: 1, color: colors.text, flex: 1, fontSize: 16, fontWeight: "900", padding: 13, textAlign: "center" },
+  marketInputWide: { backgroundColor: "#0a1511", borderColor: colors.border, borderRadius: 13, borderWidth: 1, color: colors.text, fontSize: 16, fontWeight: "900", padding: 13 },
+  analysisPanel: { backgroundColor: colors.greenDark, borderColor: "#2f6f4c", borderRadius: 15, borderWidth: 1, marginTop: 4, padding: 14 },
+  analysisWinner: { color: colors.green, fontSize: 20, fontWeight: "900", marginBottom: 8, marginTop: 4 },
+  analysisLine: { color: colors.text, fontSize: 12, fontWeight: "700", marginTop: 4 },
+  marketHint: { color: colors.muted, fontSize: 10, lineHeight: 15, marginTop: 10 },
   filterLabel: { color: colors.muted, fontSize: 10, fontWeight: "900", letterSpacing: 1.2, marginBottom: 8 },
   chips: { gap: 8, paddingBottom: 18 },
   chip: { backgroundColor: colors.panel, borderColor: colors.border, borderRadius: 18, borderWidth: 1, paddingHorizontal: 13, paddingVertical: 8 },
