@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import re
+from math import erf, sqrt
 from datetime import UTC, datetime
 from typing import Any
 import joblib
@@ -61,6 +62,23 @@ def _confidence(p):
     e=abs(p-.5); return "High" if e>=.18 else "Medium" if e>=.07 else "Low"
 
 
+def _normal_cdf(value: float, mean: float, sd: float) -> float:
+    sd=max(float(sd), 1.0)
+    return .5 * (1 + erf((value-mean)/(sd*sqrt(2))))
+
+
+def _market_probabilities(projected_margin: float, projected_total: float, home_spread: float | None, market_total: float | None, margin_sd: float, total_sd: float):
+    result={}
+    if home_spread is not None:
+        threshold=-home_spread
+        result["homeCoverProbability"]=round((1-_normal_cdf(threshold,projected_margin,margin_sd))*100)
+        result["awayCoverProbability"]=100-result["homeCoverProbability"]
+    if market_total is not None:
+        result["overProbability"]=round((1-_normal_cdf(market_total,projected_total,total_sd))*100)
+        result["underProbability"]=100-result["overProbability"]
+    return result
+
+
 def _top_factors(row):
     candidates=[(abs(row.get("elo_diff",0))/100,"Elo team strength"),(abs(row.get("point_margin_5_diff",0))/7,"Recent scoring margin"),(abs(row.get("off_epa_per_play_5_diff",0))*5,"EPA per play"),(abs(row.get("success_rate_5_diff",0))*10,"Success rate"),(abs(row.get("qb_epa_per_play_5_diff",0))*5,"Quarterback efficiency"),(abs(row.get("explosive_play_rate_5_diff",0))*10,"Explosive plays"),(abs(row.get("turnovers_5_diff",0)),"Turnover trend")]
     return [label for _,label in sorted(candidates,reverse=True)[:3]]
@@ -96,6 +114,10 @@ def train_and_predict()->dict[str,Any]:
             target_models[name]=model
         score_models[target]=target_models
         score_metrics[label]=target_metrics
+    margin_ensemble=np.column_stack([m.predict(Xte) for m in score_models["home_margin"].values()]).mean(axis=1)
+    total_ensemble=np.column_stack([m.predict(Xte) for m in score_models["game_total"].values()]).mean(axis=1)
+    margin_sd=float(np.std(training.loc[test_mask,"home_margin"].to_numpy()-margin_ensemble, ddof=1))
+    total_sd=float(np.std(training.loc[test_mask,"game_total"].to_numpy()-total_ensemble, ddof=1))
     for name,model in _models().items():
         model.fit(Xtr,ytr); p=model.predict_proba(Xte)[:,1]; metrics[name]={"accuracy":round(float(accuracy_score(yte,p>=.5)),4),"logLoss":round(float(log_loss(yte,p,labels=[0,1])),4),"brierScore":round(float(brier_score_loss(yte,p)),4)}; joblib.dump(model,MODEL_DIR/f"{name}.joblib",compress=3); fitted[name]=model
     if upcoming.empty: next_games=upcoming
@@ -112,7 +134,7 @@ def train_and_predict()->dict[str,Any]:
             predictions.append({"id":row["game_id"],"awayTeam":an,"awayAbbreviation":row["away_team"],"homeTeam":hn,"homeAbbreviation":row["home_team"],"kickoff":f"{row['gameday'].date().isoformat()} {row['gametime']}","predictedWinner":hn if hp>=.5 else an,"homeWinProbability":round(hp*100),"awayWinProbability":round((1-hp)*100),"projectedHomeScore":projected_home,"projectedAwayScore":projected_away,"projectedMargin":projected_margin,"projectedTotal":projected_total,"confidence":_confidence(hp),"factors":_top_factors(row)})
     season=int(next_games.iloc[0]["season"]) if not next_games.empty else latest; week=int(next_games.iloc[0]["week"]) if not next_games.empty else int(training.iloc[-1]["week"]); now=datetime.now(UTC).isoformat()
     payload={"season":season,"week":week,"asOf":now,"provider":"nflverse + NOAA/NWS","model":"fieldiq-ensemble-v3-score-margin","predictions":predictions}; (PROCESSED_DIR/"predictions.json").write_text(json.dumps(payload,indent=2)+"\n")
-    mp={"generatedAt":now,"trainingGames":int(len(Xtr)),"validationGames":int(len(Xte)),"validationMethod":validation,"features":FEATURE_COLUMNS,"models":metrics,"scoreModels":score_metrics}; (PROCESSED_DIR/"model_metrics.json").write_text(json.dumps(mp,indent=2)+"\n")
+    mp={"generatedAt":now,"trainingGames":int(len(Xtr)),"validationGames":int(len(Xte)),"validationMethod":validation,"features":FEATURE_COLUMNS,"models":metrics,"scoreModels":score_metrics,"marketCalibration":{"marginResidualSd":round(margin_sd,3),"totalResidualSd":round(total_sd,3),"method":"validation residual normal approximation"}}; (PROCESSED_DIR/"model_metrics.json").write_text(json.dumps(mp,indent=2)+"\n")
     write_schedule_payloads(games,season,PROCESSED_DIR,now,team_stats); training.to_parquet(PROCESSED_DIR/"game_features.parquet",index=False); return {"predictionCount":len(predictions),**mp}
 
 if __name__=="__main__": print(json.dumps(train_and_predict(),indent=2))
