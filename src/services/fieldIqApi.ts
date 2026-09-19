@@ -92,3 +92,37 @@ export async function getMatchupHistory(
     return null;
   }
 }
+
+
+export type AlertPreferences = {
+  gameReminders: boolean;
+  predictionUpdates: boolean;
+  highConfidence: boolean;
+  finalResults: boolean;
+};
+
+export async function sendTextAlertTest(
+  phone: string,
+  preferences: AlertPreferences,
+): Promise<{ ok: boolean; message: string }> {
+  if (API_URL === undefined) {
+    return { ok: false, message: "Connect the Field IQ API to enable text alerts." };
+  }
+  try {
+    const response = await fetch(`${API_URL}/api/alerts/test`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ phone, preferences }),
+    });
+    const data = (await response.json()) as { ok?: boolean; message?: string; detail?: string };
+    if (!response.ok) {
+      throw new Error(data.detail ?? "Unable to send text alert.");
+    }
+    return { ok: Boolean(data.ok), message: data.message ?? "Test alert sent." };
+  } catch (error) {
+    return {
+      ok: false,
+      message: error instanceof Error ? error.message : "Unable to send text alert.",
+    };
+  }
+}
