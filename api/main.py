@@ -241,39 +241,54 @@ async def matchup_history(
 
 
 def _parse_manual_stats(raw: str) -> dict[str, Any]:
-    """Best-effort parser for pasted NFL team/player stat pages; never invents missing values."""
+    """Best-effort parser for pasted NFL stat pages. Missing values remain absent."""
     import re
     text="\n".join(line.strip() for line in raw.splitlines() if line.strip())
-    parsed: dict[str, Any]={"teamStats":{},"players":{"passing":[],"rushing":[],"receiving":[]},"unparsed":False}
+    parsed: dict[str, Any]={"teamStats":{},"players":{k:[] for k in ("passing","rushing","receiving","tackles","interceptions","fieldGoals","punting","puntReturn","kickReturn")},"unparsed":False}
+
+    def number(v: str):
+        return float(v) if "." in v else int(v)
 
     def paired(label: str, key: str):
-        # Supports layouts where values surround a label: 238 / TOTAL OFFENSIVE YARDS / 264.
-        m=re.search(rf"(\d+(?:\.\d+)?)\s*\n{re.escape(label)}\s*\n(\d+(?:\.\d+)?)", text, re.I)
-        if m: parsed["teamStats"][key]={"team":float(m.group(1)) if "." in m.group(1) else int(m.group(1)),"opponent":float(m.group(2)) if "." in m.group(2) else int(m.group(2))}
+        m=re.search(rf"(-?\d+(?:\.\d+)?)\s*\n{re.escape(label)}\s*\n(-?\d+(?:\.\d+)?)", text, re.I)
+        if m: parsed["teamStats"][key]={"team":number(m.group(1)),"opponent":number(m.group(2))}
+
     for label,key in [
         ("TOTAL FIRST DOWNS","firstDowns"),("TOTAL OFFENSIVE YARDS","totalYards"),
         ("TOTAL RUSHING YARDS","rushingYards"),("TOTAL PASSING YARDS","passingYards"),
-        ("SACKS","sacks"),("TOUCHDOWNS","touchdowns")
+        ("SACKS","sacks"),("TOUCHDOWNS","touchdowns"),("TURNOVER RATIO","turnoverRatio")
     ]: paired(label,key)
 
-    # Preserve recognizable player table rows. Header-aware parsing can be expanded without changing storage schema.
-    sections=re.split(r"\n(?=Passing\n|Rushing\n|Receiving\n|Defense\n|Special Teams\n)", text)
-    for section in sections:
-        lines=section.splitlines()
-        if not lines: continue
-        kind=lines[0].lower()
-        if kind not in ("passing","rushing","receiving"): continue
-        header_i=next((i for i,x in enumerate(lines) if x.startswith("Player")),None)
-        if header_i is None: continue
-        headers=lines[header_i].split("\t")
-        i=header_i+1
-        while i+1 < len(lines):
-            name=lines[i]
-            vals=lines[i+1].split("\t")
-            if len(vals) >= max(2,len(headers)-2) and not name.startswith(("Defense","Special Teams","Tackles","Interceptions")):
-                parsed["players"][kind].append({"player":name,"values":dict(zip(headers[1:],vals))})
-                i+=2
-            else: i+=1
+    for label,key in [("THIRD DOWN CONVERSIONS","thirdDown"),("FOURTH DOWN CONVERSIONS","fourthDown"),("FIELD GOALS","fieldGoals")]:
+        m=re.search(rf"(\d+\s*/\s*\d+)\s*\n{re.escape(label)}\s*\n(\d+\s*/\s*\d+)",text,re.I)
+        if m: parsed["teamStats"][key]={"team":m.group(1).replace(" ",""),"opponent":m.group(2).replace(" ","")}
+
+    # Common compact blocks: plays/average beneath OFFENSE and RUSHING.
+    for label,key1,key2 in [("OFFENSE","plays","yardsPerPlay"),("RUSHING","rushAttempts","yardsPerRush")]:
+        m=re.search(rf"(\d+)\s*\n(\d+(?:\.\d+)?)\s*\n{label}\s*\n(?:Plays|Plays\nAverage Yards).*?\n(\d+)\s*\n(\d+(?:\.\d+)?)",text,re.I|re.S)
+        if m:
+            parsed["teamStats"][key1]={"team":number(m.group(1)),"opponent":number(m.group(3))}
+            parsed["teamStats"][key2]={"team":number(m.group(2)),"opponent":number(m.group(4))}
+
+    section_names={"Passing":"passing","Rushing":"rushing","Receiving":"receiving","Tackles":"tackles","Interceptions":"interceptions","Field Goals":"fieldGoals","Punting":"punting","Punt Return":"puntReturn","Kick Return":"kickReturn"}
+    lines=text.splitlines()
+    i=0
+    while i < len(lines):
+        kind=section_names.get(lines[i])
+        if not kind: i+=1; continue
+        j=i+1
+        while j < len(lines) and not lines[j].startswith("Player"): j+=1
+        if j>=len(lines): i+=1; continue
+        headers=lines[j].split("\t")
+        j+=1
+        while j+1<len(lines):
+            if lines[j] in section_names or lines[j] in ("Defense","Special Teams","OFFENSE","DEFENSE","SPECIAL TEAMS"): break
+            name=lines[j]; vals=lines[j+1].split("\t")
+            if len(vals)>=2 and len(headers)>=2:
+                parsed["players"][kind].append({"player":name,"values":dict(zip(headers[1:],vals))}); j+=2
+            else: break
+        i=max(i+1,j)
+
     parsed["unparsed"]=not bool(parsed["teamStats"] or any(parsed["players"].values()))
     return parsed
 
@@ -289,31 +304,52 @@ class ManualGameRequest(BaseModel):
     includeInTraining: bool = False
 
 
+class ManualApprovalRequest(BaseModel):
+    approved: bool = True
+
+
 @app.post("/api/manual-games")
 async def save_manual_game(request: ManualGameRequest) -> dict[str, Any]:
-    """Save pasted game stats separately from imported provider data."""
     raw=request.rawText.strip()
-    if len(raw) < 40:
-        raise HTTPException(status_code=400, detail="Paste the team/game statistics before saving.")
+    if len(raw)<40: raise HTTPException(status_code=400,detail="Paste the team/game statistics before saving.")
     import hashlib
-    normalized=" ".join(raw.lower().split())
-    record_id=hashlib.sha256(normalized.encode()).hexdigest()[:16]
-    warnings=[]
-    MANUAL_GAMES_PATH.parent.mkdir(parents=True, exist_ok=True)
+    record_id=hashlib.sha256(" ".join(raw.lower().split()).encode()).hexdigest()[:16]
+    MANUAL_GAMES_PATH.parent.mkdir(parents=True,exist_ok=True)
+    records=[]
     if MANUAL_GAMES_PATH.exists():
-        for line in MANUAL_GAMES_PATH.read_text().splitlines():
-            try:
-                if json.loads(line).get("id")==record_id:
-                    raise HTTPException(status_code=409, detail="This pasted stat record already exists.")
-            except json.JSONDecodeError:
-                continue
-    parsed=_parse_manual_stats(raw)\n    record=request.model_dump()\n    record["parsed"]=parsed
-    record.update({"id":record_id,"source":"manual","createdAt":datetime.now(UTC).isoformat(),"validated":False})
-    with MANUAL_GAMES_PATH.open("a", encoding="utf-8") as handle:
-        handle.write(json.dumps(record)+"\\n")
-    if request.includeInTraining:
-        warnings.append("Saved for training, but it must be validated/parsed before the ML pipeline consumes it.")
+        for line in MANUAL_GAMES_PATH.read_text(encoding="utf-8").splitlines():
+            try: records.append(json.loads(line))
+            except json.JSONDecodeError: continue
+    if any(r.get("id")==record_id for r in records): raise HTTPException(status_code=409,detail="This pasted stat record already exists.")
+    parsed=_parse_manual_stats(raw)
+    record=request.model_dump()
+    record["parsed"]=parsed
+    record.update({"id":record_id,"source":"manual","createdAt":datetime.now(UTC).isoformat(),"validated":False,"approvedForTraining":False})
+    records.append(record)
+    MANUAL_GAMES_PATH.write_text("\n".join(json.dumps(r) for r in records)+"\n",encoding="utf-8")
+    warnings=[]
+    if request.includeInTraining: warnings.append("Review the parsed record, then approve it before ML training.")
     return {"ok":True,"id":record_id,"warnings":warnings,"parsed":parsed}
+
+
+@app.post("/api/manual-games/{record_id}/approval")
+async def approve_manual_game(record_id: str, request: ManualApprovalRequest) -> dict[str, Any]:
+    if not MANUAL_GAMES_PATH.exists(): raise HTTPException(status_code=404,detail="Manual record not found.")
+    records=[]; found=None
+    for line in MANUAL_GAMES_PATH.read_text(encoding="utf-8").splitlines():
+        try: record=json.loads(line)
+        except json.JSONDecodeError: continue
+        if record.get("id")==record_id:
+            found=record
+            if request.approved and record.get("parsed",{}).get("unparsed"):
+                raise HTTPException(status_code=400,detail="This record has not been parsed successfully.")
+            record["validated"]=request.approved
+            record["approvedForTraining"]=request.approved
+        records.append(record)
+    if found is None: raise HTTPException(status_code=404,detail="Manual record not found.")
+    MANUAL_GAMES_PATH.write_text("\n".join(json.dumps(r) for r in records)+"\n",encoding="utf-8")
+    return {"ok":True,"id":record_id,"approvedForTraining":request.approved}
+
 
 @app.get("/api/model")
 async def model_metrics() -> dict[str, Any]:
