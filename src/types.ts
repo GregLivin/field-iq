@@ -8,6 +8,10 @@ export type Prediction = {
   predictedWinner: string;
   homeWinProbability: number;
   awayWinProbability: number;
+  projectedHomeScore?: number;
+  projectedAwayScore?: number;
+  projectedMargin?: number;
+  projectedTotal?: number;
   confidence: "Low" | "Medium" | "High";
   factors: string[];
 };
