@@ -302,6 +302,9 @@ class ManualGameRequest(BaseModel):
     gameDate: str | None = None
     team: str | None = None
     opponent: str | None = None
+    homeAway: str | None = None
+    teamScore: int | None = None
+    opponentScore: int | None = None
     includeInTraining: bool = False
 
 
@@ -323,14 +326,22 @@ async def save_manual_game(request: ManualGameRequest) -> dict[str, Any]:
             except json.JSONDecodeError: continue
     if any(r.get("id")==record_id for r in records): raise HTTPException(status_code=409,detail="This pasted stat record already exists.")
     parsed=_parse_manual_stats(raw)
+    # Keep explicit final scores separate from raw source text.
+    if request.teamScore is not None and request.opponentScore is not None:
+        parsed["teamStats"]["score"]={"team":request.teamScore,"opponent":request.opponentScore}
+    player_count=sum(len(rows) for rows in parsed.get("players",{}).values())
+    required={"week":request.week,"gameDate":request.gameDate,"team":request.team,"opponent":request.opponent,"homeAway":request.homeAway,"teamScore":request.teamScore,"opponentScore":request.opponentScore}
+    missing=[key for key,value in required.items() if value is None or value==""]
+    readiness={"ready":not missing and not parsed.get("unparsed") and player_count>0,"missing":missing,"playerRecords":player_count}
     record=request.model_dump()
     record["parsed"]=parsed
+    record["readiness"]=readiness
     record.update({"id":record_id,"source":"manual","createdAt":datetime.now(UTC).isoformat(),"validated":False,"approvedForTraining":False})
     records.append(record)
     MANUAL_GAMES_PATH.write_text("\n".join(json.dumps(r) for r in records)+"\n",encoding="utf-8")
     warnings=[]
     if request.includeInTraining: warnings.append("Review the parsed record, then approve it before ML training.")
-    return {"ok":True,"id":record_id,"warnings":warnings,"parsed":parsed}
+    return {"ok":True,"id":record_id,"warnings":warnings,"parsed":parsed,"readiness":readiness}
 
 
 @app.post("/api/manual-games/{record_id}/approval")
@@ -342,8 +353,12 @@ async def approve_manual_game(record_id: str, request: ManualApprovalRequest) ->
         except json.JSONDecodeError: continue
         if record.get("id")==record_id:
             found=record
-            if request.approved and record.get("parsed",{}).get("unparsed"):
-                raise HTTPException(status_code=400,detail="This record has not been parsed successfully.")
+            if request.approved:
+                readiness=record.get("readiness") or {}
+                if record.get("parsed",{}).get("unparsed"):
+                    raise HTTPException(status_code=400,detail="This record has not been parsed successfully.")
+                if not readiness.get("ready"):
+                    raise HTTPException(status_code=400,detail=f"Record is not ML-ready. Missing: {', '.join(readiness.get('missing', [])) or 'player statistics'}.")
             record["validated"]=request.approved
             record["approvedForTraining"]=request.approved
         records.append(record)
