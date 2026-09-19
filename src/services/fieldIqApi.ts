@@ -151,3 +151,25 @@ export async function analyzeMarketScreenshot(
   if (!result.ok) throw new Error(data.detail ?? "Unable to analyze screenshot.");
   return data;
 }
+
+
+export type ManualGameDraft = {
+  rawText: string;
+  season: number;
+  seasonType: string;
+  week?: number;
+  gameDate?: string;
+  team?: string;
+  opponent?: string;
+  includeInTraining: boolean;
+};
+
+export async function saveManualGame(draft: ManualGameDraft): Promise<{ ok: boolean; id: string; warnings: string[] }> {
+  if (API_URL === undefined) throw new Error("Connect the Field IQ API to save manual game data.");
+  const response = await fetch(`${API_URL}/api/manual-games`, {
+    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(draft),
+  });
+  const data = await response.json();
+  if (!response.ok) throw new Error(data.detail ?? "Unable to save manual game.");
+  return data;
+}
