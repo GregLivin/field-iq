@@ -240,6 +240,44 @@ async def matchup_history(
 
 
 
+def _parse_manual_stats(raw: str) -> dict[str, Any]:
+    """Best-effort parser for pasted NFL team/player stat pages; never invents missing values."""
+    import re
+    text="\n".join(line.strip() for line in raw.splitlines() if line.strip())
+    parsed: dict[str, Any]={"teamStats":{},"players":{"passing":[],"rushing":[],"receiving":[]},"unparsed":False}
+
+    def paired(label: str, key: str):
+        # Supports layouts where values surround a label: 238 / TOTAL OFFENSIVE YARDS / 264.
+        m=re.search(rf"(\d+(?:\.\d+)?)\s*\n{re.escape(label)}\s*\n(\d+(?:\.\d+)?)", text, re.I)
+        if m: parsed["teamStats"][key]={"team":float(m.group(1)) if "." in m.group(1) else int(m.group(1)),"opponent":float(m.group(2)) if "." in m.group(2) else int(m.group(2))}
+    for label,key in [
+        ("TOTAL FIRST DOWNS","firstDowns"),("TOTAL OFFENSIVE YARDS","totalYards"),
+        ("TOTAL RUSHING YARDS","rushingYards"),("TOTAL PASSING YARDS","passingYards"),
+        ("SACKS","sacks"),("TOUCHDOWNS","touchdowns")
+    ]: paired(label,key)
+
+    # Preserve recognizable player table rows. Header-aware parsing can be expanded without changing storage schema.
+    sections=re.split(r"\n(?=Passing\n|Rushing\n|Receiving\n|Defense\n|Special Teams\n)", text)
+    for section in sections:
+        lines=section.splitlines()
+        if not lines: continue
+        kind=lines[0].lower()
+        if kind not in ("passing","rushing","receiving"): continue
+        header_i=next((i for i,x in enumerate(lines) if x.startswith("Player")),None)
+        if header_i is None: continue
+        headers=lines[header_i].split("\t")
+        i=header_i+1
+        while i+1 < len(lines):
+            name=lines[i]
+            vals=lines[i+1].split("\t")
+            if len(vals) >= max(2,len(headers)-2) and not name.startswith(("Defense","Special Teams","Tackles","Interceptions")):
+                parsed["players"][kind].append({"player":name,"values":dict(zip(headers[1:],vals))})
+                i+=2
+            else: i+=1
+    parsed["unparsed"]=not bool(parsed["teamStats"] or any(parsed["players"].values()))
+    return parsed
+
+
 class ManualGameRequest(BaseModel):
     rawText: str
     season: int
@@ -269,13 +307,13 @@ async def save_manual_game(request: ManualGameRequest) -> dict[str, Any]:
                     raise HTTPException(status_code=409, detail="This pasted stat record already exists.")
             except json.JSONDecodeError:
                 continue
-    record=request.model_dump()
+    parsed=_parse_manual_stats(raw)\n    record=request.model_dump()\n    record["parsed"]=parsed
     record.update({"id":record_id,"source":"manual","createdAt":datetime.now(UTC).isoformat(),"validated":False})
     with MANUAL_GAMES_PATH.open("a", encoding="utf-8") as handle:
         handle.write(json.dumps(record)+"\\n")
     if request.includeInTraining:
         warnings.append("Saved for training, but it must be validated/parsed before the ML pipeline consumes it.")
-    return {"ok":True,"id":record_id,"warnings":warnings}
+    return {"ok":True,"id":record_id,"warnings":warnings,"parsed":parsed}
 
 @app.get("/api/model")
 async def model_metrics() -> dict[str, Any]:
