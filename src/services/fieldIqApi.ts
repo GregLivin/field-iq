@@ -126,3 +126,28 @@ export async function sendTextAlertTest(
     };
   }
 }
+
+
+export type ExtractedMarket = {
+  awayTeam: string;
+  homeTeam: string;
+  awaySpread?: number | null;
+  homeSpread?: number | null;
+  total?: number | null;
+  awayMoneyline?: number | null;
+  homeMoneyline?: number | null;
+};
+
+export async function analyzeMarketScreenshot(
+  imageUri: string,
+): Promise<{ games: ExtractedMarket[]; message?: string }> {
+  if (API_URL === undefined) throw new Error("Connect the Field IQ API to analyze screenshots.");
+  const form = new FormData();
+  const response = await fetch(imageUri);
+  const blob = await response.blob();
+  form.append("file", blob, "market-screenshot.jpg");
+  const result = await fetch(`${API_URL}/api/market-screenshot`, { method: "POST", body: form });
+  const data = await result.json();
+  if (!result.ok) throw new Error(data.detail ?? "Unable to analyze screenshot.");
+  return data;
+}
