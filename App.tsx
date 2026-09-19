@@ -21,6 +21,8 @@ import {
   getPredictions,
   getSchedule,
   sendTextAlertTest,
+  analyzeMarketScreenshot,
+  ExtractedMarket,
 } from "./src/services/fieldIqApi";
 import { MatchupMeeting, Prediction, RecentTeamGame, ScheduleGame } from "./src/types";
 
@@ -370,6 +372,27 @@ export default function App() {
   const [marketTotal, setMarketTotal] = useState("45.5");
   const [screenshotUri, setScreenshotUri] = useState<string | null>(null);
   const [screenshotStatus, setScreenshotStatus] = useState("");
+  const [extractedMarkets, setExtractedMarkets] = useState<ExtractedMarket[]>([]);
+  const [screenshotAnalyzing, setScreenshotAnalyzing] = useState(false);
+
+  async function runScreenshotAnalysis() {
+    if (!screenshotUri) return;
+    setScreenshotAnalyzing(true); setScreenshotStatus("Reading matchup lines…");
+    try {
+      const result = await analyzeMarketScreenshot(screenshotUri);
+      setExtractedMarkets(result.games);
+      setScreenshotStatus(result.message ?? "Review the extracted lines below.");
+    } catch (error) {
+      setScreenshotStatus(error instanceof Error ? error.message : "Unable to analyze screenshot.");
+    } finally { setScreenshotAnalyzing(false); }
+  }
+
+  function useExtractedMarket(game: ExtractedMarket) {
+    setMarketAway(game.awayTeam);
+    setMarketHome(game.homeTeam);
+    if (game.homeSpread !== null && game.homeSpread !== undefined) setMarketSpread(String(game.homeSpread));
+    if (game.total !== null && game.total !== undefined) setMarketTotal(String(game.total));
+  }
 
   async function chooseMarketScreenshot() {
     setScreenshotStatus("");
@@ -599,6 +622,13 @@ export default function App() {
                   <Text style={styles.screenshotButtonText}>{screenshotUri ? "Choose another screenshot" : "Choose screenshot"}</Text>
                 </Pressable>
                 {screenshotUri ? <Text style={styles.alertStatus}>✓ Screenshot loaded</Text> : null}
+                {screenshotUri ? <Pressable disabled={screenshotAnalyzing} onPress={() => void runScreenshotAnalysis()} style={({pressed}) => [styles.secondaryMarketButton, pressed && styles.pressed]}><Text style={styles.secondaryMarketButtonText}>{screenshotAnalyzing ? "Analyzing…" : "Read matchup lines"}</Text></Pressable> : null}
+                {extractedMarkets.map((game, index) => (
+                  <Pressable key={`${game.awayTeam}-${game.homeTeam}-${index}`} onPress={() => useExtractedMarket(game)} style={styles.extractedGame}>
+                    <Text style={styles.analysisLine}>{game.awayTeam} {game.awaySpread ?? "—"} @ {game.homeTeam} {game.homeSpread ?? "—"}</Text>
+                    <Text style={styles.marketHint}>Total {game.total ?? "—"} • ML {game.awayMoneyline ?? "—"} / {game.homeMoneyline ?? "—"} • Tap to load</Text>
+                  </Pressable>
+                ))}
                 {screenshotStatus ? <Text style={styles.marketHint}>{screenshotStatus}</Text> : null}
                 <Text style={styles.marketHint}>Field IQ does not place wagers. Extracted lines will be shown for review before analysis.</Text>
               </View>
@@ -936,6 +966,9 @@ const styles = StyleSheet.create({
   previousGamesButton: { alignItems: "center", backgroundColor: colors.greenDark, borderColor: "#2f6f4c", borderRadius: 13, borderWidth: 1, flexDirection: "row", justifyContent: "space-between", marginTop: 13, paddingHorizontal: 14, paddingVertical: 12 },
   previousGamesButtonText: { color: colors.green, fontSize: 11, fontWeight: "900" },
   previousGamesArrow: { color: colors.green, fontSize: 17, fontWeight: "900" },
+  secondaryMarketButton: { alignItems: "center", borderColor: colors.green, borderRadius: 13, borderWidth: 1, marginTop: 10, paddingVertical: 12 },
+  secondaryMarketButtonText: { color: colors.green, fontSize: 12, fontWeight: "900" },
+  extractedGame: { backgroundColor: "#0a1511", borderColor: colors.border, borderRadius: 12, borderWidth: 1, marginTop: 10, padding: 12 },
   screenshotButton: { alignItems: "center", backgroundColor: colors.green, borderRadius: 13, marginTop: 14, paddingVertical: 13 },
   screenshotButtonText: { color: colors.background, fontSize: 12, fontWeight: "900" },
   marketCard: { backgroundColor: colors.panel, borderColor: colors.border, borderRadius: 20, borderWidth: 1, marginBottom: 16, padding: 16 },
