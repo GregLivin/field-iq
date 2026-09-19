@@ -169,7 +169,7 @@ def train_and_predict()->dict[str,Any]:
     penalties=_injury_penalties(injuries); predictions=[]
     if not next_games.empty:
         probs=np.column_stack([m.predict_proba(next_games[model_features])[:,1] for m in fitted.values()]).mean(axis=1)
-        score_preds={target:np.column_stack([m.predict(next_games[FEATURE_COLUMNS]) for m in models.values()]).mean(axis=1) for target,models in score_models.items()}
+        score_preds={target:np.column_stack([m.predict(next_games[model_features]) for m in models.values()]).mean(axis=1) for target,models in score_models.items()}
         for offset,(_,row) in enumerate(next_games.iterrows()):
             hp=float(np.clip(probs[offset]+(penalties.get(row["away_team"],0)-penalties.get(row["home_team"],0))/100,.08,.92)); hn=team_name(row["home_team"]); an=team_name(row["away_team"])
             projected_home=max(0,round(float(score_preds["home_score"][offset]),1)); projected_away=max(0,round(float(score_preds["away_score"][offset]),1))
