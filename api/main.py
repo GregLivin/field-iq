@@ -112,32 +112,54 @@ async def send_test_alert(request: TextAlertRequest) -> dict[str, Any]:
 
 @app.post("/api/market-screenshot")
 async def analyze_market_screenshot(file: UploadFile = File(...)) -> dict[str, Any]:
-    """Extract sportsbook-style NFL matchup lines from a screenshot using a configured vision endpoint."""
+    """Extract NFL market lines from a screenshot with OpenAI vision."""
+    import base64
     image = await file.read()
     if not image or len(image) > 8_000_000:
         raise HTTPException(status_code=400, detail="Upload a screenshot smaller than 8 MB.")
-    vision_url = os.getenv("FIELDIQ_VISION_URL")
-    vision_key = os.getenv("FIELDIQ_VISION_KEY")
-    if not vision_url:
-        raise HTTPException(status_code=503, detail="Screenshot vision is not configured on the server yet.")
-    headers = {"Authorization": f"Bearer {vision_key}"} if vision_key else {}
-    async with httpx.AsyncClient(timeout=30) as client:
-        response = await client.post(
-            vision_url,
-            headers=headers,
-            files={"file": (file.filename or "screenshot.jpg", image, file.content_type or "image/jpeg")},
-            data={"task": "Extract NFL games only. Return JSON games with awayTeam, homeTeam, awaySpread, homeSpread, total, awayMoneyline, homeMoneyline. Use null when unreadable."},
-        )
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        raise HTTPException(status_code=503, detail="OPENAI_API_KEY is not configured on the server.")
+    mime=file.content_type or "image/jpeg"
+    data_url=f"data:{mime};base64,{base64.b64encode(image).decode('ascii')}"
+    schema={
+      "type":"object","additionalProperties":False,
+      "properties":{"games":{"type":"array","items":{"type":"object","additionalProperties":False,
+        "properties":{
+          "awayTeam":{"type":"string"},"homeTeam":{"type":"string"},
+          "awaySpread":{"type":["number","null"]},"homeSpread":{"type":["number","null"]},
+          "total":{"type":["number","null"]},"awayMoneyline":{"type":["number","null"]},
+          "homeMoneyline":{"type":["number","null"]}
+        },
+        "required":["awayTeam","homeTeam","awaySpread","homeSpread","total","awayMoneyline","homeMoneyline"]
+      }}},
+      "required":["games"]
+    }
+    request_body={
+      "model":os.getenv("FIELDIQ_VISION_MODEL","gpt-5.6-luna"),
+      "input":[{"role":"user","content":[
+        {"type":"input_text","text":"Read this sports-market screenshot. Extract NFL matchups only. Team values must be standard NFL abbreviations such as CIN and HOU. Preserve the displayed spread signs and numeric totals. For decimal moneyline multipliers such as 2.24x, return 2.24. Use null when a field is absent or unreadable. Do not infer a missing number."},
+        {"type":"input_image","image_url":data_url}
+      ]}],
+      "text":{"format":{"type":"json_schema","name":"field_iq_markets","strict":True,"schema":schema}}
+    }
+    async with httpx.AsyncClient(timeout=45) as client:
+        response=await client.post("https://api.openai.com/v1/responses",headers={"Authorization":f"Bearer {api_key}","Content-Type":"application/json"},json=request_body)
     if response.status_code >= 400:
-        raise HTTPException(status_code=502, detail="The vision service could not analyze this screenshot.")
+        raise HTTPException(status_code=502, detail="The screenshot vision service could not analyze this image.")
+    payload=response.json()
+    output_text=payload.get("output_text")
+    if not output_text:
+        for item in payload.get("output",[]):
+            for part in item.get("content",[]):
+                if part.get("type")=="output_text":
+                    output_text=part.get("text"); break
     try:
-        payload=response.json()
-    except ValueError as exc:
-        raise HTTPException(status_code=502, detail="The vision service returned invalid data.") from exc
-    games=payload.get("games", []) if isinstance(payload, dict) else []
-    if not isinstance(games, list):
-        raise HTTPException(status_code=502, detail="The vision service returned an invalid games list.")
-    return {"games": games, "message": f"Found {len(games)} matchup(s). Review every extracted line before analysis."}
+        parsed=json.loads(output_text or "{}")
+    except json.JSONDecodeError as exc:
+        raise HTTPException(status_code=502, detail="The screenshot vision service returned invalid structured data.") from exc
+    games=parsed.get("games",[])
+    return {"games":games,"message":f"Found {len(games)} matchup(s). Review every extracted line before analysis."}
 
 @app.get("/health")
 @app.get("/api/health")
