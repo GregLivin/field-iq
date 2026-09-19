@@ -393,7 +393,7 @@ export default function App() {
     setManualSaving(true); setManualStatus("Validating pasted data…");
     try {
       const result = await saveManualGame({
-        rawText: `${manualStats}\n${manualTeamScore && manualOpponentScore ? `${manualTeamScore}\nFINAL SCORE\n${manualOpponentScore}` : ""}`, season: Number(manualSeason), seasonType: "Regular season",
+        rawText: manualStats, season: Number(manualSeason), seasonType: "Regular season",
         week: manualWeek ? Number(manualWeek) : undefined, gameDate: manualDate || undefined,
         homeAway: manualHomeAway, team: manualTeam || undefined,
         opponent: manualOpponent || undefined, includeInTraining: manualTraining,
