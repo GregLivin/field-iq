@@ -8,6 +8,7 @@ from pipeline.collect_nflverse import collect_nflverse
 from pipeline.collect_weather import collect_weather
 from pipeline.data_health import build_data_health
 from pipeline.train_models import train_and_predict
+from pipeline.player_source_audit import write_player_source_audit
 
 
 def run_daily(skip_weather: bool = False) -> dict[str, object]:
@@ -16,6 +17,7 @@ def run_daily(skip_weather: bool = False) -> dict[str, object]:
         "nflverse": collect_nflverse(),
     }
     report["dataHealth"] = build_data_health()
+    report["playerSources"] = write_player_source_audit()
     if not skip_weather:
         report["weather"] = collect_weather()
     report["model"] = train_and_predict()
