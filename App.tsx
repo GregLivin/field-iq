@@ -378,6 +378,10 @@ export default function App() {
   const [manualWeek, setManualWeek] = useState("");
   const [manualTeam, setManualTeam] = useState("");
   const [manualOpponent, setManualOpponent] = useState("");
+  const [manualDate, setManualDate] = useState("");
+  const [manualHomeAway, setManualHomeAway] = useState<"home" | "away">("home");
+  const [manualTeamScore, setManualTeamScore] = useState("");
+  const [manualOpponentScore, setManualOpponentScore] = useState("");
   const [manualTraining, setManualTraining] = useState(false);
   const [manualStatus, setManualStatus] = useState("");
   const [manualSaving, setManualSaving] = useState(false);\n  const [manualParsed, setManualParsed] = useState<any>(null);\n  const [manualRecordId, setManualRecordId] = useState<string | null>(null);
@@ -386,8 +390,9 @@ export default function App() {
     setManualSaving(true); setManualStatus("Validating pasted data…");
     try {
       const result = await saveManualGame({
-        rawText: manualStats, season: Number(manualSeason), seasonType: "Regular season",
-        week: manualWeek ? Number(manualWeek) : undefined, team: manualTeam || undefined,
+        rawText: `${manualStats}\n${manualTeamScore && manualOpponentScore ? `${manualTeamScore}\nFINAL SCORE\n${manualOpponentScore}` : ""}`, season: Number(manualSeason), seasonType: "Regular season",
+        week: manualWeek ? Number(manualWeek) : undefined, gameDate: manualDate || undefined,
+        homeAway: manualHomeAway, team: manualTeam || undefined,
         opponent: manualOpponent || undefined, includeInTraining: manualTraining,
       });
       setManualParsed(result.parsed ?? null);\n      setManualRecordId(result.id);\n      setManualStatus(`Saved as manual record ${result.id}. ${result.warnings.join(" ")}`);
@@ -1086,4 +1091,12 @@ const styles = StyleSheet.create({
   recentStats: { color: colors.muted, fontSize: 10, fontWeight: "700", marginTop: 7 },
   emptyCompact: { color: colors.muted, fontSize: 12, paddingVertical: 16, textAlign: "center" },
   modalNote: { color: colors.muted, fontSize: 9, marginTop: 14, textAlign: "center" },
-});
+});<View style={styles.marketInputRow}>
+              <TextInput value={manualDate} onChangeText={setManualDate} placeholder="Game date YYYY-MM-DD" placeholderTextColor={colors.muted} style={styles.marketInput} />
+              <Pressable onPress={() => setManualHomeAway(manualHomeAway === "home" ? "away" : "home")} style={styles.marketInput}><Text style={styles.analysisLine}>Team is {manualHomeAway.toUpperCase()}</Text></Pressable>
+            </View>
+            <View style={styles.marketInputRow}>
+              <TextInput value={manualTeamScore} onChangeText={setManualTeamScore} keyboardType="number-pad" placeholder="Team final score" placeholderTextColor={colors.muted} style={styles.marketInput} />
+              <TextInput value={manualOpponentScore} onChangeText={setManualOpponentScore} keyboardType="number-pad" placeholder="Opponent final score" placeholderTextColor={colors.muted} style={styles.marketInput} />
+            </View>
+            
