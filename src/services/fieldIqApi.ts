@@ -173,3 +173,14 @@ export async function saveManualGame(draft: ManualGameDraft): Promise<{ ok: bool
   if (!response.ok) throw new Error(data.detail ?? "Unable to save manual game.");
   return data;
 }
+
+
+export async function approveManualGame(id: string, approved = true): Promise<{ok:boolean; id:string; approvedForTraining:boolean}> {
+  if (API_URL === undefined) throw new Error("Connect the Field IQ API to approve manual data.");
+  const response=await fetch(`${API_URL}/api/manual-games/${id}/approval`,{
+    method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({approved}),
+  });
+  const data=await response.json();
+  if(!response.ok) throw new Error(data.detail ?? "Unable to approve manual game.");
+  return data;
+}
