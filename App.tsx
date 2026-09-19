@@ -711,7 +711,7 @@ export default function App() {
                 <View style={styles.marketCard}>
                   <Text style={styles.eyebrow}>PARSE REVIEW</Text>
                   <Text style={styles.sectionTitle}>{manualParsed.unparsed ? "Needs attention" : "Data recognized"}</Text>
-                  <Text style={styles.marketHint}>Team stat fields: {Object.keys(manualParsed.teamStats ?? {}).length} • Player groups: {Object.keys(manualParsed.players ?? {}).length}</Text>
+                  <Text style={styles.marketHint}>Team stat fields: {Object.keys(manualParsed.teamStats ?? {}).length} • Player records: {Object.values(manualParsed.players ?? {}).reduce((total: number, rows: any) => total + (Array.isArray(rows) ? rows.length : 0), 0)}</Text>
                   {manualRecordId && !manualParsed.unparsed ? (
                     <Pressable onPress={async () => {
                       try {
