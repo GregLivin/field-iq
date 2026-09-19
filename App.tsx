@@ -380,7 +380,7 @@ export default function App() {
   const [manualOpponent, setManualOpponent] = useState("");
   const [manualTraining, setManualTraining] = useState(false);
   const [manualStatus, setManualStatus] = useState("");
-  const [manualSaving, setManualSaving] = useState(false);
+  const [manualSaving, setManualSaving] = useState(false);\n  const [manualParsed, setManualParsed] = useState<any>(null);
 
   async function submitManualStats() {
     setManualSaving(true); setManualStatus("Validating pasted data…");
@@ -390,7 +390,7 @@ export default function App() {
         week: manualWeek ? Number(manualWeek) : undefined, team: manualTeam || undefined,
         opponent: manualOpponent || undefined, includeInTraining: manualTraining,
       });
-      setManualStatus(`Saved as manual record ${result.id}. ${result.warnings.join(" ")}`);
+      setManualParsed(result.parsed ?? null);\n      setManualStatus(`Saved as manual record ${result.id}. ${result.warnings.join(" ")}`);
       setManualStats("");
     } catch (error) {
       setManualStatus(error instanceof Error ? error.message : "Unable to save manual data.");
