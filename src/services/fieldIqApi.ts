@@ -160,6 +160,8 @@ export type ManualGameDraft = {
   week?: number;
   gameDate?: string;
   homeAway?: "home" | "away";
+  teamScore?: number;
+  opponentScore?: number;
   team?: string;
   opponent?: string;
   includeInTraining: boolean;
