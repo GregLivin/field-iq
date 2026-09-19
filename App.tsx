@@ -23,7 +23,8 @@ import {
   sendTextAlertTest,
   analyzeMarketScreenshot,
   ExtractedMarket,
-  saveManualGame,\n  approveManualGame,
+  saveManualGame,
+  approveManualGame,
 } from "./src/services/fieldIqApi";
 import { MatchupMeeting, Prediction, RecentTeamGame, ScheduleGame } from "./src/types";
 
@@ -384,7 +385,9 @@ export default function App() {
   const [manualOpponentScore, setManualOpponentScore] = useState("");
   const [manualTraining, setManualTraining] = useState(false);
   const [manualStatus, setManualStatus] = useState("");
-  const [manualSaving, setManualSaving] = useState(false);\n  const [manualParsed, setManualParsed] = useState<any>(null);\n  const [manualRecordId, setManualRecordId] = useState<string | null>(null);
+  const [manualSaving, setManualSaving] = useState(false);
+  const [manualParsed, setManualParsed] = useState<any>(null);
+  const [manualRecordId, setManualRecordId] = useState<string | null>(null);
 
   async function submitManualStats() {
     setManualSaving(true); setManualStatus("Validating pasted data…");
@@ -395,7 +398,9 @@ export default function App() {
         homeAway: manualHomeAway, team: manualTeam || undefined,
         opponent: manualOpponent || undefined, includeInTraining: manualTraining,
       });
-      setManualParsed(result.parsed ?? null);\n      setManualRecordId(result.id);\n      setManualStatus(`Saved as manual record ${result.id}. ${result.warnings.join(" ")}`);
+      setManualParsed(result.parsed ?? null);
+      setManualRecordId(result.id);
+      setManualStatus(`Saved as manual record ${result.id}. ${result.warnings.join(" ")}`);
       setManualStats("");
     } catch (error) {
       setManualStatus(error instanceof Error ? error.message : "Unable to save manual data.");
@@ -664,6 +669,66 @@ export default function App() {
             </>
           )}
 
+          {activeTab === "data" && (
+            <>
+              <View style={styles.screenIntro}>
+                <Text style={styles.eyebrow}>FIELD IQ DATA CENTER</Text>
+                <Text style={styles.screenTitle}>Add missing game data</Text>
+                <Text style={styles.heroBody}>Paste a full NFL game stats page, identify the game, review what Field IQ parsed, then approve it before it can be used for model training.</Text>
+              </View>
+              <View style={styles.marketCard}>
+                <Text style={styles.filterLabel}>GAME IDENTITY</Text>
+                <View style={styles.marketRow}>
+                  <TextInput value={manualSeason} onChangeText={setManualSeason} keyboardType="number-pad" placeholder="Season" placeholderTextColor={colors.muted} style={styles.marketInput} />
+                  <TextInput value={manualWeek} onChangeText={setManualWeek} keyboardType="number-pad" placeholder="Week" placeholderTextColor={colors.muted} style={styles.marketInput} />
+                </View>
+                <View style={styles.marketRow}>
+                  <TextInput value={manualTeam} onChangeText={setManualTeam} autoCapitalize="characters" placeholder="Team (ATL)" placeholderTextColor={colors.muted} style={styles.marketInput} />
+                  <TextInput value={manualOpponent} onChangeText={setManualOpponent} autoCapitalize="characters" placeholder="Opponent" placeholderTextColor={colors.muted} style={styles.marketInput} />
+                </View>
+                <View style={styles.marketRow}>
+                  <TextInput value={manualDate} onChangeText={setManualDate} placeholder="YYYY-MM-DD" placeholderTextColor={colors.muted} style={styles.marketInput} />
+                  <Pressable onPress={() => setManualHomeAway(manualHomeAway === "home" ? "away" : "home")} style={styles.marketInput}>
+                    <Text style={styles.analysisLine}>Team is {manualHomeAway.toUpperCase()}</Text>
+                  </Pressable>
+                </View>
+                <View style={styles.marketRow}>
+                  <TextInput value={manualTeamScore} onChangeText={setManualTeamScore} keyboardType="number-pad" placeholder="Team score" placeholderTextColor={colors.muted} style={styles.marketInput} />
+                  <TextInput value={manualOpponentScore} onChangeText={setManualOpponentScore} keyboardType="number-pad" placeholder="Opponent score" placeholderTextColor={colors.muted} style={styles.marketInput} />
+                </View>
+                <Text style={styles.filterLabel}>PASTE RAW GAME STATS</Text>
+                <TextInput value={manualStats} onChangeText={setManualStats} multiline textAlignVertical="top" placeholder="Paste the complete stats page here…" placeholderTextColor={colors.muted} style={styles.manualPasteBox} />
+                <Pressable
+                  disabled={manualSaving || manualStats.trim().length < 40 || !manualWeek || !manualDate || !manualTeam || !manualOpponent || !manualTeamScore || !manualOpponentScore}
+                  onPress={() => void submitManualStats()}
+                  style={({pressed}) => [styles.screenshotButton, (manualSaving || manualStats.trim().length < 40 || !manualWeek || !manualDate || !manualTeam || !manualOpponent || !manualTeamScore || !manualOpponentScore) && {opacity: 0.45}, pressed && styles.pressed]}
+                >
+                  <Text style={styles.screenshotButtonText}>{manualSaving ? "Saving…" : "Parse & save for review"}</Text>
+                </Pressable>
+                {manualStatus ? <Text style={styles.marketHint}>{manualStatus}</Text> : null}
+              </View>
+              {manualParsed && (
+                <View style={styles.marketCard}>
+                  <Text style={styles.eyebrow}>PARSE REVIEW</Text>
+                  <Text style={styles.sectionTitle}>{manualParsed.unparsed ? "Needs attention" : "Data recognized"}</Text>
+                  <Text style={styles.marketHint}>Team stat fields: {Object.keys(manualParsed.teamStats ?? {}).length} • Player groups: {Object.keys(manualParsed.players ?? {}).length}</Text>
+                  {manualRecordId && !manualParsed.unparsed ? (
+                    <Pressable onPress={async () => {
+                      try {
+                        const result = await approveManualGame(manualRecordId, true);
+                        setManualStatus(result.approvedForTraining ? "Approved for ML training." : "Saved, but not approved for training.");
+                      } catch (error) {
+                        setManualStatus(error instanceof Error ? error.message : "Unable to approve manual data.");
+                      }
+                    }} style={styles.secondaryMarketButton}>
+                      <Text style={styles.secondaryMarketButtonText}>Approve for ML training</Text>
+                    </Pressable>
+                  ) : null}
+                </View>
+              )}
+            </>
+          )}
+
           {activeTab === "picks" && (
             <>
               <View style={[styles.hero, compact && styles.heroCompact]}>
@@ -777,7 +842,7 @@ export default function App() {
         </ScrollView>
 
         <View style={styles.bottomNav}>
-          {(["picks", "analyze", "schedule", "matchups"] as Tab[]).map((tab) => (
+          {(["picks", "analyze", "data", "schedule", "matchups"] as Tab[]).map((tab) => (
             <Pressable
               accessibilityRole="button"
               key={tab}
@@ -785,7 +850,7 @@ export default function App() {
               style={[styles.navItem, activeTab === tab && styles.navItemActive]}
             >
               <Text style={[styles.navIcon, activeTab === tab && styles.navTextActive]}>
-                {tab === "picks" ? "◎" : tab === "analyze" ? "⌁" : tab === "schedule" ? "▦" : "↔"}
+                {tab === "picks" ? "◎" : tab === "analyze" ? "⌁" : tab === "data" ? "≡" : tab === "schedule" ? "▦" : "↔"}
               </Text>
               <Text style={[styles.navText, activeTab === tab && styles.navTextActive]}>{tab}</Text>
             </Pressable>
@@ -1091,12 +1156,4 @@ const styles = StyleSheet.create({
   recentStats: { color: colors.muted, fontSize: 10, fontWeight: "700", marginTop: 7 },
   emptyCompact: { color: colors.muted, fontSize: 12, paddingVertical: 16, textAlign: "center" },
   modalNote: { color: colors.muted, fontSize: 9, marginTop: 14, textAlign: "center" },
-});<View style={styles.marketInputRow}>
-              <TextInput value={manualDate} onChangeText={setManualDate} placeholder="Game date YYYY-MM-DD" placeholderTextColor={colors.muted} style={styles.marketInput} />
-              <Pressable onPress={() => setManualHomeAway(manualHomeAway === "home" ? "away" : "home")} style={styles.marketInput}><Text style={styles.analysisLine}>Team is {manualHomeAway.toUpperCase()}</Text></Pressable>
-            </View>
-            <View style={styles.marketInputRow}>
-              <TextInput value={manualTeamScore} onChangeText={setManualTeamScore} keyboardType="number-pad" placeholder="Team final score" placeholderTextColor={colors.muted} style={styles.marketInput} />
-              <TextInput value={manualOpponentScore} onChangeText={setManualOpponentScore} keyboardType="number-pad" placeholder="Opponent final score" placeholderTextColor={colors.muted} style={styles.marketInput} />
-            </View>
-            
+});
