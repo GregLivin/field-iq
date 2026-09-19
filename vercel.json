@@ -8,5 +8,6 @@
       "includeFiles": "data/**",
       "maxDuration": 15
     }
-  }
+  },
+  "ignoreCommand": "bash scripts/vercel-ignore-build.sh"
 }
