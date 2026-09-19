@@ -1,4 +1,5 @@
 import { StatusBar } from "expo-status-bar";
+import * as ImagePicker from "expo-image-picker";
 import { useEffect, useMemo, useState } from "react";
 import {
   ActivityIndicator,
@@ -367,6 +368,21 @@ export default function App() {
   const [marketAway, setMarketAway] = useState("CIN");
   const [marketSpread, setMarketSpread] = useState("-2.5");
   const [marketTotal, setMarketTotal] = useState("45.5");
+  const [screenshotUri, setScreenshotUri] = useState<string | null>(null);
+  const [screenshotStatus, setScreenshotStatus] = useState("");
+
+  async function chooseMarketScreenshot() {
+    setScreenshotStatus("");
+    const permission = await ImagePicker.requestMediaLibraryPermissionsAsync();
+    if (!permission.granted) {
+      setScreenshotStatus("Photo access is required to select a screenshot.");
+      return;
+    }
+    const result = await ImagePicker.launchImageLibraryAsync({ mediaTypes: ["images"], quality: 0.9 });
+    if (result.canceled || !result.assets[0]) return;
+    setScreenshotUri(result.assets[0].uri);
+    setScreenshotStatus("Screenshot selected. Automatic line extraction is ready for the vision API connection.");
+  }
   const normalCdf = (x: number) => {
     const t = 1 / (1 + 0.2316419 * Math.abs(x));
     const d = 0.3989423 * Math.exp((-x * x) / 2);
@@ -577,8 +593,14 @@ export default function App() {
               </View>
               <View style={styles.marketCard}>
                 <Text style={styles.eyebrow}>SCREENSHOT ANALYZER</Text>
-                <Text style={styles.sectionTitle}>Coming next</Text>
-                <Text style={styles.heroBody}>Upload a sportsbook-style screenshot, extract matchup lines, then match them to Field IQ games for model comparison.</Text>
+                <Text style={styles.sectionTitle}>Import the setup</Text>
+                <Text style={styles.heroBody}>Choose a sportsbook-style screenshot. Field IQ will use it to identify matchup lines and prepare them for model comparison.</Text>
+                <Pressable onPress={() => void chooseMarketScreenshot()} style={({pressed}) => [styles.screenshotButton, pressed && styles.pressed]}>
+                  <Text style={styles.screenshotButtonText}>{screenshotUri ? "Choose another screenshot" : "Choose screenshot"}</Text>
+                </Pressable>
+                {screenshotUri ? <Text style={styles.alertStatus}>✓ Screenshot loaded</Text> : null}
+                {screenshotStatus ? <Text style={styles.marketHint}>{screenshotStatus}</Text> : null}
+                <Text style={styles.marketHint}>Field IQ does not place wagers. Extracted lines will be shown for review before analysis.</Text>
               </View>
             </>
           )}
@@ -914,6 +936,8 @@ const styles = StyleSheet.create({
   previousGamesButton: { alignItems: "center", backgroundColor: colors.greenDark, borderColor: "#2f6f4c", borderRadius: 13, borderWidth: 1, flexDirection: "row", justifyContent: "space-between", marginTop: 13, paddingHorizontal: 14, paddingVertical: 12 },
   previousGamesButtonText: { color: colors.green, fontSize: 11, fontWeight: "900" },
   previousGamesArrow: { color: colors.green, fontSize: 17, fontWeight: "900" },
+  screenshotButton: { alignItems: "center", backgroundColor: colors.green, borderRadius: 13, marginTop: 14, paddingVertical: 13 },
+  screenshotButtonText: { color: colors.background, fontSize: 12, fontWeight: "900" },
   marketCard: { backgroundColor: colors.panel, borderColor: colors.border, borderRadius: 20, borderWidth: 1, marginBottom: 16, padding: 16 },
   marketRow: { alignItems: "center", flexDirection: "row", gap: 10, marginBottom: 14 },
   marketField: { flex: 1 },
