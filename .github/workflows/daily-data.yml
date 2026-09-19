@@ -49,7 +49,7 @@ jobs:
         run: |
           git config user.name "fieldiq-data-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/processed/predictions.json data/processed/model_metrics.json data/processed/schedule.json data/processed/matchup_history.json data/raw/manifest.json data/raw/weather_status.json
+          git add data/processed/predictions.json data/processed/model_metrics.json data/processed/schedule.json data/processed/matchup_history.json data/processed/2025_player_source_audit.json data/raw/manifest.json data/raw/weather_status.json
           if git diff --cached --quiet; then
             echo "No prediction changes to commit"
           else
