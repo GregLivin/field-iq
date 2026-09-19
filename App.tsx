@@ -1,4 +1,5 @@
 import { StatusBar } from "expo-status-bar";
+import * as ImagePicker from "expo-image-picker";
 import { useEffect, useMemo, useState } from "react";
 import {
   ActivityIndicator,
@@ -20,6 +21,9 @@ import {
   getPredictions,
   getSchedule,
   sendTextAlertTest,
+  analyzeMarketScreenshot,
+  ExtractedMarket,
+  saveManualGame,\n  approveManualGame,
 } from "./src/services/fieldIqApi";
 import { MatchupMeeting, Prediction, RecentTeamGame, ScheduleGame } from "./src/types";
 
@@ -35,7 +39,7 @@ const colors = {
   gold: "#f5c15d",
 };
 
-type Tab = "picks" | "schedule" | "matchups";
+type Tab = "picks" | "analyze" | "schedule" | "matchups" | "data";
 type ConfidenceFilter = "ALL" | Prediction["confidence"];
 type HistoryView = "recent" | "headToHead";
 
@@ -363,6 +367,81 @@ export default function App() {
   const [historyLoading, setHistoryLoading] = useState(false);
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
+  const [marketHome, setMarketHome] = useState("HOU");
+  const [marketAway, setMarketAway] = useState("CIN");
+  const [marketSpread, setMarketSpread] = useState("-2.5");
+  const [marketTotal, setMarketTotal] = useState("45.5");
+  const [screenshotUri, setScreenshotUri] = useState<string | null>(null);
+  const [screenshotStatus, setScreenshotStatus] = useState("");
+  const [manualStats, setManualStats] = useState("");
+  const [manualSeason, setManualSeason] = useState("2026");
+  const [manualWeek, setManualWeek] = useState("");
+  const [manualTeam, setManualTeam] = useState("");
+  const [manualOpponent, setManualOpponent] = useState("");
+  const [manualDate, setManualDate] = useState("");
+  const [manualHomeAway, setManualHomeAway] = useState<"home" | "away">("home");
+  const [manualTeamScore, setManualTeamScore] = useState("");
+  const [manualOpponentScore, setManualOpponentScore] = useState("");
+  const [manualTraining, setManualTraining] = useState(false);
+  const [manualStatus, setManualStatus] = useState("");
+  const [manualSaving, setManualSaving] = useState(false);\n  const [manualParsed, setManualParsed] = useState<any>(null);\n  const [manualRecordId, setManualRecordId] = useState<string | null>(null);
+
+  async function submitManualStats() {
+    setManualSaving(true); setManualStatus("Validating pasted data…");
+    try {
+      const result = await saveManualGame({
+        rawText: `${manualStats}\n${manualTeamScore && manualOpponentScore ? `${manualTeamScore}\nFINAL SCORE\n${manualOpponentScore}` : ""}`, season: Number(manualSeason), seasonType: "Regular season",
+        week: manualWeek ? Number(manualWeek) : undefined, gameDate: manualDate || undefined,
+        homeAway: manualHomeAway, team: manualTeam || undefined,
+        opponent: manualOpponent || undefined, includeInTraining: manualTraining,
+      });
+      setManualParsed(result.parsed ?? null);\n      setManualRecordId(result.id);\n      setManualStatus(`Saved as manual record ${result.id}. ${result.warnings.join(" ")}`);
+      setManualStats("");
+    } catch (error) {
+      setManualStatus(error instanceof Error ? error.message : "Unable to save manual data.");
+    } finally { setManualSaving(false); }
+  }
+  const [extractedMarkets, setExtractedMarkets] = useState<ExtractedMarket[]>([]);
+  const [screenshotAnalyzing, setScreenshotAnalyzing] = useState(false);
+
+  async function runScreenshotAnalysis() {
+    if (!screenshotUri) return;
+    setScreenshotAnalyzing(true); setScreenshotStatus("Reading matchup lines…");
+    try {
+      const result = await analyzeMarketScreenshot(screenshotUri);
+      setExtractedMarkets(result.games);
+      setScreenshotStatus(result.message ?? "Review the extracted lines below.");
+    } catch (error) {
+      setScreenshotStatus(error instanceof Error ? error.message : "Unable to analyze screenshot.");
+    } finally { setScreenshotAnalyzing(false); }
+  }
+
+  function useExtractedMarket(game: ExtractedMarket) {
+    setMarketAway(game.awayTeam);
+    setMarketHome(game.homeTeam);
+    if (game.homeSpread !== null && game.homeSpread !== undefined) setMarketSpread(String(game.homeSpread));
+    if (game.total !== null && game.total !== undefined) setMarketTotal(String(game.total));
+  }
+
+  async function chooseMarketScreenshot() {
+    setScreenshotStatus("");
+    const permission = await ImagePicker.requestMediaLibraryPermissionsAsync();
+    if (!permission.granted) {
+      setScreenshotStatus("Photo access is required to select a screenshot.");
+      return;
+    }
+    const result = await ImagePicker.launchImageLibraryAsync({ mediaTypes: ["images"], quality: 0.9 });
+    if (result.canceled || !result.assets[0]) return;
+    setScreenshotUri(result.assets[0].uri);
+    setScreenshotStatus("Screenshot selected. Automatic line extraction is ready for the vision API connection.");
+  }
+  const normalCdf = (x: number) => {
+    const t = 1 / (1 + 0.2316419 * Math.abs(x));
+    const d = 0.3989423 * Math.exp((-x * x) / 2);
+    let p = 1 - d * t * (0.31938153 + t * (-0.356563782 + t * (1.781477937 + t * (-1.821255978 + t * 1.330274429))));
+    if (x < 0) p = 1 - p;
+    return p;
+  };
   const [alertsOpen, setAlertsOpen] = useState(false);
   const [phone, setPhone] = useState("");
   const [alertSending, setAlertSending] = useState(false);
@@ -509,6 +588,82 @@ export default function App() {
             <RefreshControl refreshing={refreshing} onRefresh={() => void loadData(true)} tintColor={colors.green} />
           }
         >
+          {activeTab === "analyze" && (
+            <>
+              <View style={styles.screenIntro}>
+                <Text style={styles.eyebrow}>FIELD IQ MARKET ANALYZER</Text>
+                <Text style={styles.screenTitle}>Compare the setup</Text>
+                <Text style={styles.heroBody}>
+                  Enter the matchup, spread, and total. Field IQ compares those numbers with its model probabilities. This is model analysis, not a guarantee of an outcome.
+                </Text>
+              </View>
+              <View style={styles.marketCard}>
+                <Text style={styles.filterLabel}>MATCHUP</Text>
+                <View style={styles.marketRow}>
+                  <TextInput value={marketAway} onChangeText={setMarketAway} autoCapitalize="characters" placeholder="AWAY" placeholderTextColor={colors.muted} style={styles.marketInput} />
+                  <Text style={styles.at}>@</Text>
+                  <TextInput value={marketHome} onChangeText={setMarketHome} autoCapitalize="characters" placeholder="HOME" placeholderTextColor={colors.muted} style={styles.marketInput} />
+                </View>
+                <View style={styles.marketRow}>
+                  <View style={styles.marketField}><Text style={styles.filterLabel}>HOME SPREAD</Text><TextInput value={marketSpread} onChangeText={setMarketSpread} keyboardType="numbers-and-punctuation" style={styles.marketInputWide} /></View>
+                  <View style={styles.marketField}><Text style={styles.filterLabel}>TOTAL</Text><TextInput value={marketTotal} onChangeText={setMarketTotal} keyboardType="decimal-pad" style={styles.marketInputWide} /></View>
+                </View>
+                {(() => {
+                  const prediction = predictions.find((item) =>
+                    item.homeAbbreviation === marketHome.trim().toUpperCase() &&
+                    item.awayAbbreviation === marketAway.trim().toUpperCase());
+                  if (!prediction) return <Text style={styles.marketHint}>Choose a matchup available in the current Field IQ prediction set.</Text>;
+                  const homeProbability = prediction.homeWinProbability;
+                  const impliedMargin = Math.round(((homeProbability - 50) / 5) * 10) / 10;
+                  const enteredSpread = Number(marketSpread);
+                  return (
+                    <View style={styles.analysisPanel}>
+                      <Text style={styles.pickLabel}>FIELD IQ MODEL VIEW</Text>
+                      <Text style={styles.analysisWinner}>{prediction.predictedWinner}</Text>
+                      <Text style={styles.analysisLine}>{prediction.homeAbbreviation} win probability: {homeProbability}%</Text>
+                      <Text style={styles.analysisLine}>{prediction.awayAbbreviation} win probability: {prediction.awayWinProbability}%</Text>
+                      {prediction.projectedHomeScore !== undefined && prediction.projectedAwayScore !== undefined && (
+                        <Text style={styles.analysisLine}>Projected score: {prediction.awayAbbreviation} {prediction.projectedAwayScore} – {prediction.homeAbbreviation} {prediction.projectedHomeScore}</Text>
+                      )}
+                      {prediction.projectedMargin !== undefined && <Text style={styles.analysisLine}>Projected home margin: {prediction.projectedMargin > 0 ? "+" : ""}{prediction.projectedMargin}</Text>}
+                      {prediction.projectedTotal !== undefined && <Text style={styles.analysisLine}>Projected total: {prediction.projectedTotal}</Text>}
+                      <Text style={styles.analysisLine}>Market setup: {prediction.homeAbbreviation} {Number.isFinite(enteredSpread) ? (enteredSpread > 0 ? "+" : "") + enteredSpread : "—"} • Total {marketTotal || "—"}</Text>
+                      {prediction.projectedMargin !== undefined && Number.isFinite(enteredSpread) && (() => {
+                        const residualSd = 13.5;
+                        const cover = Math.round((1 - normalCdf((-enteredSpread - prediction.projectedMargin) / residualSd)) * 100);
+                        return <Text style={styles.analysisLine}>Estimated cover probability: {prediction.homeAbbreviation} {cover}% • {prediction.awayAbbreviation} {100-cover}%</Text>;
+                      })()}
+                      {prediction.projectedTotal !== undefined && Number.isFinite(Number(marketTotal)) && (() => {
+                        const residualSd = 14.0;
+                        const over = Math.round((1 - normalCdf((Number(marketTotal) - prediction.projectedTotal) / residualSd)) * 100);
+                        return <Text style={styles.analysisLine}>Estimated total probability: Over {over}% • Under {100-over}%</Text>;
+                      })()}
+                      <Text style={styles.marketHint}>{prediction.projectedTotal !== undefined ? "Score, margin, and total are generated by Field IQ regression models. Cover and O/U percentages are uncertainty estimates and are not guarantees." : "Run the v3 ML pipeline to generate score, margin, and total projections."}</Text>
+                    </View>
+                  );
+                })()}
+              </View>
+              <View style={styles.marketCard}>
+                <Text style={styles.eyebrow}>SCREENSHOT ANALYZER</Text>
+                <Text style={styles.sectionTitle}>Import the setup</Text>
+                <Text style={styles.heroBody}>Choose a sportsbook-style screenshot. Field IQ will use it to identify matchup lines and prepare them for model comparison.</Text>
+                <Pressable onPress={() => void chooseMarketScreenshot()} style={({pressed}) => [styles.screenshotButton, pressed && styles.pressed]}>
+                  <Text style={styles.screenshotButtonText}>{screenshotUri ? "Choose another screenshot" : "Choose screenshot"}</Text>
+                </Pressable>
+                {screenshotUri ? <Text style={styles.alertStatus}>✓ Screenshot loaded</Text> : null}
+                {screenshotUri ? <Pressable disabled={screenshotAnalyzing} onPress={() => void runScreenshotAnalysis()} style={({pressed}) => [styles.secondaryMarketButton, pressed && styles.pressed]}><Text style={styles.secondaryMarketButtonText}>{screenshotAnalyzing ? "Analyzing…" : "Read matchup lines"}</Text></Pressable> : null}
+                {extractedMarkets.map((game, index) => (
+                  <Pressable key={`${game.awayTeam}-${game.homeTeam}-${index}`} onPress={() => useExtractedMarket(game)} style={styles.extractedGame}>
+                    <Text style={styles.analysisLine}>{game.awayTeam} {game.awaySpread ?? "—"} @ {game.homeTeam} {game.homeSpread ?? "—"}</Text>
+                    <Text style={styles.marketHint}>Total {game.total ?? "—"} • ML {game.awayMoneyline ?? "—"} / {game.homeMoneyline ?? "—"} • Tap to load</Text>
+                  </Pressable>
+                ))}
+                {screenshotStatus ? <Text style={styles.marketHint}>{screenshotStatus}</Text> : null}
+                <Text style={styles.marketHint}>Field IQ does not place wagers. Extracted lines will be shown for review before analysis.</Text>
+              </View>
+            </>
+          )}
+
           {activeTab === "picks" && (
             <>
               <View style={[styles.hero, compact && styles.heroCompact]}>
@@ -622,7 +777,7 @@ export default function App() {
         </ScrollView>
 
         <View style={styles.bottomNav}>
-          {(["picks", "schedule", "matchups"] as Tab[]).map((tab) => (
+          {(["picks", "analyze", "schedule", "matchups"] as Tab[]).map((tab) => (
             <Pressable
               accessibilityRole="button"
               key={tab}
@@ -630,7 +785,7 @@ export default function App() {
               style={[styles.navItem, activeTab === tab && styles.navItemActive]}
             >
               <Text style={[styles.navIcon, activeTab === tab && styles.navTextActive]}>
-                {tab === "picks" ? "◎" : tab === "schedule" ? "▦" : "↔"}
+                {tab === "picks" ? "◎" : tab === "analyze" ? "⌁" : tab === "schedule" ? "▦" : "↔"}
               </Text>
               <Text style={[styles.navText, activeTab === tab && styles.navTextActive]}>{tab}</Text>
             </Pressable>
@@ -840,6 +995,21 @@ const styles = StyleSheet.create({
   previousGamesButton: { alignItems: "center", backgroundColor: colors.greenDark, borderColor: "#2f6f4c", borderRadius: 13, borderWidth: 1, flexDirection: "row", justifyContent: "space-between", marginTop: 13, paddingHorizontal: 14, paddingVertical: 12 },
   previousGamesButtonText: { color: colors.green, fontSize: 11, fontWeight: "900" },
   previousGamesArrow: { color: colors.green, fontSize: 17, fontWeight: "900" },
+  secondaryMarketButton: { alignItems: "center", borderColor: colors.green, borderRadius: 13, borderWidth: 1, marginTop: 10, paddingVertical: 12 },
+  secondaryMarketButtonText: { color: colors.green, fontSize: 12, fontWeight: "900" },
+  extractedGame: { backgroundColor: "#0a1511", borderColor: colors.border, borderRadius: 12, borderWidth: 1, marginTop: 10, padding: 12 },
+  manualPasteBox: { backgroundColor: "#07110d", borderColor: colors.border, borderRadius: 13, borderWidth: 1, color: colors.text, fontSize: 14, minHeight: 260, marginTop: 12, padding: 14 },
+  screenshotButton: { alignItems: "center", backgroundColor: colors.green, borderRadius: 13, marginTop: 14, paddingVertical: 13 },
+  screenshotButtonText: { color: colors.background, fontSize: 12, fontWeight: "900" },
+  marketCard: { backgroundColor: colors.panel, borderColor: colors.border, borderRadius: 20, borderWidth: 1, marginBottom: 16, padding: 16 },
+  marketRow: { alignItems: "center", flexDirection: "row", gap: 10, marginBottom: 14 },
+  marketField: { flex: 1 },
+  marketInput: { backgroundColor: "#0a1511", borderColor: colors.border, borderRadius: 13, borderWidth: 1, color: colors.text, flex: 1, fontSize: 16, fontWeight: "900", padding: 13, textAlign: "center" },
+  marketInputWide: { backgroundColor: "#0a1511", borderColor: colors.border, borderRadius: 13, borderWidth: 1, color: colors.text, fontSize: 16, fontWeight: "900", padding: 13 },
+  analysisPanel: { backgroundColor: colors.greenDark, borderColor: "#2f6f4c", borderRadius: 15, borderWidth: 1, marginTop: 4, padding: 14 },
+  analysisWinner: { color: colors.green, fontSize: 20, fontWeight: "900", marginBottom: 8, marginTop: 4 },
+  analysisLine: { color: colors.text, fontSize: 12, fontWeight: "700", marginTop: 4 },
+  marketHint: { color: colors.muted, fontSize: 10, lineHeight: 15, marginTop: 10 },
   filterLabel: { color: colors.muted, fontSize: 10, fontWeight: "900", letterSpacing: 1.2, marginBottom: 8 },
   chips: { gap: 8, paddingBottom: 18 },
   chip: { backgroundColor: colors.panel, borderColor: colors.border, borderRadius: 18, borderWidth: 1, paddingHorizontal: 13, paddingVertical: 8 },
@@ -921,4 +1091,12 @@ const styles = StyleSheet.create({
   recentStats: { color: colors.muted, fontSize: 10, fontWeight: "700", marginTop: 7 },
   emptyCompact: { color: colors.muted, fontSize: 12, paddingVertical: 16, textAlign: "center" },
   modalNote: { color: colors.muted, fontSize: 9, marginTop: 14, textAlign: "center" },
-});
+});<View style={styles.marketInputRow}>
+              <TextInput value={manualDate} onChangeText={setManualDate} placeholder="Game date YYYY-MM-DD" placeholderTextColor={colors.muted} style={styles.marketInput} />
+              <Pressable onPress={() => setManualHomeAway(manualHomeAway === "home" ? "away" : "home")} style={styles.marketInput}><Text style={styles.analysisLine}>Team is {manualHomeAway.toUpperCase()}</Text></Pressable>
+            </View>
+            <View style={styles.marketInputRow}>
+              <TextInput value={manualTeamScore} onChangeText={setManualTeamScore} keyboardType="number-pad" placeholder="Team final score" placeholderTextColor={colors.muted} style={styles.marketInput} />
+              <TextInput value={manualOpponentScore} onChangeText={setManualOpponentScore} keyboardType="number-pad" placeholder="Opponent final score" placeholderTextColor={colors.muted} style={styles.marketInput} />
+            </View>
+            

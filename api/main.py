@@ -5,7 +5,7 @@ from pathlib import Path
 from typing import Any
 
 import httpx
-from fastapi import FastAPI, HTTPException, Query
+from fastapi import FastAPI, File, HTTPException, Query, UploadFile
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -15,7 +15,7 @@ METRICS_PATH = ROOT / "data" / "processed" / "model_metrics.json"
 MANIFEST_PATH = ROOT / "data" / "raw" / "manifest.json"
 WEATHER_STATUS_PATH = ROOT / "data" / "raw" / "weather_status.json"
 SCHEDULE_PATH = ROOT / "data" / "processed" / "schedule.json"
-MATCHUP_HISTORY_PATH = ROOT / "data" / "processed" / "matchup_history.json"
+MATCHUP_HISTORY_PATH = ROOT / "data" / "processed" / "matchup_history.json"\nMANUAL_GAMES_PATH = Path(os.getenv("FIELDIQ_MANUAL_GAMES_PATH", str(ROOT / "data" / "manual" / "games.jsonl")) )
 
 app = FastAPI(title="Field IQ NFL API", version="0.3.0")
 app.add_middleware(
@@ -109,6 +109,58 @@ async def send_test_alert(request: TextAlertRequest) -> dict[str, Any]:
     return {"ok": True, "message": "Field IQ test alert sent."}
 
 
+
+@app.post("/api/market-screenshot")
+async def analyze_market_screenshot(file: UploadFile = File(...)) -> dict[str, Any]:
+    """Extract NFL market lines from a screenshot with OpenAI vision."""
+    import base64
+    image = await file.read()
+    if not image or len(image) > 8_000_000:
+        raise HTTPException(status_code=400, detail="Upload a screenshot smaller than 8 MB.")
+    api_key = os.getenv("OPENAI_API_KEY")
+    if not api_key:
+        raise HTTPException(status_code=503, detail="OPENAI_API_KEY is not configured on the server.")
+    mime=file.content_type or "image/jpeg"
+    data_url=f"data:{mime};base64,{base64.b64encode(image).decode('ascii')}"
+    schema={
+      "type":"object","additionalProperties":False,
+      "properties":{"games":{"type":"array","items":{"type":"object","additionalProperties":False,
+        "properties":{
+          "awayTeam":{"type":"string"},"homeTeam":{"type":"string"},
+          "awaySpread":{"type":["number","null"]},"homeSpread":{"type":["number","null"]},
+          "total":{"type":["number","null"]},"awayMoneyline":{"type":["number","null"]},
+          "homeMoneyline":{"type":["number","null"]}
+        },
+        "required":["awayTeam","homeTeam","awaySpread","homeSpread","total","awayMoneyline","homeMoneyline"]
+      }}},
+      "required":["games"]
+    }
+    request_body={
+      "model":os.getenv("FIELDIQ_VISION_MODEL","gpt-5.6-luna"),
+      "input":[{"role":"user","content":[
+        {"type":"input_text","text":"Read this sports-market screenshot. Extract NFL matchups only. Team values must be standard NFL abbreviations such as CIN and HOU. Preserve the displayed spread signs and numeric totals. For decimal moneyline multipliers such as 2.24x, return 2.24. Use null when a field is absent or unreadable. Do not infer a missing number."},
+        {"type":"input_image","image_url":data_url}
+      ]}],
+      "text":{"format":{"type":"json_schema","name":"field_iq_markets","strict":True,"schema":schema}}
+    }
+    async with httpx.AsyncClient(timeout=45) as client:
+        response=await client.post("https://api.openai.com/v1/responses",headers={"Authorization":f"Bearer {api_key}","Content-Type":"application/json"},json=request_body)
+    if response.status_code >= 400:
+        raise HTTPException(status_code=502, detail="The screenshot vision service could not analyze this image.")
+    payload=response.json()
+    output_text=payload.get("output_text")
+    if not output_text:
+        for item in payload.get("output",[]):
+            for part in item.get("content",[]):
+                if part.get("type")=="output_text":
+                    output_text=part.get("text"); break
+    try:
+        parsed=json.loads(output_text or "{}")
+    except json.JSONDecodeError as exc:
+        raise HTTPException(status_code=502, detail="The screenshot vision service returned invalid structured data.") from exc
+    games=parsed.get("games",[])
+    return {"games":games,"message":f"Found {len(games)} matchup(s). Review every extracted line before analysis."}
+
 @app.get("/health")
 @app.get("/api/health")
 async def health() -> dict[str, str]:
@@ -185,6 +237,118 @@ async def matchup_history(
         "recentForm": recent_form,
         "count": len(meetings),
     }
+
+
+
+def _parse_manual_stats(raw: str) -> dict[str, Any]:
+    """Best-effort parser for pasted NFL stat pages. Missing values remain absent."""
+    import re
+    text="\n".join(line.strip() for line in raw.splitlines() if line.strip())
+    parsed: dict[str, Any]={"teamStats":{},"players":{k:[] for k in ("passing","rushing","receiving","tackles","interceptions","fieldGoals","punting","puntReturn","kickReturn")},"unparsed":False}
+
+    def number(v: str):
+        return float(v) if "." in v else int(v)
+
+    def paired(label: str, key: str):
+        m=re.search(rf"(-?\d+(?:\.\d+)?)\s*\n{re.escape(label)}\s*\n(-?\d+(?:\.\d+)?)", text, re.I)
+        if m: parsed["teamStats"][key]={"team":number(m.group(1)),"opponent":number(m.group(2))}
+
+    for label,key in [
+        ("TOTAL FIRST DOWNS","firstDowns"),("TOTAL OFFENSIVE YARDS","totalYards"),
+        ("TOTAL RUSHING YARDS","rushingYards"),("TOTAL PASSING YARDS","passingYards"),
+        ("SACKS","sacks"),("TOUCHDOWNS","touchdowns"),("TURNOVER RATIO","turnoverRatio"),("FINAL SCORE","score")
+    ]: paired(label,key)
+
+    for label,key in [("THIRD DOWN CONVERSIONS","thirdDown"),("FOURTH DOWN CONVERSIONS","fourthDown"),("FIELD GOALS","fieldGoals")]:
+        m=re.search(rf"(\d+\s*/\s*\d+)\s*\n{re.escape(label)}\s*\n(\d+\s*/\s*\d+)",text,re.I)
+        if m: parsed["teamStats"][key]={"team":m.group(1).replace(" ",""),"opponent":m.group(2).replace(" ","")}
+
+    # Common compact blocks: plays/average beneath OFFENSE and RUSHING.
+    for label,key1,key2 in [("OFFENSE","plays","yardsPerPlay"),("RUSHING","rushAttempts","yardsPerRush")]:
+        m=re.search(rf"(\d+)\s*\n(\d+(?:\.\d+)?)\s*\n{label}\s*\n(?:Plays|Plays\nAverage Yards).*?\n(\d+)\s*\n(\d+(?:\.\d+)?)",text,re.I|re.S)
+        if m:
+            parsed["teamStats"][key1]={"team":number(m.group(1)),"opponent":number(m.group(3))}
+            parsed["teamStats"][key2]={"team":number(m.group(2)),"opponent":number(m.group(4))}
+
+    section_names={"Passing":"passing","Rushing":"rushing","Receiving":"receiving","Tackles":"tackles","Interceptions":"interceptions","Field Goals":"fieldGoals","Punting":"punting","Punt Return":"puntReturn","Kick Return":"kickReturn"}
+    lines=text.splitlines()
+    i=0
+    while i < len(lines):
+        kind=section_names.get(lines[i])
+        if not kind: i+=1; continue
+        j=i+1
+        while j < len(lines) and not lines[j].startswith("Player"): j+=1
+        if j>=len(lines): i+=1; continue
+        headers=lines[j].split("\t")
+        j+=1
+        while j+1<len(lines):
+            if lines[j] in section_names or lines[j] in ("Defense","Special Teams","OFFENSE","DEFENSE","SPECIAL TEAMS"): break
+            name=lines[j]; vals=lines[j+1].split("\t")
+            if len(vals)>=2 and len(headers)>=2:
+                parsed["players"][kind].append({"player":name,"values":dict(zip(headers[1:],vals))}); j+=2
+            else: break
+        i=max(i+1,j)
+
+    parsed["unparsed"]=not bool(parsed["teamStats"] or any(parsed["players"].values()))
+    return parsed
+
+
+class ManualGameRequest(BaseModel):
+    rawText: str
+    season: int
+    seasonType: str = "Regular season"
+    week: int | None = None
+    gameDate: str | None = None
+    team: str | None = None
+    opponent: str | None = None
+    includeInTraining: bool = False
+
+
+class ManualApprovalRequest(BaseModel):
+    approved: bool = True
+
+
+@app.post("/api/manual-games")
+async def save_manual_game(request: ManualGameRequest) -> dict[str, Any]:
+    raw=request.rawText.strip()
+    if len(raw)<40: raise HTTPException(status_code=400,detail="Paste the team/game statistics before saving.")
+    import hashlib
+    record_id=hashlib.sha256(" ".join(raw.lower().split()).encode()).hexdigest()[:16]
+    MANUAL_GAMES_PATH.parent.mkdir(parents=True,exist_ok=True)
+    records=[]
+    if MANUAL_GAMES_PATH.exists():
+        for line in MANUAL_GAMES_PATH.read_text(encoding="utf-8").splitlines():
+            try: records.append(json.loads(line))
+            except json.JSONDecodeError: continue
+    if any(r.get("id")==record_id for r in records): raise HTTPException(status_code=409,detail="This pasted stat record already exists.")
+    parsed=_parse_manual_stats(raw)
+    record=request.model_dump()
+    record["parsed"]=parsed
+    record.update({"id":record_id,"source":"manual","createdAt":datetime.now(UTC).isoformat(),"validated":False,"approvedForTraining":False})
+    records.append(record)
+    MANUAL_GAMES_PATH.write_text("\n".join(json.dumps(r) for r in records)+"\n",encoding="utf-8")
+    warnings=[]
+    if request.includeInTraining: warnings.append("Review the parsed record, then approve it before ML training.")
+    return {"ok":True,"id":record_id,"warnings":warnings,"parsed":parsed}
+
+
+@app.post("/api/manual-games/{record_id}/approval")
+async def approve_manual_game(record_id: str, request: ManualApprovalRequest) -> dict[str, Any]:
+    if not MANUAL_GAMES_PATH.exists(): raise HTTPException(status_code=404,detail="Manual record not found.")
+    records=[]; found=None
+    for line in MANUAL_GAMES_PATH.read_text(encoding="utf-8").splitlines():
+        try: record=json.loads(line)
+        except json.JSONDecodeError: continue
+        if record.get("id")==record_id:
+            found=record
+            if request.approved and record.get("parsed",{}).get("unparsed"):
+                raise HTTPException(status_code=400,detail="This record has not been parsed successfully.")
+            record["validated"]=request.approved
+            record["approvedForTraining"]=request.approved
+        records.append(record)
+    if found is None: raise HTTPException(status_code=404,detail="Manual record not found.")
+    MANUAL_GAMES_PATH.write_text("\n".join(json.dumps(r) for r in records)+"\n",encoding="utf-8")
+    return {"ok":True,"id":record_id,"approvedForTraining":request.approved}
 
 
 @app.get("/api/model")

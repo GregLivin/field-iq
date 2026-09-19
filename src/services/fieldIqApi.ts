@@ -126,3 +126,61 @@ export async function sendTextAlertTest(
     };
   }
 }
+
+
+export type ExtractedMarket = {
+  awayTeam: string;
+  homeTeam: string;
+  awaySpread?: number | null;
+  homeSpread?: number | null;
+  total?: number | null;
+  awayMoneyline?: number | null;
+  homeMoneyline?: number | null;
+};
+
+export async function analyzeMarketScreenshot(
+  imageUri: string,
+): Promise<{ games: ExtractedMarket[]; message?: string }> {
+  if (API_URL === undefined) throw new Error("Connect the Field IQ API to analyze screenshots.");
+  const form = new FormData();
+  const response = await fetch(imageUri);
+  const blob = await response.blob();
+  form.append("file", blob, "market-screenshot.jpg");
+  const result = await fetch(`${API_URL}/api/market-screenshot`, { method: "POST", body: form });
+  const data = await result.json();
+  if (!result.ok) throw new Error(data.detail ?? "Unable to analyze screenshot.");
+  return data;
+}
+
+
+export type ManualGameDraft = {
+  rawText: string;
+  season: number;
+  seasonType: string;
+  week?: number;
+  gameDate?: string;
+  team?: string;
+  opponent?: string;
+  includeInTraining: boolean;
+};
+
+export async function saveManualGame(draft: ManualGameDraft): Promise<{ ok: boolean; id: string; warnings: string[]; parsed?: { teamStats: Record<string, {team:number; opponent:number}>; players: Record<string, Array<{player:string; values:Record<string,string>}>>; unparsed:boolean } }> {
+  if (API_URL === undefined) throw new Error("Connect the Field IQ API to save manual game data.");
+  const response = await fetch(`${API_URL}/api/manual-games`, {
+    method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(draft),
+  });
+  const data = await response.json();
+  if (!response.ok) throw new Error(data.detail ?? "Unable to save manual game.");
+  return data;
+}
+
+
+export async function approveManualGame(id: string, approved = true): Promise<{ok:boolean; id:string; approvedForTraining:boolean}> {
+  if (API_URL === undefined) throw new Error("Connect the Field IQ API to approve manual data.");
+  const response=await fetch(`${API_URL}/api/manual-games/${id}/approval`,{
+    method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({approved}),
+  });
+  const data=await response.json();
+  if(!response.ok) throw new Error(data.detail ?? "Unable to approve manual game.");
+  return data;
+}
