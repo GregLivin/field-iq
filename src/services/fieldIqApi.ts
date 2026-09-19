@@ -164,7 +164,7 @@ export type ManualGameDraft = {
   includeInTraining: boolean;
 };
 
-export async function saveManualGame(draft: ManualGameDraft): Promise<{ ok: boolean; id: string; warnings: string[] }> {
+export async function saveManualGame(draft: ManualGameDraft): Promise<{ ok: boolean; id: string; warnings: string[]; parsed?: { teamStats: Record<string, {team:number; opponent:number}>; players: Record<string, Array<{player:string; values:Record<string,string>}>>; unparsed:boolean } }> {
   if (API_URL === undefined) throw new Error("Connect the Field IQ API to save manual game data.");
   const response = await fetch(`${API_URL}/api/manual-games`, {
     method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(draft),
