@@ -242,10 +242,16 @@ async def matchup_history(
 
 
 def _parse_manual_stats(raw: str) -> dict[str, Any]:
-    """Best-effort parser for pasted NFL stat pages. Missing values remain absent."""
+    """Parse both team-site tables and compact ATL PASSING/RUSHING-style copies."""
     import re
-    text="\n".join(line.strip() for line in raw.splitlines() if line.strip())
-    parsed: dict[str, Any]={"teamStats":{},"players":{k:[] for k in ("passing","rushing","receiving","tackles","interceptions","fieldGoals","punting","puntReturn","kickReturn")},"unparsed":False}
+    lines=[line.strip() for line in raw.splitlines() if line.strip()]
+    text="\n".join(lines)
+    kinds=("passing","rushing","receiving","tackles","interceptions","fieldGoals","punting","puntReturn","kickReturn","fumbles")
+    parsed: dict[str, Any]={"teamStats":{},"players":{k:[] for k in kinds},"unparsed":False,"format":"team_site","sourceScope":"game","warnings":[]}
+
+    if re.search(r"\bSEASON STATS\b", text, re.I):
+        parsed["sourceScope"]="season_to_date"
+        parsed["warnings"].append("Source says SEASON STATS. Store as season-to-date unless you confirm this is a single-game view.")
 
     def number(v: str):
         return float(v) if "." in v else int(v)
@@ -254,25 +260,14 @@ def _parse_manual_stats(raw: str) -> dict[str, Any]:
         m=re.search(rf"(-?\d+(?:\.\d+)?)\s*\n{re.escape(label)}\s*\n(-?\d+(?:\.\d+)?)", text, re.I)
         if m: parsed["teamStats"][key]={"team":number(m.group(1)),"opponent":number(m.group(2))}
 
-    for label,key in [
-        ("TOTAL FIRST DOWNS","firstDowns"),("TOTAL OFFENSIVE YARDS","totalYards"),
-        ("TOTAL RUSHING YARDS","rushingYards"),("TOTAL PASSING YARDS","passingYards"),
-        ("SACKS","sacks"),("TOUCHDOWNS","touchdowns"),("TURNOVER RATIO","turnoverRatio"),("FINAL SCORE","score")
-    ]: paired(label,key)
-
+    for label,key in [("TOTAL FIRST DOWNS","firstDowns"),("TOTAL OFFENSIVE YARDS","totalYards"),("TOTAL RUSHING YARDS","rushingYards"),("TOTAL PASSING YARDS","passingYards"),("SACKS","sacks"),("TOUCHDOWNS","touchdowns"),("TURNOVER RATIO","turnoverRatio"),("FINAL SCORE","score")]:
+        paired(label,key)
     for label,key in [("THIRD DOWN CONVERSIONS","thirdDown"),("FOURTH DOWN CONVERSIONS","fourthDown"),("FIELD GOALS","fieldGoals")]:
         m=re.search(rf"(\d+\s*/\s*\d+)\s*\n{re.escape(label)}\s*\n(\d+\s*/\s*\d+)",text,re.I)
         if m: parsed["teamStats"][key]={"team":m.group(1).replace(" ",""),"opponent":m.group(2).replace(" ","")}
 
-    # Common compact blocks: plays/average beneath OFFENSE and RUSHING.
-    for label,key1,key2 in [("OFFENSE","plays","yardsPerPlay"),("RUSHING","rushAttempts","yardsPerRush")]:
-        m=re.search(rf"(\d+)\s*\n(\d+(?:\.\d+)?)\s*\n{label}\s*\n(?:Plays|Plays\nAverage Yards).*?\n(\d+)\s*\n(\d+(?:\.\d+)?)",text,re.I|re.S)
-        if m:
-            parsed["teamStats"][key1]={"team":number(m.group(1)),"opponent":number(m.group(3))}
-            parsed["teamStats"][key2]={"team":number(m.group(2)),"opponent":number(m.group(4))}
-
+    # Format A: team-site copies where a Player header and tab-separated row values are preserved.
     section_names={"Passing":"passing","Rushing":"rushing","Receiving":"receiving","Tackles":"tackles","Interceptions":"interceptions","Field Goals":"fieldGoals","Punting":"punting","Punt Return":"puntReturn","Kick Return":"kickReturn"}
-    lines=text.splitlines()
     i=0
     while i < len(lines):
         kind=section_names.get(lines[i])
@@ -280,8 +275,7 @@ def _parse_manual_stats(raw: str) -> dict[str, Any]:
         j=i+1
         while j < len(lines) and not lines[j].startswith("Player"): j+=1
         if j>=len(lines): i+=1; continue
-        headers=lines[j].split("\t")
-        j+=1
+        headers=lines[j].split("\t"); j+=1
         while j+1<len(lines):
             if lines[j] in section_names or lines[j] in ("Defense","Special Teams","OFFENSE","DEFENSE","SPECIAL TEAMS"): break
             name=lines[j]; vals=lines[j+1].split("\t")
@@ -289,6 +283,49 @@ def _parse_manual_stats(raw: str) -> dict[str, Any]:
                 parsed["players"][kind].append({"player":name,"values":dict(zip(headers[1:],vals))}); j+=2
             else: break
         i=max(i+1,j)
+
+    # Format B: copied game/season page: ATL PASSING, ATL RUSHING, etc., one value per line.
+    compact={
+      "PASSING":("passing",["CMP","ATT","YDS","CMP%","AVG","TD","INT","SACKS","RATING"]),
+      "RUSHING":("rushing",["ATT","YDS","TD","AVG","LONG","FUM","20+"]),
+      "RECEIVING":("receiving",["REC","YDS","TD","TGTS","LONG","YAC"]),
+      "FUMBLES":("fumbles",["FUM","LOST","FR"]),
+      "DEFENSE":("tackles",["TOT","SOLO","SACKS","TFL","PD","INT","QBP","INT TD","FF","FR"]),
+      "KICKING":("fieldGoals",["FGM","FGA","XP","50+","LONG"]),
+      "KICKOFF RETURNS":("kickReturn",["RET","AVG","TD","LONG"]),
+      "PUNTING":("punting",["PUNTS","AVG","IN 20","LONG"]),
+      "PUNT RETURNS":("puntReturn",["RET","AVG","TD","LONG"]),
+    }
+    heading=re.compile(r"^[A-Z]{2,3} ("+"|".join(re.escape(x) for x in compact)+r")$")
+    found_compact=False
+    i=0
+    while i < len(lines):
+        hm=heading.match(lines[i])
+        if not hm: i+=1; continue
+        found_compact=True; label=hm.group(1); kind,expected=compact[label]; i+=1
+        if i < len(lines) and lines[i]=="PLAYER": i+=1
+        headers=[]
+        while i < len(lines) and lines[i] in expected:
+            headers.append(lines[i]); i+=1
+        if not headers: headers=expected
+        while i < len(lines) and not heading.match(lines[i]):
+            if lines[i]=="TEAM": break
+            name=lines[i]
+            if i+1<len(lines) and lines[i+1]==name: i+=1
+            vals=lines[i+1:i+1+len(headers)]
+            if len(vals)==len(headers) and all(re.fullmatch(r"-?\d+(?:\.\d+)?",v) for v in vals):
+                parsed["players"][kind].append({"player":name,"values":dict(zip(headers,vals))})
+                i+=1+len(headers)
+            else: i+=1
+    if found_compact: parsed["format"]="compact_team_stats"
+
+    # Flag initials that collide inside a section (e.g. two B. ROBINSON rows).
+    for kind,rows in parsed["players"].items():
+        counts={}
+        for row in rows: counts[row["player"]]=counts.get(row["player"],0)+1
+        for name,count in counts.items():
+            if count>1 and re.match(r"^[A-Z]\.\s",name):
+                parsed["warnings"].append(f"Ambiguous abbreviated player in {kind}: {name}. Review identity before ML approval.")
 
     parsed["unparsed"]=not bool(parsed["teamStats"] or any(parsed["players"].values()))
     return parsed
@@ -332,7 +369,8 @@ async def save_manual_game(request: ManualGameRequest) -> dict[str, Any]:
     player_count=sum(len(rows) for rows in parsed.get("players",{}).values())
     required={"week":request.week,"gameDate":request.gameDate,"team":request.team,"opponent":request.opponent,"homeAway":request.homeAway,"teamScore":request.teamScore,"opponentScore":request.opponentScore}
     missing=[key for key,value in required.items() if value is None or value==""]
-    readiness={"ready":not missing and not parsed.get("unparsed") and player_count>0,"missing":missing,"playerRecords":player_count}
+    ambiguous=[w for w in parsed.get("warnings",[]) if w.startswith("Ambiguous abbreviated player")]
+    readiness={"ready":not missing and not parsed.get("unparsed") and player_count>0 and not ambiguous,"missing":missing,"playerRecords":player_count,"format":parsed.get("format"),"sourceScope":parsed.get("sourceScope"),"warnings":parsed.get("warnings",[])}
     record=request.model_dump()
     record["parsed"]=parsed
     record["readiness"]=readiness
