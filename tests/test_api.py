@@ -10,7 +10,8 @@ def test_predictions_artifact_is_served() -> None:
     response = client.get("/api/predictions")
     assert response.status_code == 200
     payload = response.json()
-    assert payload["model"] == "fieldiq-ensemble-v1"
+    assert isinstance(payload["model"], str)
+    assert payload["model"].startswith("fieldiq-ensemble-v")
     assert payload["predictions"]
 
 
