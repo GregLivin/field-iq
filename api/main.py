@@ -319,10 +319,33 @@ def _parse_manual_stats(raw: str) -> dict[str, Any]:
             else: i+=1
     if found_compact: parsed["format"]="compact_team_stats"
 
+    # Resolve abbreviated names when the same paste also contains a full-name leaderboard.
+    full_names=[]
+    for line in lines:
+        if re.fullmatch(r"[A-Z][A-Za-z.'-]+(?: [A-Z][A-Za-z.'-]+)+", line) and line.upper() not in ("Atlanta Falcons".upper(),):
+            full_names.append(line)
+    def abbr(name: str) -> str:
+        parts=name.split()
+        return f"{parts[0][0].upper()}. {parts[-1].upper()}" if len(parts)>1 else name.upper()
+    name_map={}
+    for full in full_names:
+        name_map.setdefault(abbr(full),[]).append(full)
+    for kind,rows in parsed["players"].items():
+        for row in rows:
+            short=row["player"]
+            candidates=list(dict.fromkeys(name_map.get(short,[])))
+            if len(candidates)==1:
+                row["sourcePlayer"]=short
+                row["player"]=candidates[0]
+                row["identityStatus"]="resolved_from_paste"
+            elif re.match(r"^[A-Z]\.\s",short):
+                row["identityStatus"]="ambiguous" if len(candidates)>1 else "unresolved"
+                row["identityCandidates"]=candidates
+
     # Flag initials that collide inside a section (e.g. two B. ROBINSON rows).
     for kind,rows in parsed["players"].items():
         counts={}
-        for row in rows: counts[row["player"]]=counts.get(row["player"],0)+1
+        for row in rows:\n            original=row.get("sourcePlayer",row["player"])\n            counts[original]=counts.get(original,0)+1
         for name,count in counts.items():
             if count>1 and re.match(r"^[A-Z]\.\s",name):
                 parsed["warnings"].append(f"Ambiguous abbreviated player in {kind}: {name}. Review identity before ML approval.")
