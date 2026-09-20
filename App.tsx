@@ -371,6 +371,7 @@ export default function App() {
   const [historyLoading, setHistoryLoading] = useState(false);
   const [playerStats, setPlayerStats] = useState<Record<string, Record<number, PlayerStatsPayload | null>>>({});
   const [playerSeason, setPlayerSeason] = useState(2026);
+  const [playerStatsErrors, setPlayerStatsErrors] = useState<Record<string, Record<number, string | null>>>({});
   const [loading, setLoading] = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [marketHome, setMarketHome] = useState("HOU");
@@ -567,8 +568,12 @@ export default function App() {
       getPlayerStats(game.awayAbbreviation, game.season - 1), getPlayerStats(game.homeAbbreviation, game.season - 1),
     ]);
     setPlayerStats({
-      [game.awayAbbreviation]: {[game.season]:awayCurrent,[game.season-1]:awayPrevious},
-      [game.homeAbbreviation]: {[game.season]:homeCurrent,[game.season-1]:homePrevious},
+      [game.awayAbbreviation]: {[game.season]:awayCurrent.data,[game.season-1]:awayPrevious.data},
+      [game.homeAbbreviation]: {[game.season]:homeCurrent.data,[game.season-1]:homePrevious.data},
+    });
+    setPlayerStatsErrors({
+      [game.awayAbbreviation]: {[game.season]:awayCurrent.error,[game.season-1]:awayPrevious.error},
+      [game.homeAbbreviation]: {[game.season]:homeCurrent.error,[game.season-1]:homePrevious.error},
     });
     setHistory(result?.meetings ?? []);
     setRecentForm(result?.recentForm ?? {});
@@ -981,7 +986,7 @@ export default function App() {
               ) : historyView === "players" ? (
                 <>
                   <FilterChips values={[selectedGame?.season ?? 2026, (selectedGame?.season ?? 2026)-1]} selected={playerSeason} onSelect={(v)=>setPlayerSeason(Number(v))}/>
-                  {selectedGame && [selectedGame.awayAbbreviation, selectedGame.homeAbbreviation].map((team)=>{const data=playerStats[team]?.[playerSeason]; return <View key={team} style={styles.recentTeamSection}><View style={styles.recentTeamHeader}><TeamBadge abbreviation={team}/><View style={styles.recentTeamHeading}><Text style={styles.recentTeamName}>{team} • {playerSeason} PLAYER LEADERS</Text><Text style={styles.recentTeamSubhead}>{data?.scope === "season_to_date" ? "Season to date" : "Previous season"}</Text></View></View>{(["passing","rushing","receiving","defense","kicking"] as const).map((kind)=>{const rows=data?.leaders[kind] ?? []; return <View key={kind} style={{marginTop:10}}><Text style={styles.pickLabel}>{kind.toUpperCase()}</Text>{rows.slice(0,5).map((p,idx)=><Text key={p.playerId+"-"+kind+"-"+idx} style={styles.analysisLine}>{p.playerName} • {p.position || "—"} • {kind==="passing" ? `${Math.round(p.passingYards ?? 0)} YDS • ${Math.round(p.passingTds ?? 0)} TD • ${Math.round(p.interceptions ?? 0)} INT` : kind==="rushing" ? `${Math.round(p.rushingYards ?? 0)} YDS • ${Math.round(p.carries ?? 0)} ATT • ${Math.round(p.rushingTds ?? 0)} TD` : kind==="receiving" ? `${Math.round(p.receivingYards ?? 0)} YDS • ${Math.round(p.receptions ?? 0)} REC • ${Math.round(p.receivingTds ?? 0)} TD` : kind==="defense" ? `${Math.round(p.defTacklesSolo ?? 0)} SOLO • ${Math.round(p.defSacks ?? 0)} SACK • ${Math.round(p.defInterceptions ?? 0)} INT` : `${Math.round(p.fgMade ?? 0)}/${Math.round(p.fgAtt ?? 0)} FG • ${Math.round(p.patMade ?? 0)}/${Math.round(p.patAtt ?? 0)} XP`}</Text>)}{!rows.length && <Text style={styles.emptyCompact}>No {kind} data available.</Text>}</View>})}</View>})}
+                  {selectedGame && [selectedGame.awayAbbreviation, selectedGame.homeAbbreviation].map((team)=>{const data=playerStats[team]?.[playerSeason]; const apiError=playerStatsErrors[team]?.[playerSeason]; const seasonLabel=data?.scope === "season_to_date" ? "Season to date" : data?.scope === "full_season" ? "Full season" : `Season ${playerSeason}`; return <View key={team} style={styles.recentTeamSection}><View style={styles.recentTeamHeader}><TeamBadge abbreviation={team}/><View style={styles.recentTeamHeading}><Text style={styles.recentTeamName}>{team} • {playerSeason} PLAYER LEADERS</Text><Text style={styles.recentTeamSubhead}>{seasonLabel}</Text></View></View>{apiError ? <Text style={styles.playerApiError}>Player data unavailable: {apiError}</Text> : (["passing","rushing","receiving","defense","kicking"] as const).map((kind)=>{const rows=data?.leaders[kind] ?? []; return <View key={kind} style={{marginTop:10}}><Text style={styles.pickLabel}>{kind.toUpperCase()}</Text>{rows.slice(0,5).map((p,idx)=><Text key={p.playerId+"-"+kind+"-"+idx} style={styles.analysisLine}>{p.playerName} • {p.position || "—"} • {kind==="passing" ? `${Math.round(p.passingYards ?? 0)} YDS • ${Math.round(p.passingTds ?? 0)} TD • ${Math.round(p.interceptions ?? 0)} INT` : kind==="rushing" ? `${Math.round(p.rushingYards ?? 0)} YDS • ${Math.round(p.carries ?? 0)} ATT • ${Math.round(p.rushingTds ?? 0)} TD` : kind==="receiving" ? `${Math.round(p.receivingYards ?? 0)} YDS • ${Math.round(p.receptions ?? 0)} REC • ${Math.round(p.receivingTds ?? 0)} TD` : kind==="defense" ? `${Math.round(p.defTacklesSolo ?? 0)} SOLO • ${Math.round(p.defSacks ?? 0)} SACK • ${Math.round(p.defInterceptions ?? 0)} INT` : `${Math.round(p.fgMade ?? 0)}/${Math.round(p.fgAtt ?? 0)} FG • ${Math.round(p.patMade ?? 0)}/${Math.round(p.patAtt ?? 0)} XP`}</Text>)}{!rows.length && <Text style={styles.emptyCompact}>No {kind} leaders recorded for {playerSeason}.</Text>}</View>})}</View>})}
                   <Text style={styles.modalNote}>2026 uses season-to-date player production. 2025 is retained as prior-season context. Pregame ML features continue to use only information available before kickoff.</Text>
                 </>
               ) : historyView === "recent" ? (
@@ -1184,5 +1189,6 @@ const styles = StyleSheet.create({
   recentScore: { color: colors.text, fontSize: 12, fontWeight: "900" },
   recentStats: { color: colors.muted, fontSize: 10, fontWeight: "700", marginTop: 7 },
   emptyCompact: { color: colors.muted, fontSize: 12, paddingVertical: 16, textAlign: "center" },
+  playerApiError: { backgroundColor: "#30211f", borderColor: "#69443c", borderRadius: 12, borderWidth: 1, color: "#f6b4a6", fontSize: 11, lineHeight: 17, marginTop: 8, padding: 12 },
   modalNote: { color: colors.muted, fontSize: 9, marginTop: 14, textAlign: "center" },
 });

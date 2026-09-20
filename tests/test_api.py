@@ -87,3 +87,9 @@ def test_player_impact_is_deploy_safe() -> None:
         assert payload["away"] == "CAR"
         assert payload["home"] == "ATL"
         assert len(payload["comparisons"]) == 5
+
+
+def test_health_reports_player_stats_artifact() -> None:
+    response=client.get("/api/health")
+    assert response.status_code == 200
+    assert response.json()["playerStats"] in ("ready","pending")

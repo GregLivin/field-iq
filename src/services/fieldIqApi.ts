@@ -190,9 +190,18 @@ export async function approveManualGame(id: string, approved = true): Promise<{o
 
 export type PlayerStatRow = { playerId:string; playerName:string; position:string; passingYards:number|null; passingTds:number|null; interceptions:number|null; completions:number|null; attempts:number|null; rushingYards:number|null; rushingTds:number|null; carries?:number|null; receptions:number|null; targets:number|null; receivingYards:number|null; receivingTds:number|null; defTacklesSolo?:number|null; defTackleAssists?:number|null; defSacks?:number|null; defQbHits?:number|null; defInterceptions?:number|null; defPassDefended?:number|null; defFumblesForced?:number|null; fgMade?:number|null; fgAtt?:number|null; fgPct?:number|null; patMade?:number|null; patAtt?:number|null; punts?:number|null; puntYards?:number|null; puntReturns?:number|null; puntReturnYards?:number|null; kickoffReturns?:number|null; kickoffReturnYards?:number|null; };
 export type PlayerStatsPayload = { team:string; season:number; scope:string; provider:string; asOf:string; leaders:{passing:PlayerStatRow[]; rushing:PlayerStatRow[]; receiving:PlayerStatRow[]; defense?:PlayerStatRow[]; kicking?:PlayerStatRow[]}; players:PlayerStatRow[] };
-export async function getPlayerStats(team:string, season:number):Promise<PlayerStatsPayload|null>{
-  if(API_URL===undefined) return null;
-  try{const r=await fetch(`${API_URL}/api/player-stats?team=${encodeURIComponent(team)}&season=${season}`); if(!r.ok) throw new Error(String(r.status)); return await r.json() as PlayerStatsPayload;}catch{return null;}
+export type PlayerStatsResult = { data: PlayerStatsPayload | null; error: string | null };
+export async function getPlayerStats(team:string, season:number):Promise<PlayerStatsResult>{
+  if(API_URL===undefined) return {data:null,error:"Field IQ API is not configured on this device."};
+  try{
+    const r=await fetch(`${API_URL}/api/player-stats?team=${encodeURIComponent(team)}&season=${season}`,{cache:"no-store"});
+    const body=await r.json().catch(()=>({}));
+    if(!r.ok) return {data:null,error:typeof body?.detail==="string" ? body.detail : `Player stats request failed (HTTP ${r.status}).`};
+    const data=body as PlayerStatsPayload;
+    return {data,error:null};
+  }catch(error){
+    return {data:null,error:error instanceof Error ? error.message : "Unable to reach the player stats API."};
+  }
 }
 
 export type PlayerImpactPayload={season:number;away:string;home:string;method:string;comparisons:Array<{category:string;metric:string;awayValue:number|null;homeValue:number|null;edge:string|null}>;notice:string};
