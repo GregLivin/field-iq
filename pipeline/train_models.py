@@ -185,6 +185,6 @@ def train_and_predict()->dict[str,Any]:
     season=int(next_games.iloc[0]["season"]) if not next_games.empty else latest; week=int(next_games.iloc[0]["week"]) if not next_games.empty else int(training.iloc[-1]["week"]); now=datetime.now(UTC).isoformat()
     payload={"season":season,"week":week,"asOf":now,"provider":"nflverse + NOAA/NWS","model":"fieldiq-ensemble-v4-reconciled","predictions":predictions}; (PROCESSED_DIR/"predictions.json").write_text(json.dumps(payload,indent=2)+"\n")
     mp={"generatedAt":now,"trainingGames":int(len(Xtr)),"validationGames":int(len(Xte)),"validationMethod":validation,"features":model_features,"models":metrics,"manualData":manual_summary,"scoreModels":score_metrics,"marketCalibration":{"marginResidualSd":round(margin_sd,3),"totalResidualSd":round(total_sd,3),"method":"validation residual normal approximation"}}; (PROCESSED_DIR/"model_metrics.json").write_text(json.dumps(mp,indent=2)+"\n")
-    write_schedule_payloads(games,season,PROCESSED_DIR,now,team_stats); training.to_parquet(PROCESSED_DIR/"game_features.parquet",index=False); return {"predictionCount":len(predictions),**mp}
+    write_schedule_payloads(games,season,PROCESSED_DIR,now,team_stats,payload); training.to_parquet(PROCESSED_DIR/"game_features.parquet",index=False); return {"predictionCount":len(predictions),**mp}
 
 if __name__=="__main__": print(json.dumps(train_and_predict(),indent=2))

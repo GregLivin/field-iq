@@ -962,7 +962,7 @@ export default function App() {
               ) : historyView === "overview" ? (
                 <>
                   {selectedGame && [selectedGame.awayAbbreviation, selectedGame.homeAbbreviation].map((team) => { const cur=seasonSummaries[team]?.current; const prev=seasonSummaries[team]?.previous; return <View key={team} style={styles.recentTeamSection}><View style={styles.recentTeamHeader}><TeamBadge abbreviation={team}/><View style={styles.recentTeamHeading}><Text style={styles.recentTeamName}>{team} TEAM HISTORY</Text><Text style={styles.recentTeamSubhead}>Current season + prior-season baseline</Text></View></View>{cur && <Text style={styles.analysisLine}>{cur.season}: {cur.wins}-{cur.losses}{cur.ties ? "-" + cur.ties : ""} • Diff {cur.pointDifferential > 0 ? "+" : ""}{cur.pointDifferential}</Text>}{prev && <Text style={styles.analysisLine}>{prev.season}: {prev.wins}-{prev.losses}{prev.ties ? "-" + prev.ties : ""} • PF {prev.pointsFor} • PA {prev.pointsAgainst} • Diff {prev.pointDifferential > 0 ? "+" : ""}{prev.pointDifferential}</Text>}</View>})}
-                  <Text style={styles.modalNote}>Prior-season history stays separate from current form and is now available to the ML model as a pregame baseline.</Text>
+                  <Text style={styles.modalNote}>Prior-season history stays separate from current form. Recent games, team stats, head-to-head history, and the Field IQ prediction are generated together for matchup intelligence.</Text>
                 </>
               ) : historyView === "recent" ? (
                 <>

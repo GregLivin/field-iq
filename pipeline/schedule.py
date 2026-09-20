@@ -269,6 +269,27 @@ def build_schedule_payloads(
     }
     return schedule_payload, history_payload
 
+def _expand_compact_meeting(v):
+    return {"id":v[0],"date":v[1],"season":v[2],"week":v[3],"gameType":v[4],"awayAbbreviation":v[5],"awayScore":v[6],"homeAbbreviation":v[7],"homeScore":v[8],"winnerAbbreviation":v[9]}
+
+def _expand_compact_recent(v):
+    keys=["id","date","season","week","gameType","teamAbbreviation","opponentAbbreviation","homeAway","teamScore","opponentScore","result","passingYards","rushingYards","totalYards","totalEpa","turnovers","defensiveSacks"]
+    return dict(zip(keys,v))
+
+def build_matchup_intelligence(schedule, history, predictions=None):
+    prediction_map={str(p.get("id")):p for p in (predictions or {}).get("predictions",[])}
+    records={}
+    for game in schedule.get("games",[]):
+        away,home=game["awayAbbreviation"],game["homeAbbreviation"]; key=matchup_key(away,home)
+        records[str(game["id"])]={
+          "game":game,"teams":[away,home],
+          "seasonSummaries":{t:history.get("seasonSummaries",{}).get(t,{}) for t in (away,home)},
+          "recentForm":{t:[_expand_compact_recent(x) for x in history.get("recentForm",{}).get(t,[])] for t in (away,home)},
+          "headToHead":[_expand_compact_meeting(x) for x in history.get("matchups",{}).get(key,[])],
+          "prediction":prediction_map.get(str(game["id"]))
+        }
+    return {"season":schedule.get("season"),"asOf":schedule.get("asOf"),"provider":schedule.get("provider"),"games":records}
+
 
 def write_schedule_payloads(
     games: pd.DataFrame,
@@ -276,10 +297,13 @@ def write_schedule_payloads(
     output_dir: Path,
     generated_at: str,
     team_stats: pd.DataFrame | None = None,
-) -> tuple[Path, Path]:
+    predictions: dict[str, Any] | None = None,
+) -> tuple[Path, Path, Path]:
     schedule, histories = build_schedule_payloads(games, season, generated_at, team_stats)
     schedule_path = output_dir / "schedule.json"
     history_path = output_dir / "matchup_history.json"
+    matchup_path = output_dir / "matchups.json"
     schedule_path.write_text(json.dumps(schedule, indent=2) + "\n")
     history_path.write_text(json.dumps(histories, indent=2) + "\n")
-    return schedule_path, history_path
+    matchup_path.write_text(json.dumps(build_matchup_intelligence(schedule, histories, predictions), indent=2) + "\n")
+    return schedule_path, history_path, matchup_path

@@ -16,6 +16,7 @@ MANIFEST_PATH = ROOT / "data" / "raw" / "manifest.json"
 WEATHER_STATUS_PATH = ROOT / "data" / "raw" / "weather_status.json"
 SCHEDULE_PATH = ROOT / "data" / "processed" / "schedule.json"
 MATCHUP_HISTORY_PATH = ROOT / "data" / "processed" / "matchup_history.json"
+MATCHUPS_PATH = ROOT / "data" / "processed" / "matchups.json"
 MANUAL_GAMES_PATH = Path(os.getenv("FIELDIQ_MANUAL_GAMES_PATH", str(ROOT / "data" / "manual" / "games.jsonl")))
 
 app = FastAPI(title="Field IQ NFL API", version="0.3.0")
@@ -208,6 +209,14 @@ async def schedule(
     if status is not None:
         games = [game for game in games if game.get("status") == status]
     return {**payload, "games": games, "count": len(games)}
+
+
+@app.get("/api/matchup/{game_id}")
+async def matchup_intelligence(game_id: str) -> dict[str, Any]:
+    payload=_load_json(MATCHUPS_PATH)
+    record=payload.get("games",{}).get(game_id)
+    if record is None: raise HTTPException(status_code=404,detail="Matchup not found.")
+    return {**record,"asOf":payload.get("asOf"),"provider":payload.get("provider")}
 
 
 @app.get("/api/matchups")

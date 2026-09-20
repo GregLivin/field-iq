@@ -92,3 +92,5 @@ export type RecentTeamGame = {
   turnovers: number | null;
   defensiveSacks: number | null;
 };
+
+export type MatchupIntelligence = { game: ScheduleGame; teams:string[]; seasonSummaries: MatchupPayload["seasonSummaries"]; recentForm: Record<string, RecentTeamGame[]>; headToHead: MatchupMeeting[]; prediction: Prediction | null; asOf?:string; provider?:string; };

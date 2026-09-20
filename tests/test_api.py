@@ -62,3 +62,8 @@ def test_matchup_history_includes_season_summaries() -> None:
     payload=response.json()
     assert "seasonSummaries" in payload
     assert set(payload["seasonSummaries"]) == {"CIN","HOU"}
+
+
+def test_matchup_intelligence_endpoint_exists() -> None:
+    response=client.get("/api/matchup/not-a-real-game")
+    assert response.status_code in (404,503)
