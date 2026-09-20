@@ -440,6 +440,35 @@ async def approve_manual_game(record_id: str, request: ManualApprovalRequest) ->
     return {"ok":True,"id":record_id,"approvedForTraining":request.approved}
 
 
+@app.get("/api/player-stats")
+async def player_stats(
+    team: str = Query(..., min_length=2, max_length=3),
+    season: int = Query(..., ge=2000, le=2100),
+) -> dict[str, Any]:
+    """Return season player leaders for a team from the automated player layer."""
+    path = ROOT / "data" / "raw" / "player_season.parquet"
+    if not path.exists():
+        raise HTTPException(status_code=503, detail="Player season data is not available.")
+    import polars as pl
+    frame=pl.read_parquet(path).to_pandas()
+    frame=frame[(frame["season"].astype(int)==season)&(frame["team"].astype(str)==team.upper())].copy()
+    def n(row,*names):
+        for name in names:
+            if name in row and pd.notna(row[name]): return float(row[name])
+        return None
+    def player(row):
+        return str(row.get("player_display_name") or row.get("player_name") or row.get("player") or row.get("player_id") or "Unknown")
+    records=[]
+    for _,r in frame.iterrows():
+        records.append({"playerId":str(r.get("player_id") or ""),"playerName":player(r),"position":str(r.get("position") or ""),
+          "passingYards":n(r,"passing_yards"),"passingTds":n(r,"passing_tds"),"interceptions":n(r,"interceptions","passing_interceptions"),
+          "completions":n(r,"completions"),"attempts":n(r,"attempts"),"rushingYards":n(r,"rushing_yards"),"rushingTds":n(r,"rushing_tds"),
+          "receptions":n(r,"receptions"),"targets":n(r,"targets"),"receivingYards":n(r,"receiving_yards"),"receivingTds":n(r,"receiving_tds")})
+    def top(field,count=5): return sorted([x for x in records if x.get(field) is not None],key=lambda x:x[field],reverse=True)[:count]
+    return {"team":team.upper(),"season":season,"scope":"full_season" if season<2026 else "season_to_date","provider":"nflverse automated coverage layer","asOf":datetime.now(UTC).isoformat(),
+      "leaders":{"passing":top("passingYards"),"rushing":top("rushingYards"),"receiving":top("receivingYards")},"players":records}
+
+
 @app.get("/api/model")
 async def model_metrics() -> dict[str, Any]:
     return _load_json(METRICS_PATH)
