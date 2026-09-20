@@ -477,31 +477,33 @@ async def player_impact(
     home: str = Query(..., min_length=2, max_length=3),
     season: int = Query(..., ge=2000, le=2100),
 ) -> dict[str, Any]:
-    """Compare pregame-safe rolling player-form features used by Field IQ."""
-    path=ROOT/"data"/"processed"/"team_player_form.parquet"
-    if not path.exists(): raise HTTPException(status_code=503,detail="Player form features are not available.")
-    import polars as pl
-    df=pl.read_parquet(path).to_pandas()
-    cols=set(df.columns)
-    team_col="team" if "team" in cols else "team_abbr" if "team_abbr" in cols else None
-    if not team_col: raise HTTPException(status_code=503,detail="Player form team identity is unavailable.")
-    if "season" in cols: df=df[df["season"].astype(int)==season]
-    if "week" in cols: df=df.sort_values("week")
-    def latest(team):
-        x=df[df[team_col].astype(str)==team.upper()]
-        return None if x.empty else x.iloc[-1]
-    a,h=latest(away),latest(home)
-    if a is None or h is None: raise HTTPException(status_code=404,detail="Player form not found for one or both teams.")
-    groups={"Quarterback":{"metric":"qb_pass_yards_5","label":"5-game QB pass yards"},
-      "Rushing":{"metric":"rush_yards_5","label":"5-game rushing yards"},
-      "Receiving":{"metric":"receiving_yards_5","label":"5-game receiving yards"}}
+    """Compare player production without requiring parquet libraries in production."""
+    payload=_load_json(PLAYER_STATS_PATH)
+    season_data=payload.get("seasons",{}).get(str(season),{})
+    teams=season_data.get("teams",{})
+    away_data=teams.get(away.upper())
+    home_data=teams.get(home.upper())
+    if away_data is None or home_data is None:
+        raise HTTPException(status_code=404,detail="Player statistics not found for one or both teams.")
+
+    groups={
+      "Quarterback":("passing","passing_yards","season passing yards"),
+      "Rushing":("rushing","rushing_yards","season rushing yards"),
+      "Receiving":("receiving","receiving_yards","season receiving yards"),
+      "Defense":("defense","def_tackles_solo","season solo tackles"),
+      "Kicking":("kicking","fg_made","field goals made"),
+    }
     comparisons=[]
-    for name,g in groups.items():
-        m=g["metric"]; av=float(a[m]) if m in cols and pd.notna(a[m]) else None; hv=float(h[m]) if m in cols and pd.notna(h[m]) else None
-        edge=None if av is None or hv is None or abs(av-hv)<1e-9 else (away.upper() if av>hv else home.upper())
-        comparisons.append({"category":name,"metric":g["label"],"awayValue":av,"homeValue":hv,"edge":edge})
-    return {"season":season,"away":away.upper(),"home":home.upper(),"method":"pregame rolling player form","comparisons":comparisons,
-      "notice":"Uses prior-game rolling player features only; no same-game or future player statistics."}
+    for category,(leader_key,field,label) in groups.items():
+        away_rows=away_data.get("leaders",{}).get(leader_key,[])
+        home_rows=home_data.get("leaders",{}).get(leader_key,[])
+        av=away_rows[0].get(field) if away_rows else None
+        hv=home_rows[0].get(field) if home_rows else None
+        edge=None if av is None or hv is None or av==hv else (away.upper() if av>hv else home.upper())
+        comparisons.append({"category":category,"metric":label,"awayValue":av,"homeValue":hv,"edge":edge})
+    return {"season":season,"away":away.upper(),"home":home.upper(),"scope":season_data.get("scope"),
+      "method":"season player production comparison","comparisons":comparisons,
+      "notice":"Display comparison only. Field IQ prediction features remain leakage-safe and are trained separately."}
 
 
 @app.get("/api/model")

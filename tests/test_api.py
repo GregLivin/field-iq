@@ -77,3 +77,13 @@ def test_player_stats_endpoint_is_deploy_safe() -> None:
         assert payload["team"] == "CAR"
         assert payload["season"] == 2025
         assert set(("passing","rushing","receiving","defense","kicking")).issubset(payload["leaders"])
+
+
+def test_player_impact_is_deploy_safe() -> None:
+    response=client.get("/api/player-impact?away=CAR&home=ATL&season=2025")
+    assert response.status_code in (200,404,503)
+    if response.status_code == 200:
+        payload=response.json()
+        assert payload["away"] == "CAR"
+        assert payload["home"] == "ATL"
+        assert len(payload["comparisons"]) == 5

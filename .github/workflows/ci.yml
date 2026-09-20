@@ -21,4 +21,7 @@ jobs:
           python-version: "3.12"
       - run: pip install -r requirements-ml.txt -r api/requirements.txt
       - run: python -m pytest -q
-      - run: python -m py_compile api/main.py pipeline/features.py pipeline/player_features.py pipeline/train_models.py
+      - run: python -m py_compile api/main.py pipeline/features.py pipeline/player_features.py pipeline/train_models.py pipeline/export_player_stats.py
+      - run: |
+          test -f data/processed/player_stats.json
+          python -c "import json; p=json.load(open('data/processed/player_stats.json')); assert p.get('seasons',{}).get('2025',{}).get('teams'); print('checked committed player stats artifact')"
