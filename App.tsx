@@ -939,7 +939,7 @@ export default function App() {
               <Pressable accessibilityRole="button" onPress={() => setHistoryView("overview")} style={[styles.historyTab, historyView === "overview" && styles.historyTabActive]}><Text style={[styles.historyTabText, historyView === "overview" && styles.historyTabTextActive]}>Overview</Text></Pressable>
               <Pressable
                 accessibilityRole="button"
-                onPress={() => setHistoryView("recent")
+                onPress={() => setHistoryView("recent")}
                 style={[styles.historyTab, historyView === "recent" && styles.historyTabActive]}
               >
                 <Text style={[styles.historyTabText, historyView === "recent" && styles.historyTabTextActive]}>
