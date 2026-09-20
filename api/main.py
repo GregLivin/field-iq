@@ -171,6 +171,7 @@ async def health() -> dict[str, str]:
         "status": "ok",
         "time": datetime.now(UTC).isoformat(),
         "predictions": "ready" if PREDICTIONS_PATH.exists() else "pending",
+        "playerStats": "ready" if PLAYER_STATS_PATH.exists() else "pending",
     }
 
 

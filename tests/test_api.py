@@ -67,3 +67,13 @@ def test_matchup_history_includes_season_summaries() -> None:
 def test_matchup_intelligence_endpoint_exists() -> None:
     response=client.get("/api/matchup/not-a-real-game")
     assert response.status_code in (404,503)
+
+
+def test_player_stats_endpoint_is_deploy_safe() -> None:
+    response=client.get("/api/player-stats?team=CAR&season=2025")
+    assert response.status_code in (200,503)
+    if response.status_code == 200:
+        payload=response.json()
+        assert payload["team"] == "CAR"
+        assert payload["season"] == 2025
+        assert set(("passing","rushing","receiving","defense","kicking")).issubset(payload["leaders"])
