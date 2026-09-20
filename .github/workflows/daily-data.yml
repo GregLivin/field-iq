@@ -16,16 +16,21 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 30
-    steps:
-      - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.12"
           cache: pip
 
-      - name: Install ML dependencies
-        run: pip install -r requirements-ml.txt -r api/requirements.txt
+      - name: Install ML and API dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-ml.txt -r api/requirements.txt
 
       - name: Run tests
         run: python -m pytest -q
@@ -33,7 +38,9 @@ jobs:
       - name: Collect data, train models, and predict
         env:
           FIELDIQ_CONTACT_EMAIL: ${{ secrets.FIELDIQ_CONTACT_EMAIL }}
-        run: |\n          python -m pipeline.run_daily\n          python -m pipeline.export_2025_player_reference
+        run: |
+          python -m pipeline.run_daily
+          python -m pipeline.export_2025_player_reference
 
       - name: Upload datasets and model artifacts
         uses: actions/upload-artifact@v4
@@ -42,6 +49,8 @@ jobs:
           path: |
             data/raw/
             data/processed/
+            data/manual/2025_player_stats_reference.csv
+            data/manual/2025_player_stats_reference_audit.json
             models/
           retention-days: 30
 
@@ -49,9 +58,21 @@ jobs:
         run: |
           git config user.name "fieldiq-data-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/processed/predictions.json data/processed/model_metrics.json data/processed/schedule.json data/processed/matchup_history.json data/processed/matchups.json data/processed/*_player_source_audit.json data/manual/2025_player_stats_reference.csv data/manual/2025_player_stats_reference_audit.json data/raw/manifest.json data/raw/weather_status.json
+
+          git add \
+            data/processed/predictions.json \
+            data/processed/model_metrics.json \
+            data/processed/schedule.json \
+            data/processed/matchup_history.json \
+            data/processed/matchups.json \
+            data/processed/*_player_source_audit.json \
+            data/manual/2025_player_stats_reference.csv \
+            data/manual/2025_player_stats_reference_audit.json \
+            data/raw/manifest.json \
+            data/raw/weather_status.json
+
           if git diff --cached --quiet; then
-            echo "No prediction changes to commit"
+            echo "No data or prediction changes to commit"
           else
             git commit -m "Update daily NFL data and predictions"
             git push
