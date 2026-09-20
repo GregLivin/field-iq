@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-09-20T00:04:28.701923+00:00",
+  "asOf": "2026-09-20T00:44:26.454156+00:00",
   "provider": "nflverse",
   "fields": [
     "id",
@@ -8690,6 +8690,776 @@
     "turnovers",
     "defensiveSacks"
   ],
+  "seasonSummaries": {
+    "ARI": {
+      "current": {
+        "season": 2026,
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 1.0,
+        "pointsFor": 26,
+        "pointsAgainst": 14,
+        "pointDifferential": 12
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 3,
+        "losses": 14,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.176,
+        "pointsFor": 355,
+        "pointsAgainst": 488,
+        "pointDifferential": -133
+      }
+    },
+    "ATL": {
+      "current": {
+        "season": 2026,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 0.0,
+        "pointsFor": 13,
+        "pointsAgainst": 20,
+        "pointDifferential": -7
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 8,
+        "losses": 9,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.471,
+        "pointsFor": 353,
+        "pointsAgainst": 401,
+        "pointDifferential": -48
+      }
+    },
+    "BAL": {
+      "current": {
+        "season": 2026,
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 1.0,
+        "pointsFor": 41,
+        "pointsAgainst": 23,
+        "pointDifferential": 18
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 8,
+        "losses": 9,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.471,
+        "pointsFor": 424,
+        "pointsAgainst": 398,
+        "pointDifferential": 26
+      }
+    },
+    "BUF": {
+      "current": {
+        "season": 2026,
+        "wins": 2,
+        "losses": 0,
+        "ties": 0,
+        "gamesPlayed": 2,
+        "winPct": 1.0,
+        "pointsFor": 77,
+        "pointsAgainst": 62,
+        "pointDifferential": 15
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 12,
+        "losses": 5,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.706,
+        "pointsFor": 481,
+        "pointsAgainst": 365,
+        "pointDifferential": 116
+      }
+    },
+    "CAR": {
+      "current": {
+        "season": 2026,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 0.0,
+        "pointsFor": 37,
+        "pointsAgainst": 59,
+        "pointDifferential": -22
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 8,
+        "losses": 9,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.471,
+        "pointsFor": 311,
+        "pointsAgainst": 380,
+        "pointDifferential": -69
+      }
+    },
+    "CHI": {
+      "current": {
+        "season": 2026,
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 1.0,
+        "pointsFor": 59,
+        "pointsAgainst": 37,
+        "pointDifferential": 22
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 11,
+        "losses": 6,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.647,
+        "pointsFor": 441,
+        "pointsAgainst": 415,
+        "pointDifferential": 26
+      }
+    },
+    "CIN": {
+      "current": {
+        "season": 2026,
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 1.0,
+        "pointsFor": 33,
+        "pointsAgainst": 27,
+        "pointDifferential": 6
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 6,
+        "losses": 11,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.353,
+        "pointsFor": 414,
+        "pointsAgainst": 492,
+        "pointDifferential": -78
+      }
+    },
+    "CLE": {
+      "current": {
+        "season": 2026,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 0.0,
+        "pointsFor": 10,
+        "pointsAgainst": 34,
+        "pointDifferential": -24
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 5,
+        "losses": 12,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.294,
+        "pointsFor": 279,
+        "pointsAgainst": 379,
+        "pointDifferential": -100
+      }
+    },
+    "DAL": {
+      "current": {
+        "season": 2026,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 0.0,
+        "pointsFor": 20,
+        "pointsAgainst": 28,
+        "pointDifferential": -8
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 7,
+        "losses": 9,
+        "ties": 1,
+        "gamesPlayed": 17,
+        "winPct": 0.441,
+        "pointsFor": 471,
+        "pointsAgainst": 511,
+        "pointDifferential": -40
+      }
+    },
+    "DEN": {
+      "current": {
+        "season": 2026,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 0.0,
+        "pointsFor": 10,
+        "pointsAgainst": 31,
+        "pointDifferential": -21
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 14,
+        "losses": 3,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.824,
+        "pointsFor": 401,
+        "pointsAgainst": 311,
+        "pointDifferential": 90
+      }
+    },
+    "DET": {
+      "current": {
+        "season": 2026,
+        "wins": 1,
+        "losses": 1,
+        "ties": 0,
+        "gamesPlayed": 2,
+        "winPct": 0.5,
+        "pointsFor": 62,
+        "pointsAgainst": 71,
+        "pointDifferential": -9
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 9,
+        "losses": 8,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.529,
+        "pointsFor": 481,
+        "pointsAgainst": 413,
+        "pointDifferential": 68
+      }
+    },
+    "GB": {
+      "current": {
+        "season": 2026,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 0.0,
+        "pointsFor": 22,
+        "pointsAgainst": 39,
+        "pointDifferential": -17
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 9,
+        "losses": 7,
+        "ties": 1,
+        "gamesPlayed": 17,
+        "winPct": 0.559,
+        "pointsFor": 391,
+        "pointsAgainst": 360,
+        "pointDifferential": 31
+      }
+    },
+    "HOU": {
+      "current": {
+        "season": 2026,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 0.0,
+        "pointsFor": 31,
+        "pointsAgainst": 36,
+        "pointDifferential": -5
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 12,
+        "losses": 5,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.706,
+        "pointsFor": 404,
+        "pointsAgainst": 295,
+        "pointDifferential": 109
+      }
+    },
+    "IND": {
+      "current": {
+        "season": 2026,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 0.0,
+        "pointsFor": 23,
+        "pointsAgainst": 41,
+        "pointDifferential": -18
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 8,
+        "losses": 9,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.471,
+        "pointsFor": 466,
+        "pointsAgainst": 412,
+        "pointDifferential": 54
+      }
+    },
+    "JAX": {
+      "current": {
+        "season": 2026,
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 1.0,
+        "pointsFor": 34,
+        "pointsAgainst": 10,
+        "pointDifferential": 24
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 13,
+        "losses": 4,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.765,
+        "pointsFor": 474,
+        "pointsAgainst": 336,
+        "pointDifferential": 138
+      }
+    },
+    "KC": {
+      "current": {
+        "season": 2026,
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 1.0,
+        "pointsFor": 31,
+        "pointsAgainst": 10,
+        "pointDifferential": 21
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 6,
+        "losses": 11,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.353,
+        "pointsFor": 362,
+        "pointsAgainst": 328,
+        "pointDifferential": 34
+      }
+    },
+    "LA": {
+      "current": {
+        "season": 2026,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 0.0,
+        "pointsFor": 7,
+        "pointsAgainst": 27,
+        "pointDifferential": -20
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 12,
+        "losses": 5,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.706,
+        "pointsFor": 518,
+        "pointsAgainst": 346,
+        "pointDifferential": 172
+      }
+    },
+    "LAC": {
+      "current": {
+        "season": 2026,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 0.0,
+        "pointsFor": 14,
+        "pointsAgainst": 26,
+        "pointDifferential": -12
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 11,
+        "losses": 6,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.647,
+        "pointsFor": 368,
+        "pointsAgainst": 340,
+        "pointDifferential": 28
+      }
+    },
+    "LV": {
+      "current": {
+        "season": 2026,
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 1.0,
+        "pointsFor": 27,
+        "pointsAgainst": 13,
+        "pointDifferential": 14
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 3,
+        "losses": 14,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.176,
+        "pointsFor": 241,
+        "pointsAgainst": 432,
+        "pointDifferential": -191
+      }
+    },
+    "MIA": {
+      "current": {
+        "season": 2026,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 0.0,
+        "pointsFor": 13,
+        "pointsAgainst": 27,
+        "pointDifferential": -14
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 7,
+        "losses": 10,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.412,
+        "pointsFor": 347,
+        "pointsAgainst": 424,
+        "pointDifferential": -77
+      }
+    },
+    "MIN": {
+      "current": {
+        "season": 2026,
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 1.0,
+        "pointsFor": 39,
+        "pointsAgainst": 22,
+        "pointDifferential": 17
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 9,
+        "losses": 8,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.529,
+        "pointsFor": 344,
+        "pointsAgainst": 333,
+        "pointDifferential": 11
+      }
+    },
+    "NE": {
+      "current": {
+        "season": 2026,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 0.0,
+        "pointsFor": 10,
+        "pointsAgainst": 13,
+        "pointDifferential": -3
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 14,
+        "losses": 3,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.824,
+        "pointsFor": 490,
+        "pointsAgainst": 320,
+        "pointDifferential": 170
+      }
+    },
+    "NO": {
+      "current": {
+        "season": 2026,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 0.0,
+        "pointsFor": 30,
+        "pointsAgainst": 31,
+        "pointDifferential": -1
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 6,
+        "losses": 11,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.353,
+        "pointsFor": 306,
+        "pointsAgainst": 383,
+        "pointDifferential": -77
+      }
+    },
+    "NYG": {
+      "current": {
+        "season": 2026,
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 1.0,
+        "pointsFor": 28,
+        "pointsAgainst": 20,
+        "pointDifferential": 8
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 4,
+        "losses": 13,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.235,
+        "pointsFor": 381,
+        "pointsAgainst": 439,
+        "pointDifferential": -58
+      }
+    },
+    "NYJ": {
+      "current": {
+        "season": 2026,
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 1.0,
+        "pointsFor": 23,
+        "pointsAgainst": 10,
+        "pointDifferential": 13
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 3,
+        "losses": 14,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.176,
+        "pointsFor": 300,
+        "pointsAgainst": 503,
+        "pointDifferential": -203
+      }
+    },
+    "PHI": {
+      "current": {
+        "season": 2026,
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 1.0,
+        "pointsFor": 24,
+        "pointsAgainst": 22,
+        "pointDifferential": 2
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 11,
+        "losses": 6,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.647,
+        "pointsFor": 379,
+        "pointsAgainst": 325,
+        "pointDifferential": 54
+      }
+    },
+    "PIT": {
+      "current": {
+        "season": 2026,
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 1.0,
+        "pointsFor": 20,
+        "pointsAgainst": 13,
+        "pointDifferential": 7
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 10,
+        "losses": 7,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.588,
+        "pointsFor": 397,
+        "pointsAgainst": 387,
+        "pointDifferential": 10
+      }
+    },
+    "SEA": {
+      "current": {
+        "season": 2026,
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 1.0,
+        "pointsFor": 13,
+        "pointsAgainst": 10,
+        "pointDifferential": 3
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 14,
+        "losses": 3,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.824,
+        "pointsFor": 483,
+        "pointsAgainst": 292,
+        "pointDifferential": 191
+      }
+    },
+    "SF": {
+      "current": {
+        "season": 2026,
+        "wins": 1,
+        "losses": 0,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 1.0,
+        "pointsFor": 27,
+        "pointsAgainst": 7,
+        "pointDifferential": 20
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 12,
+        "losses": 5,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.706,
+        "pointsFor": 437,
+        "pointsAgainst": 371,
+        "pointDifferential": 66
+      }
+    },
+    "TB": {
+      "current": {
+        "season": 2026,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 0.0,
+        "pointsFor": 27,
+        "pointsAgainst": 33,
+        "pointDifferential": -6
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 8,
+        "losses": 9,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.471,
+        "pointsFor": 380,
+        "pointsAgainst": 411,
+        "pointDifferential": -31
+      }
+    },
+    "TEN": {
+      "current": {
+        "season": 2026,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 0.0,
+        "pointsFor": 10,
+        "pointsAgainst": 23,
+        "pointDifferential": -13
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 3,
+        "losses": 14,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.176,
+        "pointsFor": 284,
+        "pointsAgainst": 478,
+        "pointDifferential": -194
+      }
+    },
+    "WAS": {
+      "current": {
+        "season": 2026,
+        "wins": 0,
+        "losses": 1,
+        "ties": 0,
+        "gamesPlayed": 1,
+        "winPct": 0.0,
+        "pointsFor": 22,
+        "pointsAgainst": 24,
+        "pointDifferential": -2
+      },
+      "previous": {
+        "season": 2025,
+        "wins": 5,
+        "losses": 12,
+        "ties": 0,
+        "gamesPlayed": 17,
+        "winPct": 0.294,
+        "pointsFor": 356,
+        "pointsAgainst": 451,
+        "pointDifferential": -95
+      }
+    }
+  },
   "recentForm": {
     "DET": [
       [

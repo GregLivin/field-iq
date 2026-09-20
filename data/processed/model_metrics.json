@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T00:04:28.701923+00:00",
+  "generatedAt": "2026-09-20T00:44:26.454156+00:00",
   "trainingGames": 1581,
   "validationGames": 396,
   "validationMethod": "chronological-20-percent",
@@ -8,6 +8,8 @@
     "rest_diff",
     "win_rate_5_diff",
     "point_margin_5_diff",
+    "prior_season_win_pct_diff",
+    "prior_season_point_diff_pg_diff",
     "total_epa_5_diff",
     "yards_5_diff",
     "turnovers_5_diff",
@@ -35,19 +37,19 @@
   ],
   "models": {
     "logistic": {
-      "accuracy": 0.649,
-      "logLoss": 0.6213,
-      "brierScore": 0.2167
+      "accuracy": 0.6364,
+      "logLoss": 0.6232,
+      "brierScore": 0.2175
     },
     "random_forest": {
-      "accuracy": 0.6566,
-      "logLoss": 0.6246,
-      "brierScore": 0.2179
+      "accuracy": 0.6389,
+      "logLoss": 0.6302,
+      "brierScore": 0.2205
     },
     "gradient_boosting": {
-      "accuracy": 0.6414,
-      "logLoss": 0.6385,
-      "brierScore": 0.2238
+      "accuracy": 0.6364,
+      "logLoss": 0.6443,
+      "brierScore": 0.225
     }
   },
   "manualData": {
@@ -59,48 +61,48 @@
   "scoreModels": {
     "homeScore": {
       "random_forest": {
-        "mae": 7.843,
-        "rmse": 9.676
+        "mae": 7.9,
+        "rmse": 9.701
       },
       "gradient_boosting": {
-        "mae": 7.949,
-        "rmse": 9.854
+        "mae": 8.003,
+        "rmse": 9.809
       }
     },
     "awayScore": {
       "random_forest": {
-        "mae": 7.767,
-        "rmse": 9.748
+        "mae": 7.818,
+        "rmse": 9.79
       },
       "gradient_boosting": {
-        "mae": 7.964,
-        "rmse": 9.999
+        "mae": 7.89,
+        "rmse": 9.972
       }
     },
     "homeMargin": {
       "random_forest": {
-        "mae": 10.226,
-        "rmse": 13.037
+        "mae": 10.358,
+        "rmse": 13.088
       },
       "gradient_boosting": {
-        "mae": 10.657,
-        "rmse": 13.352
+        "mae": 10.747,
+        "rmse": 13.488
       }
     },
     "gameTotal": {
       "random_forest": {
-        "mae": 11.309,
-        "rmse": 14.344
+        "mae": 11.358,
+        "rmse": 14.359
       },
       "gradient_boosting": {
-        "mae": 11.444,
-        "rmse": 14.393
+        "mae": 11.706,
+        "rmse": 14.654
       }
     }
   },
   "marketCalibration": {
-    "marginResidualSd": 13.11,
-    "totalResidualSd": 14.295,
+    "marginResidualSd": 13.201,
+    "totalResidualSd": 14.436,
     "method": "validation residual normal approximation"
   }
 }
