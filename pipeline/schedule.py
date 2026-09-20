@@ -178,10 +178,7 @@ def build_schedule_payloads(
     generated_at = generated_at or datetime.now(UTC).isoformat()
 
     current = frame[frame["season"] == season]
-    current_matchups = {
-        matchup_key(str(row["away_team"]), str(row["home_team"]))
-        for _, row in current.iterrows()
-    }
+    # Build history for every NFL pairing present in the dataset, not only pairings\n    # on the current schedule. This lets every matchup query resolve its latest meetings.\n    all_matchups = {\n        matchup_key(str(row["away_team"]), str(row["home_team"]))\n        for _, row in frame.iterrows()\n    }
     completed = frame[
         frame["away_score"].notna()
         & frame["home_score"].notna()
@@ -198,7 +195,7 @@ def build_schedule_payloads(
     histories: dict[str, list[dict[str, Any]]] = {}
     for _, row in completed.sort_values("gameday", ascending=False).iterrows():
         key = matchup_key(str(row["away_team"]), str(row["home_team"]))
-        if key in current_matchups and len(histories.get(key, [])) < 5:
+        if key in all_matchups and len(histories.get(key, [])) < 5:
             histories.setdefault(key, []).append(_meeting(row))
 
     recent_form: dict[str, list[dict[str, Any]]] = {}
@@ -250,8 +247,7 @@ def build_schedule_payloads(
     }
     history_payload = {
         "asOf": generated_at,
-        "provider": "nflverse",
-        "fields": ["id", "date", "season", "week", "gameType", "away", "awayScore", "home", "homeScore", "winner"],
+        "provider": "nflverse automated coverage; NFL.com official matchup reference",\n        "officialReference": "https://www.nfl.com/schedules",\n        "fields": ["id", "date", "season", "week", "gameType", "away", "awayScore", "home", "homeScore", "winner"],
         "matchups": {
             key: [_compact_meeting(meeting) for meeting in meetings]
             for key, meetings in histories.items()
