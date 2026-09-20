@@ -178,7 +178,9 @@ def build_schedule_payloads(
     generated_at = generated_at or datetime.now(UTC).isoformat()
 
     current = frame[frame["season"] == season]
-    # Build history for every NFL pairing present in the dataset, not only pairings\n    # on the current schedule. This lets every matchup query resolve its latest meetings.\n    all_matchups = {\n        matchup_key(str(row["away_team"]), str(row["home_team"]))\n        for _, row in frame.iterrows()\n    }
+    # Build history for every NFL pairing present in the dataset, not only pairings\n    # on the current schedule. This lets every matchup query resolve its latest meetings.\n    all_matchups = {
+        matchup_key(str(row["away_team"]), str(row["home_team"]))
+        for _, row in frame.iterrows()\n    }
     completed = frame[
         frame["away_score"].notna()
         & frame["home_score"].notna()
