@@ -16,7 +16,7 @@ MANIFEST_PATH = ROOT / "data" / "raw" / "manifest.json"
 WEATHER_STATUS_PATH = ROOT / "data" / "raw" / "weather_status.json"
 SCHEDULE_PATH = ROOT / "data" / "processed" / "schedule.json"
 MATCHUP_HISTORY_PATH = ROOT / "data" / "processed" / "matchup_history.json"
-MATCHUPS_PATH = ROOT / "data" / "processed" / "matchups.json"
+MATCHUPS_PATH = ROOT / "data" / "processed" / "matchups.json"\nPLAYER_STATS_PATH = ROOT / "data" / "processed" / "player_stats.json"
 MANUAL_GAMES_PATH = Path(os.getenv("FIELDIQ_MANUAL_GAMES_PATH", str(ROOT / "data" / "manual" / "games.jsonl")))
 
 app = FastAPI(title="Field IQ NFL API", version="0.3.0")
@@ -445,28 +445,28 @@ async def player_stats(
     team: str = Query(..., min_length=2, max_length=3),
     season: int = Query(..., ge=2000, le=2100),
 ) -> dict[str, Any]:
-    """Return season player leaders for a team from the automated player layer."""
-    path = ROOT / "data" / "raw" / "player_season.parquet"
-    if not path.exists():
-        raise HTTPException(status_code=503, detail="Player season data is not available.")
-    import polars as pl
-    frame=pl.read_parquet(path).to_pandas()
-    frame=frame[(frame["season"].astype(int)==season)&(frame["team"].astype(str)==team.upper())].copy()
-    def n(row,*names):
-        for name in names:
-            if name in row and pd.notna(row[name]): return float(row[name])
-        return None
-    def player(row):
-        return str(row.get("player_display_name") or row.get("player_name") or row.get("player") or row.get("player_id") or "Unknown")
-    records=[]
-    for _,r in frame.iterrows():
-        records.append({"playerId":str(r.get("player_id") or ""),"playerName":player(r),"position":str(r.get("position") or ""),
-          "passingYards":n(r,"passing_yards"),"passingTds":n(r,"passing_tds"),"interceptions":n(r,"interceptions","passing_interceptions"),
-          "completions":n(r,"completions"),"attempts":n(r,"attempts"),"rushingYards":n(r,"rushing_yards"),"rushingTds":n(r,"rushing_tds"),
-          "receptions":n(r,"receptions"),"targets":n(r,"targets"),"receivingYards":n(r,"receiving_yards"),"receivingTds":n(r,"receiving_tds")})
-    def top(field,count=5): return sorted([x for x in records if x.get(field) is not None],key=lambda x:x[field],reverse=True)[:count]
-    return {"team":team.upper(),"season":season,"scope":"full_season" if season<2026 else "season_to_date","provider":"nflverse automated coverage layer","asOf":datetime.now(UTC).isoformat(),
-      "leaders":{"passing":top("passingYards"),"rushing":top("rushingYards"),"receiving":top("receivingYards")},"players":records}
+    """Return deploy-safe player season statistics from the generated JSON artifact."""
+    payload=_load_json(PLAYER_STATS_PATH)
+    season_data=payload.get("seasons",{}).get(str(season),{})
+    team_data=season_data.get("teams",{}).get(team.upper())
+    if team_data is None:
+        raise HTTPException(status_code=404,detail="Player statistics not found for this team and season.")
+    rename={
+      "passing_yards":"passingYards","passing_tds":"passingTds","passing_interceptions":"interceptions",
+      "rushing_yards":"rushingYards","rushing_tds":"rushingTds","receiving_yards":"receivingYards",
+      "receiving_tds":"receivingTds","def_tackles_solo":"defTacklesSolo","def_tackle_assists":"defTackleAssists",
+      "def_sacks":"defSacks","def_qb_hits":"defQbHits","def_interceptions":"defInterceptions",
+      "def_pass_defended":"defPassDefended","def_fumbles_forced":"defFumblesForced","fg_made":"fgMade",
+      "fg_att":"fgAtt","fg_pct":"fgPct","pat_made":"patMade","pat_att":"patAtt","pt_att":"punts",
+      "pt_yards":"puntYards","punt_returns":"puntReturns","punt_return_yards":"puntReturnYards",
+      "kickoff_returns":"kickoffReturns","kickoff_return_yards":"kickoffReturnYards"
+    }
+    def convert(row):
+        return {rename.get(k,k):v for k,v in row.items()}
+    leaders={k:[convert(x) for x in v] for k,v in team_data.get("leaders",{}).items()}
+    return {"team":team.upper(),"season":season,"scope":season_data.get("scope"),"provider":payload.get("provider"),
+      "officialReference":payload.get("officialReference"),"asOf":payload.get("asOf"),"leaders":leaders,
+      "players":[convert(x) for x in team_data.get("players",[])]}
 
 
 @app.get("/api/player-impact")
