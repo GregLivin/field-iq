@@ -33,7 +33,7 @@ jobs:
       - name: Collect data, train models, and predict
         env:
           FIELDIQ_CONTACT_EMAIL: ${{ secrets.FIELDIQ_CONTACT_EMAIL }}
-        run: python -m pipeline.run_daily
+        run: |\n          python -m pipeline.run_daily\n          python -m pipeline.export_2025_player_reference
 
       - name: Upload datasets and model artifacts
         uses: actions/upload-artifact@v4
@@ -49,7 +49,7 @@ jobs:
         run: |
           git config user.name "fieldiq-data-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/processed/predictions.json data/processed/model_metrics.json data/processed/schedule.json data/processed/matchup_history.json data/processed/matchups.json data/processed/*_player_source_audit.json data/raw/manifest.json data/raw/weather_status.json
+          git add data/processed/predictions.json data/processed/model_metrics.json data/processed/schedule.json data/processed/matchup_history.json data/processed/matchups.json data/processed/*_player_source_audit.json data/manual/2025_player_stats_reference.csv data/manual/2025_player_stats_reference_audit.json data/raw/manifest.json data/raw/weather_status.json
           if git diff --cached --quiet; then
             echo "No prediction changes to commit"
           else
