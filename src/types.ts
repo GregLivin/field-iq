@@ -60,6 +60,8 @@ export type SchedulePayload = {
   games: ScheduleGame[];
 };
 
+export type TeamSeasonSummary = { season:number; wins:number; losses:number; ties:number; gamesPlayed:number; winPct:number | null; pointsFor:number; pointsAgainst:number; pointDifferential:number; };
+
 export type MatchupPayload = {
   asOf: string;
   provider: string;
@@ -67,6 +69,7 @@ export type MatchupPayload = {
   count: number;
   meetings: MatchupMeeting[];
   recentForm: Record<string, RecentTeamGame[]>;
+  seasonSummaries: Record<string, { current?: TeamSeasonSummary; previous?: TeamSeasonSummary }>;
 };
 
 export type RecentTeamGame = {

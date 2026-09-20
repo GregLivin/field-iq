@@ -54,3 +54,11 @@ def test_matchup_history_returns_recent_meetings() -> None:
     assert payload["count"] <= 3
     assert payload["teams"] == ["BUF", "DET"]
     assert set(payload["recentForm"]) == {"BUF", "DET"}
+
+
+def test_matchup_history_includes_season_summaries() -> None:
+    response=client.get("/api/matchups?team1=CIN&team2=HOU&limit=5")
+    assert response.status_code == 200
+    payload=response.json()
+    assert "seasonSummaries" in payload
+    assert set(payload["seasonSummaries"]) == {"CIN","HOU"}

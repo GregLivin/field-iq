@@ -40,3 +40,11 @@ def test_upcoming_features_only_use_completed_games() -> None:
     assert upcoming.iloc[0]["point_margin_5_diff"] == -20
     assert upcoming.iloc[0]["win_rate_5_diff"] == -1
 
+
+
+def test_prior_season_record_features_are_pregame_only() -> None:
+    games=pd.DataFrame([{"game_id":"2025_01_A_B","season":2025,"week":1,"gameday":"2025-09-01","gametime":"12:00","away_team":"A","home_team":"B","away_score":10,"home_score":20},{"game_id":"2026_01_A_B","season":2026,"week":1,"gameday":"2026-09-01","gametime":"12:00","away_team":"A","home_team":"B","away_score":None,"home_score":None}])
+    _, upcoming, _=build_features(games,pd.DataFrame(columns=["game_id","team"]))
+    row=upcoming.iloc[0]
+    assert row["prior_season_win_pct_diff"] == 1.0
+    assert row["prior_season_point_diff_pg_diff"] == 20.0

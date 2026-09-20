@@ -26,7 +26,7 @@ import {
   saveManualGame,
   approveManualGame,
 } from "./src/services/fieldIqApi";
-import { MatchupMeeting, Prediction, RecentTeamGame, ScheduleGame } from "./src/types";
+import { MatchupMeeting, Prediction, RecentTeamGame, ScheduleGame, TeamSeasonSummary } from "./src/types";
 
 const colors = {
   background: "#06100c",
@@ -42,7 +42,7 @@ const colors = {
 
 type Tab = "picks" | "analyze" | "schedule" | "matchups" | "data";
 type ConfidenceFilter = "ALL" | Prediction["confidence"];
-type HistoryView = "recent" | "headToHead";
+type HistoryView = "overview" | "recent" | "headToHead";
 
 function formatDate(date: string, includeYear = false) {
   return new Intl.DateTimeFormat("en-US", {
@@ -364,6 +364,7 @@ export default function App() {
   const [confidenceFilter, setConfidenceFilter] = useState<ConfidenceFilter>("ALL");
   const [history, setHistory] = useState<MatchupMeeting[]>([]);
   const [recentForm, setRecentForm] = useState<Record<string, RecentTeamGame[]>>({});
+  const [seasonSummaries, setSeasonSummaries] = useState<Record<string, {current?: TeamSeasonSummary; previous?: TeamSeasonSummary}>>({});
   const [historyView, setHistoryView] = useState<HistoryView>("recent");
   const [historyLoading, setHistoryLoading] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -553,11 +554,12 @@ export default function App() {
     setSelectedGame(game);
     setHistory([]);
     setRecentForm({});
-    setHistoryView("recent");
+    setHistoryView("overview");
     setHistoryLoading(true);
     const result = await getMatchupHistory(game.awayAbbreviation, game.homeAbbreviation);
     setHistory(result?.meetings ?? []);
     setRecentForm(result?.recentForm ?? {});
+    setSeasonSummaries(result?.seasonSummaries ?? {});
     setHistoryLoading(false);
   }
 
@@ -934,9 +936,10 @@ export default function App() {
               </Pressable>
             </View>
             <View style={styles.historyTabs}>
+              <Pressable accessibilityRole="button" onPress={() => setHistoryView("overview")} style={[styles.historyTab, historyView === "overview" && styles.historyTabActive]}><Text style={[styles.historyTabText, historyView === "overview" && styles.historyTabTextActive]}>Overview</Text></Pressable>
               <Pressable
                 accessibilityRole="button"
-                onPress={() => setHistoryView("recent")}
+                onPress={() => setHistoryView("recent")
                 style={[styles.historyTab, historyView === "recent" && styles.historyTabActive]}
               >
                 <Text style={[styles.historyTabText, historyView === "recent" && styles.historyTabTextActive]}>
@@ -956,6 +959,11 @@ export default function App() {
             <ScrollView style={styles.modalList}>
               {historyLoading ? (
                 <ActivityIndicator color={colors.green} size="large" style={styles.loader} />
+              ) : historyView === "overview" ? (
+                <>
+                  {selectedGame && [selectedGame.awayAbbreviation, selectedGame.homeAbbreviation].map((team) => { const cur=seasonSummaries[team]?.current; const prev=seasonSummaries[team]?.previous; return <View key={team} style={styles.recentTeamSection}><View style={styles.recentTeamHeader}><TeamBadge abbreviation={team}/><View style={styles.recentTeamHeading}><Text style={styles.recentTeamName}>{team} TEAM HISTORY</Text><Text style={styles.recentTeamSubhead}>Current season + prior-season baseline</Text></View></View>{cur && <Text style={styles.analysisLine}>{cur.season}: {cur.wins}-{cur.losses}{cur.ties ? "-" + cur.ties : ""} • Diff {cur.pointDifferential > 0 ? "+" : ""}{cur.pointDifferential}</Text>}{prev && <Text style={styles.analysisLine}>{prev.season}: {prev.wins}-{prev.losses}{prev.ties ? "-" + prev.ties : ""} • PF {prev.pointsFor} • PA {prev.pointsAgainst} • Diff {prev.pointDifferential > 0 ? "+" : ""}{prev.pointDifferential}</Text>}</View>})}
+                  <Text style={styles.modalNote}>Prior-season history stays separate from current form and is now available to the ML model as a pregame baseline.</Text>
+                </>
               ) : historyView === "recent" ? (
                 <>
                   {selectedGame && (
@@ -979,9 +987,7 @@ export default function App() {
               )}
             </ScrollView>
             <Text style={styles.modalNote}>
-              {historyView === "recent"
-                ? "Completed games and weekly team statistics from the Field IQ dataset."
-                : "Previous regular season and playoff meetings between these teams."}
+              {historyView === "overview" ? "Season records are generated from completed games only." : historyView === "recent" ? "Completed games and weekly team statistics from the Field IQ dataset." : "Previous regular season and playoff meetings between these teams."}
             </Text>
           </Pressable>
         </Pressable>

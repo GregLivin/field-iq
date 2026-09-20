@@ -17,6 +17,7 @@ STAT_COLUMNS = [
 
 FEATURE_COLUMNS = [
     "elo_diff", "rest_diff", "win_rate_5_diff", "point_margin_5_diff",
+    "prior_season_win_pct_diff", "prior_season_point_diff_pg_diff",
     "total_epa_5_diff", "yards_5_diff", "turnovers_5_diff", "def_sacks_5_diff",
     "off_epa_per_play_5_diff", "def_epa_per_play_5_diff", "success_rate_5_diff",
     "yards_per_play_5_diff", "third_down_rate_5_diff", "red_zone_success_rate_5_diff",
@@ -47,15 +48,20 @@ def _team_game(stats, game_id, team):
     return stats.get((game_id, team), {})
 
 
-def _feature_row(game, home: TeamState, away: TeamState) -> dict[str, float]:
+def _feature_row(game, home: TeamState, away: TeamState, prior: dict[str, dict[str, float]] | None = None) -> dict[str, float]:
     temperature = _number(getattr(game, "temp", np.nan), 65.0)
     wind = _number(getattr(game, "wind", np.nan), 0.0)
     roof = str(getattr(game, "roof", "") or "").lower()
+    prior = prior or {}
+    hp = prior.get(str(game.home_team), {})
+    ap = prior.get(str(game.away_team), {})
     result = {
         "elo_diff": home.elo - away.elo,
         "rest_diff": _number(getattr(game, "home_rest", 7), 7) - _number(getattr(game, "away_rest", 7), 7),
         "win_rate_5_diff": home.average("win", .5) - away.average("win", .5),
         "point_margin_5_diff": home.average("point_margin") - away.average("point_margin"),
+        "prior_season_win_pct_diff": hp.get("win_pct", .5) - ap.get("win_pct", .5),
+        "prior_season_point_diff_pg_diff": hp.get("point_diff_pg", 0.0) - ap.get("point_diff_pg", 0.0),
         "total_epa_5_diff": home.average("total_epa") - away.average("total_epa"),
         "yards_5_diff": home.average("yards") - away.average("yards"),
         "turnovers_5_diff": home.average("turnovers") - away.average("turnovers"),
@@ -95,10 +101,21 @@ def build_features(games: pd.DataFrame, team_stats: pd.DataFrame):
     keep = [c for c in ["game_id", "team", *STAT_COLUMNS] if c in team_stats.columns]
     stats_lookup = {(str(r["game_id"]), str(r["team"])): r for r in team_stats[keep].to_dict(orient="records")}
     states = defaultdict(TeamState); training_rows=[]; upcoming_rows=[]
+    prior_by_season = {}
+    done = games[games["home_score"].notna() & games["away_score"].notna()]
+    for yr in sorted(done["season"].dropna().astype(int).unique()):
+        prev = done[done["season"].astype(int) == yr - 1]; summary = {}
+        for team in set(prev["home_team"].astype(str)) | set(prev["away_team"].astype(str)):
+            tg=prev[(prev["home_team"].astype(str)==team)|(prev["away_team"].astype(str)==team)]; wins=0.0; diff=0.0
+            for r in tg.itertuples(index=False):
+                home=str(r.home_team)==team; pf=float(r.home_score if home else r.away_score); pa=float(r.away_score if home else r.home_score)
+                wins += 1.0 if pf>pa else .5 if pf==pa else 0.0; diff += pf-pa
+            if len(tg): summary[team]={"win_pct":wins/len(tg),"point_diff_pg":diff/len(tg)}
+        prior_by_season[yr]=summary
     for game in games.itertuples(index=False):
         home_team, away_team = str(game.home_team), str(game.away_team)
         home_state, away_state = states[home_team], states[away_team]
-        features = _feature_row(game, home_state, away_state)
+        features = _feature_row(game, home_state, away_state, prior_by_season.get(int(game.season), {}))
         identity = {"game_id":str(game.game_id), "season":int(game.season), "week":int(game.week),
                     "gameday":game.gameday, "gametime":str(game.gametime), "home_team":home_team,
                     "away_team":away_team, "stadium":str(getattr(game,"stadium","") or ""),

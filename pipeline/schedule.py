@@ -149,6 +149,21 @@ def _compact_recent_game(game: dict[str, Any]) -> list[Any]:
     ]
 
 
+
+def _season_summary(frame, team, season):
+    rows=frame[(frame["season"]==season)&((frame["home_team"].astype(str)==team)|(frame["away_team"].astype(str)==team))]
+    w=l=t=pf=pa=0
+    for _,r in rows.iterrows():
+        home=str(r["home_team"])==team; a=_score(r["home_score"] if home else r["away_score"]); b=_score(r["away_score"] if home else r["home_score"])
+        if a is None or b is None: continue
+        pf+=a; pa+=b
+        if a>b: w+=1
+        elif a<b: l+=1
+        else: t+=1
+    n=w+l+t
+    return {"season":season,"wins":w,"losses":l,"ties":t,"gamesPlayed":n,"winPct":round((w+.5*t)/n,3) if n else None,"pointsFor":pf,"pointsAgainst":pa,"pointDifferential":pf-pa}
+
+
 def build_schedule_payloads(
     games: pd.DataFrame,
     season: int,
@@ -246,6 +261,7 @@ def build_schedule_payloads(
             "homeAway", "teamScore", "opponentScore", "result", "passingYards",
             "rushingYards", "totalYards", "totalEpa", "turnovers", "defensiveSacks",
         ],
+        "seasonSummaries": {team: {"current": _season_summary(completed, team, season), "previous": _season_summary(completed, team, season-1)} for team in teams},
         "recentForm": {
             team: [_compact_recent_game(game) for game in team_games]
             for team, team_games in recent_form.items()

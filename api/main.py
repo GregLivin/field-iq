@@ -236,6 +236,7 @@ async def matchup_history(
         "teams": teams,
         "meetings": meetings,
         "recentForm": recent_form,
+        "seasonSummaries": {team: payload.get("seasonSummaries", {}).get(team, {}) for team in teams},
         "count": len(meetings),
     }
 
