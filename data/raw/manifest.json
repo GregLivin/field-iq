@@ -1,7 +1,7 @@
 {
   "provider": "nflverse",
-  "license": "CC BY 4.0; verify each upstream dataset before commercial use",
-  "collectedAt": "2026-09-18T14:32:34.513508+00:00",
+  "license": "nflverse code/data licenses vary; NFL data belong to their respective owners and are governed by their terms of use",
+  "collectedAt": "2026-09-20T00:03:55.456653+00:00",
   "season": 2026,
   "trainingSeasons": [
     2019,
@@ -17,8 +17,33 @@
     "games": 2232,
     "team_weekly": 3954,
     "pbp": 345189,
-    "player_weekly": 1190,
+    "player_weekly": 131002,
+    "player_season": 15045,
+    "players": 24830,
     "rosters": 2980,
-    "injuries": 412
-  }
+    "injuries": 428
+  },
+  "playerStatsScope": {
+    "player_weekly": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "player_season": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ]
+  },
+  "officialReferenceLayer": "data/manual (user-provided NFL official exports/screenshots; retained separately)"
 }
