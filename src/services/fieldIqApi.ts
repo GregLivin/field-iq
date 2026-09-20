@@ -188,8 +188,8 @@ export async function approveManualGame(id: string, approved = true): Promise<{o
   return data;
 }
 
-export type PlayerStatRow = { playerId:string; playerName:string; position:string; passingYards:number|null; passingTds:number|null; interceptions:number|null; completions:number|null; attempts:number|null; rushingYards:number|null; rushingTds:number|null; receptions:number|null; targets:number|null; receivingYards:number|null; receivingTds:number|null; };
-export type PlayerStatsPayload = { team:string; season:number; scope:string; provider:string; asOf:string; leaders:{passing:PlayerStatRow[]; rushing:PlayerStatRow[]; receiving:PlayerStatRow[]}; players:PlayerStatRow[] };
+export type PlayerStatRow = { playerId:string; playerName:string; position:string; passingYards:number|null; passingTds:number|null; interceptions:number|null; completions:number|null; attempts:number|null; rushingYards:number|null; rushingTds:number|null; carries?:number|null; receptions:number|null; targets:number|null; receivingYards:number|null; receivingTds:number|null; defTacklesSolo?:number|null; defTackleAssists?:number|null; defSacks?:number|null; defQbHits?:number|null; defInterceptions?:number|null; defPassDefended?:number|null; defFumblesForced?:number|null; fgMade?:number|null; fgAtt?:number|null; fgPct?:number|null; patMade?:number|null; patAtt?:number|null; punts?:number|null; puntYards?:number|null; puntReturns?:number|null; puntReturnYards?:number|null; kickoffReturns?:number|null; kickoffReturnYards?:number|null; };
+export type PlayerStatsPayload = { team:string; season:number; scope:string; provider:string; asOf:string; leaders:{passing:PlayerStatRow[]; rushing:PlayerStatRow[]; receiving:PlayerStatRow[]; defense?:PlayerStatRow[]; kicking?:PlayerStatRow[]}; players:PlayerStatRow[] };
 export async function getPlayerStats(team:string, season:number):Promise<PlayerStatsPayload|null>{
   if(API_URL===undefined) return null;
   try{const r=await fetch(`${API_URL}/api/player-stats?team=${encodeURIComponent(team)}&season=${season}`); if(!r.ok) throw new Error(String(r.status)); return await r.json() as PlayerStatsPayload;}catch{return null;}
