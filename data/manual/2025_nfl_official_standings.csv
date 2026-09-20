@@ -1,0 +1,33 @@
+season,team,team_name,wins,losses,ties,win_pct,points_for,points_against,net_points,home_record,road_record,division_record,conference_record,streak,last_5,scope,source,source_url
+2025,NE,New England Patriots,14,3,0,0.824,490,320,170,6-3-0,8-0-0,5-1-0,9-3-0,3W,4-1-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,BUF,Buffalo Bills,12,5,0,0.706,481,365,116,7-2-0,5-3-0,4-2-0,9-3-0,1W,4-1-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,MIA,Miami Dolphins,7,10,0,0.412,347,424,-77,5-4-0,2-6-0,3-3-0,3-9-0,1L,2-3-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,NYJ,New York Jets,3,14,0,0.176,300,503,-203,2-7-0,1-7-0,0-6-0,2-10-0,5L,0-5-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,PIT,Pittsburgh Steelers,10,7,0,0.588,397,387,10,6-3-0,4-4-0,4-2-0,8-4-0,1W,4-1-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,BAL,Baltimore Ravens,8,9,0,0.471,424,398,26,3-6-0,5-3-0,3-3-0,5-7-0,1L,2-3-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,CIN,Cincinnati Bengals,6,11,0,0.353,414,492,-78,3-6-0,3-5-0,3-3-0,5-7-0,1L,2-3-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,CLE,Cleveland Browns,5,12,0,0.294,279,379,-100,3-6-0,2-6-0,2-4-0,4-8-0,2W,2-3-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,JAX,Jacksonville Jaguars,13,4,0,0.765,474,336,138,7-2-0,6-2-0,5-1-0,10-2-0,8W,5-0-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,HOU,Houston Texans,12,5,0,0.706,404,295,109,7-2-0,5-3-0,5-1-0,10-2-0,9W,5-0-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,IND,Indianapolis Colts,8,9,0,0.471,466,412,54,6-3-0,2-6-0,2-4-0,6-6-0,7L,0-5-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,TEN,Tennessee Titans,3,14,0,0.176,284,478,-194,1-8-0,2-6-0,0-6-0,2-10-0,2L,2-3-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,DEN,Denver Broncos,14,3,0,0.824,401,311,90,8-1-0,6-2-0,5-1-0,9-3-0,2W,4-1-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,LAC,Los Angeles Chargers,11,6,0,0.647,368,340,28,6-3-0,5-3-0,5-1-0,8-4-0,2L,3-2-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,KC,Kansas City Chiefs,6,11,0,0.353,362,328,34,5-4-0,1-7-0,1-5-0,3-9-0,6L,0-5-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,LV,Las Vegas Raiders,3,14,0,0.176,241,432,-191,2-7-0,1-7-0,1-5-0,3-9-0,1W,1-4-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,PHI,Philadelphia Eagles,11,6,0,0.647,379,325,54,5-3-0,6-3-0,3-3-0,8-4-0,1L,3-2-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,DAL,Dallas Cowboys,7,9,1,0.441,471,511,-40,4-3-1,3-6-0,4-2-0,4-7-1,1L,1-4-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,WAS,Washington Commanders,5,12,0,0.294,356,451,-95,2-6-0,3-6-0,3-3-0,3-9-0,1W,2-3-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,NYG,New York Giants,4,13,0,0.235,381,439,-58,3-5-0,1-8-0,2-4-0,2-10-0,2W,2-3-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,CHI,Chicago Bears,11,6,0,0.647,441,415,26,6-2-0,5-4-0,2-4-0,7-5-0,2L,2-3-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,GB,Green Bay Packers,9,7,1,0.559,391,360,31,5-3-0,4-4-1,4-2-0,7-4-1,4L,1-4-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,MIN,Minnesota Vikings,9,8,0,0.529,344,333,11,4-4-0,5-4-0,4-2-0,7-5-0,5W,5-0-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,DET,Detroit Lions,9,8,0,0.529,481,413,68,5-3-0,4-5-0,2-4-0,6-6-0,1W,2-3-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,CAR,Carolina Panthers,8,9,0,0.471,311,380,-69,5-3-0,3-6-0,3-3-0,6-6-0,2L,2-3-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,TB,Tampa Bay Buccaneers,8,9,0,0.471,380,411,-31,4-4-0,4-5-0,3-3-0,6-6-0,1W,1-4-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,ATL,Atlanta Falcons,8,9,0,0.471,353,401,-48,4-4-0,4-5-0,3-3-0,7-5-0,4W,4-1-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,NO,New Orleans Saints,6,11,0,0.353,306,383,-77,3-5-0,3-6-0,3-3-0,4-8-0,1L,4-1-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,SEA,Seattle Seahawks,14,3,0,0.824,483,292,191,6-2-0,8-1-0,4-2-0,9-3-0,7W,5-0-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,LAR,Los Angeles Rams,12,5,0,0.706,518,346,172,7-1-0,5-4-0,4-2-0,7-5-0,1W,3-2-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,SF,San Francisco 49ers,12,5,0,0.706,437,371,66,5-3-0,7-2-0,4-2-0,9-3-0,1L,4-1-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
+2025,ARI,Arizona Cardinals,3,14,0,0.176,355,488,-133,1-7-0,2-7-0,0-6-0,3-9-0,9L,0-5-0,full_regular_season,nfl_official,https://www.nfl.com/standings/division/2025/REG
