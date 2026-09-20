@@ -103,7 +103,8 @@ def build_features(games: pd.DataFrame, team_stats: pd.DataFrame):
     states = defaultdict(TeamState); training_rows=[]; upcoming_rows=[]
     prior_by_season = {}
     done = games[games["home_score"].notna() & games["away_score"].notna()]
-    for yr in sorted(done["season"].dropna().astype(int).unique()):
+    all_seasons = sorted(games["season"].dropna().astype(int).unique())
+    for yr in all_seasons:
         prev = done[done["season"].astype(int) == yr - 1]; summary = {}
         for team in set(prev["home_team"].astype(str)) | set(prev["away_team"].astype(str)):
             tg=prev[(prev["home_team"].astype(str)==team)|(prev["away_team"].astype(str)==team)]; wins=0.0; diff=0.0
