@@ -247,7 +247,9 @@ def build_schedule_payloads(
     }
     history_payload = {
         "asOf": generated_at,
-        "provider": "nflverse automated coverage; NFL.com official matchup reference",\n        "officialReference": "https://www.nfl.com/schedules",\n        "fields": ["id", "date", "season", "week", "gameType", "away", "awayScore", "home", "homeScore", "winner"],
+        "provider": "nflverse automated coverage; NFL.com official matchup reference",
+        "officialReference": "https://www.nfl.com/schedules",
+        "fields": ["id", "date", "season", "week", "gameType", "away", "awayScore", "home", "homeScore", "winner"],
         "matchups": {
             key: [_compact_meeting(meeting) for meeting in meetings]
             for key, meetings in histories.items()
