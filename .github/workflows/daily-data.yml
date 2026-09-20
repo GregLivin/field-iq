@@ -41,6 +41,7 @@ jobs:
         run: |
           python -m pipeline.run_daily
           python -m pipeline.export_2025_player_reference
+          python -m pipeline.export_player_stats
 
       - name: Upload datasets and model artifacts
         uses: actions/upload-artifact@v4
@@ -65,6 +66,7 @@ jobs:
             data/processed/schedule.json \
             data/processed/matchup_history.json \
             data/processed/matchups.json \
+            data/processed/player_stats.json \
             data/processed/*_player_source_audit.json \
             data/manual/2025_player_stats_reference.csv \
             data/manual/2025_player_stats_reference_audit.json \
