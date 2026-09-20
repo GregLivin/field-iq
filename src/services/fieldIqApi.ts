@@ -194,3 +194,6 @@ export async function getPlayerStats(team:string, season:number):Promise<PlayerS
   if(API_URL===undefined) return null;
   try{const r=await fetch(`${API_URL}/api/player-stats?team=${encodeURIComponent(team)}&season=${season}`); if(!r.ok) throw new Error(String(r.status)); return await r.json() as PlayerStatsPayload;}catch{return null;}
 }
+
+export type PlayerImpactPayload={season:number;away:string;home:string;method:string;comparisons:Array<{category:string;metric:string;awayValue:number|null;homeValue:number|null;edge:string|null}>;notice:string};
+export async function getPlayerImpact(away:string,home:string,season:number):Promise<PlayerImpactPayload|null>{if(API_URL===undefined)return null;try{const q=new URLSearchParams({away,home,season:String(season)});const r=await fetch(`${API_URL}/api/player-impact?${q}`);if(!r.ok)throw new Error(String(r.status));return await r.json() as PlayerImpactPayload;}catch{return null;}}

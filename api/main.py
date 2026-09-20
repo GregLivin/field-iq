@@ -469,6 +469,39 @@ async def player_stats(
       "leaders":{"passing":top("passingYards"),"rushing":top("rushingYards"),"receiving":top("receivingYards")},"players":records}
 
 
+@app.get("/api/player-impact")
+async def player_impact(
+    away: str = Query(..., min_length=2, max_length=3),
+    home: str = Query(..., min_length=2, max_length=3),
+    season: int = Query(..., ge=2000, le=2100),
+) -> dict[str, Any]:
+    """Compare pregame-safe rolling player-form features used by Field IQ."""
+    path=ROOT/"data"/"processed"/"team_player_form.parquet"
+    if not path.exists(): raise HTTPException(status_code=503,detail="Player form features are not available.")
+    import polars as pl
+    df=pl.read_parquet(path).to_pandas()
+    cols=set(df.columns)
+    team_col="team" if "team" in cols else "team_abbr" if "team_abbr" in cols else None
+    if not team_col: raise HTTPException(status_code=503,detail="Player form team identity is unavailable.")
+    if "season" in cols: df=df[df["season"].astype(int)==season]
+    if "week" in cols: df=df.sort_values("week")
+    def latest(team):
+        x=df[df[team_col].astype(str)==team.upper()]
+        return None if x.empty else x.iloc[-1]
+    a,h=latest(away),latest(home)
+    if a is None or h is None: raise HTTPException(status_code=404,detail="Player form not found for one or both teams.")
+    groups={"Quarterback":{"metric":"qb_pass_yards_5","label":"5-game QB pass yards"},
+      "Rushing":{"metric":"rush_yards_5","label":"5-game rushing yards"},
+      "Receiving":{"metric":"receiving_yards_5","label":"5-game receiving yards"}}
+    comparisons=[]
+    for name,g in groups.items():
+        m=g["metric"]; av=float(a[m]) if m in cols and pd.notna(a[m]) else None; hv=float(h[m]) if m in cols and pd.notna(h[m]) else None
+        edge=None if av is None or hv is None or abs(av-hv)<1e-9 else (away.upper() if av>hv else home.upper())
+        comparisons.append({"category":name,"metric":g["label"],"awayValue":av,"homeValue":hv,"edge":edge})
+    return {"season":season,"away":away.upper(),"home":home.upper(),"method":"pregame rolling player form","comparisons":comparisons,
+      "notice":"Uses prior-game rolling player features only; no same-game or future player statistics."}
+
+
 @app.get("/api/model")
 async def model_metrics() -> dict[str, Any]:
     return _load_json(METRICS_PATH)
