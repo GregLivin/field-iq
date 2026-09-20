@@ -68,6 +68,12 @@ def _normal_cdf(value: float, mean: float, sd: float) -> float:
     return .5 * (1 + erf((value-mean)/(sd*sqrt(2))))
 
 
+def _reconcile_home_probability(classifier_prob: float, projected_margin: float, margin_sd: float) -> tuple[float, float]:
+    score_prob = 1.0 - _normal_cdf(0.0, projected_margin, margin_sd)
+    blended = 0.65 * float(classifier_prob) + 0.35 * float(score_prob)
+    return float(np.clip(blended, .08, .92)), float(score_prob)
+
+
 def _market_probabilities(projected_margin: float, projected_total: float, home_spread: float | None, market_total: float | None, margin_sd: float, total_sd: float):
     result={}
     if home_spread is not None:
@@ -171,12 +177,12 @@ def train_and_predict()->dict[str,Any]:
         probs=np.column_stack([m.predict_proba(next_games[model_features])[:,1] for m in fitted.values()]).mean(axis=1)
         score_preds={target:np.column_stack([m.predict(next_games[model_features]) for m in models.values()]).mean(axis=1) for target,models in score_models.items()}
         for offset,(_,row) in enumerate(next_games.iterrows()):
-            hp=float(np.clip(probs[offset]+(penalties.get(row["away_team"],0)-penalties.get(row["home_team"],0))/100,.08,.92)); hn=team_name(row["home_team"]); an=team_name(row["away_team"])
+            raw_hp=float(np.clip(probs[offset]+(penalties.get(row["away_team"],0)-penalties.get(row["home_team"],0))/100,.08,.92)); hn=team_name(row["home_team"]); an=team_name(row["away_team"])
             projected_home=max(0,round(float(score_preds["home_score"][offset]),1)); projected_away=max(0,round(float(score_preds["away_score"][offset]),1))
-            projected_margin=round(float(score_preds["home_margin"][offset]),1); projected_total=round(float(score_preds["game_total"][offset]),1)
-            predictions.append({"id":row["game_id"],"awayTeam":an,"awayAbbreviation":row["away_team"],"homeTeam":hn,"homeAbbreviation":row["home_team"],"kickoff":f"{row['gameday'].date().isoformat()} {row['gametime']}","predictedWinner":hn if hp>=.5 else an,"homeWinProbability":round(hp*100),"awayWinProbability":round((1-hp)*100),"projectedHomeScore":projected_home,"projectedAwayScore":projected_away,"projectedMargin":projected_margin,"projectedTotal":projected_total,"confidence":_confidence(hp),"factors":_top_factors(row)})
+            projected_margin=round(float(score_preds["home_margin"][offset]),1); projected_total=round(float(score_preds["game_total"][offset]),1)\n            hp, score_hp = _reconcile_home_probability(raw_hp, projected_margin, margin_sd)
+            predictions.append({"id":row["game_id"],"awayTeam":an,"awayAbbreviation":row["away_team"],"homeTeam":hn,"homeAbbreviation":row["home_team"],"kickoff":f"{row['gameday'].date().isoformat()} {row['gametime']}","predictedWinner":hn if hp>=.5 else an,"homeWinProbability":round(hp*100),"awayWinProbability":round((1-hp)*100),"classifierHomeProbability":round(raw_hp*100),"scoreModelHomeProbability":round(score_hp*100),"projectedHomeScore":projected_home,"projectedAwayScore":projected_away,"projectedMargin":projected_margin,"projectedTotal":projected_total,"confidence":_confidence(hp),"factors":_top_factors(row)})
     season=int(next_games.iloc[0]["season"]) if not next_games.empty else latest; week=int(next_games.iloc[0]["week"]) if not next_games.empty else int(training.iloc[-1]["week"]); now=datetime.now(UTC).isoformat()
-    payload={"season":season,"week":week,"asOf":now,"provider":"nflverse + NOAA/NWS","model":"fieldiq-ensemble-v3-score-margin","predictions":predictions}; (PROCESSED_DIR/"predictions.json").write_text(json.dumps(payload,indent=2)+"\n")
+    payload={"season":season,"week":week,"asOf":now,"provider":"nflverse + NOAA/NWS","model":"fieldiq-ensemble-v4-reconciled","predictions":predictions}; (PROCESSED_DIR/"predictions.json").write_text(json.dumps(payload,indent=2)+"\n")
     mp={"generatedAt":now,"trainingGames":int(len(Xtr)),"validationGames":int(len(Xte)),"validationMethod":validation,"features":model_features,"models":metrics,"manualData":manual_summary,"scoreModels":score_metrics,"marketCalibration":{"marginResidualSd":round(margin_sd,3),"totalResidualSd":round(total_sd,3),"method":"validation residual normal approximation"}}; (PROCESSED_DIR/"model_metrics.json").write_text(json.dumps(mp,indent=2)+"\n")
     write_schedule_payloads(games,season,PROCESSED_DIR,now,team_stats); training.to_parquet(PROCESSED_DIR/"game_features.parquet",index=False); return {"predictionCount":len(predictions),**mp}
 
