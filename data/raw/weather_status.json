@@ -1,6 +1,6 @@
 {
   "provider": "NOAA/National Weather Service",
-  "collectedAt": "2026-09-20T14:16:37.493307+00:00",
+  "collectedAt": "2026-09-21T16:30:25.915057+00:00",
   "stadiumsCollected": 22,
   "forecastRows": 3588,
   "errors": []
