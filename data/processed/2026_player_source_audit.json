@@ -16,8 +16,8 @@
     },
     "players": {
       "path": "data/raw/players.parquet",
-      "rows": 24830,
-      "seasonRows": 24830
+      "rows": 24833,
+      "seasonRows": 24833
     }
   },
   "officialReferenceFiles": [],
