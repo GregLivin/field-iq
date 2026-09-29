@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "asOf": "2026-09-28T18:12:17.004177+00:00",
+  "asOf": "2026-09-29T16:33:45.150849+00:00",
   "provider": "nflverse",
   "games": {
     "2026_01_NE_SEA": {
@@ -1725,14 +1725,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 0.5,
-            "pointsFor": 62,
-            "pointsAgainst": 46,
-            "pointDifferential": 16
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 89,
+            "pointsAgainst": 53,
+            "pointDifferential": 36
           },
           "previous": {
             "season": 2025,
@@ -1773,6 +1773,25 @@
       },
       "recentForm": {
         "CHI": [
+          {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 7,
+            "result": "W",
+            "passingYards": 247.0,
+            "rushingYards": 128.0,
+            "totalYards": 375.0,
+            "totalEpa": 1.87,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_02_MIN_CHI",
             "date": "2026-09-20",
@@ -1848,25 +1867,6 @@
             "totalEpa": 22.59,
             "turnovers": 0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_16_GB_CHI",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "GB",
-            "homeAway": "Home",
-            "teamScore": 22,
-            "opponentScore": 16,
-            "result": "W",
-            "passingYards": 250.0,
-            "rushingYards": 150.0,
-            "totalYards": 400.0,
-            "totalEpa": 6.04,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ],
         "CAR": [
@@ -4418,13 +4418,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 0,
+            "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 1.0,
-            "pointsFor": 48,
-            "pointsAgainst": 42,
-            "pointDifferential": 6
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 55,
+            "pointsAgainst": 69,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -4539,6 +4539,25 @@
         ],
         "PHI": [
           {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 7,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 153.0,
+            "rushingYards": 107.0,
+            "totalYards": 260.0,
+            "totalEpa": -10.69,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_02_PHI_TEN",
             "date": "2026-09-20",
             "season": 2026,
@@ -4613,25 +4632,6 @@
             "totalEpa": -6.73,
             "turnovers": 0,
             "defensiveSacks": 5.0
-          },
-          {
-            "id": "2025_16_PHI_WAS",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Away",
-            "teamScore": 29,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 185.0,
-            "rushingYards": 207.0,
-            "totalYards": 392.0,
-            "totalEpa": 16.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -7097,14 +7097,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 0.5,
-            "pointsFor": 62,
-            "pointsAgainst": 46,
-            "pointDifferential": 16
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 89,
+            "pointsAgainst": 53,
+            "pointDifferential": 36
           },
           "previous": {
             "season": 2025,
@@ -7219,6 +7219,25 @@
         ],
         "CHI": [
           {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 7,
+            "result": "W",
+            "passingYards": 247.0,
+            "rushingYards": 128.0,
+            "totalYards": 375.0,
+            "totalEpa": 1.87,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_02_MIN_CHI",
             "date": "2026-09-20",
             "season": 2026,
@@ -7293,25 +7312,6 @@
             "totalEpa": 22.59,
             "turnovers": 0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_16_GB_CHI",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "GB",
-            "homeAway": "Home",
-            "teamScore": 22,
-            "opponentScore": 16,
-            "result": "W",
-            "passingYards": 250.0,
-            "rushingYards": 150.0,
-            "totalYards": 400.0,
-            "totalEpa": 6.04,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -7738,13 +7738,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 0,
+            "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 1.0,
-            "pointsFor": 48,
-            "pointsAgainst": 42,
-            "pointDifferential": 6
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 55,
+            "pointsAgainst": 69,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -7785,6 +7785,25 @@
       },
       "recentForm": {
         "PHI": [
+          {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 7,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 153.0,
+            "rushingYards": 107.0,
+            "totalYards": 260.0,
+            "totalEpa": -10.69,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_02_PHI_TEN",
             "date": "2026-09-20",
@@ -7860,25 +7879,6 @@
             "totalEpa": -6.73,
             "turnovers": 0,
             "defensiveSacks": 5.0
-          },
-          {
-            "id": "2025_16_PHI_WAS",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Away",
-            "teamScore": 29,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 185.0,
-            "rushingYards": 207.0,
-            "totalYards": 392.0,
-            "totalEpa": 16.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 2.0
           }
         ],
         "TEN": [
@@ -15730,14 +15730,14 @@
         "gameType": "REG",
         "awayTeam": "Philadelphia Eagles",
         "awayAbbreviation": "PHI",
-        "awayScore": null,
+        "awayScore": 7,
         "homeTeam": "Chicago Bears",
         "homeAbbreviation": "CHI",
-        "homeScore": null,
-        "winner": null,
-        "winnerAbbreviation": null,
+        "homeScore": 27,
+        "winner": "Chicago Bears",
+        "winnerAbbreviation": "CHI",
         "time": "20:15",
-        "status": "upcoming",
+        "status": "final",
         "stadium": "Soldier Field",
         "roof": "outdoors",
         "surface": "grass",
@@ -15766,13 +15766,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 0,
+            "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 1.0,
-            "pointsFor": 48,
-            "pointsAgainst": 42,
-            "pointDifferential": 6
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 55,
+            "pointsAgainst": 69,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -15789,14 +15789,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 0.5,
-            "pointsFor": 62,
-            "pointsAgainst": 46,
-            "pointDifferential": 16
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 89,
+            "pointsAgainst": 53,
+            "pointDifferential": 36
           },
           "previous": {
             "season": 2025,
@@ -15813,6 +15813,25 @@
       },
       "recentForm": {
         "PHI": [
+          {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 7,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 153.0,
+            "rushingYards": 107.0,
+            "totalYards": 260.0,
+            "totalEpa": -10.69,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_02_PHI_TEN",
             "date": "2026-09-20",
@@ -15888,28 +15907,28 @@
             "totalEpa": -6.73,
             "turnovers": 0,
             "defensiveSacks": 5.0
-          },
-          {
-            "id": "2025_16_PHI_WAS",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Away",
-            "teamScore": 29,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 185.0,
-            "rushingYards": 207.0,
-            "totalYards": 392.0,
-            "totalEpa": 16.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 2.0
           }
         ],
         "CHI": [
+          {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 7,
+            "result": "W",
+            "passingYards": 247.0,
+            "rushingYards": 128.0,
+            "totalYards": 375.0,
+            "totalEpa": 1.87,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_02_MIN_CHI",
             "date": "2026-09-20",
@@ -15985,29 +16004,22 @@
             "totalEpa": 22.59,
             "turnovers": 0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_16_GB_CHI",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "GB",
-            "homeAway": "Home",
-            "teamScore": 22,
-            "opponentScore": 16,
-            "result": "W",
-            "passingYards": 250.0,
-            "rushingYards": 150.0,
-            "totalYards": 400.0,
-            "totalEpa": 6.04,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ]
       },
       "headToHead": [
+        {
+          "id": "2026_03_PHI_CHI",
+          "date": "2026-09-28",
+          "season": 2026,
+          "week": 3,
+          "gameType": "REG",
+          "awayAbbreviation": "PHI",
+          "awayScore": 7,
+          "homeAbbreviation": "CHI",
+          "homeScore": 27,
+          "winnerAbbreviation": "CHI"
+        },
         {
           "id": "2025_13_CHI_PHI",
           "date": "2025-11-28",
@@ -16045,29 +16057,7 @@
           "winnerAbbreviation": "PHI"
         }
       ],
-      "prediction": {
-        "id": "2026_03_PHI_CHI",
-        "awayTeam": "Philadelphia Eagles",
-        "awayAbbreviation": "PHI",
-        "homeTeam": "Chicago Bears",
-        "homeAbbreviation": "CHI",
-        "kickoff": "2026-09-28 20:15",
-        "predictedWinner": "Chicago Bears",
-        "homeWinProbability": 53,
-        "awayWinProbability": 47,
-        "classifierHomeProbability": 52,
-        "scoreModelHomeProbability": 55,
-        "projectedHomeScore": 25.4,
-        "projectedAwayScore": 23.7,
-        "projectedMargin": 1.7,
-        "projectedTotal": 48.2,
-        "confidence": "Low",
-        "factors": [
-          "Elo team strength",
-          "Turnover trend",
-          "Quarterback efficiency"
-        ]
-      }
+      "prediction": null
     },
     "2026_04_PIT_CLE": {
       "game": {
@@ -16417,7 +16407,29 @@
           "winnerAbbreviation": "CLE"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_04_PIT_CLE",
+        "awayTeam": "Pittsburgh Steelers",
+        "awayAbbreviation": "PIT",
+        "homeTeam": "Cleveland Browns",
+        "homeAbbreviation": "CLE",
+        "kickoff": "2026-10-01 20:15",
+        "predictedWinner": "Cleveland Browns",
+        "homeWinProbability": 52,
+        "awayWinProbability": 48,
+        "classifierHomeProbability": 51,
+        "scoreModelHomeProbability": 54,
+        "projectedHomeScore": 21.4,
+        "projectedAwayScore": 23.7,
+        "projectedMargin": 1.3,
+        "projectedTotal": 44.0,
+        "confidence": "Low",
+        "factors": [
+          "Elo team strength",
+          "Quarterback efficiency",
+          "Recent scoring margin"
+        ]
+      }
     },
     "2026_04_IND_WAS": {
       "game": {
@@ -16719,7 +16731,29 @@
           "winnerAbbreviation": "WAS"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_04_IND_WAS",
+        "awayTeam": "Indianapolis Colts",
+        "awayAbbreviation": "IND",
+        "homeTeam": "Washington Commanders",
+        "homeAbbreviation": "WAS",
+        "kickoff": "2026-10-04 09:30",
+        "predictedWinner": "Washington Commanders",
+        "homeWinProbability": 56,
+        "awayWinProbability": 44,
+        "classifierHomeProbability": 57,
+        "scoreModelHomeProbability": 54,
+        "projectedHomeScore": 23.7,
+        "projectedAwayScore": 21.4,
+        "projectedMargin": 1.4,
+        "projectedTotal": 44.1,
+        "confidence": "Low",
+        "factors": [
+          "Turnover trend",
+          "Quarterback efficiency",
+          "EPA per play"
+        ]
+      }
     },
     "2026_04_ARI_NYG": {
       "game": {
@@ -17045,7 +17079,29 @@
           "winnerAbbreviation": "ARI"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_04_ARI_NYG",
+        "awayTeam": "Arizona Cardinals",
+        "awayAbbreviation": "ARI",
+        "homeTeam": "New York Giants",
+        "homeAbbreviation": "NYG",
+        "kickoff": "2026-10-04 13:00",
+        "predictedWinner": "New York Giants",
+        "homeWinProbability": 63,
+        "awayWinProbability": 37,
+        "classifierHomeProbability": 61,
+        "scoreModelHomeProbability": 67,
+        "projectedHomeScore": 27.3,
+        "projectedAwayScore": 21.0,
+        "projectedMargin": 6.3,
+        "projectedTotal": 47.9,
+        "confidence": "Medium",
+        "factors": [
+          "Recent scoring margin",
+          "EPA per play",
+          "Explosive plays"
+        ]
+      }
     },
     "2026_04_DAL_HOU": {
       "game": {
@@ -17359,7 +17415,29 @@
           "winnerAbbreviation": "DAL"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_04_DAL_HOU",
+        "awayTeam": "Dallas Cowboys",
+        "awayAbbreviation": "DAL",
+        "homeTeam": "Houston Texans",
+        "homeAbbreviation": "HOU",
+        "kickoff": "2026-10-04 13:00",
+        "predictedWinner": "Houston Texans",
+        "homeWinProbability": 52,
+        "awayWinProbability": 48,
+        "classifierHomeProbability": 42,
+        "scoreModelHomeProbability": 72,
+        "projectedHomeScore": 27.9,
+        "projectedAwayScore": 19.8,
+        "projectedMargin": 8.1,
+        "projectedTotal": 48.2,
+        "confidence": "Low",
+        "factors": [
+          "Quarterback efficiency",
+          "EPA per play",
+          "Turnover trend"
+        ]
+      }
     },
     "2026_04_GB_TB": {
       "game": {
@@ -17685,7 +17763,29 @@
           "winnerAbbreviation": "TB"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_04_GB_TB",
+        "awayTeam": "Green Bay Packers",
+        "awayAbbreviation": "GB",
+        "homeTeam": "Tampa Bay Buccaneers",
+        "homeAbbreviation": "TB",
+        "kickoff": "2026-10-04 13:00",
+        "predictedWinner": "Green Bay Packers",
+        "homeWinProbability": 46,
+        "awayWinProbability": 54,
+        "classifierHomeProbability": 45,
+        "scoreModelHomeProbability": 49,
+        "projectedHomeScore": 26.8,
+        "projectedAwayScore": 26.2,
+        "projectedMargin": -0.3,
+        "projectedTotal": 50.6,
+        "confidence": "Low",
+        "factors": [
+          "Turnover trend",
+          "Recent scoring margin",
+          "Elo team strength"
+        ]
+      }
     },
     "2026_04_JAX_CIN": {
       "game": {
@@ -18035,7 +18135,29 @@
           "winnerAbbreviation": "JAX"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_04_JAX_CIN",
+        "awayTeam": "Jacksonville Jaguars",
+        "awayAbbreviation": "JAX",
+        "homeTeam": "Cincinnati Bengals",
+        "homeAbbreviation": "CIN",
+        "kickoff": "2026-10-04 13:00",
+        "predictedWinner": "Cincinnati Bengals",
+        "homeWinProbability": 51,
+        "awayWinProbability": 49,
+        "classifierHomeProbability": 50,
+        "scoreModelHomeProbability": 54,
+        "projectedHomeScore": 23.3,
+        "projectedAwayScore": 21.9,
+        "projectedMargin": 1.3,
+        "projectedTotal": 43.2,
+        "confidence": "Low",
+        "factors": [
+          "Recent scoring margin",
+          "Quarterback efficiency",
+          "EPA per play"
+        ]
+      }
     },
     "2026_04_LA_PHI": {
       "game": {
@@ -18106,13 +18228,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 0,
+            "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 1.0,
-            "pointsFor": 48,
-            "pointsAgainst": 42,
-            "pointDifferential": 6
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 55,
+            "pointsAgainst": 69,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -18227,6 +18349,25 @@
         ],
         "PHI": [
           {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 7,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 153.0,
+            "rushingYards": 107.0,
+            "totalYards": 260.0,
+            "totalEpa": -10.69,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_02_PHI_TEN",
             "date": "2026-09-20",
             "season": 2026,
@@ -18301,25 +18442,6 @@
             "totalEpa": -6.73,
             "turnovers": 0,
             "defensiveSacks": 5.0
-          },
-          {
-            "id": "2025_16_PHI_WAS",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Away",
-            "teamScore": 29,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 185.0,
-            "rushingYards": 207.0,
-            "totalYards": 392.0,
-            "totalEpa": 16.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -18373,7 +18495,29 @@
           "winnerAbbreviation": "LA"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_04_LA_PHI",
+        "awayTeam": "Los Angeles Rams",
+        "awayAbbreviation": "LA",
+        "homeTeam": "Philadelphia Eagles",
+        "homeAbbreviation": "PHI",
+        "kickoff": "2026-10-04 13:00",
+        "predictedWinner": "Los Angeles Rams",
+        "homeWinProbability": 43,
+        "awayWinProbability": 57,
+        "classifierHomeProbability": 41,
+        "scoreModelHomeProbability": 47,
+        "projectedHomeScore": 20.6,
+        "projectedAwayScore": 22.4,
+        "projectedMargin": -1.1,
+        "projectedTotal": 43.6,
+        "confidence": "Low",
+        "factors": [
+          "Quarterback efficiency",
+          "EPA per play",
+          "Recent scoring margin"
+        ]
+      }
     },
     "2026_04_NE_BUF": {
       "game": {
@@ -18723,7 +18867,29 @@
           "winnerAbbreviation": "BUF"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_04_NE_BUF",
+        "awayTeam": "New England Patriots",
+        "awayAbbreviation": "NE",
+        "homeTeam": "Buffalo Bills",
+        "homeAbbreviation": "BUF",
+        "kickoff": "2026-10-04 13:00",
+        "predictedWinner": "Buffalo Bills",
+        "homeWinProbability": 84,
+        "awayWinProbability": 16,
+        "classifierHomeProbability": 85,
+        "scoreModelHomeProbability": 83,
+        "projectedHomeScore": 30.3,
+        "projectedAwayScore": 18.3,
+        "projectedMargin": 13.2,
+        "projectedTotal": 47.1,
+        "confidence": "High",
+        "factors": [
+          "Quarterback efficiency",
+          "EPA per play",
+          "Elo team strength"
+        ]
+      }
     },
     "2026_04_NYJ_CHI": {
       "game": {
@@ -18793,14 +18959,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 0.5,
-            "pointsFor": 62,
-            "pointsAgainst": 46,
-            "pointDifferential": 16
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 89,
+            "pointsAgainst": 53,
+            "pointDifferential": 36
           },
           "previous": {
             "season": 2025,
@@ -18915,6 +19081,25 @@
         ],
         "CHI": [
           {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 7,
+            "result": "W",
+            "passingYards": 247.0,
+            "rushingYards": 128.0,
+            "totalYards": 375.0,
+            "totalEpa": 1.87,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_02_MIN_CHI",
             "date": "2026-09-20",
             "season": 2026,
@@ -18989,25 +19174,6 @@
             "totalEpa": 22.59,
             "turnovers": 0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_16_GB_CHI",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "GB",
-            "homeAway": "Home",
-            "teamScore": 22,
-            "opponentScore": 16,
-            "result": "W",
-            "passingYards": 250.0,
-            "rushingYards": 150.0,
-            "totalYards": 400.0,
-            "totalEpa": 6.04,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -19025,7 +19191,29 @@
           "winnerAbbreviation": "NYJ"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_04_NYJ_CHI",
+        "awayTeam": "New York Jets",
+        "awayAbbreviation": "NYJ",
+        "homeTeam": "Chicago Bears",
+        "homeAbbreviation": "CHI",
+        "kickoff": "2026-10-04 13:00",
+        "predictedWinner": "Chicago Bears",
+        "homeWinProbability": 82,
+        "awayWinProbability": 18,
+        "classifierHomeProbability": 81,
+        "scoreModelHomeProbability": 84,
+        "projectedHomeScore": 32.8,
+        "projectedAwayScore": 17.7,
+        "projectedMargin": 13.7,
+        "projectedTotal": 50.0,
+        "confidence": "High",
+        "factors": [
+          "Recent scoring margin",
+          "Elo team strength",
+          "Turnover trend"
+        ]
+      }
     },
     "2026_04_TEN_BAL": {
       "game": {
@@ -19339,7 +19527,29 @@
           "winnerAbbreviation": "TEN"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_04_TEN_BAL",
+        "awayTeam": "Tennessee Titans",
+        "awayAbbreviation": "TEN",
+        "homeTeam": "Baltimore Ravens",
+        "homeAbbreviation": "BAL",
+        "kickoff": "2026-10-04 13:00",
+        "predictedWinner": "Baltimore Ravens",
+        "homeWinProbability": 88,
+        "awayWinProbability": 12,
+        "classifierHomeProbability": 89,
+        "scoreModelHomeProbability": 86,
+        "projectedHomeScore": 31.7,
+        "projectedAwayScore": 14.0,
+        "projectedMargin": 14.9,
+        "projectedTotal": 48.1,
+        "confidence": "High",
+        "factors": [
+          "Quarterback efficiency",
+          "Elo team strength",
+          "Recent scoring margin"
+        ]
+      }
     },
     "2026_04_MIA_MIN": {
       "game": {
@@ -19641,7 +19851,29 @@
           "winnerAbbreviation": "MIN"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_04_MIA_MIN",
+        "awayTeam": "Miami Dolphins",
+        "awayAbbreviation": "MIA",
+        "homeTeam": "Minnesota Vikings",
+        "homeAbbreviation": "MIN",
+        "kickoff": "2026-10-04 16:05",
+        "predictedWinner": "Minnesota Vikings",
+        "homeWinProbability": 77,
+        "awayWinProbability": 23,
+        "classifierHomeProbability": 78,
+        "scoreModelHomeProbability": 74,
+        "projectedHomeScore": 29.8,
+        "projectedAwayScore": 18.2,
+        "projectedMargin": 9.0,
+        "projectedTotal": 46.9,
+        "confidence": "High",
+        "factors": [
+          "Recent scoring margin",
+          "Elo team strength",
+          "Quarterback efficiency"
+        ]
+      }
     },
     "2026_04_DEN_SF": {
       "game": {
@@ -19943,7 +20175,29 @@
           "winnerAbbreviation": "DEN"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_04_DEN_SF",
+        "awayTeam": "Denver Broncos",
+        "awayAbbreviation": "DEN",
+        "homeTeam": "San Francisco 49ers",
+        "homeAbbreviation": "SF",
+        "kickoff": "2026-10-04 16:25",
+        "predictedWinner": "San Francisco 49ers",
+        "homeWinProbability": 74,
+        "awayWinProbability": 26,
+        "classifierHomeProbability": 73,
+        "scoreModelHomeProbability": 76,
+        "projectedHomeScore": 26.5,
+        "projectedAwayScore": 18.7,
+        "projectedMargin": 9.6,
+        "projectedTotal": 45.5,
+        "confidence": "High",
+        "factors": [
+          "Quarterback efficiency",
+          "EPA per play",
+          "Success rate"
+        ]
+      }
     },
     "2026_04_KC_LV": {
       "game": {
@@ -20293,7 +20547,29 @@
           "winnerAbbreviation": "LV"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_04_KC_LV",
+        "awayTeam": "Kansas City Chiefs",
+        "awayAbbreviation": "KC",
+        "homeTeam": "Las Vegas Raiders",
+        "homeAbbreviation": "LV",
+        "kickoff": "2026-10-04 16:25",
+        "predictedWinner": "Kansas City Chiefs",
+        "homeWinProbability": 39,
+        "awayWinProbability": 61,
+        "classifierHomeProbability": 38,
+        "scoreModelHomeProbability": 40,
+        "projectedHomeScore": 19.7,
+        "projectedAwayScore": 24.2,
+        "projectedMargin": -3.4,
+        "projectedTotal": 45.6,
+        "confidence": "Medium",
+        "factors": [
+          "Elo team strength",
+          "Turnover trend",
+          "EPA per play"
+        ]
+      }
     },
     "2026_04_LAC_SEA": {
       "game": {
@@ -20595,7 +20871,29 @@
           "winnerAbbreviation": "SEA"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_04_LAC_SEA",
+        "awayTeam": "Los Angeles Chargers",
+        "awayAbbreviation": "LAC",
+        "homeTeam": "Seattle Seahawks",
+        "homeAbbreviation": "SEA",
+        "kickoff": "2026-10-04 16:25",
+        "predictedWinner": "Seattle Seahawks",
+        "homeWinProbability": 86,
+        "awayWinProbability": 14,
+        "classifierHomeProbability": 86,
+        "scoreModelHomeProbability": 86,
+        "projectedHomeScore": 32.6,
+        "projectedAwayScore": 18.2,
+        "projectedMargin": 15.1,
+        "projectedTotal": 48.6,
+        "confidence": "High",
+        "factors": [
+          "Recent scoring margin",
+          "Quarterback efficiency",
+          "EPA per play"
+        ]
+      }
     },
     "2026_04_DET_CAR": {
       "game": {
@@ -20921,7 +21219,29 @@
           "winnerAbbreviation": "CAR"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_04_DET_CAR",
+        "awayTeam": "Detroit Lions",
+        "awayAbbreviation": "DET",
+        "homeTeam": "Carolina Panthers",
+        "homeAbbreviation": "CAR",
+        "kickoff": "2026-10-04 20:20",
+        "predictedWinner": "Detroit Lions",
+        "homeWinProbability": 35,
+        "awayWinProbability": 65,
+        "classifierHomeProbability": 35,
+        "scoreModelHomeProbability": 36,
+        "projectedHomeScore": 19.4,
+        "projectedAwayScore": 23.2,
+        "projectedMargin": -5.1,
+        "projectedTotal": 43.8,
+        "confidence": "Medium",
+        "factors": [
+          "Elo team strength",
+          "Success rate",
+          "Recent scoring margin"
+        ]
+      }
     },
     "2026_04_ATL_NO": {
       "game": {
@@ -21271,7 +21591,29 @@
           "winnerAbbreviation": "NO"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_04_ATL_NO",
+        "awayTeam": "Atlanta Falcons",
+        "awayAbbreviation": "ATL",
+        "homeTeam": "New Orleans Saints",
+        "homeAbbreviation": "NO",
+        "kickoff": "2026-10-05 20:15",
+        "predictedWinner": "New Orleans Saints",
+        "homeWinProbability": 61,
+        "awayWinProbability": 39,
+        "classifierHomeProbability": 61,
+        "scoreModelHomeProbability": 62,
+        "projectedHomeScore": 24.6,
+        "projectedAwayScore": 21.7,
+        "projectedMargin": 4.1,
+        "projectedTotal": 48.5,
+        "confidence": "Medium",
+        "factors": [
+          "Quarterback efficiency",
+          "EPA per play",
+          "Recent scoring margin"
+        ]
+      }
     },
     "2026_05_TB_DAL": {
       "game": {
@@ -21644,13 +21986,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 0,
+            "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 1.0,
-            "pointsFor": 48,
-            "pointsAgainst": 42,
-            "pointDifferential": 6
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 55,
+            "pointsAgainst": 69,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -21691,6 +22033,25 @@
       },
       "recentForm": {
         "PHI": [
+          {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 7,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 153.0,
+            "rushingYards": 107.0,
+            "totalYards": 260.0,
+            "totalEpa": -10.69,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_02_PHI_TEN",
             "date": "2026-09-20",
@@ -21766,25 +22127,6 @@
             "totalEpa": -6.73,
             "turnovers": 0,
             "defensiveSacks": 5.0
-          },
-          {
-            "id": "2025_16_PHI_WAS",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Away",
-            "teamScore": 29,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 185.0,
-            "rushingYards": 207.0,
-            "totalYards": 392.0,
-            "totalEpa": 16.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 2.0
           }
         ],
         "JAX": [
@@ -24709,14 +25051,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 0.5,
-            "pointsFor": 62,
-            "pointsAgainst": 46,
-            "pointDifferential": 16
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 89,
+            "pointsAgainst": 53,
+            "pointDifferential": 36
           },
           "previous": {
             "season": 2025,
@@ -24757,6 +25099,25 @@
       },
       "recentForm": {
         "CHI": [
+          {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 7,
+            "result": "W",
+            "passingYards": 247.0,
+            "rushingYards": 128.0,
+            "totalYards": 375.0,
+            "totalEpa": 1.87,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_02_MIN_CHI",
             "date": "2026-09-20",
@@ -24832,25 +25193,6 @@
             "totalEpa": 22.59,
             "turnovers": 0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_16_GB_CHI",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "GB",
-            "homeAway": "Home",
-            "teamScore": 22,
-            "opponentScore": 16,
-            "result": "W",
-            "passingYards": 250.0,
-            "rushingYards": 150.0,
-            "totalYards": 400.0,
-            "totalEpa": 6.04,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ],
         "GB": [
@@ -27414,13 +27756,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 0,
+            "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 1.0,
-            "pointsFor": 48,
-            "pointsAgainst": 42,
-            "pointDifferential": 6
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 55,
+            "pointsAgainst": 69,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -27535,6 +27877,25 @@
         ],
         "PHI": [
           {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 7,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 153.0,
+            "rushingYards": 107.0,
+            "totalYards": 260.0,
+            "totalEpa": -10.69,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_02_PHI_TEN",
             "date": "2026-09-20",
             "season": 2026,
@@ -27609,25 +27970,6 @@
             "totalEpa": -6.73,
             "turnovers": 0,
             "defensiveSacks": 5.0
-          },
-          {
-            "id": "2025_16_PHI_WAS",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Away",
-            "teamScore": 29,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 185.0,
-            "rushingYards": 207.0,
-            "totalYards": 392.0,
-            "totalEpa": 16.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -27703,14 +28045,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 0.5,
-            "pointsFor": 62,
-            "pointsAgainst": 46,
-            "pointDifferential": 16
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 89,
+            "pointsAgainst": 53,
+            "pointDifferential": 36
           },
           "previous": {
             "season": 2025,
@@ -27751,6 +28093,25 @@
       },
       "recentForm": {
         "CHI": [
+          {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 7,
+            "result": "W",
+            "passingYards": 247.0,
+            "rushingYards": 128.0,
+            "totalYards": 375.0,
+            "totalEpa": 1.87,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_02_MIN_CHI",
             "date": "2026-09-20",
@@ -27826,25 +28187,6 @@
             "totalEpa": 22.59,
             "turnovers": 0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_16_GB_CHI",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "GB",
-            "homeAway": "Home",
-            "teamScore": 22,
-            "opponentScore": 16,
-            "result": "W",
-            "passingYards": 250.0,
-            "rushingYards": 150.0,
-            "totalYards": 400.0,
-            "totalEpa": 6.04,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ],
         "ATL": [
@@ -31071,14 +31413,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 0.5,
-            "pointsFor": 62,
-            "pointsAgainst": 46,
-            "pointDifferential": 16
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 89,
+            "pointsAgainst": 53,
+            "pointDifferential": 36
           },
           "previous": {
             "season": 2025,
@@ -31193,6 +31535,25 @@
         ],
         "CHI": [
           {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 7,
+            "result": "W",
+            "passingYards": 247.0,
+            "rushingYards": 128.0,
+            "totalYards": 375.0,
+            "totalEpa": 1.87,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_02_MIN_CHI",
             "date": "2026-09-20",
             "season": 2026,
@@ -31267,25 +31628,6 @@
             "totalEpa": 22.59,
             "turnovers": 0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_16_GB_CHI",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "GB",
-            "homeAway": "Home",
-            "teamScore": 22,
-            "opponentScore": 16,
-            "result": "W",
-            "passingYards": 250.0,
-            "rushingYards": 150.0,
-            "totalYards": 400.0,
-            "totalEpa": 6.04,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -35310,13 +35652,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 0,
+            "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 1.0,
-            "pointsFor": 48,
-            "pointsAgainst": 42,
-            "pointDifferential": 6
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 55,
+            "pointsAgainst": 69,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -35431,6 +35773,25 @@
         ],
         "PHI": [
           {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 7,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 153.0,
+            "rushingYards": 107.0,
+            "totalYards": 260.0,
+            "totalEpa": -10.69,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_02_PHI_TEN",
             "date": "2026-09-20",
             "season": 2026,
@@ -35505,25 +35866,6 @@
             "totalEpa": -6.73,
             "turnovers": 0,
             "defensiveSacks": 5.0
-          },
-          {
-            "id": "2025_16_PHI_WAS",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Away",
-            "teamScore": 29,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 185.0,
-            "rushingYards": 207.0,
-            "totalYards": 392.0,
-            "totalEpa": 16.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -39704,13 +40046,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 0,
+            "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 1.0,
-            "pointsFor": 48,
-            "pointsAgainst": 42,
-            "pointDifferential": 6
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 55,
+            "pointsAgainst": 69,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -39751,6 +40093,25 @@
       },
       "recentForm": {
         "PHI": [
+          {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 7,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 153.0,
+            "rushingYards": 107.0,
+            "totalYards": 260.0,
+            "totalEpa": -10.69,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_02_PHI_TEN",
             "date": "2026-09-20",
@@ -39826,25 +40187,6 @@
             "totalEpa": -6.73,
             "turnovers": 0,
             "defensiveSacks": 5.0
-          },
-          {
-            "id": "2025_16_PHI_WAS",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Away",
-            "teamScore": 29,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 185.0,
-            "rushingYards": 207.0,
-            "totalYards": 392.0,
-            "totalEpa": 16.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 2.0
           }
         ],
         "WAS": [
@@ -40053,14 +40395,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 0.5,
-            "pointsFor": 62,
-            "pointsAgainst": 46,
-            "pointDifferential": 16
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 89,
+            "pointsAgainst": 53,
+            "pointDifferential": 36
           },
           "previous": {
             "season": 2025,
@@ -40101,6 +40443,25 @@
       },
       "recentForm": {
         "CHI": [
+          {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 7,
+            "result": "W",
+            "passingYards": 247.0,
+            "rushingYards": 128.0,
+            "totalYards": 375.0,
+            "totalEpa": 1.87,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_02_MIN_CHI",
             "date": "2026-09-20",
@@ -40176,25 +40537,6 @@
             "totalEpa": 22.59,
             "turnovers": 0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_16_GB_CHI",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "GB",
-            "homeAway": "Home",
-            "teamScore": 22,
-            "opponentScore": 16,
-            "result": "W",
-            "passingYards": 250.0,
-            "rushingYards": 150.0,
-            "totalYards": 400.0,
-            "totalEpa": 6.04,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ],
         "SEA": [
@@ -42578,13 +42920,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 0,
+            "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 1.0,
-            "pointsFor": 48,
-            "pointsAgainst": 42,
-            "pointDifferential": 6
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 55,
+            "pointsAgainst": 69,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -42699,6 +43041,25 @@
         ],
         "PHI": [
           {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 7,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 153.0,
+            "rushingYards": 107.0,
+            "totalYards": 260.0,
+            "totalEpa": -10.69,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_02_PHI_TEN",
             "date": "2026-09-20",
             "season": 2026,
@@ -42773,25 +43134,6 @@
             "totalEpa": -6.73,
             "turnovers": 0,
             "defensiveSacks": 5.0
-          },
-          {
-            "id": "2025_16_PHI_WAS",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Away",
-            "teamScore": 29,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 185.0,
-            "rushingYards": 207.0,
-            "totalYards": 392.0,
-            "totalEpa": 16.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -44533,14 +44875,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 0.5,
-            "pointsFor": 62,
-            "pointsAgainst": 46,
-            "pointDifferential": 16
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 89,
+            "pointsAgainst": 53,
+            "pointDifferential": 36
           },
           "previous": {
             "season": 2025,
@@ -44655,6 +44997,25 @@
         ],
         "CHI": [
           {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 7,
+            "result": "W",
+            "passingYards": 247.0,
+            "rushingYards": 128.0,
+            "totalYards": 375.0,
+            "totalEpa": 1.87,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_02_MIN_CHI",
             "date": "2026-09-20",
             "season": 2026,
@@ -44729,25 +45090,6 @@
             "totalEpa": 22.59,
             "turnovers": 0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_16_GB_CHI",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "GB",
-            "homeAway": "Home",
-            "teamScore": 22,
-            "opponentScore": 16,
-            "result": "W",
-            "passingYards": 250.0,
-            "rushingYards": 150.0,
-            "totalYards": 400.0,
-            "totalEpa": 6.04,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -51463,14 +51805,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 0.5,
-            "pointsFor": 62,
-            "pointsAgainst": 46,
-            "pointDifferential": 16
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 89,
+            "pointsAgainst": 53,
+            "pointDifferential": 36
           },
           "previous": {
             "season": 2025,
@@ -51585,6 +51927,25 @@
         ],
         "CHI": [
           {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 7,
+            "result": "W",
+            "passingYards": 247.0,
+            "rushingYards": 128.0,
+            "totalYards": 375.0,
+            "totalEpa": 1.87,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_02_MIN_CHI",
             "date": "2026-09-20",
             "season": 2026,
@@ -51659,25 +52020,6 @@
             "totalEpa": 22.59,
             "turnovers": 0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_16_GB_CHI",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "GB",
-            "homeAway": "Home",
-            "teamScore": 22,
-            "opponentScore": 16,
-            "result": "W",
-            "passingYards": 250.0,
-            "rushingYards": 150.0,
-            "totalYards": 400.0,
-            "totalEpa": 6.04,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -53118,13 +53460,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 0,
+            "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 1.0,
-            "pointsFor": 48,
-            "pointsAgainst": 42,
-            "pointDifferential": 6
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 55,
+            "pointsAgainst": 69,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -53239,6 +53581,25 @@
         ],
         "PHI": [
           {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 7,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 153.0,
+            "rushingYards": 107.0,
+            "totalYards": 260.0,
+            "totalEpa": -10.69,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_02_PHI_TEN",
             "date": "2026-09-20",
             "season": 2026,
@@ -53313,25 +53674,6 @@
             "totalEpa": -6.73,
             "turnovers": 0,
             "defensiveSacks": 5.0
-          },
-          {
-            "id": "2025_16_PHI_WAS",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Away",
-            "teamScore": 29,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 185.0,
-            "rushingYards": 207.0,
-            "totalYards": 392.0,
-            "totalEpa": 16.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -54397,14 +54739,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 0.5,
-            "pointsFor": 62,
-            "pointsAgainst": 46,
-            "pointDifferential": 16
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 89,
+            "pointsAgainst": 53,
+            "pointDifferential": 36
           },
           "previous": {
             "season": 2025,
@@ -54445,6 +54787,25 @@
       },
       "recentForm": {
         "CHI": [
+          {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 7,
+            "result": "W",
+            "passingYards": 247.0,
+            "rushingYards": 128.0,
+            "totalYards": 375.0,
+            "totalEpa": 1.87,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_02_MIN_CHI",
             "date": "2026-09-20",
@@ -54520,25 +54881,6 @@
             "totalEpa": 22.59,
             "turnovers": 0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_16_GB_CHI",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "GB",
-            "homeAway": "Home",
-            "teamScore": 22,
-            "opponentScore": 16,
-            "result": "W",
-            "passingYards": 250.0,
-            "rushingYards": 150.0,
-            "totalYards": 400.0,
-            "totalEpa": 6.04,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ],
         "DET": [
@@ -54748,13 +55090,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 0,
+            "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 1.0,
-            "pointsFor": 48,
-            "pointsAgainst": 42,
-            "pointDifferential": 6
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 55,
+            "pointsAgainst": 69,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -54795,6 +55137,25 @@
       },
       "recentForm": {
         "PHI": [
+          {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 7,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 153.0,
+            "rushingYards": 107.0,
+            "totalYards": 260.0,
+            "totalEpa": -10.69,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_02_PHI_TEN",
             "date": "2026-09-20",
@@ -54870,25 +55231,6 @@
             "totalEpa": -6.73,
             "turnovers": 0,
             "defensiveSacks": 5.0
-          },
-          {
-            "id": "2025_16_PHI_WAS",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Away",
-            "teamScore": 29,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 185.0,
-            "rushingYards": 207.0,
-            "totalYards": 392.0,
-            "totalEpa": 16.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 2.0
           }
         ],
         "DAL": [
@@ -60831,14 +61173,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 0.5,
-            "pointsFor": 62,
-            "pointsAgainst": 46,
-            "pointDifferential": 16
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 89,
+            "pointsAgainst": 53,
+            "pointDifferential": 36
           },
           "previous": {
             "season": 2025,
@@ -60953,6 +61295,25 @@
         ],
         "CHI": [
           {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 7,
+            "result": "W",
+            "passingYards": 247.0,
+            "rushingYards": 128.0,
+            "totalYards": 375.0,
+            "totalEpa": 1.87,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_02_MIN_CHI",
             "date": "2026-09-20",
             "season": 2026,
@@ -61027,25 +61388,6 @@
             "totalEpa": 22.59,
             "turnovers": 0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_16_GB_CHI",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "GB",
-            "homeAway": "Home",
-            "teamScore": 22,
-            "opponentScore": 16,
-            "result": "W",
-            "passingYards": 250.0,
-            "rushingYards": 150.0,
-            "totalYards": 400.0,
-            "totalEpa": 6.04,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -62390,13 +62732,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 0,
+            "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 1.0,
-            "pointsFor": 48,
-            "pointsAgainst": 42,
-            "pointDifferential": 6
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 55,
+            "pointsAgainst": 69,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -62437,6 +62779,25 @@
       },
       "recentForm": {
         "PHI": [
+          {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 7,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 153.0,
+            "rushingYards": 107.0,
+            "totalYards": 260.0,
+            "totalEpa": -10.69,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_02_PHI_TEN",
             "date": "2026-09-20",
@@ -62512,25 +62873,6 @@
             "totalEpa": -6.73,
             "turnovers": 0,
             "defensiveSacks": 5.0
-          },
-          {
-            "id": "2025_16_PHI_WAS",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Away",
-            "teamScore": 29,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 185.0,
-            "rushingYards": 207.0,
-            "totalYards": 392.0,
-            "totalEpa": 16.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 2.0
           }
         ],
         "ARI": [
@@ -64623,14 +64965,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 0.5,
-            "pointsFor": 62,
-            "pointsAgainst": 46,
-            "pointDifferential": 16
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 89,
+            "pointsAgainst": 53,
+            "pointDifferential": 36
           },
           "previous": {
             "season": 2025,
@@ -64671,6 +65013,25 @@
       },
       "recentForm": {
         "CHI": [
+          {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 7,
+            "result": "W",
+            "passingYards": 247.0,
+            "rushingYards": 128.0,
+            "totalYards": 375.0,
+            "totalEpa": 1.87,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_02_MIN_CHI",
             "date": "2026-09-20",
@@ -64746,25 +65107,6 @@
             "totalEpa": 22.59,
             "turnovers": 0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_16_GB_CHI",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "GB",
-            "homeAway": "Home",
-            "teamScore": 22,
-            "opponentScore": 16,
-            "result": "W",
-            "passingYards": 250.0,
-            "rushingYards": 150.0,
-            "totalYards": 400.0,
-            "totalEpa": 6.04,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ],
         "MIA": [
@@ -65602,13 +65944,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 0,
+            "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 1.0,
-            "pointsFor": 48,
-            "pointsAgainst": 42,
-            "pointDifferential": 6
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 55,
+            "pointsAgainst": 69,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -65723,6 +66065,25 @@
         ],
         "PHI": [
           {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 7,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 153.0,
+            "rushingYards": 107.0,
+            "totalYards": 260.0,
+            "totalEpa": -10.69,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_02_PHI_TEN",
             "date": "2026-09-20",
             "season": 2026,
@@ -65797,25 +66158,6 @@
             "totalEpa": -6.73,
             "turnovers": 0,
             "defensiveSacks": 5.0
-          },
-          {
-            "id": "2025_16_PHI_WAS",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Away",
-            "teamScore": 29,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 185.0,
-            "rushingYards": 207.0,
-            "totalYards": 392.0,
-            "totalEpa": 16.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -69176,13 +69518,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 0,
+            "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 1.0,
-            "pointsFor": 48,
-            "pointsAgainst": 42,
-            "pointDifferential": 6
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 55,
+            "pointsAgainst": 69,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -69297,6 +69639,25 @@
         ],
         "PHI": [
           {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 7,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 153.0,
+            "rushingYards": 107.0,
+            "totalYards": 260.0,
+            "totalEpa": -10.69,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_02_PHI_TEN",
             "date": "2026-09-20",
             "season": 2026,
@@ -69371,25 +69732,6 @@
             "totalEpa": -6.73,
             "turnovers": 0,
             "defensiveSacks": 5.0
-          },
-          {
-            "id": "2025_16_PHI_WAS",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Away",
-            "teamScore": 29,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 185.0,
-            "rushingYards": 207.0,
-            "totalYards": 392.0,
-            "totalEpa": 16.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -69477,14 +69819,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 0.5,
-            "pointsFor": 62,
-            "pointsAgainst": 46,
-            "pointDifferential": 16
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 89,
+            "pointsAgainst": 53,
+            "pointDifferential": 36
           },
           "previous": {
             "season": 2025,
@@ -69525,6 +69867,25 @@
       },
       "recentForm": {
         "CHI": [
+          {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 7,
+            "result": "W",
+            "passingYards": 247.0,
+            "rushingYards": 128.0,
+            "totalYards": 375.0,
+            "totalEpa": 1.87,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_02_MIN_CHI",
             "date": "2026-09-20",
@@ -69600,25 +69961,6 @@
             "totalEpa": 22.59,
             "turnovers": 0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_16_GB_CHI",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "GB",
-            "homeAway": "Home",
-            "teamScore": 22,
-            "opponentScore": 16,
-            "result": "W",
-            "passingYards": 250.0,
-            "rushingYards": 150.0,
-            "totalYards": 400.0,
-            "totalEpa": 6.04,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ],
         "BUF": [
@@ -74174,13 +74516,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 0,
+            "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 1.0,
-            "pointsFor": 48,
-            "pointsAgainst": 42,
-            "pointDifferential": 6
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 55,
+            "pointsAgainst": 69,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -74295,6 +74637,25 @@
         ],
         "PHI": [
           {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 7,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 153.0,
+            "rushingYards": 107.0,
+            "totalYards": 260.0,
+            "totalEpa": -10.69,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_02_PHI_TEN",
             "date": "2026-09-20",
             "season": 2026,
@@ -74369,25 +74730,6 @@
             "totalEpa": -6.73,
             "turnovers": 0,
             "defensiveSacks": 5.0
-          },
-          {
-            "id": "2025_16_PHI_WAS",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Away",
-            "teamScore": 29,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 185.0,
-            "rushingYards": 207.0,
-            "totalYards": 392.0,
-            "totalEpa": 16.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -74475,14 +74817,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 0.5,
-            "pointsFor": 62,
-            "pointsAgainst": 46,
-            "pointDifferential": 16
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 89,
+            "pointsAgainst": 53,
+            "pointDifferential": 36
           },
           "previous": {
             "season": 2025,
@@ -74597,6 +74939,25 @@
         ],
         "CHI": [
           {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 7,
+            "result": "W",
+            "passingYards": 247.0,
+            "rushingYards": 128.0,
+            "totalYards": 375.0,
+            "totalEpa": 1.87,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_02_MIN_CHI",
             "date": "2026-09-20",
             "season": 2026,
@@ -74671,25 +75032,6 @@
             "totalEpa": 22.59,
             "turnovers": 0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_16_GB_CHI",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "GB",
-            "homeAway": "Home",
-            "teamScore": 22,
-            "opponentScore": 16,
-            "result": "W",
-            "passingYards": 250.0,
-            "rushingYards": 150.0,
-            "totalYards": 400.0,
-            "totalEpa": 6.04,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -83735,14 +84077,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 0.5,
-            "pointsFor": 62,
-            "pointsAgainst": 46,
-            "pointDifferential": 16
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 89,
+            "pointsAgainst": 53,
+            "pointDifferential": 36
           },
           "previous": {
             "season": 2025,
@@ -83857,6 +84199,25 @@
         ],
         "CHI": [
           {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 7,
+            "result": "W",
+            "passingYards": 247.0,
+            "rushingYards": 128.0,
+            "totalYards": 375.0,
+            "totalEpa": 1.87,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_02_MIN_CHI",
             "date": "2026-09-20",
             "season": 2026,
@@ -83931,25 +84292,6 @@
             "totalEpa": 22.59,
             "turnovers": 0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_16_GB_CHI",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "GB",
-            "homeAway": "Home",
-            "teamScore": 22,
-            "opponentScore": 16,
-            "result": "W",
-            "passingYards": 250.0,
-            "rushingYards": 150.0,
-            "totalYards": 400.0,
-            "totalEpa": 6.04,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -84062,13 +84404,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 0,
+            "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 1.0,
-            "pointsFor": 48,
-            "pointsAgainst": 42,
-            "pointDifferential": 6
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 55,
+            "pointsAgainst": 69,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -84109,6 +84451,25 @@
       },
       "recentForm": {
         "PHI": [
+          {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 7,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 153.0,
+            "rushingYards": 107.0,
+            "totalYards": 260.0,
+            "totalEpa": -10.69,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_02_PHI_TEN",
             "date": "2026-09-20",
@@ -84184,25 +84545,6 @@
             "totalEpa": -6.73,
             "turnovers": 0,
             "defensiveSacks": 5.0
-          },
-          {
-            "id": "2025_16_PHI_WAS",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Away",
-            "teamScore": 29,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 185.0,
-            "rushingYards": 207.0,
-            "totalYards": 392.0,
-            "totalEpa": 16.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 2.0
           }
         ],
         "SF": [
@@ -85051,14 +85393,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 0.5,
-            "pointsFor": 62,
-            "pointsAgainst": 46,
-            "pointDifferential": 16
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 89,
+            "pointsAgainst": 53,
+            "pointDifferential": 36
           },
           "previous": {
             "season": 2025,
@@ -85099,6 +85441,25 @@
       },
       "recentForm": {
         "CHI": [
+          {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 7,
+            "result": "W",
+            "passingYards": 247.0,
+            "rushingYards": 128.0,
+            "totalYards": 375.0,
+            "totalEpa": 1.87,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_02_MIN_CHI",
             "date": "2026-09-20",
@@ -85174,25 +85535,6 @@
             "totalEpa": 22.59,
             "turnovers": 0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_16_GB_CHI",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "GB",
-            "homeAway": "Home",
-            "teamScore": 22,
-            "opponentScore": 16,
-            "result": "W",
-            "passingYards": 250.0,
-            "rushingYards": 150.0,
-            "totalYards": 400.0,
-            "totalEpa": 6.04,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ],
         "MIN": [
@@ -88202,13 +88544,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 0,
+            "losses": 1,
             "ties": 0,
-            "gamesPlayed": 2,
-            "winPct": 1.0,
-            "pointsFor": 48,
-            "pointsAgainst": 42,
-            "pointDifferential": 6
+            "gamesPlayed": 3,
+            "winPct": 0.667,
+            "pointsFor": 55,
+            "pointsAgainst": 69,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -88249,6 +88591,25 @@
       },
       "recentForm": {
         "PHI": [
+          {
+            "id": "2026_03_PHI_CHI",
+            "date": "2026-09-28",
+            "season": 2026,
+            "week": 3,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 7,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 153.0,
+            "rushingYards": 107.0,
+            "totalYards": 260.0,
+            "totalEpa": -10.69,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_02_PHI_TEN",
             "date": "2026-09-20",
@@ -88324,25 +88685,6 @@
             "totalEpa": -6.73,
             "turnovers": 0,
             "defensiveSacks": 5.0
-          },
-          {
-            "id": "2025_16_PHI_WAS",
-            "date": "2025-12-20",
-            "season": 2025,
-            "week": 16,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Away",
-            "teamScore": 29,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 185.0,
-            "rushingYards": 207.0,
-            "totalYards": 392.0,
-            "totalEpa": 16.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 2.0
           }
         ],
         "NYG": [
