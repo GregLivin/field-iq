@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "asOf": "2026-09-29T16:33:45.150849+00:00",
+  "asOf": "2026-09-30T16:27:16.829016+00:00",
   "provider": "nflverse",
   "weeks": [
     1,
@@ -2368,6 +2368,41 @@
       }
     },
     {
+      "id": "2026_05_CHI_GB",
+      "date": "2026-10-11",
+      "season": 2026,
+      "week": 5,
+      "gameType": "REG",
+      "awayTeam": "Chicago Bears",
+      "awayAbbreviation": "CHI",
+      "awayScore": null,
+      "homeTeam": "Green Bay Packers",
+      "homeAbbreviation": "GB",
+      "homeScore": null,
+      "winner": null,
+      "winnerAbbreviation": null,
+      "time": "13:00",
+      "status": "upcoming",
+      "stadium": "Lambeau Field",
+      "roof": "outdoors",
+      "surface": "grass",
+      "lastMeeting": {
+        "id": "2025_16_GB_CHI",
+        "date": "2025-12-20",
+        "season": 2025,
+        "week": 16,
+        "gameType": "REG",
+        "awayTeam": "Green Bay Packers",
+        "awayAbbreviation": "GB",
+        "awayScore": 16,
+        "homeTeam": "Chicago Bears",
+        "homeAbbreviation": "CHI",
+        "homeScore": 22,
+        "winner": "Chicago Bears",
+        "winnerAbbreviation": "CHI"
+      }
+    },
+    {
       "id": "2026_05_CIN_MIA",
       "date": "2026-10-11",
       "season": 2026,
@@ -2645,41 +2680,6 @@
         "homeScore": 19,
         "winner": "Denver Broncos",
         "winnerAbbreviation": "DEN"
-      }
-    },
-    {
-      "id": "2026_05_CHI_GB",
-      "date": "2026-10-11",
-      "season": 2026,
-      "week": 5,
-      "gameType": "REG",
-      "awayTeam": "Chicago Bears",
-      "awayAbbreviation": "CHI",
-      "awayScore": null,
-      "homeTeam": "Green Bay Packers",
-      "homeAbbreviation": "GB",
-      "homeScore": null,
-      "winner": null,
-      "winnerAbbreviation": null,
-      "time": "16:25",
-      "status": "upcoming",
-      "stadium": "Lambeau Field",
-      "roof": "outdoors",
-      "surface": "grass",
-      "lastMeeting": {
-        "id": "2025_16_GB_CHI",
-        "date": "2025-12-20",
-        "season": 2025,
-        "week": 16,
-        "gameType": "REG",
-        "awayTeam": "Green Bay Packers",
-        "awayAbbreviation": "GB",
-        "awayScore": 16,
-        "homeTeam": "Chicago Bears",
-        "homeAbbreviation": "CHI",
-        "homeScore": 22,
-        "winner": "Chicago Bears",
-        "winnerAbbreviation": "CHI"
       }
     },
     {
