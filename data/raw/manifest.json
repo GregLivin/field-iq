@@ -1,7 +1,7 @@
 {
   "provider": "nflverse",
   "license": "nflverse code/data licenses vary; NFL data belong to their respective owners and are governed by their terms of use",
-  "collectedAt": "2026-09-30T16:26:41.035572+00:00",
+  "collectedAt": "2026-10-01T17:03:51.452699+00:00",
   "season": 2026,
   "trainingSeasons": [
     2019,
@@ -19,9 +19,9 @@
     "pbp": 350560,
     "player_weekly": 133151,
     "player_season": 15355,
-    "players": 24834,
-    "rosters": 3008,
-    "injuries": 744
+    "players": 24838,
+    "rosters": 3018,
+    "injuries": 991
   },
   "playerStatsScope": {
     "player_weekly": [
