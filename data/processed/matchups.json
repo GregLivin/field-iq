@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "asOf": "2026-10-01T17:04:21.097157+00:00",
+  "asOf": "2026-10-02T16:18:26.457245+00:00",
   "provider": "nflverse",
   "games": {
     "2026_01_NE_SEA": {
@@ -748,13 +748,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 1,
+            "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 53,
-            "pointsAgainst": 60,
-            "pointDifferential": -7
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 77,
+            "pointsAgainst": 87,
+            "pointDifferential": -10
           },
           "previous": {
             "season": 2025,
@@ -869,6 +869,25 @@
         ],
         "PIT": [
           {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "PIT",
+            "opponentAbbreviation": "CLE",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 299.0,
+            "rushingYards": 92.0,
+            "totalYards": 391.0,
+            "totalEpa": 4.66,
+            "turnovers": 2.0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_03_CIN_PIT",
             "date": "2026-09-27",
             "season": 2026,
@@ -943,25 +962,6 @@
             "totalEpa": 4.27,
             "turnovers": 0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "PIT",
-            "opponentAbbreviation": "CLE",
-            "homeAway": "Away",
-            "teamScore": 6,
-            "opponentScore": 13,
-            "result": "L",
-            "passingYards": 168.0,
-            "rushingYards": 131.0,
-            "totalYards": 299.0,
-            "totalEpa": -12.75,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -2063,14 +2063,14 @@
         "CLE": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 54,
-            "pointsAgainst": 71,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.75,
+            "pointsFor": 81,
+            "pointsAgainst": 95,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -2111,6 +2111,25 @@
       },
       "recentForm": {
         "CLE": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "CLE",
+            "opponentAbbreviation": "PIT",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 268.0,
+            "rushingYards": 112.0,
+            "totalYards": 380.0,
+            "totalEpa": 5.95,
+            "turnovers": 2.0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_03_CAR_CLE",
             "date": "2026-09-27",
@@ -2185,25 +2204,6 @@
             "totalYards": 229.0,
             "totalEpa": -6.52,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "CLE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 186.0,
-            "rushingYards": 78.0,
-            "totalYards": 264.0,
-            "totalEpa": -11.45,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -6445,14 +6445,14 @@
         "CLE": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 54,
-            "pointsAgainst": 71,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.75,
+            "pointsFor": 81,
+            "pointsAgainst": 95,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -6493,6 +6493,25 @@
       },
       "recentForm": {
         "CLE": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "CLE",
+            "opponentAbbreviation": "PIT",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 268.0,
+            "rushingYards": 112.0,
+            "totalYards": 380.0,
+            "totalEpa": 5.95,
+            "turnovers": 2.0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_03_CAR_CLE",
             "date": "2026-09-27",
@@ -6567,25 +6586,6 @@
             "totalYards": 229.0,
             "totalEpa": -6.52,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "CLE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 186.0,
-            "rushingYards": 78.0,
-            "totalYards": 264.0,
-            "totalEpa": -11.45,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -8052,13 +8052,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 1,
+            "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 53,
-            "pointsAgainst": 60,
-            "pointDifferential": -7
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 77,
+            "pointsAgainst": 87,
+            "pointDifferential": -10
           },
           "previous": {
             "season": 2025,
@@ -8099,6 +8099,25 @@
       },
       "recentForm": {
         "PIT": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "PIT",
+            "opponentAbbreviation": "CLE",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 299.0,
+            "rushingYards": 92.0,
+            "totalYards": 391.0,
+            "totalEpa": 4.66,
+            "turnovers": 2.0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_03_CIN_PIT",
             "date": "2026-09-27",
@@ -8174,25 +8193,6 @@
             "totalEpa": 4.27,
             "turnovers": 0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "PIT",
-            "opponentAbbreviation": "CLE",
-            "homeAway": "Away",
-            "teamScore": 6,
-            "opponentScore": 13,
-            "result": "L",
-            "passingYards": 168.0,
-            "rushingYards": 131.0,
-            "totalYards": 299.0,
-            "totalEpa": -12.75,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ],
         "NE": [
@@ -11165,14 +11165,14 @@
         "CLE": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 54,
-            "pointsAgainst": 71,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.75,
+            "pointsFor": 81,
+            "pointsAgainst": 95,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -11287,6 +11287,25 @@
         ],
         "CLE": [
           {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "CLE",
+            "opponentAbbreviation": "PIT",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 268.0,
+            "rushingYards": 112.0,
+            "totalYards": 380.0,
+            "totalEpa": 5.95,
+            "turnovers": 2.0,
+            "defensiveSacks": 5.0
+          },
+          {
             "id": "2026_03_CAR_CLE",
             "date": "2026-09-27",
             "season": 2026,
@@ -11360,25 +11379,6 @@
             "totalYards": 229.0,
             "totalEpa": -6.52,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "CLE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 186.0,
-            "rushingYards": 78.0,
-            "totalYards": 264.0,
-            "totalEpa": -11.45,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -11480,13 +11480,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 1,
+            "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 53,
-            "pointsAgainst": 60,
-            "pointDifferential": -7
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 77,
+            "pointsAgainst": 87,
+            "pointDifferential": -10
           },
           "previous": {
             "season": 2025,
@@ -11601,6 +11601,25 @@
         ],
         "PIT": [
           {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "PIT",
+            "opponentAbbreviation": "CLE",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 299.0,
+            "rushingYards": 92.0,
+            "totalYards": 391.0,
+            "totalEpa": 4.66,
+            "turnovers": 2.0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_03_CIN_PIT",
             "date": "2026-09-27",
             "season": 2026,
@@ -11675,25 +11694,6 @@
             "totalEpa": 4.27,
             "turnovers": 0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "PIT",
-            "opponentAbbreviation": "CLE",
-            "homeAway": "Away",
-            "teamScore": 6,
-            "opponentScore": 13,
-            "result": "L",
-            "passingYards": 168.0,
-            "rushingYards": 131.0,
-            "totalYards": 299.0,
-            "totalEpa": -12.75,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -16068,14 +16068,14 @@
         "gameType": "REG",
         "awayTeam": "Pittsburgh Steelers",
         "awayAbbreviation": "PIT",
-        "awayScore": null,
+        "awayScore": 24,
         "homeTeam": "Cleveland Browns",
         "homeAbbreviation": "CLE",
-        "homeScore": null,
-        "winner": null,
-        "winnerAbbreviation": null,
+        "homeScore": 27,
+        "winner": "Cleveland Browns",
+        "winnerAbbreviation": "CLE",
         "time": "20:15",
-        "status": "upcoming",
+        "status": "final",
         "stadium": "Huntington Bank Field",
         "roof": "outdoors",
         "surface": "grass",
@@ -16104,13 +16104,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 1,
+            "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 53,
-            "pointsAgainst": 60,
-            "pointDifferential": -7
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 77,
+            "pointsAgainst": 87,
+            "pointDifferential": -10
           },
           "previous": {
             "season": 2025,
@@ -16127,14 +16127,14 @@
         "CLE": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 54,
-            "pointsAgainst": 71,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.75,
+            "pointsFor": 81,
+            "pointsAgainst": 95,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -16151,6 +16151,25 @@
       },
       "recentForm": {
         "PIT": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "PIT",
+            "opponentAbbreviation": "CLE",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 299.0,
+            "rushingYards": 92.0,
+            "totalYards": 391.0,
+            "totalEpa": 4.66,
+            "turnovers": 2.0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_03_CIN_PIT",
             "date": "2026-09-27",
@@ -16226,28 +16245,28 @@
             "totalEpa": 4.27,
             "turnovers": 0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "PIT",
-            "opponentAbbreviation": "CLE",
-            "homeAway": "Away",
-            "teamScore": 6,
-            "opponentScore": 13,
-            "result": "L",
-            "passingYards": 168.0,
-            "rushingYards": 131.0,
-            "totalYards": 299.0,
-            "totalEpa": -12.75,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ],
         "CLE": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "CLE",
+            "opponentAbbreviation": "PIT",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 268.0,
+            "rushingYards": 112.0,
+            "totalYards": 380.0,
+            "totalEpa": 5.95,
+            "turnovers": 2.0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_03_CAR_CLE",
             "date": "2026-09-27",
@@ -16323,29 +16342,22 @@
             "totalEpa": -6.52,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "CLE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 186.0,
-            "rushingYards": 78.0,
-            "totalYards": 264.0,
-            "totalEpa": -11.45,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
       "headToHead": [
+        {
+          "id": "2026_04_PIT_CLE",
+          "date": "2026-10-01",
+          "season": 2026,
+          "week": 4,
+          "gameType": "REG",
+          "awayAbbreviation": "PIT",
+          "awayScore": 24,
+          "homeAbbreviation": "CLE",
+          "homeScore": 27,
+          "winnerAbbreviation": "CLE"
+        },
         {
           "id": "2025_17_PIT_CLE",
           "date": "2025-12-28",
@@ -16393,43 +16405,9 @@
           "homeAbbreviation": "CLE",
           "homeScore": 24,
           "winnerAbbreviation": "CLE"
-        },
-        {
-          "id": "2023_11_PIT_CLE",
-          "date": "2023-11-19",
-          "season": 2023,
-          "week": 11,
-          "gameType": "REG",
-          "awayAbbreviation": "PIT",
-          "awayScore": 10,
-          "homeAbbreviation": "CLE",
-          "homeScore": 13,
-          "winnerAbbreviation": "CLE"
         }
       ],
-      "prediction": {
-        "id": "2026_04_PIT_CLE",
-        "awayTeam": "Pittsburgh Steelers",
-        "awayAbbreviation": "PIT",
-        "homeTeam": "Cleveland Browns",
-        "homeAbbreviation": "CLE",
-        "kickoff": "2026-10-01 20:15",
-        "predictedWinner": "Cleveland Browns",
-        "homeWinProbability": 52,
-        "awayWinProbability": 48,
-        "classifierHomeProbability": 51,
-        "scoreModelHomeProbability": 54,
-        "projectedHomeScore": 21.4,
-        "projectedAwayScore": 23.5,
-        "projectedMargin": 1.3,
-        "projectedTotal": 44.1,
-        "confidence": "Low",
-        "factors": [
-          "Elo team strength",
-          "Quarterback efficiency",
-          "Recent scoring margin"
-        ]
-      }
+      "prediction": null
     },
     "2026_04_IND_WAS": {
       "game": {
@@ -16742,11 +16720,11 @@
         "homeWinProbability": 56,
         "awayWinProbability": 44,
         "classifierHomeProbability": 57,
-        "scoreModelHomeProbability": 54,
-        "projectedHomeScore": 23.8,
+        "scoreModelHomeProbability": 55,
+        "projectedHomeScore": 24.2,
         "projectedAwayScore": 21.4,
-        "projectedMargin": 1.5,
-        "projectedTotal": 44.8,
+        "projectedMargin": 1.6,
+        "projectedTotal": 44.9,
         "confidence": "Low",
         "factors": [
           "Turnover trend",
@@ -17090,11 +17068,11 @@
         "homeWinProbability": 64,
         "awayWinProbability": 36,
         "classifierHomeProbability": 61,
-        "scoreModelHomeProbability": 67,
-        "projectedHomeScore": 27.5,
+        "scoreModelHomeProbability": 68,
+        "projectedHomeScore": 27.6,
         "projectedAwayScore": 21.2,
-        "projectedMargin": 6.3,
-        "projectedTotal": 48.2,
+        "projectedMargin": 6.4,
+        "projectedTotal": 48.1,
         "confidence": "Medium",
         "factors": [
           "Recent scoring margin",
@@ -18145,12 +18123,12 @@
         "predictedWinner": "Cincinnati Bengals",
         "homeWinProbability": 51,
         "awayWinProbability": 49,
-        "classifierHomeProbability": 50,
+        "classifierHomeProbability": 49,
         "scoreModelHomeProbability": 53,
         "projectedHomeScore": 22.8,
         "projectedAwayScore": 22.2,
         "projectedMargin": 1.0,
-        "projectedTotal": 44.4,
+        "projectedTotal": 44.5,
         "confidence": "Low",
         "factors": [
           "Recent scoring margin",
@@ -18880,9 +18858,9 @@
         "classifierHomeProbability": 85,
         "scoreModelHomeProbability": 83,
         "projectedHomeScore": 30.3,
-        "projectedAwayScore": 18.2,
+        "projectedAwayScore": 17.4,
         "projectedMargin": 13.2,
-        "projectedTotal": 47.1,
+        "projectedTotal": 46.2,
         "confidence": "High",
         "factors": [
           "Quarterback efficiency",
@@ -19202,11 +19180,11 @@
         "homeWinProbability": 82,
         "awayWinProbability": 18,
         "classifierHomeProbability": 81,
-        "scoreModelHomeProbability": 84,
-        "projectedHomeScore": 32.8,
-        "projectedAwayScore": 17.8,
-        "projectedMargin": 13.9,
-        "projectedTotal": 50.1,
+        "scoreModelHomeProbability": 85,
+        "projectedHomeScore": 31.6,
+        "projectedAwayScore": 16.0,
+        "projectedMargin": 14.3,
+        "projectedTotal": 46.8,
         "confidence": "High",
         "factors": [
           "Recent scoring margin",
@@ -19538,11 +19516,11 @@
         "homeWinProbability": 88,
         "awayWinProbability": 12,
         "classifierHomeProbability": 89,
-        "scoreModelHomeProbability": 85,
-        "projectedHomeScore": 31.5,
-        "projectedAwayScore": 14.0,
+        "scoreModelHomeProbability": 86,
+        "projectedHomeScore": 31.6,
+        "projectedAwayScore": 14.5,
         "projectedMargin": 14.6,
-        "projectedTotal": 47.8,
+        "projectedTotal": 49.7,
         "confidence": "High",
         "factors": [
           "Quarterback efficiency",
@@ -20186,7 +20164,7 @@
         "homeWinProbability": 72,
         "awayWinProbability": 28,
         "classifierHomeProbability": 71,
-        "scoreModelHomeProbability": 73,
+        "scoreModelHomeProbability": 74,
         "projectedHomeScore": 26.5,
         "projectedAwayScore": 19.6,
         "projectedMargin": 8.7,
@@ -21229,12 +21207,12 @@
         "predictedWinner": "Detroit Lions",
         "homeWinProbability": 35,
         "awayWinProbability": 65,
-        "classifierHomeProbability": 35,
+        "classifierHomeProbability": 34,
         "scoreModelHomeProbability": 36,
-        "projectedHomeScore": 19.4,
-        "projectedAwayScore": 23.2,
+        "projectedHomeScore": 19.5,
+        "projectedAwayScore": 23.3,
         "projectedMargin": -5.1,
-        "projectedTotal": 43.8,
+        "projectedTotal": 43.5,
         "confidence": "Medium",
         "factors": [
           "Elo team strength",
@@ -22987,14 +22965,14 @@
         "CLE": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 54,
-            "pointsAgainst": 71,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.75,
+            "pointsFor": 81,
+            "pointsAgainst": 95,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -23035,6 +23013,25 @@
       },
       "recentForm": {
         "CLE": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "CLE",
+            "opponentAbbreviation": "PIT",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 268.0,
+            "rushingYards": 112.0,
+            "totalYards": 380.0,
+            "totalEpa": 5.95,
+            "turnovers": 2.0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_03_CAR_CLE",
             "date": "2026-09-27",
@@ -23109,25 +23106,6 @@
             "totalYards": 229.0,
             "totalEpa": -6.52,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "CLE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 186.0,
-            "rushingYards": 78.0,
-            "totalYards": 264.0,
-            "totalEpa": -11.45,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -23712,13 +23690,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 1,
+            "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 53,
-            "pointsAgainst": 60,
-            "pointDifferential": -7
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 77,
+            "pointsAgainst": 87,
+            "pointDifferential": -10
           },
           "previous": {
             "season": 2025,
@@ -23833,6 +23811,25 @@
         ],
         "PIT": [
           {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "PIT",
+            "opponentAbbreviation": "CLE",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 299.0,
+            "rushingYards": 92.0,
+            "totalYards": 391.0,
+            "totalEpa": 4.66,
+            "turnovers": 2.0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_03_CIN_PIT",
             "date": "2026-09-27",
             "season": 2026,
@@ -23907,25 +23904,6 @@
             "totalEpa": 4.27,
             "turnovers": 0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "PIT",
-            "opponentAbbreviation": "CLE",
-            "homeAway": "Away",
-            "teamScore": 6,
-            "opponentScore": 13,
-            "result": "L",
-            "passingYards": 168.0,
-            "rushingYards": 131.0,
-            "totalYards": 299.0,
-            "totalEpa": -12.75,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -27405,14 +27383,14 @@
         "CLE": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 54,
-            "pointsAgainst": 71,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.75,
+            "pointsFor": 81,
+            "pointsAgainst": 95,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -27527,6 +27505,25 @@
         ],
         "CLE": [
           {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "CLE",
+            "opponentAbbreviation": "PIT",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 268.0,
+            "rushingYards": 112.0,
+            "totalYards": 380.0,
+            "totalEpa": 5.95,
+            "turnovers": 2.0,
+            "defensiveSacks": 5.0
+          },
+          {
             "id": "2026_03_CAR_CLE",
             "date": "2026-09-27",
             "season": 2026,
@@ -27600,25 +27597,6 @@
             "totalYards": 229.0,
             "totalEpa": -6.52,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "CLE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 186.0,
-            "rushingYards": 78.0,
-            "totalYards": 264.0,
-            "totalEpa": -11.45,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -29060,13 +29038,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 1,
+            "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 53,
-            "pointsAgainst": 60,
-            "pointDifferential": -7
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 77,
+            "pointsAgainst": 87,
+            "pointDifferential": -10
           },
           "previous": {
             "season": 2025,
@@ -29107,6 +29085,25 @@
       },
       "recentForm": {
         "PIT": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "PIT",
+            "opponentAbbreviation": "CLE",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 299.0,
+            "rushingYards": 92.0,
+            "totalYards": 391.0,
+            "totalEpa": 4.66,
+            "turnovers": 2.0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_03_CIN_PIT",
             "date": "2026-09-27",
@@ -29182,25 +29179,6 @@
             "totalEpa": 4.27,
             "turnovers": 0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "PIT",
-            "opponentAbbreviation": "CLE",
-            "homeAway": "Away",
-            "teamScore": 6,
-            "opponentScore": 13,
-            "result": "L",
-            "passingYards": 168.0,
-            "rushingYards": 131.0,
-            "totalYards": 299.0,
-            "totalEpa": -12.75,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ],
         "TB": [
@@ -31704,13 +31682,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 1,
+            "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 53,
-            "pointsAgainst": 60,
-            "pointDifferential": -7
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 77,
+            "pointsAgainst": 87,
+            "pointDifferential": -10
           },
           "previous": {
             "season": 2025,
@@ -31751,6 +31729,25 @@
       },
       "recentForm": {
         "PIT": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "PIT",
+            "opponentAbbreviation": "CLE",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 299.0,
+            "rushingYards": 92.0,
+            "totalYards": 391.0,
+            "totalEpa": 4.66,
+            "turnovers": 2.0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_03_CIN_PIT",
             "date": "2026-09-27",
@@ -31826,25 +31823,6 @@
             "totalEpa": 4.27,
             "turnovers": 0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "PIT",
-            "opponentAbbreviation": "CLE",
-            "homeAway": "Away",
-            "teamScore": 6,
-            "opponentScore": 13,
-            "result": "L",
-            "passingYards": 168.0,
-            "rushingYards": 131.0,
-            "totalYards": 299.0,
-            "totalEpa": -12.75,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ],
         "NO": [
@@ -32355,14 +32333,14 @@
         "CLE": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 54,
-            "pointsAgainst": 71,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.75,
+            "pointsFor": 81,
+            "pointsAgainst": 95,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -32403,6 +32381,25 @@
       },
       "recentForm": {
         "CLE": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "CLE",
+            "opponentAbbreviation": "PIT",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 268.0,
+            "rushingYards": 112.0,
+            "totalYards": 380.0,
+            "totalEpa": 5.95,
+            "turnovers": 2.0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_03_CAR_CLE",
             "date": "2026-09-27",
@@ -32477,25 +32474,6 @@
             "totalYards": 229.0,
             "totalEpa": -6.52,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "CLE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 186.0,
-            "rushingYards": 78.0,
-            "totalYards": 264.0,
-            "totalEpa": -11.45,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -37318,17 +37296,17 @@
         "roof": "outdoors",
         "surface": "grass",
         "lastMeeting": {
-          "id": "2025_17_PIT_CLE",
-          "date": "2025-12-28",
-          "season": 2025,
-          "week": 17,
+          "id": "2026_04_PIT_CLE",
+          "date": "2026-10-01",
+          "season": 2026,
+          "week": 4,
           "gameType": "REG",
           "awayTeam": "Pittsburgh Steelers",
           "awayAbbreviation": "PIT",
-          "awayScore": 6,
+          "awayScore": 24,
           "homeTeam": "Cleveland Browns",
           "homeAbbreviation": "CLE",
-          "homeScore": 13,
+          "homeScore": 27,
           "winner": "Cleveland Browns",
           "winnerAbbreviation": "CLE"
         }
@@ -37341,14 +37319,14 @@
         "CLE": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 54,
-            "pointsAgainst": 71,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.75,
+            "pointsFor": 81,
+            "pointsAgainst": 95,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -37366,13 +37344,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 1,
+            "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 53,
-            "pointsAgainst": 60,
-            "pointDifferential": -7
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 77,
+            "pointsAgainst": 87,
+            "pointDifferential": -10
           },
           "previous": {
             "season": 2025,
@@ -37389,6 +37367,25 @@
       },
       "recentForm": {
         "CLE": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "CLE",
+            "opponentAbbreviation": "PIT",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 268.0,
+            "rushingYards": 112.0,
+            "totalYards": 380.0,
+            "totalEpa": 5.95,
+            "turnovers": 2.0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_03_CAR_CLE",
             "date": "2026-09-27",
@@ -37464,28 +37461,28 @@
             "totalEpa": -6.52,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "CLE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 186.0,
-            "rushingYards": 78.0,
-            "totalYards": 264.0,
-            "totalEpa": -11.45,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ],
         "PIT": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "PIT",
+            "opponentAbbreviation": "CLE",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 299.0,
+            "rushingYards": 92.0,
+            "totalYards": 391.0,
+            "totalEpa": 4.66,
+            "turnovers": 2.0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_03_CIN_PIT",
             "date": "2026-09-27",
@@ -37561,29 +37558,22 @@
             "totalEpa": 4.27,
             "turnovers": 0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "PIT",
-            "opponentAbbreviation": "CLE",
-            "homeAway": "Away",
-            "teamScore": 6,
-            "opponentScore": 13,
-            "result": "L",
-            "passingYards": 168.0,
-            "rushingYards": 131.0,
-            "totalYards": 299.0,
-            "totalEpa": -12.75,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ]
       },
       "headToHead": [
+        {
+          "id": "2026_04_PIT_CLE",
+          "date": "2026-10-01",
+          "season": 2026,
+          "week": 4,
+          "gameType": "REG",
+          "awayAbbreviation": "PIT",
+          "awayScore": 24,
+          "homeAbbreviation": "CLE",
+          "homeScore": 27,
+          "winnerAbbreviation": "CLE"
+        },
         {
           "id": "2025_17_PIT_CLE",
           "date": "2025-12-28",
@@ -37630,18 +37620,6 @@
           "awayScore": 19,
           "homeAbbreviation": "CLE",
           "homeScore": 24,
-          "winnerAbbreviation": "CLE"
-        },
-        {
-          "id": "2023_11_PIT_CLE",
-          "date": "2023-11-19",
-          "season": 2023,
-          "week": 11,
-          "gameType": "REG",
-          "awayAbbreviation": "PIT",
-          "awayScore": 10,
-          "homeAbbreviation": "CLE",
-          "homeScore": 13,
           "winnerAbbreviation": "CLE"
         }
       ],
@@ -41337,14 +41315,14 @@
         "CLE": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 54,
-            "pointsAgainst": 71,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.75,
+            "pointsFor": 81,
+            "pointsAgainst": 95,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -41385,6 +41363,25 @@
       },
       "recentForm": {
         "CLE": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "CLE",
+            "opponentAbbreviation": "PIT",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 268.0,
+            "rushingYards": 112.0,
+            "totalYards": 380.0,
+            "totalEpa": 5.95,
+            "turnovers": 2.0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_03_CAR_CLE",
             "date": "2026-09-27",
@@ -41459,25 +41456,6 @@
             "totalYards": 229.0,
             "totalEpa": -6.52,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "CLE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 186.0,
-            "rushingYards": 78.0,
-            "totalYards": 264.0,
-            "totalEpa": -11.45,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -46855,14 +46833,14 @@
         "CLE": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 54,
-            "pointsAgainst": 71,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.75,
+            "pointsFor": 81,
+            "pointsAgainst": 95,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -46977,6 +46955,25 @@
         ],
         "CLE": [
           {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "CLE",
+            "opponentAbbreviation": "PIT",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 268.0,
+            "rushingYards": 112.0,
+            "totalYards": 380.0,
+            "totalEpa": 5.95,
+            "turnovers": 2.0,
+            "defensiveSacks": 5.0
+          },
+          {
             "id": "2026_03_CAR_CLE",
             "date": "2026-09-27",
             "season": 2026,
@@ -47050,25 +47047,6 @@
             "totalYards": 229.0,
             "totalEpa": -6.52,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "CLE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 186.0,
-            "rushingYards": 78.0,
-            "totalYards": 264.0,
-            "totalEpa": -11.45,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -49500,13 +49478,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 1,
+            "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 53,
-            "pointsAgainst": 60,
-            "pointDifferential": -7
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 77,
+            "pointsAgainst": 87,
+            "pointDifferential": -10
           },
           "previous": {
             "season": 2025,
@@ -49547,6 +49525,25 @@
       },
       "recentForm": {
         "PIT": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "PIT",
+            "opponentAbbreviation": "CLE",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 299.0,
+            "rushingYards": 92.0,
+            "totalYards": 391.0,
+            "totalEpa": 4.66,
+            "turnovers": 2.0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_03_CIN_PIT",
             "date": "2026-09-27",
@@ -49622,25 +49619,6 @@
             "totalEpa": 4.27,
             "turnovers": 0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "PIT",
-            "opponentAbbreviation": "CLE",
-            "homeAway": "Away",
-            "teamScore": 6,
-            "opponentScore": 13,
-            "result": "L",
-            "passingYards": 168.0,
-            "rushingYards": 131.0,
-            "totalYards": 299.0,
-            "totalEpa": -12.75,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ],
         "CIN": [
@@ -53436,13 +53414,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 1,
+            "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 53,
-            "pointsAgainst": 60,
-            "pointDifferential": -7
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 77,
+            "pointsAgainst": 87,
+            "pointDifferential": -10
           },
           "previous": {
             "season": 2025,
@@ -53483,6 +53461,25 @@
       },
       "recentForm": {
         "PIT": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "PIT",
+            "opponentAbbreviation": "CLE",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 299.0,
+            "rushingYards": 92.0,
+            "totalYards": 391.0,
+            "totalEpa": 4.66,
+            "turnovers": 2.0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_03_CIN_PIT",
             "date": "2026-09-27",
@@ -53558,25 +53555,6 @@
             "totalEpa": 4.27,
             "turnovers": 0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "PIT",
-            "opponentAbbreviation": "CLE",
-            "homeAway": "Away",
-            "teamScore": 6,
-            "opponentScore": 13,
-            "result": "L",
-            "passingYards": 168.0,
-            "rushingYards": 131.0,
-            "totalYards": 299.0,
-            "totalEpa": -12.75,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ],
         "PHI": [
@@ -55814,13 +55792,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 1,
+            "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 53,
-            "pointsAgainst": 60,
-            "pointDifferential": -7
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 77,
+            "pointsAgainst": 87,
+            "pointDifferential": -10
           },
           "previous": {
             "season": 2025,
@@ -55935,6 +55913,25 @@
         ],
         "PIT": [
           {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "PIT",
+            "opponentAbbreviation": "CLE",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 299.0,
+            "rushingYards": 92.0,
+            "totalYards": 391.0,
+            "totalEpa": 4.66,
+            "turnovers": 2.0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_03_CIN_PIT",
             "date": "2026-09-27",
             "season": 2026,
@@ -56009,25 +56006,6 @@
             "totalEpa": 4.27,
             "turnovers": 0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "PIT",
-            "opponentAbbreviation": "CLE",
-            "homeAway": "Away",
-            "teamScore": 6,
-            "opponentScore": 13,
-            "result": "L",
-            "passingYards": 168.0,
-            "rushingYards": 131.0,
-            "totalYards": 299.0,
-            "totalEpa": -12.75,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -56839,14 +56817,14 @@
         "CLE": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 54,
-            "pointsAgainst": 71,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.75,
+            "pointsFor": 81,
+            "pointsAgainst": 95,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -56961,6 +56939,25 @@
         ],
         "CLE": [
           {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "CLE",
+            "opponentAbbreviation": "PIT",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 268.0,
+            "rushingYards": 112.0,
+            "totalYards": 380.0,
+            "totalEpa": 5.95,
+            "turnovers": 2.0,
+            "defensiveSacks": 5.0
+          },
+          {
             "id": "2026_03_CAR_CLE",
             "date": "2026-09-27",
             "season": 2026,
@@ -57034,25 +57031,6 @@
             "totalYards": 229.0,
             "totalEpa": -6.52,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "CLE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 186.0,
-            "rushingYards": 78.0,
-            "totalYards": 264.0,
-            "totalEpa": -11.45,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -60159,14 +60137,14 @@
         "CLE": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 54,
-            "pointsAgainst": 71,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.75,
+            "pointsFor": 81,
+            "pointsAgainst": 95,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -60281,6 +60259,25 @@
         ],
         "CLE": [
           {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "CLE",
+            "opponentAbbreviation": "PIT",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 268.0,
+            "rushingYards": 112.0,
+            "totalYards": 380.0,
+            "totalEpa": 5.95,
+            "turnovers": 2.0,
+            "defensiveSacks": 5.0
+          },
+          {
             "id": "2026_03_CAR_CLE",
             "date": "2026-09-27",
             "season": 2026,
@@ -60354,25 +60351,6 @@
             "totalYards": 229.0,
             "totalEpa": -6.52,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "CLE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 186.0,
-            "rushingYards": 78.0,
-            "totalYards": 264.0,
-            "totalEpa": -11.45,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -63758,13 +63736,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 1,
+            "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 53,
-            "pointsAgainst": 60,
-            "pointDifferential": -7
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 77,
+            "pointsAgainst": 87,
+            "pointDifferential": -10
           },
           "previous": {
             "season": 2025,
@@ -63879,6 +63857,25 @@
         ],
         "PIT": [
           {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "PIT",
+            "opponentAbbreviation": "CLE",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 299.0,
+            "rushingYards": 92.0,
+            "totalYards": 391.0,
+            "totalEpa": 4.66,
+            "turnovers": 2.0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_03_CIN_PIT",
             "date": "2026-09-27",
             "season": 2026,
@@ -63953,25 +63950,6 @@
             "totalEpa": 4.27,
             "turnovers": 0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "PIT",
-            "opponentAbbreviation": "CLE",
-            "homeAway": "Away",
-            "teamScore": 6,
-            "opponentScore": 13,
-            "result": "L",
-            "passingYards": 168.0,
-            "rushingYards": 131.0,
-            "totalYards": 299.0,
-            "totalEpa": -12.75,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -64687,14 +64665,14 @@
         "CLE": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 54,
-            "pointsAgainst": 71,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.75,
+            "pointsFor": 81,
+            "pointsAgainst": 95,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -64809,6 +64787,25 @@
         ],
         "CLE": [
           {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "CLE",
+            "opponentAbbreviation": "PIT",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 268.0,
+            "rushingYards": 112.0,
+            "totalYards": 380.0,
+            "totalEpa": 5.95,
+            "turnovers": 2.0,
+            "defensiveSacks": 5.0
+          },
+          {
             "id": "2026_03_CAR_CLE",
             "date": "2026-09-27",
             "season": 2026,
@@ -64882,25 +64879,6 @@
             "totalYards": 229.0,
             "totalEpa": -6.52,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "CLE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 186.0,
-            "rushingYards": 78.0,
-            "totalYards": 264.0,
-            "totalEpa": -11.45,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -68878,13 +68856,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 1,
+            "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 53,
-            "pointsAgainst": 60,
-            "pointDifferential": -7
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 77,
+            "pointsAgainst": 87,
+            "pointDifferential": -10
           },
           "previous": {
             "season": 2025,
@@ -68925,6 +68903,25 @@
       },
       "recentForm": {
         "PIT": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "PIT",
+            "opponentAbbreviation": "CLE",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 299.0,
+            "rushingYards": 92.0,
+            "totalYards": 391.0,
+            "totalEpa": 4.66,
+            "turnovers": 2.0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_03_CIN_PIT",
             "date": "2026-09-27",
@@ -69000,25 +68997,6 @@
             "totalEpa": 4.27,
             "turnovers": 0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "PIT",
-            "opponentAbbreviation": "CLE",
-            "homeAway": "Away",
-            "teamScore": 6,
-            "opponentScore": 13,
-            "result": "L",
-            "passingYards": 168.0,
-            "rushingYards": 131.0,
-            "totalYards": 299.0,
-            "totalEpa": -12.75,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ],
         "JAX": [
@@ -70496,13 +70474,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 1,
+            "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 53,
-            "pointsAgainst": 60,
-            "pointDifferential": -7
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 77,
+            "pointsAgainst": 87,
+            "pointDifferential": -10
           },
           "previous": {
             "season": 2025,
@@ -70617,6 +70595,25 @@
         ],
         "PIT": [
           {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "PIT",
+            "opponentAbbreviation": "CLE",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 299.0,
+            "rushingYards": 92.0,
+            "totalYards": 391.0,
+            "totalEpa": 4.66,
+            "turnovers": 2.0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_03_CIN_PIT",
             "date": "2026-09-27",
             "season": 2026,
@@ -70691,25 +70688,6 @@
             "totalEpa": 4.27,
             "turnovers": 0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "PIT",
-            "opponentAbbreviation": "CLE",
-            "homeAway": "Away",
-            "teamScore": 6,
-            "opponentScore": 13,
-            "result": "L",
-            "passingYards": 168.0,
-            "rushingYards": 131.0,
-            "totalYards": 299.0,
-            "totalEpa": -12.75,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -71135,14 +71113,14 @@
         "CLE": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 54,
-            "pointsAgainst": 71,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.75,
+            "pointsFor": 81,
+            "pointsAgainst": 95,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -71183,6 +71161,25 @@
       },
       "recentForm": {
         "CLE": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "CLE",
+            "opponentAbbreviation": "PIT",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 268.0,
+            "rushingYards": 112.0,
+            "totalYards": 380.0,
+            "totalEpa": 5.95,
+            "turnovers": 2.0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_03_CAR_CLE",
             "date": "2026-09-27",
@@ -71257,25 +71254,6 @@
             "totalYards": 229.0,
             "totalEpa": -6.52,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "CLE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 186.0,
-            "rushingYards": 78.0,
-            "totalYards": 264.0,
-            "totalEpa": -11.45,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -76170,13 +76148,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 1,
+            "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 53,
-            "pointsAgainst": 60,
-            "pointDifferential": -7
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 77,
+            "pointsAgainst": 87,
+            "pointDifferential": -10
           },
           "previous": {
             "season": 2025,
@@ -76291,6 +76269,25 @@
         ],
         "PIT": [
           {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "PIT",
+            "opponentAbbreviation": "CLE",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 299.0,
+            "rushingYards": 92.0,
+            "totalYards": 391.0,
+            "totalEpa": 4.66,
+            "turnovers": 2.0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_03_CIN_PIT",
             "date": "2026-09-27",
             "season": 2026,
@@ -76365,25 +76362,6 @@
             "totalEpa": 4.27,
             "turnovers": 0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "PIT",
-            "opponentAbbreviation": "CLE",
-            "homeAway": "Away",
-            "teamScore": 6,
-            "opponentScore": 13,
-            "result": "L",
-            "passingYards": 168.0,
-            "rushingYards": 131.0,
-            "totalYards": 299.0,
-            "totalEpa": -12.75,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -76761,14 +76739,14 @@
         "CLE": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 54,
-            "pointsAgainst": 71,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.75,
+            "pointsFor": 81,
+            "pointsAgainst": 95,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -76809,6 +76787,25 @@
       },
       "recentForm": {
         "CLE": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "CLE",
+            "opponentAbbreviation": "PIT",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 268.0,
+            "rushingYards": 112.0,
+            "totalYards": 380.0,
+            "totalEpa": 5.95,
+            "turnovers": 2.0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_03_CAR_CLE",
             "date": "2026-09-27",
@@ -76883,25 +76880,6 @@
             "totalYards": 229.0,
             "totalEpa": -6.52,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "CLE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 186.0,
-            "rushingYards": 78.0,
-            "totalYards": 264.0,
-            "totalEpa": -11.45,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -80781,14 +80759,14 @@
         "CLE": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 54,
-            "pointsAgainst": 71,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.75,
+            "pointsFor": 81,
+            "pointsAgainst": 95,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -80903,6 +80881,25 @@
         ],
         "CLE": [
           {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "CLE",
+            "opponentAbbreviation": "PIT",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 268.0,
+            "rushingYards": 112.0,
+            "totalYards": 380.0,
+            "totalEpa": 5.95,
+            "turnovers": 2.0,
+            "defensiveSacks": 5.0
+          },
+          {
             "id": "2026_03_CAR_CLE",
             "date": "2026-09-27",
             "season": 2026,
@@ -80976,25 +80973,6 @@
             "totalYards": 229.0,
             "totalEpa": -6.52,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "CLE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 186.0,
-            "rushingYards": 78.0,
-            "totalYards": 264.0,
-            "totalEpa": -11.45,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -82786,13 +82764,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 1,
+            "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 53,
-            "pointsAgainst": 60,
-            "pointDifferential": -7
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 77,
+            "pointsAgainst": 87,
+            "pointDifferential": -10
           },
           "previous": {
             "season": 2025,
@@ -82833,6 +82811,25 @@
       },
       "recentForm": {
         "PIT": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "PIT",
+            "opponentAbbreviation": "CLE",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 299.0,
+            "rushingYards": 92.0,
+            "totalYards": 391.0,
+            "totalEpa": 4.66,
+            "turnovers": 2.0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_03_CIN_PIT",
             "date": "2026-09-27",
@@ -82908,25 +82905,6 @@
             "totalEpa": 4.27,
             "turnovers": 0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "PIT",
-            "opponentAbbreviation": "CLE",
-            "homeAway": "Away",
-            "teamScore": 6,
-            "opponentScore": 13,
-            "result": "L",
-            "passingYards": 168.0,
-            "rushingYards": 131.0,
-            "totalYards": 299.0,
-            "totalEpa": -12.75,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ],
         "TEN": [
@@ -85743,14 +85721,14 @@
         "CLE": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 1,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 54,
-            "pointsAgainst": 71,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.75,
+            "pointsFor": 81,
+            "pointsAgainst": 95,
+            "pointDifferential": -14
           },
           "previous": {
             "season": 2025,
@@ -85791,6 +85769,25 @@
       },
       "recentForm": {
         "CLE": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "CLE",
+            "opponentAbbreviation": "PIT",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 268.0,
+            "rushingYards": 112.0,
+            "totalYards": 380.0,
+            "totalEpa": 5.95,
+            "turnovers": 2.0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_03_CAR_CLE",
             "date": "2026-09-27",
@@ -85865,25 +85862,6 @@
             "totalYards": 229.0,
             "totalEpa": -6.52,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "CLE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 186.0,
-            "rushingYards": 78.0,
-            "totalYards": 264.0,
-            "totalEpa": -11.45,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -88894,13 +88872,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 1,
+            "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.667,
-            "pointsFor": 53,
-            "pointsAgainst": 60,
-            "pointDifferential": -7
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 77,
+            "pointsAgainst": 87,
+            "pointDifferential": -10
           },
           "previous": {
             "season": 2025,
@@ -88941,6 +88919,25 @@
       },
       "recentForm": {
         "PIT": [
+          {
+            "id": "2026_04_PIT_CLE",
+            "date": "2026-10-01",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "PIT",
+            "opponentAbbreviation": "CLE",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 299.0,
+            "rushingYards": 92.0,
+            "totalYards": 391.0,
+            "totalEpa": 4.66,
+            "turnovers": 2.0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_03_CIN_PIT",
             "date": "2026-09-27",
@@ -89016,25 +89013,6 @@
             "totalEpa": 4.27,
             "turnovers": 0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2025_17_PIT_CLE",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "PIT",
-            "opponentAbbreviation": "CLE",
-            "homeAway": "Away",
-            "teamScore": 6,
-            "opponentScore": 13,
-            "result": "L",
-            "passingYards": 168.0,
-            "rushingYards": 131.0,
-            "totalYards": 299.0,
-            "totalEpa": -12.75,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ],
         "BAL": [
