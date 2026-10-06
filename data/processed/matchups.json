@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "asOf": "2026-10-05T19:21:08.529090+00:00",
+  "asOf": "2026-10-06T16:52:09.128819+00:00",
   "provider": "nflverse",
   "games": {
     "2026_01_NE_SEA": {
@@ -723,14 +723,14 @@
         "ATL": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 51,
-            "pointsAgainst": 68,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 96,
+            "pointsAgainst": 92,
+            "pointDifferential": 4
           },
           "previous": {
             "season": 2025,
@@ -771,6 +771,25 @@
       },
       "recentForm": {
         "ATL": [
+          {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "ATL",
+            "opponentAbbreviation": "NO",
+            "homeAway": "Away",
+            "teamScore": 45,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 223.0,
+            "rushingYards": 205.0,
+            "totalYards": 428.0,
+            "totalEpa": 22.73,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_03_ATL_GB",
             "date": "2026-09-24",
@@ -846,25 +865,6 @@
             "totalEpa": -15.81,
             "turnovers": 1.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_LA_ATL",
-            "date": "2025-12-29",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "ATL",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Home",
-            "teamScore": 27,
-            "opponentScore": 24,
-            "result": "W",
-            "passingYards": 126.0,
-            "rushingYards": 219.0,
-            "totalYards": 345.0,
-            "totalEpa": 6.13,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "PIT": [
@@ -2402,13 +2402,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 81,
-            "pointsAgainst": 83,
-            "pointDifferential": -2
+            "gamesPlayed": 4,
+            "winPct": 0.25,
+            "pointsFor": 105,
+            "pointsAgainst": 128,
+            "pointDifferential": -23
           },
           "previous": {
             "season": 2025,
@@ -2449,6 +2449,25 @@
       },
       "recentForm": {
         "NO": [
+          {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "NO",
+            "opponentAbbreviation": "ATL",
+            "homeAway": "Home",
+            "teamScore": 24,
+            "opponentScore": 45,
+            "result": "L",
+            "passingYards": 286.0,
+            "rushingYards": 50.0,
+            "totalYards": 336.0,
+            "totalEpa": -5.04,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_03_LV_NO",
             "date": "2026-09-27",
@@ -2523,25 +2542,6 @@
             "totalYards": 367.0,
             "totalEpa": -1.91,
             "turnovers": 2.0,
-            "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_NO_TEN",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "NO",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 26,
-            "result": "W",
-            "passingYards": 333.0,
-            "rushingYards": 103.0,
-            "totalYards": 436.0,
-            "totalEpa": 19.39,
-            "turnovers": 1.0,
             "defensiveSacks": 4.0
           }
         ],
@@ -5793,14 +5793,14 @@
         "ATL": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 51,
-            "pointsAgainst": 68,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 96,
+            "pointsAgainst": 92,
+            "pointDifferential": 4
           },
           "previous": {
             "season": 2025,
@@ -5915,6 +5915,25 @@
         ],
         "ATL": [
           {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "ATL",
+            "opponentAbbreviation": "NO",
+            "homeAway": "Away",
+            "teamScore": 45,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 223.0,
+            "rushingYards": 205.0,
+            "totalYards": 428.0,
+            "totalEpa": 22.73,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_03_ATL_GB",
             "date": "2026-09-24",
             "season": 2026,
@@ -5989,25 +6008,6 @@
             "totalEpa": -15.81,
             "turnovers": 1.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_LA_ATL",
-            "date": "2025-12-29",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "ATL",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Home",
-            "teamScore": 27,
-            "opponentScore": 24,
-            "result": "W",
-            "passingYards": 126.0,
-            "rushingYards": 219.0,
-            "totalYards": 345.0,
-            "totalEpa": 6.13,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -7424,13 +7424,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 81,
-            "pointsAgainst": 83,
-            "pointDifferential": -2
+            "gamesPlayed": 4,
+            "winPct": 0.25,
+            "pointsFor": 105,
+            "pointsAgainst": 128,
+            "pointDifferential": -23
           },
           "previous": {
             "season": 2025,
@@ -7471,6 +7471,25 @@
       },
       "recentForm": {
         "NO": [
+          {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "NO",
+            "opponentAbbreviation": "ATL",
+            "homeAway": "Home",
+            "teamScore": 24,
+            "opponentScore": 45,
+            "result": "L",
+            "passingYards": 286.0,
+            "rushingYards": 50.0,
+            "totalYards": 336.0,
+            "totalEpa": -5.04,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_03_LV_NO",
             "date": "2026-09-27",
@@ -7545,25 +7564,6 @@
             "totalYards": 367.0,
             "totalEpa": -1.91,
             "turnovers": 2.0,
-            "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_NO_TEN",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "NO",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 26,
-            "result": "W",
-            "passingYards": 333.0,
-            "rushingYards": 103.0,
-            "totalYards": 436.0,
-            "totalEpa": 19.39,
-            "turnovers": 1.0,
             "defensiveSacks": 4.0
           }
         ],
@@ -10815,14 +10815,14 @@
         "ATL": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 51,
-            "pointsAgainst": 68,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 96,
+            "pointsAgainst": 92,
+            "pointDifferential": 4
           },
           "previous": {
             "season": 2025,
@@ -10863,6 +10863,25 @@
       },
       "recentForm": {
         "ATL": [
+          {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "ATL",
+            "opponentAbbreviation": "NO",
+            "homeAway": "Away",
+            "teamScore": 45,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 223.0,
+            "rushingYards": 205.0,
+            "totalYards": 428.0,
+            "totalEpa": 22.73,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_03_ATL_GB",
             "date": "2026-09-24",
@@ -10938,25 +10957,6 @@
             "totalEpa": -15.81,
             "turnovers": 1.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_LA_ATL",
-            "date": "2025-12-29",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "ATL",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Home",
-            "teamScore": 27,
-            "opponentScore": 24,
-            "result": "W",
-            "passingYards": 126.0,
-            "rushingYards": 219.0,
-            "totalYards": 345.0,
-            "totalEpa": 6.13,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "GB": [
@@ -15138,13 +15138,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 81,
-            "pointsAgainst": 83,
-            "pointDifferential": -2
+            "gamesPlayed": 4,
+            "winPct": 0.25,
+            "pointsFor": 105,
+            "pointsAgainst": 128,
+            "pointDifferential": -23
           },
           "previous": {
             "season": 2025,
@@ -15259,6 +15259,25 @@
         ],
         "NO": [
           {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "NO",
+            "opponentAbbreviation": "ATL",
+            "homeAway": "Home",
+            "teamScore": 24,
+            "opponentScore": 45,
+            "result": "L",
+            "passingYards": 286.0,
+            "rushingYards": 50.0,
+            "totalYards": 336.0,
+            "totalEpa": -5.04,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_03_LV_NO",
             "date": "2026-09-27",
             "season": 2026,
@@ -15332,25 +15351,6 @@
             "totalYards": 367.0,
             "totalEpa": -1.91,
             "turnovers": 2.0,
-            "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_NO_TEN",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "NO",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 26,
-            "result": "W",
-            "passingYards": 333.0,
-            "rushingYards": 103.0,
-            "totalYards": 436.0,
-            "totalEpa": 19.39,
-            "turnovers": 1.0,
             "defensiveSacks": 4.0
           }
         ]
@@ -21054,14 +21054,14 @@
         "gameType": "REG",
         "awayTeam": "Atlanta Falcons",
         "awayAbbreviation": "ATL",
-        "awayScore": null,
+        "awayScore": 45,
         "homeTeam": "New Orleans Saints",
         "homeAbbreviation": "NO",
-        "homeScore": null,
-        "winner": null,
-        "winnerAbbreviation": null,
+        "homeScore": 24,
+        "winner": "Atlanta Falcons",
+        "winnerAbbreviation": "ATL",
         "time": "20:15",
-        "status": "upcoming",
+        "status": "final",
         "stadium": "Caesars Superdome",
         "roof": "dome",
         "surface": "sportturf",
@@ -21089,14 +21089,14 @@
         "ATL": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 51,
-            "pointsAgainst": 68,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 96,
+            "pointsAgainst": 92,
+            "pointDifferential": 4
           },
           "previous": {
             "season": 2025,
@@ -21114,13 +21114,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 81,
-            "pointsAgainst": 83,
-            "pointDifferential": -2
+            "gamesPlayed": 4,
+            "winPct": 0.25,
+            "pointsFor": 105,
+            "pointsAgainst": 128,
+            "pointDifferential": -23
           },
           "previous": {
             "season": 2025,
@@ -21137,6 +21137,25 @@
       },
       "recentForm": {
         "ATL": [
+          {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "ATL",
+            "opponentAbbreviation": "NO",
+            "homeAway": "Away",
+            "teamScore": 45,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 223.0,
+            "rushingYards": 205.0,
+            "totalYards": 428.0,
+            "totalEpa": 22.73,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_03_ATL_GB",
             "date": "2026-09-24",
@@ -21212,28 +21231,28 @@
             "totalEpa": -15.81,
             "turnovers": 1.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_LA_ATL",
-            "date": "2025-12-29",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "ATL",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Home",
-            "teamScore": 27,
-            "opponentScore": 24,
-            "result": "W",
-            "passingYards": 126.0,
-            "rushingYards": 219.0,
-            "totalYards": 345.0,
-            "totalEpa": 6.13,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "NO": [
+          {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "NO",
+            "opponentAbbreviation": "ATL",
+            "homeAway": "Home",
+            "teamScore": 24,
+            "opponentScore": 45,
+            "result": "L",
+            "passingYards": 286.0,
+            "rushingYards": 50.0,
+            "totalYards": 336.0,
+            "totalEpa": -5.04,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_03_LV_NO",
             "date": "2026-09-27",
@@ -21309,29 +21328,22 @@
             "totalEpa": -1.91,
             "turnovers": 2.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_NO_TEN",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "NO",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 26,
-            "result": "W",
-            "passingYards": 333.0,
-            "rushingYards": 103.0,
-            "totalYards": 436.0,
-            "totalEpa": 19.39,
-            "turnovers": 1.0,
-            "defensiveSacks": 4.0
           }
         ]
       },
       "headToHead": [
+        {
+          "id": "2026_04_ATL_NO",
+          "date": "2026-10-05",
+          "season": 2026,
+          "week": 4,
+          "gameType": "REG",
+          "awayAbbreviation": "ATL",
+          "awayScore": 45,
+          "homeAbbreviation": "NO",
+          "homeScore": 24,
+          "winnerAbbreviation": "ATL"
+        },
         {
           "id": "2025_18_NO_ATL",
           "date": "2026-01-04",
@@ -21379,43 +21391,9 @@
           "homeAbbreviation": "ATL",
           "homeScore": 26,
           "winnerAbbreviation": "ATL"
-        },
-        {
-          "id": "2023_18_ATL_NO",
-          "date": "2024-01-07",
-          "season": 2023,
-          "week": 18,
-          "gameType": "REG",
-          "awayAbbreviation": "ATL",
-          "awayScore": 17,
-          "homeAbbreviation": "NO",
-          "homeScore": 48,
-          "winnerAbbreviation": "NO"
         }
       ],
-      "prediction": {
-        "id": "2026_04_ATL_NO",
-        "awayTeam": "Atlanta Falcons",
-        "awayAbbreviation": "ATL",
-        "homeTeam": "New Orleans Saints",
-        "homeAbbreviation": "NO",
-        "kickoff": "2026-10-05 20:15",
-        "predictedWinner": "New Orleans Saints",
-        "homeWinProbability": 61,
-        "awayWinProbability": 39,
-        "classifierHomeProbability": 60,
-        "scoreModelHomeProbability": 63,
-        "projectedHomeScore": 24.6,
-        "projectedAwayScore": 21.7,
-        "projectedMargin": 4.1,
-        "projectedTotal": 48.5,
-        "confidence": "Medium",
-        "factors": [
-          "Quarterback efficiency",
-          "EPA per play",
-          "Recent scoring margin"
-        ]
-      }
+      "prediction": null
     },
     "2026_05_TB_DAL": {
       "game": {
@@ -21741,7 +21719,29 @@
           "winnerAbbreviation": "TB"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_05_TB_DAL",
+        "awayTeam": "Tampa Bay Buccaneers",
+        "awayAbbreviation": "TB",
+        "homeTeam": "Dallas Cowboys",
+        "homeAbbreviation": "DAL",
+        "kickoff": "2026-10-08 20:15",
+        "predictedWinner": "Dallas Cowboys",
+        "homeWinProbability": 69,
+        "awayWinProbability": 31,
+        "classifierHomeProbability": 71,
+        "scoreModelHomeProbability": 67,
+        "projectedHomeScore": 22.7,
+        "projectedAwayScore": 20.1,
+        "projectedMargin": 5.6,
+        "projectedTotal": 45.0,
+        "confidence": "High",
+        "factors": [
+          "Quarterback efficiency",
+          "EPA per play",
+          "Turnover trend"
+        ]
+      }
     },
     "2026_05_PHI_JAX": {
       "game": {
@@ -22055,7 +22055,29 @@
           "winnerAbbreviation": "PHI"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_05_PHI_JAX",
+        "awayTeam": "Philadelphia Eagles",
+        "awayAbbreviation": "PHI",
+        "homeTeam": "Jacksonville Jaguars",
+        "homeAbbreviation": "JAX",
+        "kickoff": "2026-10-11 09:30",
+        "predictedWinner": "Jacksonville Jaguars",
+        "homeWinProbability": 66,
+        "awayWinProbability": 34,
+        "classifierHomeProbability": 69,
+        "scoreModelHomeProbability": 59,
+        "projectedHomeScore": 24.6,
+        "projectedAwayScore": 21.5,
+        "projectedMargin": 3.1,
+        "projectedTotal": 45.3,
+        "confidence": "Medium",
+        "factors": [
+          "Recent scoring margin",
+          "Quarterback efficiency",
+          "Success rate"
+        ]
+      }
     },
     "2026_05_CHI_GB": {
       "game": {
@@ -22405,7 +22427,29 @@
           "winnerAbbreviation": "GB"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_05_CHI_GB",
+        "awayTeam": "Chicago Bears",
+        "awayAbbreviation": "CHI",
+        "homeTeam": "Green Bay Packers",
+        "homeAbbreviation": "GB",
+        "kickoff": "2026-10-11 13:00",
+        "predictedWinner": "Chicago Bears",
+        "homeWinProbability": 36,
+        "awayWinProbability": 64,
+        "classifierHomeProbability": 38,
+        "scoreModelHomeProbability": 32,
+        "projectedHomeScore": 20.9,
+        "projectedAwayScore": 25.3,
+        "projectedMargin": -6.1,
+        "projectedTotal": 44.1,
+        "confidence": "Medium",
+        "factors": [
+          "Recent scoring margin",
+          "Success rate",
+          "Quarterback efficiency"
+        ]
+      }
     },
     "2026_05_CIN_MIA": {
       "game": {
@@ -22743,7 +22787,29 @@
           "winnerAbbreviation": "MIA"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_05_CIN_MIA",
+        "awayTeam": "Cincinnati Bengals",
+        "awayAbbreviation": "CIN",
+        "homeTeam": "Miami Dolphins",
+        "homeAbbreviation": "MIA",
+        "kickoff": "2026-10-11 13:00",
+        "predictedWinner": "Cincinnati Bengals",
+        "homeWinProbability": 24,
+        "awayWinProbability": 76,
+        "classifierHomeProbability": 22,
+        "scoreModelHomeProbability": 28,
+        "projectedHomeScore": 18.7,
+        "projectedAwayScore": 25.2,
+        "projectedMargin": -7.4,
+        "projectedTotal": 46.1,
+        "confidence": "High",
+        "factors": [
+          "Recent scoring margin",
+          "Success rate",
+          "Quarterback efficiency"
+        ]
+      }
     },
     "2026_05_CLE_NYJ": {
       "game": {
@@ -23093,7 +23159,29 @@
           "winnerAbbreviation": "CLE"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_05_CLE_NYJ",
+        "awayTeam": "Cleveland Browns",
+        "awayAbbreviation": "CLE",
+        "homeTeam": "New York Jets",
+        "homeAbbreviation": "NYJ",
+        "kickoff": "2026-10-11 13:00",
+        "predictedWinner": "Cleveland Browns",
+        "homeWinProbability": 30,
+        "awayWinProbability": 70,
+        "classifierHomeProbability": 27,
+        "scoreModelHomeProbability": 36,
+        "projectedHomeScore": 19.8,
+        "projectedAwayScore": 24.6,
+        "projectedMargin": -4.7,
+        "projectedTotal": 45.8,
+        "confidence": "High",
+        "factors": [
+          "Elo team strength",
+          "Turnover trend",
+          "Recent scoring margin"
+        ]
+      }
     },
     "2026_05_HOU_TEN": {
       "game": {
@@ -23443,7 +23531,29 @@
           "winnerAbbreviation": "HOU"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_05_HOU_TEN",
+        "awayTeam": "Houston Texans",
+        "awayAbbreviation": "HOU",
+        "homeTeam": "Tennessee Titans",
+        "homeAbbreviation": "TEN",
+        "kickoff": "2026-10-11 13:00",
+        "predictedWinner": "Houston Texans",
+        "homeWinProbability": 35,
+        "awayWinProbability": 65,
+        "classifierHomeProbability": 34,
+        "scoreModelHomeProbability": 38,
+        "projectedHomeScore": 18.8,
+        "projectedAwayScore": 24.0,
+        "projectedMargin": -4.1,
+        "projectedTotal": 44.6,
+        "confidence": "Medium",
+        "factors": [
+          "Elo team strength",
+          "Quarterback efficiency",
+          "Recent scoring margin"
+        ]
+      }
     },
     "2026_05_IND_PIT": {
       "game": {
@@ -23793,7 +23903,29 @@
           "winnerAbbreviation": "PIT"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_05_IND_PIT",
+        "awayTeam": "Indianapolis Colts",
+        "awayAbbreviation": "IND",
+        "homeTeam": "Pittsburgh Steelers",
+        "homeAbbreviation": "PIT",
+        "kickoff": "2026-10-11 13:00",
+        "predictedWinner": "Pittsburgh Steelers",
+        "homeWinProbability": 62,
+        "awayWinProbability": 38,
+        "classifierHomeProbability": 64,
+        "scoreModelHomeProbability": 59,
+        "projectedHomeScore": 25.5,
+        "projectedAwayScore": 20.4,
+        "projectedMargin": 3.0,
+        "projectedTotal": 45.2,
+        "confidence": "Medium",
+        "factors": [
+          "Elo team strength",
+          "Recent scoring margin",
+          "Turnover trend"
+        ]
+      }
     },
     "2026_05_LV_NE": {
       "game": {
@@ -24131,7 +24263,29 @@
           "winnerAbbreviation": "NE"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_05_LV_NE",
+        "awayTeam": "Las Vegas Raiders",
+        "awayAbbreviation": "LV",
+        "homeTeam": "New England Patriots",
+        "homeAbbreviation": "NE",
+        "kickoff": "2026-10-11 13:00",
+        "predictedWinner": "New England Patriots",
+        "homeWinProbability": 57,
+        "awayWinProbability": 43,
+        "classifierHomeProbability": 52,
+        "scoreModelHomeProbability": 66,
+        "projectedHomeScore": 25.9,
+        "projectedAwayScore": 20.1,
+        "projectedMargin": 5.5,
+        "projectedTotal": 46.8,
+        "confidence": "Medium",
+        "factors": [
+          "Recent scoring margin",
+          "Elo team strength",
+          "Turnover trend"
+        ]
+      }
     },
     "2026_05_MIN_NO": {
       "game": {
@@ -24202,13 +24356,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 81,
-            "pointsAgainst": 83,
-            "pointDifferential": -2
+            "gamesPlayed": 4,
+            "winPct": 0.25,
+            "pointsFor": 105,
+            "pointsAgainst": 128,
+            "pointDifferential": -23
           },
           "previous": {
             "season": 2025,
@@ -24323,6 +24477,25 @@
         ],
         "NO": [
           {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "NO",
+            "opponentAbbreviation": "ATL",
+            "homeAway": "Home",
+            "teamScore": 24,
+            "opponentScore": 45,
+            "result": "L",
+            "passingYards": 286.0,
+            "rushingYards": 50.0,
+            "totalYards": 336.0,
+            "totalEpa": -5.04,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_03_LV_NO",
             "date": "2026-09-27",
             "season": 2026,
@@ -24397,25 +24570,6 @@
             "totalEpa": -1.91,
             "turnovers": 2.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_NO_TEN",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "NO",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 26,
-            "result": "W",
-            "passingYards": 333.0,
-            "rushingYards": 103.0,
-            "totalYards": 436.0,
-            "totalEpa": 19.39,
-            "turnovers": 1.0,
-            "defensiveSacks": 4.0
           }
         ]
       },
@@ -24457,7 +24611,29 @@
           "winnerAbbreviation": "NO"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_05_MIN_NO",
+        "awayTeam": "Minnesota Vikings",
+        "awayAbbreviation": "MIN",
+        "homeTeam": "New Orleans Saints",
+        "homeAbbreviation": "NO",
+        "kickoff": "2026-10-11 13:00",
+        "predictedWinner": "Minnesota Vikings",
+        "homeWinProbability": 30,
+        "awayWinProbability": 70,
+        "classifierHomeProbability": 28,
+        "scoreModelHomeProbability": 34,
+        "projectedHomeScore": 20.9,
+        "projectedAwayScore": 25.1,
+        "projectedMargin": -5.3,
+        "projectedTotal": 46.2,
+        "confidence": "High",
+        "factors": [
+          "Recent scoring margin",
+          "Elo team strength",
+          "Turnover trend"
+        ]
+      }
     },
     "2026_05_NYG_WAS": {
       "game": {
@@ -24807,7 +24983,29 @@
           "winnerAbbreviation": "NYG"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_05_NYG_WAS",
+        "awayTeam": "New York Giants",
+        "awayAbbreviation": "NYG",
+        "homeTeam": "Washington Commanders",
+        "homeAbbreviation": "WAS",
+        "kickoff": "2026-10-11 13:00",
+        "predictedWinner": "Washington Commanders",
+        "homeWinProbability": 50,
+        "awayWinProbability": 50,
+        "classifierHomeProbability": 47,
+        "scoreModelHomeProbability": 57,
+        "projectedHomeScore": 22.5,
+        "projectedAwayScore": 21.8,
+        "projectedMargin": 2.3,
+        "projectedTotal": 42.8,
+        "confidence": "Low",
+        "factors": [
+          "Recent scoring margin",
+          "Elo team strength",
+          "Turnover trend"
+        ]
+      }
     },
     "2026_05_DEN_LAC": {
       "game": {
@@ -25157,7 +25355,29 @@
           "winnerAbbreviation": "DEN"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_05_DEN_LAC",
+        "awayTeam": "Denver Broncos",
+        "awayAbbreviation": "DEN",
+        "homeTeam": "Los Angeles Chargers",
+        "homeAbbreviation": "LAC",
+        "kickoff": "2026-10-11 16:05",
+        "predictedWinner": "Denver Broncos",
+        "homeWinProbability": 48,
+        "awayWinProbability": 52,
+        "classifierHomeProbability": 46,
+        "scoreModelHomeProbability": 53,
+        "projectedHomeScore": 24.1,
+        "projectedAwayScore": 23.2,
+        "projectedMargin": 0.9,
+        "projectedTotal": 48.1,
+        "confidence": "Low",
+        "factors": [
+          "Elo team strength",
+          "Recent scoring margin",
+          "Turnover trend"
+        ]
+      }
     },
     "2026_05_DET_ARI": {
       "game": {
@@ -25495,7 +25715,29 @@
           "winnerAbbreviation": null
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_05_DET_ARI",
+        "awayTeam": "Detroit Lions",
+        "awayAbbreviation": "DET",
+        "homeTeam": "Arizona Cardinals",
+        "homeAbbreviation": "ARI",
+        "kickoff": "2026-10-11 16:25",
+        "predictedWinner": "Detroit Lions",
+        "homeWinProbability": 26,
+        "awayWinProbability": 74,
+        "classifierHomeProbability": 21,
+        "scoreModelHomeProbability": 34,
+        "projectedHomeScore": 19.8,
+        "projectedAwayScore": 25.9,
+        "projectedMargin": -5.5,
+        "projectedTotal": 46.5,
+        "confidence": "High",
+        "factors": [
+          "Elo team strength",
+          "Quarterback efficiency",
+          "Recent scoring margin"
+        ]
+      }
     },
     "2026_05_SF_SEA": {
       "game": {
@@ -25845,7 +26087,29 @@
           "winnerAbbreviation": "SF"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_05_SF_SEA",
+        "awayTeam": "San Francisco 49ers",
+        "awayAbbreviation": "SF",
+        "homeTeam": "Seattle Seahawks",
+        "homeAbbreviation": "SEA",
+        "kickoff": "2026-10-11 16:25",
+        "predictedWinner": "Seattle Seahawks",
+        "homeWinProbability": 61,
+        "awayWinProbability": 39,
+        "classifierHomeProbability": 61,
+        "scoreModelHomeProbability": 62,
+        "projectedHomeScore": 25.3,
+        "projectedAwayScore": 20.3,
+        "projectedMargin": 4.0,
+        "projectedTotal": 44.4,
+        "confidence": "Medium",
+        "factors": [
+          "Quarterback efficiency",
+          "Success rate",
+          "Recent scoring margin"
+        ]
+      }
     },
     "2026_05_BAL_ATL": {
       "game": {
@@ -25915,14 +26179,14 @@
         "ATL": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 51,
-            "pointsAgainst": 68,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 96,
+            "pointsAgainst": 92,
+            "pointDifferential": 4
           },
           "previous": {
             "season": 2025,
@@ -26037,6 +26301,25 @@
         ],
         "ATL": [
           {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "ATL",
+            "opponentAbbreviation": "NO",
+            "homeAway": "Away",
+            "teamScore": 45,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 223.0,
+            "rushingYards": 205.0,
+            "totalYards": 428.0,
+            "totalEpa": 22.73,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_03_ATL_GB",
             "date": "2026-09-24",
             "season": 2026,
@@ -26111,25 +26394,6 @@
             "totalEpa": -15.81,
             "turnovers": 1.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_LA_ATL",
-            "date": "2025-12-29",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "ATL",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Home",
-            "teamScore": 27,
-            "opponentScore": 24,
-            "result": "W",
-            "passingYards": 126.0,
-            "rushingYards": 219.0,
-            "totalYards": 345.0,
-            "totalEpa": 6.13,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -26147,7 +26411,29 @@
           "winnerAbbreviation": "BAL"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_05_BAL_ATL",
+        "awayTeam": "Baltimore Ravens",
+        "awayAbbreviation": "BAL",
+        "homeTeam": "Atlanta Falcons",
+        "homeAbbreviation": "ATL",
+        "kickoff": "2026-10-11 20:20",
+        "predictedWinner": "Baltimore Ravens",
+        "homeWinProbability": 29,
+        "awayWinProbability": 71,
+        "classifierHomeProbability": 29,
+        "scoreModelHomeProbability": 28,
+        "projectedHomeScore": 20.5,
+        "projectedAwayScore": 25.6,
+        "projectedMargin": -7.6,
+        "projectedTotal": 47.0,
+        "confidence": "High",
+        "factors": [
+          "Quarterback efficiency",
+          "Elo team strength",
+          "Turnover trend"
+        ]
+      }
     },
     "2026_05_BUF_LA": {
       "game": {
@@ -26473,7 +26759,29 @@
           "winnerAbbreviation": "BUF"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_05_BUF_LA",
+        "awayTeam": "Buffalo Bills",
+        "awayAbbreviation": "BUF",
+        "homeTeam": "Los Angeles Rams",
+        "homeAbbreviation": "LA",
+        "kickoff": "2026-10-12 20:15",
+        "predictedWinner": "Buffalo Bills",
+        "homeWinProbability": 42,
+        "awayWinProbability": 58,
+        "classifierHomeProbability": 43,
+        "scoreModelHomeProbability": 40,
+        "projectedHomeScore": 22.2,
+        "projectedAwayScore": 23.5,
+        "projectedMargin": -3.4,
+        "projectedTotal": 48.3,
+        "confidence": "Medium",
+        "factors": [
+          "Elo team strength",
+          "Turnover trend",
+          "Recent scoring margin"
+        ]
+      }
     },
     "2026_06_SEA_DEN": {
       "game": {
@@ -27871,14 +28179,14 @@
         "ATL": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 51,
-            "pointsAgainst": 68,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 96,
+            "pointsAgainst": 92,
+            "pointDifferential": 4
           },
           "previous": {
             "season": 2025,
@@ -27993,6 +28301,25 @@
         ],
         "ATL": [
           {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "ATL",
+            "opponentAbbreviation": "NO",
+            "homeAway": "Away",
+            "teamScore": 45,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 223.0,
+            "rushingYards": 205.0,
+            "totalYards": 428.0,
+            "totalEpa": 22.73,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_03_ATL_GB",
             "date": "2026-09-24",
             "season": 2026,
@@ -28067,25 +28394,6 @@
             "totalEpa": -15.81,
             "turnovers": 1.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_LA_ATL",
-            "date": "2025-12-29",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "ATL",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Home",
-            "teamScore": 27,
-            "opponentScore": 24,
-            "result": "W",
-            "passingYards": 126.0,
-            "rushingYards": 219.0,
-            "totalYards": 345.0,
-            "totalEpa": 6.13,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -28174,13 +28482,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 81,
-            "pointsAgainst": 83,
-            "pointDifferential": -2
+            "gamesPlayed": 4,
+            "winPct": 0.25,
+            "pointsFor": 105,
+            "pointsAgainst": 128,
+            "pointDifferential": -23
           },
           "previous": {
             "season": 2025,
@@ -28221,6 +28529,25 @@
       },
       "recentForm": {
         "NO": [
+          {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "NO",
+            "opponentAbbreviation": "ATL",
+            "homeAway": "Home",
+            "teamScore": 24,
+            "opponentScore": 45,
+            "result": "L",
+            "passingYards": 286.0,
+            "rushingYards": 50.0,
+            "totalYards": 336.0,
+            "totalEpa": -5.04,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_03_LV_NO",
             "date": "2026-09-27",
@@ -28295,25 +28622,6 @@
             "totalYards": 367.0,
             "totalEpa": -1.91,
             "turnovers": 2.0,
-            "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_NO_TEN",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "NO",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 26,
-            "result": "W",
-            "passingYards": 333.0,
-            "rushingYards": 103.0,
-            "totalYards": 436.0,
-            "totalEpa": 19.39,
-            "turnovers": 1.0,
             "defensiveSacks": 4.0
           }
         ],
@@ -31530,13 +31838,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 81,
-            "pointsAgainst": 83,
-            "pointDifferential": -2
+            "gamesPlayed": 4,
+            "winPct": 0.25,
+            "pointsFor": 105,
+            "pointsAgainst": 128,
+            "pointDifferential": -23
           },
           "previous": {
             "season": 2025,
@@ -31651,6 +31959,25 @@
         ],
         "NO": [
           {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "NO",
+            "opponentAbbreviation": "ATL",
+            "homeAway": "Home",
+            "teamScore": 24,
+            "opponentScore": 45,
+            "result": "L",
+            "passingYards": 286.0,
+            "rushingYards": 50.0,
+            "totalYards": 336.0,
+            "totalEpa": -5.04,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_03_LV_NO",
             "date": "2026-09-27",
             "season": 2026,
@@ -31724,25 +32051,6 @@
             "totalYards": 367.0,
             "totalEpa": -1.91,
             "turnovers": 2.0,
-            "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_NO_TEN",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "NO",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 26,
-            "result": "W",
-            "passingYards": 333.0,
-            "rushingYards": 103.0,
-            "totalYards": 436.0,
-            "totalEpa": 19.39,
-            "turnovers": 1.0,
             "defensiveSacks": 4.0
           }
         ]
@@ -33497,14 +33805,14 @@
         "ATL": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 51,
-            "pointsAgainst": 68,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 96,
+            "pointsAgainst": 92,
+            "pointDifferential": 4
           },
           "previous": {
             "season": 2025,
@@ -33619,6 +33927,25 @@
         ],
         "ATL": [
           {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "ATL",
+            "opponentAbbreviation": "NO",
+            "homeAway": "Away",
+            "teamScore": 45,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 223.0,
+            "rushingYards": 205.0,
+            "totalYards": 428.0,
+            "totalEpa": 22.73,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_03_ATL_GB",
             "date": "2026-09-24",
             "season": 2026,
@@ -33693,25 +34020,6 @@
             "totalEpa": -15.81,
             "turnovers": 1.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_LA_ATL",
-            "date": "2025-12-29",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "ATL",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Home",
-            "teamScore": 27,
-            "opponentScore": 24,
-            "result": "W",
-            "passingYards": 126.0,
-            "rushingYards": 219.0,
-            "totalYards": 345.0,
-            "totalEpa": 6.13,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -36455,14 +36763,14 @@
         "ATL": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 51,
-            "pointsAgainst": 68,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 96,
+            "pointsAgainst": 92,
+            "pointDifferential": 4
           },
           "previous": {
             "season": 2025,
@@ -36503,6 +36811,25 @@
       },
       "recentForm": {
         "ATL": [
+          {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "ATL",
+            "opponentAbbreviation": "NO",
+            "homeAway": "Away",
+            "teamScore": 45,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 223.0,
+            "rushingYards": 205.0,
+            "totalYards": 428.0,
+            "totalEpa": 22.73,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_03_ATL_GB",
             "date": "2026-09-24",
@@ -36578,25 +36905,6 @@
             "totalEpa": -15.81,
             "turnovers": 1.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_LA_ATL",
-            "date": "2025-12-29",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "ATL",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Home",
-            "teamScore": 27,
-            "opponentScore": 24,
-            "result": "W",
-            "passingYards": 126.0,
-            "rushingYards": 219.0,
-            "totalYards": 345.0,
-            "totalEpa": 6.13,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "TB": [
@@ -40861,14 +41169,14 @@
         "ATL": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 51,
-            "pointsAgainst": 68,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 96,
+            "pointsAgainst": 92,
+            "pointDifferential": 4
           },
           "previous": {
             "season": 2025,
@@ -40983,6 +41291,25 @@
         ],
         "ATL": [
           {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "ATL",
+            "opponentAbbreviation": "NO",
+            "homeAway": "Away",
+            "teamScore": 45,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 223.0,
+            "rushingYards": 205.0,
+            "totalYards": 428.0,
+            "totalEpa": 22.73,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_03_ATL_GB",
             "date": "2026-09-24",
             "season": 2026,
@@ -41057,25 +41384,6 @@
             "totalEpa": -15.81,
             "turnovers": 1.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_LA_ATL",
-            "date": "2025-12-29",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "ATL",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Home",
-            "teamScore": 27,
-            "opponentScore": 24,
-            "result": "W",
-            "passingYards": 126.0,
-            "rushingYards": 219.0,
-            "totalYards": 345.0,
-            "totalEpa": 6.13,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -41164,13 +41472,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 81,
-            "pointsAgainst": 83,
-            "pointDifferential": -2
+            "gamesPlayed": 4,
+            "winPct": 0.25,
+            "pointsFor": 105,
+            "pointsAgainst": 128,
+            "pointDifferential": -23
           },
           "previous": {
             "season": 2025,
@@ -41285,6 +41593,25 @@
         ],
         "NO": [
           {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "NO",
+            "opponentAbbreviation": "ATL",
+            "homeAway": "Home",
+            "teamScore": 24,
+            "opponentScore": 45,
+            "result": "L",
+            "passingYards": 286.0,
+            "rushingYards": 50.0,
+            "totalYards": 336.0,
+            "totalEpa": -5.04,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_03_LV_NO",
             "date": "2026-09-27",
             "season": 2026,
@@ -41358,25 +41685,6 @@
             "totalYards": 367.0,
             "totalEpa": -1.91,
             "turnovers": 2.0,
-            "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_NO_TEN",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "NO",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 26,
-            "result": "W",
-            "passingYards": 333.0,
-            "rushingYards": 103.0,
-            "totalYards": 436.0,
-            "totalEpa": 19.39,
-            "turnovers": 1.0,
             "defensiveSacks": 4.0
           }
         ]
@@ -46308,13 +46616,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 81,
-            "pointsAgainst": 83,
-            "pointDifferential": -2
+            "gamesPlayed": 4,
+            "winPct": 0.25,
+            "pointsFor": 105,
+            "pointsAgainst": 128,
+            "pointDifferential": -23
           },
           "previous": {
             "season": 2025,
@@ -46429,6 +46737,25 @@
         ],
         "NO": [
           {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "NO",
+            "opponentAbbreviation": "ATL",
+            "homeAway": "Home",
+            "teamScore": 24,
+            "opponentScore": 45,
+            "result": "L",
+            "passingYards": 286.0,
+            "rushingYards": 50.0,
+            "totalYards": 336.0,
+            "totalEpa": -5.04,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_03_LV_NO",
             "date": "2026-09-27",
             "season": 2026,
@@ -46502,25 +46829,6 @@
             "totalYards": 367.0,
             "totalEpa": -1.91,
             "turnovers": 2.0,
-            "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_NO_TEN",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "NO",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 26,
-            "result": "W",
-            "passingYards": 333.0,
-            "rushingYards": 103.0,
-            "totalYards": 436.0,
-            "totalEpa": 19.39,
-            "turnovers": 1.0,
             "defensiveSacks": 4.0
           }
         ]
@@ -47345,14 +47653,14 @@
         "ATL": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 51,
-            "pointsAgainst": 68,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 96,
+            "pointsAgainst": 92,
+            "pointDifferential": 4
           },
           "previous": {
             "season": 2025,
@@ -47467,6 +47775,25 @@
         ],
         "ATL": [
           {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "ATL",
+            "opponentAbbreviation": "NO",
+            "homeAway": "Away",
+            "teamScore": 45,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 223.0,
+            "rushingYards": 205.0,
+            "totalYards": 428.0,
+            "totalEpa": 22.73,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_03_ATL_GB",
             "date": "2026-09-24",
             "season": 2026,
@@ -47541,25 +47868,6 @@
             "totalEpa": -15.81,
             "turnovers": 1.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_LA_ATL",
-            "date": "2025-12-29",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "ATL",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Home",
-            "teamScore": 27,
-            "opponentScore": 24,
-            "result": "W",
-            "passingYards": 126.0,
-            "rushingYards": 219.0,
-            "totalYards": 345.0,
-            "totalEpa": 6.13,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -51584,13 +51892,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 81,
-            "pointsAgainst": 83,
-            "pointDifferential": -2
+            "gamesPlayed": 4,
+            "winPct": 0.25,
+            "pointsFor": 105,
+            "pointsAgainst": 128,
+            "pointDifferential": -23
           },
           "previous": {
             "season": 2025,
@@ -51631,6 +51939,25 @@
       },
       "recentForm": {
         "NO": [
+          {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "NO",
+            "opponentAbbreviation": "ATL",
+            "homeAway": "Home",
+            "teamScore": 24,
+            "opponentScore": 45,
+            "result": "L",
+            "passingYards": 286.0,
+            "rushingYards": 50.0,
+            "totalYards": 336.0,
+            "totalEpa": -5.04,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_03_LV_NO",
             "date": "2026-09-27",
@@ -51705,25 +52032,6 @@
             "totalYards": 367.0,
             "totalEpa": -1.91,
             "turnovers": 2.0,
-            "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_NO_TEN",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "NO",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 26,
-            "result": "W",
-            "passingYards": 333.0,
-            "rushingYards": 103.0,
-            "totalYards": 436.0,
-            "totalEpa": 19.39,
-            "turnovers": 1.0,
             "defensiveSacks": 4.0
           }
         ],
@@ -55917,14 +56225,14 @@
         "ATL": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 51,
-            "pointsAgainst": 68,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 96,
+            "pointsAgainst": 92,
+            "pointDifferential": 4
           },
           "previous": {
             "season": 2025,
@@ -55965,6 +56273,25 @@
       },
       "recentForm": {
         "ATL": [
+          {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "ATL",
+            "opponentAbbreviation": "NO",
+            "homeAway": "Away",
+            "teamScore": 45,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 223.0,
+            "rushingYards": 205.0,
+            "totalYards": 428.0,
+            "totalEpa": 22.73,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_03_ATL_GB",
             "date": "2026-09-24",
@@ -56040,25 +56367,6 @@
             "totalEpa": -15.81,
             "turnovers": 1.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_LA_ATL",
-            "date": "2025-12-29",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "ATL",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Home",
-            "teamScore": 27,
-            "opponentScore": 24,
-            "result": "W",
-            "passingYards": 126.0,
-            "rushingYards": 219.0,
-            "totalYards": 345.0,
-            "totalEpa": 6.13,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "MIN": [
@@ -56956,13 +57264,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 81,
-            "pointsAgainst": 83,
-            "pointDifferential": -2
+            "gamesPlayed": 4,
+            "winPct": 0.25,
+            "pointsFor": 105,
+            "pointsAgainst": 128,
+            "pointDifferential": -23
           },
           "previous": {
             "season": 2025,
@@ -57003,6 +57311,25 @@
       },
       "recentForm": {
         "NO": [
+          {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "NO",
+            "opponentAbbreviation": "ATL",
+            "homeAway": "Home",
+            "teamScore": 24,
+            "opponentScore": 45,
+            "result": "L",
+            "passingYards": 286.0,
+            "rushingYards": 50.0,
+            "totalYards": 336.0,
+            "totalEpa": -5.04,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_03_LV_NO",
             "date": "2026-09-27",
@@ -57077,25 +57404,6 @@
             "totalYards": 367.0,
             "totalEpa": -1.91,
             "turnovers": 2.0,
-            "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_NO_TEN",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "NO",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 26,
-            "result": "W",
-            "passingYards": 333.0,
-            "rushingYards": 103.0,
-            "totalYards": 436.0,
-            "totalEpa": 19.39,
-            "turnovers": 1.0,
             "defensiveSacks": 4.0
           }
         ],
@@ -60311,14 +60619,14 @@
         "ATL": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 51,
-            "pointsAgainst": 68,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 96,
+            "pointsAgainst": 92,
+            "pointDifferential": 4
           },
           "previous": {
             "season": 2025,
@@ -60433,6 +60741,25 @@
         ],
         "ATL": [
           {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "ATL",
+            "opponentAbbreviation": "NO",
+            "homeAway": "Away",
+            "teamScore": 45,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 223.0,
+            "rushingYards": 205.0,
+            "totalYards": 428.0,
+            "totalEpa": 22.73,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_03_ATL_GB",
             "date": "2026-09-24",
             "season": 2026,
@@ -60507,25 +60834,6 @@
             "totalEpa": -15.81,
             "turnovers": 1.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_LA_ATL",
-            "date": "2025-12-29",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "ATL",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Home",
-            "teamScore": 27,
-            "opponentScore": 24,
-            "result": "W",
-            "passingYards": 126.0,
-            "rushingYards": 219.0,
-            "totalYards": 345.0,
-            "totalEpa": 6.13,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -60638,13 +60946,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 81,
-            "pointsAgainst": 83,
-            "pointDifferential": -2
+            "gamesPlayed": 4,
+            "winPct": 0.25,
+            "pointsFor": 105,
+            "pointsAgainst": 128,
+            "pointDifferential": -23
           },
           "previous": {
             "season": 2025,
@@ -60759,6 +61067,25 @@
         ],
         "NO": [
           {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "NO",
+            "opponentAbbreviation": "ATL",
+            "homeAway": "Home",
+            "teamScore": 24,
+            "opponentScore": 45,
+            "result": "L",
+            "passingYards": 286.0,
+            "rushingYards": 50.0,
+            "totalYards": 336.0,
+            "totalEpa": -5.04,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_03_LV_NO",
             "date": "2026-09-27",
             "season": 2026,
@@ -60832,25 +61159,6 @@
             "totalYards": 367.0,
             "totalEpa": -1.91,
             "turnovers": 2.0,
-            "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_NO_TEN",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "NO",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 26,
-            "result": "W",
-            "passingYards": 333.0,
-            "rushingYards": 103.0,
-            "totalYards": 436.0,
-            "totalEpa": 19.39,
-            "turnovers": 1.0,
             "defensiveSacks": 4.0
           }
         ]
@@ -64465,14 +64773,14 @@
         "ATL": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 51,
-            "pointsAgainst": 68,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 96,
+            "pointsAgainst": 92,
+            "pointDifferential": 4
           },
           "previous": {
             "season": 2025,
@@ -64513,6 +64821,25 @@
       },
       "recentForm": {
         "ATL": [
+          {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "ATL",
+            "opponentAbbreviation": "NO",
+            "homeAway": "Away",
+            "teamScore": 45,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 223.0,
+            "rushingYards": 205.0,
+            "totalYards": 428.0,
+            "totalEpa": 22.73,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_03_ATL_GB",
             "date": "2026-09-24",
@@ -64588,25 +64915,6 @@
             "totalEpa": -15.81,
             "turnovers": 1.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_LA_ATL",
-            "date": "2025-12-29",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "ATL",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Home",
-            "teamScore": 27,
-            "opponentScore": 24,
-            "result": "W",
-            "passingYards": 126.0,
-            "rushingYards": 219.0,
-            "totalYards": 345.0,
-            "totalEpa": 6.13,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "CLE": [
@@ -66024,13 +66332,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 81,
-            "pointsAgainst": 83,
-            "pointDifferential": -2
+            "gamesPlayed": 4,
+            "winPct": 0.25,
+            "pointsFor": 105,
+            "pointsAgainst": 128,
+            "pointDifferential": -23
           },
           "previous": {
             "season": 2025,
@@ -66071,6 +66379,25 @@
       },
       "recentForm": {
         "NO": [
+          {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "NO",
+            "opponentAbbreviation": "ATL",
+            "homeAway": "Home",
+            "teamScore": 24,
+            "opponentScore": 45,
+            "result": "L",
+            "passingYards": 286.0,
+            "rushingYards": 50.0,
+            "totalYards": 336.0,
+            "totalEpa": -5.04,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_03_LV_NO",
             "date": "2026-09-27",
@@ -66145,25 +66472,6 @@
             "totalYards": 367.0,
             "totalEpa": -1.91,
             "turnovers": 2.0,
-            "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_NO_TEN",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "NO",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 26,
-            "result": "W",
-            "passingYards": 333.0,
-            "rushingYards": 103.0,
-            "totalYards": 436.0,
-            "totalEpa": 19.39,
-            "turnovers": 1.0,
             "defensiveSacks": 4.0
           }
         ],
@@ -69923,14 +70231,14 @@
         "ATL": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 51,
-            "pointsAgainst": 68,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 96,
+            "pointsAgainst": 92,
+            "pointDifferential": 4
           },
           "previous": {
             "season": 2025,
@@ -69971,6 +70279,25 @@
       },
       "recentForm": {
         "ATL": [
+          {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "ATL",
+            "opponentAbbreviation": "NO",
+            "homeAway": "Away",
+            "teamScore": 45,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 223.0,
+            "rushingYards": 205.0,
+            "totalYards": 428.0,
+            "totalEpa": 22.73,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_03_ATL_GB",
             "date": "2026-09-24",
@@ -70046,25 +70373,6 @@
             "totalEpa": -15.81,
             "turnovers": 1.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_LA_ATL",
-            "date": "2025-12-29",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "ATL",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Home",
-            "teamScore": 27,
-            "opponentScore": 24,
-            "result": "W",
-            "passingYards": 126.0,
-            "rushingYards": 219.0,
-            "totalYards": 345.0,
-            "totalEpa": 6.13,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "WAS": [
@@ -72266,13 +72574,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 81,
-            "pointsAgainst": 83,
-            "pointDifferential": -2
+            "gamesPlayed": 4,
+            "winPct": 0.25,
+            "pointsFor": 105,
+            "pointsAgainst": 128,
+            "pointDifferential": -23
           },
           "previous": {
             "season": 2025,
@@ -72313,6 +72621,25 @@
       },
       "recentForm": {
         "NO": [
+          {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "NO",
+            "opponentAbbreviation": "ATL",
+            "homeAway": "Home",
+            "teamScore": 24,
+            "opponentScore": 45,
+            "result": "L",
+            "passingYards": 286.0,
+            "rushingYards": 50.0,
+            "totalYards": 336.0,
+            "totalEpa": -5.04,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_03_LV_NO",
             "date": "2026-09-27",
@@ -72387,25 +72714,6 @@
             "totalYards": 367.0,
             "totalEpa": -1.91,
             "turnovers": 2.0,
-            "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_NO_TEN",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "NO",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 26,
-            "result": "W",
-            "passingYards": 333.0,
-            "rushingYards": 103.0,
-            "totalYards": 436.0,
-            "totalEpa": 19.39,
-            "turnovers": 1.0,
             "defensiveSacks": 4.0
           }
         ],
@@ -75646,13 +75954,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 81,
-            "pointsAgainst": 83,
-            "pointDifferential": -2
+            "gamesPlayed": 4,
+            "winPct": 0.25,
+            "pointsFor": 105,
+            "pointsAgainst": 128,
+            "pointDifferential": -23
           },
           "previous": {
             "season": 2025,
@@ -75767,6 +76075,25 @@
         ],
         "NO": [
           {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "NO",
+            "opponentAbbreviation": "ATL",
+            "homeAway": "Home",
+            "teamScore": 24,
+            "opponentScore": 45,
+            "result": "L",
+            "passingYards": 286.0,
+            "rushingYards": 50.0,
+            "totalYards": 336.0,
+            "totalEpa": -5.04,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_03_LV_NO",
             "date": "2026-09-27",
             "season": 2026,
@@ -75840,25 +76167,6 @@
             "totalYards": 367.0,
             "totalEpa": -1.91,
             "turnovers": 2.0,
-            "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_NO_TEN",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "NO",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 26,
-            "result": "W",
-            "passingYards": 333.0,
-            "rushingYards": 103.0,
-            "totalYards": 436.0,
-            "totalEpa": 19.39,
-            "turnovers": 1.0,
             "defensiveSacks": 4.0
           }
         ]
@@ -77637,14 +77945,14 @@
         "ATL": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 51,
-            "pointsAgainst": 68,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 96,
+            "pointsAgainst": 92,
+            "pointDifferential": 4
           },
           "previous": {
             "season": 2025,
@@ -77759,6 +78067,25 @@
         ],
         "ATL": [
           {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "ATL",
+            "opponentAbbreviation": "NO",
+            "homeAway": "Away",
+            "teamScore": 45,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 223.0,
+            "rushingYards": 205.0,
+            "totalYards": 428.0,
+            "totalEpa": 22.73,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_03_ATL_GB",
             "date": "2026-09-24",
             "season": 2026,
@@ -77833,25 +78160,6 @@
             "totalEpa": -15.81,
             "turnovers": 1.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_LA_ATL",
-            "date": "2025-12-29",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "ATL",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Home",
-            "teamScore": 27,
-            "opponentScore": 24,
-            "result": "W",
-            "passingYards": 126.0,
-            "rushingYards": 219.0,
-            "totalYards": 345.0,
-            "totalEpa": 6.13,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -81864,17 +82172,17 @@
         "roof": null,
         "surface": "fieldturf",
         "lastMeeting": {
-          "id": "2025_18_NO_ATL",
-          "date": "2026-01-04",
-          "season": 2025,
-          "week": 18,
+          "id": "2026_04_ATL_NO",
+          "date": "2026-10-05",
+          "season": 2026,
+          "week": 4,
           "gameType": "REG",
-          "awayTeam": "New Orleans Saints",
-          "awayAbbreviation": "NO",
-          "awayScore": 17,
-          "homeTeam": "Atlanta Falcons",
-          "homeAbbreviation": "ATL",
-          "homeScore": 19,
+          "awayTeam": "Atlanta Falcons",
+          "awayAbbreviation": "ATL",
+          "awayScore": 45,
+          "homeTeam": "New Orleans Saints",
+          "homeAbbreviation": "NO",
+          "homeScore": 24,
           "winner": "Atlanta Falcons",
           "winnerAbbreviation": "ATL"
         }
@@ -81888,13 +82196,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 81,
-            "pointsAgainst": 83,
-            "pointDifferential": -2
+            "gamesPlayed": 4,
+            "winPct": 0.25,
+            "pointsFor": 105,
+            "pointsAgainst": 128,
+            "pointDifferential": -23
           },
           "previous": {
             "season": 2025,
@@ -81911,14 +82219,14 @@
         "ATL": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 51,
-            "pointsAgainst": 68,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 96,
+            "pointsAgainst": 92,
+            "pointDifferential": 4
           },
           "previous": {
             "season": 2025,
@@ -81935,6 +82243,25 @@
       },
       "recentForm": {
         "NO": [
+          {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "NO",
+            "opponentAbbreviation": "ATL",
+            "homeAway": "Home",
+            "teamScore": 24,
+            "opponentScore": 45,
+            "result": "L",
+            "passingYards": 286.0,
+            "rushingYards": 50.0,
+            "totalYards": 336.0,
+            "totalEpa": -5.04,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_03_LV_NO",
             "date": "2026-09-27",
@@ -82010,28 +82337,28 @@
             "totalEpa": -1.91,
             "turnovers": 2.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_NO_TEN",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "NO",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 26,
-            "result": "W",
-            "passingYards": 333.0,
-            "rushingYards": 103.0,
-            "totalYards": 436.0,
-            "totalEpa": 19.39,
-            "turnovers": 1.0,
-            "defensiveSacks": 4.0
           }
         ],
         "ATL": [
+          {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "ATL",
+            "opponentAbbreviation": "NO",
+            "homeAway": "Away",
+            "teamScore": 45,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 223.0,
+            "rushingYards": 205.0,
+            "totalYards": 428.0,
+            "totalEpa": 22.73,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_03_ATL_GB",
             "date": "2026-09-24",
@@ -82107,29 +82434,22 @@
             "totalEpa": -15.81,
             "turnovers": 1.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_LA_ATL",
-            "date": "2025-12-29",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "ATL",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Home",
-            "teamScore": 27,
-            "opponentScore": 24,
-            "result": "W",
-            "passingYards": 126.0,
-            "rushingYards": 219.0,
-            "totalYards": 345.0,
-            "totalEpa": 6.13,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
       "headToHead": [
+        {
+          "id": "2026_04_ATL_NO",
+          "date": "2026-10-05",
+          "season": 2026,
+          "week": 4,
+          "gameType": "REG",
+          "awayAbbreviation": "ATL",
+          "awayScore": 45,
+          "homeAbbreviation": "NO",
+          "homeScore": 24,
+          "winnerAbbreviation": "ATL"
+        },
         {
           "id": "2025_18_NO_ATL",
           "date": "2026-01-04",
@@ -82177,18 +82497,6 @@
           "homeAbbreviation": "ATL",
           "homeScore": 26,
           "winnerAbbreviation": "ATL"
-        },
-        {
-          "id": "2023_18_ATL_NO",
-          "date": "2024-01-07",
-          "season": 2023,
-          "week": 18,
-          "gameType": "REG",
-          "awayAbbreviation": "ATL",
-          "awayScore": 17,
-          "homeAbbreviation": "NO",
-          "homeScore": 48,
-          "winnerAbbreviation": "NO"
         }
       ],
       "prediction": null
@@ -84845,14 +85153,14 @@
         "ATL": {
           "current": {
             "season": 2026,
-            "wins": 1,
+            "wins": 2,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 51,
-            "pointsAgainst": 68,
-            "pointDifferential": -17
+            "gamesPlayed": 4,
+            "winPct": 0.5,
+            "pointsFor": 96,
+            "pointsAgainst": 92,
+            "pointDifferential": 4
           },
           "previous": {
             "season": 2025,
@@ -84893,6 +85201,25 @@
       },
       "recentForm": {
         "ATL": [
+          {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "ATL",
+            "opponentAbbreviation": "NO",
+            "homeAway": "Away",
+            "teamScore": 45,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 223.0,
+            "rushingYards": 205.0,
+            "totalYards": 428.0,
+            "totalEpa": 22.73,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_03_ATL_GB",
             "date": "2026-09-24",
@@ -84968,25 +85295,6 @@
             "totalEpa": -15.81,
             "turnovers": 1.0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_LA_ATL",
-            "date": "2025-12-29",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "ATL",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Home",
-            "teamScore": 27,
-            "opponentScore": 24,
-            "result": "W",
-            "passingYards": 126.0,
-            "rushingYards": 219.0,
-            "totalYards": 345.0,
-            "totalEpa": 6.13,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "CAR": [
@@ -89770,13 +90078,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 3,
-            "winPct": 0.333,
-            "pointsFor": 81,
-            "pointsAgainst": 83,
-            "pointDifferential": -2
+            "gamesPlayed": 4,
+            "winPct": 0.25,
+            "pointsFor": 105,
+            "pointsAgainst": 128,
+            "pointDifferential": -23
           },
           "previous": {
             "season": 2025,
@@ -89891,6 +90199,25 @@
         ],
         "NO": [
           {
+            "id": "2026_04_ATL_NO",
+            "date": "2026-10-05",
+            "season": 2026,
+            "week": 4,
+            "gameType": "REG",
+            "teamAbbreviation": "NO",
+            "opponentAbbreviation": "ATL",
+            "homeAway": "Home",
+            "teamScore": 24,
+            "opponentScore": 45,
+            "result": "L",
+            "passingYards": 286.0,
+            "rushingYards": 50.0,
+            "totalYards": 336.0,
+            "totalEpa": -5.04,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_03_LV_NO",
             "date": "2026-09-27",
             "season": 2026,
@@ -89964,25 +90291,6 @@
             "totalYards": 367.0,
             "totalEpa": -1.91,
             "turnovers": 2.0,
-            "defensiveSacks": 4.0
-          },
-          {
-            "id": "2025_17_NO_TEN",
-            "date": "2025-12-28",
-            "season": 2025,
-            "week": 17,
-            "gameType": "REG",
-            "teamAbbreviation": "NO",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 26,
-            "result": "W",
-            "passingYards": 333.0,
-            "rushingYards": 103.0,
-            "totalYards": 436.0,
-            "totalEpa": 19.39,
-            "turnovers": 1.0,
             "defensiveSacks": 4.0
           }
         ]
