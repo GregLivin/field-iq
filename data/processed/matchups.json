@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "asOf": "2026-10-08T17:26:46.029286+00:00",
+  "asOf": "2026-10-09T17:02:16.897984+00:00",
   "provider": "nflverse",
   "games": {
     "2026_01_NE_SEA": {
@@ -3053,14 +3053,14 @@
         "TB": {
           "current": {
             "season": 2026,
-            "wins": 0,
+            "wins": 1,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.0,
-            "pointsFor": 76,
-            "pointsAgainst": 96,
-            "pointDifferential": -20
+            "gamesPlayed": 5,
+            "winPct": 0.2,
+            "pointsFor": 100,
+            "pointsAgainst": 112,
+            "pointDifferential": -12
           },
           "previous": {
             "season": 2025,
@@ -3101,6 +3101,25 @@
       },
       "recentForm": {
         "TB": [
+          {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "TB",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 16,
+            "result": "W",
+            "passingYards": 189.0,
+            "rushingYards": 241.0,
+            "totalYards": 430.0,
+            "totalEpa": 10.18,
+            "turnovers": 0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_04_GB_TB",
             "date": "2026-10-04",
@@ -3176,25 +3195,6 @@
             "totalEpa": -6.94,
             "turnovers": 4.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_18_CAR_TB",
-            "date": "2026-01-03",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "TB",
-            "opponentAbbreviation": "CAR",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 14,
-            "result": "W",
-            "passingYards": 203.0,
-            "rushingYards": 140.0,
-            "totalYards": 343.0,
-            "totalEpa": 0.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "CIN": [
@@ -4744,13 +4744,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.5,
-            "pointsFor": 122,
-            "pointsAgainst": 112,
-            "pointDifferential": 10
+            "gamesPlayed": 5,
+            "winPct": 0.4,
+            "pointsFor": 138,
+            "pointsAgainst": 136,
+            "pointDifferential": 2
           },
           "previous": {
             "season": 2025,
@@ -4791,6 +4791,25 @@
       },
       "recentForm": {
         "DAL": [
+          {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "TB",
+            "homeAway": "Home",
+            "teamScore": 16,
+            "opponentScore": 24,
+            "result": "L",
+            "passingYards": 316.0,
+            "rushingYards": 50.0,
+            "totalYards": 366.0,
+            "totalEpa": -2.62,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_04_DAL_HOU",
             "date": "2026-10-04",
@@ -4866,25 +4885,6 @@
             "totalEpa": 11.47,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_18_DAL_NYG",
-            "date": "2026-01-04",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "NYG",
-            "homeAway": "Away",
-            "teamScore": 17,
-            "opponentScore": 34,
-            "result": "L",
-            "passingYards": 143.0,
-            "rushingYards": 143.0,
-            "totalYards": 286.0,
-            "totalEpa": -6.88,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ],
         "NYG": [
@@ -6469,14 +6469,14 @@
         "TB": {
           "current": {
             "season": 2026,
-            "wins": 0,
+            "wins": 1,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.0,
-            "pointsFor": 76,
-            "pointsAgainst": 96,
-            "pointDifferential": -20
+            "gamesPlayed": 5,
+            "winPct": 0.2,
+            "pointsFor": 100,
+            "pointsAgainst": 112,
+            "pointDifferential": -12
           },
           "previous": {
             "season": 2025,
@@ -6591,6 +6591,25 @@
         ],
         "TB": [
           {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "TB",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 16,
+            "result": "W",
+            "passingYards": 189.0,
+            "rushingYards": 241.0,
+            "totalYards": 430.0,
+            "totalEpa": 10.18,
+            "turnovers": 0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_04_GB_TB",
             "date": "2026-10-04",
             "season": 2026,
@@ -6665,25 +6684,6 @@
             "totalEpa": -6.94,
             "turnovers": 4.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_18_CAR_TB",
-            "date": "2026-01-03",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "TB",
-            "opponentAbbreviation": "CAR",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 14,
-            "result": "W",
-            "passingYards": 203.0,
-            "rushingYards": 140.0,
-            "totalYards": 343.0,
-            "totalEpa": 0.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -9814,13 +9814,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.5,
-            "pointsFor": 122,
-            "pointsAgainst": 112,
-            "pointDifferential": 10
+            "gamesPlayed": 5,
+            "winPct": 0.4,
+            "pointsFor": 138,
+            "pointsAgainst": 136,
+            "pointDifferential": 2
           },
           "previous": {
             "season": 2025,
@@ -9935,6 +9935,25 @@
         ],
         "DAL": [
           {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "TB",
+            "homeAway": "Home",
+            "teamScore": 16,
+            "opponentScore": 24,
+            "result": "L",
+            "passingYards": 316.0,
+            "rushingYards": 50.0,
+            "totalYards": 366.0,
+            "totalEpa": -2.62,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_04_DAL_HOU",
             "date": "2026-10-04",
             "season": 2026,
@@ -10009,25 +10028,6 @@
             "totalEpa": 11.47,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_18_DAL_NYG",
-            "date": "2026-01-04",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "NYG",
-            "homeAway": "Away",
-            "teamScore": 17,
-            "opponentScore": 34,
-            "result": "L",
-            "passingYards": 143.0,
-            "rushingYards": 143.0,
-            "totalYards": 286.0,
-            "totalEpa": -6.88,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ]
       },
@@ -14485,14 +14485,14 @@
         "TB": {
           "current": {
             "season": 2026,
-            "wins": 0,
+            "wins": 1,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.0,
-            "pointsFor": 76,
-            "pointsAgainst": 96,
-            "pointDifferential": -20
+            "gamesPlayed": 5,
+            "winPct": 0.2,
+            "pointsFor": 100,
+            "pointsAgainst": 112,
+            "pointDifferential": -12
           },
           "previous": {
             "season": 2025,
@@ -14607,6 +14607,25 @@
         ],
         "TB": [
           {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "TB",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 16,
+            "result": "W",
+            "passingYards": 189.0,
+            "rushingYards": 241.0,
+            "totalYards": 430.0,
+            "totalEpa": 10.18,
+            "turnovers": 0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_04_GB_TB",
             "date": "2026-10-04",
             "season": 2026,
@@ -14681,25 +14700,6 @@
             "totalEpa": -6.94,
             "turnovers": 4.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_18_CAR_TB",
-            "date": "2026-01-03",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "TB",
-            "opponentAbbreviation": "CAR",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 14,
-            "result": "W",
-            "passingYards": 203.0,
-            "rushingYards": 140.0,
-            "totalYards": 343.0,
-            "totalEpa": 0.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -14812,13 +14812,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.5,
-            "pointsFor": 122,
-            "pointsAgainst": 112,
-            "pointDifferential": 10
+            "gamesPlayed": 5,
+            "winPct": 0.4,
+            "pointsFor": 138,
+            "pointsAgainst": 136,
+            "pointDifferential": 2
           },
           "previous": {
             "season": 2025,
@@ -14933,6 +14933,25 @@
         ],
         "DAL": [
           {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "TB",
+            "homeAway": "Home",
+            "teamScore": 16,
+            "opponentScore": 24,
+            "result": "L",
+            "passingYards": 316.0,
+            "rushingYards": 50.0,
+            "totalYards": 366.0,
+            "totalEpa": -2.62,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_04_DAL_HOU",
             "date": "2026-10-04",
             "season": 2026,
@@ -15007,25 +15026,6 @@
             "totalEpa": 11.47,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_18_DAL_NYG",
-            "date": "2026-01-04",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "NYG",
-            "homeAway": "Away",
-            "teamScore": 17,
-            "opponentScore": 34,
-            "result": "L",
-            "passingYards": 143.0,
-            "rushingYards": 143.0,
-            "totalYards": 286.0,
-            "totalEpa": -6.88,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ]
       },
@@ -17106,13 +17106,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.5,
-            "pointsFor": 122,
-            "pointsAgainst": 112,
-            "pointDifferential": 10
+            "gamesPlayed": 5,
+            "winPct": 0.4,
+            "pointsFor": 138,
+            "pointsAgainst": 136,
+            "pointDifferential": 2
           },
           "previous": {
             "season": 2025,
@@ -17153,6 +17153,25 @@
       },
       "recentForm": {
         "DAL": [
+          {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "TB",
+            "homeAway": "Home",
+            "teamScore": 16,
+            "opponentScore": 24,
+            "result": "L",
+            "passingYards": 316.0,
+            "rushingYards": 50.0,
+            "totalYards": 366.0,
+            "totalEpa": -2.62,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_04_DAL_HOU",
             "date": "2026-10-04",
@@ -17228,25 +17247,6 @@
             "totalEpa": 11.47,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_18_DAL_NYG",
-            "date": "2026-01-04",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "NYG",
-            "homeAway": "Away",
-            "teamScore": 17,
-            "opponentScore": 34,
-            "result": "L",
-            "passingYards": 143.0,
-            "rushingYards": 143.0,
-            "totalYards": 286.0,
-            "totalEpa": -6.88,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ],
         "HOU": [
@@ -17455,14 +17455,14 @@
         "TB": {
           "current": {
             "season": 2026,
-            "wins": 0,
+            "wins": 1,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.0,
-            "pointsFor": 76,
-            "pointsAgainst": 96,
-            "pointDifferential": -20
+            "gamesPlayed": 5,
+            "winPct": 0.2,
+            "pointsFor": 100,
+            "pointsAgainst": 112,
+            "pointDifferential": -12
           },
           "previous": {
             "season": 2025,
@@ -17577,6 +17577,25 @@
         ],
         "TB": [
           {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "TB",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 16,
+            "result": "W",
+            "passingYards": 189.0,
+            "rushingYards": 241.0,
+            "totalYards": 430.0,
+            "totalEpa": 10.18,
+            "turnovers": 0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_04_GB_TB",
             "date": "2026-10-04",
             "season": 2026,
@@ -17651,25 +17670,6 @@
             "totalEpa": -6.94,
             "turnovers": 4.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_18_CAR_TB",
-            "date": "2026-01-03",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "TB",
-            "opponentAbbreviation": "CAR",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 14,
-            "result": "W",
-            "passingYards": 203.0,
-            "rushingYards": 140.0,
-            "totalYards": 343.0,
-            "totalEpa": 0.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -21404,16 +21404,16 @@
         "gameType": "REG",
         "awayTeam": "Tampa Bay Buccaneers",
         "awayAbbreviation": "TB",
-        "awayScore": null,
+        "awayScore": 24,
         "homeTeam": "Dallas Cowboys",
         "homeAbbreviation": "DAL",
-        "homeScore": null,
-        "winner": null,
-        "winnerAbbreviation": null,
+        "homeScore": 16,
+        "winner": "Tampa Bay Buccaneers",
+        "winnerAbbreviation": "TB",
         "time": "20:15",
-        "status": "upcoming",
+        "status": "final",
         "stadium": "AT&T Stadium",
-        "roof": null,
+        "roof": "closed",
         "surface": "matrixturf",
         "lastMeeting": {
           "id": "2024_16_TB_DAL",
@@ -21439,14 +21439,14 @@
         "TB": {
           "current": {
             "season": 2026,
-            "wins": 0,
+            "wins": 1,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.0,
-            "pointsFor": 76,
-            "pointsAgainst": 96,
-            "pointDifferential": -20
+            "gamesPlayed": 5,
+            "winPct": 0.2,
+            "pointsFor": 100,
+            "pointsAgainst": 112,
+            "pointDifferential": -12
           },
           "previous": {
             "season": 2025,
@@ -21464,13 +21464,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.5,
-            "pointsFor": 122,
-            "pointsAgainst": 112,
-            "pointDifferential": 10
+            "gamesPlayed": 5,
+            "winPct": 0.4,
+            "pointsFor": 138,
+            "pointsAgainst": 136,
+            "pointDifferential": 2
           },
           "previous": {
             "season": 2025,
@@ -21487,6 +21487,25 @@
       },
       "recentForm": {
         "TB": [
+          {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "TB",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 16,
+            "result": "W",
+            "passingYards": 189.0,
+            "rushingYards": 241.0,
+            "totalYards": 430.0,
+            "totalEpa": 10.18,
+            "turnovers": 0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_04_GB_TB",
             "date": "2026-10-04",
@@ -21562,28 +21581,28 @@
             "totalEpa": -6.94,
             "turnovers": 4.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_18_CAR_TB",
-            "date": "2026-01-03",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "TB",
-            "opponentAbbreviation": "CAR",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 14,
-            "result": "W",
-            "passingYards": 203.0,
-            "rushingYards": 140.0,
-            "totalYards": 343.0,
-            "totalEpa": 0.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "DAL": [
+          {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "TB",
+            "homeAway": "Home",
+            "teamScore": 16,
+            "opponentScore": 24,
+            "result": "L",
+            "passingYards": 316.0,
+            "rushingYards": 50.0,
+            "totalYards": 366.0,
+            "totalEpa": -2.62,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_04_DAL_HOU",
             "date": "2026-10-04",
@@ -21659,29 +21678,22 @@
             "totalEpa": 11.47,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_18_DAL_NYG",
-            "date": "2026-01-04",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "NYG",
-            "homeAway": "Away",
-            "teamScore": 17,
-            "opponentScore": 34,
-            "result": "L",
-            "passingYards": 143.0,
-            "rushingYards": 143.0,
-            "totalYards": 286.0,
-            "totalEpa": -6.88,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ]
       },
       "headToHead": [
+        {
+          "id": "2026_05_TB_DAL",
+          "date": "2026-10-08",
+          "season": 2026,
+          "week": 5,
+          "gameType": "REG",
+          "awayAbbreviation": "TB",
+          "awayScore": 24,
+          "homeAbbreviation": "DAL",
+          "homeScore": 16,
+          "winnerAbbreviation": "TB"
+        },
         {
           "id": "2024_16_TB_DAL",
           "date": "2024-12-22",
@@ -21719,29 +21731,7 @@
           "winnerAbbreviation": "TB"
         }
       ],
-      "prediction": {
-        "id": "2026_05_TB_DAL",
-        "awayTeam": "Tampa Bay Buccaneers",
-        "awayAbbreviation": "TB",
-        "homeTeam": "Dallas Cowboys",
-        "homeAbbreviation": "DAL",
-        "kickoff": "2026-10-08 20:15",
-        "predictedWinner": "Dallas Cowboys",
-        "homeWinProbability": 71,
-        "awayWinProbability": 29,
-        "classifierHomeProbability": 73,
-        "scoreModelHomeProbability": 67,
-        "projectedHomeScore": 22.7,
-        "projectedAwayScore": 20.1,
-        "projectedMargin": 5.6,
-        "projectedTotal": 45.0,
-        "confidence": "High",
-        "factors": [
-          "Quarterback efficiency",
-          "EPA per play",
-          "Turnover trend"
-        ]
-      }
+      "prediction": null
     },
     "2026_05_PHI_JAX": {
       "game": {
@@ -22065,12 +22055,12 @@
         "predictedWinner": "Jacksonville Jaguars",
         "homeWinProbability": 65,
         "awayWinProbability": 35,
-        "classifierHomeProbability": 68,
-        "scoreModelHomeProbability": 59,
-        "projectedHomeScore": 24.6,
-        "projectedAwayScore": 21.5,
-        "projectedMargin": 3.0,
-        "projectedTotal": 45.3,
+        "classifierHomeProbability": 69,
+        "scoreModelHomeProbability": 58,
+        "projectedHomeScore": 24.4,
+        "projectedAwayScore": 21.6,
+        "projectedMargin": 2.7,
+        "projectedTotal": 45.9,
         "confidence": "Medium",
         "factors": [
           "Recent scoring margin",
@@ -22435,9 +22425,9 @@
         "homeAbbreviation": "GB",
         "kickoff": "2026-10-11 13:00",
         "predictedWinner": "Chicago Bears",
-        "homeWinProbability": 36,
-        "awayWinProbability": 64,
-        "classifierHomeProbability": 39,
+        "homeWinProbability": 35,
+        "awayWinProbability": 65,
+        "classifierHomeProbability": 38,
         "scoreModelHomeProbability": 31,
         "projectedHomeScore": 21.6,
         "projectedAwayScore": 26.1,
@@ -22799,10 +22789,10 @@
         "awayWinProbability": 76,
         "classifierHomeProbability": 22,
         "scoreModelHomeProbability": 28,
-        "projectedHomeScore": 18.7,
-        "projectedAwayScore": 25.3,
-        "projectedMargin": -7.4,
-        "projectedTotal": 46.1,
+        "projectedHomeScore": 19.4,
+        "projectedAwayScore": 25.8,
+        "projectedMargin": -7.5,
+        "projectedTotal": 49.0,
         "confidence": "High",
         "factors": [
           "Recent scoring margin",
@@ -23170,11 +23160,11 @@
         "homeWinProbability": 30,
         "awayWinProbability": 70,
         "classifierHomeProbability": 27,
-        "scoreModelHomeProbability": 36,
-        "projectedHomeScore": 19.8,
-        "projectedAwayScore": 24.6,
-        "projectedMargin": -4.7,
-        "projectedTotal": 45.8,
+        "scoreModelHomeProbability": 35,
+        "projectedHomeScore": 19.5,
+        "projectedAwayScore": 24.7,
+        "projectedMargin": -5.1,
+        "projectedTotal": 45.2,
         "confidence": "High",
         "factors": [
           "Elo team strength",
@@ -24271,15 +24261,15 @@
         "homeAbbreviation": "NE",
         "kickoff": "2026-10-11 13:00",
         "predictedWinner": "New England Patriots",
-        "homeWinProbability": 57,
-        "awayWinProbability": 43,
-        "classifierHomeProbability": 52,
-        "scoreModelHomeProbability": 66,
-        "projectedHomeScore": 26.1,
-        "projectedAwayScore": 20.1,
-        "projectedMargin": 5.5,
-        "projectedTotal": 46.8,
-        "confidence": "Medium",
+        "homeWinProbability": 55,
+        "awayWinProbability": 45,
+        "classifierHomeProbability": 51,
+        "scoreModelHomeProbability": 63,
+        "projectedHomeScore": 25.9,
+        "projectedAwayScore": 20.4,
+        "projectedMargin": 4.3,
+        "projectedTotal": 46.9,
+        "confidence": "Low",
         "factors": [
           "Recent scoring margin",
           "Elo team strength",
@@ -24993,12 +24983,12 @@
         "predictedWinner": "New York Giants",
         "homeWinProbability": 50,
         "awayWinProbability": 50,
-        "classifierHomeProbability": 47,
+        "classifierHomeProbability": 46,
         "scoreModelHomeProbability": 56,
-        "projectedHomeScore": 22.4,
-        "projectedAwayScore": 21.8,
-        "projectedMargin": 1.9,
-        "projectedTotal": 42.7,
+        "projectedHomeScore": 22.2,
+        "projectedAwayScore": 21.2,
+        "projectedMargin": 2.0,
+        "projectedTotal": 41.3,
         "confidence": "Low",
         "factors": [
           "Recent scoring margin",
@@ -25723,13 +25713,13 @@
         "homeAbbreviation": "ARI",
         "kickoff": "2026-10-11 16:25",
         "predictedWinner": "Detroit Lions",
-        "homeWinProbability": 28,
-        "awayWinProbability": 72,
+        "homeWinProbability": 27,
+        "awayWinProbability": 73,
         "classifierHomeProbability": 23,
-        "scoreModelHomeProbability": 36,
+        "scoreModelHomeProbability": 35,
         "projectedHomeScore": 19.8,
         "projectedAwayScore": 24.7,
-        "projectedMargin": -4.8,
+        "projectedMargin": -4.9,
         "projectedTotal": 44.2,
         "confidence": "High",
         "factors": [
@@ -29193,14 +29183,14 @@
         "TB": {
           "current": {
             "season": 2026,
-            "wins": 0,
+            "wins": 1,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.0,
-            "pointsFor": 76,
-            "pointsAgainst": 96,
-            "pointDifferential": -20
+            "gamesPlayed": 5,
+            "winPct": 0.2,
+            "pointsFor": 100,
+            "pointsAgainst": 112,
+            "pointDifferential": -12
           },
           "previous": {
             "season": 2025,
@@ -29315,6 +29305,25 @@
         ],
         "TB": [
           {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "TB",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 16,
+            "result": "W",
+            "passingYards": 189.0,
+            "rushingYards": 241.0,
+            "totalYards": 430.0,
+            "totalEpa": 10.18,
+            "turnovers": 0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_04_GB_TB",
             "date": "2026-10-04",
             "season": 2026,
@@ -29389,25 +29398,6 @@
             "totalEpa": -6.94,
             "turnovers": 4.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_18_CAR_TB",
-            "date": "2026-01-03",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "TB",
-            "opponentAbbreviation": "CAR",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 14,
-            "result": "W",
-            "passingYards": 203.0,
-            "rushingYards": 140.0,
-            "totalYards": 343.0,
-            "totalEpa": 0.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -30836,13 +30826,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.5,
-            "pointsFor": 122,
-            "pointsAgainst": 112,
-            "pointDifferential": 10
+            "gamesPlayed": 5,
+            "winPct": 0.4,
+            "pointsFor": 138,
+            "pointsAgainst": 136,
+            "pointDifferential": 2
           },
           "previous": {
             "season": 2025,
@@ -30883,6 +30873,25 @@
       },
       "recentForm": {
         "DAL": [
+          {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "TB",
+            "homeAway": "Home",
+            "teamScore": 16,
+            "opponentScore": 24,
+            "result": "L",
+            "passingYards": 316.0,
+            "rushingYards": 50.0,
+            "totalYards": 366.0,
+            "totalEpa": -2.62,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_04_DAL_HOU",
             "date": "2026-10-04",
@@ -30958,25 +30967,6 @@
             "totalEpa": 11.47,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_18_DAL_NYG",
-            "date": "2026-01-04",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "NYG",
-            "homeAway": "Away",
-            "teamScore": 17,
-            "opponentScore": 34,
-            "result": "L",
-            "passingYards": 143.0,
-            "rushingYards": 143.0,
-            "totalYards": 286.0,
-            "totalEpa": -6.88,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ],
         "GB": [
@@ -34119,14 +34109,14 @@
         "TB": {
           "current": {
             "season": 2026,
-            "wins": 0,
+            "wins": 1,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.0,
-            "pointsFor": 76,
-            "pointsAgainst": 96,
-            "pointDifferential": -20
+            "gamesPlayed": 5,
+            "winPct": 0.2,
+            "pointsFor": 100,
+            "pointsAgainst": 112,
+            "pointDifferential": -12
           },
           "previous": {
             "season": 2025,
@@ -34167,6 +34157,25 @@
       },
       "recentForm": {
         "TB": [
+          {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "TB",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 16,
+            "result": "W",
+            "passingYards": 189.0,
+            "rushingYards": 241.0,
+            "totalYards": 430.0,
+            "totalEpa": 10.18,
+            "turnovers": 0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_04_GB_TB",
             "date": "2026-10-04",
@@ -34242,25 +34251,6 @@
             "totalEpa": -6.94,
             "turnovers": 4.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_18_CAR_TB",
-            "date": "2026-01-03",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "TB",
-            "opponentAbbreviation": "CAR",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 14,
-            "result": "W",
-            "passingYards": 203.0,
-            "rushingYards": 140.0,
-            "totalYards": 343.0,
-            "totalEpa": 0.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "CAR": [
@@ -35738,13 +35728,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.5,
-            "pointsFor": 122,
-            "pointsAgainst": 112,
-            "pointDifferential": 10
+            "gamesPlayed": 5,
+            "winPct": 0.4,
+            "pointsFor": 138,
+            "pointsAgainst": 136,
+            "pointDifferential": 2
           },
           "previous": {
             "season": 2025,
@@ -35785,6 +35775,25 @@
       },
       "recentForm": {
         "DAL": [
+          {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "TB",
+            "homeAway": "Home",
+            "teamScore": 16,
+            "opponentScore": 24,
+            "result": "L",
+            "passingYards": 316.0,
+            "rushingYards": 50.0,
+            "totalYards": 366.0,
+            "totalEpa": -2.62,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_04_DAL_HOU",
             "date": "2026-10-04",
@@ -35860,25 +35869,6 @@
             "totalEpa": 11.47,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_18_DAL_NYG",
-            "date": "2026-01-04",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "NYG",
-            "homeAway": "Away",
-            "teamScore": 17,
-            "opponentScore": 34,
-            "result": "L",
-            "passingYards": 143.0,
-            "rushingYards": 143.0,
-            "totalYards": 286.0,
-            "totalEpa": -6.88,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ],
         "PHI": [
@@ -36450,13 +36440,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.5,
-            "pointsFor": 122,
-            "pointsAgainst": 112,
-            "pointDifferential": 10
+            "gamesPlayed": 5,
+            "winPct": 0.4,
+            "pointsFor": 138,
+            "pointsAgainst": 136,
+            "pointDifferential": 2
           },
           "previous": {
             "season": 2025,
@@ -36571,6 +36561,25 @@
         ],
         "DAL": [
           {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "TB",
+            "homeAway": "Home",
+            "teamScore": 16,
+            "opponentScore": 24,
+            "result": "L",
+            "passingYards": 316.0,
+            "rushingYards": 50.0,
+            "totalYards": 366.0,
+            "totalEpa": -2.62,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_04_DAL_HOU",
             "date": "2026-10-04",
             "season": 2026,
@@ -36645,25 +36654,6 @@
             "totalEpa": 11.47,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_18_DAL_NYG",
-            "date": "2026-01-04",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "NYG",
-            "homeAway": "Away",
-            "teamScore": 17,
-            "opponentScore": 34,
-            "result": "L",
-            "passingYards": 143.0,
-            "rushingYards": 143.0,
-            "totalYards": 286.0,
-            "totalEpa": -6.88,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ]
       },
@@ -36787,14 +36777,14 @@
         "TB": {
           "current": {
             "season": 2026,
-            "wins": 0,
+            "wins": 1,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.0,
-            "pointsFor": 76,
-            "pointsAgainst": 96,
-            "pointDifferential": -20
+            "gamesPlayed": 5,
+            "winPct": 0.2,
+            "pointsFor": 100,
+            "pointsAgainst": 112,
+            "pointDifferential": -12
           },
           "previous": {
             "season": 2025,
@@ -36909,6 +36899,25 @@
         ],
         "TB": [
           {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "TB",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 16,
+            "result": "W",
+            "passingYards": 189.0,
+            "rushingYards": 241.0,
+            "totalYards": 430.0,
+            "totalEpa": 10.18,
+            "turnovers": 0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_04_GB_TB",
             "date": "2026-10-04",
             "season": 2026,
@@ -36983,25 +36992,6 @@
             "totalEpa": -6.94,
             "turnovers": 4.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_18_CAR_TB",
-            "date": "2026-01-03",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "TB",
-            "opponentAbbreviation": "CAR",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 14,
-            "result": "W",
-            "passingYards": 203.0,
-            "rushingYards": 140.0,
-            "totalYards": 343.0,
-            "totalEpa": 0.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -41762,13 +41752,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.5,
-            "pointsFor": 122,
-            "pointsAgainst": 112,
-            "pointDifferential": 10
+            "gamesPlayed": 5,
+            "winPct": 0.4,
+            "pointsFor": 138,
+            "pointsAgainst": 136,
+            "pointDifferential": 2
           },
           "previous": {
             "season": 2025,
@@ -41809,6 +41799,25 @@
       },
       "recentForm": {
         "DAL": [
+          {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "TB",
+            "homeAway": "Home",
+            "teamScore": 16,
+            "opponentScore": 24,
+            "result": "L",
+            "passingYards": 316.0,
+            "rushingYards": 50.0,
+            "totalYards": 366.0,
+            "totalEpa": -2.62,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_04_DAL_HOU",
             "date": "2026-10-04",
@@ -41884,25 +41893,6 @@
             "totalEpa": 11.47,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_18_DAL_NYG",
-            "date": "2026-01-04",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "NYG",
-            "homeAway": "Away",
-            "teamScore": 17,
-            "opponentScore": 34,
-            "result": "L",
-            "passingYards": 143.0,
-            "rushingYards": 143.0,
-            "totalYards": 286.0,
-            "totalEpa": -6.88,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ],
         "IND": [
@@ -44961,14 +44951,14 @@
         "TB": {
           "current": {
             "season": 2026,
-            "wins": 0,
+            "wins": 1,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.0,
-            "pointsFor": 76,
-            "pointsAgainst": 96,
-            "pointDifferential": -20
+            "gamesPlayed": 5,
+            "winPct": 0.2,
+            "pointsFor": 100,
+            "pointsAgainst": 112,
+            "pointDifferential": -12
           },
           "previous": {
             "season": 2025,
@@ -45009,6 +44999,25 @@
       },
       "recentForm": {
         "TB": [
+          {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "TB",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 16,
+            "result": "W",
+            "passingYards": 189.0,
+            "rushingYards": 241.0,
+            "totalYards": 430.0,
+            "totalEpa": 10.18,
+            "turnovers": 0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_04_GB_TB",
             "date": "2026-10-04",
@@ -45084,25 +45093,6 @@
             "totalEpa": -6.94,
             "turnovers": 4.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_18_CAR_TB",
-            "date": "2026-01-03",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "TB",
-            "opponentAbbreviation": "CAR",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 14,
-            "result": "W",
-            "passingYards": 203.0,
-            "rushingYards": 140.0,
-            "totalYards": 343.0,
-            "totalEpa": 0.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "CHI": [
@@ -49308,13 +49298,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.5,
-            "pointsFor": 122,
-            "pointsAgainst": 112,
-            "pointDifferential": 10
+            "gamesPlayed": 5,
+            "winPct": 0.4,
+            "pointsFor": 138,
+            "pointsAgainst": 136,
+            "pointDifferential": 2
           },
           "previous": {
             "season": 2025,
@@ -49429,6 +49419,25 @@
         ],
         "DAL": [
           {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "TB",
+            "homeAway": "Home",
+            "teamScore": 16,
+            "opponentScore": 24,
+            "result": "L",
+            "passingYards": 316.0,
+            "rushingYards": 50.0,
+            "totalYards": 366.0,
+            "totalEpa": -2.62,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_04_DAL_HOU",
             "date": "2026-10-04",
             "season": 2026,
@@ -49503,25 +49512,6 @@
             "totalEpa": 11.47,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_18_DAL_NYG",
-            "date": "2026-01-04",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "NYG",
-            "homeAway": "Away",
-            "teamScore": 17,
-            "opponentScore": 34,
-            "result": "L",
-            "passingYards": 143.0,
-            "rushingYards": 143.0,
-            "totalYards": 286.0,
-            "totalEpa": -6.88,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ]
       },
@@ -52229,14 +52219,14 @@
         "TB": {
           "current": {
             "season": 2026,
-            "wins": 0,
+            "wins": 1,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.0,
-            "pointsFor": 76,
-            "pointsAgainst": 96,
-            "pointDifferential": -20
+            "gamesPlayed": 5,
+            "winPct": 0.2,
+            "pointsFor": 100,
+            "pointsAgainst": 112,
+            "pointDifferential": -12
           },
           "previous": {
             "season": 2025,
@@ -52277,6 +52267,25 @@
       },
       "recentForm": {
         "TB": [
+          {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "TB",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 16,
+            "result": "W",
+            "passingYards": 189.0,
+            "rushingYards": 241.0,
+            "totalYards": 430.0,
+            "totalEpa": 10.18,
+            "turnovers": 0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_04_GB_TB",
             "date": "2026-10-04",
@@ -52352,25 +52361,6 @@
             "totalEpa": -6.94,
             "turnovers": 4.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_18_CAR_TB",
-            "date": "2026-01-03",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "TB",
-            "opponentAbbreviation": "CAR",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 14,
-            "result": "W",
-            "passingYards": 203.0,
-            "rushingYards": 140.0,
-            "totalYards": 343.0,
-            "totalEpa": 0.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "DET": [
@@ -52604,13 +52594,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.5,
-            "pointsFor": 122,
-            "pointsAgainst": 112,
-            "pointDifferential": 10
+            "gamesPlayed": 5,
+            "winPct": 0.4,
+            "pointsFor": 138,
+            "pointsAgainst": 136,
+            "pointDifferential": 2
           },
           "previous": {
             "season": 2025,
@@ -52725,6 +52715,25 @@
         ],
         "DAL": [
           {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "TB",
+            "homeAway": "Home",
+            "teamScore": 16,
+            "opponentScore": 24,
+            "result": "L",
+            "passingYards": 316.0,
+            "rushingYards": 50.0,
+            "totalYards": 366.0,
+            "totalEpa": -2.62,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_04_DAL_HOU",
             "date": "2026-10-04",
             "season": 2026,
@@ -52799,25 +52808,6 @@
             "totalEpa": 11.47,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_18_DAL_NYG",
-            "date": "2026-01-04",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "NYG",
-            "homeAway": "Away",
-            "teamScore": 17,
-            "opponentScore": 34,
-            "result": "L",
-            "passingYards": 143.0,
-            "rushingYards": 143.0,
-            "totalYards": 286.0,
-            "totalEpa": -6.88,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ]
       },
@@ -55224,13 +55214,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.5,
-            "pointsFor": 122,
-            "pointsAgainst": 112,
-            "pointDifferential": 10
+            "gamesPlayed": 5,
+            "winPct": 0.4,
+            "pointsFor": 138,
+            "pointsAgainst": 136,
+            "pointDifferential": 2
           },
           "previous": {
             "season": 2025,
@@ -55345,6 +55335,25 @@
         ],
         "DAL": [
           {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "TB",
+            "homeAway": "Home",
+            "teamScore": 16,
+            "opponentScore": 24,
+            "result": "L",
+            "passingYards": 316.0,
+            "rushingYards": 50.0,
+            "totalYards": 366.0,
+            "totalEpa": -2.62,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_04_DAL_HOU",
             "date": "2026-10-04",
             "season": 2026,
@@ -55419,25 +55428,6 @@
             "totalEpa": 11.47,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_18_DAL_NYG",
-            "date": "2026-01-04",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "NYG",
-            "homeAway": "Away",
-            "teamScore": 17,
-            "opponentScore": 34,
-            "result": "L",
-            "passingYards": 143.0,
-            "rushingYards": 143.0,
-            "totalYards": 286.0,
-            "totalEpa": -6.88,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ]
       },
@@ -59617,14 +59607,14 @@
         "TB": {
           "current": {
             "season": 2026,
-            "wins": 0,
+            "wins": 1,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.0,
-            "pointsFor": 76,
-            "pointsAgainst": 96,
-            "pointDifferential": -20
+            "gamesPlayed": 5,
+            "winPct": 0.2,
+            "pointsFor": 100,
+            "pointsAgainst": 112,
+            "pointDifferential": -12
           },
           "previous": {
             "season": 2025,
@@ -59739,6 +59729,25 @@
         ],
         "TB": [
           {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "TB",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 16,
+            "result": "W",
+            "passingYards": 189.0,
+            "rushingYards": 241.0,
+            "totalYards": 430.0,
+            "totalEpa": 10.18,
+            "turnovers": 0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_04_GB_TB",
             "date": "2026-10-04",
             "season": 2026,
@@ -59813,25 +59822,6 @@
             "totalEpa": -6.94,
             "turnovers": 4.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_18_CAR_TB",
-            "date": "2026-01-03",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "TB",
-            "opponentAbbreviation": "CAR",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 14,
-            "result": "W",
-            "passingYards": 203.0,
-            "rushingYards": 140.0,
-            "totalYards": 343.0,
-            "totalEpa": 0.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -61597,14 +61587,14 @@
         "TB": {
           "current": {
             "season": 2026,
-            "wins": 0,
+            "wins": 1,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.0,
-            "pointsFor": 76,
-            "pointsAgainst": 96,
-            "pointDifferential": -20
+            "gamesPlayed": 5,
+            "winPct": 0.2,
+            "pointsFor": 100,
+            "pointsAgainst": 112,
+            "pointDifferential": -12
           },
           "previous": {
             "season": 2025,
@@ -61719,6 +61709,25 @@
         ],
         "TB": [
           {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "TB",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 16,
+            "result": "W",
+            "passingYards": 189.0,
+            "rushingYards": 241.0,
+            "totalYards": 430.0,
+            "totalEpa": 10.18,
+            "turnovers": 0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_04_GB_TB",
             "date": "2026-10-04",
             "season": 2026,
@@ -61793,25 +61802,6 @@
             "totalEpa": -6.94,
             "turnovers": 4.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_18_CAR_TB",
-            "date": "2026-01-03",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "TB",
-            "opponentAbbreviation": "CAR",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 14,
-            "result": "W",
-            "passingYards": 203.0,
-            "rushingYards": 140.0,
-            "totalYards": 343.0,
-            "totalEpa": 0.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -64158,13 +64148,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.5,
-            "pointsFor": 122,
-            "pointsAgainst": 112,
-            "pointDifferential": 10
+            "gamesPlayed": 5,
+            "winPct": 0.4,
+            "pointsFor": 138,
+            "pointsAgainst": 136,
+            "pointDifferential": 2
           },
           "previous": {
             "season": 2025,
@@ -64205,6 +64195,25 @@
       },
       "recentForm": {
         "DAL": [
+          {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "TB",
+            "homeAway": "Home",
+            "teamScore": 16,
+            "opponentScore": 24,
+            "result": "L",
+            "passingYards": 316.0,
+            "rushingYards": 50.0,
+            "totalYards": 366.0,
+            "totalEpa": -2.62,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_04_DAL_HOU",
             "date": "2026-10-04",
@@ -64280,25 +64289,6 @@
             "totalEpa": 11.47,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_18_DAL_NYG",
-            "date": "2026-01-04",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "NYG",
-            "homeAway": "Away",
-            "teamScore": 17,
-            "opponentScore": 34,
-            "result": "L",
-            "passingYards": 143.0,
-            "rushingYards": 143.0,
-            "totalYards": 286.0,
-            "totalEpa": -6.88,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ],
         "SEA": [
@@ -66681,14 +66671,14 @@
         "TB": {
           "current": {
             "season": 2026,
-            "wins": 0,
+            "wins": 1,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.0,
-            "pointsFor": 76,
-            "pointsAgainst": 96,
-            "pointDifferential": -20
+            "gamesPlayed": 5,
+            "winPct": 0.2,
+            "pointsFor": 100,
+            "pointsAgainst": 112,
+            "pointDifferential": -12
           },
           "previous": {
             "season": 2025,
@@ -66729,6 +66719,25 @@
       },
       "recentForm": {
         "TB": [
+          {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "TB",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 16,
+            "result": "W",
+            "passingYards": 189.0,
+            "rushingYards": 241.0,
+            "totalYards": 430.0,
+            "totalEpa": 10.18,
+            "turnovers": 0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_04_GB_TB",
             "date": "2026-10-04",
@@ -66804,25 +66813,6 @@
             "totalEpa": -6.94,
             "turnovers": 4.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_18_CAR_TB",
-            "date": "2026-01-03",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "TB",
-            "opponentAbbreviation": "CAR",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 14,
-            "result": "W",
-            "passingYards": 203.0,
-            "rushingYards": 140.0,
-            "totalYards": 343.0,
-            "totalEpa": 0.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "BAL": [
@@ -72597,14 +72587,14 @@
         "TB": {
           "current": {
             "season": 2026,
-            "wins": 0,
+            "wins": 1,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.0,
-            "pointsFor": 76,
-            "pointsAgainst": 96,
-            "pointDifferential": -20
+            "gamesPlayed": 5,
+            "winPct": 0.2,
+            "pointsFor": 100,
+            "pointsAgainst": 112,
+            "pointDifferential": -12
           },
           "previous": {
             "season": 2025,
@@ -72719,6 +72709,25 @@
         ],
         "TB": [
           {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "TB",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 16,
+            "result": "W",
+            "passingYards": 189.0,
+            "rushingYards": 241.0,
+            "totalYards": 430.0,
+            "totalEpa": 10.18,
+            "turnovers": 0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_04_GB_TB",
             "date": "2026-10-04",
             "season": 2026,
@@ -72793,25 +72802,6 @@
             "totalEpa": -6.94,
             "turnovers": 4.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_18_CAR_TB",
-            "date": "2026-01-03",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "TB",
-            "opponentAbbreviation": "CAR",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 14,
-            "result": "W",
-            "passingYards": 203.0,
-            "rushingYards": 140.0,
-            "totalYards": 343.0,
-            "totalEpa": 0.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -73238,13 +73228,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.5,
-            "pointsFor": 122,
-            "pointsAgainst": 112,
-            "pointDifferential": 10
+            "gamesPlayed": 5,
+            "winPct": 0.4,
+            "pointsFor": 138,
+            "pointsAgainst": 136,
+            "pointDifferential": 2
           },
           "previous": {
             "season": 2025,
@@ -73285,6 +73275,25 @@
       },
       "recentForm": {
         "DAL": [
+          {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "TB",
+            "homeAway": "Home",
+            "teamScore": 16,
+            "opponentScore": 24,
+            "result": "L",
+            "passingYards": 316.0,
+            "rushingYards": 50.0,
+            "totalYards": 366.0,
+            "totalEpa": -2.62,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_04_DAL_HOU",
             "date": "2026-10-04",
@@ -73360,25 +73369,6 @@
             "totalEpa": 11.47,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_18_DAL_NYG",
-            "date": "2026-01-04",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "NYG",
-            "homeAway": "Away",
-            "teamScore": 17,
-            "opponentScore": 34,
-            "result": "L",
-            "passingYards": 143.0,
-            "rushingYards": 143.0,
-            "totalYards": 286.0,
-            "totalEpa": -6.88,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ],
         "LA": [
@@ -77921,14 +77911,14 @@
         "TB": {
           "current": {
             "season": 2026,
-            "wins": 0,
+            "wins": 1,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.0,
-            "pointsFor": 76,
-            "pointsAgainst": 96,
-            "pointDifferential": -20
+            "gamesPlayed": 5,
+            "winPct": 0.2,
+            "pointsFor": 100,
+            "pointsAgainst": 112,
+            "pointDifferential": -12
           },
           "previous": {
             "season": 2025,
@@ -77969,6 +77959,25 @@
       },
       "recentForm": {
         "TB": [
+          {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "TB",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 16,
+            "result": "W",
+            "passingYards": 189.0,
+            "rushingYards": 241.0,
+            "totalYards": 430.0,
+            "totalEpa": 10.18,
+            "turnovers": 0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_04_GB_TB",
             "date": "2026-10-04",
@@ -78044,25 +78053,6 @@
             "totalEpa": -6.94,
             "turnovers": 4.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_18_CAR_TB",
-            "date": "2026-01-03",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "TB",
-            "opponentAbbreviation": "CAR",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 14,
-            "result": "W",
-            "passingYards": 203.0,
-            "rushingYards": 140.0,
-            "totalYards": 343.0,
-            "totalEpa": 0.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "ATL": [
@@ -79250,13 +79240,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.5,
-            "pointsFor": 122,
-            "pointsAgainst": 112,
-            "pointDifferential": 10
+            "gamesPlayed": 5,
+            "winPct": 0.4,
+            "pointsFor": 138,
+            "pointsAgainst": 136,
+            "pointDifferential": 2
           },
           "previous": {
             "season": 2025,
@@ -79371,6 +79361,25 @@
         ],
         "DAL": [
           {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "TB",
+            "homeAway": "Home",
+            "teamScore": 16,
+            "opponentScore": 24,
+            "result": "L",
+            "passingYards": 316.0,
+            "rushingYards": 50.0,
+            "totalYards": 366.0,
+            "totalEpa": -2.62,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_04_DAL_HOU",
             "date": "2026-10-04",
             "season": 2026,
@@ -79445,25 +79454,6 @@
             "totalEpa": 11.47,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_18_DAL_NYG",
-            "date": "2026-01-04",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "NYG",
-            "homeAway": "Away",
-            "teamScore": 17,
-            "opponentScore": 34,
-            "result": "L",
-            "passingYards": 143.0,
-            "rushingYards": 143.0,
-            "totalYards": 286.0,
-            "totalEpa": -6.88,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ]
       },
@@ -81555,14 +81545,14 @@
         "TB": {
           "current": {
             "season": 2026,
-            "wins": 0,
+            "wins": 1,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.0,
-            "pointsFor": 76,
-            "pointsAgainst": 96,
-            "pointDifferential": -20
+            "gamesPlayed": 5,
+            "winPct": 0.2,
+            "pointsFor": 100,
+            "pointsAgainst": 112,
+            "pointDifferential": -12
           },
           "previous": {
             "season": 2025,
@@ -81677,6 +81667,25 @@
         ],
         "TB": [
           {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "TB",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 16,
+            "result": "W",
+            "passingYards": 189.0,
+            "rushingYards": 241.0,
+            "totalYards": 430.0,
+            "totalEpa": 10.18,
+            "turnovers": 0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_04_GB_TB",
             "date": "2026-10-04",
             "season": 2026,
@@ -81751,25 +81760,6 @@
             "totalEpa": -6.94,
             "turnovers": 4.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_18_CAR_TB",
-            "date": "2026-01-03",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "TB",
-            "opponentAbbreviation": "CAR",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 14,
-            "result": "W",
-            "passingYards": 203.0,
-            "rushingYards": 140.0,
-            "totalYards": 343.0,
-            "totalEpa": 0.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -82570,13 +82560,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.5,
-            "pointsFor": 122,
-            "pointsAgainst": 112,
-            "pointDifferential": 10
+            "gamesPlayed": 5,
+            "winPct": 0.4,
+            "pointsFor": 138,
+            "pointsAgainst": 136,
+            "pointDifferential": 2
           },
           "previous": {
             "season": 2025,
@@ -82691,6 +82681,25 @@
         ],
         "DAL": [
           {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "TB",
+            "homeAway": "Home",
+            "teamScore": 16,
+            "opponentScore": 24,
+            "result": "L",
+            "passingYards": 316.0,
+            "rushingYards": 50.0,
+            "totalYards": 366.0,
+            "totalEpa": -2.62,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_04_DAL_HOU",
             "date": "2026-10-04",
             "season": 2026,
@@ -82765,25 +82774,6 @@
             "totalEpa": 11.47,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_18_DAL_NYG",
-            "date": "2026-01-04",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "NYG",
-            "homeAway": "Away",
-            "teamScore": 17,
-            "opponentScore": 34,
-            "result": "L",
-            "passingYards": 143.0,
-            "rushingYards": 143.0,
-            "totalYards": 286.0,
-            "totalEpa": -6.88,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ]
       },
@@ -86204,13 +86194,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.5,
-            "pointsFor": 122,
-            "pointsAgainst": 112,
-            "pointDifferential": 10
+            "gamesPlayed": 5,
+            "winPct": 0.4,
+            "pointsFor": 138,
+            "pointsAgainst": 136,
+            "pointDifferential": 2
           },
           "previous": {
             "season": 2025,
@@ -86251,6 +86241,25 @@
       },
       "recentForm": {
         "DAL": [
+          {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "TB",
+            "homeAway": "Home",
+            "teamScore": 16,
+            "opponentScore": 24,
+            "result": "L",
+            "passingYards": 316.0,
+            "rushingYards": 50.0,
+            "totalYards": 366.0,
+            "totalEpa": -2.62,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_04_DAL_HOU",
             "date": "2026-10-04",
@@ -86326,25 +86335,6 @@
             "totalEpa": 11.47,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2025_18_DAL_NYG",
-            "date": "2026-01-04",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "NYG",
-            "homeAway": "Away",
-            "teamScore": 17,
-            "opponentScore": 34,
-            "result": "L",
-            "passingYards": 143.0,
-            "rushingYards": 143.0,
-            "totalYards": 286.0,
-            "totalEpa": -6.88,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ],
         "WAS": [
@@ -90053,14 +90043,14 @@
         "TB": {
           "current": {
             "season": 2026,
-            "wins": 0,
+            "wins": 1,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 4,
-            "winPct": 0.0,
-            "pointsFor": 76,
-            "pointsAgainst": 96,
-            "pointDifferential": -20
+            "gamesPlayed": 5,
+            "winPct": 0.2,
+            "pointsFor": 100,
+            "pointsAgainst": 112,
+            "pointDifferential": -12
           },
           "previous": {
             "season": 2025,
@@ -90101,6 +90091,25 @@
       },
       "recentForm": {
         "TB": [
+          {
+            "id": "2026_05_TB_DAL",
+            "date": "2026-10-08",
+            "season": 2026,
+            "week": 5,
+            "gameType": "REG",
+            "teamAbbreviation": "TB",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 16,
+            "result": "W",
+            "passingYards": 189.0,
+            "rushingYards": 241.0,
+            "totalYards": 430.0,
+            "totalEpa": 10.18,
+            "turnovers": 0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_04_GB_TB",
             "date": "2026-10-04",
@@ -90176,25 +90185,6 @@
             "totalEpa": -6.94,
             "turnovers": 4.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2025_18_CAR_TB",
-            "date": "2026-01-03",
-            "season": 2025,
-            "week": 18,
-            "gameType": "REG",
-            "teamAbbreviation": "TB",
-            "opponentAbbreviation": "CAR",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 14,
-            "result": "W",
-            "passingYards": 203.0,
-            "rushingYards": 140.0,
-            "totalYards": 343.0,
-            "totalEpa": 0.4,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "NO": [
