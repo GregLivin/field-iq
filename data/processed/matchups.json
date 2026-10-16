@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "asOf": "2026-10-15T15:07:04.209954+00:00",
+  "asOf": "2026-10-16T14:55:31.484148+00:00",
   "provider": "nflverse",
   "games": {
     "2026_01_NE_SEA": {
@@ -72,13 +72,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 134,
-            "pointsAgainst": 105,
-            "pointDifferential": 29
+            "gamesPlayed": 6,
+            "winPct": 0.5,
+            "pointsFor": 148,
+            "pointsAgainst": 122,
+            "pointDifferential": 26
           },
           "previous": {
             "season": 2025,
@@ -193,6 +193,25 @@
         ],
         "SEA": [
           {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SEA",
+            "opponentAbbreviation": "DEN",
+            "homeAway": "Away",
+            "teamScore": 14,
+            "opponentScore": 17,
+            "result": "L",
+            "passingYards": 278.0,
+            "rushingYards": 113.0,
+            "totalYards": 391.0,
+            "totalEpa": -7.13,
+            "turnovers": 3.0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
             "season": 2026,
@@ -267,25 +286,6 @@
             "totalEpa": 8.95,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_NE_SEA",
-            "date": "2026-09-09",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SEA",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 10,
-            "result": "W",
-            "passingYards": 200.0,
-            "rushingYards": 97.0,
-            "totalYards": 297.0,
-            "totalEpa": 3.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -5093,14 +5093,14 @@
         "DEN": {
           "current": {
             "season": 2026,
-            "wins": 3,
+            "wins": 4,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 97,
-            "pointsAgainst": 111,
-            "pointDifferential": -14
+            "gamesPlayed": 6,
+            "winPct": 0.667,
+            "pointsFor": 114,
+            "pointsAgainst": 125,
+            "pointDifferential": -11
           },
           "previous": {
             "season": 2025,
@@ -5141,6 +5141,25 @@
       },
       "recentForm": {
         "DEN": [
+          {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "DEN",
+            "opponentAbbreviation": "SEA",
+            "homeAway": "Home",
+            "teamScore": 17,
+            "opponentScore": 14,
+            "result": "W",
+            "passingYards": 107.0,
+            "rushingYards": 74.0,
+            "totalYards": 181.0,
+            "totalEpa": -8.05,
+            "turnovers": 0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_05_DEN_LAC",
             "date": "2026-10-11",
@@ -5215,25 +5234,6 @@
             "totalYards": 392.0,
             "totalEpa": 3.63,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_DEN_KC",
-            "date": "2026-09-14",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "DEN",
-            "opponentAbbreviation": "KC",
-            "homeAway": "Away",
-            "teamScore": 10,
-            "opponentScore": 31,
-            "result": "L",
-            "passingYards": 131.0,
-            "rushingYards": 61.0,
-            "totalYards": 192.0,
-            "totalEpa": -15.82,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -8425,14 +8425,14 @@
         "DEN": {
           "current": {
             "season": 2026,
-            "wins": 3,
+            "wins": 4,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 97,
-            "pointsAgainst": 111,
-            "pointDifferential": -14
+            "gamesPlayed": 6,
+            "winPct": 0.667,
+            "pointsFor": 114,
+            "pointsAgainst": 125,
+            "pointDifferential": -11
           },
           "previous": {
             "season": 2025,
@@ -8547,6 +8547,25 @@
         ],
         "DEN": [
           {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "DEN",
+            "opponentAbbreviation": "SEA",
+            "homeAway": "Home",
+            "teamScore": 17,
+            "opponentScore": 14,
+            "result": "W",
+            "passingYards": 107.0,
+            "rushingYards": 74.0,
+            "totalYards": 181.0,
+            "totalEpa": -8.05,
+            "turnovers": 0,
+            "defensiveSacks": 5.0
+          },
+          {
             "id": "2026_05_DEN_LAC",
             "date": "2026-10-11",
             "season": 2026,
@@ -8620,25 +8639,6 @@
             "totalYards": 392.0,
             "totalEpa": 3.63,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_DEN_KC",
-            "date": "2026-09-14",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "DEN",
-            "opponentAbbreviation": "KC",
-            "homeAway": "Away",
-            "teamScore": 10,
-            "opponentScore": 31,
-            "result": "L",
-            "passingYards": 131.0,
-            "rushingYards": 61.0,
-            "totalYards": 192.0,
-            "totalEpa": -15.82,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -9440,13 +9440,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 134,
-            "pointsAgainst": 105,
-            "pointDifferential": 29
+            "gamesPlayed": 6,
+            "winPct": 0.5,
+            "pointsFor": 148,
+            "pointsAgainst": 122,
+            "pointDifferential": 26
           },
           "previous": {
             "season": 2025,
@@ -9487,6 +9487,25 @@
       },
       "recentForm": {
         "SEA": [
+          {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SEA",
+            "opponentAbbreviation": "DEN",
+            "homeAway": "Away",
+            "teamScore": 14,
+            "opponentScore": 17,
+            "result": "L",
+            "passingYards": 278.0,
+            "rushingYards": 113.0,
+            "totalYards": 391.0,
+            "totalEpa": -7.13,
+            "turnovers": 3.0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
@@ -9562,25 +9581,6 @@
             "totalEpa": 8.95,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_NE_SEA",
-            "date": "2026-09-09",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SEA",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 10,
-            "result": "W",
-            "passingYards": 200.0,
-            "rushingYards": 97.0,
-            "totalYards": 297.0,
-            "totalEpa": 3.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "ARI": [
@@ -13448,13 +13448,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 134,
-            "pointsAgainst": 105,
-            "pointDifferential": 29
+            "gamesPlayed": 6,
+            "winPct": 0.5,
+            "pointsFor": 148,
+            "pointsAgainst": 122,
+            "pointDifferential": 26
           },
           "previous": {
             "season": 2025,
@@ -13495,6 +13495,25 @@
       },
       "recentForm": {
         "SEA": [
+          {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SEA",
+            "opponentAbbreviation": "DEN",
+            "homeAway": "Away",
+            "teamScore": 14,
+            "opponentScore": 17,
+            "result": "L",
+            "passingYards": 278.0,
+            "rushingYards": 113.0,
+            "totalYards": 391.0,
+            "totalEpa": -7.13,
+            "turnovers": 3.0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
@@ -13570,25 +13589,6 @@
             "totalEpa": 8.95,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_NE_SEA",
-            "date": "2026-09-09",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SEA",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 10,
-            "result": "W",
-            "passingYards": 200.0,
-            "rushingYards": 97.0,
-            "totalYards": 297.0,
-            "totalEpa": 3.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "WAS": [
@@ -15475,14 +15475,14 @@
         "DEN": {
           "current": {
             "season": 2026,
-            "wins": 3,
+            "wins": 4,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 97,
-            "pointsAgainst": 111,
-            "pointDifferential": -14
+            "gamesPlayed": 6,
+            "winPct": 0.667,
+            "pointsFor": 114,
+            "pointsAgainst": 125,
+            "pointDifferential": -11
           },
           "previous": {
             "season": 2025,
@@ -15597,6 +15597,25 @@
         ],
         "DEN": [
           {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "DEN",
+            "opponentAbbreviation": "SEA",
+            "homeAway": "Home",
+            "teamScore": 17,
+            "opponentScore": 14,
+            "result": "W",
+            "passingYards": 107.0,
+            "rushingYards": 74.0,
+            "totalYards": 181.0,
+            "totalEpa": -8.05,
+            "turnovers": 0,
+            "defensiveSacks": 5.0
+          },
+          {
             "id": "2026_05_DEN_LAC",
             "date": "2026-10-11",
             "season": 2026,
@@ -15670,25 +15689,6 @@
             "totalYards": 392.0,
             "totalEpa": 3.63,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_DEN_KC",
-            "date": "2026-09-14",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "DEN",
-            "opponentAbbreviation": "KC",
-            "homeAway": "Away",
-            "teamScore": 10,
-            "opponentScore": 31,
-            "result": "L",
-            "passingYards": 131.0,
-            "rushingYards": 61.0,
-            "totalYards": 192.0,
-            "totalEpa": -15.82,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -19773,14 +19773,14 @@
         "DEN": {
           "current": {
             "season": 2026,
-            "wins": 3,
+            "wins": 4,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 97,
-            "pointsAgainst": 111,
-            "pointDifferential": -14
+            "gamesPlayed": 6,
+            "winPct": 0.667,
+            "pointsFor": 114,
+            "pointsAgainst": 125,
+            "pointDifferential": -11
           },
           "previous": {
             "season": 2025,
@@ -19821,6 +19821,25 @@
       },
       "recentForm": {
         "DEN": [
+          {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "DEN",
+            "opponentAbbreviation": "SEA",
+            "homeAway": "Home",
+            "teamScore": 17,
+            "opponentScore": 14,
+            "result": "W",
+            "passingYards": 107.0,
+            "rushingYards": 74.0,
+            "totalYards": 181.0,
+            "totalEpa": -8.05,
+            "turnovers": 0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_05_DEN_LAC",
             "date": "2026-10-11",
@@ -19895,25 +19914,6 @@
             "totalYards": 392.0,
             "totalEpa": 3.63,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_DEN_KC",
-            "date": "2026-09-14",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "DEN",
-            "opponentAbbreviation": "KC",
-            "homeAway": "Away",
-            "teamScore": 10,
-            "opponentScore": 31,
-            "result": "L",
-            "passingYards": 131.0,
-            "rushingYards": 61.0,
-            "totalYards": 192.0,
-            "totalEpa": -15.82,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -20462,13 +20462,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 134,
-            "pointsAgainst": 105,
-            "pointDifferential": 29
+            "gamesPlayed": 6,
+            "winPct": 0.5,
+            "pointsFor": 148,
+            "pointsAgainst": 122,
+            "pointDifferential": 26
           },
           "previous": {
             "season": 2025,
@@ -20583,6 +20583,25 @@
         ],
         "SEA": [
           {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SEA",
+            "opponentAbbreviation": "DEN",
+            "homeAway": "Away",
+            "teamScore": 14,
+            "opponentScore": 17,
+            "result": "L",
+            "passingYards": 278.0,
+            "rushingYards": 113.0,
+            "totalYards": 391.0,
+            "totalEpa": -7.13,
+            "turnovers": 3.0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
             "season": 2026,
@@ -20657,25 +20676,6 @@
             "totalEpa": 8.95,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_NE_SEA",
-            "date": "2026-09-09",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SEA",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 10,
-            "result": "W",
-            "passingYards": 200.0,
-            "rushingYards": 97.0,
-            "totalYards": 297.0,
-            "totalEpa": 3.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -24891,14 +24891,14 @@
         "DEN": {
           "current": {
             "season": 2026,
-            "wins": 3,
+            "wins": 4,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 97,
-            "pointsAgainst": 111,
-            "pointDifferential": -14
+            "gamesPlayed": 6,
+            "winPct": 0.667,
+            "pointsFor": 114,
+            "pointsAgainst": 125,
+            "pointDifferential": -11
           },
           "previous": {
             "season": 2025,
@@ -24939,6 +24939,25 @@
       },
       "recentForm": {
         "DEN": [
+          {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "DEN",
+            "opponentAbbreviation": "SEA",
+            "homeAway": "Home",
+            "teamScore": 17,
+            "opponentScore": 14,
+            "result": "W",
+            "passingYards": 107.0,
+            "rushingYards": 74.0,
+            "totalYards": 181.0,
+            "totalEpa": -8.05,
+            "turnovers": 0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_05_DEN_LAC",
             "date": "2026-10-11",
@@ -25013,25 +25032,6 @@
             "totalYards": 392.0,
             "totalEpa": 3.63,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_DEN_KC",
-            "date": "2026-09-14",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "DEN",
-            "opponentAbbreviation": "KC",
-            "homeAway": "Away",
-            "teamScore": 10,
-            "opponentScore": 31,
-            "result": "L",
-            "passingYards": 131.0,
-            "rushingYards": 61.0,
-            "totalYards": 192.0,
-            "totalEpa": -15.82,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -25616,13 +25616,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 134,
-            "pointsAgainst": 105,
-            "pointDifferential": 29
+            "gamesPlayed": 6,
+            "winPct": 0.5,
+            "pointsFor": 148,
+            "pointsAgainst": 122,
+            "pointDifferential": 26
           },
           "previous": {
             "season": 2025,
@@ -25737,6 +25737,25 @@
         ],
         "SEA": [
           {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SEA",
+            "opponentAbbreviation": "DEN",
+            "homeAway": "Away",
+            "teamScore": 14,
+            "opponentScore": 17,
+            "result": "L",
+            "passingYards": 278.0,
+            "rushingYards": 113.0,
+            "totalYards": 391.0,
+            "totalEpa": -7.13,
+            "turnovers": 3.0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
             "season": 2026,
@@ -25811,25 +25830,6 @@
             "totalEpa": 8.95,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_NE_SEA",
-            "date": "2026-09-09",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SEA",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 10,
-            "result": "W",
-            "passingYards": 200.0,
-            "rushingYards": 97.0,
-            "totalYards": 297.0,
-            "totalEpa": 3.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -26558,17 +26558,17 @@
         "gameType": "REG",
         "awayTeam": "Seattle Seahawks",
         "awayAbbreviation": "SEA",
-        "awayScore": null,
+        "awayScore": 14,
         "homeTeam": "Denver Broncos",
         "homeAbbreviation": "DEN",
-        "homeScore": null,
-        "winner": null,
-        "winnerAbbreviation": null,
+        "homeScore": 17,
+        "winner": "Denver Broncos",
+        "winnerAbbreviation": "DEN",
         "time": "20:15",
-        "status": "upcoming",
+        "status": "final",
         "stadium": "Empower Field at Mile High",
         "roof": "outdoors",
-        "surface": "grass",
+        "surface": "",
         "lastMeeting": {
           "id": "2024_01_DEN_SEA",
           "date": "2024-09-08",
@@ -26594,13 +26594,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 134,
-            "pointsAgainst": 105,
-            "pointDifferential": 29
+            "gamesPlayed": 6,
+            "winPct": 0.5,
+            "pointsFor": 148,
+            "pointsAgainst": 122,
+            "pointDifferential": 26
           },
           "previous": {
             "season": 2025,
@@ -26617,14 +26617,14 @@
         "DEN": {
           "current": {
             "season": 2026,
-            "wins": 3,
+            "wins": 4,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 97,
-            "pointsAgainst": 111,
-            "pointDifferential": -14
+            "gamesPlayed": 6,
+            "winPct": 0.667,
+            "pointsFor": 114,
+            "pointsAgainst": 125,
+            "pointDifferential": -11
           },
           "previous": {
             "season": 2025,
@@ -26641,6 +26641,25 @@
       },
       "recentForm": {
         "SEA": [
+          {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SEA",
+            "opponentAbbreviation": "DEN",
+            "homeAway": "Away",
+            "teamScore": 14,
+            "opponentScore": 17,
+            "result": "L",
+            "passingYards": 278.0,
+            "rushingYards": 113.0,
+            "totalYards": 391.0,
+            "totalEpa": -7.13,
+            "turnovers": 3.0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
@@ -26716,28 +26735,28 @@
             "totalEpa": 8.95,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_NE_SEA",
-            "date": "2026-09-09",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SEA",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 10,
-            "result": "W",
-            "passingYards": 200.0,
-            "rushingYards": 97.0,
-            "totalYards": 297.0,
-            "totalEpa": 3.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "DEN": [
+          {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "DEN",
+            "opponentAbbreviation": "SEA",
+            "homeAway": "Home",
+            "teamScore": 17,
+            "opponentScore": 14,
+            "result": "W",
+            "passingYards": 107.0,
+            "rushingYards": 74.0,
+            "totalYards": 181.0,
+            "totalEpa": -8.05,
+            "turnovers": 0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_05_DEN_LAC",
             "date": "2026-10-11",
@@ -26813,29 +26832,22 @@
             "totalEpa": 3.63,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_DEN_KC",
-            "date": "2026-09-14",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "DEN",
-            "opponentAbbreviation": "KC",
-            "homeAway": "Away",
-            "teamScore": 10,
-            "opponentScore": 31,
-            "result": "L",
-            "passingYards": 131.0,
-            "rushingYards": 61.0,
-            "totalYards": 192.0,
-            "totalEpa": -15.82,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
       "headToHead": [
+        {
+          "id": "2026_06_SEA_DEN",
+          "date": "2026-10-15",
+          "season": 2026,
+          "week": 6,
+          "gameType": "REG",
+          "awayAbbreviation": "SEA",
+          "awayScore": 14,
+          "homeAbbreviation": "DEN",
+          "homeScore": 17,
+          "winnerAbbreviation": "DEN"
+        },
         {
           "id": "2024_01_DEN_SEA",
           "date": "2024-09-08",
@@ -26861,29 +26873,7 @@
           "winnerAbbreviation": "SEA"
         }
       ],
-      "prediction": {
-        "id": "2026_06_SEA_DEN",
-        "awayTeam": "Seattle Seahawks",
-        "awayAbbreviation": "SEA",
-        "homeTeam": "Denver Broncos",
-        "homeAbbreviation": "DEN",
-        "kickoff": "2026-10-15 20:15",
-        "predictedWinner": "Seattle Seahawks",
-        "homeWinProbability": 32,
-        "awayWinProbability": 68,
-        "classifierHomeProbability": 32,
-        "scoreModelHomeProbability": 31,
-        "projectedHomeScore": 20.0,
-        "projectedAwayScore": 24.6,
-        "projectedMargin": -6.3,
-        "projectedTotal": 42.8,
-        "confidence": "High",
-        "factors": [
-          "Recent scoring margin",
-          "Quarterback efficiency",
-          "Turnover trend"
-        ]
-      }
+      "prediction": null
     },
     "2026_06_HOU_JAX": {
       "game": {
@@ -27244,11 +27234,11 @@
         "homeWinProbability": 72,
         "awayWinProbability": 28,
         "classifierHomeProbability": 76,
-        "scoreModelHomeProbability": 65,
+        "scoreModelHomeProbability": 63,
         "projectedHomeScore": 26.4,
         "projectedAwayScore": 20.0,
-        "projectedMargin": 4.9,
-        "projectedTotal": 45.5,
+        "projectedMargin": 4.4,
+        "projectedTotal": 46.0,
         "confidence": "High",
         "factors": [
           "Recent scoring margin",
@@ -27613,13 +27603,13 @@
         "homeAbbreviation": "CLE",
         "kickoff": "2026-10-18 13:00",
         "predictedWinner": "Baltimore Ravens",
-        "homeWinProbability": 35,
-        "awayWinProbability": 65,
+        "homeWinProbability": 34,
+        "awayWinProbability": 66,
         "classifierHomeProbability": 38,
-        "scoreModelHomeProbability": 29,
+        "scoreModelHomeProbability": 28,
         "projectedHomeScore": 20.2,
         "projectedAwayScore": 26.1,
-        "projectedMargin": -7.3,
+        "projectedMargin": -7.5,
         "projectedTotal": 48.2,
         "confidence": "Medium",
         "factors": [
@@ -28660,11 +28650,11 @@
         "homeWinProbability": 46,
         "awayWinProbability": 54,
         "classifierHomeProbability": 48,
-        "scoreModelHomeProbability": 42,
+        "scoreModelHomeProbability": 43,
         "projectedHomeScore": 21.6,
-        "projectedAwayScore": 22.3,
-        "projectedMargin": -2.5,
-        "projectedTotal": 43.8,
+        "projectedAwayScore": 22.4,
+        "projectedMargin": -2.4,
+        "projectedTotal": 44.1,
         "confidence": "Low",
         "factors": [
           "Recent scoring margin",
@@ -29034,9 +29024,9 @@
         "classifierHomeProbability": 75,
         "scoreModelHomeProbability": 73,
         "projectedHomeScore": 28.3,
-        "projectedAwayScore": 15.8,
+        "projectedAwayScore": 17.1,
         "projectedMargin": 8.1,
-        "projectedTotal": 46.8,
+        "projectedTotal": 47.7,
         "confidence": "High",
         "factors": [
           "Elo team strength",
@@ -29357,7 +29347,7 @@
         "awayWinProbability": 67,
         "classifierHomeProbability": 32,
         "scoreModelHomeProbability": 35,
-        "projectedHomeScore": 22.0,
+        "projectedHomeScore": 22.1,
         "projectedAwayScore": 25.8,
         "projectedMargin": -5.2,
         "projectedTotal": 45.1,
@@ -30436,7 +30426,7 @@
         "homeWinProbability": 29,
         "awayWinProbability": 71,
         "classifierHomeProbability": 30,
-        "scoreModelHomeProbability": 27,
+        "scoreModelHomeProbability": 26,
         "projectedHomeScore": 18.1,
         "projectedAwayScore": 24.8,
         "projectedMargin": -8.2,
@@ -31160,7 +31150,7 @@
         "projectedHomeScore": 23.1,
         "projectedAwayScore": 21.5,
         "projectedMargin": 1.2,
-        "projectedTotal": 43.6,
+        "projectedTotal": 43.5,
         "confidence": "Low",
         "factors": [
           "Success rate",
@@ -31520,7 +31510,7 @@
         "projectedHomeScore": 30.8,
         "projectedAwayScore": 16.2,
         "projectedMargin": 15.3,
-        "projectedTotal": 45.2,
+        "projectedTotal": 45.3,
         "confidence": "High",
         "factors": [
           "Recent scoring margin",
@@ -34543,14 +34533,14 @@
         "DEN": {
           "current": {
             "season": 2026,
-            "wins": 3,
+            "wins": 4,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 97,
-            "pointsAgainst": 111,
-            "pointDifferential": -14
+            "gamesPlayed": 6,
+            "winPct": 0.667,
+            "pointsFor": 114,
+            "pointsAgainst": 125,
+            "pointDifferential": -11
           },
           "previous": {
             "season": 2025,
@@ -34591,6 +34581,25 @@
       },
       "recentForm": {
         "DEN": [
+          {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "DEN",
+            "opponentAbbreviation": "SEA",
+            "homeAway": "Home",
+            "teamScore": 17,
+            "opponentScore": 14,
+            "result": "W",
+            "passingYards": 107.0,
+            "rushingYards": 74.0,
+            "totalYards": 181.0,
+            "totalEpa": -8.05,
+            "turnovers": 0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_05_DEN_LAC",
             "date": "2026-10-11",
@@ -34665,25 +34674,6 @@
             "totalYards": 392.0,
             "totalEpa": 3.63,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_DEN_KC",
-            "date": "2026-09-14",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "DEN",
-            "opponentAbbreviation": "KC",
-            "homeAway": "Away",
-            "teamScore": 10,
-            "opponentScore": 31,
-            "result": "L",
-            "passingYards": 131.0,
-            "rushingYards": 61.0,
-            "totalYards": 192.0,
-            "totalEpa": -15.82,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -35534,13 +35524,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 134,
-            "pointsAgainst": 105,
-            "pointDifferential": 29
+            "gamesPlayed": 6,
+            "winPct": 0.5,
+            "pointsFor": 148,
+            "pointsAgainst": 122,
+            "pointDifferential": 26
           },
           "previous": {
             "season": 2025,
@@ -35655,6 +35645,25 @@
         ],
         "SEA": [
           {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SEA",
+            "opponentAbbreviation": "DEN",
+            "homeAway": "Away",
+            "teamScore": 14,
+            "opponentScore": 17,
+            "result": "L",
+            "passingYards": 278.0,
+            "rushingYards": 113.0,
+            "totalYards": 391.0,
+            "totalEpa": -7.13,
+            "turnovers": 3.0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
             "season": 2026,
@@ -35729,25 +35738,6 @@
             "totalEpa": 8.95,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_NE_SEA",
-            "date": "2026-09-09",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SEA",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 10,
-            "result": "W",
-            "passingYards": 200.0,
-            "rushingYards": 97.0,
-            "totalYards": 297.0,
-            "totalEpa": 3.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -39553,14 +39543,14 @@
         "DEN": {
           "current": {
             "season": 2026,
-            "wins": 3,
+            "wins": 4,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 97,
-            "pointsAgainst": 111,
-            "pointDifferential": -14
+            "gamesPlayed": 6,
+            "winPct": 0.667,
+            "pointsFor": 114,
+            "pointsAgainst": 125,
+            "pointDifferential": -11
           },
           "previous": {
             "season": 2025,
@@ -39675,6 +39665,25 @@
         ],
         "DEN": [
           {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "DEN",
+            "opponentAbbreviation": "SEA",
+            "homeAway": "Home",
+            "teamScore": 17,
+            "opponentScore": 14,
+            "result": "W",
+            "passingYards": 107.0,
+            "rushingYards": 74.0,
+            "totalYards": 181.0,
+            "totalEpa": -8.05,
+            "turnovers": 0,
+            "defensiveSacks": 5.0
+          },
+          {
             "id": "2026_05_DEN_LAC",
             "date": "2026-10-11",
             "season": 2026,
@@ -39748,25 +39757,6 @@
             "totalYards": 392.0,
             "totalEpa": 3.63,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_DEN_KC",
-            "date": "2026-09-14",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "DEN",
-            "opponentAbbreviation": "KC",
-            "homeAway": "Away",
-            "teamScore": 10,
-            "opponentScore": 31,
-            "result": "L",
-            "passingYards": 131.0,
-            "rushingYards": 61.0,
-            "totalYards": 192.0,
-            "totalEpa": -15.82,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -40604,13 +40594,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 134,
-            "pointsAgainst": 105,
-            "pointDifferential": 29
+            "gamesPlayed": 6,
+            "winPct": 0.5,
+            "pointsFor": 148,
+            "pointsAgainst": 122,
+            "pointDifferential": 26
           },
           "previous": {
             "season": 2025,
@@ -40725,6 +40715,25 @@
         ],
         "SEA": [
           {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SEA",
+            "opponentAbbreviation": "DEN",
+            "homeAway": "Away",
+            "teamScore": 14,
+            "opponentScore": 17,
+            "result": "L",
+            "passingYards": 278.0,
+            "rushingYards": 113.0,
+            "totalYards": 391.0,
+            "totalEpa": -7.13,
+            "turnovers": 3.0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
             "season": 2026,
@@ -40799,25 +40808,6 @@
             "totalEpa": 8.95,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_NE_SEA",
-            "date": "2026-09-09",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SEA",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 10,
-            "result": "W",
-            "passingYards": 200.0,
-            "rushingYards": 97.0,
-            "totalYards": 297.0,
-            "totalEpa": 3.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -42137,14 +42127,14 @@
         "DEN": {
           "current": {
             "season": 2026,
-            "wins": 3,
+            "wins": 4,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 97,
-            "pointsAgainst": 111,
-            "pointDifferential": -14
+            "gamesPlayed": 6,
+            "winPct": 0.667,
+            "pointsFor": 114,
+            "pointsAgainst": 125,
+            "pointDifferential": -11
           },
           "previous": {
             "season": 2025,
@@ -42185,6 +42175,25 @@
       },
       "recentForm": {
         "DEN": [
+          {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "DEN",
+            "opponentAbbreviation": "SEA",
+            "homeAway": "Home",
+            "teamScore": 17,
+            "opponentScore": 14,
+            "result": "W",
+            "passingYards": 107.0,
+            "rushingYards": 74.0,
+            "totalYards": 181.0,
+            "totalEpa": -8.05,
+            "turnovers": 0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_05_DEN_LAC",
             "date": "2026-10-11",
@@ -42259,25 +42268,6 @@
             "totalYards": 392.0,
             "totalEpa": 3.63,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_DEN_KC",
-            "date": "2026-09-14",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "DEN",
-            "opponentAbbreviation": "KC",
-            "homeAway": "Away",
-            "teamScore": 10,
-            "opponentScore": 31,
-            "result": "L",
-            "passingYards": 131.0,
-            "rushingYards": 61.0,
-            "totalYards": 192.0,
-            "totalEpa": -15.82,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -44408,13 +44398,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 134,
-            "pointsAgainst": 105,
-            "pointDifferential": 29
+            "gamesPlayed": 6,
+            "winPct": 0.5,
+            "pointsFor": 148,
+            "pointsAgainst": 122,
+            "pointDifferential": 26
           },
           "previous": {
             "season": 2025,
@@ -44529,6 +44519,25 @@
         ],
         "SEA": [
           {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SEA",
+            "opponentAbbreviation": "DEN",
+            "homeAway": "Away",
+            "teamScore": 14,
+            "opponentScore": 17,
+            "result": "L",
+            "passingYards": 278.0,
+            "rushingYards": 113.0,
+            "totalYards": 391.0,
+            "totalEpa": -7.13,
+            "turnovers": 3.0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
             "season": 2026,
@@ -44603,25 +44612,6 @@
             "totalEpa": 8.95,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_NE_SEA",
-            "date": "2026-09-09",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SEA",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 10,
-            "result": "W",
-            "passingYards": 200.0,
-            "rushingYards": 97.0,
-            "totalYards": 297.0,
-            "totalEpa": 3.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -49056,13 +49046,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 134,
-            "pointsAgainst": 105,
-            "pointDifferential": 29
+            "gamesPlayed": 6,
+            "winPct": 0.5,
+            "pointsFor": 148,
+            "pointsAgainst": 122,
+            "pointDifferential": 26
           },
           "previous": {
             "season": 2025,
@@ -49103,6 +49093,25 @@
       },
       "recentForm": {
         "SEA": [
+          {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SEA",
+            "opponentAbbreviation": "DEN",
+            "homeAway": "Away",
+            "teamScore": 14,
+            "opponentScore": 17,
+            "result": "L",
+            "passingYards": 278.0,
+            "rushingYards": 113.0,
+            "totalYards": 391.0,
+            "totalEpa": -7.13,
+            "turnovers": 3.0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
@@ -49178,25 +49187,6 @@
             "totalEpa": 8.95,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_NE_SEA",
-            "date": "2026-09-09",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SEA",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 10,
-            "result": "W",
-            "passingYards": 200.0,
-            "rushingYards": 97.0,
-            "totalYards": 297.0,
-            "totalEpa": 3.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "LV": [
@@ -53293,14 +53283,14 @@
         "DEN": {
           "current": {
             "season": 2026,
-            "wins": 3,
+            "wins": 4,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 97,
-            "pointsAgainst": 111,
-            "pointDifferential": -14
+            "gamesPlayed": 6,
+            "winPct": 0.667,
+            "pointsFor": 114,
+            "pointsAgainst": 125,
+            "pointDifferential": -11
           },
           "previous": {
             "season": 2025,
@@ -53415,6 +53405,25 @@
         ],
         "DEN": [
           {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "DEN",
+            "opponentAbbreviation": "SEA",
+            "homeAway": "Home",
+            "teamScore": 17,
+            "opponentScore": 14,
+            "result": "W",
+            "passingYards": 107.0,
+            "rushingYards": 74.0,
+            "totalYards": 181.0,
+            "totalEpa": -8.05,
+            "turnovers": 0,
+            "defensiveSacks": 5.0
+          },
+          {
             "id": "2026_05_DEN_LAC",
             "date": "2026-10-11",
             "season": 2026,
@@ -53488,25 +53497,6 @@
             "totalYards": 392.0,
             "totalEpa": 3.63,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_DEN_KC",
-            "date": "2026-09-14",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "DEN",
-            "opponentAbbreviation": "KC",
-            "homeAway": "Away",
-            "teamScore": 10,
-            "opponentScore": 31,
-            "result": "L",
-            "passingYards": 131.0,
-            "rushingYards": 61.0,
-            "totalYards": 192.0,
-            "totalEpa": -15.82,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -55973,14 +55963,14 @@
         "DEN": {
           "current": {
             "season": 2026,
-            "wins": 3,
+            "wins": 4,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 97,
-            "pointsAgainst": 111,
-            "pointDifferential": -14
+            "gamesPlayed": 6,
+            "winPct": 0.667,
+            "pointsFor": 114,
+            "pointsAgainst": 125,
+            "pointDifferential": -11
           },
           "previous": {
             "season": 2025,
@@ -56021,6 +56011,25 @@
       },
       "recentForm": {
         "DEN": [
+          {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "DEN",
+            "opponentAbbreviation": "SEA",
+            "homeAway": "Home",
+            "teamScore": 17,
+            "opponentScore": 14,
+            "result": "W",
+            "passingYards": 107.0,
+            "rushingYards": 74.0,
+            "totalYards": 181.0,
+            "totalEpa": -8.05,
+            "turnovers": 0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_05_DEN_LAC",
             "date": "2026-10-11",
@@ -56095,25 +56104,6 @@
             "totalYards": 392.0,
             "totalEpa": 3.63,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_DEN_KC",
-            "date": "2026-09-14",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "DEN",
-            "opponentAbbreviation": "KC",
-            "homeAway": "Away",
-            "teamScore": 10,
-            "opponentScore": 31,
-            "result": "L",
-            "passingYards": 131.0,
-            "rushingYards": 61.0,
-            "totalYards": 192.0,
-            "totalEpa": -15.82,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -58654,13 +58644,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 134,
-            "pointsAgainst": 105,
-            "pointDifferential": 29
+            "gamesPlayed": 6,
+            "winPct": 0.5,
+            "pointsFor": 148,
+            "pointsAgainst": 122,
+            "pointDifferential": 26
           },
           "previous": {
             "season": 2025,
@@ -58701,6 +58691,25 @@
       },
       "recentForm": {
         "SEA": [
+          {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SEA",
+            "opponentAbbreviation": "DEN",
+            "homeAway": "Away",
+            "teamScore": 14,
+            "opponentScore": 17,
+            "result": "L",
+            "passingYards": 278.0,
+            "rushingYards": 113.0,
+            "totalYards": 391.0,
+            "totalEpa": -7.13,
+            "turnovers": 3.0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
@@ -58776,25 +58785,6 @@
             "totalEpa": 8.95,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_NE_SEA",
-            "date": "2026-09-09",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SEA",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 10,
-            "result": "W",
-            "passingYards": 200.0,
-            "rushingYards": 97.0,
-            "totalYards": 297.0,
-            "totalEpa": 3.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "SF": [
@@ -62625,14 +62615,14 @@
         "DEN": {
           "current": {
             "season": 2026,
-            "wins": 3,
+            "wins": 4,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 97,
-            "pointsAgainst": 111,
-            "pointDifferential": -14
+            "gamesPlayed": 6,
+            "winPct": 0.667,
+            "pointsFor": 114,
+            "pointsAgainst": 125,
+            "pointDifferential": -11
           },
           "previous": {
             "season": 2025,
@@ -62747,6 +62737,25 @@
         ],
         "DEN": [
           {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "DEN",
+            "opponentAbbreviation": "SEA",
+            "homeAway": "Home",
+            "teamScore": 17,
+            "opponentScore": 14,
+            "result": "W",
+            "passingYards": 107.0,
+            "rushingYards": 74.0,
+            "totalYards": 181.0,
+            "totalEpa": -8.05,
+            "turnovers": 0,
+            "defensiveSacks": 5.0
+          },
+          {
             "id": "2026_05_DEN_LAC",
             "date": "2026-10-11",
             "season": 2026,
@@ -62820,25 +62829,6 @@
             "totalYards": 392.0,
             "totalEpa": 3.63,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_DEN_KC",
-            "date": "2026-09-14",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "DEN",
-            "opponentAbbreviation": "KC",
-            "homeAway": "Away",
-            "teamScore": 10,
-            "opponentScore": 31,
-            "result": "L",
-            "passingYards": 131.0,
-            "rushingYards": 61.0,
-            "totalYards": 192.0,
-            "totalEpa": -15.82,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -64256,13 +64246,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 134,
-            "pointsAgainst": 105,
-            "pointDifferential": 29
+            "gamesPlayed": 6,
+            "winPct": 0.5,
+            "pointsFor": 148,
+            "pointsAgainst": 122,
+            "pointDifferential": 26
           },
           "previous": {
             "season": 2025,
@@ -64377,6 +64367,25 @@
         ],
         "SEA": [
           {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SEA",
+            "opponentAbbreviation": "DEN",
+            "homeAway": "Away",
+            "teamScore": 14,
+            "opponentScore": 17,
+            "result": "L",
+            "passingYards": 278.0,
+            "rushingYards": 113.0,
+            "totalYards": 391.0,
+            "totalEpa": -7.13,
+            "turnovers": 3.0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
             "season": 2026,
@@ -64451,25 +64460,6 @@
             "totalEpa": 8.95,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_NE_SEA",
-            "date": "2026-09-09",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SEA",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 10,
-            "result": "W",
-            "passingYards": 200.0,
-            "rushingYards": 97.0,
-            "totalYards": 297.0,
-            "totalEpa": 3.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -65451,14 +65441,14 @@
         "DEN": {
           "current": {
             "season": 2026,
-            "wins": 3,
+            "wins": 4,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 97,
-            "pointsAgainst": 111,
-            "pointDifferential": -14
+            "gamesPlayed": 6,
+            "winPct": 0.667,
+            "pointsFor": 114,
+            "pointsAgainst": 125,
+            "pointDifferential": -11
           },
           "previous": {
             "season": 2025,
@@ -65499,6 +65489,25 @@
       },
       "recentForm": {
         "DEN": [
+          {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "DEN",
+            "opponentAbbreviation": "SEA",
+            "homeAway": "Home",
+            "teamScore": 17,
+            "opponentScore": 14,
+            "result": "W",
+            "passingYards": 107.0,
+            "rushingYards": 74.0,
+            "totalYards": 181.0,
+            "totalEpa": -8.05,
+            "turnovers": 0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_05_DEN_LAC",
             "date": "2026-10-11",
@@ -65573,25 +65582,6 @@
             "totalYards": 392.0,
             "totalEpa": 3.63,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_DEN_KC",
-            "date": "2026-09-14",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "DEN",
-            "opponentAbbreviation": "KC",
-            "homeAway": "Away",
-            "teamScore": 10,
-            "opponentScore": 31,
-            "result": "L",
-            "passingYards": 131.0,
-            "rushingYards": 61.0,
-            "totalYards": 192.0,
-            "totalEpa": -15.82,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -68446,13 +68436,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 134,
-            "pointsAgainst": 105,
-            "pointDifferential": 29
+            "gamesPlayed": 6,
+            "winPct": 0.5,
+            "pointsFor": 148,
+            "pointsAgainst": 122,
+            "pointDifferential": 26
           },
           "previous": {
             "season": 2025,
@@ -68567,6 +68557,25 @@
         ],
         "SEA": [
           {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SEA",
+            "opponentAbbreviation": "DEN",
+            "homeAway": "Away",
+            "teamScore": 14,
+            "opponentScore": 17,
+            "result": "L",
+            "passingYards": 278.0,
+            "rushingYards": 113.0,
+            "totalYards": 391.0,
+            "totalEpa": -7.13,
+            "turnovers": 3.0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
             "season": 2026,
@@ -68641,25 +68650,6 @@
             "totalEpa": 8.95,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_NE_SEA",
-            "date": "2026-09-09",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SEA",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 10,
-            "result": "W",
-            "passingYards": 200.0,
-            "rushingYards": 97.0,
-            "totalYards": 297.0,
-            "totalEpa": 3.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -69678,13 +69668,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 134,
-            "pointsAgainst": 105,
-            "pointDifferential": 29
+            "gamesPlayed": 6,
+            "winPct": 0.5,
+            "pointsFor": 148,
+            "pointsAgainst": 122,
+            "pointDifferential": 26
           },
           "previous": {
             "season": 2025,
@@ -69725,6 +69715,25 @@
       },
       "recentForm": {
         "SEA": [
+          {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SEA",
+            "opponentAbbreviation": "DEN",
+            "homeAway": "Away",
+            "teamScore": 14,
+            "opponentScore": 17,
+            "result": "L",
+            "passingYards": 278.0,
+            "rushingYards": 113.0,
+            "totalYards": 391.0,
+            "totalEpa": -7.13,
+            "turnovers": 3.0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
@@ -69800,25 +69809,6 @@
             "totalEpa": 8.95,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_NE_SEA",
-            "date": "2026-09-09",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SEA",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 10,
-            "result": "W",
-            "passingYards": 200.0,
-            "rushingYards": 97.0,
-            "totalYards": 297.0,
-            "totalEpa": 3.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "PHI": [
@@ -73649,14 +73639,14 @@
         "DEN": {
           "current": {
             "season": 2026,
-            "wins": 3,
+            "wins": 4,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 97,
-            "pointsAgainst": 111,
-            "pointDifferential": -14
+            "gamesPlayed": 6,
+            "winPct": 0.667,
+            "pointsFor": 114,
+            "pointsAgainst": 125,
+            "pointDifferential": -11
           },
           "previous": {
             "season": 2025,
@@ -73697,6 +73687,25 @@
       },
       "recentForm": {
         "DEN": [
+          {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "DEN",
+            "opponentAbbreviation": "SEA",
+            "homeAway": "Home",
+            "teamScore": 17,
+            "opponentScore": 14,
+            "result": "W",
+            "passingYards": 107.0,
+            "rushingYards": 74.0,
+            "totalYards": 181.0,
+            "totalEpa": -8.05,
+            "turnovers": 0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_05_DEN_LAC",
             "date": "2026-10-11",
@@ -73771,25 +73780,6 @@
             "totalYards": 392.0,
             "totalEpa": 3.63,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_DEN_KC",
-            "date": "2026-09-14",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "DEN",
-            "opponentAbbreviation": "KC",
-            "homeAway": "Away",
-            "teamScore": 10,
-            "opponentScore": 31,
-            "result": "L",
-            "passingYards": 131.0,
-            "rushingYards": 61.0,
-            "totalYards": 192.0,
-            "totalEpa": -15.82,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -75351,14 +75341,14 @@
         "DEN": {
           "current": {
             "season": 2026,
-            "wins": 3,
+            "wins": 4,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 97,
-            "pointsAgainst": 111,
-            "pointDifferential": -14
+            "gamesPlayed": 6,
+            "winPct": 0.667,
+            "pointsFor": 114,
+            "pointsAgainst": 125,
+            "pointDifferential": -11
           },
           "previous": {
             "season": 2025,
@@ -75473,6 +75463,25 @@
         ],
         "DEN": [
           {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "DEN",
+            "opponentAbbreviation": "SEA",
+            "homeAway": "Home",
+            "teamScore": 17,
+            "opponentScore": 14,
+            "result": "W",
+            "passingYards": 107.0,
+            "rushingYards": 74.0,
+            "totalYards": 181.0,
+            "totalEpa": -8.05,
+            "turnovers": 0,
+            "defensiveSacks": 5.0
+          },
+          {
             "id": "2026_05_DEN_LAC",
             "date": "2026-10-11",
             "season": 2026,
@@ -75546,25 +75555,6 @@
             "totalYards": 392.0,
             "totalEpa": 3.63,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_DEN_KC",
-            "date": "2026-09-14",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "DEN",
-            "opponentAbbreviation": "KC",
-            "homeAway": "Away",
-            "teamScore": 10,
-            "opponentScore": 31,
-            "result": "L",
-            "passingYards": 131.0,
-            "rushingYards": 61.0,
-            "totalYards": 192.0,
-            "totalEpa": -15.82,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -75678,13 +75668,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 134,
-            "pointsAgainst": 105,
-            "pointDifferential": 29
+            "gamesPlayed": 6,
+            "winPct": 0.5,
+            "pointsFor": 148,
+            "pointsAgainst": 122,
+            "pointDifferential": 26
           },
           "previous": {
             "season": 2025,
@@ -75799,6 +75789,25 @@
         ],
         "SEA": [
           {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SEA",
+            "opponentAbbreviation": "DEN",
+            "homeAway": "Away",
+            "teamScore": 14,
+            "opponentScore": 17,
+            "result": "L",
+            "passingYards": 278.0,
+            "rushingYards": 113.0,
+            "totalYards": 391.0,
+            "totalEpa": -7.13,
+            "turnovers": 3.0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
             "season": 2026,
@@ -75873,25 +75882,6 @@
             "totalEpa": 8.95,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_NE_SEA",
-            "date": "2026-09-09",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SEA",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 10,
-            "result": "W",
-            "passingYards": 200.0,
-            "rushingYards": 97.0,
-            "totalYards": 297.0,
-            "totalEpa": 3.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -80627,14 +80617,14 @@
         "DEN": {
           "current": {
             "season": 2026,
-            "wins": 3,
+            "wins": 4,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 97,
-            "pointsAgainst": 111,
-            "pointDifferential": -14
+            "gamesPlayed": 6,
+            "winPct": 0.667,
+            "pointsFor": 114,
+            "pointsAgainst": 125,
+            "pointDifferential": -11
           },
           "previous": {
             "season": 2025,
@@ -80675,6 +80665,25 @@
       },
       "recentForm": {
         "DEN": [
+          {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "DEN",
+            "opponentAbbreviation": "SEA",
+            "homeAway": "Home",
+            "teamScore": 17,
+            "opponentScore": 14,
+            "result": "W",
+            "passingYards": 107.0,
+            "rushingYards": 74.0,
+            "totalYards": 181.0,
+            "totalEpa": -8.05,
+            "turnovers": 0,
+            "defensiveSacks": 5.0
+          },
           {
             "id": "2026_05_DEN_LAC",
             "date": "2026-10-11",
@@ -80749,25 +80758,6 @@
             "totalYards": 392.0,
             "totalEpa": 3.63,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_DEN_KC",
-            "date": "2026-09-14",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "DEN",
-            "opponentAbbreviation": "KC",
-            "homeAway": "Away",
-            "teamScore": 10,
-            "opponentScore": 31,
-            "result": "L",
-            "passingYards": 131.0,
-            "rushingYards": 61.0,
-            "totalYards": 192.0,
-            "totalEpa": -15.82,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -83296,13 +83286,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 134,
-            "pointsAgainst": 105,
-            "pointDifferential": 29
+            "gamesPlayed": 6,
+            "winPct": 0.5,
+            "pointsFor": 148,
+            "pointsAgainst": 122,
+            "pointDifferential": 26
           },
           "previous": {
             "season": 2025,
@@ -83343,6 +83333,25 @@
       },
       "recentForm": {
         "SEA": [
+          {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SEA",
+            "opponentAbbreviation": "DEN",
+            "homeAway": "Away",
+            "teamScore": 14,
+            "opponentScore": 17,
+            "result": "L",
+            "passingYards": 278.0,
+            "rushingYards": 113.0,
+            "totalYards": 391.0,
+            "totalEpa": -7.13,
+            "turnovers": 3.0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
@@ -83418,25 +83427,6 @@
             "totalEpa": 8.95,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_NE_SEA",
-            "date": "2026-09-09",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SEA",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 10,
-            "result": "W",
-            "passingYards": 200.0,
-            "rushingYards": 97.0,
-            "totalYards": 297.0,
-            "totalEpa": 3.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "CAR": [
@@ -87351,14 +87341,14 @@
         "DEN": {
           "current": {
             "season": 2026,
-            "wins": 3,
+            "wins": 4,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 97,
-            "pointsAgainst": 111,
-            "pointDifferential": -14
+            "gamesPlayed": 6,
+            "winPct": 0.667,
+            "pointsFor": 114,
+            "pointsAgainst": 125,
+            "pointDifferential": -11
           },
           "previous": {
             "season": 2025,
@@ -87473,6 +87463,25 @@
         ],
         "DEN": [
           {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "DEN",
+            "opponentAbbreviation": "SEA",
+            "homeAway": "Home",
+            "teamScore": 17,
+            "opponentScore": 14,
+            "result": "W",
+            "passingYards": 107.0,
+            "rushingYards": 74.0,
+            "totalYards": 181.0,
+            "totalEpa": -8.05,
+            "turnovers": 0,
+            "defensiveSacks": 5.0
+          },
+          {
             "id": "2026_05_DEN_LAC",
             "date": "2026-10-11",
             "season": 2026,
@@ -87546,25 +87555,6 @@
             "totalYards": 392.0,
             "totalEpa": 3.63,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_DEN_KC",
-            "date": "2026-09-14",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "DEN",
-            "opponentAbbreviation": "KC",
-            "homeAway": "Away",
-            "teamScore": 10,
-            "opponentScore": 31,
-            "result": "L",
-            "passingYards": 131.0,
-            "rushingYards": 61.0,
-            "totalYards": 192.0,
-            "totalEpa": -15.82,
-            "turnovers": 2.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -89428,13 +89418,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 5,
-            "winPct": 0.6,
-            "pointsFor": 134,
-            "pointsAgainst": 105,
-            "pointDifferential": 29
+            "gamesPlayed": 6,
+            "winPct": 0.5,
+            "pointsFor": 148,
+            "pointsAgainst": 122,
+            "pointDifferential": 26
           },
           "previous": {
             "season": 2025,
@@ -89475,6 +89465,25 @@
       },
       "recentForm": {
         "SEA": [
+          {
+            "id": "2026_06_SEA_DEN",
+            "date": "2026-10-15",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SEA",
+            "opponentAbbreviation": "DEN",
+            "homeAway": "Away",
+            "teamScore": 14,
+            "opponentScore": 17,
+            "result": "L",
+            "passingYards": 278.0,
+            "rushingYards": 113.0,
+            "totalYards": 391.0,
+            "totalEpa": -7.13,
+            "turnovers": 3.0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
@@ -89550,25 +89559,6 @@
             "totalEpa": 8.95,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_NE_SEA",
-            "date": "2026-09-09",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SEA",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 13,
-            "opponentScore": 10,
-            "result": "W",
-            "passingYards": 200.0,
-            "rushingYards": 97.0,
-            "totalYards": 297.0,
-            "totalEpa": 3.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "LA": [
