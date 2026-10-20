@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "asOf": "2026-10-19T17:01:28.799589+00:00",
+  "asOf": "2026-10-20T15:10:08.264680+00:00",
   "provider": "nflverse",
   "games": {
     "2026_01_NE_SEA": {
@@ -373,14 +373,14 @@
         "SF": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 0,
             "ties": 0,
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "winPct": 1.0,
-            "pointsFor": 154,
-            "pointsAgainst": 93,
-            "pointDifferential": 61
+            "pointsFor": 177,
+            "pointsAgainst": 110,
+            "pointDifferential": 67
           },
           "previous": {
             "season": 2025,
@@ -421,6 +421,25 @@
       },
       "recentForm": {
         "SF": [
+          {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SF",
+            "opponentAbbreviation": "WAS",
+            "homeAway": "Home",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "result": "W",
+            "passingYards": 264.0,
+            "rushingYards": 126.0,
+            "totalYards": 390.0,
+            "totalEpa": 17.68,
+            "turnovers": 1.0,
+            "defensiveSacks": 4.0
+          },
           {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
@@ -496,25 +515,6 @@
             "totalEpa": 21.64,
             "turnovers": 0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2026_01_SF_LA",
-            "date": "2026-09-10",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SF",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Away",
-            "teamScore": 27,
-            "opponentScore": 7,
-            "result": "W",
-            "passingYards": 205.0,
-            "rushingYards": 174.0,
-            "totalYards": 379.0,
-            "totalEpa": 11.45,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "LA": [
@@ -4394,13 +4394,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 3,
+            "losses": 4,
             "ties": 1,
-            "gamesPlayed": 5,
-            "winPct": 0.3,
-            "pointsFor": 115,
-            "pointsAgainst": 149,
-            "pointDifferential": -34
+            "gamesPlayed": 6,
+            "winPct": 0.25,
+            "pointsFor": 132,
+            "pointsAgainst": 172,
+            "pointDifferential": -40
           },
           "previous": {
             "season": 2025,
@@ -4441,6 +4441,25 @@
       },
       "recentForm": {
         "WAS": [
+          {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "WAS",
+            "opponentAbbreviation": "SF",
+            "homeAway": "Away",
+            "teamScore": 17,
+            "opponentScore": 23,
+            "result": "L",
+            "passingYards": 300.0,
+            "rushingYards": 53.0,
+            "totalYards": 353.0,
+            "totalEpa": -0.62,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_05_NYG_WAS",
             "date": "2026-10-11",
@@ -4516,25 +4535,6 @@
             "totalEpa": 9.25,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_WAS_PHI",
-            "date": "2026-09-13",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "WAS",
-            "opponentAbbreviation": "PHI",
-            "homeAway": "Away",
-            "teamScore": 22,
-            "opponentScore": 24,
-            "result": "L",
-            "passingYards": 164.0,
-            "rushingYards": 132.0,
-            "totalYards": 296.0,
-            "totalEpa": 4.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "PHI": [
@@ -9125,14 +9125,14 @@
         "SF": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 0,
             "ties": 0,
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "winPct": 1.0,
-            "pointsFor": 154,
-            "pointsAgainst": 93,
-            "pointDifferential": 61
+            "pointsFor": 177,
+            "pointsAgainst": 110,
+            "pointDifferential": 67
           },
           "previous": {
             "season": 2025,
@@ -9247,6 +9247,25 @@
         ],
         "SF": [
           {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SF",
+            "opponentAbbreviation": "WAS",
+            "homeAway": "Home",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "result": "W",
+            "passingYards": 264.0,
+            "rushingYards": 126.0,
+            "totalYards": 390.0,
+            "totalEpa": 17.68,
+            "turnovers": 1.0,
+            "defensiveSacks": 4.0
+          },
+          {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
             "season": 2026,
@@ -9321,25 +9340,6 @@
             "totalEpa": 21.64,
             "turnovers": 0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2026_01_SF_LA",
-            "date": "2026-09-10",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SF",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Away",
-            "teamScore": 27,
-            "opponentScore": 7,
-            "result": "W",
-            "passingYards": 205.0,
-            "rushingYards": 174.0,
-            "totalYards": 379.0,
-            "totalEpa": 11.45,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -9790,13 +9790,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 3,
+            "losses": 4,
             "ties": 1,
-            "gamesPlayed": 5,
-            "winPct": 0.3,
-            "pointsFor": 115,
-            "pointsAgainst": 149,
-            "pointDifferential": -34
+            "gamesPlayed": 6,
+            "winPct": 0.25,
+            "pointsFor": 132,
+            "pointsAgainst": 172,
+            "pointDifferential": -40
           },
           "previous": {
             "season": 2025,
@@ -9837,6 +9837,25 @@
       },
       "recentForm": {
         "WAS": [
+          {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "WAS",
+            "opponentAbbreviation": "SF",
+            "homeAway": "Away",
+            "teamScore": 17,
+            "opponentScore": 23,
+            "result": "L",
+            "passingYards": 300.0,
+            "rushingYards": 53.0,
+            "totalYards": 353.0,
+            "totalEpa": -0.62,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_05_NYG_WAS",
             "date": "2026-10-11",
@@ -9912,25 +9931,6 @@
             "totalEpa": 9.25,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_WAS_PHI",
-            "date": "2026-09-13",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "WAS",
-            "opponentAbbreviation": "PHI",
-            "homeAway": "Away",
-            "teamScore": 22,
-            "opponentScore": 24,
-            "result": "L",
-            "passingYards": 164.0,
-            "rushingYards": 132.0,
-            "totalYards": 296.0,
-            "totalEpa": 4.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "DAL": [
@@ -13472,13 +13472,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 3,
+            "losses": 4,
             "ties": 1,
-            "gamesPlayed": 5,
-            "winPct": 0.3,
-            "pointsFor": 115,
-            "pointsAgainst": 149,
-            "pointDifferential": -34
+            "gamesPlayed": 6,
+            "winPct": 0.25,
+            "pointsFor": 132,
+            "pointsAgainst": 172,
+            "pointDifferential": -40
           },
           "previous": {
             "season": 2025,
@@ -13593,6 +13593,25 @@
         ],
         "WAS": [
           {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "WAS",
+            "opponentAbbreviation": "SF",
+            "homeAway": "Away",
+            "teamScore": 17,
+            "opponentScore": 23,
+            "result": "L",
+            "passingYards": 300.0,
+            "rushingYards": 53.0,
+            "totalYards": 353.0,
+            "totalEpa": -0.62,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_05_NYG_WAS",
             "date": "2026-10-11",
             "season": 2026,
@@ -13667,25 +13686,6 @@
             "totalEpa": 9.25,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_WAS_PHI",
-            "date": "2026-09-13",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "WAS",
-            "opponentAbbreviation": "PHI",
-            "homeAway": "Away",
-            "teamScore": 22,
-            "opponentScore": 24,
-            "result": "L",
-            "passingYards": 164.0,
-            "rushingYards": 132.0,
-            "totalYards": 296.0,
-            "totalEpa": 4.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -14135,14 +14135,14 @@
         "SF": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 0,
             "ties": 0,
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "winPct": 1.0,
-            "pointsFor": 154,
-            "pointsAgainst": 93,
-            "pointDifferential": 61
+            "pointsFor": 177,
+            "pointsAgainst": 110,
+            "pointDifferential": 67
           },
           "previous": {
             "season": 2025,
@@ -14257,6 +14257,25 @@
         ],
         "SF": [
           {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SF",
+            "opponentAbbreviation": "WAS",
+            "homeAway": "Home",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "result": "W",
+            "passingYards": 264.0,
+            "rushingYards": 126.0,
+            "totalYards": 390.0,
+            "totalEpa": 17.68,
+            "turnovers": 1.0,
+            "defensiveSacks": 4.0
+          },
+          {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
             "season": 2026,
@@ -14331,25 +14350,6 @@
             "totalEpa": 21.64,
             "turnovers": 0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2026_01_SF_LA",
-            "date": "2026-09-10",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SF",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Away",
-            "teamScore": 27,
-            "opponentScore": 7,
-            "result": "W",
-            "passingYards": 205.0,
-            "rushingYards": 174.0,
-            "totalYards": 379.0,
-            "totalEpa": 11.45,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -16478,13 +16478,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 3,
+            "losses": 4,
             "ties": 1,
-            "gamesPlayed": 5,
-            "winPct": 0.3,
-            "pointsFor": 115,
-            "pointsAgainst": 149,
-            "pointDifferential": -34
+            "gamesPlayed": 6,
+            "winPct": 0.25,
+            "pointsFor": 132,
+            "pointsAgainst": 172,
+            "pointDifferential": -40
           },
           "previous": {
             "season": 2025,
@@ -16599,6 +16599,25 @@
         ],
         "WAS": [
           {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "WAS",
+            "opponentAbbreviation": "SF",
+            "homeAway": "Away",
+            "teamScore": 17,
+            "opponentScore": 23,
+            "result": "L",
+            "passingYards": 300.0,
+            "rushingYards": 53.0,
+            "totalYards": 353.0,
+            "totalEpa": -0.62,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_05_NYG_WAS",
             "date": "2026-10-11",
             "season": 2026,
@@ -16673,25 +16692,6 @@
             "totalEpa": 9.25,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_WAS_PHI",
-            "date": "2026-09-13",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "WAS",
-            "opponentAbbreviation": "PHI",
-            "homeAway": "Away",
-            "teamScore": 22,
-            "opponentScore": 24,
-            "result": "L",
-            "passingYards": 164.0,
-            "rushingYards": 132.0,
-            "totalYards": 296.0,
-            "totalEpa": 4.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -19797,14 +19797,14 @@
         "SF": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 0,
             "ties": 0,
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "winPct": 1.0,
-            "pointsFor": 154,
-            "pointsAgainst": 93,
-            "pointDifferential": 61
+            "pointsFor": 177,
+            "pointsAgainst": 110,
+            "pointDifferential": 67
           },
           "previous": {
             "season": 2025,
@@ -19919,6 +19919,25 @@
         ],
         "SF": [
           {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SF",
+            "opponentAbbreviation": "WAS",
+            "homeAway": "Home",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "result": "W",
+            "passingYards": 264.0,
+            "rushingYards": 126.0,
+            "totalYards": 390.0,
+            "totalEpa": 17.68,
+            "turnovers": 1.0,
+            "defensiveSacks": 4.0
+          },
+          {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
             "season": 2026,
@@ -19993,25 +20012,6 @@
             "totalEpa": 21.64,
             "turnovers": 0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2026_01_SF_LA",
-            "date": "2026-09-10",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SF",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Away",
-            "teamScore": 27,
-            "opponentScore": 7,
-            "result": "W",
-            "passingYards": 205.0,
-            "rushingYards": 174.0,
-            "totalYards": 379.0,
-            "totalEpa": 11.45,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -24566,13 +24566,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 3,
+            "losses": 4,
             "ties": 1,
-            "gamesPlayed": 5,
-            "winPct": 0.3,
-            "pointsFor": 115,
-            "pointsAgainst": 149,
-            "pointDifferential": -34
+            "gamesPlayed": 6,
+            "winPct": 0.25,
+            "pointsFor": 132,
+            "pointsAgainst": 172,
+            "pointDifferential": -40
           },
           "previous": {
             "season": 2025,
@@ -24687,6 +24687,25 @@
         ],
         "WAS": [
           {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "WAS",
+            "opponentAbbreviation": "SF",
+            "homeAway": "Away",
+            "teamScore": 17,
+            "opponentScore": 23,
+            "result": "L",
+            "passingYards": 300.0,
+            "rushingYards": 53.0,
+            "totalYards": 353.0,
+            "totalEpa": -0.62,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_05_NYG_WAS",
             "date": "2026-10-11",
             "season": 2026,
@@ -24761,25 +24780,6 @@
             "totalEpa": 9.25,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_WAS_PHI",
-            "date": "2026-09-13",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "WAS",
-            "opponentAbbreviation": "PHI",
-            "homeAway": "Away",
-            "teamScore": 22,
-            "opponentScore": 24,
-            "result": "L",
-            "passingYards": 164.0,
-            "rushingYards": 132.0,
-            "totalYards": 296.0,
-            "totalEpa": 4.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -25591,14 +25591,14 @@
         "SF": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 0,
             "ties": 0,
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "winPct": 1.0,
-            "pointsFor": 154,
-            "pointsAgainst": 93,
-            "pointDifferential": 61
+            "pointsFor": 177,
+            "pointsAgainst": 110,
+            "pointDifferential": 67
           },
           "previous": {
             "season": 2025,
@@ -25639,6 +25639,25 @@
       },
       "recentForm": {
         "SF": [
+          {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SF",
+            "opponentAbbreviation": "WAS",
+            "homeAway": "Home",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "result": "W",
+            "passingYards": 264.0,
+            "rushingYards": 126.0,
+            "totalYards": 390.0,
+            "totalEpa": 17.68,
+            "turnovers": 1.0,
+            "defensiveSacks": 4.0
+          },
           {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
@@ -25714,25 +25733,6 @@
             "totalEpa": 21.64,
             "turnovers": 0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2026_01_SF_LA",
-            "date": "2026-09-10",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SF",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Away",
-            "teamScore": 27,
-            "opponentScore": 7,
-            "result": "W",
-            "passingYards": 205.0,
-            "rushingYards": 174.0,
-            "totalYards": 379.0,
-            "totalEpa": 11.45,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "SEA": [
@@ -30976,17 +30976,17 @@
         "gameType": "REG",
         "awayTeam": "Washington Commanders",
         "awayAbbreviation": "WAS",
-        "awayScore": null,
+        "awayScore": 17,
         "homeTeam": "San Francisco 49ers",
         "homeAbbreviation": "SF",
-        "homeScore": null,
-        "winner": null,
-        "winnerAbbreviation": null,
+        "homeScore": 23,
+        "winner": "San Francisco 49ers",
+        "winnerAbbreviation": "SF",
         "time": "20:15",
-        "status": "upcoming",
+        "status": "final",
         "stadium": "Levi's Stadium",
         "roof": "outdoors",
-        "surface": "grass",
+        "surface": "",
         "lastMeeting": {
           "id": "2023_17_SF_WAS",
           "date": "2023-12-31",
@@ -31012,13 +31012,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 3,
+            "losses": 4,
             "ties": 1,
-            "gamesPlayed": 5,
-            "winPct": 0.3,
-            "pointsFor": 115,
-            "pointsAgainst": 149,
-            "pointDifferential": -34
+            "gamesPlayed": 6,
+            "winPct": 0.25,
+            "pointsFor": 132,
+            "pointsAgainst": 172,
+            "pointDifferential": -40
           },
           "previous": {
             "season": 2025,
@@ -31035,14 +31035,14 @@
         "SF": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 0,
             "ties": 0,
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "winPct": 1.0,
-            "pointsFor": 154,
-            "pointsAgainst": 93,
-            "pointDifferential": 61
+            "pointsFor": 177,
+            "pointsAgainst": 110,
+            "pointDifferential": 67
           },
           "previous": {
             "season": 2025,
@@ -31059,6 +31059,25 @@
       },
       "recentForm": {
         "WAS": [
+          {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "WAS",
+            "opponentAbbreviation": "SF",
+            "homeAway": "Away",
+            "teamScore": 17,
+            "opponentScore": 23,
+            "result": "L",
+            "passingYards": 300.0,
+            "rushingYards": 53.0,
+            "totalYards": 353.0,
+            "totalEpa": -0.62,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_05_NYG_WAS",
             "date": "2026-10-11",
@@ -31134,28 +31153,28 @@
             "totalEpa": 9.25,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_WAS_PHI",
-            "date": "2026-09-13",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "WAS",
-            "opponentAbbreviation": "PHI",
-            "homeAway": "Away",
-            "teamScore": 22,
-            "opponentScore": 24,
-            "result": "L",
-            "passingYards": 164.0,
-            "rushingYards": 132.0,
-            "totalYards": 296.0,
-            "totalEpa": 4.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "SF": [
+          {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SF",
+            "opponentAbbreviation": "WAS",
+            "homeAway": "Home",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "result": "W",
+            "passingYards": 264.0,
+            "rushingYards": 126.0,
+            "totalYards": 390.0,
+            "totalEpa": 17.68,
+            "turnovers": 1.0,
+            "defensiveSacks": 4.0
+          },
           {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
@@ -31231,29 +31250,22 @@
             "totalEpa": 21.64,
             "turnovers": 0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2026_01_SF_LA",
-            "date": "2026-09-10",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SF",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Away",
-            "teamScore": 27,
-            "opponentScore": 7,
-            "result": "W",
-            "passingYards": 205.0,
-            "rushingYards": 174.0,
-            "totalYards": 379.0,
-            "totalEpa": 11.45,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
       "headToHead": [
+        {
+          "id": "2026_06_WAS_SF",
+          "date": "2026-10-19",
+          "season": 2026,
+          "week": 6,
+          "gameType": "REG",
+          "awayAbbreviation": "WAS",
+          "awayScore": 17,
+          "homeAbbreviation": "SF",
+          "homeScore": 23,
+          "winnerAbbreviation": "SF"
+        },
         {
           "id": "2023_17_SF_WAS",
           "date": "2023-12-31",
@@ -31303,29 +31315,7 @@
           "winnerAbbreviation": "SF"
         }
       ],
-      "prediction": {
-        "id": "2026_06_WAS_SF",
-        "awayTeam": "Washington Commanders",
-        "awayAbbreviation": "WAS",
-        "homeTeam": "San Francisco 49ers",
-        "homeAbbreviation": "SF",
-        "kickoff": "2026-10-19 20:15",
-        "predictedWinner": "San Francisco 49ers",
-        "homeWinProbability": 91,
-        "awayWinProbability": 9,
-        "classifierHomeProbability": 92,
-        "scoreModelHomeProbability": 89,
-        "projectedHomeScore": 30.8,
-        "projectedAwayScore": 16.2,
-        "projectedMargin": 15.3,
-        "projectedTotal": 45.2,
-        "confidence": "High",
-        "factors": [
-          "Recent scoring margin",
-          "Quarterback efficiency",
-          "Elo team strength"
-        ]
-      }
+      "prediction": null
     },
     "2026_07_NE_CHI": {
       "game": {
@@ -31639,7 +31629,29 @@
           "winnerAbbreviation": "CHI"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_07_NE_CHI",
+        "awayTeam": "New England Patriots",
+        "awayAbbreviation": "NE",
+        "homeTeam": "Chicago Bears",
+        "homeAbbreviation": "CHI",
+        "kickoff": "2026-10-22 20:15",
+        "predictedWinner": "New England Patriots",
+        "homeWinProbability": 33,
+        "awayWinProbability": 67,
+        "classifierHomeProbability": 32,
+        "scoreModelHomeProbability": 36,
+        "projectedHomeScore": 21.9,
+        "projectedAwayScore": 26.8,
+        "projectedMargin": -4.6,
+        "projectedTotal": 50.1,
+        "confidence": "Medium",
+        "factors": [
+          "Quarterback efficiency",
+          "Elo team strength",
+          "Recent scoring margin"
+        ]
+      }
     },
     "2026_07_PIT_NO": {
       "game": {
@@ -31941,7 +31953,29 @@
           "winnerAbbreviation": "PIT"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_07_PIT_NO",
+        "awayTeam": "Pittsburgh Steelers",
+        "awayAbbreviation": "PIT",
+        "homeTeam": "New Orleans Saints",
+        "homeAbbreviation": "NO",
+        "kickoff": "2026-10-25 09:30",
+        "predictedWinner": "Pittsburgh Steelers",
+        "homeWinProbability": 32,
+        "awayWinProbability": 68,
+        "classifierHomeProbability": 30,
+        "scoreModelHomeProbability": 35,
+        "projectedHomeScore": 20.6,
+        "projectedAwayScore": 26.6,
+        "projectedMargin": -4.9,
+        "projectedTotal": 47.6,
+        "confidence": "High",
+        "factors": [
+          "Elo team strength",
+          "Recent scoring margin",
+          "Turnover trend"
+        ]
+      }
     },
     "2026_07_CIN_BAL": {
       "game": {
@@ -32291,7 +32325,29 @@
           "winnerAbbreviation": "BAL"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_07_CIN_BAL",
+        "awayTeam": "Cincinnati Bengals",
+        "awayAbbreviation": "CIN",
+        "homeTeam": "Baltimore Ravens",
+        "homeAbbreviation": "BAL",
+        "kickoff": "2026-10-25 13:00",
+        "predictedWinner": "Baltimore Ravens",
+        "homeWinProbability": 55,
+        "awayWinProbability": 45,
+        "classifierHomeProbability": 52,
+        "scoreModelHomeProbability": 59,
+        "projectedHomeScore": 25.1,
+        "projectedAwayScore": 21.8,
+        "projectedMargin": 2.8,
+        "projectedTotal": 47.4,
+        "confidence": "Low",
+        "factors": [
+          "Elo team strength",
+          "Turnover trend",
+          "Recent scoring margin"
+        ]
+      }
     },
     "2026_07_CLE_TEN": {
       "game": {
@@ -32629,7 +32685,29 @@
           "winnerAbbreviation": "TEN"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_07_CLE_TEN",
+        "awayTeam": "Cleveland Browns",
+        "awayAbbreviation": "CLE",
+        "homeTeam": "Tennessee Titans",
+        "homeAbbreviation": "TEN",
+        "kickoff": "2026-10-25 13:00",
+        "predictedWinner": "Cleveland Browns",
+        "homeWinProbability": 46,
+        "awayWinProbability": 54,
+        "classifierHomeProbability": 50,
+        "scoreModelHomeProbability": 38,
+        "projectedHomeScore": 20.7,
+        "projectedAwayScore": 23.9,
+        "projectedMargin": -3.7,
+        "projectedTotal": 45.2,
+        "confidence": "Low",
+        "factors": [
+          "Elo team strength",
+          "Recent scoring margin",
+          "Quarterback efficiency"
+        ]
+      }
     },
     "2026_07_IND_MIN": {
       "game": {
@@ -32955,7 +33033,29 @@
           "winnerAbbreviation": "IND"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_07_IND_MIN",
+        "awayTeam": "Indianapolis Colts",
+        "awayAbbreviation": "IND",
+        "homeTeam": "Minnesota Vikings",
+        "homeAbbreviation": "MIN",
+        "kickoff": "2026-10-25 13:00",
+        "predictedWinner": "Minnesota Vikings",
+        "homeWinProbability": 72,
+        "awayWinProbability": 28,
+        "classifierHomeProbability": 72,
+        "scoreModelHomeProbability": 73,
+        "projectedHomeScore": 27.6,
+        "projectedAwayScore": 19.0,
+        "projectedMargin": 7.5,
+        "projectedTotal": 48.8,
+        "confidence": "High",
+        "factors": [
+          "Elo team strength",
+          "Recent scoring margin",
+          "Turnover trend"
+        ]
+      }
     },
     "2026_07_MIA_NYJ": {
       "game": {
@@ -33305,7 +33405,29 @@
           "winnerAbbreviation": "MIA"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_07_MIA_NYJ",
+        "awayTeam": "Miami Dolphins",
+        "awayAbbreviation": "MIA",
+        "homeTeam": "New York Jets",
+        "homeAbbreviation": "NYJ",
+        "kickoff": "2026-10-25 13:00",
+        "predictedWinner": "New York Jets",
+        "homeWinProbability": 52,
+        "awayWinProbability": 48,
+        "classifierHomeProbability": 54,
+        "scoreModelHomeProbability": 48,
+        "projectedHomeScore": 20.8,
+        "projectedAwayScore": 22.9,
+        "projectedMargin": -0.7,
+        "projectedTotal": 42.1,
+        "confidence": "Low",
+        "factors": [
+          "Recent scoring margin",
+          "Elo team strength",
+          "Turnover trend"
+        ]
+      }
     },
     "2026_07_NYG_HOU": {
       "game": {
@@ -33607,7 +33729,29 @@
           "winnerAbbreviation": "NYG"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_07_NYG_HOU",
+        "awayTeam": "New York Giants",
+        "awayAbbreviation": "NYG",
+        "homeTeam": "Houston Texans",
+        "homeAbbreviation": "HOU",
+        "kickoff": "2026-10-25 13:00",
+        "predictedWinner": "Houston Texans",
+        "homeWinProbability": 60,
+        "awayWinProbability": 40,
+        "classifierHomeProbability": 55,
+        "scoreModelHomeProbability": 71,
+        "projectedHomeScore": 24.6,
+        "projectedAwayScore": 19.0,
+        "projectedMargin": 6.8,
+        "projectedTotal": 43.9,
+        "confidence": "Medium",
+        "factors": [
+          "Turnover trend",
+          "Elo team strength",
+          "Quarterback efficiency"
+        ]
+      }
     },
     "2026_07_SF_ATL": {
       "game": {
@@ -33653,14 +33797,14 @@
         "SF": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 0,
             "ties": 0,
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "winPct": 1.0,
-            "pointsFor": 154,
-            "pointsAgainst": 93,
-            "pointDifferential": 61
+            "pointsFor": 177,
+            "pointsAgainst": 110,
+            "pointDifferential": 67
           },
           "previous": {
             "season": 2025,
@@ -33701,6 +33845,25 @@
       },
       "recentForm": {
         "SF": [
+          {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SF",
+            "opponentAbbreviation": "WAS",
+            "homeAway": "Home",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "result": "W",
+            "passingYards": 264.0,
+            "rushingYards": 126.0,
+            "totalYards": 390.0,
+            "totalEpa": 17.68,
+            "turnovers": 1.0,
+            "defensiveSacks": 4.0
+          },
           {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
@@ -33776,25 +33939,6 @@
             "totalEpa": 21.64,
             "turnovers": 0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2026_01_SF_LA",
-            "date": "2026-09-10",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SF",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Away",
-            "teamScore": 27,
-            "opponentScore": 7,
-            "result": "W",
-            "passingYards": 205.0,
-            "rushingYards": 174.0,
-            "totalYards": 379.0,
-            "totalEpa": 11.45,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "ATL": [
@@ -33945,7 +34089,29 @@
           "winnerAbbreviation": "ATL"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_07_SF_ATL",
+        "awayTeam": "San Francisco 49ers",
+        "awayAbbreviation": "SF",
+        "homeTeam": "Atlanta Falcons",
+        "homeAbbreviation": "ATL",
+        "kickoff": "2026-10-25 13:00",
+        "predictedWinner": "San Francisco 49ers",
+        "homeWinProbability": 34,
+        "awayWinProbability": 66,
+        "classifierHomeProbability": 29,
+        "scoreModelHomeProbability": 44,
+        "projectedHomeScore": 21.6,
+        "projectedAwayScore": 25.9,
+        "projectedMargin": -1.9,
+        "projectedTotal": 48.0,
+        "confidence": "Medium",
+        "factors": [
+          "Quarterback efficiency",
+          "Elo team strength",
+          "Recent scoring margin"
+        ]
+      }
     },
     "2026_07_TB_CAR": {
       "game": {
@@ -34295,7 +34461,29 @@
           "winnerAbbreviation": "TB"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_07_TB_CAR",
+        "awayTeam": "Tampa Bay Buccaneers",
+        "awayAbbreviation": "TB",
+        "homeTeam": "Carolina Panthers",
+        "homeAbbreviation": "CAR",
+        "kickoff": "2026-10-25 13:00",
+        "predictedWinner": "Carolina Panthers",
+        "homeWinProbability": 69,
+        "awayWinProbability": 31,
+        "classifierHomeProbability": 76,
+        "scoreModelHomeProbability": 55,
+        "projectedHomeScore": 21.9,
+        "projectedAwayScore": 21.8,
+        "projectedMargin": 1.5,
+        "projectedTotal": 43.7,
+        "confidence": "High",
+        "factors": [
+          "Quarterback efficiency",
+          "EPA per play",
+          "Recent scoring margin"
+        ]
+      }
     },
     "2026_07_DEN_ARI": {
       "game": {
@@ -34597,7 +34785,29 @@
           "winnerAbbreviation": "DEN"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_07_DEN_ARI",
+        "awayTeam": "Denver Broncos",
+        "awayAbbreviation": "DEN",
+        "homeTeam": "Arizona Cardinals",
+        "homeAbbreviation": "ARI",
+        "kickoff": "2026-10-25 16:05",
+        "predictedWinner": "Denver Broncos",
+        "homeWinProbability": 41,
+        "awayWinProbability": 59,
+        "classifierHomeProbability": 41,
+        "scoreModelHomeProbability": 41,
+        "projectedHomeScore": 23.7,
+        "projectedAwayScore": 23.8,
+        "projectedMargin": -2.7,
+        "projectedTotal": 47.3,
+        "confidence": "Medium",
+        "factors": [
+          "Elo team strength",
+          "Recent scoring margin",
+          "Success rate"
+        ]
+      }
     },
     "2026_07_GB_DET": {
       "game": {
@@ -34947,7 +35157,29 @@
           "winnerAbbreviation": "GB"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_07_GB_DET",
+        "awayTeam": "Green Bay Packers",
+        "awayAbbreviation": "GB",
+        "homeTeam": "Detroit Lions",
+        "homeAbbreviation": "DET",
+        "kickoff": "2026-10-25 16:25",
+        "predictedWinner": "Detroit Lions",
+        "homeWinProbability": 69,
+        "awayWinProbability": 31,
+        "classifierHomeProbability": 71,
+        "scoreModelHomeProbability": 63,
+        "projectedHomeScore": 24.6,
+        "projectedAwayScore": 21.9,
+        "projectedMargin": 4.2,
+        "projectedTotal": 48.4,
+        "confidence": "High",
+        "factors": [
+          "Success rate",
+          "Turnover trend",
+          "EPA per play"
+        ]
+      }
     },
     "2026_07_LA_LV": {
       "game": {
@@ -35261,7 +35493,29 @@
           "winnerAbbreviation": "LA"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_07_LA_LV",
+        "awayTeam": "Los Angeles Rams",
+        "awayAbbreviation": "LA",
+        "homeTeam": "Las Vegas Raiders",
+        "homeAbbreviation": "LV",
+        "kickoff": "2026-10-25 16:25",
+        "predictedWinner": "Los Angeles Rams",
+        "homeWinProbability": 25,
+        "awayWinProbability": 75,
+        "classifierHomeProbability": 20,
+        "scoreModelHomeProbability": 34,
+        "projectedHomeScore": 20.6,
+        "projectedAwayScore": 25.4,
+        "projectedMargin": -5.1,
+        "projectedTotal": 47.8,
+        "confidence": "High",
+        "factors": [
+          "Elo team strength",
+          "Recent scoring margin",
+          "Success rate"
+        ]
+      }
     },
     "2026_07_KC_SEA": {
       "game": {
@@ -35563,7 +35817,29 @@
           "winnerAbbreviation": "KC"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_07_KC_SEA",
+        "awayTeam": "Kansas City Chiefs",
+        "awayAbbreviation": "KC",
+        "homeTeam": "Seattle Seahawks",
+        "homeAbbreviation": "SEA",
+        "kickoff": "2026-10-25 20:20",
+        "predictedWinner": "Kansas City Chiefs",
+        "homeWinProbability": 36,
+        "awayWinProbability": 64,
+        "classifierHomeProbability": 28,
+        "scoreModelHomeProbability": 52,
+        "projectedHomeScore": 20.9,
+        "projectedAwayScore": 22.3,
+        "projectedMargin": 0.6,
+        "projectedTotal": 43.4,
+        "confidence": "Medium",
+        "factors": [
+          "Turnover trend",
+          "EPA per play",
+          "Recent scoring margin"
+        ]
+      }
     },
     "2026_07_DAL_PHI": {
       "game": {
@@ -35913,7 +36189,29 @@
           "winnerAbbreviation": "DAL"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_07_DAL_PHI",
+        "awayTeam": "Dallas Cowboys",
+        "awayAbbreviation": "DAL",
+        "homeTeam": "Philadelphia Eagles",
+        "homeAbbreviation": "PHI",
+        "kickoff": "2026-10-26 20:15",
+        "predictedWinner": "Dallas Cowboys",
+        "homeWinProbability": 33,
+        "awayWinProbability": 67,
+        "classifierHomeProbability": 27,
+        "scoreModelHomeProbability": 45,
+        "projectedHomeScore": 20.0,
+        "projectedAwayScore": 22.3,
+        "projectedMargin": -1.5,
+        "projectedTotal": 44.8,
+        "confidence": "Medium",
+        "factors": [
+          "Quarterback efficiency",
+          "EPA per play",
+          "Success rate"
+        ]
+      }
     },
     "2026_08_CAR_GB": {
       "game": {
@@ -40052,13 +40350,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 3,
+            "losses": 4,
             "ties": 1,
-            "gamesPlayed": 5,
-            "winPct": 0.3,
-            "pointsFor": 115,
-            "pointsAgainst": 149,
-            "pointDifferential": -34
+            "gamesPlayed": 6,
+            "winPct": 0.25,
+            "pointsFor": 132,
+            "pointsAgainst": 172,
+            "pointDifferential": -40
           },
           "previous": {
             "season": 2025,
@@ -40173,6 +40471,25 @@
         ],
         "WAS": [
           {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "WAS",
+            "opponentAbbreviation": "SF",
+            "homeAway": "Away",
+            "teamScore": 17,
+            "opponentScore": 23,
+            "result": "L",
+            "passingYards": 300.0,
+            "rushingYards": 53.0,
+            "totalYards": 353.0,
+            "totalEpa": -0.62,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_05_NYG_WAS",
             "date": "2026-10-11",
             "season": 2026,
@@ -40247,25 +40564,6 @@
             "totalEpa": 9.25,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_WAS_PHI",
-            "date": "2026-09-13",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "WAS",
-            "opponentAbbreviation": "PHI",
-            "homeAway": "Away",
-            "teamScore": 22,
-            "opponentScore": 24,
-            "result": "L",
-            "passingYards": 164.0,
-            "rushingYards": 132.0,
-            "totalYards": 296.0,
-            "totalEpa": 4.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -42588,13 +42886,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 3,
+            "losses": 4,
             "ties": 1,
-            "gamesPlayed": 5,
-            "winPct": 0.3,
-            "pointsFor": 115,
-            "pointsAgainst": 149,
-            "pointDifferential": -34
+            "gamesPlayed": 6,
+            "winPct": 0.25,
+            "pointsFor": 132,
+            "pointsAgainst": 172,
+            "pointDifferential": -40
           },
           "previous": {
             "season": 2025,
@@ -42709,6 +43007,25 @@
         ],
         "WAS": [
           {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "WAS",
+            "opponentAbbreviation": "SF",
+            "homeAway": "Away",
+            "teamScore": 17,
+            "opponentScore": 23,
+            "result": "L",
+            "passingYards": 300.0,
+            "rushingYards": 53.0,
+            "totalYards": 353.0,
+            "totalEpa": -0.62,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_05_NYG_WAS",
             "date": "2026-10-11",
             "season": 2026,
@@ -42783,25 +43100,6 @@
             "totalEpa": 9.25,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_WAS_PHI",
-            "date": "2026-09-13",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "WAS",
-            "opponentAbbreviation": "PHI",
-            "homeAway": "Away",
-            "teamScore": 22,
-            "opponentScore": 24,
-            "result": "L",
-            "passingYards": 164.0,
-            "rushingYards": 132.0,
-            "totalYards": 296.0,
-            "totalEpa": 4.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -43903,14 +44201,14 @@
         "SF": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 0,
             "ties": 0,
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "winPct": 1.0,
-            "pointsFor": 154,
-            "pointsAgainst": 93,
-            "pointDifferential": 61
+            "pointsFor": 177,
+            "pointsAgainst": 110,
+            "pointDifferential": 67
           },
           "previous": {
             "season": 2025,
@@ -44025,6 +44323,25 @@
         ],
         "SF": [
           {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SF",
+            "opponentAbbreviation": "WAS",
+            "homeAway": "Home",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "result": "W",
+            "passingYards": 264.0,
+            "rushingYards": 126.0,
+            "totalYards": 390.0,
+            "totalEpa": 17.68,
+            "turnovers": 1.0,
+            "defensiveSacks": 4.0
+          },
+          {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
             "season": 2026,
@@ -44099,25 +44416,6 @@
             "totalEpa": 21.64,
             "turnovers": 0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2026_01_SF_LA",
-            "date": "2026-09-10",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SF",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Away",
-            "teamScore": 27,
-            "opponentScore": 7,
-            "result": "W",
-            "passingYards": 205.0,
-            "rushingYards": 174.0,
-            "totalYards": 379.0,
-            "totalEpa": 11.45,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -45462,13 +45760,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 3,
+            "losses": 4,
             "ties": 1,
-            "gamesPlayed": 5,
-            "winPct": 0.3,
-            "pointsFor": 115,
-            "pointsAgainst": 149,
-            "pointDifferential": -34
+            "gamesPlayed": 6,
+            "winPct": 0.25,
+            "pointsFor": 132,
+            "pointsAgainst": 172,
+            "pointDifferential": -40
           },
           "previous": {
             "season": 2025,
@@ -45509,6 +45807,25 @@
       },
       "recentForm": {
         "WAS": [
+          {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "WAS",
+            "opponentAbbreviation": "SF",
+            "homeAway": "Away",
+            "teamScore": 17,
+            "opponentScore": 23,
+            "result": "L",
+            "passingYards": 300.0,
+            "rushingYards": 53.0,
+            "totalYards": 353.0,
+            "totalEpa": -0.62,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_05_NYG_WAS",
             "date": "2026-10-11",
@@ -45584,25 +45901,6 @@
             "totalEpa": 9.25,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_WAS_PHI",
-            "date": "2026-09-13",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "WAS",
-            "opponentAbbreviation": "PHI",
-            "homeAway": "Away",
-            "teamScore": 22,
-            "opponentScore": 24,
-            "result": "L",
-            "passingYards": 164.0,
-            "rushingYards": 132.0,
-            "totalYards": 296.0,
-            "totalEpa": 4.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "NYG": [
@@ -49155,14 +49453,14 @@
         "SF": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 0,
             "ties": 0,
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "winPct": 1.0,
-            "pointsFor": 154,
-            "pointsAgainst": 93,
-            "pointDifferential": 61
+            "pointsFor": 177,
+            "pointsAgainst": 110,
+            "pointDifferential": 67
           },
           "previous": {
             "season": 2025,
@@ -49203,6 +49501,25 @@
       },
       "recentForm": {
         "SF": [
+          {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SF",
+            "opponentAbbreviation": "WAS",
+            "homeAway": "Home",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "result": "W",
+            "passingYards": 264.0,
+            "rushingYards": 126.0,
+            "totalYards": 390.0,
+            "totalEpa": 17.68,
+            "turnovers": 1.0,
+            "defensiveSacks": 4.0
+          },
           {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
@@ -49278,25 +49595,6 @@
             "totalEpa": 21.64,
             "turnovers": 0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2026_01_SF_LA",
-            "date": "2026-09-10",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SF",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Away",
-            "teamScore": 27,
-            "opponentScore": 7,
-            "result": "W",
-            "passingYards": 205.0,
-            "rushingYards": 174.0,
-            "totalYards": 379.0,
-            "totalEpa": 11.45,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "DAL": [
@@ -53767,14 +54065,14 @@
         "SF": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 0,
             "ties": 0,
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "winPct": 1.0,
-            "pointsFor": 154,
-            "pointsAgainst": 93,
-            "pointDifferential": 61
+            "pointsFor": 177,
+            "pointsAgainst": 110,
+            "pointDifferential": 67
           },
           "previous": {
             "season": 2025,
@@ -53889,6 +54187,25 @@
         ],
         "SF": [
           {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SF",
+            "opponentAbbreviation": "WAS",
+            "homeAway": "Home",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "result": "W",
+            "passingYards": 264.0,
+            "rushingYards": 126.0,
+            "totalYards": 390.0,
+            "totalEpa": 17.68,
+            "turnovers": 1.0,
+            "defensiveSacks": 4.0
+          },
+          {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
             "season": 2026,
@@ -53963,25 +54280,6 @@
             "totalEpa": 21.64,
             "turnovers": 0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2026_01_SF_LA",
-            "date": "2026-09-10",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SF",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Away",
-            "teamScore": 27,
-            "opponentScore": 7,
-            "result": "W",
-            "passingYards": 205.0,
-            "rushingYards": 174.0,
-            "totalYards": 379.0,
-            "totalEpa": 11.45,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -54094,13 +54392,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 3,
+            "losses": 4,
             "ties": 1,
-            "gamesPlayed": 5,
-            "winPct": 0.3,
-            "pointsFor": 115,
-            "pointsAgainst": 149,
-            "pointDifferential": -34
+            "gamesPlayed": 6,
+            "winPct": 0.25,
+            "pointsFor": 132,
+            "pointsAgainst": 172,
+            "pointDifferential": -40
           },
           "previous": {
             "season": 2025,
@@ -54215,6 +54513,25 @@
         ],
         "WAS": [
           {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "WAS",
+            "opponentAbbreviation": "SF",
+            "homeAway": "Away",
+            "teamScore": 17,
+            "opponentScore": 23,
+            "result": "L",
+            "passingYards": 300.0,
+            "rushingYards": 53.0,
+            "totalYards": 353.0,
+            "totalEpa": -0.62,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_05_NYG_WAS",
             "date": "2026-10-11",
             "season": 2026,
@@ -54289,25 +54606,6 @@
             "totalEpa": 9.25,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_WAS_PHI",
-            "date": "2026-09-13",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "WAS",
-            "opponentAbbreviation": "PHI",
-            "homeAway": "Away",
-            "teamScore": 22,
-            "opponentScore": 24,
-            "result": "L",
-            "passingYards": 164.0,
-            "rushingYards": 132.0,
-            "totalYards": 296.0,
-            "totalEpa": 4.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -58475,14 +58773,14 @@
         "SF": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 0,
             "ties": 0,
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "winPct": 1.0,
-            "pointsFor": 154,
-            "pointsAgainst": 93,
-            "pointDifferential": 61
+            "pointsFor": 177,
+            "pointsAgainst": 110,
+            "pointDifferential": 67
           },
           "previous": {
             "season": 2025,
@@ -58597,6 +58895,25 @@
         ],
         "SF": [
           {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SF",
+            "opponentAbbreviation": "WAS",
+            "homeAway": "Home",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "result": "W",
+            "passingYards": 264.0,
+            "rushingYards": 126.0,
+            "totalYards": 390.0,
+            "totalEpa": 17.68,
+            "turnovers": 1.0,
+            "defensiveSacks": 4.0
+          },
+          {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
             "season": 2026,
@@ -58671,25 +58988,6 @@
             "totalEpa": 21.64,
             "turnovers": 0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2026_01_SF_LA",
-            "date": "2026-09-10",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SF",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Away",
-            "teamScore": 27,
-            "opponentScore": 7,
-            "result": "W",
-            "passingYards": 205.0,
-            "rushingYards": 174.0,
-            "totalYards": 379.0,
-            "totalEpa": 11.45,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -58802,13 +59100,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 3,
+            "losses": 4,
             "ties": 1,
-            "gamesPlayed": 5,
-            "winPct": 0.3,
-            "pointsFor": 115,
-            "pointsAgainst": 149,
-            "pointDifferential": -34
+            "gamesPlayed": 6,
+            "winPct": 0.25,
+            "pointsFor": 132,
+            "pointsAgainst": 172,
+            "pointDifferential": -40
           },
           "previous": {
             "season": 2025,
@@ -58849,6 +59147,25 @@
       },
       "recentForm": {
         "WAS": [
+          {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "WAS",
+            "opponentAbbreviation": "SF",
+            "homeAway": "Away",
+            "teamScore": 17,
+            "opponentScore": 23,
+            "result": "L",
+            "passingYards": 300.0,
+            "rushingYards": 53.0,
+            "totalYards": 353.0,
+            "totalEpa": -0.62,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_05_NYG_WAS",
             "date": "2026-10-11",
@@ -58924,25 +59241,6 @@
             "totalEpa": 9.25,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_WAS_PHI",
-            "date": "2026-09-13",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "WAS",
-            "opponentAbbreviation": "PHI",
-            "homeAway": "Away",
-            "teamScore": 22,
-            "opponentScore": 24,
-            "result": "L",
-            "passingYards": 164.0,
-            "rushingYards": 132.0,
-            "totalYards": 296.0,
-            "totalEpa": 4.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "ARI": [
@@ -61759,14 +62057,14 @@
         "SF": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 0,
             "ties": 0,
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "winPct": 1.0,
-            "pointsFor": 154,
-            "pointsAgainst": 93,
-            "pointDifferential": 61
+            "pointsFor": 177,
+            "pointsAgainst": 110,
+            "pointDifferential": 67
           },
           "previous": {
             "season": 2025,
@@ -61807,6 +62105,25 @@
       },
       "recentForm": {
         "SF": [
+          {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SF",
+            "opponentAbbreviation": "WAS",
+            "homeAway": "Home",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "result": "W",
+            "passingYards": 264.0,
+            "rushingYards": 126.0,
+            "totalYards": 390.0,
+            "totalEpa": 17.68,
+            "turnovers": 1.0,
+            "defensiveSacks": 4.0
+          },
           {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
@@ -61882,25 +62199,6 @@
             "totalEpa": 21.64,
             "turnovers": 0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2026_01_SF_LA",
-            "date": "2026-09-10",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SF",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Away",
-            "teamScore": 27,
-            "opponentScore": 7,
-            "result": "W",
-            "passingYards": 205.0,
-            "rushingYards": 174.0,
-            "totalYards": 379.0,
-            "totalEpa": 11.45,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "NYG": [
@@ -62086,13 +62384,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 3,
+            "losses": 4,
             "ties": 1,
-            "gamesPlayed": 5,
-            "winPct": 0.3,
-            "pointsFor": 115,
-            "pointsAgainst": 149,
-            "pointDifferential": -34
+            "gamesPlayed": 6,
+            "winPct": 0.25,
+            "pointsFor": 132,
+            "pointsAgainst": 172,
+            "pointDifferential": -40
           },
           "previous": {
             "season": 2025,
@@ -62133,6 +62431,25 @@
       },
       "recentForm": {
         "WAS": [
+          {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "WAS",
+            "opponentAbbreviation": "SF",
+            "homeAway": "Away",
+            "teamScore": 17,
+            "opponentScore": 23,
+            "result": "L",
+            "passingYards": 300.0,
+            "rushingYards": 53.0,
+            "totalYards": 353.0,
+            "totalEpa": -0.62,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_05_NYG_WAS",
             "date": "2026-10-11",
@@ -62208,25 +62525,6 @@
             "totalEpa": 9.25,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_WAS_PHI",
-            "date": "2026-09-13",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "WAS",
-            "opponentAbbreviation": "PHI",
-            "homeAway": "Away",
-            "teamScore": 22,
-            "opponentScore": 24,
-            "result": "L",
-            "passingYards": 164.0,
-            "rushingYards": 132.0,
-            "totalYards": 296.0,
-            "totalEpa": 4.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "TEN": [
@@ -65624,13 +65922,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 3,
+            "losses": 4,
             "ties": 1,
-            "gamesPlayed": 5,
-            "winPct": 0.3,
-            "pointsFor": 115,
-            "pointsAgainst": 149,
-            "pointDifferential": -34
+            "gamesPlayed": 6,
+            "winPct": 0.25,
+            "pointsFor": 132,
+            "pointsAgainst": 172,
+            "pointDifferential": -40
           },
           "previous": {
             "season": 2025,
@@ -65745,6 +66043,25 @@
         ],
         "WAS": [
           {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "WAS",
+            "opponentAbbreviation": "SF",
+            "homeAway": "Away",
+            "teamScore": 17,
+            "opponentScore": 23,
+            "result": "L",
+            "passingYards": 300.0,
+            "rushingYards": 53.0,
+            "totalYards": 353.0,
+            "totalEpa": -0.62,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_05_NYG_WAS",
             "date": "2026-10-11",
             "season": 2026,
@@ -65819,25 +66136,6 @@
             "totalEpa": 9.25,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_WAS_PHI",
-            "date": "2026-09-13",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "WAS",
-            "opponentAbbreviation": "PHI",
-            "homeAway": "Away",
-            "teamScore": 22,
-            "opponentScore": 24,
-            "result": "L",
-            "passingYards": 164.0,
-            "rushingYards": 132.0,
-            "totalYards": 296.0,
-            "totalEpa": 4.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -67893,14 +68191,14 @@
         "SF": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 0,
             "ties": 0,
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "winPct": 1.0,
-            "pointsFor": 154,
-            "pointsAgainst": 93,
-            "pointDifferential": 61
+            "pointsFor": 177,
+            "pointsAgainst": 110,
+            "pointDifferential": 67
           },
           "previous": {
             "season": 2025,
@@ -68015,6 +68313,25 @@
         ],
         "SF": [
           {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SF",
+            "opponentAbbreviation": "WAS",
+            "homeAway": "Home",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "result": "W",
+            "passingYards": 264.0,
+            "rushingYards": 126.0,
+            "totalYards": 390.0,
+            "totalEpa": 17.68,
+            "turnovers": 1.0,
+            "defensiveSacks": 4.0
+          },
+          {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
             "season": 2026,
@@ -68089,25 +68406,6 @@
             "totalEpa": 21.64,
             "turnovers": 0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2026_01_SF_LA",
-            "date": "2026-09-10",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SF",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Away",
-            "teamScore": 27,
-            "opponentScore": 7,
-            "result": "W",
-            "passingYards": 205.0,
-            "rushingYards": 174.0,
-            "totalYards": 379.0,
-            "totalEpa": 11.45,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -69173,14 +69471,14 @@
         "SF": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 0,
             "ties": 0,
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "winPct": 1.0,
-            "pointsFor": 154,
-            "pointsAgainst": 93,
-            "pointDifferential": 61
+            "pointsFor": 177,
+            "pointsAgainst": 110,
+            "pointDifferential": 67
           },
           "previous": {
             "season": 2025,
@@ -69221,6 +69519,25 @@
       },
       "recentForm": {
         "SF": [
+          {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SF",
+            "opponentAbbreviation": "WAS",
+            "homeAway": "Home",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "result": "W",
+            "passingYards": 264.0,
+            "rushingYards": 126.0,
+            "totalYards": 390.0,
+            "totalEpa": 17.68,
+            "turnovers": 1.0,
+            "defensiveSacks": 4.0
+          },
           {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
@@ -69296,25 +69613,6 @@
             "totalEpa": 21.64,
             "turnovers": 0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2026_01_SF_LA",
-            "date": "2026-09-10",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SF",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Away",
-            "teamScore": 27,
-            "opponentScore": 7,
-            "result": "W",
-            "passingYards": 205.0,
-            "rushingYards": 174.0,
-            "totalYards": 379.0,
-            "totalEpa": 11.45,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "LAC": [
@@ -70128,13 +70426,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 3,
+            "losses": 4,
             "ties": 1,
-            "gamesPlayed": 5,
-            "winPct": 0.3,
-            "pointsFor": 115,
-            "pointsAgainst": 149,
-            "pointDifferential": -34
+            "gamesPlayed": 6,
+            "winPct": 0.25,
+            "pointsFor": 132,
+            "pointsAgainst": 172,
+            "pointDifferential": -40
           },
           "previous": {
             "season": 2025,
@@ -70249,6 +70547,25 @@
         ],
         "WAS": [
           {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "WAS",
+            "opponentAbbreviation": "SF",
+            "homeAway": "Away",
+            "teamScore": 17,
+            "opponentScore": 23,
+            "result": "L",
+            "passingYards": 300.0,
+            "rushingYards": 53.0,
+            "totalYards": 353.0,
+            "totalEpa": -0.62,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_05_NYG_WAS",
             "date": "2026-10-11",
             "season": 2026,
@@ -70323,25 +70640,6 @@
             "totalEpa": 9.25,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_WAS_PHI",
-            "date": "2026-09-13",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "WAS",
-            "opponentAbbreviation": "PHI",
-            "homeAway": "Away",
-            "teamScore": 22,
-            "opponentScore": 24,
-            "result": "L",
-            "passingYards": 164.0,
-            "rushingYards": 132.0,
-            "totalYards": 296.0,
-            "totalEpa": 4.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -78144,13 +78442,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 3,
+            "losses": 4,
             "ties": 1,
-            "gamesPlayed": 5,
-            "winPct": 0.3,
-            "pointsFor": 115,
-            "pointsAgainst": 149,
-            "pointDifferential": -34
+            "gamesPlayed": 6,
+            "winPct": 0.25,
+            "pointsFor": 132,
+            "pointsAgainst": 172,
+            "pointDifferential": -40
           },
           "previous": {
             "season": 2025,
@@ -78191,6 +78489,25 @@
       },
       "recentForm": {
         "WAS": [
+          {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "WAS",
+            "opponentAbbreviation": "SF",
+            "homeAway": "Away",
+            "teamScore": 17,
+            "opponentScore": 23,
+            "result": "L",
+            "passingYards": 300.0,
+            "rushingYards": 53.0,
+            "totalYards": 353.0,
+            "totalEpa": -0.62,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_05_NYG_WAS",
             "date": "2026-10-11",
@@ -78266,25 +78583,6 @@
             "totalEpa": 9.25,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_WAS_PHI",
-            "date": "2026-09-13",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "WAS",
-            "opponentAbbreviation": "PHI",
-            "homeAway": "Away",
-            "teamScore": 22,
-            "opponentScore": 24,
-            "result": "L",
-            "passingYards": 164.0,
-            "rushingYards": 132.0,
-            "totalYards": 296.0,
-            "totalEpa": 4.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "MIN": [
@@ -78783,14 +79081,14 @@
         "SF": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 0,
             "ties": 0,
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "winPct": 1.0,
-            "pointsFor": 154,
-            "pointsAgainst": 93,
-            "pointDifferential": 61
+            "pointsFor": 177,
+            "pointsAgainst": 110,
+            "pointDifferential": 67
           },
           "previous": {
             "season": 2025,
@@ -78831,6 +79129,25 @@
       },
       "recentForm": {
         "SF": [
+          {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SF",
+            "opponentAbbreviation": "WAS",
+            "homeAway": "Home",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "result": "W",
+            "passingYards": 264.0,
+            "rushingYards": 126.0,
+            "totalYards": 390.0,
+            "totalEpa": 17.68,
+            "turnovers": 1.0,
+            "defensiveSacks": 4.0
+          },
           {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
@@ -78906,25 +79223,6 @@
             "totalEpa": 21.64,
             "turnovers": 0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2026_01_SF_LA",
-            "date": "2026-09-10",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SF",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Away",
-            "teamScore": 27,
-            "opponentScore": 7,
-            "result": "W",
-            "passingYards": 205.0,
-            "rushingYards": 174.0,
-            "totalYards": 379.0,
-            "totalEpa": 11.45,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "KC": [
@@ -83432,13 +83730,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 3,
+            "losses": 4,
             "ties": 1,
-            "gamesPlayed": 5,
-            "winPct": 0.3,
-            "pointsFor": 115,
-            "pointsAgainst": 149,
-            "pointDifferential": -34
+            "gamesPlayed": 6,
+            "winPct": 0.25,
+            "pointsFor": 132,
+            "pointsAgainst": 172,
+            "pointDifferential": -40
           },
           "previous": {
             "season": 2025,
@@ -83479,6 +83777,25 @@
       },
       "recentForm": {
         "WAS": [
+          {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "WAS",
+            "opponentAbbreviation": "SF",
+            "homeAway": "Away",
+            "teamScore": 17,
+            "opponentScore": 23,
+            "result": "L",
+            "passingYards": 300.0,
+            "rushingYards": 53.0,
+            "totalYards": 353.0,
+            "totalEpa": -0.62,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_05_NYG_WAS",
             "date": "2026-10-11",
@@ -83554,25 +83871,6 @@
             "totalEpa": 9.25,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_WAS_PHI",
-            "date": "2026-09-13",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "WAS",
-            "opponentAbbreviation": "PHI",
-            "homeAway": "Away",
-            "teamScore": 22,
-            "opponentScore": 24,
-            "result": "L",
-            "passingYards": 164.0,
-            "rushingYards": 132.0,
-            "totalYards": 296.0,
-            "totalEpa": 4.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ],
         "JAX": [
@@ -84409,14 +84707,14 @@
         "SF": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 0,
             "ties": 0,
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "winPct": 1.0,
-            "pointsFor": 154,
-            "pointsAgainst": 93,
-            "pointDifferential": 61
+            "pointsFor": 177,
+            "pointsAgainst": 110,
+            "pointDifferential": 67
           },
           "previous": {
             "season": 2025,
@@ -84531,6 +84829,25 @@
         ],
         "SF": [
           {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SF",
+            "opponentAbbreviation": "WAS",
+            "homeAway": "Home",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "result": "W",
+            "passingYards": 264.0,
+            "rushingYards": 126.0,
+            "totalYards": 390.0,
+            "totalEpa": 17.68,
+            "turnovers": 1.0,
+            "defensiveSacks": 4.0
+          },
+          {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
             "season": 2026,
@@ -84605,25 +84922,6 @@
             "totalEpa": 21.64,
             "turnovers": 0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2026_01_SF_LA",
-            "date": "2026-09-10",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SF",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Away",
-            "teamScore": 27,
-            "opponentScore": 7,
-            "result": "W",
-            "passingYards": 205.0,
-            "rushingYards": 174.0,
-            "totalYards": 379.0,
-            "totalEpa": 11.45,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -86100,13 +86398,13 @@
           "current": {
             "season": 2026,
             "wins": 1,
-            "losses": 3,
+            "losses": 4,
             "ties": 1,
-            "gamesPlayed": 5,
-            "winPct": 0.3,
-            "pointsFor": 115,
-            "pointsAgainst": 149,
-            "pointDifferential": -34
+            "gamesPlayed": 6,
+            "winPct": 0.25,
+            "pointsFor": 132,
+            "pointsAgainst": 172,
+            "pointDifferential": -40
           },
           "previous": {
             "season": 2025,
@@ -86221,6 +86519,25 @@
         ],
         "WAS": [
           {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "WAS",
+            "opponentAbbreviation": "SF",
+            "homeAway": "Away",
+            "teamScore": 17,
+            "opponentScore": 23,
+            "result": "L",
+            "passingYards": 300.0,
+            "rushingYards": 53.0,
+            "totalYards": 353.0,
+            "totalEpa": -0.62,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_05_NYG_WAS",
             "date": "2026-10-11",
             "season": 2026,
@@ -86295,25 +86612,6 @@
             "totalEpa": 9.25,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_01_WAS_PHI",
-            "date": "2026-09-13",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "WAS",
-            "opponentAbbreviation": "PHI",
-            "homeAway": "Away",
-            "teamScore": 22,
-            "opponentScore": 24,
-            "result": "L",
-            "passingYards": 164.0,
-            "rushingYards": 132.0,
-            "totalYards": 296.0,
-            "totalEpa": 4.08,
-            "turnovers": 0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -89575,14 +89873,14 @@
         "SF": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 0,
             "ties": 0,
-            "gamesPlayed": 5,
+            "gamesPlayed": 6,
             "winPct": 1.0,
-            "pointsFor": 154,
-            "pointsAgainst": 93,
-            "pointDifferential": 61
+            "pointsFor": 177,
+            "pointsAgainst": 110,
+            "pointDifferential": 67
           },
           "previous": {
             "season": 2025,
@@ -89623,6 +89921,25 @@
       },
       "recentForm": {
         "SF": [
+          {
+            "id": "2026_06_WAS_SF",
+            "date": "2026-10-19",
+            "season": 2026,
+            "week": 6,
+            "gameType": "REG",
+            "teamAbbreviation": "SF",
+            "opponentAbbreviation": "WAS",
+            "homeAway": "Home",
+            "teamScore": 23,
+            "opponentScore": 17,
+            "result": "W",
+            "passingYards": 264.0,
+            "rushingYards": 126.0,
+            "totalYards": 390.0,
+            "totalEpa": 17.68,
+            "turnovers": 1.0,
+            "defensiveSacks": 4.0
+          },
           {
             "id": "2026_05_SF_SEA",
             "date": "2026-10-11",
@@ -89698,25 +90015,6 @@
             "totalEpa": 21.64,
             "turnovers": 0,
             "defensiveSacks": 4.0
-          },
-          {
-            "id": "2026_01_SF_LA",
-            "date": "2026-09-10",
-            "season": 2026,
-            "week": 1,
-            "gameType": "REG",
-            "teamAbbreviation": "SF",
-            "opponentAbbreviation": "LA",
-            "homeAway": "Away",
-            "teamScore": 27,
-            "opponentScore": 7,
-            "result": "W",
-            "passingYards": 205.0,
-            "rushingYards": 174.0,
-            "totalYards": 379.0,
-            "totalEpa": 11.45,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "ARI": [
