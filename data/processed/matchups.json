@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "asOf": "2026-10-22T15:21:07.601290+00:00",
+  "asOf": "2026-10-23T15:10:35.557250+00:00",
   "provider": "nflverse",
   "games": {
     "2026_01_NE_SEA": {
@@ -48,13 +48,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 136,
-            "pointsAgainst": 113,
-            "pointDifferential": 23
+            "gamesPlayed": 7,
+            "winPct": 0.571,
+            "pointsFor": 160,
+            "pointsAgainst": 143,
+            "pointDifferential": 17
           },
           "previous": {
             "season": 2025,
@@ -95,6 +95,25 @@
       },
       "recentForm": {
         "NE": [
+          {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "NE",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 30,
+            "result": "L",
+            "passingYards": 321.0,
+            "rushingYards": 70.0,
+            "totalYards": 391.0,
+            "totalEpa": 7.76,
+            "turnovers": 1.0,
+            "defensiveSacks": 3.0
+          },
           {
             "id": "2026_06_NYJ_NE",
             "date": "2026-10-18",
@@ -170,25 +189,6 @@
             "totalEpa": -15.16,
             "turnovers": 3.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_02_PIT_NE",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "NE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 20,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 208.0,
-            "rushingYards": 136.0,
-            "totalYards": 344.0,
-            "totalEpa": 0.47,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ],
         "SEA": [
@@ -1725,14 +1725,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 150,
-            "pointsAgainst": 119,
-            "pointDifferential": 31
+            "gamesPlayed": 7,
+            "winPct": 0.714,
+            "pointsFor": 180,
+            "pointsAgainst": 143,
+            "pointDifferential": 37
           },
           "previous": {
             "season": 2025,
@@ -1773,6 +1773,25 @@
       },
       "recentForm": {
         "CHI": [
+          {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "NE",
+            "homeAway": "Home",
+            "teamScore": 30,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 308.0,
+            "rushingYards": 116.0,
+            "totalYards": 424.0,
+            "totalEpa": 11.34,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_06_CHI_ATL",
             "date": "2026-10-18",
@@ -1848,25 +1867,6 @@
             "totalEpa": 1.87,
             "turnovers": 0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_MIN_CHI",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "MIN",
-            "homeAway": "Home",
-            "teamScore": 3,
-            "opponentScore": 9,
-            "result": "L",
-            "passingYards": 192.0,
-            "rushingYards": 134.0,
-            "totalYards": 326.0,
-            "totalEpa": -8.85,
-            "turnovers": 2.0,
-            "defensiveSacks": 3.0
           }
         ],
         "CAR": [
@@ -7097,14 +7097,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 150,
-            "pointsAgainst": 119,
-            "pointDifferential": 31
+            "gamesPlayed": 7,
+            "winPct": 0.714,
+            "pointsFor": 180,
+            "pointsAgainst": 143,
+            "pointDifferential": 37
           },
           "previous": {
             "season": 2025,
@@ -7219,6 +7219,25 @@
         ],
         "CHI": [
           {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "NE",
+            "homeAway": "Home",
+            "teamScore": 30,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 308.0,
+            "rushingYards": 116.0,
+            "totalYards": 424.0,
+            "totalEpa": 11.34,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_06_CHI_ATL",
             "date": "2026-10-18",
             "season": 2026,
@@ -7293,25 +7312,6 @@
             "totalEpa": 1.87,
             "turnovers": 0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_MIN_CHI",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "MIN",
-            "homeAway": "Home",
-            "teamScore": 3,
-            "opponentScore": 9,
-            "result": "L",
-            "passingYards": 192.0,
-            "rushingYards": 134.0,
-            "totalYards": 326.0,
-            "totalEpa": -8.85,
-            "turnovers": 2.0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -8076,13 +8076,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 136,
-            "pointsAgainst": 113,
-            "pointDifferential": 23
+            "gamesPlayed": 7,
+            "winPct": 0.571,
+            "pointsFor": 160,
+            "pointsAgainst": 143,
+            "pointDifferential": 17
           },
           "previous": {
             "season": 2025,
@@ -8197,6 +8197,25 @@
         ],
         "NE": [
           {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "NE",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 30,
+            "result": "L",
+            "passingYards": 321.0,
+            "rushingYards": 70.0,
+            "totalYards": 391.0,
+            "totalEpa": 7.76,
+            "turnovers": 1.0,
+            "defensiveSacks": 3.0
+          },
+          {
             "id": "2026_06_NYJ_NE",
             "date": "2026-10-18",
             "season": 2026,
@@ -8271,25 +8290,6 @@
             "totalEpa": -15.16,
             "turnovers": 3.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_02_PIT_NE",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "NE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 20,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 208.0,
-            "rushingYards": 136.0,
-            "totalYards": 344.0,
-            "totalEpa": 0.47,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ]
       },
@@ -12808,13 +12808,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 136,
-            "pointsAgainst": 113,
-            "pointDifferential": 23
+            "gamesPlayed": 7,
+            "winPct": 0.571,
+            "pointsFor": 160,
+            "pointsAgainst": 143,
+            "pointDifferential": 17
           },
           "previous": {
             "season": 2025,
@@ -12855,6 +12855,25 @@
       },
       "recentForm": {
         "NE": [
+          {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "NE",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 30,
+            "result": "L",
+            "passingYards": 321.0,
+            "rushingYards": 70.0,
+            "totalYards": 391.0,
+            "totalEpa": 7.76,
+            "turnovers": 1.0,
+            "defensiveSacks": 3.0
+          },
           {
             "id": "2026_06_NYJ_NE",
             "date": "2026-10-18",
@@ -12930,25 +12949,6 @@
             "totalEpa": -15.16,
             "turnovers": 3.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_02_PIT_NE",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "NE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 20,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 208.0,
-            "rushingYards": 136.0,
-            "totalYards": 344.0,
-            "totalEpa": 0.47,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ],
         "JAX": [
@@ -15789,14 +15789,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 150,
-            "pointsAgainst": 119,
-            "pointDifferential": 31
+            "gamesPlayed": 7,
+            "winPct": 0.714,
+            "pointsFor": 180,
+            "pointsAgainst": 143,
+            "pointDifferential": 37
           },
           "previous": {
             "season": 2025,
@@ -15911,6 +15911,25 @@
         ],
         "CHI": [
           {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "NE",
+            "homeAway": "Home",
+            "teamScore": 30,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 308.0,
+            "rushingYards": 116.0,
+            "totalYards": 424.0,
+            "totalEpa": 11.34,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_06_CHI_ATL",
             "date": "2026-10-18",
             "season": 2026,
@@ -15985,25 +16004,6 @@
             "totalEpa": 1.87,
             "turnovers": 0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_MIN_CHI",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "MIN",
-            "homeAway": "Home",
-            "teamScore": 3,
-            "opponentScore": 9,
-            "result": "L",
-            "passingYards": 192.0,
-            "rushingYards": 134.0,
-            "totalYards": 326.0,
-            "totalEpa": -8.85,
-            "turnovers": 2.0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -18470,13 +18470,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 136,
-            "pointsAgainst": 113,
-            "pointDifferential": 23
+            "gamesPlayed": 7,
+            "winPct": 0.571,
+            "pointsFor": 160,
+            "pointsAgainst": 143,
+            "pointDifferential": 17
           },
           "previous": {
             "season": 2025,
@@ -18517,6 +18517,25 @@
       },
       "recentForm": {
         "NE": [
+          {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "NE",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 30,
+            "result": "L",
+            "passingYards": 321.0,
+            "rushingYards": 70.0,
+            "totalYards": 391.0,
+            "totalEpa": 7.76,
+            "turnovers": 1.0,
+            "defensiveSacks": 3.0
+          },
           {
             "id": "2026_06_NYJ_NE",
             "date": "2026-10-18",
@@ -18592,25 +18611,6 @@
             "totalEpa": -15.16,
             "turnovers": 3.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_02_PIT_NE",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "NE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 20,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 208.0,
-            "rushingYards": 136.0,
-            "totalYards": 344.0,
-            "totalEpa": 0.47,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ],
         "BUF": [
@@ -18843,14 +18843,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 150,
-            "pointsAgainst": 119,
-            "pointDifferential": 31
+            "gamesPlayed": 7,
+            "winPct": 0.714,
+            "pointsFor": 180,
+            "pointsAgainst": 143,
+            "pointDifferential": 37
           },
           "previous": {
             "season": 2025,
@@ -18965,6 +18965,25 @@
         ],
         "CHI": [
           {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "NE",
+            "homeAway": "Home",
+            "teamScore": 30,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 308.0,
+            "rushingYards": 116.0,
+            "totalYards": 424.0,
+            "totalEpa": 11.34,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_06_CHI_ATL",
             "date": "2026-10-18",
             "season": 2026,
@@ -19039,25 +19058,6 @@
             "totalEpa": 1.87,
             "turnovers": 0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_MIN_CHI",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "MIN",
-            "homeAway": "Home",
-            "teamScore": 3,
-            "opponentScore": 9,
-            "result": "L",
-            "passingYards": 192.0,
-            "rushingYards": 134.0,
-            "totalYards": 326.0,
-            "totalEpa": -8.85,
-            "turnovers": 2.0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -22103,14 +22103,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 150,
-            "pointsAgainst": 119,
-            "pointDifferential": 31
+            "gamesPlayed": 7,
+            "winPct": 0.714,
+            "pointsFor": 180,
+            "pointsAgainst": 143,
+            "pointDifferential": 37
           },
           "previous": {
             "season": 2025,
@@ -22151,6 +22151,25 @@
       },
       "recentForm": {
         "CHI": [
+          {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "NE",
+            "homeAway": "Home",
+            "teamScore": 30,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 308.0,
+            "rushingYards": 116.0,
+            "totalYards": 424.0,
+            "totalEpa": 11.34,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_06_CHI_ATL",
             "date": "2026-10-18",
@@ -22226,25 +22245,6 @@
             "totalEpa": 1.87,
             "turnovers": 0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_MIN_CHI",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "MIN",
-            "homeAway": "Home",
-            "teamScore": 3,
-            "opponentScore": 9,
-            "result": "L",
-            "passingYards": 192.0,
-            "rushingYards": 134.0,
-            "totalYards": 326.0,
-            "totalEpa": -8.85,
-            "turnovers": 2.0,
-            "defensiveSacks": 3.0
           }
         ],
         "GB": [
@@ -23878,13 +23878,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 136,
-            "pointsAgainst": 113,
-            "pointDifferential": 23
+            "gamesPlayed": 7,
+            "winPct": 0.571,
+            "pointsFor": 160,
+            "pointsAgainst": 143,
+            "pointDifferential": 17
           },
           "previous": {
             "season": 2025,
@@ -23999,6 +23999,25 @@
         ],
         "NE": [
           {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "NE",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 30,
+            "result": "L",
+            "passingYards": 321.0,
+            "rushingYards": 70.0,
+            "totalYards": 391.0,
+            "totalEpa": 7.76,
+            "turnovers": 1.0,
+            "defensiveSacks": 3.0
+          },
+          {
             "id": "2026_06_NYJ_NE",
             "date": "2026-10-18",
             "season": 2026,
@@ -24073,25 +24092,6 @@
             "totalEpa": -15.16,
             "turnovers": 3.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_02_PIT_NE",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "NE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 20,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 208.0,
-            "rushingYards": 136.0,
-            "totalYards": 344.0,
-            "totalEpa": 0.47,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ]
       },
@@ -27945,14 +27945,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 150,
-            "pointsAgainst": 119,
-            "pointDifferential": 31
+            "gamesPlayed": 7,
+            "winPct": 0.714,
+            "pointsFor": 180,
+            "pointsAgainst": 143,
+            "pointDifferential": 37
           },
           "previous": {
             "season": 2025,
@@ -27993,6 +27993,25 @@
       },
       "recentForm": {
         "CHI": [
+          {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "NE",
+            "homeAway": "Home",
+            "teamScore": 30,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 308.0,
+            "rushingYards": 116.0,
+            "totalYards": 424.0,
+            "totalEpa": 11.34,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_06_CHI_ATL",
             "date": "2026-10-18",
@@ -28068,25 +28087,6 @@
             "totalEpa": 1.87,
             "turnovers": 0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_MIN_CHI",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "MIN",
-            "homeAway": "Home",
-            "teamScore": 3,
-            "opponentScore": 9,
-            "result": "L",
-            "passingYards": 192.0,
-            "rushingYards": 134.0,
-            "totalYards": 326.0,
-            "totalEpa": -8.85,
-            "turnovers": 2.0,
-            "defensiveSacks": 3.0
           }
         ],
         "ATL": [
@@ -28658,13 +28658,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 136,
-            "pointsAgainst": 113,
-            "pointDifferential": 23
+            "gamesPlayed": 7,
+            "winPct": 0.571,
+            "pointsFor": 160,
+            "pointsAgainst": 143,
+            "pointDifferential": 17
           },
           "previous": {
             "season": 2025,
@@ -28779,6 +28779,25 @@
         ],
         "NE": [
           {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "NE",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 30,
+            "result": "L",
+            "passingYards": 321.0,
+            "rushingYards": 70.0,
+            "totalYards": 391.0,
+            "totalEpa": 7.76,
+            "turnovers": 1.0,
+            "defensiveSacks": 3.0
+          },
+          {
             "id": "2026_06_NYJ_NE",
             "date": "2026-10-18",
             "season": 2026,
@@ -28853,25 +28872,6 @@
             "totalEpa": -15.16,
             "turnovers": 3.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_02_PIT_NE",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "NE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 20,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 208.0,
-            "rushingYards": 136.0,
-            "totalYards": 344.0,
-            "totalEpa": 0.47,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ]
       },
@@ -31326,17 +31326,17 @@
         "gameType": "REG",
         "awayTeam": "New England Patriots",
         "awayAbbreviation": "NE",
-        "awayScore": null,
+        "awayScore": 24,
         "homeTeam": "Chicago Bears",
         "homeAbbreviation": "CHI",
-        "homeScore": null,
-        "winner": null,
-        "winnerAbbreviation": null,
+        "homeScore": 30,
+        "winner": "Chicago Bears",
+        "winnerAbbreviation": "CHI",
         "time": "20:15",
-        "status": "upcoming",
+        "status": "final",
         "stadium": "Soldier Field",
         "roof": "outdoors",
-        "surface": "grass",
+        "surface": "",
         "lastMeeting": {
           "id": "2024_10_NE_CHI",
           "date": "2024-11-10",
@@ -31362,13 +31362,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 136,
-            "pointsAgainst": 113,
-            "pointDifferential": 23
+            "gamesPlayed": 7,
+            "winPct": 0.571,
+            "pointsFor": 160,
+            "pointsAgainst": 143,
+            "pointDifferential": 17
           },
           "previous": {
             "season": 2025,
@@ -31385,14 +31385,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 150,
-            "pointsAgainst": 119,
-            "pointDifferential": 31
+            "gamesPlayed": 7,
+            "winPct": 0.714,
+            "pointsFor": 180,
+            "pointsAgainst": 143,
+            "pointDifferential": 37
           },
           "previous": {
             "season": 2025,
@@ -31409,6 +31409,25 @@
       },
       "recentForm": {
         "NE": [
+          {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "NE",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 30,
+            "result": "L",
+            "passingYards": 321.0,
+            "rushingYards": 70.0,
+            "totalYards": 391.0,
+            "totalEpa": 7.76,
+            "turnovers": 1.0,
+            "defensiveSacks": 3.0
+          },
           {
             "id": "2026_06_NYJ_NE",
             "date": "2026-10-18",
@@ -31484,28 +31503,28 @@
             "totalEpa": -15.16,
             "turnovers": 3.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_02_PIT_NE",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "NE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 20,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 208.0,
-            "rushingYards": 136.0,
-            "totalYards": 344.0,
-            "totalEpa": 0.47,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ],
         "CHI": [
+          {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "NE",
+            "homeAway": "Home",
+            "teamScore": 30,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 308.0,
+            "rushingYards": 116.0,
+            "totalYards": 424.0,
+            "totalEpa": 11.34,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_06_CHI_ATL",
             "date": "2026-10-18",
@@ -31581,29 +31600,22 @@
             "totalEpa": 1.87,
             "turnovers": 0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_MIN_CHI",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "MIN",
-            "homeAway": "Home",
-            "teamScore": 3,
-            "opponentScore": 9,
-            "result": "L",
-            "passingYards": 192.0,
-            "rushingYards": 134.0,
-            "totalYards": 326.0,
-            "totalEpa": -8.85,
-            "turnovers": 2.0,
-            "defensiveSacks": 3.0
           }
         ]
       },
       "headToHead": [
+        {
+          "id": "2026_07_NE_CHI",
+          "date": "2026-10-22",
+          "season": 2026,
+          "week": 7,
+          "gameType": "REG",
+          "awayAbbreviation": "NE",
+          "awayScore": 24,
+          "homeAbbreviation": "CHI",
+          "homeScore": 30,
+          "winnerAbbreviation": "CHI"
+        },
         {
           "id": "2024_10_NE_CHI",
           "date": "2024-11-10",
@@ -31629,29 +31641,7 @@
           "winnerAbbreviation": "CHI"
         }
       ],
-      "prediction": {
-        "id": "2026_07_NE_CHI",
-        "awayTeam": "New England Patriots",
-        "awayAbbreviation": "NE",
-        "homeTeam": "Chicago Bears",
-        "homeAbbreviation": "CHI",
-        "kickoff": "2026-10-22 20:15",
-        "predictedWinner": "New England Patriots",
-        "homeWinProbability": 35,
-        "awayWinProbability": 65,
-        "classifierHomeProbability": 34,
-        "scoreModelHomeProbability": 36,
-        "projectedHomeScore": 21.9,
-        "projectedAwayScore": 26.8,
-        "projectedMargin": -4.6,
-        "projectedTotal": 50.1,
-        "confidence": "Medium",
-        "factors": [
-          "Quarterback efficiency",
-          "Elo team strength",
-          "Recent scoring margin"
-        ]
-      }
+      "prediction": null
     },
     "2026_07_PIT_NO": {
       "game": {
@@ -31961,15 +31951,15 @@
         "homeAbbreviation": "NO",
         "kickoff": "2026-10-25 09:30",
         "predictedWinner": "Pittsburgh Steelers",
-        "homeWinProbability": 32,
-        "awayWinProbability": 68,
-        "classifierHomeProbability": 30,
+        "homeWinProbability": 33,
+        "awayWinProbability": 67,
+        "classifierHomeProbability": 32,
         "scoreModelHomeProbability": 35,
         "projectedHomeScore": 20.6,
         "projectedAwayScore": 26.6,
         "projectedMargin": -4.9,
         "projectedTotal": 47.6,
-        "confidence": "High",
+        "confidence": "Medium",
         "factors": [
           "Elo team strength",
           "Recent scoring margin",
@@ -32338,7 +32328,7 @@
         "classifierHomeProbability": 52,
         "scoreModelHomeProbability": 59,
         "projectedHomeScore": 25.1,
-        "projectedAwayScore": 21.6,
+        "projectedAwayScore": 21.5,
         "projectedMargin": 2.8,
         "projectedTotal": 47.1,
         "confidence": "Low",
@@ -33417,7 +33407,7 @@
         "awayWinProbability": 48,
         "classifierHomeProbability": 54,
         "scoreModelHomeProbability": 48,
-        "projectedHomeScore": 20.8,
+        "projectedHomeScore": 21.0,
         "projectedAwayScore": 23.0,
         "projectedMargin": -0.7,
         "projectedTotal": 41.7,
@@ -34471,7 +34461,7 @@
         "predictedWinner": "Carolina Panthers",
         "homeWinProbability": 69,
         "awayWinProbability": 31,
-        "classifierHomeProbability": 77,
+        "classifierHomeProbability": 76,
         "scoreModelHomeProbability": 55,
         "projectedHomeScore": 22.1,
         "projectedAwayScore": 21.7,
@@ -34796,11 +34786,11 @@
         "homeWinProbability": 41,
         "awayWinProbability": 59,
         "classifierHomeProbability": 41,
-        "scoreModelHomeProbability": 42,
-        "projectedHomeScore": 23.9,
-        "projectedAwayScore": 23.9,
-        "projectedMargin": -2.5,
-        "projectedTotal": 47.1,
+        "scoreModelHomeProbability": 41,
+        "projectedHomeScore": 23.7,
+        "projectedAwayScore": 23.8,
+        "projectedMargin": -2.7,
+        "projectedTotal": 47.2,
         "confidence": "Medium",
         "factors": [
           "Elo team strength",
@@ -35825,13 +35815,13 @@
         "homeAbbreviation": "SEA",
         "kickoff": "2026-10-25 20:20",
         "predictedWinner": "Kansas City Chiefs",
-        "homeWinProbability": 36,
-        "awayWinProbability": 64,
-        "classifierHomeProbability": 28,
+        "homeWinProbability": 37,
+        "awayWinProbability": 63,
+        "classifierHomeProbability": 29,
         "scoreModelHomeProbability": 52,
         "projectedHomeScore": 20.9,
-        "projectedAwayScore": 22.1,
-        "projectedMargin": 0.6,
+        "projectedAwayScore": 22.0,
+        "projectedMargin": 0.7,
         "projectedTotal": 43.5,
         "confidence": "Medium",
         "factors": [
@@ -36199,7 +36189,7 @@
         "predictedWinner": "Dallas Cowboys",
         "homeWinProbability": 33,
         "awayWinProbability": 67,
-        "classifierHomeProbability": 27,
+        "classifierHomeProbability": 26,
         "scoreModelHomeProbability": 45,
         "projectedHomeScore": 19.7,
         "projectedAwayScore": 22.3,
@@ -39976,13 +39966,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 136,
-            "pointsAgainst": 113,
-            "pointDifferential": 23
+            "gamesPlayed": 7,
+            "winPct": 0.571,
+            "pointsFor": 160,
+            "pointsAgainst": 143,
+            "pointDifferential": 17
           },
           "previous": {
             "season": 2025,
@@ -40023,6 +40013,25 @@
       },
       "recentForm": {
         "NE": [
+          {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "NE",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 30,
+            "result": "L",
+            "passingYards": 321.0,
+            "rushingYards": 70.0,
+            "totalYards": 391.0,
+            "totalEpa": 7.76,
+            "turnovers": 1.0,
+            "defensiveSacks": 3.0
+          },
           {
             "id": "2026_06_NYJ_NE",
             "date": "2026-10-18",
@@ -40098,25 +40107,6 @@
             "totalEpa": -15.16,
             "turnovers": 3.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_02_PIT_NE",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "NE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 20,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 208.0,
-            "rushingYards": 136.0,
-            "totalYards": 344.0,
-            "totalEpa": 0.47,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ],
         "MIA": [
@@ -40675,14 +40665,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 150,
-            "pointsAgainst": 119,
-            "pointDifferential": 31
+            "gamesPlayed": 7,
+            "winPct": 0.714,
+            "pointsFor": 180,
+            "pointsAgainst": 143,
+            "pointDifferential": 37
           },
           "previous": {
             "season": 2025,
@@ -40723,6 +40713,25 @@
       },
       "recentForm": {
         "CHI": [
+          {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "NE",
+            "homeAway": "Home",
+            "teamScore": 30,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 308.0,
+            "rushingYards": 116.0,
+            "totalYards": 424.0,
+            "totalEpa": 11.34,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_06_CHI_ATL",
             "date": "2026-10-18",
@@ -40798,25 +40807,6 @@
             "totalEpa": 1.87,
             "turnovers": 0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_MIN_CHI",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "MIN",
-            "homeAway": "Home",
-            "teamScore": 3,
-            "opponentScore": 9,
-            "result": "L",
-            "passingYards": 192.0,
-            "rushingYards": 134.0,
-            "totalYards": 326.0,
-            "totalEpa": -8.85,
-            "turnovers": 2.0,
-            "defensiveSacks": 3.0
           }
         ],
         "SEA": [
@@ -44854,13 +44844,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 136,
-            "pointsAgainst": 113,
-            "pointDifferential": 23
+            "gamesPlayed": 7,
+            "winPct": 0.571,
+            "pointsFor": 160,
+            "pointsAgainst": 143,
+            "pointDifferential": 17
           },
           "previous": {
             "season": 2025,
@@ -44975,6 +44965,25 @@
         ],
         "NE": [
           {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "NE",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 30,
+            "result": "L",
+            "passingYards": 321.0,
+            "rushingYards": 70.0,
+            "totalYards": 391.0,
+            "totalEpa": 7.76,
+            "turnovers": 1.0,
+            "defensiveSacks": 3.0
+          },
+          {
             "id": "2026_06_NYJ_NE",
             "date": "2026-10-18",
             "season": 2026,
@@ -45049,25 +45058,6 @@
             "totalEpa": -15.16,
             "turnovers": 3.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_02_PIT_NE",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "NE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 20,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 208.0,
-            "rushingYards": 136.0,
-            "totalYards": 344.0,
-            "totalEpa": 0.47,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ]
       },
@@ -45155,14 +45145,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 150,
-            "pointsAgainst": 119,
-            "pointDifferential": 31
+            "gamesPlayed": 7,
+            "winPct": 0.714,
+            "pointsFor": 180,
+            "pointsAgainst": 143,
+            "pointDifferential": 37
           },
           "previous": {
             "season": 2025,
@@ -45277,6 +45267,25 @@
         ],
         "CHI": [
           {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "NE",
+            "homeAway": "Home",
+            "teamScore": 30,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 308.0,
+            "rushingYards": 116.0,
+            "totalYards": 424.0,
+            "totalEpa": 11.34,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_06_CHI_ATL",
             "date": "2026-10-18",
             "season": 2026,
@@ -45351,25 +45360,6 @@
             "totalEpa": 1.87,
             "turnovers": 0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_MIN_CHI",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "MIN",
-            "homeAway": "Home",
-            "teamScore": 3,
-            "opponentScore": 9,
-            "result": "L",
-            "passingYards": 192.0,
-            "rushingYards": 134.0,
-            "totalYards": 326.0,
-            "totalEpa": -8.85,
-            "turnovers": 2.0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -46110,13 +46100,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 136,
-            "pointsAgainst": 113,
-            "pointDifferential": 23
+            "gamesPlayed": 7,
+            "winPct": 0.571,
+            "pointsFor": 160,
+            "pointsAgainst": 143,
+            "pointDifferential": 17
           },
           "previous": {
             "season": 2025,
@@ -46157,6 +46147,25 @@
       },
       "recentForm": {
         "NE": [
+          {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "NE",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 30,
+            "result": "L",
+            "passingYards": 321.0,
+            "rushingYards": 70.0,
+            "totalYards": 391.0,
+            "totalEpa": 7.76,
+            "turnovers": 1.0,
+            "defensiveSacks": 3.0
+          },
           {
             "id": "2026_06_NYJ_NE",
             "date": "2026-10-18",
@@ -46232,25 +46241,6 @@
             "totalEpa": -15.16,
             "turnovers": 3.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_02_PIT_NE",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "NE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 20,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 208.0,
-            "rushingYards": 136.0,
-            "totalYards": 344.0,
-            "totalEpa": 0.47,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ],
         "DET": [
@@ -52085,14 +52075,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 150,
-            "pointsAgainst": 119,
-            "pointDifferential": 31
+            "gamesPlayed": 7,
+            "winPct": 0.714,
+            "pointsFor": 180,
+            "pointsAgainst": 143,
+            "pointDifferential": 37
           },
           "previous": {
             "season": 2025,
@@ -52207,6 +52197,25 @@
         ],
         "CHI": [
           {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "NE",
+            "homeAway": "Home",
+            "teamScore": 30,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 308.0,
+            "rushingYards": 116.0,
+            "totalYards": 424.0,
+            "totalEpa": 11.34,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_06_CHI_ATL",
             "date": "2026-10-18",
             "season": 2026,
@@ -52281,25 +52290,6 @@
             "totalEpa": 1.87,
             "turnovers": 0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_MIN_CHI",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "MIN",
-            "homeAway": "Home",
-            "teamScore": 3,
-            "opponentScore": 9,
-            "result": "L",
-            "passingYards": 192.0,
-            "rushingYards": 134.0,
-            "totalYards": 326.0,
-            "totalEpa": -8.85,
-            "turnovers": 2.0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -55019,14 +55009,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 150,
-            "pointsAgainst": 119,
-            "pointDifferential": 31
+            "gamesPlayed": 7,
+            "winPct": 0.714,
+            "pointsFor": 180,
+            "pointsAgainst": 143,
+            "pointDifferential": 37
           },
           "previous": {
             "season": 2025,
@@ -55067,6 +55057,25 @@
       },
       "recentForm": {
         "CHI": [
+          {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "NE",
+            "homeAway": "Home",
+            "teamScore": 30,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 308.0,
+            "rushingYards": 116.0,
+            "totalYards": 424.0,
+            "totalEpa": 11.34,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_06_CHI_ATL",
             "date": "2026-10-18",
@@ -55142,25 +55151,6 @@
             "totalEpa": 1.87,
             "turnovers": 0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_MIN_CHI",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "MIN",
-            "homeAway": "Home",
-            "teamScore": 3,
-            "opponentScore": 9,
-            "result": "L",
-            "passingYards": 192.0,
-            "rushingYards": 134.0,
-            "totalYards": 326.0,
-            "totalEpa": -8.85,
-            "turnovers": 2.0,
-            "defensiveSacks": 3.0
           }
         ],
         "DET": [
@@ -59426,13 +59416,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 136,
-            "pointsAgainst": 113,
-            "pointDifferential": 23
+            "gamesPlayed": 7,
+            "winPct": 0.571,
+            "pointsFor": 160,
+            "pointsAgainst": 143,
+            "pointDifferential": 17
           },
           "previous": {
             "season": 2025,
@@ -59473,6 +59463,25 @@
       },
       "recentForm": {
         "NE": [
+          {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "NE",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 30,
+            "result": "L",
+            "passingYards": 321.0,
+            "rushingYards": 70.0,
+            "totalYards": 391.0,
+            "totalEpa": 7.76,
+            "turnovers": 1.0,
+            "defensiveSacks": 3.0
+          },
           {
             "id": "2026_06_NYJ_NE",
             "date": "2026-10-18",
@@ -59548,25 +59557,6 @@
             "totalEpa": -15.16,
             "turnovers": 3.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_02_PIT_NE",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "NE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 20,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 208.0,
-            "rushingYards": 136.0,
-            "totalYards": 344.0,
-            "totalEpa": 0.47,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ],
         "LAC": [
@@ -61453,14 +61443,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 150,
-            "pointsAgainst": 119,
-            "pointDifferential": 31
+            "gamesPlayed": 7,
+            "winPct": 0.714,
+            "pointsFor": 180,
+            "pointsAgainst": 143,
+            "pointDifferential": 37
           },
           "previous": {
             "season": 2025,
@@ -61575,6 +61565,25 @@
         ],
         "CHI": [
           {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "NE",
+            "homeAway": "Home",
+            "teamScore": 30,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 308.0,
+            "rushingYards": 116.0,
+            "totalYards": 424.0,
+            "totalEpa": 11.34,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_06_CHI_ATL",
             "date": "2026-10-18",
             "season": 2026,
@@ -61649,25 +61658,6 @@
             "totalEpa": 1.87,
             "turnovers": 0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_MIN_CHI",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "MIN",
-            "homeAway": "Home",
-            "teamScore": 3,
-            "opponentScore": 9,
-            "result": "L",
-            "passingYards": 192.0,
-            "rushingYards": 134.0,
-            "totalYards": 326.0,
-            "totalEpa": -8.85,
-            "turnovers": 2.0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -63362,13 +63352,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 136,
-            "pointsAgainst": 113,
-            "pointDifferential": 23
+            "gamesPlayed": 7,
+            "winPct": 0.571,
+            "pointsFor": 160,
+            "pointsAgainst": 143,
+            "pointDifferential": 17
           },
           "previous": {
             "season": 2025,
@@ -63483,6 +63473,25 @@
         ],
         "NE": [
           {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "NE",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 30,
+            "result": "L",
+            "passingYards": 321.0,
+            "rushingYards": 70.0,
+            "totalYards": 391.0,
+            "totalEpa": 7.76,
+            "turnovers": 1.0,
+            "defensiveSacks": 3.0
+          },
+          {
             "id": "2026_06_NYJ_NE",
             "date": "2026-10-18",
             "season": 2026,
@@ -63557,25 +63566,6 @@
             "totalEpa": -15.16,
             "turnovers": 3.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_02_PIT_NE",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "NE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 20,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 208.0,
-            "rushingYards": 136.0,
-            "totalYards": 344.0,
-            "totalEpa": 0.47,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ]
       },
@@ -64666,13 +64656,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 136,
-            "pointsAgainst": 113,
-            "pointDifferential": 23
+            "gamesPlayed": 7,
+            "winPct": 0.571,
+            "pointsFor": 160,
+            "pointsAgainst": 143,
+            "pointDifferential": 17
           },
           "previous": {
             "season": 2025,
@@ -64787,6 +64777,25 @@
         ],
         "NE": [
           {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "NE",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 30,
+            "result": "L",
+            "passingYards": 321.0,
+            "rushingYards": 70.0,
+            "totalYards": 391.0,
+            "totalEpa": 7.76,
+            "turnovers": 1.0,
+            "defensiveSacks": 3.0
+          },
+          {
             "id": "2026_06_NYJ_NE",
             "date": "2026-10-18",
             "season": 2026,
@@ -64861,25 +64870,6 @@
             "totalEpa": -15.16,
             "turnovers": 3.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_02_PIT_NE",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "NE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 20,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 208.0,
-            "rushingYards": 136.0,
-            "totalYards": 344.0,
-            "totalEpa": 0.47,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ]
       },
@@ -65245,14 +65235,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 150,
-            "pointsAgainst": 119,
-            "pointDifferential": 31
+            "gamesPlayed": 7,
+            "winPct": 0.714,
+            "pointsFor": 180,
+            "pointsAgainst": 143,
+            "pointDifferential": 37
           },
           "previous": {
             "season": 2025,
@@ -65293,6 +65283,25 @@
       },
       "recentForm": {
         "CHI": [
+          {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "NE",
+            "homeAway": "Home",
+            "teamScore": 30,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 308.0,
+            "rushingYards": 116.0,
+            "totalYards": 424.0,
+            "totalEpa": 11.34,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_06_CHI_ATL",
             "date": "2026-10-18",
@@ -65368,25 +65377,6 @@
             "totalEpa": 1.87,
             "turnovers": 0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_MIN_CHI",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "MIN",
-            "homeAway": "Home",
-            "teamScore": 3,
-            "opponentScore": 9,
-            "result": "L",
-            "passingYards": 192.0,
-            "rushingYards": 134.0,
-            "totalYards": 326.0,
-            "totalEpa": -8.85,
-            "turnovers": 2.0,
-            "defensiveSacks": 3.0
           }
         ],
         "MIA": [
@@ -70099,14 +70089,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 150,
-            "pointsAgainst": 119,
-            "pointDifferential": 31
+            "gamesPlayed": 7,
+            "winPct": 0.714,
+            "pointsFor": 180,
+            "pointsAgainst": 143,
+            "pointDifferential": 37
           },
           "previous": {
             "season": 2025,
@@ -70147,6 +70137,25 @@
       },
       "recentForm": {
         "CHI": [
+          {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "NE",
+            "homeAway": "Home",
+            "teamScore": 30,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 308.0,
+            "rushingYards": 116.0,
+            "totalYards": 424.0,
+            "totalEpa": 11.34,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_06_CHI_ATL",
             "date": "2026-10-18",
@@ -70222,25 +70231,6 @@
             "totalEpa": 1.87,
             "turnovers": 0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_MIN_CHI",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "MIN",
-            "homeAway": "Home",
-            "teamScore": 3,
-            "opponentScore": 9,
-            "result": "L",
-            "passingYards": 192.0,
-            "rushingYards": 134.0,
-            "totalYards": 326.0,
-            "totalEpa": -8.85,
-            "turnovers": 2.0,
-            "defensiveSacks": 3.0
           }
         ],
         "BUF": [
@@ -74446,13 +74436,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 136,
-            "pointsAgainst": 113,
-            "pointDifferential": 23
+            "gamesPlayed": 7,
+            "winPct": 0.571,
+            "pointsFor": 160,
+            "pointsAgainst": 143,
+            "pointDifferential": 17
           },
           "previous": {
             "season": 2025,
@@ -74493,6 +74483,25 @@
       },
       "recentForm": {
         "NE": [
+          {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "NE",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 30,
+            "result": "L",
+            "passingYards": 321.0,
+            "rushingYards": 70.0,
+            "totalYards": 391.0,
+            "totalEpa": 7.76,
+            "turnovers": 1.0,
+            "defensiveSacks": 3.0
+          },
           {
             "id": "2026_06_NYJ_NE",
             "date": "2026-10-18",
@@ -74568,25 +74577,6 @@
             "totalEpa": -15.16,
             "turnovers": 3.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_02_PIT_NE",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "NE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 20,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 208.0,
-            "rushingYards": 136.0,
-            "totalYards": 344.0,
-            "totalEpa": 0.47,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ],
         "KC": [
@@ -75097,14 +75087,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 150,
-            "pointsAgainst": 119,
-            "pointDifferential": 31
+            "gamesPlayed": 7,
+            "winPct": 0.714,
+            "pointsFor": 180,
+            "pointsAgainst": 143,
+            "pointDifferential": 37
           },
           "previous": {
             "season": 2025,
@@ -75219,6 +75209,25 @@
         ],
         "CHI": [
           {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "NE",
+            "homeAway": "Home",
+            "teamScore": 30,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 308.0,
+            "rushingYards": 116.0,
+            "totalYards": 424.0,
+            "totalEpa": 11.34,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_06_CHI_ATL",
             "date": "2026-10-18",
             "season": 2026,
@@ -75293,25 +75302,6 @@
             "totalEpa": 1.87,
             "turnovers": 0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_MIN_CHI",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "MIN",
-            "homeAway": "Home",
-            "teamScore": 3,
-            "opponentScore": 9,
-            "result": "L",
-            "passingYards": 192.0,
-            "rushingYards": 134.0,
-            "totalYards": 326.0,
-            "totalEpa": -8.85,
-            "turnovers": 2.0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -77742,13 +77732,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 136,
-            "pointsAgainst": 113,
-            "pointDifferential": 23
+            "gamesPlayed": 7,
+            "winPct": 0.571,
+            "pointsFor": 160,
+            "pointsAgainst": 143,
+            "pointDifferential": 17
           },
           "previous": {
             "season": 2025,
@@ -77789,6 +77779,25 @@
       },
       "recentForm": {
         "NE": [
+          {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "NE",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 30,
+            "result": "L",
+            "passingYards": 321.0,
+            "rushingYards": 70.0,
+            "totalYards": 391.0,
+            "totalEpa": 7.76,
+            "turnovers": 1.0,
+            "defensiveSacks": 3.0
+          },
           {
             "id": "2026_06_NYJ_NE",
             "date": "2026-10-18",
@@ -77864,25 +77873,6 @@
             "totalEpa": -15.16,
             "turnovers": 3.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_02_PIT_NE",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "NE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 20,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 208.0,
-            "rushingYards": 136.0,
-            "totalYards": 344.0,
-            "totalEpa": 0.47,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ],
         "NYJ": [
@@ -80748,13 +80738,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 136,
-            "pointsAgainst": 113,
-            "pointDifferential": 23
+            "gamesPlayed": 7,
+            "winPct": 0.571,
+            "pointsFor": 160,
+            "pointsAgainst": 143,
+            "pointDifferential": 17
           },
           "previous": {
             "season": 2025,
@@ -80869,6 +80859,25 @@
         ],
         "NE": [
           {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "NE",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 30,
+            "result": "L",
+            "passingYards": 321.0,
+            "rushingYards": 70.0,
+            "totalYards": 391.0,
+            "totalEpa": 7.76,
+            "turnovers": 1.0,
+            "defensiveSacks": 3.0
+          },
+          {
             "id": "2026_06_NYJ_NE",
             "date": "2026-10-18",
             "season": 2026,
@@ -80943,25 +80952,6 @@
             "totalEpa": -15.16,
             "turnovers": 3.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_02_PIT_NE",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "NE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 20,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 208.0,
-            "rushingYards": 136.0,
-            "totalYards": 344.0,
-            "totalEpa": 0.47,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ]
       },
@@ -84357,14 +84347,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 150,
-            "pointsAgainst": 119,
-            "pointDifferential": 31
+            "gamesPlayed": 7,
+            "winPct": 0.714,
+            "pointsFor": 180,
+            "pointsAgainst": 143,
+            "pointDifferential": 37
           },
           "previous": {
             "season": 2025,
@@ -84479,6 +84469,25 @@
         ],
         "CHI": [
           {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "NE",
+            "homeAway": "Home",
+            "teamScore": 30,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 308.0,
+            "rushingYards": 116.0,
+            "totalYards": 424.0,
+            "totalEpa": 11.34,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_06_CHI_ATL",
             "date": "2026-10-18",
             "season": 2026,
@@ -84553,25 +84562,6 @@
             "totalEpa": 1.87,
             "turnovers": 0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_MIN_CHI",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "MIN",
-            "homeAway": "Home",
-            "teamScore": 3,
-            "opponentScore": 9,
-            "result": "L",
-            "passingYards": 192.0,
-            "rushingYards": 134.0,
-            "totalYards": 326.0,
-            "totalEpa": -8.85,
-            "turnovers": 2.0,
-            "defensiveSacks": 3.0
           }
         ]
       },
@@ -85673,14 +85663,14 @@
         "CHI": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 150,
-            "pointsAgainst": 119,
-            "pointDifferential": 31
+            "gamesPlayed": 7,
+            "winPct": 0.714,
+            "pointsFor": 180,
+            "pointsAgainst": 143,
+            "pointDifferential": 37
           },
           "previous": {
             "season": 2025,
@@ -85721,6 +85711,25 @@
       },
       "recentForm": {
         "CHI": [
+          {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "CHI",
+            "opponentAbbreviation": "NE",
+            "homeAway": "Home",
+            "teamScore": 30,
+            "opponentScore": 24,
+            "result": "W",
+            "passingYards": 308.0,
+            "rushingYards": 116.0,
+            "totalYards": 424.0,
+            "totalEpa": 11.34,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_06_CHI_ATL",
             "date": "2026-10-18",
@@ -85796,25 +85805,6 @@
             "totalEpa": 1.87,
             "turnovers": 0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_MIN_CHI",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CHI",
-            "opponentAbbreviation": "MIN",
-            "homeAway": "Home",
-            "teamScore": 3,
-            "opponentScore": 9,
-            "result": "L",
-            "passingYards": 192.0,
-            "rushingYards": 134.0,
-            "totalYards": 326.0,
-            "totalEpa": -8.85,
-            "turnovers": 2.0,
-            "defensiveSacks": 3.0
           }
         ],
         "MIN": [
@@ -88148,13 +88138,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 2,
+            "losses": 3,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.667,
-            "pointsFor": 136,
-            "pointsAgainst": 113,
-            "pointDifferential": 23
+            "gamesPlayed": 7,
+            "winPct": 0.571,
+            "pointsFor": 160,
+            "pointsAgainst": 143,
+            "pointDifferential": 17
           },
           "previous": {
             "season": 2025,
@@ -88269,6 +88259,25 @@
         ],
         "NE": [
           {
+            "id": "2026_07_NE_CHI",
+            "date": "2026-10-22",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "NE",
+            "opponentAbbreviation": "CHI",
+            "homeAway": "Away",
+            "teamScore": 24,
+            "opponentScore": 30,
+            "result": "L",
+            "passingYards": 321.0,
+            "rushingYards": 70.0,
+            "totalYards": 391.0,
+            "totalEpa": 7.76,
+            "turnovers": 1.0,
+            "defensiveSacks": 3.0
+          },
+          {
             "id": "2026_06_NYJ_NE",
             "date": "2026-10-18",
             "season": 2026,
@@ -88343,25 +88352,6 @@
             "totalEpa": -15.16,
             "turnovers": 3.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_02_PIT_NE",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "NE",
-            "opponentAbbreviation": "PIT",
-            "homeAway": "Home",
-            "teamScore": 20,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 208.0,
-            "rushingYards": 136.0,
-            "totalYards": 344.0,
-            "totalEpa": 0.47,
-            "turnovers": 2.0,
-            "defensiveSacks": 4.0
           }
         ]
       },
