@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "asOf": "2026-10-26T16:50:29.662537+00:00",
+  "asOf": "2026-10-27T15:55:26.197147+00:00",
   "provider": "nflverse",
   "games": {
     "2026_01_NE_SEA": {
@@ -4418,13 +4418,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 106,
-            "pointsAgainst": 137,
-            "pointDifferential": -31
+            "gamesPlayed": 7,
+            "winPct": 0.286,
+            "pointsFor": 127,
+            "pointsAgainst": 175,
+            "pointDifferential": -48
           },
           "previous": {
             "season": 2025,
@@ -4539,6 +4539,25 @@
         ],
         "PHI": [
           {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Home",
+            "teamScore": 21,
+            "opponentScore": 38,
+            "result": "L",
+            "passingYards": 211.0,
+            "rushingYards": 121.0,
+            "totalYards": 332.0,
+            "totalEpa": -0.81,
+            "turnovers": 1.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_06_CAR_PHI",
             "date": "2026-10-18",
             "season": 2026,
@@ -4613,25 +4632,6 @@
             "totalEpa": -10.69,
             "turnovers": 3.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_PHI_TEN",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 24,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 264.0,
-            "rushingYards": 89.0,
-            "totalYards": 353.0,
-            "totalEpa": 2.81,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -4743,14 +4743,14 @@
         "DAL": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 151,
-            "pointsAgainst": 159,
-            "pointDifferential": -8
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 189,
+            "pointsAgainst": 180,
+            "pointDifferential": 9
           },
           "previous": {
             "season": 2025,
@@ -4791,6 +4791,25 @@
       },
       "recentForm": {
         "DAL": [
+          {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Away",
+            "teamScore": 38,
+            "opponentScore": 21,
+            "result": "W",
+            "passingYards": 212.0,
+            "rushingYards": 204.0,
+            "totalYards": 416.0,
+            "totalEpa": 20.97,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_06_DAL_GB",
             "date": "2026-10-18",
@@ -4865,25 +4884,6 @@
             "totalYards": 424.0,
             "totalEpa": 12.38,
             "turnovers": 1.0,
-            "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_WAS_DAL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Home",
-            "teamScore": 37,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 279.0,
-            "rushingYards": 66.0,
-            "totalYards": 345.0,
-            "totalEpa": 12.24,
-            "turnovers": 0,
             "defensiveSacks": 0.0
           }
         ],
@@ -7738,13 +7738,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 106,
-            "pointsAgainst": 137,
-            "pointDifferential": -31
+            "gamesPlayed": 7,
+            "winPct": 0.286,
+            "pointsFor": 127,
+            "pointsAgainst": 175,
+            "pointDifferential": -48
           },
           "previous": {
             "season": 2025,
@@ -7785,6 +7785,25 @@
       },
       "recentForm": {
         "PHI": [
+          {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Home",
+            "teamScore": 21,
+            "opponentScore": 38,
+            "result": "L",
+            "passingYards": 211.0,
+            "rushingYards": 121.0,
+            "totalYards": 332.0,
+            "totalEpa": -0.81,
+            "turnovers": 1.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_06_CAR_PHI",
             "date": "2026-10-18",
@@ -7860,25 +7879,6 @@
             "totalEpa": -10.69,
             "turnovers": 3.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_PHI_TEN",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 24,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 264.0,
-            "rushingYards": 89.0,
-            "totalYards": 353.0,
-            "totalEpa": 2.81,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ],
         "TEN": [
@@ -9813,14 +9813,14 @@
         "DAL": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 151,
-            "pointsAgainst": 159,
-            "pointDifferential": -8
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 189,
+            "pointsAgainst": 180,
+            "pointDifferential": 9
           },
           "previous": {
             "season": 2025,
@@ -9935,6 +9935,25 @@
         ],
         "DAL": [
           {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Away",
+            "teamScore": 38,
+            "opponentScore": 21,
+            "result": "W",
+            "passingYards": 212.0,
+            "rushingYards": 204.0,
+            "totalYards": 416.0,
+            "totalEpa": 20.97,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_06_DAL_GB",
             "date": "2026-10-18",
             "season": 2026,
@@ -10008,25 +10027,6 @@
             "totalYards": 424.0,
             "totalEpa": 12.38,
             "turnovers": 1.0,
-            "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_WAS_DAL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Home",
-            "teamScore": 37,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 279.0,
-            "rushingYards": 66.0,
-            "totalYards": 345.0,
-            "totalEpa": 12.24,
-            "turnovers": 0,
             "defensiveSacks": 0.0
           }
         ]
@@ -14811,14 +14811,14 @@
         "DAL": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 151,
-            "pointsAgainst": 159,
-            "pointDifferential": -8
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 189,
+            "pointsAgainst": 180,
+            "pointDifferential": 9
           },
           "previous": {
             "season": 2025,
@@ -14933,6 +14933,25 @@
         ],
         "DAL": [
           {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Away",
+            "teamScore": 38,
+            "opponentScore": 21,
+            "result": "W",
+            "passingYards": 212.0,
+            "rushingYards": 204.0,
+            "totalYards": 416.0,
+            "totalEpa": 20.97,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_06_DAL_GB",
             "date": "2026-10-18",
             "season": 2026,
@@ -15006,25 +15025,6 @@
             "totalYards": 424.0,
             "totalEpa": 12.38,
             "turnovers": 1.0,
-            "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_WAS_DAL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Home",
-            "teamScore": 37,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 279.0,
-            "rushingYards": 66.0,
-            "totalYards": 345.0,
-            "totalEpa": 12.24,
-            "turnovers": 0,
             "defensiveSacks": 0.0
           }
         ]
@@ -15766,13 +15766,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 106,
-            "pointsAgainst": 137,
-            "pointDifferential": -31
+            "gamesPlayed": 7,
+            "winPct": 0.286,
+            "pointsFor": 127,
+            "pointsAgainst": 175,
+            "pointDifferential": -48
           },
           "previous": {
             "season": 2025,
@@ -15813,6 +15813,25 @@
       },
       "recentForm": {
         "PHI": [
+          {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Home",
+            "teamScore": 21,
+            "opponentScore": 38,
+            "result": "L",
+            "passingYards": 211.0,
+            "rushingYards": 121.0,
+            "totalYards": 332.0,
+            "totalEpa": -0.81,
+            "turnovers": 1.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_06_CAR_PHI",
             "date": "2026-10-18",
@@ -15888,25 +15907,6 @@
             "totalEpa": -10.69,
             "turnovers": 3.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_PHI_TEN",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 24,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 264.0,
-            "rushingYards": 89.0,
-            "totalYards": 353.0,
-            "totalEpa": 2.81,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ],
         "CHI": [
@@ -17105,14 +17105,14 @@
         "DAL": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 151,
-            "pointsAgainst": 159,
-            "pointDifferential": -8
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 189,
+            "pointsAgainst": 180,
+            "pointDifferential": 9
           },
           "previous": {
             "season": 2025,
@@ -17153,6 +17153,25 @@
       },
       "recentForm": {
         "DAL": [
+          {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Away",
+            "teamScore": 38,
+            "opponentScore": 21,
+            "result": "W",
+            "passingYards": 212.0,
+            "rushingYards": 204.0,
+            "totalYards": 416.0,
+            "totalEpa": 20.97,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_06_DAL_GB",
             "date": "2026-10-18",
@@ -17227,25 +17246,6 @@
             "totalYards": 424.0,
             "totalEpa": 12.38,
             "turnovers": 1.0,
-            "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_WAS_DAL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Home",
-            "teamScore": 37,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 279.0,
-            "rushingYards": 66.0,
-            "totalYards": 345.0,
-            "totalEpa": 12.24,
-            "turnovers": 0,
             "defensiveSacks": 0.0
           }
         ],
@@ -18144,13 +18144,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 106,
-            "pointsAgainst": 137,
-            "pointDifferential": -31
+            "gamesPlayed": 7,
+            "winPct": 0.286,
+            "pointsFor": 127,
+            "pointsAgainst": 175,
+            "pointDifferential": -48
           },
           "previous": {
             "season": 2025,
@@ -18265,6 +18265,25 @@
         ],
         "PHI": [
           {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Home",
+            "teamScore": 21,
+            "opponentScore": 38,
+            "result": "L",
+            "passingYards": 211.0,
+            "rushingYards": 121.0,
+            "totalYards": 332.0,
+            "totalEpa": -0.81,
+            "turnovers": 1.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_06_CAR_PHI",
             "date": "2026-10-18",
             "season": 2026,
@@ -18339,25 +18358,6 @@
             "totalEpa": -10.69,
             "turnovers": 3.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_PHI_TEN",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 24,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 264.0,
-            "rushingYards": 89.0,
-            "totalYards": 353.0,
-            "totalEpa": 2.81,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -21463,14 +21463,14 @@
         "DAL": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 151,
-            "pointsAgainst": 159,
-            "pointDifferential": -8
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 189,
+            "pointsAgainst": 180,
+            "pointDifferential": 9
           },
           "previous": {
             "season": 2025,
@@ -21585,6 +21585,25 @@
         ],
         "DAL": [
           {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Away",
+            "teamScore": 38,
+            "opponentScore": 21,
+            "result": "W",
+            "passingYards": 212.0,
+            "rushingYards": 204.0,
+            "totalYards": 416.0,
+            "totalEpa": 20.97,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_06_DAL_GB",
             "date": "2026-10-18",
             "season": 2026,
@@ -21658,25 +21677,6 @@
             "totalYards": 424.0,
             "totalEpa": 12.38,
             "turnovers": 1.0,
-            "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_WAS_DAL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Home",
-            "teamScore": 37,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 279.0,
-            "rushingYards": 66.0,
-            "totalYards": 345.0,
-            "totalEpa": 12.24,
-            "turnovers": 0,
             "defensiveSacks": 0.0
           }
         ]
@@ -21778,13 +21778,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 106,
-            "pointsAgainst": 137,
-            "pointDifferential": -31
+            "gamesPlayed": 7,
+            "winPct": 0.286,
+            "pointsFor": 127,
+            "pointsAgainst": 175,
+            "pointDifferential": -48
           },
           "previous": {
             "season": 2025,
@@ -21825,6 +21825,25 @@
       },
       "recentForm": {
         "PHI": [
+          {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Home",
+            "teamScore": 21,
+            "opponentScore": 38,
+            "result": "L",
+            "passingYards": 211.0,
+            "rushingYards": 121.0,
+            "totalYards": 332.0,
+            "totalEpa": -0.81,
+            "turnovers": 1.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_06_CAR_PHI",
             "date": "2026-10-18",
@@ -21900,25 +21919,6 @@
             "totalEpa": -10.69,
             "turnovers": 3.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_PHI_TEN",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 24,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 264.0,
-            "rushingYards": 89.0,
-            "totalYards": 353.0,
-            "totalEpa": 2.81,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ],
         "JAX": [
@@ -27644,13 +27644,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 106,
-            "pointsAgainst": 137,
-            "pointDifferential": -31
+            "gamesPlayed": 7,
+            "winPct": 0.286,
+            "pointsFor": 127,
+            "pointsAgainst": 175,
+            "pointDifferential": -48
           },
           "previous": {
             "season": 2025,
@@ -27765,6 +27765,25 @@
         ],
         "PHI": [
           {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Home",
+            "teamScore": 21,
+            "opponentScore": 38,
+            "result": "L",
+            "passingYards": 211.0,
+            "rushingYards": 121.0,
+            "totalYards": 332.0,
+            "totalEpa": -0.81,
+            "turnovers": 1.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_06_CAR_PHI",
             "date": "2026-10-18",
             "season": 2026,
@@ -27839,25 +27858,6 @@
             "totalEpa": -10.69,
             "turnovers": 3.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_PHI_TEN",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 24,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 264.0,
-            "rushingYards": 89.0,
-            "totalYards": 353.0,
-            "totalEpa": 2.81,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -30673,14 +30673,14 @@
         "DAL": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 151,
-            "pointsAgainst": 159,
-            "pointDifferential": -8
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 189,
+            "pointsAgainst": 180,
+            "pointDifferential": 9
           },
           "previous": {
             "season": 2025,
@@ -30721,6 +30721,25 @@
       },
       "recentForm": {
         "DAL": [
+          {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Away",
+            "teamScore": 38,
+            "opponentScore": 21,
+            "result": "W",
+            "passingYards": 212.0,
+            "rushingYards": 204.0,
+            "totalYards": 416.0,
+            "totalEpa": 20.97,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_06_DAL_GB",
             "date": "2026-10-18",
@@ -30795,25 +30814,6 @@
             "totalYards": 424.0,
             "totalEpa": 12.38,
             "turnovers": 1.0,
-            "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_WAS_DAL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Home",
-            "teamScore": 37,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 279.0,
-            "rushingYards": 66.0,
-            "totalYards": 345.0,
-            "totalEpa": 12.24,
-            "turnovers": 0,
             "defensiveSacks": 0.0
           }
         ],
@@ -35672,17 +35672,17 @@
         "gameType": "REG",
         "awayTeam": "Dallas Cowboys",
         "awayAbbreviation": "DAL",
-        "awayScore": null,
+        "awayScore": 38,
         "homeTeam": "Philadelphia Eagles",
         "homeAbbreviation": "PHI",
-        "homeScore": null,
-        "winner": null,
-        "winnerAbbreviation": null,
+        "homeScore": 21,
+        "winner": "Dallas Cowboys",
+        "winnerAbbreviation": "DAL",
         "time": "20:15",
-        "status": "upcoming",
+        "status": "final",
         "stadium": "Lincoln Financial Field",
         "roof": "outdoors",
-        "surface": "grass",
+        "surface": "",
         "lastMeeting": {
           "id": "2025_12_PHI_DAL",
           "date": "2025-11-23",
@@ -35707,14 +35707,14 @@
         "DAL": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 151,
-            "pointsAgainst": 159,
-            "pointDifferential": -8
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 189,
+            "pointsAgainst": 180,
+            "pointDifferential": 9
           },
           "previous": {
             "season": 2025,
@@ -35732,13 +35732,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 106,
-            "pointsAgainst": 137,
-            "pointDifferential": -31
+            "gamesPlayed": 7,
+            "winPct": 0.286,
+            "pointsFor": 127,
+            "pointsAgainst": 175,
+            "pointDifferential": -48
           },
           "previous": {
             "season": 2025,
@@ -35755,6 +35755,25 @@
       },
       "recentForm": {
         "DAL": [
+          {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Away",
+            "teamScore": 38,
+            "opponentScore": 21,
+            "result": "W",
+            "passingYards": 212.0,
+            "rushingYards": 204.0,
+            "totalYards": 416.0,
+            "totalEpa": 20.97,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_06_DAL_GB",
             "date": "2026-10-18",
@@ -35830,28 +35849,28 @@
             "totalEpa": 12.38,
             "turnovers": 1.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_WAS_DAL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Home",
-            "teamScore": 37,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 279.0,
-            "rushingYards": 66.0,
-            "totalYards": 345.0,
-            "totalEpa": 12.24,
-            "turnovers": 0,
-            "defensiveSacks": 0.0
           }
         ],
         "PHI": [
+          {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Home",
+            "teamScore": 21,
+            "opponentScore": 38,
+            "result": "L",
+            "passingYards": 211.0,
+            "rushingYards": 121.0,
+            "totalYards": 332.0,
+            "totalEpa": -0.81,
+            "turnovers": 1.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_06_CAR_PHI",
             "date": "2026-10-18",
@@ -35927,29 +35946,22 @@
             "totalEpa": -10.69,
             "turnovers": 3.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_PHI_TEN",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 24,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 264.0,
-            "rushingYards": 89.0,
-            "totalYards": 353.0,
-            "totalEpa": 2.81,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
       "headToHead": [
+        {
+          "id": "2026_07_DAL_PHI",
+          "date": "2026-10-26",
+          "season": 2026,
+          "week": 7,
+          "gameType": "REG",
+          "awayAbbreviation": "DAL",
+          "awayScore": 38,
+          "homeAbbreviation": "PHI",
+          "homeScore": 21,
+          "winnerAbbreviation": "DAL"
+        },
         {
           "id": "2025_12_PHI_DAL",
           "date": "2025-11-23",
@@ -35997,43 +36009,9 @@
           "homeAbbreviation": "DAL",
           "homeScore": 6,
           "winnerAbbreviation": "PHI"
-        },
-        {
-          "id": "2023_14_PHI_DAL",
-          "date": "2023-12-10",
-          "season": 2023,
-          "week": 14,
-          "gameType": "REG",
-          "awayAbbreviation": "PHI",
-          "awayScore": 13,
-          "homeAbbreviation": "DAL",
-          "homeScore": 33,
-          "winnerAbbreviation": "DAL"
         }
       ],
-      "prediction": {
-        "id": "2026_07_DAL_PHI",
-        "awayTeam": "Dallas Cowboys",
-        "awayAbbreviation": "DAL",
-        "homeTeam": "Philadelphia Eagles",
-        "homeAbbreviation": "PHI",
-        "kickoff": "2026-10-26 20:15",
-        "predictedWinner": "Dallas Cowboys",
-        "homeWinProbability": 32,
-        "awayWinProbability": 68,
-        "classifierHomeProbability": 25,
-        "scoreModelHomeProbability": 45,
-        "projectedHomeScore": 19.8,
-        "projectedAwayScore": 22.3,
-        "projectedMargin": -1.5,
-        "projectedTotal": 44.8,
-        "confidence": "Medium",
-        "factors": [
-          "Quarterback efficiency",
-          "EPA per play",
-          "Success rate"
-        ]
-      }
+      "prediction": null
     },
     "2026_08_CAR_GB": {
       "game": {
@@ -36371,7 +36349,29 @@
           "winnerAbbreviation": "GB"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_08_CAR_GB",
+        "awayTeam": "Carolina Panthers",
+        "awayAbbreviation": "CAR",
+        "homeTeam": "Green Bay Packers",
+        "homeAbbreviation": "GB",
+        "kickoff": "2026-10-29 20:15",
+        "predictedWinner": "Green Bay Packers",
+        "homeWinProbability": 59,
+        "awayWinProbability": 41,
+        "classifierHomeProbability": 56,
+        "scoreModelHomeProbability": 63,
+        "projectedHomeScore": 24.5,
+        "projectedAwayScore": 21.2,
+        "projectedMargin": 4.3,
+        "projectedTotal": 44.0,
+        "confidence": "Medium",
+        "factors": [
+          "Elo team strength",
+          "Quarterback efficiency",
+          "EPA per play"
+        ]
+      }
     },
     "2026_08_ARI_DAL": {
       "game": {
@@ -36441,14 +36441,14 @@
         "DAL": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 151,
-            "pointsAgainst": 159,
-            "pointDifferential": -8
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 189,
+            "pointsAgainst": 180,
+            "pointDifferential": 9
           },
           "previous": {
             "season": 2025,
@@ -36563,6 +36563,25 @@
         ],
         "DAL": [
           {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Away",
+            "teamScore": 38,
+            "opponentScore": 21,
+            "result": "W",
+            "passingYards": 212.0,
+            "rushingYards": 204.0,
+            "totalYards": 416.0,
+            "totalEpa": 20.97,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_06_DAL_GB",
             "date": "2026-10-18",
             "season": 2026,
@@ -36637,25 +36656,6 @@
             "totalEpa": 12.38,
             "turnovers": 1.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_WAS_DAL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Home",
-            "teamScore": 37,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 279.0,
-            "rushingYards": 66.0,
-            "totalYards": 345.0,
-            "totalEpa": 12.24,
-            "turnovers": 0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -36709,7 +36709,29 @@
           "winnerAbbreviation": "ARI"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_08_ARI_DAL",
+        "awayTeam": "Arizona Cardinals",
+        "awayAbbreviation": "ARI",
+        "homeTeam": "Dallas Cowboys",
+        "homeAbbreviation": "DAL",
+        "kickoff": "2026-11-01 13:00",
+        "predictedWinner": "Dallas Cowboys",
+        "homeWinProbability": 77,
+        "awayWinProbability": 23,
+        "classifierHomeProbability": 76,
+        "scoreModelHomeProbability": 79,
+        "projectedHomeScore": 29.8,
+        "projectedAwayScore": 20.9,
+        "projectedMargin": 10.1,
+        "projectedTotal": 48.1,
+        "confidence": "High",
+        "factors": [
+          "Recent scoring margin",
+          "Elo team strength",
+          "Quarterback efficiency"
+        ]
+      }
     },
     "2026_08_ATL_TB": {
       "game": {
@@ -37059,7 +37081,29 @@
           "winnerAbbreviation": "TB"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_08_ATL_TB",
+        "awayTeam": "Atlanta Falcons",
+        "awayAbbreviation": "ATL",
+        "homeTeam": "Tampa Bay Buccaneers",
+        "homeAbbreviation": "TB",
+        "kickoff": "2026-11-01 13:00",
+        "predictedWinner": "Atlanta Falcons",
+        "homeWinProbability": 42,
+        "awayWinProbability": 58,
+        "classifierHomeProbability": 40,
+        "scoreModelHomeProbability": 47,
+        "projectedHomeScore": 21.8,
+        "projectedAwayScore": 21.9,
+        "projectedMargin": -1.1,
+        "projectedTotal": 45.2,
+        "confidence": "Medium",
+        "factors": [
+          "Quarterback efficiency",
+          "EPA per play",
+          "Success rate"
+        ]
+      }
     },
     "2026_08_BAL_BUF": {
       "game": {
@@ -37397,7 +37441,29 @@
           "winnerAbbreviation": "BAL"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_08_BAL_BUF",
+        "awayTeam": "Baltimore Ravens",
+        "awayAbbreviation": "BAL",
+        "homeTeam": "Buffalo Bills",
+        "homeAbbreviation": "BUF",
+        "kickoff": "2026-11-01 13:00",
+        "predictedWinner": "Buffalo Bills",
+        "homeWinProbability": 83,
+        "awayWinProbability": 17,
+        "classifierHomeProbability": 86,
+        "scoreModelHomeProbability": 76,
+        "projectedHomeScore": 28.2,
+        "projectedAwayScore": 19.4,
+        "projectedMargin": 8.9,
+        "projectedTotal": 49.4,
+        "confidence": "High",
+        "factors": [
+          "Turnover trend",
+          "Elo team strength",
+          "Recent scoring margin"
+        ]
+      }
     },
     "2026_08_CLE_PIT": {
       "game": {
@@ -37747,7 +37813,29 @@
           "winnerAbbreviation": "CLE"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_08_CLE_PIT",
+        "awayTeam": "Cleveland Browns",
+        "awayAbbreviation": "CLE",
+        "homeTeam": "Pittsburgh Steelers",
+        "homeAbbreviation": "PIT",
+        "kickoff": "2026-11-01 13:00",
+        "predictedWinner": "Pittsburgh Steelers",
+        "homeWinProbability": 69,
+        "awayWinProbability": 31,
+        "classifierHomeProbability": 73,
+        "scoreModelHomeProbability": 62,
+        "projectedHomeScore": 24.8,
+        "projectedAwayScore": 21.6,
+        "projectedMargin": 3.8,
+        "projectedTotal": 45.9,
+        "confidence": "High",
+        "factors": [
+          "Elo team strength",
+          "Turnover trend",
+          "EPA per play"
+        ]
+      }
     },
     "2026_08_IND_JAX": {
       "game": {
@@ -38097,7 +38185,29 @@
           "winnerAbbreviation": "JAX"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_08_IND_JAX",
+        "awayTeam": "Indianapolis Colts",
+        "awayAbbreviation": "IND",
+        "homeTeam": "Jacksonville Jaguars",
+        "homeAbbreviation": "JAX",
+        "kickoff": "2026-11-01 13:00",
+        "predictedWinner": "Jacksonville Jaguars",
+        "homeWinProbability": 80,
+        "awayWinProbability": 20,
+        "classifierHomeProbability": 85,
+        "scoreModelHomeProbability": 71,
+        "projectedHomeScore": 28.2,
+        "projectedAwayScore": 20.4,
+        "projectedMargin": 7.0,
+        "projectedTotal": 48.1,
+        "confidence": "High",
+        "factors": [
+          "Quarterback efficiency",
+          "Turnover trend",
+          "Recent scoring margin"
+        ]
+      }
     },
     "2026_08_LV_NYJ": {
       "game": {
@@ -38411,7 +38521,29 @@
           "winnerAbbreviation": "LV"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_08_LV_NYJ",
+        "awayTeam": "Las Vegas Raiders",
+        "awayAbbreviation": "LV",
+        "homeTeam": "New York Jets",
+        "homeAbbreviation": "NYJ",
+        "kickoff": "2026-11-01 13:00",
+        "predictedWinner": "Las Vegas Raiders",
+        "homeWinProbability": 49,
+        "awayWinProbability": 51,
+        "classifierHomeProbability": 46,
+        "scoreModelHomeProbability": 55,
+        "projectedHomeScore": 23.3,
+        "projectedAwayScore": 21.9,
+        "projectedMargin": 1.6,
+        "projectedTotal": 45.6,
+        "confidence": "Low",
+        "factors": [
+          "Quarterback efficiency",
+          "Recent scoring margin",
+          "Elo team strength"
+        ]
+      }
     },
     "2026_08_MIN_DET": {
       "game": {
@@ -38761,7 +38893,29 @@
           "winnerAbbreviation": "DET"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_08_MIN_DET",
+        "awayTeam": "Minnesota Vikings",
+        "awayAbbreviation": "MIN",
+        "homeTeam": "Detroit Lions",
+        "homeAbbreviation": "DET",
+        "kickoff": "2026-11-01 13:00",
+        "predictedWinner": "Detroit Lions",
+        "homeWinProbability": 54,
+        "awayWinProbability": 46,
+        "classifierHomeProbability": 54,
+        "scoreModelHomeProbability": 55,
+        "projectedHomeScore": 22.2,
+        "projectedAwayScore": 22.4,
+        "projectedMargin": 1.6,
+        "projectedTotal": 47.1,
+        "confidence": "Low",
+        "factors": [
+          "Quarterback efficiency",
+          "EPA per play",
+          "Success rate"
+        ]
+      }
     },
     "2026_08_TEN_CIN": {
       "game": {
@@ -39099,7 +39253,29 @@
           "winnerAbbreviation": "CIN"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_08_TEN_CIN",
+        "awayTeam": "Tennessee Titans",
+        "awayAbbreviation": "TEN",
+        "homeTeam": "Cincinnati Bengals",
+        "homeAbbreviation": "CIN",
+        "kickoff": "2026-11-01 13:00",
+        "predictedWinner": "Cincinnati Bengals",
+        "homeWinProbability": 86,
+        "awayWinProbability": 14,
+        "classifierHomeProbability": 84,
+        "scoreModelHomeProbability": 90,
+        "projectedHomeScore": 30.2,
+        "projectedAwayScore": 16.4,
+        "projectedMargin": 15.9,
+        "projectedTotal": 48.0,
+        "confidence": "High",
+        "factors": [
+          "Elo team strength",
+          "Quarterback efficiency",
+          "Recent scoring margin"
+        ]
+      }
     },
     "2026_08_LAC_LA": {
       "game": {
@@ -39401,7 +39577,29 @@
           "winnerAbbreviation": "LAC"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_08_LAC_LA",
+        "awayTeam": "Los Angeles Chargers",
+        "awayAbbreviation": "LAC",
+        "homeTeam": "Los Angeles Rams",
+        "homeAbbreviation": "LA",
+        "kickoff": "2026-11-01 16:05",
+        "predictedWinner": "Los Angeles Rams",
+        "homeWinProbability": 86,
+        "awayWinProbability": 14,
+        "classifierHomeProbability": 88,
+        "scoreModelHomeProbability": 82,
+        "projectedHomeScore": 30.3,
+        "projectedAwayScore": 20.3,
+        "projectedMargin": 11.5,
+        "projectedTotal": 51.8,
+        "confidence": "High",
+        "factors": [
+          "Recent scoring margin",
+          "Quarterback efficiency",
+          "EPA per play"
+        ]
+      }
     },
     "2026_08_KC_DEN": {
       "game": {
@@ -39751,7 +39949,29 @@
           "winnerAbbreviation": "KC"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_08_KC_DEN",
+        "awayTeam": "Kansas City Chiefs",
+        "awayAbbreviation": "KC",
+        "homeTeam": "Denver Broncos",
+        "homeAbbreviation": "DEN",
+        "kickoff": "2026-11-01 16:25",
+        "predictedWinner": "Kansas City Chiefs",
+        "homeWinProbability": 39,
+        "awayWinProbability": 61,
+        "classifierHomeProbability": 35,
+        "scoreModelHomeProbability": 47,
+        "projectedHomeScore": 22.5,
+        "projectedAwayScore": 23.2,
+        "projectedMargin": -1.0,
+        "projectedTotal": 44.9,
+        "confidence": "Medium",
+        "factors": [
+          "Success rate",
+          "Quarterback efficiency",
+          "EPA per play"
+        ]
+      }
     },
     "2026_08_NE_MIA": {
       "game": {
@@ -40101,7 +40321,29 @@
           "winnerAbbreviation": "MIA"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_08_NE_MIA",
+        "awayTeam": "New England Patriots",
+        "awayAbbreviation": "NE",
+        "homeTeam": "Miami Dolphins",
+        "homeAbbreviation": "MIA",
+        "kickoff": "2026-11-01 16:25",
+        "predictedWinner": "New England Patriots",
+        "homeWinProbability": 32,
+        "awayWinProbability": 68,
+        "classifierHomeProbability": 27,
+        "scoreModelHomeProbability": 41,
+        "projectedHomeScore": 21.7,
+        "projectedAwayScore": 25.2,
+        "projectedMargin": -2.9,
+        "projectedTotal": 46.3,
+        "confidence": "Medium",
+        "factors": [
+          "Recent scoring margin",
+          "Quarterback efficiency",
+          "Elo team strength"
+        ]
+      }
     },
     "2026_08_PHI_WAS": {
       "game": {
@@ -40148,13 +40390,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 106,
-            "pointsAgainst": 137,
-            "pointDifferential": -31
+            "gamesPlayed": 7,
+            "winPct": 0.286,
+            "pointsFor": 127,
+            "pointsAgainst": 175,
+            "pointDifferential": -48
           },
           "previous": {
             "season": 2025,
@@ -40195,6 +40437,25 @@
       },
       "recentForm": {
         "PHI": [
+          {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Home",
+            "teamScore": 21,
+            "opponentScore": 38,
+            "result": "L",
+            "passingYards": 211.0,
+            "rushingYards": 121.0,
+            "totalYards": 332.0,
+            "totalEpa": -0.81,
+            "turnovers": 1.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_06_CAR_PHI",
             "date": "2026-10-18",
@@ -40270,25 +40531,6 @@
             "totalEpa": -10.69,
             "turnovers": 3.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_PHI_TEN",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 24,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 264.0,
-            "rushingYards": 89.0,
-            "totalYards": 353.0,
-            "totalEpa": 2.81,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ],
         "WAS": [
@@ -40451,7 +40693,29 @@
           "winnerAbbreviation": "PHI"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_08_PHI_WAS",
+        "awayTeam": "Philadelphia Eagles",
+        "awayAbbreviation": "PHI",
+        "homeTeam": "Washington Commanders",
+        "homeAbbreviation": "WAS",
+        "kickoff": "2026-11-01 20:20",
+        "predictedWinner": "Washington Commanders",
+        "homeWinProbability": 59,
+        "awayWinProbability": 41,
+        "classifierHomeProbability": 64,
+        "scoreModelHomeProbability": 48,
+        "projectedHomeScore": 23.5,
+        "projectedAwayScore": 22.7,
+        "projectedMargin": -0.5,
+        "projectedTotal": 45.2,
+        "confidence": "Medium",
+        "factors": [
+          "Elo team strength",
+          "Quarterback efficiency",
+          "EPA per play"
+        ]
+      }
     },
     "2026_08_CHI_SEA": {
       "game": {
@@ -40765,7 +41029,29 @@
           "winnerAbbreviation": "CHI"
         }
       ],
-      "prediction": null
+      "prediction": {
+        "id": "2026_08_CHI_SEA",
+        "awayTeam": "Chicago Bears",
+        "awayAbbreviation": "CHI",
+        "homeTeam": "Seattle Seahawks",
+        "homeAbbreviation": "SEA",
+        "kickoff": "2026-11-02 20:15",
+        "predictedWinner": "Seattle Seahawks",
+        "homeWinProbability": 57,
+        "awayWinProbability": 43,
+        "classifierHomeProbability": 58,
+        "scoreModelHomeProbability": 56,
+        "projectedHomeScore": 22.6,
+        "projectedAwayScore": 21.0,
+        "projectedMargin": 1.8,
+        "projectedTotal": 45.3,
+        "confidence": "Medium",
+        "factors": [
+          "Elo team strength",
+          "Turnover trend",
+          "Success rate"
+        ]
+      }
     },
     "2026_09_JAX_BAL": {
       "game": {
@@ -41753,14 +42039,14 @@
         "DAL": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 151,
-            "pointsAgainst": 159,
-            "pointDifferential": -8
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 189,
+            "pointsAgainst": 180,
+            "pointDifferential": 9
           },
           "previous": {
             "season": 2025,
@@ -41801,6 +42087,25 @@
       },
       "recentForm": {
         "DAL": [
+          {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Away",
+            "teamScore": 38,
+            "opponentScore": 21,
+            "result": "W",
+            "passingYards": 212.0,
+            "rushingYards": 204.0,
+            "totalYards": 416.0,
+            "totalEpa": 20.97,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_06_DAL_GB",
             "date": "2026-10-18",
@@ -41875,25 +42180,6 @@
             "totalYards": 424.0,
             "totalEpa": 12.38,
             "turnovers": 1.0,
-            "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_WAS_DAL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Home",
-            "teamScore": 37,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 279.0,
-            "rushingYards": 66.0,
-            "totalYards": 345.0,
-            "totalEpa": 12.24,
-            "turnovers": 0,
             "defensiveSacks": 0.0
           }
         ],
@@ -43022,13 +43308,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 106,
-            "pointsAgainst": 137,
-            "pointDifferential": -31
+            "gamesPlayed": 7,
+            "winPct": 0.286,
+            "pointsFor": 127,
+            "pointsAgainst": 175,
+            "pointDifferential": -48
           },
           "previous": {
             "season": 2025,
@@ -43143,6 +43429,25 @@
         ],
         "PHI": [
           {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Home",
+            "teamScore": 21,
+            "opponentScore": 38,
+            "result": "L",
+            "passingYards": 211.0,
+            "rushingYards": 121.0,
+            "totalYards": 332.0,
+            "totalEpa": -0.81,
+            "turnovers": 1.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_06_CAR_PHI",
             "date": "2026-10-18",
             "season": 2026,
@@ -43217,25 +43522,6 @@
             "totalEpa": -10.69,
             "turnovers": 3.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_PHI_TEN",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 24,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 264.0,
-            "rushingYards": 89.0,
-            "totalYards": 353.0,
-            "totalEpa": 2.81,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -49299,14 +49585,14 @@
         "DAL": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 151,
-            "pointsAgainst": 159,
-            "pointDifferential": -8
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 189,
+            "pointsAgainst": 180,
+            "pointDifferential": 9
           },
           "previous": {
             "season": 2025,
@@ -49421,6 +49707,25 @@
         ],
         "DAL": [
           {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Away",
+            "teamScore": 38,
+            "opponentScore": 21,
+            "result": "W",
+            "passingYards": 212.0,
+            "rushingYards": 204.0,
+            "totalYards": 416.0,
+            "totalEpa": 20.97,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_06_DAL_GB",
             "date": "2026-10-18",
             "season": 2026,
@@ -49494,25 +49799,6 @@
             "totalYards": 424.0,
             "totalEpa": 12.38,
             "turnovers": 1.0,
-            "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_WAS_DAL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Home",
-            "teamScore": 37,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 279.0,
-            "rushingYards": 66.0,
-            "totalYards": 345.0,
-            "totalEpa": 12.24,
-            "turnovers": 0,
             "defensiveSacks": 0.0
           }
         ]
@@ -52595,14 +52881,14 @@
         "DAL": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 151,
-            "pointsAgainst": 159,
-            "pointDifferential": -8
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 189,
+            "pointsAgainst": 180,
+            "pointDifferential": 9
           },
           "previous": {
             "season": 2025,
@@ -52717,6 +53003,25 @@
         ],
         "DAL": [
           {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Away",
+            "teamScore": 38,
+            "opponentScore": 21,
+            "result": "W",
+            "passingYards": 212.0,
+            "rushingYards": 204.0,
+            "totalYards": 416.0,
+            "totalEpa": 20.97,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_06_DAL_GB",
             "date": "2026-10-18",
             "season": 2026,
@@ -52790,25 +53095,6 @@
             "totalYards": 424.0,
             "totalEpa": 12.38,
             "turnovers": 1.0,
-            "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_WAS_DAL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Home",
-            "teamScore": 37,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 279.0,
-            "rushingYards": 66.0,
-            "totalYards": 345.0,
-            "totalEpa": 12.24,
-            "turnovers": 0,
             "defensiveSacks": 0.0
           }
         ]
@@ -53562,13 +53848,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 106,
-            "pointsAgainst": 137,
-            "pointDifferential": -31
+            "gamesPlayed": 7,
+            "winPct": 0.286,
+            "pointsFor": 127,
+            "pointsAgainst": 175,
+            "pointDifferential": -48
           },
           "previous": {
             "season": 2025,
@@ -53683,6 +53969,25 @@
         ],
         "PHI": [
           {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Home",
+            "teamScore": 21,
+            "opponentScore": 38,
+            "result": "L",
+            "passingYards": 211.0,
+            "rushingYards": 121.0,
+            "totalYards": 332.0,
+            "totalEpa": -0.81,
+            "turnovers": 1.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_06_CAR_PHI",
             "date": "2026-10-18",
             "season": 2026,
@@ -53757,25 +54062,6 @@
             "totalEpa": -10.69,
             "turnovers": 3.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_PHI_TEN",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 24,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 264.0,
-            "rushingYards": 89.0,
-            "totalYards": 353.0,
-            "totalEpa": 2.81,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -55168,17 +55454,17 @@
         "roof": null,
         "surface": "matrixturf",
         "lastMeeting": {
-          "id": "2025_12_PHI_DAL",
-          "date": "2025-11-23",
-          "season": 2025,
-          "week": 12,
+          "id": "2026_07_DAL_PHI",
+          "date": "2026-10-26",
+          "season": 2026,
+          "week": 7,
           "gameType": "REG",
-          "awayTeam": "Philadelphia Eagles",
-          "awayAbbreviation": "PHI",
-          "awayScore": 21,
-          "homeTeam": "Dallas Cowboys",
-          "homeAbbreviation": "DAL",
-          "homeScore": 24,
+          "awayTeam": "Dallas Cowboys",
+          "awayAbbreviation": "DAL",
+          "awayScore": 38,
+          "homeTeam": "Philadelphia Eagles",
+          "homeAbbreviation": "PHI",
+          "homeScore": 21,
           "winner": "Dallas Cowboys",
           "winnerAbbreviation": "DAL"
         }
@@ -55192,13 +55478,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 106,
-            "pointsAgainst": 137,
-            "pointDifferential": -31
+            "gamesPlayed": 7,
+            "winPct": 0.286,
+            "pointsFor": 127,
+            "pointsAgainst": 175,
+            "pointDifferential": -48
           },
           "previous": {
             "season": 2025,
@@ -55215,14 +55501,14 @@
         "DAL": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 151,
-            "pointsAgainst": 159,
-            "pointDifferential": -8
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 189,
+            "pointsAgainst": 180,
+            "pointDifferential": 9
           },
           "previous": {
             "season": 2025,
@@ -55239,6 +55525,25 @@
       },
       "recentForm": {
         "PHI": [
+          {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Home",
+            "teamScore": 21,
+            "opponentScore": 38,
+            "result": "L",
+            "passingYards": 211.0,
+            "rushingYards": 121.0,
+            "totalYards": 332.0,
+            "totalEpa": -0.81,
+            "turnovers": 1.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_06_CAR_PHI",
             "date": "2026-10-18",
@@ -55314,28 +55619,28 @@
             "totalEpa": -10.69,
             "turnovers": 3.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_PHI_TEN",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 24,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 264.0,
-            "rushingYards": 89.0,
-            "totalYards": 353.0,
-            "totalEpa": 2.81,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ],
         "DAL": [
+          {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Away",
+            "teamScore": 38,
+            "opponentScore": 21,
+            "result": "W",
+            "passingYards": 212.0,
+            "rushingYards": 204.0,
+            "totalYards": 416.0,
+            "totalEpa": 20.97,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_06_DAL_GB",
             "date": "2026-10-18",
@@ -55411,29 +55716,22 @@
             "totalEpa": 12.38,
             "turnovers": 1.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_WAS_DAL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Home",
-            "teamScore": 37,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 279.0,
-            "rushingYards": 66.0,
-            "totalYards": 345.0,
-            "totalEpa": 12.24,
-            "turnovers": 0,
-            "defensiveSacks": 0.0
           }
         ]
       },
       "headToHead": [
+        {
+          "id": "2026_07_DAL_PHI",
+          "date": "2026-10-26",
+          "season": 2026,
+          "week": 7,
+          "gameType": "REG",
+          "awayAbbreviation": "DAL",
+          "awayScore": 38,
+          "homeAbbreviation": "PHI",
+          "homeScore": 21,
+          "winnerAbbreviation": "DAL"
+        },
         {
           "id": "2025_12_PHI_DAL",
           "date": "2025-11-23",
@@ -55481,18 +55779,6 @@
           "homeAbbreviation": "DAL",
           "homeScore": 6,
           "winnerAbbreviation": "PHI"
-        },
-        {
-          "id": "2023_14_PHI_DAL",
-          "date": "2023-12-10",
-          "season": 2023,
-          "week": 14,
-          "gameType": "REG",
-          "awayAbbreviation": "PHI",
-          "awayScore": 13,
-          "homeAbbreviation": "DAL",
-          "homeScore": 33,
-          "winnerAbbreviation": "DAL"
         }
       ],
       "prediction": null
@@ -62834,13 +63120,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 106,
-            "pointsAgainst": 137,
-            "pointDifferential": -31
+            "gamesPlayed": 7,
+            "winPct": 0.286,
+            "pointsFor": 127,
+            "pointsAgainst": 175,
+            "pointDifferential": -48
           },
           "previous": {
             "season": 2025,
@@ -62881,6 +63167,25 @@
       },
       "recentForm": {
         "PHI": [
+          {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Home",
+            "teamScore": 21,
+            "opponentScore": 38,
+            "result": "L",
+            "passingYards": 211.0,
+            "rushingYards": 121.0,
+            "totalYards": 332.0,
+            "totalEpa": -0.81,
+            "turnovers": 1.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_06_CAR_PHI",
             "date": "2026-10-18",
@@ -62956,25 +63261,6 @@
             "totalEpa": -10.69,
             "turnovers": 3.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_PHI_TEN",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 24,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 264.0,
-            "rushingYards": 89.0,
-            "totalYards": 353.0,
-            "totalEpa": 2.81,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ],
         "ARI": [
@@ -64149,14 +64435,14 @@
         "DAL": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 151,
-            "pointsAgainst": 159,
-            "pointDifferential": -8
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 189,
+            "pointsAgainst": 180,
+            "pointDifferential": 9
           },
           "previous": {
             "season": 2025,
@@ -64197,6 +64483,25 @@
       },
       "recentForm": {
         "DAL": [
+          {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Away",
+            "teamScore": 38,
+            "opponentScore": 21,
+            "result": "W",
+            "passingYards": 212.0,
+            "rushingYards": 204.0,
+            "totalYards": 416.0,
+            "totalEpa": 20.97,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_06_DAL_GB",
             "date": "2026-10-18",
@@ -64271,25 +64576,6 @@
             "totalYards": 424.0,
             "totalEpa": 12.38,
             "turnovers": 1.0,
-            "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_WAS_DAL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Home",
-            "teamScore": 37,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 279.0,
-            "rushingYards": 66.0,
-            "totalYards": 345.0,
-            "totalEpa": 12.24,
-            "turnovers": 0,
             "defensiveSacks": 0.0
           }
         ],
@@ -66046,13 +66332,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 106,
-            "pointsAgainst": 137,
-            "pointDifferential": -31
+            "gamesPlayed": 7,
+            "winPct": 0.286,
+            "pointsFor": 127,
+            "pointsAgainst": 175,
+            "pointDifferential": -48
           },
           "previous": {
             "season": 2025,
@@ -66167,6 +66453,25 @@
         ],
         "PHI": [
           {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Home",
+            "teamScore": 21,
+            "opponentScore": 38,
+            "result": "L",
+            "passingYards": 211.0,
+            "rushingYards": 121.0,
+            "totalYards": 332.0,
+            "totalEpa": -0.81,
+            "turnovers": 1.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_06_CAR_PHI",
             "date": "2026-10-18",
             "season": 2026,
@@ -66241,25 +66546,6 @@
             "totalEpa": -10.69,
             "turnovers": 3.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_PHI_TEN",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 24,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 264.0,
-            "rushingYards": 89.0,
-            "totalYards": 353.0,
-            "totalEpa": 2.81,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -69620,13 +69906,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 106,
-            "pointsAgainst": 137,
-            "pointDifferential": -31
+            "gamesPlayed": 7,
+            "winPct": 0.286,
+            "pointsFor": 127,
+            "pointsAgainst": 175,
+            "pointDifferential": -48
           },
           "previous": {
             "season": 2025,
@@ -69741,6 +70027,25 @@
         ],
         "PHI": [
           {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Home",
+            "teamScore": 21,
+            "opponentScore": 38,
+            "result": "L",
+            "passingYards": 211.0,
+            "rushingYards": 121.0,
+            "totalYards": 332.0,
+            "totalEpa": -0.81,
+            "turnovers": 1.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_06_CAR_PHI",
             "date": "2026-10-18",
             "season": 2026,
@@ -69815,25 +70120,6 @@
             "totalEpa": -10.69,
             "turnovers": 3.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_PHI_TEN",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 24,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 264.0,
-            "rushingYards": 89.0,
-            "totalYards": 353.0,
-            "totalEpa": 2.81,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -73229,14 +73515,14 @@
         "DAL": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 151,
-            "pointsAgainst": 159,
-            "pointDifferential": -8
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 189,
+            "pointsAgainst": 180,
+            "pointDifferential": 9
           },
           "previous": {
             "season": 2025,
@@ -73277,6 +73563,25 @@
       },
       "recentForm": {
         "DAL": [
+          {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Away",
+            "teamScore": 38,
+            "opponentScore": 21,
+            "result": "W",
+            "passingYards": 212.0,
+            "rushingYards": 204.0,
+            "totalYards": 416.0,
+            "totalEpa": 20.97,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_06_DAL_GB",
             "date": "2026-10-18",
@@ -73351,25 +73656,6 @@
             "totalYards": 424.0,
             "totalEpa": 12.38,
             "turnovers": 1.0,
-            "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_WAS_DAL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Home",
-            "teamScore": 37,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 279.0,
-            "rushingYards": 66.0,
-            "totalYards": 345.0,
-            "totalEpa": 12.24,
-            "turnovers": 0,
             "defensiveSacks": 0.0
           }
         ],
@@ -74618,13 +74904,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 106,
-            "pointsAgainst": 137,
-            "pointDifferential": -31
+            "gamesPlayed": 7,
+            "winPct": 0.286,
+            "pointsFor": 127,
+            "pointsAgainst": 175,
+            "pointDifferential": -48
           },
           "previous": {
             "season": 2025,
@@ -74739,6 +75025,25 @@
         ],
         "PHI": [
           {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Home",
+            "teamScore": 21,
+            "opponentScore": 38,
+            "result": "L",
+            "passingYards": 211.0,
+            "rushingYards": 121.0,
+            "totalYards": 332.0,
+            "totalEpa": -0.81,
+            "turnovers": 1.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_06_CAR_PHI",
             "date": "2026-10-18",
             "season": 2026,
@@ -74813,25 +75118,6 @@
             "totalEpa": -10.69,
             "turnovers": 3.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_PHI_TEN",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 24,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 264.0,
-            "rushingYards": 89.0,
-            "totalYards": 353.0,
-            "totalEpa": 2.81,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ]
       },
@@ -79241,14 +79527,14 @@
         "DAL": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 151,
-            "pointsAgainst": 159,
-            "pointDifferential": -8
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 189,
+            "pointsAgainst": 180,
+            "pointDifferential": 9
           },
           "previous": {
             "season": 2025,
@@ -79363,6 +79649,25 @@
         ],
         "DAL": [
           {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Away",
+            "teamScore": 38,
+            "opponentScore": 21,
+            "result": "W",
+            "passingYards": 212.0,
+            "rushingYards": 204.0,
+            "totalYards": 416.0,
+            "totalEpa": 20.97,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_06_DAL_GB",
             "date": "2026-10-18",
             "season": 2026,
@@ -79436,25 +79741,6 @@
             "totalYards": 424.0,
             "totalEpa": 12.38,
             "turnovers": 1.0,
-            "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_WAS_DAL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Home",
-            "teamScore": 37,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 279.0,
-            "rushingYards": 66.0,
-            "totalYards": 345.0,
-            "totalEpa": 12.24,
-            "turnovers": 0,
             "defensiveSacks": 0.0
           }
         ]
@@ -82561,14 +82847,14 @@
         "DAL": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 151,
-            "pointsAgainst": 159,
-            "pointDifferential": -8
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 189,
+            "pointsAgainst": 180,
+            "pointDifferential": 9
           },
           "previous": {
             "season": 2025,
@@ -82683,6 +82969,25 @@
         ],
         "DAL": [
           {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Away",
+            "teamScore": 38,
+            "opponentScore": 21,
+            "result": "W",
+            "passingYards": 212.0,
+            "rushingYards": 204.0,
+            "totalYards": 416.0,
+            "totalEpa": 20.97,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
+          {
             "id": "2026_06_DAL_GB",
             "date": "2026-10-18",
             "season": 2026,
@@ -82756,25 +83061,6 @@
             "totalYards": 424.0,
             "totalEpa": 12.38,
             "turnovers": 1.0,
-            "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_WAS_DAL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Home",
-            "teamScore": 37,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 279.0,
-            "rushingYards": 66.0,
-            "totalYards": 345.0,
-            "totalEpa": 12.24,
-            "turnovers": 0,
             "defensiveSacks": 0.0
           }
         ]
@@ -84506,13 +84792,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 106,
-            "pointsAgainst": 137,
-            "pointDifferential": -31
+            "gamesPlayed": 7,
+            "winPct": 0.286,
+            "pointsFor": 127,
+            "pointsAgainst": 175,
+            "pointDifferential": -48
           },
           "previous": {
             "season": 2025,
@@ -84553,6 +84839,25 @@
       },
       "recentForm": {
         "PHI": [
+          {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Home",
+            "teamScore": 21,
+            "opponentScore": 38,
+            "result": "L",
+            "passingYards": 211.0,
+            "rushingYards": 121.0,
+            "totalYards": 332.0,
+            "totalEpa": -0.81,
+            "turnovers": 1.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_06_CAR_PHI",
             "date": "2026-10-18",
@@ -84628,25 +84933,6 @@
             "totalEpa": -10.69,
             "turnovers": 3.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_PHI_TEN",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 24,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 264.0,
-            "rushingYards": 89.0,
-            "totalYards": 353.0,
-            "totalEpa": 2.81,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ],
         "SF": [
@@ -86195,14 +86481,14 @@
         "DAL": {
           "current": {
             "season": 2026,
-            "wins": 2,
+            "wins": 3,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 151,
-            "pointsAgainst": 159,
-            "pointDifferential": -8
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 189,
+            "pointsAgainst": 180,
+            "pointDifferential": 9
           },
           "previous": {
             "season": 2025,
@@ -86243,6 +86529,25 @@
       },
       "recentForm": {
         "DAL": [
+          {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "DAL",
+            "opponentAbbreviation": "PHI",
+            "homeAway": "Away",
+            "teamScore": 38,
+            "opponentScore": 21,
+            "result": "W",
+            "passingYards": 212.0,
+            "rushingYards": 204.0,
+            "totalYards": 416.0,
+            "totalEpa": 20.97,
+            "turnovers": 0,
+            "defensiveSacks": 2.0
+          },
           {
             "id": "2026_06_DAL_GB",
             "date": "2026-10-18",
@@ -86317,25 +86622,6 @@
             "totalYards": 424.0,
             "totalEpa": 12.38,
             "turnovers": 1.0,
-            "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_WAS_DAL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "DAL",
-            "opponentAbbreviation": "WAS",
-            "homeAway": "Home",
-            "teamScore": 37,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 279.0,
-            "rushingYards": 66.0,
-            "totalYards": 345.0,
-            "totalEpa": 12.24,
-            "turnovers": 0,
             "defensiveSacks": 0.0
           }
         ],
@@ -88646,13 +88932,13 @@
           "current": {
             "season": 2026,
             "wins": 2,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.333,
-            "pointsFor": 106,
-            "pointsAgainst": 137,
-            "pointDifferential": -31
+            "gamesPlayed": 7,
+            "winPct": 0.286,
+            "pointsFor": 127,
+            "pointsAgainst": 175,
+            "pointDifferential": -48
           },
           "previous": {
             "season": 2025,
@@ -88693,6 +88979,25 @@
       },
       "recentForm": {
         "PHI": [
+          {
+            "id": "2026_07_DAL_PHI",
+            "date": "2026-10-26",
+            "season": 2026,
+            "week": 7,
+            "gameType": "REG",
+            "teamAbbreviation": "PHI",
+            "opponentAbbreviation": "DAL",
+            "homeAway": "Home",
+            "teamScore": 21,
+            "opponentScore": 38,
+            "result": "L",
+            "passingYards": 211.0,
+            "rushingYards": 121.0,
+            "totalYards": 332.0,
+            "totalEpa": -0.81,
+            "turnovers": 1.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_06_CAR_PHI",
             "date": "2026-10-18",
@@ -88768,25 +89073,6 @@
             "totalEpa": -10.69,
             "turnovers": 3.0,
             "defensiveSacks": 0.0
-          },
-          {
-            "id": "2026_02_PHI_TEN",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "PHI",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Away",
-            "teamScore": 24,
-            "opponentScore": 20,
-            "result": "W",
-            "passingYards": 264.0,
-            "rushingYards": 89.0,
-            "totalYards": 353.0,
-            "totalEpa": 2.81,
-            "turnovers": 2.0,
-            "defensiveSacks": 2.0
           }
         ],
         "NYG": [
