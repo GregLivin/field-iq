@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "asOf": "2026-10-29T16:58:13.655473+00:00",
+  "asOf": "2026-10-30T16:44:36.436809+00:00",
   "provider": "nflverse",
   "games": {
     "2026_01_NE_SEA": {
@@ -1750,13 +1750,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 3,
+            "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.5,
-            "pointsFor": 159,
-            "pointsAgainst": 166,
-            "pointDifferential": -7
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 178,
+            "pointsAgainst": 193,
+            "pointDifferential": -15
           },
           "previous": {
             "season": 2025,
@@ -1871,6 +1871,25 @@
         ],
         "CAR": [
           {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "CAR",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Away",
+            "teamScore": 19,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 209.0,
+            "rushingYards": 82.0,
+            "totalYards": 291.0,
+            "totalEpa": -10.43,
+            "turnovers": 2.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_07_TB_CAR",
             "date": "2026-10-25",
             "season": 2026,
@@ -1944,25 +1963,6 @@
             "totalYards": 389.0,
             "totalEpa": -9.45,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_CAR_ATL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CAR",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 287.0,
-            "rushingYards": 68.0,
-            "totalYards": 355.0,
-            "totalEpa": 6.0,
-            "turnovers": 0,
             "defensiveSacks": 2.0
           }
         ]
@@ -3693,14 +3693,14 @@
         "GB": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 3,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.571,
-            "pointsFor": 144,
-            "pointsAgainst": 145,
-            "pointDifferential": -1
+            "gamesPlayed": 8,
+            "winPct": 0.625,
+            "pointsFor": 171,
+            "pointsAgainst": 164,
+            "pointDifferential": 7
           },
           "previous": {
             "season": 2025,
@@ -3741,6 +3741,25 @@
       },
       "recentForm": {
         "GB": [
+          {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "CAR",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 19,
+            "result": "W",
+            "passingYards": 288.0,
+            "rushingYards": 66.0,
+            "totalYards": 354.0,
+            "totalEpa": 8.34,
+            "turnovers": 3.0,
+            "defensiveSacks": 6.0
+          },
           {
             "id": "2026_07_GB_DET",
             "date": "2026-10-25",
@@ -3816,25 +3835,6 @@
             "totalEpa": 1.08,
             "turnovers": 2.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_03_ATL_GB",
-            "date": "2026-09-24",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Home",
-            "teamScore": 14,
-            "opponentScore": 35,
-            "result": "L",
-            "passingYards": 312.0,
-            "rushingYards": 17.0,
-            "totalYards": 329.0,
-            "totalEpa": 0.86,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "MIN": [
@@ -5770,13 +5770,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 3,
+            "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.5,
-            "pointsFor": 159,
-            "pointsAgainst": 166,
-            "pointDifferential": -7
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 178,
+            "pointsAgainst": 193,
+            "pointDifferential": -15
           },
           "previous": {
             "season": 2025,
@@ -5817,6 +5817,25 @@
       },
       "recentForm": {
         "CAR": [
+          {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "CAR",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Away",
+            "teamScore": 19,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 209.0,
+            "rushingYards": 82.0,
+            "totalYards": 291.0,
+            "totalEpa": -10.43,
+            "turnovers": 2.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_07_TB_CAR",
             "date": "2026-10-25",
@@ -5891,25 +5910,6 @@
             "totalYards": 389.0,
             "totalEpa": -9.45,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_CAR_ATL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CAR",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 287.0,
-            "rushingYards": 68.0,
-            "totalYards": 355.0,
-            "totalEpa": 6.0,
-            "turnovers": 0,
             "defensiveSacks": 2.0
           }
         ],
@@ -6759,14 +6759,14 @@
         "GB": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 3,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.571,
-            "pointsFor": 144,
-            "pointsAgainst": 145,
-            "pointDifferential": -1
+            "gamesPlayed": 8,
+            "winPct": 0.625,
+            "pointsFor": 171,
+            "pointsAgainst": 164,
+            "pointDifferential": 7
           },
           "previous": {
             "season": 2025,
@@ -6807,6 +6807,25 @@
       },
       "recentForm": {
         "GB": [
+          {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "CAR",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 19,
+            "result": "W",
+            "passingYards": 288.0,
+            "rushingYards": 66.0,
+            "totalYards": 354.0,
+            "totalEpa": 8.34,
+            "turnovers": 3.0,
+            "defensiveSacks": 6.0
+          },
           {
             "id": "2026_07_GB_DET",
             "date": "2026-10-25",
@@ -6882,25 +6901,6 @@
             "totalEpa": 1.08,
             "turnovers": 2.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_03_ATL_GB",
-            "date": "2026-09-24",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Home",
-            "teamScore": 14,
-            "opponentScore": 35,
-            "result": "L",
-            "passingYards": 312.0,
-            "rushingYards": 17.0,
-            "totalYards": 329.0,
-            "totalEpa": 0.86,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "NYJ": [
@@ -10839,14 +10839,14 @@
         "GB": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 3,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.571,
-            "pointsFor": 144,
-            "pointsAgainst": 145,
-            "pointDifferential": -1
+            "gamesPlayed": 8,
+            "winPct": 0.625,
+            "pointsFor": 171,
+            "pointsAgainst": 164,
+            "pointDifferential": 7
           },
           "previous": {
             "season": 2025,
@@ -10961,6 +10961,25 @@
         ],
         "GB": [
           {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "CAR",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 19,
+            "result": "W",
+            "passingYards": 288.0,
+            "rushingYards": 66.0,
+            "totalYards": 354.0,
+            "totalEpa": 8.34,
+            "turnovers": 3.0,
+            "defensiveSacks": 6.0
+          },
+          {
             "id": "2026_07_GB_DET",
             "date": "2026-10-25",
             "season": 2026,
@@ -11035,25 +11054,6 @@
             "totalEpa": 1.08,
             "turnovers": 2.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_03_ATL_GB",
-            "date": "2026-09-24",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Home",
-            "teamScore": 14,
-            "opponentScore": 35,
-            "result": "L",
-            "passingYards": 312.0,
-            "rushingYards": 17.0,
-            "totalYards": 329.0,
-            "totalEpa": 0.86,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -11142,13 +11142,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 3,
+            "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.5,
-            "pointsFor": 159,
-            "pointsAgainst": 166,
-            "pointDifferential": -7
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 178,
+            "pointsAgainst": 193,
+            "pointDifferential": -15
           },
           "previous": {
             "season": 2025,
@@ -11189,6 +11189,25 @@
       },
       "recentForm": {
         "CAR": [
+          {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "CAR",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Away",
+            "teamScore": 19,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 209.0,
+            "rushingYards": 82.0,
+            "totalYards": 291.0,
+            "totalEpa": -10.43,
+            "turnovers": 2.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_07_TB_CAR",
             "date": "2026-10-25",
@@ -11263,25 +11282,6 @@
             "totalYards": 389.0,
             "totalEpa": -9.45,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_CAR_ATL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CAR",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 287.0,
-            "rushingYards": 68.0,
-            "totalYards": 355.0,
-            "totalEpa": 6.0,
-            "turnovers": 0,
             "defensiveSacks": 2.0
           }
         ],
@@ -17431,14 +17431,14 @@
         "GB": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 3,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.571,
-            "pointsFor": 144,
-            "pointsAgainst": 145,
-            "pointDifferential": -1
+            "gamesPlayed": 8,
+            "winPct": 0.625,
+            "pointsFor": 171,
+            "pointsAgainst": 164,
+            "pointDifferential": 7
           },
           "previous": {
             "season": 2025,
@@ -17479,6 +17479,25 @@
       },
       "recentForm": {
         "GB": [
+          {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "CAR",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 19,
+            "result": "W",
+            "passingYards": 288.0,
+            "rushingYards": 66.0,
+            "totalYards": 354.0,
+            "totalEpa": 8.34,
+            "turnovers": 3.0,
+            "defensiveSacks": 6.0
+          },
           {
             "id": "2026_07_GB_DET",
             "date": "2026-10-25",
@@ -17554,25 +17573,6 @@
             "totalEpa": 1.08,
             "turnovers": 2.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_03_ATL_GB",
-            "date": "2026-09-24",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Home",
-            "teamScore": 14,
-            "opponentScore": 35,
-            "result": "L",
-            "passingYards": 312.0,
-            "rushingYards": 17.0,
-            "totalYards": 329.0,
-            "totalEpa": 0.86,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "TB": [
@@ -20776,13 +20776,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 3,
+            "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.5,
-            "pointsFor": 159,
-            "pointsAgainst": 166,
-            "pointDifferential": -7
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 178,
+            "pointsAgainst": 193,
+            "pointDifferential": -15
           },
           "previous": {
             "season": 2025,
@@ -20897,6 +20897,25 @@
         ],
         "CAR": [
           {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "CAR",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Away",
+            "teamScore": 19,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 209.0,
+            "rushingYards": 82.0,
+            "totalYards": 291.0,
+            "totalEpa": -10.43,
+            "turnovers": 2.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_07_TB_CAR",
             "date": "2026-10-25",
             "season": 2026,
@@ -20970,25 +20989,6 @@
             "totalYards": 389.0,
             "totalEpa": -9.45,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_CAR_ATL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CAR",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 287.0,
-            "rushingYards": 68.0,
-            "totalYards": 355.0,
-            "totalEpa": 6.0,
-            "turnovers": 0,
             "defensiveSacks": 2.0
           }
         ]
@@ -22127,14 +22127,14 @@
         "GB": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 3,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.571,
-            "pointsFor": 144,
-            "pointsAgainst": 145,
-            "pointDifferential": -1
+            "gamesPlayed": 8,
+            "winPct": 0.625,
+            "pointsFor": 171,
+            "pointsAgainst": 164,
+            "pointDifferential": 7
           },
           "previous": {
             "season": 2025,
@@ -22249,6 +22249,25 @@
         ],
         "GB": [
           {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "CAR",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 19,
+            "result": "W",
+            "passingYards": 288.0,
+            "rushingYards": 66.0,
+            "totalYards": 354.0,
+            "totalEpa": 8.34,
+            "turnovers": 3.0,
+            "defensiveSacks": 6.0
+          },
+          {
             "id": "2026_07_GB_DET",
             "date": "2026-10-25",
             "season": 2026,
@@ -22323,25 +22342,6 @@
             "totalEpa": 1.08,
             "turnovers": 2.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_03_ATL_GB",
-            "date": "2026-09-24",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Home",
-            "teamScore": 14,
-            "opponentScore": 35,
-            "result": "L",
-            "passingYards": 312.0,
-            "rushingYards": 17.0,
-            "totalYards": 329.0,
-            "totalEpa": 0.86,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -27620,13 +27620,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 3,
+            "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.5,
-            "pointsFor": 159,
-            "pointsAgainst": 166,
-            "pointDifferential": -7
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 178,
+            "pointsAgainst": 193,
+            "pointDifferential": -15
           },
           "previous": {
             "season": 2025,
@@ -27667,6 +27667,25 @@
       },
       "recentForm": {
         "CAR": [
+          {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "CAR",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Away",
+            "teamScore": 19,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 209.0,
+            "rushingYards": 82.0,
+            "totalYards": 291.0,
+            "totalEpa": -10.43,
+            "turnovers": 2.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_07_TB_CAR",
             "date": "2026-10-25",
@@ -27741,25 +27760,6 @@
             "totalYards": 389.0,
             "totalEpa": -9.45,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_CAR_ATL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CAR",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 287.0,
-            "rushingYards": 68.0,
-            "totalYards": 355.0,
-            "totalEpa": 6.0,
-            "turnovers": 0,
             "defensiveSacks": 2.0
           }
         ],
@@ -30697,14 +30697,14 @@
         "GB": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 3,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.571,
-            "pointsFor": 144,
-            "pointsAgainst": 145,
-            "pointDifferential": -1
+            "gamesPlayed": 8,
+            "winPct": 0.625,
+            "pointsFor": 171,
+            "pointsAgainst": 164,
+            "pointDifferential": 7
           },
           "previous": {
             "season": 2025,
@@ -30819,6 +30819,25 @@
         ],
         "GB": [
           {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "CAR",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 19,
+            "result": "W",
+            "passingYards": 288.0,
+            "rushingYards": 66.0,
+            "totalYards": 354.0,
+            "totalEpa": 8.34,
+            "turnovers": 3.0,
+            "defensiveSacks": 6.0
+          },
+          {
             "id": "2026_07_GB_DET",
             "date": "2026-10-25",
             "season": 2026,
@@ -30893,25 +30912,6 @@
             "totalEpa": 1.08,
             "turnovers": 2.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_03_ATL_GB",
-            "date": "2026-09-24",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Home",
-            "teamScore": 14,
-            "opponentScore": 35,
-            "result": "L",
-            "passingYards": 312.0,
-            "rushingYards": 17.0,
-            "totalYards": 329.0,
-            "totalEpa": 0.86,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -34078,13 +34078,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 3,
+            "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.5,
-            "pointsFor": 159,
-            "pointsAgainst": 166,
-            "pointDifferential": -7
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 178,
+            "pointsAgainst": 193,
+            "pointDifferential": -15
           },
           "previous": {
             "season": 2025,
@@ -34199,6 +34199,25 @@
         ],
         "CAR": [
           {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "CAR",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Away",
+            "teamScore": 19,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 209.0,
+            "rushingYards": 82.0,
+            "totalYards": 291.0,
+            "totalEpa": -10.43,
+            "turnovers": 2.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_07_TB_CAR",
             "date": "2026-10-25",
             "season": 2026,
@@ -34272,25 +34291,6 @@
             "totalYards": 389.0,
             "totalEpa": -9.45,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_CAR_ATL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CAR",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 287.0,
-            "rushingYards": 68.0,
-            "totalYards": 355.0,
-            "totalEpa": 6.0,
-            "turnovers": 0,
             "defensiveSacks": 2.0
           }
         ]
@@ -34717,14 +34717,14 @@
         "GB": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 3,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.571,
-            "pointsFor": 144,
-            "pointsAgainst": 145,
-            "pointDifferential": -1
+            "gamesPlayed": 8,
+            "winPct": 0.625,
+            "pointsFor": 171,
+            "pointsAgainst": 164,
+            "pointDifferential": 7
           },
           "previous": {
             "season": 2025,
@@ -34765,6 +34765,25 @@
       },
       "recentForm": {
         "GB": [
+          {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "CAR",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 19,
+            "result": "W",
+            "passingYards": 288.0,
+            "rushingYards": 66.0,
+            "totalYards": 354.0,
+            "totalEpa": 8.34,
+            "turnovers": 3.0,
+            "defensiveSacks": 6.0
+          },
           {
             "id": "2026_07_GB_DET",
             "date": "2026-10-25",
@@ -34840,25 +34859,6 @@
             "totalEpa": 1.08,
             "turnovers": 2.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_03_ATL_GB",
-            "date": "2026-09-24",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Home",
-            "teamScore": 14,
-            "opponentScore": 35,
-            "result": "L",
-            "passingYards": 312.0,
-            "rushingYards": 17.0,
-            "totalYards": 329.0,
-            "totalEpa": 0.86,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "DET": [
@@ -36022,17 +36022,17 @@
         "gameType": "REG",
         "awayTeam": "Carolina Panthers",
         "awayAbbreviation": "CAR",
-        "awayScore": null,
+        "awayScore": 19,
         "homeTeam": "Green Bay Packers",
         "homeAbbreviation": "GB",
-        "homeScore": null,
-        "winner": null,
-        "winnerAbbreviation": null,
+        "homeScore": 27,
+        "winner": "Green Bay Packers",
+        "winnerAbbreviation": "GB",
         "time": "20:15",
-        "status": "upcoming",
+        "status": "final",
         "stadium": "Lambeau Field",
         "roof": "outdoors",
-        "surface": "grass",
+        "surface": "",
         "lastMeeting": {
           "id": "2025_09_CAR_GB",
           "date": "2025-11-02",
@@ -36058,13 +36058,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 3,
+            "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.5,
-            "pointsFor": 159,
-            "pointsAgainst": 166,
-            "pointDifferential": -7
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 178,
+            "pointsAgainst": 193,
+            "pointDifferential": -15
           },
           "previous": {
             "season": 2025,
@@ -36081,14 +36081,14 @@
         "GB": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 3,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.571,
-            "pointsFor": 144,
-            "pointsAgainst": 145,
-            "pointDifferential": -1
+            "gamesPlayed": 8,
+            "winPct": 0.625,
+            "pointsFor": 171,
+            "pointsAgainst": 164,
+            "pointDifferential": 7
           },
           "previous": {
             "season": 2025,
@@ -36105,6 +36105,25 @@
       },
       "recentForm": {
         "CAR": [
+          {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "CAR",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Away",
+            "teamScore": 19,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 209.0,
+            "rushingYards": 82.0,
+            "totalYards": 291.0,
+            "totalEpa": -10.43,
+            "turnovers": 2.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_07_TB_CAR",
             "date": "2026-10-25",
@@ -36180,28 +36199,28 @@
             "totalEpa": -9.45,
             "turnovers": 1.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_CAR_ATL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CAR",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 287.0,
-            "rushingYards": 68.0,
-            "totalYards": 355.0,
-            "totalEpa": 6.0,
-            "turnovers": 0,
-            "defensiveSacks": 2.0
           }
         ],
         "GB": [
+          {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "CAR",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 19,
+            "result": "W",
+            "passingYards": 288.0,
+            "rushingYards": 66.0,
+            "totalYards": 354.0,
+            "totalEpa": 8.34,
+            "turnovers": 3.0,
+            "defensiveSacks": 6.0
+          },
           {
             "id": "2026_07_GB_DET",
             "date": "2026-10-25",
@@ -36277,29 +36296,22 @@
             "totalEpa": 1.08,
             "turnovers": 2.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_03_ATL_GB",
-            "date": "2026-09-24",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Home",
-            "teamScore": 14,
-            "opponentScore": 35,
-            "result": "L",
-            "passingYards": 312.0,
-            "rushingYards": 17.0,
-            "totalYards": 329.0,
-            "totalEpa": 0.86,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
       "headToHead": [
+        {
+          "id": "2026_08_CAR_GB",
+          "date": "2026-10-29",
+          "season": 2026,
+          "week": 8,
+          "gameType": "REG",
+          "awayAbbreviation": "CAR",
+          "awayScore": 19,
+          "homeAbbreviation": "GB",
+          "homeScore": 27,
+          "winnerAbbreviation": "GB"
+        },
         {
           "id": "2025_09_CAR_GB",
           "date": "2025-11-02",
@@ -36349,29 +36361,7 @@
           "winnerAbbreviation": "GB"
         }
       ],
-      "prediction": {
-        "id": "2026_08_CAR_GB",
-        "awayTeam": "Carolina Panthers",
-        "awayAbbreviation": "CAR",
-        "homeTeam": "Green Bay Packers",
-        "homeAbbreviation": "GB",
-        "kickoff": "2026-10-29 20:15",
-        "predictedWinner": "Green Bay Packers",
-        "homeWinProbability": 59,
-        "awayWinProbability": 41,
-        "classifierHomeProbability": 56,
-        "scoreModelHomeProbability": 63,
-        "projectedHomeScore": 24.4,
-        "projectedAwayScore": 21.1,
-        "projectedMargin": 4.2,
-        "projectedTotal": 44.0,
-        "confidence": "Medium",
-        "factors": [
-          "Elo team strength",
-          "Quarterback efficiency",
-          "EPA per play"
-        ]
-      }
+      "prediction": null
     },
     "2026_08_ARI_DAL": {
       "game": {
@@ -37096,7 +37086,7 @@
         "projectedHomeScore": 21.3,
         "projectedAwayScore": 21.4,
         "projectedMargin": -1.1,
-        "projectedTotal": 43.4,
+        "projectedTotal": 43.3,
         "confidence": "Medium",
         "factors": [
           "Quarterback efficiency",
@@ -38199,7 +38189,7 @@
         "scoreModelHomeProbability": 72,
         "projectedHomeScore": 28.3,
         "projectedAwayScore": 20.1,
-        "projectedMargin": 7.3,
+        "projectedMargin": 7.2,
         "projectedTotal": 48.1,
         "confidence": "High",
         "factors": [
@@ -38528,12 +38518,12 @@
         "homeTeam": "New York Jets",
         "homeAbbreviation": "NYJ",
         "kickoff": "2026-11-01 13:00",
-        "predictedWinner": "Las Vegas Raiders",
+        "predictedWinner": "New York Jets",
         "homeWinProbability": 50,
         "awayWinProbability": 50,
-        "classifierHomeProbability": 47,
+        "classifierHomeProbability": 48,
         "scoreModelHomeProbability": 56,
-        "projectedHomeScore": 24.0,
+        "projectedHomeScore": 24.1,
         "projectedAwayScore": 22.0,
         "projectedMargin": 1.8,
         "projectedTotal": 46.2,
@@ -39267,7 +39257,7 @@
         "scoreModelHomeProbability": 90,
         "projectedHomeScore": 30.9,
         "projectedAwayScore": 16.7,
-        "projectedMargin": 16.1,
+        "projectedMargin": 16.0,
         "projectedTotal": 49.1,
         "confidence": "High",
         "factors": [
@@ -39957,13 +39947,13 @@
         "homeAbbreviation": "DEN",
         "kickoff": "2026-11-01 16:25",
         "predictedWinner": "Kansas City Chiefs",
-        "homeWinProbability": 39,
-        "awayWinProbability": 61,
+        "homeWinProbability": 38,
+        "awayWinProbability": 62,
         "classifierHomeProbability": 34,
         "scoreModelHomeProbability": 46,
-        "projectedHomeScore": 22.5,
+        "projectedHomeScore": 22.2,
         "projectedAwayScore": 23.4,
-        "projectedMargin": -1.2,
+        "projectedMargin": -1.3,
         "projectedTotal": 45.6,
         "confidence": "Medium",
         "factors": [
@@ -40332,12 +40322,12 @@
         "homeWinProbability": 32,
         "awayWinProbability": 68,
         "classifierHomeProbability": 28,
-        "scoreModelHomeProbability": 41,
+        "scoreModelHomeProbability": 39,
         "projectedHomeScore": 21.3,
-        "projectedAwayScore": 24.7,
-        "projectedMargin": -3.0,
-        "projectedTotal": 44.1,
-        "confidence": "Medium",
+        "projectedAwayScore": 24.5,
+        "projectedMargin": -3.5,
+        "projectedTotal": 43.1,
+        "confidence": "High",
         "factors": [
           "Recent scoring margin",
           "Quarterback efficiency",
@@ -40703,12 +40693,12 @@
         "predictedWinner": "Washington Commanders",
         "homeWinProbability": 59,
         "awayWinProbability": 41,
-        "classifierHomeProbability": 65,
+        "classifierHomeProbability": 64,
         "scoreModelHomeProbability": 49,
-        "projectedHomeScore": 23.8,
-        "projectedAwayScore": 22.8,
+        "projectedHomeScore": 24.1,
+        "projectedAwayScore": 22.6,
         "projectedMargin": -0.2,
-        "projectedTotal": 45.2,
+        "projectedTotal": 44.8,
         "confidence": "Medium",
         "factors": [
           "Elo team strength",
@@ -41042,7 +41032,7 @@
         "classifierHomeProbability": 58,
         "scoreModelHomeProbability": 55,
         "projectedHomeScore": 22.5,
-        "projectedAwayScore": 20.9,
+        "projectedAwayScore": 21.0,
         "projectedMargin": 1.7,
         "projectedTotal": 45.2,
         "confidence": "Medium",
@@ -42366,13 +42356,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 3,
+            "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.5,
-            "pointsFor": 159,
-            "pointsAgainst": 166,
-            "pointDifferential": -7
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 178,
+            "pointsAgainst": 193,
+            "pointDifferential": -15
           },
           "previous": {
             "season": 2025,
@@ -42487,6 +42477,25 @@
         ],
         "CAR": [
           {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "CAR",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Away",
+            "teamScore": 19,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 209.0,
+            "rushingYards": 82.0,
+            "totalYards": 291.0,
+            "totalEpa": -10.43,
+            "turnovers": 2.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_07_TB_CAR",
             "date": "2026-10-25",
             "season": 2026,
@@ -42560,25 +42569,6 @@
             "totalYards": 389.0,
             "totalEpa": -9.45,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_CAR_ATL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CAR",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 287.0,
-            "rushingYards": 68.0,
-            "totalYards": 355.0,
-            "totalEpa": 6.0,
-            "turnovers": 0,
             "defensiveSacks": 2.0
           }
         ]
@@ -44937,14 +44927,14 @@
         "GB": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 3,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.571,
-            "pointsFor": 144,
-            "pointsAgainst": 145,
-            "pointDifferential": -1
+            "gamesPlayed": 8,
+            "winPct": 0.625,
+            "pointsFor": 171,
+            "pointsAgainst": 164,
+            "pointDifferential": 7
           },
           "previous": {
             "season": 2025,
@@ -44985,6 +44975,25 @@
       },
       "recentForm": {
         "GB": [
+          {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "CAR",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 19,
+            "result": "W",
+            "passingYards": 288.0,
+            "rushingYards": 66.0,
+            "totalYards": 354.0,
+            "totalEpa": 8.34,
+            "turnovers": 3.0,
+            "defensiveSacks": 6.0
+          },
           {
             "id": "2026_07_GB_DET",
             "date": "2026-10-25",
@@ -45060,25 +45069,6 @@
             "totalEpa": 1.08,
             "turnovers": 2.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_03_ATL_GB",
-            "date": "2026-09-24",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Home",
-            "teamScore": 14,
-            "opponentScore": 35,
-            "result": "L",
-            "passingYards": 312.0,
-            "rushingYards": 17.0,
-            "totalYards": 329.0,
-            "totalEpa": 0.86,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "NE": [
@@ -46870,13 +46860,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 3,
+            "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.5,
-            "pointsFor": 159,
-            "pointsAgainst": 166,
-            "pointDifferential": -7
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 178,
+            "pointsAgainst": 193,
+            "pointDifferential": -15
           },
           "previous": {
             "season": 2025,
@@ -46917,6 +46907,25 @@
       },
       "recentForm": {
         "CAR": [
+          {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "CAR",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Away",
+            "teamScore": 19,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 209.0,
+            "rushingYards": 82.0,
+            "totalYards": 291.0,
+            "totalEpa": -10.43,
+            "turnovers": 2.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_07_TB_CAR",
             "date": "2026-10-25",
@@ -46991,25 +47000,6 @@
             "totalYards": 389.0,
             "totalEpa": -9.45,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_CAR_ATL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CAR",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 287.0,
-            "rushingYards": 68.0,
-            "totalYards": 355.0,
-            "totalEpa": 6.0,
-            "turnovers": 0,
             "defensiveSacks": 2.0
           }
         ],
@@ -48583,14 +48573,14 @@
         "GB": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 3,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.571,
-            "pointsFor": 144,
-            "pointsAgainst": 145,
-            "pointDifferential": -1
+            "gamesPlayed": 8,
+            "winPct": 0.625,
+            "pointsFor": 171,
+            "pointsAgainst": 164,
+            "pointDifferential": 7
           },
           "previous": {
             "season": 2025,
@@ -48705,6 +48695,25 @@
         ],
         "GB": [
           {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "CAR",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 19,
+            "result": "W",
+            "passingYards": 288.0,
+            "rushingYards": 66.0,
+            "totalYards": 354.0,
+            "totalEpa": 8.34,
+            "turnovers": 3.0,
+            "defensiveSacks": 6.0
+          },
+          {
             "id": "2026_07_GB_DET",
             "date": "2026-10-25",
             "season": 2026,
@@ -48779,25 +48788,6 @@
             "totalEpa": 1.08,
             "turnovers": 2.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_03_ATL_GB",
-            "date": "2026-09-24",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Home",
-            "teamScore": 14,
-            "opponentScore": 35,
-            "result": "L",
-            "passingYards": 312.0,
-            "rushingYards": 17.0,
-            "totalYards": 329.0,
-            "totalEpa": 0.86,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -51240,13 +51230,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 3,
+            "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.5,
-            "pointsFor": 159,
-            "pointsAgainst": 166,
-            "pointDifferential": -7
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 178,
+            "pointsAgainst": 193,
+            "pointDifferential": -15
           },
           "previous": {
             "season": 2025,
@@ -51361,6 +51351,25 @@
         ],
         "CAR": [
           {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "CAR",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Away",
+            "teamScore": 19,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 209.0,
+            "rushingYards": 82.0,
+            "totalYards": 291.0,
+            "totalEpa": -10.43,
+            "turnovers": 2.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_07_TB_CAR",
             "date": "2026-10-25",
             "season": 2026,
@@ -51434,25 +51443,6 @@
             "totalYards": 389.0,
             "totalEpa": -9.45,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_CAR_ATL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CAR",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 287.0,
-            "rushingYards": 68.0,
-            "totalYards": 355.0,
-            "totalEpa": 6.0,
-            "turnovers": 0,
             "defensiveSacks": 2.0
           }
         ]
@@ -54789,14 +54779,14 @@
         "GB": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 3,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.571,
-            "pointsFor": 144,
-            "pointsAgainst": 145,
-            "pointDifferential": -1
+            "gamesPlayed": 8,
+            "winPct": 0.625,
+            "pointsFor": 171,
+            "pointsAgainst": 164,
+            "pointDifferential": 7
           },
           "previous": {
             "season": 2025,
@@ -54837,6 +54827,25 @@
       },
       "recentForm": {
         "GB": [
+          {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "CAR",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 19,
+            "result": "W",
+            "passingYards": 288.0,
+            "rushingYards": 66.0,
+            "totalYards": 354.0,
+            "totalEpa": 8.34,
+            "turnovers": 3.0,
+            "defensiveSacks": 6.0
+          },
           {
             "id": "2026_07_GB_DET",
             "date": "2026-10-25",
@@ -54912,25 +54921,6 @@
             "totalEpa": 1.08,
             "turnovers": 2.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_03_ATL_GB",
-            "date": "2026-09-24",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Home",
-            "teamScore": 14,
-            "opponentScore": 35,
-            "result": "L",
-            "passingYards": 312.0,
-            "rushingYards": 17.0,
-            "totalYards": 329.0,
-            "totalEpa": 0.86,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "LA": [
@@ -59872,13 +59862,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 3,
+            "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.5,
-            "pointsFor": 159,
-            "pointsAgainst": 166,
-            "pointDifferential": -7
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 178,
+            "pointsAgainst": 193,
+            "pointDifferential": -15
           },
           "previous": {
             "season": 2025,
@@ -59919,6 +59909,25 @@
       },
       "recentForm": {
         "CAR": [
+          {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "CAR",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Away",
+            "teamScore": 19,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 209.0,
+            "rushingYards": 82.0,
+            "totalYards": 291.0,
+            "totalEpa": -10.43,
+            "turnovers": 2.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_07_TB_CAR",
             "date": "2026-10-25",
@@ -59993,25 +60002,6 @@
             "totalYards": 389.0,
             "totalEpa": -9.45,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_CAR_ATL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CAR",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 287.0,
-            "rushingYards": 68.0,
-            "totalYards": 355.0,
-            "totalEpa": 6.0,
-            "turnovers": 0,
             "defensiveSacks": 2.0
           }
         ],
@@ -61199,14 +61189,14 @@
         "GB": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 3,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.571,
-            "pointsFor": 144,
-            "pointsAgainst": 145,
-            "pointDifferential": -1
+            "gamesPlayed": 8,
+            "winPct": 0.625,
+            "pointsFor": 171,
+            "pointsAgainst": 164,
+            "pointDifferential": 7
           },
           "previous": {
             "season": 2025,
@@ -61247,6 +61237,25 @@
       },
       "recentForm": {
         "GB": [
+          {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "CAR",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 19,
+            "result": "W",
+            "passingYards": 288.0,
+            "rushingYards": 66.0,
+            "totalYards": 354.0,
+            "totalEpa": 8.34,
+            "turnovers": 3.0,
+            "defensiveSacks": 6.0
+          },
           {
             "id": "2026_07_GB_DET",
             "date": "2026-10-25",
@@ -61322,25 +61331,6 @@
             "totalEpa": 1.08,
             "turnovers": 2.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_03_ATL_GB",
-            "date": "2026-09-24",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Home",
-            "teamScore": 14,
-            "opponentScore": 35,
-            "result": "L",
-            "passingYards": 312.0,
-            "rushingYards": 17.0,
-            "totalYards": 329.0,
-            "totalEpa": 0.86,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "NO": [
@@ -63796,13 +63786,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 3,
+            "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.5,
-            "pointsFor": 159,
-            "pointsAgainst": 166,
-            "pointDifferential": -7
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 178,
+            "pointsAgainst": 193,
+            "pointDifferential": -15
           },
           "previous": {
             "season": 2025,
@@ -63843,6 +63833,25 @@
       },
       "recentForm": {
         "CAR": [
+          {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "CAR",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Away",
+            "teamScore": 19,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 209.0,
+            "rushingYards": 82.0,
+            "totalYards": 291.0,
+            "totalEpa": -10.43,
+            "turnovers": 2.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_07_TB_CAR",
             "date": "2026-10-25",
@@ -63917,25 +63926,6 @@
             "totalYards": 389.0,
             "totalEpa": -9.45,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_CAR_ATL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CAR",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 287.0,
-            "rushingYards": 68.0,
-            "totalYards": 355.0,
-            "totalEpa": 6.0,
-            "turnovers": 0,
             "defensiveSacks": 2.0
           }
         ],
@@ -66634,13 +66624,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 3,
+            "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.5,
-            "pointsFor": 159,
-            "pointsAgainst": 166,
-            "pointDifferential": -7
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 178,
+            "pointsAgainst": 193,
+            "pointDifferential": -15
           },
           "previous": {
             "season": 2025,
@@ -66755,6 +66745,25 @@
         ],
         "CAR": [
           {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "CAR",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Away",
+            "teamScore": 19,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 209.0,
+            "rushingYards": 82.0,
+            "totalYards": 291.0,
+            "totalEpa": -10.43,
+            "turnovers": 2.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_07_TB_CAR",
             "date": "2026-10-25",
             "season": 2026,
@@ -66828,25 +66837,6 @@
             "totalYards": 389.0,
             "totalEpa": -9.45,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_CAR_ATL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CAR",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 287.0,
-            "rushingYards": 68.0,
-            "totalYards": 355.0,
-            "totalEpa": 6.0,
-            "turnovers": 0,
             "defensiveSacks": 2.0
           }
         ]
@@ -68987,14 +68977,14 @@
         "GB": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 3,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.571,
-            "pointsFor": 144,
-            "pointsAgainst": 145,
-            "pointDifferential": -1
+            "gamesPlayed": 8,
+            "winPct": 0.625,
+            "pointsFor": 171,
+            "pointsAgainst": 164,
+            "pointDifferential": 7
           },
           "previous": {
             "season": 2025,
@@ -69109,6 +69099,25 @@
         ],
         "GB": [
           {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "CAR",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 19,
+            "result": "W",
+            "passingYards": 288.0,
+            "rushingYards": 66.0,
+            "totalYards": 354.0,
+            "totalEpa": 8.34,
+            "turnovers": 3.0,
+            "defensiveSacks": 6.0
+          },
+          {
             "id": "2026_07_GB_DET",
             "date": "2026-10-25",
             "season": 2026,
@@ -69183,25 +69192,6 @@
             "totalEpa": 1.08,
             "turnovers": 2.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_03_ATL_GB",
-            "date": "2026-09-24",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Home",
-            "teamScore": 14,
-            "opponentScore": 35,
-            "result": "L",
-            "passingYards": 312.0,
-            "rushingYards": 17.0,
-            "totalYards": 329.0,
-            "totalEpa": 0.86,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -71234,13 +71224,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 3,
+            "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.5,
-            "pointsFor": 159,
-            "pointsAgainst": 166,
-            "pointDifferential": -7
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 178,
+            "pointsAgainst": 193,
+            "pointDifferential": -15
           },
           "previous": {
             "season": 2025,
@@ -71355,6 +71345,25 @@
         ],
         "CAR": [
           {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "CAR",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Away",
+            "teamScore": 19,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 209.0,
+            "rushingYards": 82.0,
+            "totalYards": 291.0,
+            "totalEpa": -10.43,
+            "turnovers": 2.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_07_TB_CAR",
             "date": "2026-10-25",
             "season": 2026,
@@ -71428,25 +71437,6 @@
             "totalYards": 389.0,
             "totalEpa": -9.45,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_CAR_ATL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CAR",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 287.0,
-            "rushingYards": 68.0,
-            "totalYards": 355.0,
-            "totalEpa": 6.0,
-            "turnovers": 0,
             "defensiveSacks": 2.0
           }
         ]
@@ -72561,14 +72551,14 @@
         "GB": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 3,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.571,
-            "pointsFor": 144,
-            "pointsAgainst": 145,
-            "pointDifferential": -1
+            "gamesPlayed": 8,
+            "winPct": 0.625,
+            "pointsFor": 171,
+            "pointsAgainst": 164,
+            "pointDifferential": 7
           },
           "previous": {
             "season": 2025,
@@ -72683,6 +72673,25 @@
         ],
         "GB": [
           {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "CAR",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 19,
+            "result": "W",
+            "passingYards": 288.0,
+            "rushingYards": 66.0,
+            "totalYards": 354.0,
+            "totalEpa": 8.34,
+            "turnovers": 3.0,
+            "defensiveSacks": 6.0
+          },
+          {
             "id": "2026_07_GB_DET",
             "date": "2026-10-25",
             "season": 2026,
@@ -72757,25 +72766,6 @@
             "totalEpa": 1.08,
             "turnovers": 2.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_03_ATL_GB",
-            "date": "2026-09-24",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Home",
-            "teamScore": 14,
-            "opponentScore": 35,
-            "result": "L",
-            "passingYards": 312.0,
-            "rushingYards": 17.0,
-            "totalYards": 329.0,
-            "totalEpa": 0.86,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -75181,14 +75171,14 @@
         "GB": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 3,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.571,
-            "pointsFor": 144,
-            "pointsAgainst": 145,
-            "pointDifferential": -1
+            "gamesPlayed": 8,
+            "winPct": 0.625,
+            "pointsFor": 171,
+            "pointsAgainst": 164,
+            "pointDifferential": 7
           },
           "previous": {
             "season": 2025,
@@ -75229,6 +75219,25 @@
       },
       "recentForm": {
         "GB": [
+          {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "CAR",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 19,
+            "result": "W",
+            "passingYards": 288.0,
+            "rushingYards": 66.0,
+            "totalYards": 354.0,
+            "totalEpa": 8.34,
+            "turnovers": 3.0,
+            "defensiveSacks": 6.0
+          },
           {
             "id": "2026_07_GB_DET",
             "date": "2026-10-25",
@@ -75304,25 +75313,6 @@
             "totalEpa": 1.08,
             "turnovers": 2.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_03_ATL_GB",
-            "date": "2026-09-24",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Home",
-            "teamScore": 14,
-            "opponentScore": 35,
-            "result": "L",
-            "passingYards": 312.0,
-            "rushingYards": 17.0,
-            "totalYards": 329.0,
-            "totalEpa": 0.86,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "CHI": [
@@ -76534,13 +76524,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 3,
+            "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.5,
-            "pointsFor": 159,
-            "pointsAgainst": 166,
-            "pointDifferential": -7
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 178,
+            "pointsAgainst": 193,
+            "pointDifferential": -15
           },
           "previous": {
             "season": 2025,
@@ -76581,6 +76571,25 @@
       },
       "recentForm": {
         "CAR": [
+          {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "CAR",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Away",
+            "teamScore": 19,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 209.0,
+            "rushingYards": 82.0,
+            "totalYards": 291.0,
+            "totalEpa": -10.43,
+            "turnovers": 2.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_07_TB_CAR",
             "date": "2026-10-25",
@@ -76655,25 +76664,6 @@
             "totalYards": 389.0,
             "totalEpa": -9.45,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_CAR_ATL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CAR",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 287.0,
-            "rushingYards": 68.0,
-            "totalYards": 355.0,
-            "totalEpa": 6.0,
-            "turnovers": 0,
             "defensiveSacks": 2.0
           }
         ],
@@ -83524,13 +83514,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 3,
+            "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.5,
-            "pointsFor": 159,
-            "pointsAgainst": 166,
-            "pointDifferential": -7
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 178,
+            "pointsAgainst": 193,
+            "pointDifferential": -15
           },
           "previous": {
             "season": 2025,
@@ -83645,6 +83635,25 @@
         ],
         "CAR": [
           {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "CAR",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Away",
+            "teamScore": 19,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 209.0,
+            "rushingYards": 82.0,
+            "totalYards": 291.0,
+            "totalEpa": -10.43,
+            "turnovers": 2.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_07_TB_CAR",
             "date": "2026-10-25",
             "season": 2026,
@@ -83718,25 +83727,6 @@
             "totalYards": 389.0,
             "totalEpa": -9.45,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_CAR_ATL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CAR",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 287.0,
-            "rushingYards": 68.0,
-            "totalYards": 355.0,
-            "totalEpa": 6.0,
-            "turnovers": 0,
             "defensiveSacks": 2.0
           }
         ]
@@ -85141,14 +85131,14 @@
         "GB": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 3,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.571,
-            "pointsFor": 144,
-            "pointsAgainst": 145,
-            "pointDifferential": -1
+            "gamesPlayed": 8,
+            "winPct": 0.625,
+            "pointsFor": 171,
+            "pointsAgainst": 164,
+            "pointDifferential": 7
           },
           "previous": {
             "season": 2025,
@@ -85263,6 +85253,25 @@
         ],
         "GB": [
           {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "CAR",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 19,
+            "result": "W",
+            "passingYards": 288.0,
+            "rushingYards": 66.0,
+            "totalYards": 354.0,
+            "totalEpa": 8.34,
+            "turnovers": 3.0,
+            "defensiveSacks": 6.0
+          },
+          {
             "id": "2026_07_GB_DET",
             "date": "2026-10-25",
             "season": 2026,
@@ -85337,25 +85346,6 @@
             "totalEpa": 1.08,
             "turnovers": 2.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_03_ATL_GB",
-            "date": "2026-09-24",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Home",
-            "teamScore": 14,
-            "opponentScore": 35,
-            "result": "L",
-            "passingYards": 312.0,
-            "rushingYards": 17.0,
-            "totalYards": 329.0,
-            "totalEpa": 0.86,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -85456,13 +85446,13 @@
           "current": {
             "season": 2026,
             "wins": 3,
-            "losses": 3,
+            "losses": 4,
             "ties": 0,
-            "gamesPlayed": 6,
-            "winPct": 0.5,
-            "pointsFor": 159,
-            "pointsAgainst": 166,
-            "pointDifferential": -7
+            "gamesPlayed": 7,
+            "winPct": 0.429,
+            "pointsFor": 178,
+            "pointsAgainst": 193,
+            "pointDifferential": -15
           },
           "previous": {
             "season": 2025,
@@ -85577,6 +85567,25 @@
         ],
         "CAR": [
           {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "CAR",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Away",
+            "teamScore": 19,
+            "opponentScore": 27,
+            "result": "L",
+            "passingYards": 209.0,
+            "rushingYards": 82.0,
+            "totalYards": 291.0,
+            "totalEpa": -10.43,
+            "turnovers": 2.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_07_TB_CAR",
             "date": "2026-10-25",
             "season": 2026,
@@ -85650,25 +85659,6 @@
             "totalYards": 389.0,
             "totalEpa": -9.45,
             "turnovers": 1.0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_02_CAR_ATL",
-            "date": "2026-09-20",
-            "season": 2026,
-            "week": 2,
-            "gameType": "REG",
-            "teamAbbreviation": "CAR",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Away",
-            "teamScore": 34,
-            "opponentScore": 3,
-            "result": "W",
-            "passingYards": 287.0,
-            "rushingYards": 68.0,
-            "totalYards": 355.0,
-            "totalEpa": 6.0,
-            "turnovers": 0,
             "defensiveSacks": 2.0
           }
         ]
@@ -86855,14 +86845,14 @@
         "GB": {
           "current": {
             "season": 2026,
-            "wins": 4,
+            "wins": 5,
             "losses": 3,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.571,
-            "pointsFor": 144,
-            "pointsAgainst": 145,
-            "pointDifferential": -1
+            "gamesPlayed": 8,
+            "winPct": 0.625,
+            "pointsFor": 171,
+            "pointsAgainst": 164,
+            "pointDifferential": 7
           },
           "previous": {
             "season": 2025,
@@ -86977,6 +86967,25 @@
         ],
         "GB": [
           {
+            "id": "2026_08_CAR_GB",
+            "date": "2026-10-29",
+            "season": 2026,
+            "week": 8,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "CAR",
+            "homeAway": "Home",
+            "teamScore": 27,
+            "opponentScore": 19,
+            "result": "W",
+            "passingYards": 288.0,
+            "rushingYards": 66.0,
+            "totalYards": 354.0,
+            "totalEpa": 8.34,
+            "turnovers": 3.0,
+            "defensiveSacks": 6.0
+          },
+          {
             "id": "2026_07_GB_DET",
             "date": "2026-10-25",
             "season": 2026,
@@ -87051,25 +87060,6 @@
             "totalEpa": 1.08,
             "turnovers": 2.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_03_ATL_GB",
-            "date": "2026-09-24",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "ATL",
-            "homeAway": "Home",
-            "teamScore": 14,
-            "opponentScore": 35,
-            "result": "L",
-            "passingYards": 312.0,
-            "rushingYards": 17.0,
-            "totalYards": 329.0,
-            "totalEpa": 0.86,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
