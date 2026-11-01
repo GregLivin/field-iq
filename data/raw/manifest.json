@@ -1,7 +1,7 @@
 {
   "provider": "nflverse",
   "license": "nflverse code/data licenses vary; NFL data belong to their respective owners and are governed by their terms of use",
-  "collectedAt": "2026-10-31T15:46:02.354076+00:00",
+  "collectedAt": "2026-11-01T16:50:37.334349+00:00",
   "season": 2026,
   "trainingSeasons": [
     2019,
