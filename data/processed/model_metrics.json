@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-02T20:24:43.420470+00:00",
+  "generatedAt": "2026-11-03T17:53:52.874127+00:00",
   "trainingGames": 1960,
-  "validationGames": 120,
+  "validationGames": 121,
   "validationMethod": "season-2026",
   "features": [
     "elo_diff",
@@ -37,19 +37,19 @@
   ],
   "models": {
     "logistic": {
-      "accuracy": 0.6167,
-      "logLoss": 0.63,
-      "brierScore": 0.2224
+      "accuracy": 0.6116,
+      "logLoss": 0.631,
+      "brierScore": 0.2229
     },
     "random_forest": {
-      "accuracy": 0.625,
-      "logLoss": 0.6537,
-      "brierScore": 0.2314
+      "accuracy": 0.6198,
+      "logLoss": 0.6546,
+      "brierScore": 0.2318
     },
     "gradient_boosting": {
-      "accuracy": 0.575,
-      "logLoss": 0.6871,
-      "brierScore": 0.2439
+      "accuracy": 0.5702,
+      "logLoss": 0.6874,
+      "brierScore": 0.244
     }
   },
   "manualData": {
@@ -61,48 +61,48 @@
   "scoreModels": {
     "homeScore": {
       "random_forest": {
-        "mae": 7.314,
-        "rmse": 8.782
+        "mae": 7.306,
+        "rmse": 8.765
       },
       "gradient_boosting": {
-        "mae": 7.544,
-        "rmse": 9.126
+        "mae": 7.523,
+        "rmse": 9.1
       }
     },
     "awayScore": {
       "random_forest": {
-        "mae": 8.237,
-        "rmse": 10.223
+        "mae": 8.265,
+        "rmse": 10.234
       },
       "gradient_boosting": {
-        "mae": 8.525,
-        "rmse": 10.444
+        "mae": 8.56,
+        "rmse": 10.465
       }
     },
     "homeMargin": {
       "random_forest": {
-        "mae": 9.943,
-        "rmse": 12.727
+        "mae": 10.017,
+        "rmse": 12.789
       },
       "gradient_boosting": {
-        "mae": 10.032,
-        "rmse": 13.113
+        "mae": 10.098,
+        "rmse": 13.161
       }
     },
     "gameTotal": {
       "random_forest": {
-        "mae": 12.118,
-        "rmse": 14.607
+        "mae": 12.067,
+        "rmse": 14.557
       },
       "gradient_boosting": {
-        "mae": 12.03,
-        "rmse": 14.507
+        "mae": 11.966,
+        "rmse": 14.452
       }
     }
   },
   "marketCalibration": {
-    "marginResidualSd": 12.796,
-    "totalResidualSd": 14.543,
+    "marginResidualSd": 12.836,
+    "totalResidualSd": 14.491,
     "method": "validation residual normal approximation"
   }
 }
