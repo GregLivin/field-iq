@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "asOf": "2026-11-05T18:05:43.284437+00:00",
+  "asOf": "2026-11-06T17:33:05.949139+00:00",
   "provider": "nflverse",
   "games": {
     "2026_01_NE_SEA": {
@@ -1050,13 +1050,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 8,
-            "winPct": 0.5,
-            "pointsFor": 179,
-            "pointsAgainst": 203,
-            "pointDifferential": -24
+            "gamesPlayed": 9,
+            "winPct": 0.444,
+            "pointsFor": 189,
+            "pointsAgainst": 236,
+            "pointDifferential": -47
           },
           "previous": {
             "season": 2025,
@@ -1097,6 +1097,25 @@
       },
       "recentForm": {
         "BAL": [
+          {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "BAL",
+            "opponentAbbreviation": "JAX",
+            "homeAway": "Home",
+            "teamScore": 10,
+            "opponentScore": 33,
+            "result": "L",
+            "passingYards": 57.0,
+            "rushingYards": 172.0,
+            "totalYards": 229.0,
+            "totalEpa": -18.66,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_08_BAL_BUF",
             "date": "2026-11-01",
@@ -1172,25 +1191,6 @@
             "totalEpa": 9.92,
             "turnovers": 1.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_04_TEN_BAL",
-            "date": "2026-10-04",
-            "season": 2026,
-            "week": 4,
-            "gameType": "REG",
-            "teamAbbreviation": "BAL",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Home",
-            "teamScore": 24,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 285.0,
-            "rushingYards": 112.0,
-            "totalYards": 397.0,
-            "totalEpa": 8.35,
-            "turnovers": 0,
-            "defensiveSacks": 1.0
           }
         ],
         "IND": [
@@ -2087,14 +2087,14 @@
         "JAX": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.714,
-            "pointsFor": 196,
-            "pointsAgainst": 111,
-            "pointDifferential": 85
+            "gamesPlayed": 8,
+            "winPct": 0.75,
+            "pointsFor": 229,
+            "pointsAgainst": 121,
+            "pointDifferential": 108
           },
           "previous": {
             "season": 2025,
@@ -2209,6 +2209,25 @@
         ],
         "JAX": [
           {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "JAX",
+            "opponentAbbreviation": "BAL",
+            "homeAway": "Away",
+            "teamScore": 33,
+            "opponentScore": 10,
+            "result": "W",
+            "passingYards": 242.0,
+            "rushingYards": 77.0,
+            "totalYards": 319.0,
+            "totalEpa": 7.44,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_08_IND_JAX",
             "date": "2026-11-01",
             "season": 2026,
@@ -2282,25 +2301,6 @@
             "totalYards": 338.0,
             "totalEpa": 10.12,
             "turnovers": 0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_03_NE_JAX",
-            "date": "2026-09-27",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "JAX",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 35,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 182.0,
-            "rushingYards": 137.0,
-            "totalYards": 319.0,
-            "totalEpa": 13.68,
-            "turnovers": 1.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -7448,13 +7448,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 8,
-            "winPct": 0.5,
-            "pointsFor": 179,
-            "pointsAgainst": 203,
-            "pointDifferential": -24
+            "gamesPlayed": 9,
+            "winPct": 0.444,
+            "pointsFor": 189,
+            "pointsAgainst": 236,
+            "pointDifferential": -47
           },
           "previous": {
             "season": 2025,
@@ -7569,6 +7569,25 @@
         ],
         "BAL": [
           {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "BAL",
+            "opponentAbbreviation": "JAX",
+            "homeAway": "Home",
+            "teamScore": 10,
+            "opponentScore": 33,
+            "result": "L",
+            "passingYards": 57.0,
+            "rushingYards": 172.0,
+            "totalYards": 229.0,
+            "totalEpa": -18.66,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_08_BAL_BUF",
             "date": "2026-11-01",
             "season": 2026,
@@ -7643,25 +7662,6 @@
             "totalEpa": 9.92,
             "turnovers": 1.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_04_TEN_BAL",
-            "date": "2026-10-04",
-            "season": 2026,
-            "week": 4,
-            "gameType": "REG",
-            "teamAbbreviation": "BAL",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Home",
-            "teamScore": 24,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 285.0,
-            "rushingYards": 112.0,
-            "totalYards": 397.0,
-            "totalEpa": 8.35,
-            "turnovers": 0,
-            "defensiveSacks": 1.0
           }
         ]
       },
@@ -8401,14 +8401,14 @@
         "JAX": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.714,
-            "pointsFor": 196,
-            "pointsAgainst": 111,
-            "pointDifferential": 85
+            "gamesPlayed": 8,
+            "winPct": 0.75,
+            "pointsFor": 229,
+            "pointsAgainst": 121,
+            "pointDifferential": 108
           },
           "previous": {
             "season": 2025,
@@ -8449,6 +8449,25 @@
       },
       "recentForm": {
         "JAX": [
+          {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "JAX",
+            "opponentAbbreviation": "BAL",
+            "homeAway": "Away",
+            "teamScore": 33,
+            "opponentScore": 10,
+            "result": "W",
+            "passingYards": 242.0,
+            "rushingYards": 77.0,
+            "totalYards": 319.0,
+            "totalEpa": 7.44,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_08_IND_JAX",
             "date": "2026-11-01",
@@ -8523,25 +8542,6 @@
             "totalYards": 338.0,
             "totalEpa": 10.12,
             "turnovers": 0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_03_NE_JAX",
-            "date": "2026-09-27",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "JAX",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 35,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 182.0,
-            "rushingYards": 137.0,
-            "totalYards": 319.0,
-            "totalEpa": 13.68,
-            "turnovers": 1.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -12831,14 +12831,14 @@
         "JAX": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.714,
-            "pointsFor": 196,
-            "pointsAgainst": 111,
-            "pointDifferential": 85
+            "gamesPlayed": 8,
+            "winPct": 0.75,
+            "pointsFor": 229,
+            "pointsAgainst": 121,
+            "pointDifferential": 108
           },
           "previous": {
             "season": 2025,
@@ -12953,6 +12953,25 @@
         ],
         "JAX": [
           {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "JAX",
+            "opponentAbbreviation": "BAL",
+            "homeAway": "Away",
+            "teamScore": 33,
+            "opponentScore": 10,
+            "result": "W",
+            "passingYards": 242.0,
+            "rushingYards": 77.0,
+            "totalYards": 319.0,
+            "totalEpa": 7.44,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_08_IND_JAX",
             "date": "2026-11-01",
             "season": 2026,
@@ -13026,25 +13045,6 @@
             "totalYards": 338.0,
             "totalEpa": 10.12,
             "turnovers": 0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_03_NE_JAX",
-            "date": "2026-09-27",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "JAX",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 35,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 182.0,
-            "rushingYards": 137.0,
-            "totalYards": 319.0,
-            "totalEpa": 13.68,
-            "turnovers": 1.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -14788,13 +14788,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 8,
-            "winPct": 0.5,
-            "pointsFor": 179,
-            "pointsAgainst": 203,
-            "pointDifferential": -24
+            "gamesPlayed": 9,
+            "winPct": 0.444,
+            "pointsFor": 189,
+            "pointsAgainst": 236,
+            "pointDifferential": -47
           },
           "previous": {
             "season": 2025,
@@ -14835,6 +14835,25 @@
       },
       "recentForm": {
         "BAL": [
+          {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "BAL",
+            "opponentAbbreviation": "JAX",
+            "homeAway": "Home",
+            "teamScore": 10,
+            "opponentScore": 33,
+            "result": "L",
+            "passingYards": 57.0,
+            "rushingYards": 172.0,
+            "totalYards": 229.0,
+            "totalEpa": -18.66,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_08_BAL_BUF",
             "date": "2026-11-01",
@@ -14910,25 +14929,6 @@
             "totalEpa": 9.92,
             "turnovers": 1.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_04_TEN_BAL",
-            "date": "2026-10-04",
-            "season": 2026,
-            "week": 4,
-            "gameType": "REG",
-            "teamAbbreviation": "BAL",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Home",
-            "teamScore": 24,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 285.0,
-            "rushingYards": 112.0,
-            "totalYards": 397.0,
-            "totalEpa": 8.35,
-            "turnovers": 0,
-            "defensiveSacks": 1.0
           }
         ],
         "DAL": [
@@ -17769,14 +17769,14 @@
         "JAX": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.714,
-            "pointsFor": 196,
-            "pointsAgainst": 111,
-            "pointDifferential": 85
+            "gamesPlayed": 8,
+            "winPct": 0.75,
+            "pointsFor": 229,
+            "pointsAgainst": 121,
+            "pointDifferential": 108
           },
           "previous": {
             "season": 2025,
@@ -17817,6 +17817,25 @@
       },
       "recentForm": {
         "JAX": [
+          {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "JAX",
+            "opponentAbbreviation": "BAL",
+            "homeAway": "Away",
+            "teamScore": 33,
+            "opponentScore": 10,
+            "result": "W",
+            "passingYards": 242.0,
+            "rushingYards": 77.0,
+            "totalYards": 319.0,
+            "totalEpa": 7.44,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_08_IND_JAX",
             "date": "2026-11-01",
@@ -17891,25 +17910,6 @@
             "totalYards": 338.0,
             "totalEpa": 10.12,
             "turnovers": 0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_03_NE_JAX",
-            "date": "2026-09-27",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "JAX",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 35,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 182.0,
-            "rushingYards": 137.0,
-            "totalYards": 319.0,
-            "totalEpa": 13.68,
-            "turnovers": 1.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -19158,13 +19158,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 8,
-            "winPct": 0.5,
-            "pointsFor": 179,
-            "pointsAgainst": 203,
-            "pointDifferential": -24
+            "gamesPlayed": 9,
+            "winPct": 0.444,
+            "pointsFor": 189,
+            "pointsAgainst": 236,
+            "pointDifferential": -47
           },
           "previous": {
             "season": 2025,
@@ -19279,6 +19279,25 @@
         ],
         "BAL": [
           {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "BAL",
+            "opponentAbbreviation": "JAX",
+            "homeAway": "Home",
+            "teamScore": 10,
+            "opponentScore": 33,
+            "result": "L",
+            "passingYards": 57.0,
+            "rushingYards": 172.0,
+            "totalYards": 229.0,
+            "totalEpa": -18.66,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_08_BAL_BUF",
             "date": "2026-11-01",
             "season": 2026,
@@ -19353,25 +19372,6 @@
             "totalEpa": 9.92,
             "turnovers": 1.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_04_TEN_BAL",
-            "date": "2026-10-04",
-            "season": 2026,
-            "week": 4,
-            "gameType": "REG",
-            "teamAbbreviation": "BAL",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Home",
-            "teamScore": 24,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 285.0,
-            "rushingYards": 112.0,
-            "totalYards": 397.0,
-            "totalEpa": 8.35,
-            "turnovers": 0,
-            "defensiveSacks": 1.0
           }
         ]
       },
@@ -21801,14 +21801,14 @@
         "JAX": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.714,
-            "pointsFor": 196,
-            "pointsAgainst": 111,
-            "pointDifferential": 85
+            "gamesPlayed": 8,
+            "winPct": 0.75,
+            "pointsFor": 229,
+            "pointsAgainst": 121,
+            "pointDifferential": 108
           },
           "previous": {
             "season": 2025,
@@ -21923,6 +21923,25 @@
         ],
         "JAX": [
           {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "JAX",
+            "opponentAbbreviation": "BAL",
+            "homeAway": "Away",
+            "teamScore": 33,
+            "opponentScore": 10,
+            "result": "W",
+            "passingYards": 242.0,
+            "rushingYards": 77.0,
+            "totalYards": 319.0,
+            "totalEpa": 7.44,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_08_IND_JAX",
             "date": "2026-11-01",
             "season": 2026,
@@ -21996,25 +22015,6 @@
             "totalYards": 338.0,
             "totalEpa": 10.12,
             "turnovers": 0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_03_NE_JAX",
-            "date": "2026-09-27",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "JAX",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 35,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 182.0,
-            "rushingYards": 137.0,
-            "totalYards": 319.0,
-            "totalEpa": 13.68,
-            "turnovers": 1.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -25942,13 +25942,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 8,
-            "winPct": 0.5,
-            "pointsFor": 179,
-            "pointsAgainst": 203,
-            "pointDifferential": -24
+            "gamesPlayed": 9,
+            "winPct": 0.444,
+            "pointsFor": 189,
+            "pointsAgainst": 236,
+            "pointDifferential": -47
           },
           "previous": {
             "season": 2025,
@@ -25989,6 +25989,25 @@
       },
       "recentForm": {
         "BAL": [
+          {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "BAL",
+            "opponentAbbreviation": "JAX",
+            "homeAway": "Home",
+            "teamScore": 10,
+            "opponentScore": 33,
+            "result": "L",
+            "passingYards": 57.0,
+            "rushingYards": 172.0,
+            "totalYards": 229.0,
+            "totalEpa": -18.66,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_08_BAL_BUF",
             "date": "2026-11-01",
@@ -26064,25 +26083,6 @@
             "totalEpa": 9.92,
             "turnovers": 1.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_04_TEN_BAL",
-            "date": "2026-10-04",
-            "season": 2026,
-            "week": 4,
-            "gameType": "REG",
-            "teamAbbreviation": "BAL",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Home",
-            "teamScore": 24,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 285.0,
-            "rushingYards": 112.0,
-            "totalYards": 397.0,
-            "totalEpa": 8.35,
-            "turnovers": 0,
-            "defensiveSacks": 1.0
           }
         ],
         "ATL": [
@@ -26943,14 +26943,14 @@
         "JAX": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.714,
-            "pointsFor": 196,
-            "pointsAgainst": 111,
-            "pointDifferential": 85
+            "gamesPlayed": 8,
+            "winPct": 0.75,
+            "pointsFor": 229,
+            "pointsAgainst": 121,
+            "pointDifferential": 108
           },
           "previous": {
             "season": 2025,
@@ -27065,6 +27065,25 @@
         ],
         "JAX": [
           {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "JAX",
+            "opponentAbbreviation": "BAL",
+            "homeAway": "Away",
+            "teamScore": 33,
+            "opponentScore": 10,
+            "result": "W",
+            "passingYards": 242.0,
+            "rushingYards": 77.0,
+            "totalYards": 319.0,
+            "totalEpa": 7.44,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_08_IND_JAX",
             "date": "2026-11-01",
             "season": 2026,
@@ -27138,25 +27157,6 @@
             "totalYards": 338.0,
             "totalEpa": 10.12,
             "turnovers": 0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_03_NE_JAX",
-            "date": "2026-09-27",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "JAX",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 35,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 182.0,
-            "rushingYards": 137.0,
-            "totalYards": 319.0,
-            "totalEpa": 13.68,
-            "turnovers": 1.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -27270,13 +27270,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 8,
-            "winPct": 0.5,
-            "pointsFor": 179,
-            "pointsAgainst": 203,
-            "pointDifferential": -24
+            "gamesPlayed": 9,
+            "winPct": 0.444,
+            "pointsFor": 189,
+            "pointsAgainst": 236,
+            "pointDifferential": -47
           },
           "previous": {
             "season": 2025,
@@ -27317,6 +27317,25 @@
       },
       "recentForm": {
         "BAL": [
+          {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "BAL",
+            "opponentAbbreviation": "JAX",
+            "homeAway": "Home",
+            "teamScore": 10,
+            "opponentScore": 33,
+            "result": "L",
+            "passingYards": 57.0,
+            "rushingYards": 172.0,
+            "totalYards": 229.0,
+            "totalEpa": -18.66,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_08_BAL_BUF",
             "date": "2026-11-01",
@@ -27392,25 +27411,6 @@
             "totalEpa": 9.92,
             "turnovers": 1.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_04_TEN_BAL",
-            "date": "2026-10-04",
-            "season": 2026,
-            "week": 4,
-            "gameType": "REG",
-            "teamAbbreviation": "BAL",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Home",
-            "teamScore": 24,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 285.0,
-            "rushingYards": 112.0,
-            "totalYards": 397.0,
-            "totalEpa": 8.35,
-            "turnovers": 0,
-            "defensiveSacks": 1.0
           }
         ],
         "CLE": [
@@ -32026,13 +32026,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 8,
-            "winPct": 0.5,
-            "pointsFor": 179,
-            "pointsAgainst": 203,
-            "pointDifferential": -24
+            "gamesPlayed": 9,
+            "winPct": 0.444,
+            "pointsFor": 189,
+            "pointsAgainst": 236,
+            "pointDifferential": -47
           },
           "previous": {
             "season": 2025,
@@ -32147,6 +32147,25 @@
         ],
         "BAL": [
           {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "BAL",
+            "opponentAbbreviation": "JAX",
+            "homeAway": "Home",
+            "teamScore": 10,
+            "opponentScore": 33,
+            "result": "L",
+            "passingYards": 57.0,
+            "rushingYards": 172.0,
+            "totalYards": 229.0,
+            "totalEpa": -18.66,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_08_BAL_BUF",
             "date": "2026-11-01",
             "season": 2026,
@@ -32221,25 +32240,6 @@
             "totalEpa": 9.92,
             "turnovers": 1.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_04_TEN_BAL",
-            "date": "2026-10-04",
-            "season": 2026,
-            "week": 4,
-            "gameType": "REG",
-            "teamAbbreviation": "BAL",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Home",
-            "teamScore": 24,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 285.0,
-            "rushingYards": 112.0,
-            "totalYards": 397.0,
-            "totalEpa": 8.35,
-            "turnovers": 0,
-            "defensiveSacks": 1.0
           }
         ]
       },
@@ -37108,13 +37108,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 8,
-            "winPct": 0.5,
-            "pointsFor": 179,
-            "pointsAgainst": 203,
-            "pointDifferential": -24
+            "gamesPlayed": 9,
+            "winPct": 0.444,
+            "pointsFor": 189,
+            "pointsAgainst": 236,
+            "pointDifferential": -47
           },
           "previous": {
             "season": 2025,
@@ -37155,6 +37155,25 @@
       },
       "recentForm": {
         "BAL": [
+          {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "BAL",
+            "opponentAbbreviation": "JAX",
+            "homeAway": "Home",
+            "teamScore": 10,
+            "opponentScore": 33,
+            "result": "L",
+            "passingYards": 57.0,
+            "rushingYards": 172.0,
+            "totalYards": 229.0,
+            "totalEpa": -18.66,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_08_BAL_BUF",
             "date": "2026-11-01",
@@ -37230,25 +37249,6 @@
             "totalEpa": 9.92,
             "turnovers": 1.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_04_TEN_BAL",
-            "date": "2026-10-04",
-            "season": 2026,
-            "week": 4,
-            "gameType": "REG",
-            "teamAbbreviation": "BAL",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Home",
-            "teamScore": 24,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 285.0,
-            "rushingYards": 112.0,
-            "totalYards": 397.0,
-            "totalEpa": 8.35,
-            "turnovers": 0,
-            "defensiveSacks": 1.0
           }
         ],
         "BUF": [
@@ -37831,14 +37831,14 @@
         "JAX": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.714,
-            "pointsFor": 196,
-            "pointsAgainst": 111,
-            "pointDifferential": 85
+            "gamesPlayed": 8,
+            "winPct": 0.75,
+            "pointsFor": 229,
+            "pointsAgainst": 121,
+            "pointDifferential": 108
           },
           "previous": {
             "season": 2025,
@@ -37953,6 +37953,25 @@
         ],
         "JAX": [
           {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "JAX",
+            "opponentAbbreviation": "BAL",
+            "homeAway": "Away",
+            "teamScore": 33,
+            "opponentScore": 10,
+            "result": "W",
+            "passingYards": 242.0,
+            "rushingYards": 77.0,
+            "totalYards": 319.0,
+            "totalEpa": 7.44,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_08_IND_JAX",
             "date": "2026-11-01",
             "season": 2026,
@@ -38026,25 +38045,6 @@
             "totalYards": 338.0,
             "totalEpa": 10.12,
             "turnovers": 0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_03_NE_JAX",
-            "date": "2026-09-27",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "JAX",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 35,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 182.0,
-            "rushingYards": 137.0,
-            "totalYards": 319.0,
-            "totalEpa": 13.68,
-            "turnovers": 1.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -40838,17 +40838,17 @@
         "gameType": "REG",
         "awayTeam": "Jacksonville Jaguars",
         "awayAbbreviation": "JAX",
-        "awayScore": null,
+        "awayScore": 33,
         "homeTeam": "Baltimore Ravens",
         "homeAbbreviation": "BAL",
-        "homeScore": null,
-        "winner": null,
-        "winnerAbbreviation": null,
+        "homeScore": 10,
+        "winner": "Jacksonville Jaguars",
+        "winnerAbbreviation": "JAX",
         "time": "20:15",
-        "status": "upcoming",
+        "status": "final",
         "stadium": "M&T Bank Stadium",
         "roof": "outdoors",
-        "surface": "grass",
+        "surface": "",
         "lastMeeting": {
           "id": "2023_15_BAL_JAX",
           "date": "2023-12-17",
@@ -40873,14 +40873,14 @@
         "JAX": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.714,
-            "pointsFor": 196,
-            "pointsAgainst": 111,
-            "pointDifferential": 85
+            "gamesPlayed": 8,
+            "winPct": 0.75,
+            "pointsFor": 229,
+            "pointsAgainst": 121,
+            "pointDifferential": 108
           },
           "previous": {
             "season": 2025,
@@ -40898,13 +40898,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 8,
-            "winPct": 0.5,
-            "pointsFor": 179,
-            "pointsAgainst": 203,
-            "pointDifferential": -24
+            "gamesPlayed": 9,
+            "winPct": 0.444,
+            "pointsFor": 189,
+            "pointsAgainst": 236,
+            "pointDifferential": -47
           },
           "previous": {
             "season": 2025,
@@ -40921,6 +40921,25 @@
       },
       "recentForm": {
         "JAX": [
+          {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "JAX",
+            "opponentAbbreviation": "BAL",
+            "homeAway": "Away",
+            "teamScore": 33,
+            "opponentScore": 10,
+            "result": "W",
+            "passingYards": 242.0,
+            "rushingYards": 77.0,
+            "totalYards": 319.0,
+            "totalEpa": 7.44,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_08_IND_JAX",
             "date": "2026-11-01",
@@ -40996,28 +41015,28 @@
             "totalEpa": 10.12,
             "turnovers": 0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_03_NE_JAX",
-            "date": "2026-09-27",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "JAX",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 35,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 182.0,
-            "rushingYards": 137.0,
-            "totalYards": 319.0,
-            "totalEpa": 13.68,
-            "turnovers": 1.0,
-            "defensiveSacks": 2.0
           }
         ],
         "BAL": [
+          {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "BAL",
+            "opponentAbbreviation": "JAX",
+            "homeAway": "Home",
+            "teamScore": 10,
+            "opponentScore": 33,
+            "result": "L",
+            "passingYards": 57.0,
+            "rushingYards": 172.0,
+            "totalYards": 229.0,
+            "totalEpa": -18.66,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_08_BAL_BUF",
             "date": "2026-11-01",
@@ -41093,29 +41112,22 @@
             "totalEpa": 9.92,
             "turnovers": 1.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_04_TEN_BAL",
-            "date": "2026-10-04",
-            "season": 2026,
-            "week": 4,
-            "gameType": "REG",
-            "teamAbbreviation": "BAL",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Home",
-            "teamScore": 24,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 285.0,
-            "rushingYards": 112.0,
-            "totalYards": 397.0,
-            "totalEpa": 8.35,
-            "turnovers": 0,
-            "defensiveSacks": 1.0
           }
         ]
       },
       "headToHead": [
+        {
+          "id": "2026_09_JAX_BAL",
+          "date": "2026-11-05",
+          "season": 2026,
+          "week": 9,
+          "gameType": "REG",
+          "awayAbbreviation": "JAX",
+          "awayScore": 33,
+          "homeAbbreviation": "BAL",
+          "homeScore": 10,
+          "winnerAbbreviation": "JAX"
+        },
         {
           "id": "2023_15_BAL_JAX",
           "date": "2023-12-17",
@@ -41153,29 +41165,7 @@
           "winnerAbbreviation": "BAL"
         }
       ],
-      "prediction": {
-        "id": "2026_09_JAX_BAL",
-        "awayTeam": "Jacksonville Jaguars",
-        "awayAbbreviation": "JAX",
-        "homeTeam": "Baltimore Ravens",
-        "homeAbbreviation": "BAL",
-        "kickoff": "2026-11-05 20:15",
-        "predictedWinner": "Jacksonville Jaguars",
-        "homeWinProbability": 33,
-        "awayWinProbability": 67,
-        "classifierHomeProbability": 24,
-        "scoreModelHomeProbability": 51,
-        "projectedHomeScore": 23.9,
-        "projectedAwayScore": 21.7,
-        "projectedMargin": 0.3,
-        "projectedTotal": 47.1,
-        "confidence": "Medium",
-        "factors": [
-          "Recent scoring margin",
-          "Quarterback efficiency",
-          "EPA per play"
-        ]
-      }
+      "prediction": null
     },
     "2026_09_CIN_ATL": {
       "game": {
@@ -42500,7 +42490,7 @@
         "projectedHomeScore": 22.3,
         "projectedAwayScore": 21.6,
         "projectedMargin": 0.1,
-        "projectedTotal": 42.4,
+        "projectedTotal": 42.6,
         "confidence": "Low",
         "factors": [
           "Elo team strength",
@@ -43157,10 +43147,10 @@
         "awayWinProbability": 76,
         "classifierHomeProbability": 18,
         "scoreModelHomeProbability": 35,
-        "projectedHomeScore": 19.7,
-        "projectedAwayScore": 23.4,
-        "projectedMargin": -5.0,
-        "projectedTotal": 42.1,
+        "projectedHomeScore": 20.0,
+        "projectedAwayScore": 22.9,
+        "projectedMargin": -5.1,
+        "projectedTotal": 43.2,
         "confidence": "High",
         "factors": [
           "Elo team strength",
@@ -43865,8 +43855,8 @@
         "awayWinProbability": 21,
         "classifierHomeProbability": 82,
         "scoreModelHomeProbability": 73,
-        "projectedHomeScore": 28.9,
-        "projectedAwayScore": 21.0,
+        "projectedHomeScore": 29.0,
+        "projectedAwayScore": 20.9,
         "projectedMargin": 8.0,
         "projectedTotal": 47.4,
         "confidence": "High",
@@ -44548,11 +44538,11 @@
         "homeWinProbability": 75,
         "awayWinProbability": 25,
         "classifierHomeProbability": 74,
-        "scoreModelHomeProbability": 78,
+        "scoreModelHomeProbability": 77,
         "projectedHomeScore": 28.2,
         "projectedAwayScore": 20.4,
         "projectedMargin": 9.7,
-        "projectedTotal": 48.0,
+        "projectedTotal": 47.9,
         "confidence": "High",
         "factors": [
           "Elo team strength",
@@ -44920,7 +44910,7 @@
         "homeWinProbability": 69,
         "awayWinProbability": 31,
         "classifierHomeProbability": 64,
-        "scoreModelHomeProbability": 77,
+        "scoreModelHomeProbability": 76,
         "projectedHomeScore": 30.0,
         "projectedAwayScore": 18.7,
         "projectedMargin": 9.3,
@@ -45245,10 +45235,10 @@
         "awayWinProbability": 41,
         "classifierHomeProbability": 59,
         "scoreModelHomeProbability": 58,
-        "projectedHomeScore": 22.6,
-        "projectedAwayScore": 19.5,
+        "projectedHomeScore": 22.5,
+        "projectedAwayScore": 19.3,
         "projectedMargin": 2.6,
-        "projectedTotal": 44.8,
+        "projectedTotal": 44.7,
         "confidence": "Medium",
         "factors": [
           "Quarterback efficiency",
@@ -45593,10 +45583,10 @@
         "awayWinProbability": 42,
         "classifierHomeProbability": 61,
         "scoreModelHomeProbability": 51,
-        "projectedHomeScore": 23.5,
-        "projectedAwayScore": 21.6,
+        "projectedHomeScore": 23.6,
+        "projectedAwayScore": 22.2,
         "projectedMargin": 0.2,
-        "projectedTotal": 46.8,
+        "projectedTotal": 45.2,
         "confidence": "Medium",
         "factors": [
           "Quarterback efficiency",
@@ -47663,14 +47653,14 @@
         "JAX": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.714,
-            "pointsFor": 196,
-            "pointsAgainst": 111,
-            "pointDifferential": 85
+            "gamesPlayed": 8,
+            "winPct": 0.75,
+            "pointsFor": 229,
+            "pointsAgainst": 121,
+            "pointDifferential": 108
           },
           "previous": {
             "season": 2025,
@@ -47711,6 +47701,25 @@
       },
       "recentForm": {
         "JAX": [
+          {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "JAX",
+            "opponentAbbreviation": "BAL",
+            "homeAway": "Away",
+            "teamScore": 33,
+            "opponentScore": 10,
+            "result": "W",
+            "passingYards": 242.0,
+            "rushingYards": 77.0,
+            "totalYards": 319.0,
+            "totalEpa": 7.44,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_08_IND_JAX",
             "date": "2026-11-01",
@@ -47785,25 +47794,6 @@
             "totalYards": 338.0,
             "totalEpa": 10.12,
             "turnovers": 0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_03_NE_JAX",
-            "date": "2026-09-27",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "JAX",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 35,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 182.0,
-            "rushingYards": 137.0,
-            "totalYards": 319.0,
-            "totalEpa": 13.68,
-            "turnovers": 1.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -50368,13 +50358,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 8,
-            "winPct": 0.5,
-            "pointsFor": 179,
-            "pointsAgainst": 203,
-            "pointDifferential": -24
+            "gamesPlayed": 9,
+            "winPct": 0.444,
+            "pointsFor": 189,
+            "pointsAgainst": 236,
+            "pointDifferential": -47
           },
           "previous": {
             "season": 2025,
@@ -50489,6 +50479,25 @@
         ],
         "BAL": [
           {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "BAL",
+            "opponentAbbreviation": "JAX",
+            "homeAway": "Home",
+            "teamScore": 10,
+            "opponentScore": 33,
+            "result": "L",
+            "passingYards": 57.0,
+            "rushingYards": 172.0,
+            "totalYards": 229.0,
+            "totalEpa": -18.66,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_08_BAL_BUF",
             "date": "2026-11-01",
             "season": 2026,
@@ -50563,25 +50572,6 @@
             "totalEpa": 9.92,
             "turnovers": 1.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_04_TEN_BAL",
-            "date": "2026-10-04",
-            "season": 2026,
-            "week": 4,
-            "gameType": "REG",
-            "teamAbbreviation": "BAL",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Home",
-            "teamScore": 24,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 285.0,
-            "rushingYards": 112.0,
-            "totalYards": 397.0,
-            "totalEpa": 8.35,
-            "turnovers": 0,
-            "defensiveSacks": 1.0
           }
         ]
       },
@@ -51322,13 +51312,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 8,
-            "winPct": 0.5,
-            "pointsFor": 179,
-            "pointsAgainst": 203,
-            "pointDifferential": -24
+            "gamesPlayed": 9,
+            "winPct": 0.444,
+            "pointsFor": 189,
+            "pointsAgainst": 236,
+            "pointDifferential": -47
           },
           "previous": {
             "season": 2025,
@@ -51369,6 +51359,25 @@
       },
       "recentForm": {
         "BAL": [
+          {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "BAL",
+            "opponentAbbreviation": "JAX",
+            "homeAway": "Home",
+            "teamScore": 10,
+            "opponentScore": 33,
+            "result": "L",
+            "passingYards": 57.0,
+            "rushingYards": 172.0,
+            "totalYards": 229.0,
+            "totalEpa": -18.66,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_08_BAL_BUF",
             "date": "2026-11-01",
@@ -51444,25 +51453,6 @@
             "totalEpa": 9.92,
             "turnovers": 1.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_04_TEN_BAL",
-            "date": "2026-10-04",
-            "season": 2026,
-            "week": 4,
-            "gameType": "REG",
-            "teamAbbreviation": "BAL",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Home",
-            "teamScore": 24,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 285.0,
-            "rushingYards": 112.0,
-            "totalYards": 397.0,
-            "totalEpa": 8.35,
-            "turnovers": 0,
-            "defensiveSacks": 1.0
           }
         ],
         "CAR": [
@@ -51623,14 +51613,14 @@
         "JAX": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.714,
-            "pointsFor": 196,
-            "pointsAgainst": 111,
-            "pointDifferential": 85
+            "gamesPlayed": 8,
+            "winPct": 0.75,
+            "pointsFor": 229,
+            "pointsAgainst": 121,
+            "pointDifferential": 108
           },
           "previous": {
             "season": 2025,
@@ -51671,6 +51661,25 @@
       },
       "recentForm": {
         "JAX": [
+          {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "JAX",
+            "opponentAbbreviation": "BAL",
+            "homeAway": "Away",
+            "teamScore": 33,
+            "opponentScore": 10,
+            "result": "W",
+            "passingYards": 242.0,
+            "rushingYards": 77.0,
+            "totalYards": 319.0,
+            "totalEpa": 7.44,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_08_IND_JAX",
             "date": "2026-11-01",
@@ -51745,25 +51754,6 @@
             "totalYards": 338.0,
             "totalEpa": 10.12,
             "turnovers": 0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_03_NE_JAX",
-            "date": "2026-09-27",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "JAX",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 35,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 182.0,
-            "rushingYards": 137.0,
-            "totalYards": 319.0,
-            "totalEpa": 13.68,
-            "turnovers": 1.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -56960,13 +56950,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 8,
-            "winPct": 0.5,
-            "pointsFor": 179,
-            "pointsAgainst": 203,
-            "pointDifferential": -24
+            "gamesPlayed": 9,
+            "winPct": 0.444,
+            "pointsFor": 189,
+            "pointsAgainst": 236,
+            "pointDifferential": -47
           },
           "previous": {
             "season": 2025,
@@ -57007,6 +56997,25 @@
       },
       "recentForm": {
         "BAL": [
+          {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "BAL",
+            "opponentAbbreviation": "JAX",
+            "homeAway": "Home",
+            "teamScore": 10,
+            "opponentScore": 33,
+            "result": "L",
+            "passingYards": 57.0,
+            "rushingYards": 172.0,
+            "totalYards": 229.0,
+            "totalEpa": -18.66,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_08_BAL_BUF",
             "date": "2026-11-01",
@@ -57082,25 +57091,6 @@
             "totalEpa": 9.92,
             "turnovers": 1.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_04_TEN_BAL",
-            "date": "2026-10-04",
-            "season": 2026,
-            "week": 4,
-            "gameType": "REG",
-            "teamAbbreviation": "BAL",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Home",
-            "teamScore": 24,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 285.0,
-            "rushingYards": 112.0,
-            "totalYards": 397.0,
-            "totalEpa": 8.35,
-            "turnovers": 0,
-            "defensiveSacks": 1.0
           }
         ],
         "HOU": [
@@ -58637,14 +58627,14 @@
         "JAX": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.714,
-            "pointsFor": 196,
-            "pointsAgainst": 111,
-            "pointDifferential": 85
+            "gamesPlayed": 8,
+            "winPct": 0.75,
+            "pointsFor": 229,
+            "pointsAgainst": 121,
+            "pointDifferential": 108
           },
           "previous": {
             "season": 2025,
@@ -58759,6 +58749,25 @@
         ],
         "JAX": [
           {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "JAX",
+            "opponentAbbreviation": "BAL",
+            "homeAway": "Away",
+            "teamScore": 33,
+            "opponentScore": 10,
+            "result": "W",
+            "passingYards": 242.0,
+            "rushingYards": 77.0,
+            "totalYards": 319.0,
+            "totalEpa": 7.44,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_08_IND_JAX",
             "date": "2026-11-01",
             "season": 2026,
@@ -58832,25 +58841,6 @@
             "totalYards": 338.0,
             "totalEpa": 10.12,
             "turnovers": 0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_03_NE_JAX",
-            "date": "2026-09-27",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "JAX",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 35,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 182.0,
-            "rushingYards": 137.0,
-            "totalYards": 319.0,
-            "totalEpa": 13.68,
-            "turnovers": 1.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -61643,14 +61633,14 @@
         "JAX": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.714,
-            "pointsFor": 196,
-            "pointsAgainst": 111,
-            "pointDifferential": 85
+            "gamesPlayed": 8,
+            "winPct": 0.75,
+            "pointsFor": 229,
+            "pointsAgainst": 121,
+            "pointDifferential": 108
           },
           "previous": {
             "season": 2025,
@@ -61691,6 +61681,25 @@
       },
       "recentForm": {
         "JAX": [
+          {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "JAX",
+            "opponentAbbreviation": "BAL",
+            "homeAway": "Away",
+            "teamScore": 33,
+            "opponentScore": 10,
+            "result": "W",
+            "passingYards": 242.0,
+            "rushingYards": 77.0,
+            "totalYards": 319.0,
+            "totalEpa": 7.44,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_08_IND_JAX",
             "date": "2026-11-01",
@@ -61765,25 +61774,6 @@
             "totalYards": 338.0,
             "totalEpa": 10.12,
             "turnovers": 0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_03_NE_JAX",
-            "date": "2026-09-27",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "JAX",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 35,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 182.0,
-            "rushingYards": 137.0,
-            "totalYards": 319.0,
-            "totalEpa": 13.68,
-            "turnovers": 1.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -67090,13 +67080,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 8,
-            "winPct": 0.5,
-            "pointsFor": 179,
-            "pointsAgainst": 203,
-            "pointDifferential": -24
+            "gamesPlayed": 9,
+            "winPct": 0.444,
+            "pointsFor": 189,
+            "pointsAgainst": 236,
+            "pointDifferential": -47
           },
           "previous": {
             "season": 2025,
@@ -67211,6 +67201,25 @@
         ],
         "BAL": [
           {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "BAL",
+            "opponentAbbreviation": "JAX",
+            "homeAway": "Home",
+            "teamScore": 10,
+            "opponentScore": 33,
+            "result": "L",
+            "passingYards": 57.0,
+            "rushingYards": 172.0,
+            "totalYards": 229.0,
+            "totalEpa": -18.66,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_08_BAL_BUF",
             "date": "2026-11-01",
             "season": 2026,
@@ -67285,25 +67294,6 @@
             "totalEpa": 9.92,
             "turnovers": 1.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_04_TEN_BAL",
-            "date": "2026-10-04",
-            "season": 2026,
-            "week": 4,
-            "gameType": "REG",
-            "teamAbbreviation": "BAL",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Home",
-            "teamScore": 24,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 285.0,
-            "rushingYards": 112.0,
-            "totalYards": 397.0,
-            "totalEpa": 8.35,
-            "turnovers": 0,
-            "defensiveSacks": 1.0
           }
         ]
       },
@@ -69395,14 +69385,14 @@
         "JAX": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.714,
-            "pointsFor": 196,
-            "pointsAgainst": 111,
-            "pointDifferential": 85
+            "gamesPlayed": 8,
+            "winPct": 0.75,
+            "pointsFor": 229,
+            "pointsAgainst": 121,
+            "pointDifferential": 108
           },
           "previous": {
             "season": 2025,
@@ -69517,6 +69507,25 @@
         ],
         "JAX": [
           {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "JAX",
+            "opponentAbbreviation": "BAL",
+            "homeAway": "Away",
+            "teamScore": 33,
+            "opponentScore": 10,
+            "result": "W",
+            "passingYards": 242.0,
+            "rushingYards": 77.0,
+            "totalYards": 319.0,
+            "totalEpa": 7.44,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_08_IND_JAX",
             "date": "2026-11-01",
             "season": 2026,
@@ -69590,25 +69599,6 @@
             "totalYards": 338.0,
             "totalEpa": 10.12,
             "turnovers": 0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_03_NE_JAX",
-            "date": "2026-09-27",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "JAX",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 35,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 182.0,
-            "rushingYards": 137.0,
-            "totalYards": 319.0,
-            "totalEpa": 13.68,
-            "turnovers": 1.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -70966,13 +70956,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 8,
-            "winPct": 0.5,
-            "pointsFor": 179,
-            "pointsAgainst": 203,
-            "pointDifferential": -24
+            "gamesPlayed": 9,
+            "winPct": 0.444,
+            "pointsFor": 189,
+            "pointsAgainst": 236,
+            "pointDifferential": -47
           },
           "previous": {
             "season": 2025,
@@ -71013,6 +71003,25 @@
       },
       "recentForm": {
         "BAL": [
+          {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "BAL",
+            "opponentAbbreviation": "JAX",
+            "homeAway": "Home",
+            "teamScore": 10,
+            "opponentScore": 33,
+            "result": "L",
+            "passingYards": 57.0,
+            "rushingYards": 172.0,
+            "totalYards": 229.0,
+            "totalEpa": -18.66,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_08_BAL_BUF",
             "date": "2026-11-01",
@@ -71088,25 +71097,6 @@
             "totalEpa": 9.92,
             "turnovers": 1.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_04_TEN_BAL",
-            "date": "2026-10-04",
-            "season": 2026,
-            "week": 4,
-            "gameType": "REG",
-            "teamAbbreviation": "BAL",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Home",
-            "teamScore": 24,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 285.0,
-            "rushingYards": 112.0,
-            "totalYards": 397.0,
-            "totalEpa": 8.35,
-            "turnovers": 0,
-            "defensiveSacks": 1.0
           }
         ],
         "PIT": [
@@ -72293,14 +72283,14 @@
         "JAX": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.714,
-            "pointsFor": 196,
-            "pointsAgainst": 111,
-            "pointDifferential": 85
+            "gamesPlayed": 8,
+            "winPct": 0.75,
+            "pointsFor": 229,
+            "pointsAgainst": 121,
+            "pointDifferential": 108
           },
           "previous": {
             "season": 2025,
@@ -72341,6 +72331,25 @@
       },
       "recentForm": {
         "JAX": [
+          {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "JAX",
+            "opponentAbbreviation": "BAL",
+            "homeAway": "Away",
+            "teamScore": 33,
+            "opponentScore": 10,
+            "result": "W",
+            "passingYards": 242.0,
+            "rushingYards": 77.0,
+            "totalYards": 319.0,
+            "totalEpa": 7.44,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_08_IND_JAX",
             "date": "2026-11-01",
@@ -72415,25 +72424,6 @@
             "totalYards": 338.0,
             "totalEpa": 10.12,
             "turnovers": 0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_03_NE_JAX",
-            "date": "2026-09-27",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "JAX",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 35,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 182.0,
-            "rushingYards": 137.0,
-            "totalYards": 319.0,
-            "totalEpa": 13.68,
-            "turnovers": 1.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -77280,13 +77270,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 8,
-            "winPct": 0.5,
-            "pointsFor": 179,
-            "pointsAgainst": 203,
-            "pointDifferential": -24
+            "gamesPlayed": 9,
+            "winPct": 0.444,
+            "pointsFor": 189,
+            "pointsAgainst": 236,
+            "pointDifferential": -47
           },
           "previous": {
             "season": 2025,
@@ -77401,6 +77391,25 @@
         ],
         "BAL": [
           {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "BAL",
+            "opponentAbbreviation": "JAX",
+            "homeAway": "Home",
+            "teamScore": 10,
+            "opponentScore": 33,
+            "result": "L",
+            "passingYards": 57.0,
+            "rushingYards": 172.0,
+            "totalYards": 229.0,
+            "totalEpa": -18.66,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_08_BAL_BUF",
             "date": "2026-11-01",
             "season": 2026,
@@ -77475,25 +77484,6 @@
             "totalEpa": 9.92,
             "turnovers": 1.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_04_TEN_BAL",
-            "date": "2026-10-04",
-            "season": 2026,
-            "week": 4,
-            "gameType": "REG",
-            "teamAbbreviation": "BAL",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Home",
-            "teamScore": 24,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 285.0,
-            "rushingYards": 112.0,
-            "totalYards": 397.0,
-            "totalEpa": 8.35,
-            "turnovers": 0,
-            "defensiveSacks": 1.0
           }
         ]
       },
@@ -79609,14 +79599,14 @@
         "JAX": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.714,
-            "pointsFor": 196,
-            "pointsAgainst": 111,
-            "pointDifferential": 85
+            "gamesPlayed": 8,
+            "winPct": 0.75,
+            "pointsFor": 229,
+            "pointsAgainst": 121,
+            "pointDifferential": 108
           },
           "previous": {
             "season": 2025,
@@ -79657,6 +79647,25 @@
       },
       "recentForm": {
         "JAX": [
+          {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "JAX",
+            "opponentAbbreviation": "BAL",
+            "homeAway": "Away",
+            "teamScore": 33,
+            "opponentScore": 10,
+            "result": "W",
+            "passingYards": 242.0,
+            "rushingYards": 77.0,
+            "totalYards": 319.0,
+            "totalEpa": 7.44,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_08_IND_JAX",
             "date": "2026-11-01",
@@ -79731,25 +79740,6 @@
             "totalYards": 338.0,
             "totalEpa": 10.12,
             "turnovers": 0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_03_NE_JAX",
-            "date": "2026-09-27",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "JAX",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 35,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 182.0,
-            "rushingYards": 137.0,
-            "totalYards": 319.0,
-            "totalEpa": 13.68,
-            "turnovers": 1.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -80238,13 +80228,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 8,
-            "winPct": 0.5,
-            "pointsFor": 179,
-            "pointsAgainst": 203,
-            "pointDifferential": -24
+            "gamesPlayed": 9,
+            "winPct": 0.444,
+            "pointsFor": 189,
+            "pointsAgainst": 236,
+            "pointDifferential": -47
           },
           "previous": {
             "season": 2025,
@@ -80285,6 +80275,25 @@
       },
       "recentForm": {
         "BAL": [
+          {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "BAL",
+            "opponentAbbreviation": "JAX",
+            "homeAway": "Home",
+            "teamScore": 10,
+            "opponentScore": 33,
+            "result": "L",
+            "passingYards": 57.0,
+            "rushingYards": 172.0,
+            "totalYards": 229.0,
+            "totalEpa": -18.66,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
           {
             "id": "2026_08_BAL_BUF",
             "date": "2026-11-01",
@@ -80360,25 +80369,6 @@
             "totalEpa": 9.92,
             "turnovers": 1.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_04_TEN_BAL",
-            "date": "2026-10-04",
-            "season": 2026,
-            "week": 4,
-            "gameType": "REG",
-            "teamAbbreviation": "BAL",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Home",
-            "teamScore": 24,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 285.0,
-            "rushingYards": 112.0,
-            "totalYards": 397.0,
-            "totalEpa": 8.35,
-            "turnovers": 0,
-            "defensiveSacks": 1.0
           }
         ],
         "CIN": [
@@ -83967,14 +83957,14 @@
         "JAX": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.714,
-            "pointsFor": 196,
-            "pointsAgainst": 111,
-            "pointDifferential": 85
+            "gamesPlayed": 8,
+            "winPct": 0.75,
+            "pointsFor": 229,
+            "pointsAgainst": 121,
+            "pointDifferential": 108
           },
           "previous": {
             "season": 2025,
@@ -84089,6 +84079,25 @@
         ],
         "JAX": [
           {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "JAX",
+            "opponentAbbreviation": "BAL",
+            "homeAway": "Away",
+            "teamScore": 33,
+            "opponentScore": 10,
+            "result": "W",
+            "passingYards": 242.0,
+            "rushingYards": 77.0,
+            "totalYards": 319.0,
+            "totalEpa": 7.44,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_08_IND_JAX",
             "date": "2026-11-01",
             "season": 2026,
@@ -84162,25 +84171,6 @@
             "totalYards": 338.0,
             "totalEpa": 10.12,
             "turnovers": 0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_03_NE_JAX",
-            "date": "2026-09-27",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "JAX",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 35,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 182.0,
-            "rushingYards": 137.0,
-            "totalYards": 319.0,
-            "totalEpa": 13.68,
-            "turnovers": 1.0,
             "defensiveSacks": 2.0
           }
         ]
@@ -87287,14 +87277,14 @@
         "JAX": {
           "current": {
             "season": 2026,
-            "wins": 5,
+            "wins": 6,
             "losses": 2,
             "ties": 0,
-            "gamesPlayed": 7,
-            "winPct": 0.714,
-            "pointsFor": 196,
-            "pointsAgainst": 111,
-            "pointDifferential": 85
+            "gamesPlayed": 8,
+            "winPct": 0.75,
+            "pointsFor": 229,
+            "pointsAgainst": 121,
+            "pointDifferential": 108
           },
           "previous": {
             "season": 2025,
@@ -87335,6 +87325,25 @@
       },
       "recentForm": {
         "JAX": [
+          {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "JAX",
+            "opponentAbbreviation": "BAL",
+            "homeAway": "Away",
+            "teamScore": 33,
+            "opponentScore": 10,
+            "result": "W",
+            "passingYards": 242.0,
+            "rushingYards": 77.0,
+            "totalYards": 319.0,
+            "totalEpa": 7.44,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_08_IND_JAX",
             "date": "2026-11-01",
@@ -87409,25 +87418,6 @@
             "totalYards": 338.0,
             "totalEpa": 10.12,
             "turnovers": 0,
-            "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_03_NE_JAX",
-            "date": "2026-09-27",
-            "season": 2026,
-            "week": 3,
-            "gameType": "REG",
-            "teamAbbreviation": "JAX",
-            "opponentAbbreviation": "NE",
-            "homeAway": "Home",
-            "teamScore": 35,
-            "opponentScore": 6,
-            "result": "W",
-            "passingYards": 182.0,
-            "rushingYards": 137.0,
-            "totalYards": 319.0,
-            "totalEpa": 13.68,
-            "turnovers": 1.0,
             "defensiveSacks": 2.0
           }
         ],
@@ -89412,13 +89402,13 @@
           "current": {
             "season": 2026,
             "wins": 4,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 8,
-            "winPct": 0.5,
-            "pointsFor": 179,
-            "pointsAgainst": 203,
-            "pointDifferential": -24
+            "gamesPlayed": 9,
+            "winPct": 0.444,
+            "pointsFor": 189,
+            "pointsAgainst": 236,
+            "pointDifferential": -47
           },
           "previous": {
             "season": 2025,
@@ -89533,6 +89523,25 @@
         ],
         "BAL": [
           {
+            "id": "2026_09_JAX_BAL",
+            "date": "2026-11-05",
+            "season": 2026,
+            "week": 9,
+            "gameType": "REG",
+            "teamAbbreviation": "BAL",
+            "opponentAbbreviation": "JAX",
+            "homeAway": "Home",
+            "teamScore": 10,
+            "opponentScore": 33,
+            "result": "L",
+            "passingYards": 57.0,
+            "rushingYards": 172.0,
+            "totalYards": 229.0,
+            "totalEpa": -18.66,
+            "turnovers": 3.0,
+            "defensiveSacks": 0.0
+          },
+          {
             "id": "2026_08_BAL_BUF",
             "date": "2026-11-01",
             "season": 2026,
@@ -89607,25 +89616,6 @@
             "totalEpa": 9.92,
             "turnovers": 1.0,
             "defensiveSacks": 3.0
-          },
-          {
-            "id": "2026_04_TEN_BAL",
-            "date": "2026-10-04",
-            "season": 2026,
-            "week": 4,
-            "gameType": "REG",
-            "teamAbbreviation": "BAL",
-            "opponentAbbreviation": "TEN",
-            "homeAway": "Home",
-            "teamScore": 24,
-            "opponentScore": 18,
-            "result": "W",
-            "passingYards": 285.0,
-            "rushingYards": 112.0,
-            "totalYards": 397.0,
-            "totalEpa": 8.35,
-            "turnovers": 0,
-            "defensiveSacks": 1.0
           }
         ]
       },
