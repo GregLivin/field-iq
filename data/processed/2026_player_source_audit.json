@@ -6,18 +6,18 @@
   "files": {
     "player_weekly": {
       "path": "data/raw/player_weekly.parquet",
-      "rows": 138312,
-      "seasonRows": 8500
+      "rows": 139205,
+      "seasonRows": 9393
     },
     "player_season": {
       "path": "data/raw/player_season.parquet",
-      "rows": 15658,
-      "seasonRows": 1736
+      "rows": 15697,
+      "seasonRows": 1775
     },
     "players": {
       "path": "data/raw/players.parquet",
-      "rows": 24867,
-      "seasonRows": 24867
+      "rows": 24737,
+      "seasonRows": 24737
     }
   },
   "officialReferenceFiles": [],
