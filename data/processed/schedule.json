@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "asOf": "2026-11-10T17:56:10.222983+00:00",
+  "asOf": "2026-11-11T17:56:28.830045+00:00",
   "provider": "nflverse",
   "weeks": [
     1,
@@ -4643,41 +4643,6 @@
       }
     },
     {
-      "id": "2026_09_LV_SF",
-      "date": "2026-11-08",
-      "season": 2026,
-      "week": 9,
-      "gameType": "REG",
-      "awayTeam": "Las Vegas Raiders",
-      "awayAbbreviation": "LV",
-      "awayScore": 17,
-      "homeTeam": "San Francisco 49ers",
-      "homeAbbreviation": "SF",
-      "homeScore": 38,
-      "winner": "San Francisco 49ers",
-      "winnerAbbreviation": "SF",
-      "time": "16:05",
-      "status": "final",
-      "stadium": "Levi's Stadium",
-      "roof": "outdoors",
-      "surface": "",
-      "lastMeeting": {
-        "id": "2022_17_SF_LV",
-        "date": "2023-01-01",
-        "season": 2022,
-        "week": 17,
-        "gameType": "REG",
-        "awayTeam": "San Francisco 49ers",
-        "awayAbbreviation": "SF",
-        "awayScore": 37,
-        "homeTeam": "Las Vegas Raiders",
-        "homeAbbreviation": "LV",
-        "homeScore": 34,
-        "winner": "San Francisco 49ers",
-        "winnerAbbreviation": "SF"
-      }
-    },
-    {
       "id": "2026_09_ARI_SEA",
       "date": "2026-11-08",
       "season": 2026,
@@ -4745,6 +4710,41 @@
         "homeScore": 27,
         "winner": "Green Bay Packers",
         "winnerAbbreviation": "GB"
+      }
+    },
+    {
+      "id": "2026_09_LV_SF",
+      "date": "2026-11-08",
+      "season": 2026,
+      "week": 9,
+      "gameType": "REG",
+      "awayTeam": "Las Vegas Raiders",
+      "awayAbbreviation": "LV",
+      "awayScore": 17,
+      "homeTeam": "San Francisco 49ers",
+      "homeAbbreviation": "SF",
+      "homeScore": 38,
+      "winner": "San Francisco 49ers",
+      "winnerAbbreviation": "SF",
+      "time": "16:25",
+      "status": "final",
+      "stadium": "Levi's Stadium",
+      "roof": "outdoors",
+      "surface": "",
+      "lastMeeting": {
+        "id": "2022_17_SF_LV",
+        "date": "2023-01-01",
+        "season": 2022,
+        "week": 17,
+        "gameType": "REG",
+        "awayTeam": "San Francisco 49ers",
+        "awayAbbreviation": "SF",
+        "awayScore": 37,
+        "homeTeam": "Las Vegas Raiders",
+        "homeAbbreviation": "LV",
+        "homeScore": 34,
+        "winner": "San Francisco 49ers",
+        "winnerAbbreviation": "SF"
       }
     },
     {
