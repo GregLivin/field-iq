@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-17T19:13:27.115613+00:00",
+  "generatedAt": "2026-11-18T18:53:33.865493+00:00",
   "trainingGames": 1960,
   "validationGames": 150,
   "validationMethod": "season-2026",
@@ -38,18 +38,18 @@
   "models": {
     "logistic": {
       "accuracy": 0.6333,
-      "logLoss": 0.6105,
-      "brierScore": 0.2131
+      "logLoss": 0.6107,
+      "brierScore": 0.2132
     },
     "random_forest": {
-      "accuracy": 0.62,
-      "logLoss": 0.6492,
-      "brierScore": 0.2291
+      "accuracy": 0.6267,
+      "logLoss": 0.6449,
+      "brierScore": 0.2273
     },
     "gradient_boosting": {
-      "accuracy": 0.5533,
-      "logLoss": 0.6829,
-      "brierScore": 0.2429
+      "accuracy": 0.62,
+      "logLoss": 0.6639,
+      "brierScore": 0.2352
     }
   },
   "manualData": {
@@ -61,48 +61,48 @@
   "scoreModels": {
     "homeScore": {
       "random_forest": {
-        "mae": 7.366,
-        "rmse": 8.858
+        "mae": 7.414,
+        "rmse": 8.895
       },
       "gradient_boosting": {
-        "mae": 7.605,
-        "rmse": 9.224
+        "mae": 7.447,
+        "rmse": 9.071
       }
     },
     "awayScore": {
       "random_forest": {
-        "mae": 8.148,
-        "rmse": 10.177
+        "mae": 8.152,
+        "rmse": 10.191
       },
       "gradient_boosting": {
-        "mae": 8.386,
-        "rmse": 10.38
+        "mae": 8.334,
+        "rmse": 10.406
       }
     },
     "homeMargin": {
       "random_forest": {
-        "mae": 10.197,
-        "rmse": 12.888
+        "mae": 10.189,
+        "rmse": 12.848
       },
       "gradient_boosting": {
-        "mae": 10.095,
-        "rmse": 13.059
+        "mae": 10.461,
+        "rmse": 13.198
       }
     },
     "gameTotal": {
       "random_forest": {
-        "mae": 11.626,
-        "rmse": 14.354
+        "mae": 11.616,
+        "rmse": 14.331
       },
       "gradient_boosting": {
-        "mae": 11.631,
-        "rmse": 14.398
+        "mae": 11.622,
+        "rmse": 14.415
       }
     }
   },
   "marketCalibration": {
-    "marginResidualSd": 12.743,
-    "totalResidualSd": 14.357,
+    "marginResidualSd": 12.795,
+    "totalResidualSd": 14.354,
     "method": "validation residual normal approximation"
   }
 }
