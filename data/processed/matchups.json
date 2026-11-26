@@ -1,6 +1,6 @@
 {
   "season": 2026,
-  "asOf": "2026-11-25T19:59:05.527040+00:00",
+  "asOf": "2026-11-26T19:42:14.234452+00:00",
   "provider": "nflverse",
   "games": {
     "2026_01_NE_SEA": {
@@ -397,14 +397,14 @@
         "LA": {
           "current": {
             "season": 2026,
-            "wins": 6,
+            "wins": 7,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 248,
-            "pointsAgainst": 187,
-            "pointDifferential": 61
+            "gamesPlayed": 11,
+            "winPct": 0.636,
+            "pointsFor": 274,
+            "pointsAgainst": 200,
+            "pointDifferential": 74
           },
           "previous": {
             "season": 2025,
@@ -519,6 +519,25 @@
         ],
         "LA": [
           {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "LA",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Home",
+            "teamScore": 26,
+            "opponentScore": 13,
+            "result": "W",
+            "passingYards": 140.0,
+            "rushingYards": 241.0,
+            "totalYards": 381.0,
+            "totalEpa": 0.23,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_10_LA_ARI",
             "date": "2026-11-15",
             "season": 2026,
@@ -593,25 +612,6 @@
             "totalEpa": 11.36,
             "turnovers": 2.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_06_ARI_LA",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "LA",
-            "opponentAbbreviation": "ARI",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 18,
-            "result": "L",
-            "passingYards": 222.0,
-            "rushingYards": 92.0,
-            "totalYards": 314.0,
-            "totalEpa": -2.79,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -3694,13 +3694,13 @@
           "current": {
             "season": 2026,
             "wins": 6,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 226,
-            "pointsAgainst": 221,
-            "pointDifferential": 5
+            "gamesPlayed": 11,
+            "winPct": 0.545,
+            "pointsFor": 239,
+            "pointsAgainst": 247,
+            "pointDifferential": -8
           },
           "previous": {
             "season": 2025,
@@ -3741,6 +3741,25 @@
       },
       "recentForm": {
         "GB": [
+          {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "LA",
+            "homeAway": "Away",
+            "teamScore": 13,
+            "opponentScore": 26,
+            "result": "L",
+            "passingYards": 198.0,
+            "rushingYards": 55.0,
+            "totalYards": 253.0,
+            "totalEpa": -3.21,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_10_MIN_GB",
             "date": "2026-11-15",
@@ -3814,25 +3833,6 @@
             "rushingYards": 60.0,
             "totalYards": 334.0,
             "totalEpa": 2.43,
-            "turnovers": 1.0,
-            "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_06_DAL_GB",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "DAL",
-            "homeAway": "Home",
-            "teamScore": 23,
-            "opponentScore": 13,
-            "result": "W",
-            "passingYards": 276.0,
-            "rushingYards": 57.0,
-            "totalYards": 333.0,
-            "totalEpa": 1.36,
             "turnovers": 1.0,
             "defensiveSacks": 1.0
           }
@@ -6760,13 +6760,13 @@
           "current": {
             "season": 2026,
             "wins": 6,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 226,
-            "pointsAgainst": 221,
-            "pointDifferential": 5
+            "gamesPlayed": 11,
+            "winPct": 0.545,
+            "pointsFor": 239,
+            "pointsAgainst": 247,
+            "pointDifferential": -8
           },
           "previous": {
             "season": 2025,
@@ -6807,6 +6807,25 @@
       },
       "recentForm": {
         "GB": [
+          {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "LA",
+            "homeAway": "Away",
+            "teamScore": 13,
+            "opponentScore": 26,
+            "result": "L",
+            "passingYards": 198.0,
+            "rushingYards": 55.0,
+            "totalYards": 253.0,
+            "totalEpa": -3.21,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_10_MIN_GB",
             "date": "2026-11-15",
@@ -6880,25 +6899,6 @@
             "rushingYards": 60.0,
             "totalYards": 334.0,
             "totalEpa": 2.43,
-            "turnovers": 1.0,
-            "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_06_DAL_GB",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "DAL",
-            "homeAway": "Home",
-            "teamScore": 23,
-            "opponentScore": 13,
-            "result": "W",
-            "passingYards": 276.0,
-            "rushingYards": 57.0,
-            "totalYards": 333.0,
-            "totalEpa": 1.36,
             "turnovers": 1.0,
             "defensiveSacks": 1.0
           }
@@ -10501,14 +10501,14 @@
         "LA": {
           "current": {
             "season": 2026,
-            "wins": 6,
+            "wins": 7,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 248,
-            "pointsAgainst": 187,
-            "pointDifferential": 61
+            "gamesPlayed": 11,
+            "winPct": 0.636,
+            "pointsFor": 274,
+            "pointsAgainst": 200,
+            "pointDifferential": 74
           },
           "previous": {
             "season": 2025,
@@ -10623,6 +10623,25 @@
         ],
         "LA": [
           {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "LA",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Home",
+            "teamScore": 26,
+            "opponentScore": 13,
+            "result": "W",
+            "passingYards": 140.0,
+            "rushingYards": 241.0,
+            "totalYards": 381.0,
+            "totalEpa": 0.23,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_10_LA_ARI",
             "date": "2026-11-15",
             "season": 2026,
@@ -10697,25 +10716,6 @@
             "totalEpa": 11.36,
             "turnovers": 2.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_06_ARI_LA",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "LA",
-            "opponentAbbreviation": "ARI",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 18,
-            "result": "L",
-            "passingYards": 222.0,
-            "rushingYards": 92.0,
-            "totalYards": 314.0,
-            "totalEpa": -2.79,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -10840,13 +10840,13 @@
           "current": {
             "season": 2026,
             "wins": 6,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 226,
-            "pointsAgainst": 221,
-            "pointDifferential": 5
+            "gamesPlayed": 11,
+            "winPct": 0.545,
+            "pointsFor": 239,
+            "pointsAgainst": 247,
+            "pointDifferential": -8
           },
           "previous": {
             "season": 2025,
@@ -10961,6 +10961,25 @@
         ],
         "GB": [
           {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "LA",
+            "homeAway": "Away",
+            "teamScore": 13,
+            "opponentScore": 26,
+            "result": "L",
+            "passingYards": 198.0,
+            "rushingYards": 55.0,
+            "totalYards": 253.0,
+            "totalEpa": -3.21,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_10_MIN_GB",
             "date": "2026-11-15",
             "season": 2026,
@@ -11033,25 +11052,6 @@
             "rushingYards": 60.0,
             "totalYards": 334.0,
             "totalEpa": 2.43,
-            "turnovers": 1.0,
-            "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_06_DAL_GB",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "DAL",
-            "homeAway": "Home",
-            "teamScore": 23,
-            "opponentScore": 13,
-            "result": "W",
-            "passingYards": 276.0,
-            "rushingYards": 57.0,
-            "totalYards": 333.0,
-            "totalEpa": 1.36,
             "turnovers": 1.0,
             "defensiveSacks": 1.0
           }
@@ -15451,14 +15451,14 @@
         "LA": {
           "current": {
             "season": 2026,
-            "wins": 6,
+            "wins": 7,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 248,
-            "pointsAgainst": 187,
-            "pointDifferential": 61
+            "gamesPlayed": 11,
+            "winPct": 0.636,
+            "pointsFor": 274,
+            "pointsAgainst": 200,
+            "pointDifferential": 74
           },
           "previous": {
             "season": 2025,
@@ -15499,6 +15499,25 @@
       },
       "recentForm": {
         "LA": [
+          {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "LA",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Home",
+            "teamScore": 26,
+            "opponentScore": 13,
+            "result": "W",
+            "passingYards": 140.0,
+            "rushingYards": 241.0,
+            "totalYards": 381.0,
+            "totalEpa": 0.23,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_10_LA_ARI",
             "date": "2026-11-15",
@@ -15574,25 +15593,6 @@
             "totalEpa": 11.36,
             "turnovers": 2.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_06_ARI_LA",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "LA",
-            "opponentAbbreviation": "ARI",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 18,
-            "result": "L",
-            "passingYards": 222.0,
-            "rushingYards": 92.0,
-            "totalYards": 314.0,
-            "totalEpa": -2.79,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "DEN": [
@@ -17432,13 +17432,13 @@
           "current": {
             "season": 2026,
             "wins": 6,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 226,
-            "pointsAgainst": 221,
-            "pointDifferential": 5
+            "gamesPlayed": 11,
+            "winPct": 0.545,
+            "pointsFor": 239,
+            "pointsAgainst": 247,
+            "pointDifferential": -8
           },
           "previous": {
             "season": 2025,
@@ -17479,6 +17479,25 @@
       },
       "recentForm": {
         "GB": [
+          {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "LA",
+            "homeAway": "Away",
+            "teamScore": 13,
+            "opponentScore": 26,
+            "result": "L",
+            "passingYards": 198.0,
+            "rushingYards": 55.0,
+            "totalYards": 253.0,
+            "totalEpa": -3.21,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_10_MIN_GB",
             "date": "2026-11-15",
@@ -17552,25 +17571,6 @@
             "rushingYards": 60.0,
             "totalYards": 334.0,
             "totalEpa": 2.43,
-            "turnovers": 1.0,
-            "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_06_DAL_GB",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "DAL",
-            "homeAway": "Home",
-            "teamScore": 23,
-            "opponentScore": 13,
-            "result": "W",
-            "passingYards": 276.0,
-            "rushingYards": 57.0,
-            "totalYards": 333.0,
-            "totalEpa": 1.36,
             "turnovers": 1.0,
             "defensiveSacks": 1.0
           }
@@ -18119,14 +18119,14 @@
         "LA": {
           "current": {
             "season": 2026,
-            "wins": 6,
+            "wins": 7,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 248,
-            "pointsAgainst": 187,
-            "pointDifferential": 61
+            "gamesPlayed": 11,
+            "winPct": 0.636,
+            "pointsFor": 274,
+            "pointsAgainst": 200,
+            "pointDifferential": 74
           },
           "previous": {
             "season": 2025,
@@ -18167,6 +18167,25 @@
       },
       "recentForm": {
         "LA": [
+          {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "LA",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Home",
+            "teamScore": 26,
+            "opponentScore": 13,
+            "result": "W",
+            "passingYards": 140.0,
+            "rushingYards": 241.0,
+            "totalYards": 381.0,
+            "totalEpa": 0.23,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_10_LA_ARI",
             "date": "2026-11-15",
@@ -18242,25 +18261,6 @@
             "totalEpa": 11.36,
             "turnovers": 2.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_06_ARI_LA",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "LA",
-            "opponentAbbreviation": "ARI",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 18,
-            "result": "L",
-            "passingYards": 222.0,
-            "rushingYards": 92.0,
-            "totalYards": 314.0,
-            "totalEpa": -2.79,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "PHI": [
@@ -22128,13 +22128,13 @@
           "current": {
             "season": 2026,
             "wins": 6,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 226,
-            "pointsAgainst": 221,
-            "pointDifferential": 5
+            "gamesPlayed": 11,
+            "winPct": 0.545,
+            "pointsFor": 239,
+            "pointsAgainst": 247,
+            "pointDifferential": -8
           },
           "previous": {
             "season": 2025,
@@ -22249,6 +22249,25 @@
         ],
         "GB": [
           {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "LA",
+            "homeAway": "Away",
+            "teamScore": 13,
+            "opponentScore": 26,
+            "result": "L",
+            "passingYards": 198.0,
+            "rushingYards": 55.0,
+            "totalYards": 253.0,
+            "totalEpa": -3.21,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_10_MIN_GB",
             "date": "2026-11-15",
             "season": 2026,
@@ -22321,25 +22340,6 @@
             "rushingYards": 60.0,
             "totalYards": 334.0,
             "totalEpa": 2.43,
-            "turnovers": 1.0,
-            "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_06_DAL_GB",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "DAL",
-            "homeAway": "Home",
-            "teamScore": 23,
-            "opponentScore": 13,
-            "result": "W",
-            "passingYards": 276.0,
-            "rushingYards": 57.0,
-            "totalYards": 333.0,
-            "totalEpa": 1.36,
             "turnovers": 1.0,
             "defensiveSacks": 1.0
           }
@@ -26279,14 +26279,14 @@
         "LA": {
           "current": {
             "season": 2026,
-            "wins": 6,
+            "wins": 7,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 248,
-            "pointsAgainst": 187,
-            "pointDifferential": 61
+            "gamesPlayed": 11,
+            "winPct": 0.636,
+            "pointsFor": 274,
+            "pointsAgainst": 200,
+            "pointDifferential": 74
           },
           "previous": {
             "season": 2025,
@@ -26401,6 +26401,25 @@
         ],
         "LA": [
           {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "LA",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Home",
+            "teamScore": 26,
+            "opponentScore": 13,
+            "result": "W",
+            "passingYards": 140.0,
+            "rushingYards": 241.0,
+            "totalYards": 381.0,
+            "totalEpa": 0.23,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_10_LA_ARI",
             "date": "2026-11-15",
             "season": 2026,
@@ -26475,25 +26494,6 @@
             "totalEpa": 11.36,
             "turnovers": 2.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_06_ARI_LA",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "LA",
-            "opponentAbbreviation": "ARI",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 18,
-            "result": "L",
-            "passingYards": 222.0,
-            "rushingYards": 92.0,
-            "totalYards": 314.0,
-            "totalEpa": -2.79,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -29671,14 +29671,14 @@
         "LA": {
           "current": {
             "season": 2026,
-            "wins": 6,
+            "wins": 7,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 248,
-            "pointsAgainst": 187,
-            "pointDifferential": 61
+            "gamesPlayed": 11,
+            "winPct": 0.636,
+            "pointsFor": 274,
+            "pointsAgainst": 200,
+            "pointDifferential": 74
           },
           "previous": {
             "season": 2025,
@@ -29793,6 +29793,25 @@
         ],
         "LA": [
           {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "LA",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Home",
+            "teamScore": 26,
+            "opponentScore": 13,
+            "result": "W",
+            "passingYards": 140.0,
+            "rushingYards": 241.0,
+            "totalYards": 381.0,
+            "totalEpa": 0.23,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_10_LA_ARI",
             "date": "2026-11-15",
             "season": 2026,
@@ -29867,25 +29886,6 @@
             "totalEpa": 11.36,
             "turnovers": 2.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_06_ARI_LA",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "LA",
-            "opponentAbbreviation": "ARI",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 18,
-            "result": "L",
-            "passingYards": 222.0,
-            "rushingYards": 92.0,
-            "totalYards": 314.0,
-            "totalEpa": -2.79,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -30698,13 +30698,13 @@
           "current": {
             "season": 2026,
             "wins": 6,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 226,
-            "pointsAgainst": 221,
-            "pointDifferential": 5
+            "gamesPlayed": 11,
+            "winPct": 0.545,
+            "pointsFor": 239,
+            "pointsAgainst": 247,
+            "pointDifferential": -8
           },
           "previous": {
             "season": 2025,
@@ -30819,6 +30819,25 @@
         ],
         "GB": [
           {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "LA",
+            "homeAway": "Away",
+            "teamScore": 13,
+            "opponentScore": 26,
+            "result": "L",
+            "passingYards": 198.0,
+            "rushingYards": 55.0,
+            "totalYards": 253.0,
+            "totalEpa": -3.21,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_10_MIN_GB",
             "date": "2026-11-15",
             "season": 2026,
@@ -30891,25 +30910,6 @@
             "rushingYards": 60.0,
             "totalYards": 334.0,
             "totalEpa": 2.43,
-            "turnovers": 1.0,
-            "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_06_DAL_GB",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "DAL",
-            "homeAway": "Home",
-            "teamScore": 23,
-            "opponentScore": 13,
-            "result": "W",
-            "passingYards": 276.0,
-            "rushingYards": 57.0,
-            "totalYards": 333.0,
-            "totalEpa": 1.36,
             "turnovers": 1.0,
             "defensiveSacks": 1.0
           }
@@ -34718,13 +34718,13 @@
           "current": {
             "season": 2026,
             "wins": 6,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 226,
-            "pointsAgainst": 221,
-            "pointDifferential": 5
+            "gamesPlayed": 11,
+            "winPct": 0.545,
+            "pointsFor": 239,
+            "pointsAgainst": 247,
+            "pointDifferential": -8
           },
           "previous": {
             "season": 2025,
@@ -34765,6 +34765,25 @@
       },
       "recentForm": {
         "GB": [
+          {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "LA",
+            "homeAway": "Away",
+            "teamScore": 13,
+            "opponentScore": 26,
+            "result": "L",
+            "passingYards": 198.0,
+            "rushingYards": 55.0,
+            "totalYards": 253.0,
+            "totalEpa": -3.21,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_10_MIN_GB",
             "date": "2026-11-15",
@@ -34838,25 +34857,6 @@
             "rushingYards": 60.0,
             "totalYards": 334.0,
             "totalEpa": 2.43,
-            "turnovers": 1.0,
-            "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_06_DAL_GB",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "DAL",
-            "homeAway": "Home",
-            "teamScore": 23,
-            "opponentScore": 13,
-            "result": "W",
-            "passingYards": 276.0,
-            "rushingYards": 57.0,
-            "totalYards": 333.0,
-            "totalEpa": 1.36,
             "turnovers": 1.0,
             "defensiveSacks": 1.0
           }
@@ -35067,14 +35067,14 @@
         "LA": {
           "current": {
             "season": 2026,
-            "wins": 6,
+            "wins": 7,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 248,
-            "pointsAgainst": 187,
-            "pointDifferential": 61
+            "gamesPlayed": 11,
+            "winPct": 0.636,
+            "pointsFor": 274,
+            "pointsAgainst": 200,
+            "pointDifferential": 74
           },
           "previous": {
             "season": 2025,
@@ -35115,6 +35115,25 @@
       },
       "recentForm": {
         "LA": [
+          {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "LA",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Home",
+            "teamScore": 26,
+            "opponentScore": 13,
+            "result": "W",
+            "passingYards": 140.0,
+            "rushingYards": 241.0,
+            "totalYards": 381.0,
+            "totalEpa": 0.23,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_10_LA_ARI",
             "date": "2026-11-15",
@@ -35190,25 +35209,6 @@
             "totalEpa": 11.36,
             "turnovers": 2.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_06_ARI_LA",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "LA",
-            "opponentAbbreviation": "ARI",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 18,
-            "result": "L",
-            "passingYards": 222.0,
-            "rushingYards": 92.0,
-            "totalYards": 314.0,
-            "totalEpa": -2.79,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "LV": [
@@ -36082,13 +36082,13 @@
           "current": {
             "season": 2026,
             "wins": 6,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 226,
-            "pointsAgainst": 221,
-            "pointDifferential": 5
+            "gamesPlayed": 11,
+            "winPct": 0.545,
+            "pointsFor": 239,
+            "pointsAgainst": 247,
+            "pointDifferential": -8
           },
           "previous": {
             "season": 2025,
@@ -36203,6 +36203,25 @@
         ],
         "GB": [
           {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "LA",
+            "homeAway": "Away",
+            "teamScore": 13,
+            "opponentScore": 26,
+            "result": "L",
+            "passingYards": 198.0,
+            "rushingYards": 55.0,
+            "totalYards": 253.0,
+            "totalEpa": -3.21,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_10_MIN_GB",
             "date": "2026-11-15",
             "season": 2026,
@@ -36275,25 +36294,6 @@
             "rushingYards": 60.0,
             "totalYards": 334.0,
             "totalEpa": 2.43,
-            "turnovers": 1.0,
-            "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_06_DAL_GB",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "DAL",
-            "homeAway": "Home",
-            "teamScore": 23,
-            "opponentScore": 13,
-            "result": "W",
-            "passingYards": 276.0,
-            "rushingYards": 57.0,
-            "totalYards": 333.0,
-            "totalEpa": 1.36,
             "turnovers": 1.0,
             "defensiveSacks": 1.0
           }
@@ -39207,14 +39207,14 @@
         "LA": {
           "current": {
             "season": 2026,
-            "wins": 6,
+            "wins": 7,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 248,
-            "pointsAgainst": 187,
-            "pointDifferential": 61
+            "gamesPlayed": 11,
+            "winPct": 0.636,
+            "pointsFor": 274,
+            "pointsAgainst": 200,
+            "pointDifferential": 74
           },
           "previous": {
             "season": 2025,
@@ -39329,6 +39329,25 @@
         ],
         "LA": [
           {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "LA",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Home",
+            "teamScore": 26,
+            "opponentScore": 13,
+            "result": "W",
+            "passingYards": 140.0,
+            "rushingYards": 241.0,
+            "totalYards": 381.0,
+            "totalEpa": 0.23,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_10_LA_ARI",
             "date": "2026-11-15",
             "season": 2026,
@@ -39403,25 +39422,6 @@
             "totalEpa": 11.36,
             "turnovers": 2.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_06_ARI_LA",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "LA",
-            "opponentAbbreviation": "ARI",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 18,
-            "result": "L",
-            "passingYards": 222.0,
-            "rushingYards": 92.0,
-            "totalYards": 314.0,
-            "totalEpa": -2.79,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -42817,14 +42817,14 @@
         "LA": {
           "current": {
             "season": 2026,
-            "wins": 6,
+            "wins": 7,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 248,
-            "pointsAgainst": 187,
-            "pointDifferential": 61
+            "gamesPlayed": 11,
+            "winPct": 0.636,
+            "pointsFor": 274,
+            "pointsAgainst": 200,
+            "pointDifferential": 74
           },
           "previous": {
             "season": 2025,
@@ -42865,6 +42865,25 @@
       },
       "recentForm": {
         "LA": [
+          {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "LA",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Home",
+            "teamScore": 26,
+            "opponentScore": 13,
+            "result": "W",
+            "passingYards": 140.0,
+            "rushingYards": 241.0,
+            "totalYards": 381.0,
+            "totalEpa": 0.23,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_10_LA_ARI",
             "date": "2026-11-15",
@@ -42940,25 +42959,6 @@
             "totalEpa": 11.36,
             "turnovers": 2.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_06_ARI_LA",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "LA",
-            "opponentAbbreviation": "ARI",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 18,
-            "result": "L",
-            "passingYards": 222.0,
-            "rushingYards": 92.0,
-            "totalYards": 314.0,
-            "totalEpa": -2.79,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "WAS": [
@@ -44520,13 +44520,13 @@
           "current": {
             "season": 2026,
             "wins": 6,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 226,
-            "pointsAgainst": 221,
-            "pointDifferential": 5
+            "gamesPlayed": 11,
+            "winPct": 0.545,
+            "pointsFor": 239,
+            "pointsAgainst": 247,
+            "pointDifferential": -8
           },
           "previous": {
             "season": 2025,
@@ -44567,6 +44567,25 @@
       },
       "recentForm": {
         "GB": [
+          {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "LA",
+            "homeAway": "Away",
+            "teamScore": 13,
+            "opponentScore": 26,
+            "result": "L",
+            "passingYards": 198.0,
+            "rushingYards": 55.0,
+            "totalYards": 253.0,
+            "totalEpa": -3.21,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_10_MIN_GB",
             "date": "2026-11-15",
@@ -44640,25 +44659,6 @@
             "rushingYards": 60.0,
             "totalYards": 334.0,
             "totalEpa": 2.43,
-            "turnovers": 1.0,
-            "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_06_DAL_GB",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "DAL",
-            "homeAway": "Home",
-            "teamScore": 23,
-            "opponentScore": 13,
-            "result": "W",
-            "passingYards": 276.0,
-            "rushingYards": 57.0,
-            "totalYards": 333.0,
-            "totalEpa": 1.36,
             "turnovers": 1.0,
             "defensiveSacks": 1.0
           }
@@ -48564,13 +48564,13 @@
           "current": {
             "season": 2026,
             "wins": 6,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 226,
-            "pointsAgainst": 221,
-            "pointDifferential": 5
+            "gamesPlayed": 11,
+            "winPct": 0.545,
+            "pointsFor": 239,
+            "pointsAgainst": 247,
+            "pointDifferential": -8
           },
           "previous": {
             "season": 2025,
@@ -48685,6 +48685,25 @@
         ],
         "GB": [
           {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "LA",
+            "homeAway": "Away",
+            "teamScore": 13,
+            "opponentScore": 26,
+            "result": "L",
+            "passingYards": 198.0,
+            "rushingYards": 55.0,
+            "totalYards": 253.0,
+            "totalEpa": -3.21,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_10_MIN_GB",
             "date": "2026-11-15",
             "season": 2026,
@@ -48757,25 +48776,6 @@
             "rushingYards": 60.0,
             "totalYards": 334.0,
             "totalEpa": 2.43,
-            "turnovers": 1.0,
-            "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_06_DAL_GB",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "DAL",
-            "homeAway": "Home",
-            "teamScore": 23,
-            "opponentScore": 13,
-            "result": "W",
-            "passingYards": 276.0,
-            "rushingYards": 57.0,
-            "totalYards": 333.0,
-            "totalEpa": 1.36,
             "turnovers": 1.0,
             "defensiveSacks": 1.0
           }
@@ -48889,14 +48889,14 @@
         "LA": {
           "current": {
             "season": 2026,
-            "wins": 6,
+            "wins": 7,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 248,
-            "pointsAgainst": 187,
-            "pointDifferential": 61
+            "gamesPlayed": 11,
+            "winPct": 0.636,
+            "pointsFor": 274,
+            "pointsAgainst": 200,
+            "pointDifferential": 74
           },
           "previous": {
             "season": 2025,
@@ -48937,6 +48937,25 @@
       },
       "recentForm": {
         "LA": [
+          {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "LA",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Home",
+            "teamScore": 26,
+            "opponentScore": 13,
+            "result": "W",
+            "passingYards": 140.0,
+            "rushingYards": 241.0,
+            "totalYards": 381.0,
+            "totalEpa": 0.23,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_10_LA_ARI",
             "date": "2026-11-15",
@@ -49012,25 +49031,6 @@
             "totalEpa": 11.36,
             "turnovers": 2.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_06_ARI_LA",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "LA",
-            "opponentAbbreviation": "ARI",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 18,
-            "result": "L",
-            "passingYards": 222.0,
-            "rushingYards": 92.0,
-            "totalYards": 314.0,
-            "totalEpa": -2.79,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "ARI": [
@@ -54878,17 +54878,17 @@
         "gameType": "REG",
         "awayTeam": "Green Bay Packers",
         "awayAbbreviation": "GB",
-        "awayScore": null,
+        "awayScore": 13,
         "homeTeam": "Los Angeles Rams",
         "homeAbbreviation": "LA",
-        "homeScore": null,
-        "winner": null,
-        "winnerAbbreviation": null,
+        "homeScore": 26,
+        "winner": "Los Angeles Rams",
+        "winnerAbbreviation": "LA",
         "time": "20:00",
-        "status": "upcoming",
+        "status": "final",
         "stadium": "SoFi Stadium",
         "roof": "dome",
-        "surface": "matrixturf",
+        "surface": "",
         "lastMeeting": {
           "id": "2024_05_GB_LA",
           "date": "2024-10-06",
@@ -54914,13 +54914,13 @@
           "current": {
             "season": 2026,
             "wins": 6,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 226,
-            "pointsAgainst": 221,
-            "pointDifferential": 5
+            "gamesPlayed": 11,
+            "winPct": 0.545,
+            "pointsFor": 239,
+            "pointsAgainst": 247,
+            "pointDifferential": -8
           },
           "previous": {
             "season": 2025,
@@ -54937,14 +54937,14 @@
         "LA": {
           "current": {
             "season": 2026,
-            "wins": 6,
+            "wins": 7,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 248,
-            "pointsAgainst": 187,
-            "pointDifferential": 61
+            "gamesPlayed": 11,
+            "winPct": 0.636,
+            "pointsFor": 274,
+            "pointsAgainst": 200,
+            "pointDifferential": 74
           },
           "previous": {
             "season": 2025,
@@ -54961,6 +54961,25 @@
       },
       "recentForm": {
         "GB": [
+          {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "LA",
+            "homeAway": "Away",
+            "teamScore": 13,
+            "opponentScore": 26,
+            "result": "L",
+            "passingYards": 198.0,
+            "rushingYards": 55.0,
+            "totalYards": 253.0,
+            "totalEpa": -3.21,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_10_MIN_GB",
             "date": "2026-11-15",
@@ -55036,28 +55055,28 @@
             "totalEpa": 2.43,
             "turnovers": 1.0,
             "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_06_DAL_GB",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "DAL",
-            "homeAway": "Home",
-            "teamScore": 23,
-            "opponentScore": 13,
-            "result": "W",
-            "passingYards": 276.0,
-            "rushingYards": 57.0,
-            "totalYards": 333.0,
-            "totalEpa": 1.36,
-            "turnovers": 1.0,
-            "defensiveSacks": 1.0
           }
         ],
         "LA": [
+          {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "LA",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Home",
+            "teamScore": 26,
+            "opponentScore": 13,
+            "result": "W",
+            "passingYards": 140.0,
+            "rushingYards": 241.0,
+            "totalYards": 381.0,
+            "totalEpa": 0.23,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_10_LA_ARI",
             "date": "2026-11-15",
@@ -55133,29 +55152,22 @@
             "totalEpa": 11.36,
             "turnovers": 2.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_06_ARI_LA",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "LA",
-            "opponentAbbreviation": "ARI",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 18,
-            "result": "L",
-            "passingYards": 222.0,
-            "rushingYards": 92.0,
-            "totalYards": 314.0,
-            "totalEpa": -2.79,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
       "headToHead": [
+        {
+          "id": "2026_12_GB_LA",
+          "date": "2026-11-25",
+          "season": 2026,
+          "week": 12,
+          "gameType": "REG",
+          "awayAbbreviation": "GB",
+          "awayScore": 13,
+          "homeAbbreviation": "LA",
+          "homeScore": 26,
+          "winnerAbbreviation": "LA"
+        },
         {
           "id": "2024_05_GB_LA",
           "date": "2024-10-06",
@@ -55205,29 +55217,7 @@
           "winnerAbbreviation": "GB"
         }
       ],
-      "prediction": {
-        "id": "2026_12_GB_LA",
-        "awayTeam": "Green Bay Packers",
-        "awayAbbreviation": "GB",
-        "homeTeam": "Los Angeles Rams",
-        "homeAbbreviation": "LA",
-        "kickoff": "2026-11-25 20:00",
-        "predictedWinner": "Los Angeles Rams",
-        "homeWinProbability": 77,
-        "awayWinProbability": 23,
-        "classifierHomeProbability": 79,
-        "scoreModelHomeProbability": 71,
-        "projectedHomeScore": 28.2,
-        "projectedAwayScore": 21.8,
-        "projectedMargin": 6.9,
-        "projectedTotal": 48.9,
-        "confidence": "High",
-        "factors": [
-          "Recent scoring margin",
-          "Success rate",
-          "Turnover trend"
-        ]
-      }
+      "prediction": null
     },
     "2026_12_CHI_DET": {
       "game": {
@@ -55587,7 +55577,7 @@
         "predictedWinner": "Detroit Lions",
         "homeWinProbability": 69,
         "awayWinProbability": 31,
-        "classifierHomeProbability": 70,
+        "classifierHomeProbability": 71,
         "scoreModelHomeProbability": 67,
         "projectedHomeScore": 25.6,
         "projectedAwayScore": 20.0,
@@ -55957,9 +55947,9 @@
         "homeAbbreviation": "DAL",
         "kickoff": "2026-11-26 16:30",
         "predictedWinner": "Dallas Cowboys",
-        "homeWinProbability": 83,
-        "awayWinProbability": 17,
-        "classifierHomeProbability": 89,
+        "homeWinProbability": 82,
+        "awayWinProbability": 18,
+        "classifierHomeProbability": 88,
         "scoreModelHomeProbability": 72,
         "projectedHomeScore": 27.9,
         "projectedAwayScore": 20.9,
@@ -56329,14 +56319,14 @@
         "homeAbbreviation": "BUF",
         "kickoff": "2026-11-26 20:20",
         "predictedWinner": "Buffalo Bills",
-        "homeWinProbability": 70,
-        "awayWinProbability": 30,
-        "classifierHomeProbability": 69,
+        "homeWinProbability": 71,
+        "awayWinProbability": 29,
+        "classifierHomeProbability": 71,
         "scoreModelHomeProbability": 72,
         "projectedHomeScore": 29.2,
         "projectedAwayScore": 22.3,
         "projectedMargin": 7.3,
-        "projectedTotal": 47.9,
+        "projectedTotal": 47.6,
         "confidence": "High",
         "factors": [
           "Recent scoring margin",
@@ -56682,9 +56672,9 @@
         "classifierHomeProbability": 42,
         "scoreModelHomeProbability": 53,
         "projectedHomeScore": 20.2,
-        "projectedAwayScore": 21.8,
+        "projectedAwayScore": 21.9,
         "projectedMargin": 0.9,
-        "projectedTotal": 39.9,
+        "projectedTotal": 39.8,
         "confidence": "Low",
         "factors": [
           "Recent scoring margin",
@@ -57749,10 +57739,10 @@
         "awayWinProbability": 11,
         "classifierHomeProbability": 90,
         "scoreModelHomeProbability": 88,
-        "projectedHomeScore": 30.9,
-        "projectedAwayScore": 16.7,
+        "projectedHomeScore": 30.8,
+        "projectedAwayScore": 16.4,
         "projectedMargin": 14.8,
-        "projectedTotal": 46.2,
+        "projectedTotal": 46.0,
         "confidence": "High",
         "factors": [
           "Recent scoring margin",
@@ -58458,9 +58448,9 @@
         "classifierHomeProbability": 48,
         "scoreModelHomeProbability": 57,
         "projectedHomeScore": 22.6,
-        "projectedAwayScore": 22.1,
+        "projectedAwayScore": 22.7,
         "projectedMargin": 2.1,
-        "projectedTotal": 46.0,
+        "projectedTotal": 47.1,
         "confidence": "Low",
         "factors": [
           "Success rate",
@@ -58830,8 +58820,8 @@
         "classifierHomeProbability": 87,
         "scoreModelHomeProbability": 91,
         "projectedHomeScore": 33.7,
-        "projectedAwayScore": 15.6,
-        "projectedMargin": 16.6,
+        "projectedAwayScore": 15.7,
+        "projectedMargin": 16.5,
         "projectedTotal": 46.8,
         "confidence": "High",
         "factors": [
@@ -59561,10 +59551,10 @@
         "awayWinProbability": 27,
         "classifierHomeProbability": 73,
         "scoreModelHomeProbability": 74,
-        "projectedHomeScore": 27.3,
-        "projectedAwayScore": 16.9,
+        "projectedHomeScore": 27.4,
+        "projectedAwayScore": 16.1,
         "projectedMargin": 7.9,
-        "projectedTotal": 41.7,
+        "projectedTotal": 41.8,
         "confidence": "High",
         "factors": [
           "EPA per play",
@@ -59912,7 +59902,7 @@
         "projectedHomeScore": 18.0,
         "projectedAwayScore": 26.5,
         "projectedMargin": -8.3,
-        "projectedTotal": 45.5,
+        "projectedTotal": 45.4,
         "confidence": "High",
         "factors": [
           "Recent scoring margin",
@@ -60270,9 +60260,9 @@
         "classifierHomeProbability": 69,
         "scoreModelHomeProbability": 72,
         "projectedHomeScore": 26.7,
-        "projectedAwayScore": 20.3,
+        "projectedAwayScore": 20.0,
         "projectedMargin": 7.2,
-        "projectedTotal": 44.6,
+        "projectedTotal": 44.2,
         "confidence": "High",
         "factors": [
           "Recent scoring margin",
@@ -60721,14 +60711,14 @@
         "LA": {
           "current": {
             "season": 2026,
-            "wins": 6,
+            "wins": 7,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 248,
-            "pointsAgainst": 187,
-            "pointDifferential": 61
+            "gamesPlayed": 11,
+            "winPct": 0.636,
+            "pointsFor": 274,
+            "pointsAgainst": 200,
+            "pointDifferential": 74
           },
           "previous": {
             "season": 2025,
@@ -60843,6 +60833,25 @@
         ],
         "LA": [
           {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "LA",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Home",
+            "teamScore": 26,
+            "opponentScore": 13,
+            "result": "W",
+            "passingYards": 140.0,
+            "rushingYards": 241.0,
+            "totalYards": 381.0,
+            "totalEpa": 0.23,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_10_LA_ARI",
             "date": "2026-11-15",
             "season": 2026,
@@ -60917,25 +60926,6 @@
             "totalEpa": 11.36,
             "turnovers": 2.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_06_ARI_LA",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "LA",
-            "opponentAbbreviation": "ARI",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 18,
-            "result": "L",
-            "passingYards": 222.0,
-            "rushingYards": 92.0,
-            "totalYards": 314.0,
-            "totalEpa": -2.79,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -61676,13 +61666,13 @@
           "current": {
             "season": 2026,
             "wins": 6,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 226,
-            "pointsAgainst": 221,
-            "pointDifferential": 5
+            "gamesPlayed": 11,
+            "winPct": 0.545,
+            "pointsFor": 239,
+            "pointsAgainst": 247,
+            "pointDifferential": -8
           },
           "previous": {
             "season": 2025,
@@ -61723,6 +61713,25 @@
       },
       "recentForm": {
         "GB": [
+          {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "LA",
+            "homeAway": "Away",
+            "teamScore": 13,
+            "opponentScore": 26,
+            "result": "L",
+            "passingYards": 198.0,
+            "rushingYards": 55.0,
+            "totalYards": 253.0,
+            "totalEpa": -3.21,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_10_MIN_GB",
             "date": "2026-11-15",
@@ -61796,25 +61805,6 @@
             "rushingYards": 60.0,
             "totalYards": 334.0,
             "totalEpa": 2.43,
-            "turnovers": 1.0,
-            "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_06_DAL_GB",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "DAL",
-            "homeAway": "Home",
-            "teamScore": 23,
-            "opponentScore": 13,
-            "result": "W",
-            "passingYards": 276.0,
-            "rushingYards": 57.0,
-            "totalYards": 333.0,
-            "totalEpa": 1.36,
             "turnovers": 1.0,
             "defensiveSacks": 1.0
           }
@@ -68751,14 +68741,14 @@
         "LA": {
           "current": {
             "season": 2026,
-            "wins": 6,
+            "wins": 7,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 248,
-            "pointsAgainst": 187,
-            "pointDifferential": 61
+            "gamesPlayed": 11,
+            "winPct": 0.636,
+            "pointsFor": 274,
+            "pointsAgainst": 200,
+            "pointDifferential": 74
           },
           "previous": {
             "season": 2025,
@@ -68799,6 +68789,25 @@
       },
       "recentForm": {
         "LA": [
+          {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "LA",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Home",
+            "teamScore": 26,
+            "opponentScore": 13,
+            "result": "W",
+            "passingYards": 140.0,
+            "rushingYards": 241.0,
+            "totalYards": 381.0,
+            "totalEpa": 0.23,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_10_LA_ARI",
             "date": "2026-11-15",
@@ -68874,25 +68883,6 @@
             "totalEpa": 11.36,
             "turnovers": 2.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_06_ARI_LA",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "LA",
-            "opponentAbbreviation": "ARI",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 18,
-            "result": "L",
-            "passingYards": 222.0,
-            "rushingYards": 92.0,
-            "totalYards": 314.0,
-            "totalEpa": -2.79,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "SF": [
@@ -69464,13 +69454,13 @@
           "current": {
             "season": 2026,
             "wins": 6,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 226,
-            "pointsAgainst": 221,
-            "pointDifferential": 5
+            "gamesPlayed": 11,
+            "winPct": 0.545,
+            "pointsFor": 239,
+            "pointsAgainst": 247,
+            "pointDifferential": -8
           },
           "previous": {
             "season": 2025,
@@ -69585,6 +69575,25 @@
         ],
         "GB": [
           {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "LA",
+            "homeAway": "Away",
+            "teamScore": 13,
+            "opponentScore": 26,
+            "result": "L",
+            "passingYards": 198.0,
+            "rushingYards": 55.0,
+            "totalYards": 253.0,
+            "totalEpa": -3.21,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_10_MIN_GB",
             "date": "2026-11-15",
             "season": 2026,
@@ -69657,25 +69666,6 @@
             "rushingYards": 60.0,
             "totalYards": 334.0,
             "totalEpa": 2.43,
-            "turnovers": 1.0,
-            "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_06_DAL_GB",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "DAL",
-            "homeAway": "Home",
-            "teamScore": 23,
-            "opponentScore": 13,
-            "result": "W",
-            "passingYards": 276.0,
-            "rushingYards": 57.0,
-            "totalYards": 333.0,
-            "totalEpa": 1.36,
             "turnovers": 1.0,
             "defensiveSacks": 1.0
           }
@@ -73038,13 +73028,13 @@
           "current": {
             "season": 2026,
             "wins": 6,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 226,
-            "pointsAgainst": 221,
-            "pointDifferential": 5
+            "gamesPlayed": 11,
+            "winPct": 0.545,
+            "pointsFor": 239,
+            "pointsAgainst": 247,
+            "pointDifferential": -8
           },
           "previous": {
             "season": 2025,
@@ -73159,6 +73149,25 @@
         ],
         "GB": [
           {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "LA",
+            "homeAway": "Away",
+            "teamScore": 13,
+            "opponentScore": 26,
+            "result": "L",
+            "passingYards": 198.0,
+            "rushingYards": 55.0,
+            "totalYards": 253.0,
+            "totalEpa": -3.21,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_10_MIN_GB",
             "date": "2026-11-15",
             "season": 2026,
@@ -73231,25 +73240,6 @@
             "rushingYards": 60.0,
             "totalYards": 334.0,
             "totalEpa": 2.43,
-            "turnovers": 1.0,
-            "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_06_DAL_GB",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "DAL",
-            "homeAway": "Home",
-            "teamScore": 23,
-            "opponentScore": 13,
-            "result": "W",
-            "passingYards": 276.0,
-            "rushingYards": 57.0,
-            "totalYards": 333.0,
-            "totalEpa": 1.36,
             "turnovers": 1.0,
             "defensiveSacks": 1.0
           }
@@ -74015,14 +74005,14 @@
         "LA": {
           "current": {
             "season": 2026,
-            "wins": 6,
+            "wins": 7,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 248,
-            "pointsAgainst": 187,
-            "pointDifferential": 61
+            "gamesPlayed": 11,
+            "winPct": 0.636,
+            "pointsFor": 274,
+            "pointsAgainst": 200,
+            "pointDifferential": 74
           },
           "previous": {
             "season": 2025,
@@ -74137,6 +74127,25 @@
         ],
         "LA": [
           {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "LA",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Home",
+            "teamScore": 26,
+            "opponentScore": 13,
+            "result": "W",
+            "passingYards": 140.0,
+            "rushingYards": 241.0,
+            "totalYards": 381.0,
+            "totalEpa": 0.23,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_10_LA_ARI",
             "date": "2026-11-15",
             "season": 2026,
@@ -74211,25 +74220,6 @@
             "totalEpa": 11.36,
             "turnovers": 2.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_06_ARI_LA",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "LA",
-            "opponentAbbreviation": "ARI",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 18,
-            "result": "L",
-            "passingYards": 222.0,
-            "rushingYards": 92.0,
-            "totalYards": 314.0,
-            "totalEpa": -2.79,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
@@ -75658,13 +75648,13 @@
           "current": {
             "season": 2026,
             "wins": 6,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 226,
-            "pointsAgainst": 221,
-            "pointDifferential": 5
+            "gamesPlayed": 11,
+            "winPct": 0.545,
+            "pointsFor": 239,
+            "pointsAgainst": 247,
+            "pointDifferential": -8
           },
           "previous": {
             "season": 2025,
@@ -75705,6 +75695,25 @@
       },
       "recentForm": {
         "GB": [
+          {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "LA",
+            "homeAway": "Away",
+            "teamScore": 13,
+            "opponentScore": 26,
+            "result": "L",
+            "passingYards": 198.0,
+            "rushingYards": 55.0,
+            "totalYards": 253.0,
+            "totalEpa": -3.21,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_10_MIN_GB",
             "date": "2026-11-15",
@@ -75778,25 +75787,6 @@
             "rushingYards": 60.0,
             "totalYards": 334.0,
             "totalEpa": 2.43,
-            "turnovers": 1.0,
-            "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_06_DAL_GB",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "DAL",
-            "homeAway": "Home",
-            "teamScore": 23,
-            "opponentScore": 13,
-            "result": "W",
-            "passingYards": 276.0,
-            "rushingYards": 57.0,
-            "totalYards": 333.0,
-            "totalEpa": 1.36,
             "turnovers": 1.0,
             "defensiveSacks": 1.0
           }
@@ -76333,14 +76323,14 @@
         "LA": {
           "current": {
             "season": 2026,
-            "wins": 6,
+            "wins": 7,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 248,
-            "pointsAgainst": 187,
-            "pointDifferential": 61
+            "gamesPlayed": 11,
+            "winPct": 0.636,
+            "pointsFor": 274,
+            "pointsAgainst": 200,
+            "pointDifferential": 74
           },
           "previous": {
             "season": 2025,
@@ -76381,6 +76371,25 @@
       },
       "recentForm": {
         "LA": [
+          {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "LA",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Home",
+            "teamScore": 26,
+            "opponentScore": 13,
+            "result": "W",
+            "passingYards": 140.0,
+            "rushingYards": 241.0,
+            "totalYards": 381.0,
+            "totalEpa": 0.23,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_10_LA_ARI",
             "date": "2026-11-15",
@@ -76456,25 +76465,6 @@
             "totalEpa": 11.36,
             "turnovers": 2.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_06_ARI_LA",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "LA",
-            "opponentAbbreviation": "ARI",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 18,
-            "result": "L",
-            "passingYards": 222.0,
-            "rushingYards": 92.0,
-            "totalYards": 314.0,
-            "totalEpa": -2.79,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "SEA": [
@@ -82285,14 +82275,14 @@
         "LA": {
           "current": {
             "season": 2026,
-            "wins": 6,
+            "wins": 7,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 248,
-            "pointsAgainst": 187,
-            "pointDifferential": 61
+            "gamesPlayed": 11,
+            "winPct": 0.636,
+            "pointsFor": 274,
+            "pointsAgainst": 200,
+            "pointDifferential": 74
           },
           "previous": {
             "season": 2025,
@@ -82333,6 +82323,25 @@
       },
       "recentForm": {
         "LA": [
+          {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "LA",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Home",
+            "teamScore": 26,
+            "opponentScore": 13,
+            "result": "W",
+            "passingYards": 140.0,
+            "rushingYards": 241.0,
+            "totalYards": 381.0,
+            "totalEpa": 0.23,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
           {
             "id": "2026_10_LA_ARI",
             "date": "2026-11-15",
@@ -82408,25 +82417,6 @@
             "totalEpa": 11.36,
             "turnovers": 2.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_06_ARI_LA",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "LA",
-            "opponentAbbreviation": "ARI",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 18,
-            "result": "L",
-            "passingYards": 222.0,
-            "rushingYards": 92.0,
-            "totalYards": 314.0,
-            "totalEpa": -2.79,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ],
         "TB": [
@@ -85618,13 +85608,13 @@
           "current": {
             "season": 2026,
             "wins": 6,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 226,
-            "pointsAgainst": 221,
-            "pointDifferential": 5
+            "gamesPlayed": 11,
+            "winPct": 0.545,
+            "pointsFor": 239,
+            "pointsAgainst": 247,
+            "pointDifferential": -8
           },
           "previous": {
             "season": 2025,
@@ -85739,6 +85729,25 @@
         ],
         "GB": [
           {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "LA",
+            "homeAway": "Away",
+            "teamScore": 13,
+            "opponentScore": 26,
+            "result": "L",
+            "passingYards": 198.0,
+            "rushingYards": 55.0,
+            "totalYards": 253.0,
+            "totalEpa": -3.21,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_10_MIN_GB",
             "date": "2026-11-15",
             "season": 2026,
@@ -85811,25 +85820,6 @@
             "rushingYards": 60.0,
             "totalYards": 334.0,
             "totalEpa": 2.43,
-            "turnovers": 1.0,
-            "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_06_DAL_GB",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "DAL",
-            "homeAway": "Home",
-            "teamScore": 23,
-            "opponentScore": 13,
-            "result": "W",
-            "passingYards": 276.0,
-            "rushingYards": 57.0,
-            "totalYards": 333.0,
-            "totalEpa": 1.36,
             "turnovers": 1.0,
             "defensiveSacks": 1.0
           }
@@ -87332,13 +87322,13 @@
           "current": {
             "season": 2026,
             "wins": 6,
-            "losses": 4,
+            "losses": 5,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 226,
-            "pointsAgainst": 221,
-            "pointDifferential": 5
+            "gamesPlayed": 11,
+            "winPct": 0.545,
+            "pointsFor": 239,
+            "pointsAgainst": 247,
+            "pointDifferential": -8
           },
           "previous": {
             "season": 2025,
@@ -87453,6 +87443,25 @@
         ],
         "GB": [
           {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "GB",
+            "opponentAbbreviation": "LA",
+            "homeAway": "Away",
+            "teamScore": 13,
+            "opponentScore": 26,
+            "result": "L",
+            "passingYards": 198.0,
+            "rushingYards": 55.0,
+            "totalYards": 253.0,
+            "totalEpa": -3.21,
+            "turnovers": 3.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_10_MIN_GB",
             "date": "2026-11-15",
             "season": 2026,
@@ -87525,25 +87534,6 @@
             "rushingYards": 60.0,
             "totalYards": 334.0,
             "totalEpa": 2.43,
-            "turnovers": 1.0,
-            "defensiveSacks": 1.0
-          },
-          {
-            "id": "2026_06_DAL_GB",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "GB",
-            "opponentAbbreviation": "DAL",
-            "homeAway": "Home",
-            "teamScore": 23,
-            "opponentScore": 13,
-            "result": "W",
-            "passingYards": 276.0,
-            "rushingYards": 57.0,
-            "totalYards": 333.0,
-            "totalEpa": 1.36,
             "turnovers": 1.0,
             "defensiveSacks": 1.0
           }
@@ -90131,14 +90121,14 @@
         "LA": {
           "current": {
             "season": 2026,
-            "wins": 6,
+            "wins": 7,
             "losses": 4,
             "ties": 0,
-            "gamesPlayed": 10,
-            "winPct": 0.6,
-            "pointsFor": 248,
-            "pointsAgainst": 187,
-            "pointDifferential": 61
+            "gamesPlayed": 11,
+            "winPct": 0.636,
+            "pointsFor": 274,
+            "pointsAgainst": 200,
+            "pointDifferential": 74
           },
           "previous": {
             "season": 2025,
@@ -90253,6 +90243,25 @@
         ],
         "LA": [
           {
+            "id": "2026_12_GB_LA",
+            "date": "2026-11-25",
+            "season": 2026,
+            "week": 12,
+            "gameType": "REG",
+            "teamAbbreviation": "LA",
+            "opponentAbbreviation": "GB",
+            "homeAway": "Home",
+            "teamScore": 26,
+            "opponentScore": 13,
+            "result": "W",
+            "passingYards": 140.0,
+            "rushingYards": 241.0,
+            "totalYards": 381.0,
+            "totalEpa": 0.23,
+            "turnovers": 1.0,
+            "defensiveSacks": 1.0
+          },
+          {
             "id": "2026_10_LA_ARI",
             "date": "2026-11-15",
             "season": 2026,
@@ -90327,25 +90336,6 @@
             "totalEpa": 11.36,
             "turnovers": 2.0,
             "defensiveSacks": 2.0
-          },
-          {
-            "id": "2026_06_ARI_LA",
-            "date": "2026-10-18",
-            "season": 2026,
-            "week": 6,
-            "gameType": "REG",
-            "teamAbbreviation": "LA",
-            "opponentAbbreviation": "ARI",
-            "homeAway": "Home",
-            "teamScore": 16,
-            "opponentScore": 18,
-            "result": "L",
-            "passingYards": 222.0,
-            "rushingYards": 92.0,
-            "totalYards": 314.0,
-            "totalEpa": -2.79,
-            "turnovers": 1.0,
-            "defensiveSacks": 0.0
           }
         ]
       },
